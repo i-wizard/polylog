@@ -1,4 +1,4 @@
-# Polylog
+# Polylog - "many voices talking"
 
 A phone-first web app for learning German from zero to B1, with pronunciation practice. It runs as a static site on GitHub Pages and installs on an iPhone as a home-screen app.
 
