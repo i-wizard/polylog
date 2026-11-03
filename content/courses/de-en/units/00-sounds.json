@@ -1,0 +1,399 @@
+{
+  "id": "00-sounds",
+  "level": "A1",
+  "title": "Sounds of German",
+  "description": "Train your ear and mouth before your first words.",
+  "icon": "🗣️",
+  "vocab": [],
+  "grammarNotes": [
+    {
+      "id": "sounds-cheat-sheet",
+      "title": "Pronunciation cheat sheet",
+      "body": "German spelling is very regular: once you know these rules, you can pronounce almost any word you read.",
+      "table": [
+        ["Spelling", "Sounds like", "Example"],
+        ["ei", "eye", "drei, mein"],
+        ["ie", "ee (see)", "vier, Liebe"],
+        ["eu / äu", "oy (boy)", "neu, Häuser"],
+        ["au", "ow (how)", "Haus, Frau"],
+        ["ä", "e in bed", "Käse"],
+        ["ö", "ay with rounded lips", "schön"],
+        ["ü", "ee with rounded lips", "Tschüss"],
+        ["w", "v", "Wasser"],
+        ["v", "f (usually)", "Vater"],
+        ["z", "ts (cats)", "Zeit"],
+        ["s + vowel", "z (zoo)", "sieben"],
+        ["sp / st at the start", "shp / sht", "sprechen, Straße"],
+        ["ch after a, o, u, au", "Scottish loch", "Buch, auch"],
+        ["ch elsewhere", "soft hiss (huge)", "ich, nicht"],
+        ["-er at the end", "a in sofa", "Vater"],
+        ["b, d, g at the end", "p, t, k", "Tag, Hund"],
+        ["ß", "ss", "Straße"]
+      ]
+    },
+    {
+      "id": "sounds-stress",
+      "title": "Word stress",
+      "body": "Most German words stress the **first** syllable: *MOR-gen, HA-ben, AR-bei-ten*.\n\n- The prefixes *be-, ge-, er-, ver-, zer-, ent-* are never stressed: *be-SU-chen, ver-STE-hen*\n- Many borrowed words stress the end: *Mu-SIK, Ho-TEL*"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "s1-vowels",
+      "title": "Vowels and umlauts",
+      "kind": "SOUNDS",
+      "introduces": [],
+      "exercises": [
+        {
+          "id": "s1-e1",
+          "type": "TEACH",
+          "title": "Pure vowels, long and short",
+          "body": "German vowels don't glide like English ones — keep your mouth still while you say them.\n\nEvery vowel can be **long** or **short**. It's usually long before a single consonant or an *h* (*Name, Sohn*) and short before two consonants (*Mann, Sonne*).",
+          "examples": [
+            { "text": "Name", "translation": "name", "hint": "long a" },
+            { "text": "Mann", "translation": "man", "hint": "short a" },
+            { "text": "Staat", "translation": "state", "hint": "long a" },
+            { "text": "Stadt", "translation": "city", "hint": "short a" }
+          ]
+        },
+        {
+          "id": "s1-e2",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Long or short? Which word do you hear?",
+          "options": ["Staat", "Stadt"],
+          "answerIndex": 1
+        },
+        {
+          "id": "s1-e3",
+          "type": "TEACH",
+          "title": "Umlauts: ä, ö, ü",
+          "body": "The two dots change the sound:\n\n- **ä** sounds like the *e* in *bed*\n- **ö**: say *ay* (as in *say*) and round your lips as if to whistle\n- **ü**: say *ee* and round your lips into an *oo*\n\nUmlauts often mark a plural: *Mutter → Mütter* (mother → mothers).",
+          "examples": [
+            { "text": "Käse", "translation": "cheese" },
+            { "text": "schön", "translation": "beautiful, nice" },
+            { "text": "Tschüss", "translation": "bye" },
+            { "text": "Mütter", "translation": "mothers" }
+          ]
+        },
+        {
+          "id": "s1-e4",
+          "type": "LISTEN_CHOOSE",
+          "options": ["schon", "schön"],
+          "answerIndex": 1
+        },
+        {
+          "id": "s1-e5",
+          "type": "LISTEN_CHOOSE",
+          "options": ["Mutter", "Mütter"],
+          "answerIndex": 0
+        },
+        {
+          "id": "s1-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Quick check",
+          "prompt": "How do you make the ü sound?",
+          "promptLanguage": "BASE",
+          "options": [
+            "Say ee with your lips rounded like oo",
+            "Say oo with a wide smile",
+            "Say u as in cup"
+          ],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "s1-e7",
+          "type": "LISTEN_CHOOSE",
+          "options": ["Bruder", "Brüder"],
+          "answerIndex": 1
+        },
+        {
+          "id": "s1-e8",
+          "type": "LISTEN_CHOOSE",
+          "options": ["Apfel", "Äpfel"],
+          "answerIndex": 1
+        },
+        {
+          "id": "s1-e9",
+          "type": "SHADOW",
+          "text": "Sehr schön!",
+          "translation": "Very nice!",
+          "hint": "For ö, get ready to say ay, then round your lips."
+        },
+        {
+          "id": "s1-e10",
+          "type": "SHADOW",
+          "text": "Tschüss!",
+          "translation": "Bye!",
+          "hint": "Round your lips tightly for the ü."
+        }
+      ]
+    },
+    {
+      "id": "s2-diphthongs",
+      "title": "ei, ie, eu and au",
+      "kind": "SOUNDS",
+      "introduces": [],
+      "exercises": [
+        {
+          "id": "s2-e1",
+          "type": "TEACH",
+          "title": "ei or ie?",
+          "body": "Two letter pairs that trip up English speakers:\n\n- **ei** sounds like English *eye*: *mein, drei, nein*\n- **ie** sounds like English *ee*: *vier, Liebe, sie*\n\nTrick: say the English name of the **second** letter. In *ei* that's *i* (eye); in *ie* it's *e* (ee).",
+          "examples": [
+            { "text": "drei", "translation": "three", "hint": "ei = eye" },
+            { "text": "vier", "translation": "four", "hint": "ie = ee" },
+            { "text": "nein", "translation": "no" },
+            { "text": "Liebe", "translation": "love" }
+          ]
+        },
+        {
+          "id": "s2-e2",
+          "type": "LISTEN_CHOOSE",
+          "options": ["Wein", "Wien"],
+          "answerIndex": 1
+        },
+        {
+          "id": "s2-e3",
+          "type": "LISTEN_CHOOSE",
+          "options": ["Reise", "Riese"],
+          "answerIndex": 0
+        },
+        {
+          "id": "s2-e4",
+          "type": "LISTEN_CHOOSE",
+          "options": ["Leid", "Lied"],
+          "answerIndex": 1
+        },
+        {
+          "id": "s2-e5",
+          "type": "TEACH",
+          "title": "eu, äu and au",
+          "body": "- **eu** and **äu** both sound like the *oy* in *boy*: *neu, Deutsch, Häuser*\n- **au** sounds like the *ow* in *how*: *Haus, Frau*",
+          "examples": [
+            { "text": "neu", "translation": "new" },
+            { "text": "Deutsch", "translation": "German" },
+            { "text": "Haus", "translation": "house" },
+            { "text": "Häuser", "translation": "houses" }
+          ]
+        },
+        {
+          "id": "s2-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which English sound matches the eu?",
+          "prompt": "Deutsch",
+          "promptLanguage": "TARGET",
+          "options": ["oy as in boy", "you as in youth", "ow as in how"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "s2-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "How is the ie pronounced?",
+          "prompt": "vier",
+          "promptLanguage": "TARGET",
+          "options": ["ee as in see", "eye as in pie", "ear as in hear"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "s2-e8",
+          "type": "LISTEN_TYPE",
+          "text": "drei",
+          "translation": "three"
+        },
+        {
+          "id": "s2-e9",
+          "type": "LISTEN_TYPE",
+          "text": "neu",
+          "translation": "new"
+        },
+        {
+          "id": "s2-e10",
+          "type": "SHADOW",
+          "text": "Mein Haus ist neu.",
+          "translation": "My house is new.",
+          "hint": "ei = eye, au = ow, eu = oy."
+        }
+      ]
+    },
+    {
+      "id": "s3-consonants",
+      "title": "Tricky consonants",
+      "kind": "SOUNDS",
+      "introduces": [],
+      "exercises": [
+        {
+          "id": "s3-e1",
+          "type": "TEACH",
+          "title": "W, V, Z and S",
+          "body": "- **w** sounds like English *v*: *Wasser, wie*\n- **v** usually sounds like English *f*: *Vater, viel*\n- **z** sounds like the *ts* in *cats*: *Zeit, zehn*\n- **s** before a vowel sounds like English *z*: *Sonne, sieben*",
+          "examples": [
+            { "text": "Wasser", "translation": "water", "hint": "VAS-ser" },
+            { "text": "Vater", "translation": "father", "hint": "FAH-ter" },
+            { "text": "Zeit", "translation": "time", "hint": "tsite" },
+            { "text": "sieben", "translation": "seven", "hint": "ZEE-ben" }
+          ]
+        },
+        {
+          "id": "s3-e2",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "The W in this word sounds like English…",
+          "prompt": "Wasser",
+          "promptLanguage": "TARGET",
+          "options": ["v", "w", "f"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "s3-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "The Z in this word sounds like…",
+          "prompt": "zehn",
+          "promptLanguage": "TARGET",
+          "options": ["ts as in cats", "z as in zoo", "s as in sun"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "s3-e4",
+          "type": "TEACH",
+          "title": "The two ch sounds",
+          "body": "German *ch* has two sounds — and neither is the *ch* in *church*.\n\n- After **a, o, u, au** it's a rough sound at the back of the throat, like Scottish *loch*: *Buch, auch*\n- Everywhere else it's a soft hiss, like the *h* in *huge* said with force: *ich, nicht, Milch*",
+          "examples": [
+            { "text": "auch", "translation": "also", "hint": "back of the throat" },
+            { "text": "Buch", "translation": "book", "hint": "back of the throat" },
+            { "text": "ich", "translation": "I", "hint": "soft hiss" },
+            { "text": "nicht", "translation": "not", "hint": "soft hiss" }
+          ]
+        },
+        {
+          "id": "s3-e5",
+          "type": "LISTEN_CHOOSE",
+          "options": ["ich", "ach"],
+          "answerIndex": 0
+        },
+        {
+          "id": "s3-e6",
+          "type": "TEACH",
+          "title": "sp, st, r and word endings",
+          "body": "- At the **start** of a word, **sp** and **st** sound like *shp* and *sht*: *sprechen, Straße*\n- The German **r** at the start of a syllable is made at the back of the throat, close to a soft gargle: *rot*\n- At the end of a word, **-er** sounds like the *a* in *sofa*: *Vater, Mutter*\n- **b, d, g** at the end of a word sound like **p, t, k**: *Tag* sounds like *tahk*, *Hund* like *hoont*",
+          "examples": [
+            { "text": "sprechen", "translation": "to speak", "hint": "SHPRE-chen" },
+            { "text": "Straße", "translation": "street", "hint": "SHTRAH-se" },
+            { "text": "rot", "translation": "red" },
+            { "text": "Tag", "translation": "day", "hint": "ends in a k sound" },
+            { "text": "Hund", "translation": "dog", "hint": "ends in a t sound" }
+          ]
+        },
+        {
+          "id": "s3-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "How does this word start?",
+          "prompt": "Straße",
+          "promptLanguage": "TARGET",
+          "options": ["sht", "st", "s"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "s3-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "How does the final g sound?",
+          "prompt": "Tag",
+          "promptLanguage": "TARGET",
+          "options": ["like k", "like the g in go", "silent"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "s3-e9",
+          "type": "LISTEN_TYPE",
+          "text": "Wasser",
+          "translation": "water"
+        },
+        {
+          "id": "s3-e10",
+          "type": "SHADOW",
+          "text": "Ich spreche ein bisschen Deutsch.",
+          "translation": "I speak a little German.",
+          "hint": "ich = soft hiss, sp = shp, eu = oy."
+        },
+        {
+          "id": "s3-e11",
+          "type": "SHADOW",
+          "text": "Wie viel Uhr ist es?",
+          "translation": "What time is it?",
+          "hint": "w = v and v = f: vee feel oor."
+        }
+      ]
+    },
+    {
+      "id": "s4-stress",
+      "title": "Word stress",
+      "kind": "SOUNDS",
+      "introduces": [],
+      "exercises": [
+        {
+          "id": "s4-e1",
+          "type": "TEACH",
+          "title": "Stress the first syllable",
+          "body": "Most German words stress the **first** syllable: *MOR-gen, HA-ben, AR-bei-ten*.\n\nTwo exceptions:\n\n- The prefixes *be-, ge-, er-, ver-, zer-, ent-* are never stressed: *ver-STE-hen*\n- Many borrowed words stress the end: *Mu-SIK, Ho-TEL*",
+          "examples": [
+            { "text": "Morgen", "translation": "morning", "hint": "MOR-gen" },
+            { "text": "verstehen", "translation": "to understand", "hint": "ver-STE-hen" },
+            { "text": "Musik", "translation": "music", "hint": "mu-SIK" },
+            { "text": "Hotel", "translation": "hotel", "hint": "ho-TEL" }
+          ]
+        },
+        {
+          "id": "s4-e2",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Where is the stress?",
+          "prompt": "verstehen",
+          "promptLanguage": "TARGET",
+          "options": ["ver-STE-hen", "VER-ste-hen", "ver-ste-HEN"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "s4-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Where is the stress?",
+          "prompt": "Morgen",
+          "promptLanguage": "TARGET",
+          "options": ["MOR-gen", "mor-GEN"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "s4-e4",
+          "type": "LISTEN_TYPE",
+          "text": "Musik",
+          "translation": "music"
+        },
+        {
+          "id": "s4-e5",
+          "type": "LISTEN_TYPE",
+          "text": "Name",
+          "translation": "name"
+        },
+        {
+          "id": "s4-e6",
+          "type": "SHADOW",
+          "text": "Ich verstehe das nicht.",
+          "translation": "I don't understand that.",
+          "hint": "ver-STE-he, and a soft ch in ich and nicht."
+        },
+        {
+          "id": "s4-e7",
+          "type": "SHADOW",
+          "text": "Noch einmal, bitte.",
+          "translation": "Once more, please.",
+          "hint": "noch: back-of-throat ch. BIT-te: stress the first syllable."
+        }
+      ]
+    }
+  ]
+}

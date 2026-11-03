@@ -1,0 +1,664 @@
+{
+  "id": "01-hallo",
+  "level": "A1",
+  "title": "Hallo!",
+  "description": "Greet people, say your name, ask how someone is.",
+  "icon": "👋",
+  "vocab": [
+    { "id": "hallo", "text": "Hallo", "translations": ["Hello", "Hi"], "partOfSpeech": "INTERJECTION", "pronunciation": "HA-lo" },
+    { "id": "guten-morgen", "text": "Guten Morgen", "translations": ["Good morning"], "partOfSpeech": "PHRASE", "pronunciation": "GOO-ten MOR-gen" },
+    { "id": "guten-tag", "text": "Guten Tag", "translations": ["Good day (polite hello)", "Hello"], "partOfSpeech": "PHRASE", "pronunciation": "GOO-ten TAHK" },
+    { "id": "guten-abend", "text": "Guten Abend", "translations": ["Good evening"], "partOfSpeech": "PHRASE", "pronunciation": "GOO-ten AH-bent" },
+    { "id": "gute-nacht", "text": "Gute Nacht", "translations": ["Good night"], "partOfSpeech": "PHRASE", "pronunciation": "GOO-te NAKHT" },
+    { "id": "tschuess", "text": "Tschüss", "translations": ["Bye (informal)", "See you"], "partOfSpeech": "INTERJECTION", "pronunciation": "chüss" },
+    { "id": "auf-wiedersehen", "text": "Auf Wiedersehen", "translations": ["Goodbye (polite)"], "partOfSpeech": "PHRASE", "pronunciation": "owf VEE-der-zay-en" },
+    { "id": "ich", "text": "ich", "translations": ["I"], "partOfSpeech": "PRONOUN", "pronunciation": "ikh (soft ch)" },
+    { "id": "du", "text": "du", "translations": ["you (informal)"], "partOfSpeech": "PRONOUN", "pronunciation": "doo" },
+    { "id": "heissen", "text": "heißen", "translations": ["to be called"], "partOfSpeech": "VERB", "pronunciation": "HY-sen", "example": { "text": "Ich heiße Anna.", "translation": "My name is Anna." } },
+    { "id": "name", "text": "Name", "translations": ["name"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Namen", "pronunciation": "NAH-me", "example": { "text": "Mein Name ist Tom.", "translation": "My name is Tom." } },
+    { "id": "mein", "text": "mein", "translations": ["my"], "partOfSpeech": "PRONOUN", "pronunciation": "mine" },
+    { "id": "wie", "text": "wie", "translations": ["how"], "partOfSpeech": "QUESTION_WORD", "pronunciation": "vee", "example": { "text": "Wie heißt du?", "translation": "What's your name?" } },
+    { "id": "und", "text": "und", "translations": ["and"], "partOfSpeech": "CONJUNCTION", "pronunciation": "oont" },
+    { "id": "ja", "text": "ja", "translations": ["yes"], "partOfSpeech": "INTERJECTION", "pronunciation": "yah" },
+    { "id": "nein", "text": "nein", "translations": ["no"], "partOfSpeech": "INTERJECTION", "pronunciation": "nine" },
+    { "id": "wie-geht-es-dir", "text": "Wie geht es dir?", "translations": ["How are you? (informal)"], "partOfSpeech": "PHRASE", "pronunciation": "vee GATE es deer" },
+    { "id": "und-dir", "text": "Und dir?", "translations": ["And you? (informal)"], "partOfSpeech": "PHRASE", "pronunciation": "oont DEER" },
+    { "id": "gut", "text": "gut", "translations": ["good", "well"], "partOfSpeech": "ADJECTIVE", "pronunciation": "goot", "example": { "text": "Gut, danke!", "translation": "Good, thanks!" } },
+    { "id": "sehr", "text": "sehr", "translations": ["very"], "partOfSpeech": "ADVERB", "pronunciation": "zair", "example": { "text": "Sehr gut!", "translation": "Very good!" } },
+    { "id": "danke", "text": "danke", "translations": ["thank you", "thanks"], "partOfSpeech": "INTERJECTION", "pronunciation": "DAN-ke" },
+    { "id": "bitte", "text": "bitte", "translations": ["please", "you're welcome"], "partOfSpeech": "INTERJECTION", "pronunciation": "BIT-te" },
+    { "id": "auch", "text": "auch", "translations": ["also", "too"], "partOfSpeech": "ADVERB", "pronunciation": "owkh", "example": { "text": "Auch gut, danke.", "translation": "Good too, thanks." } },
+    { "id": "sie-formal", "text": "Sie", "translations": ["you (formal)"], "partOfSpeech": "PRONOUN", "pronunciation": "zee", "example": { "text": "Wie heißen Sie?", "translation": "What's your name? (formal)" } },
+    { "id": "sein", "text": "sein", "translations": ["to be"], "partOfSpeech": "VERB", "pronunciation": "zine", "example": { "text": "Ich bin Tom.", "translation": "I am Tom." } },
+    { "id": "herr", "text": "Herr", "translations": ["gentleman", "Mr"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Herren", "pronunciation": "hair", "example": { "text": "Guten Tag, Herr Weber!", "translation": "Hello, Mr Weber!" } },
+    { "id": "frau", "text": "Frau", "translations": ["woman", "Mrs / Ms"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Frauen", "pronunciation": "frow", "example": { "text": "Guten Abend, Frau Schmidt!", "translation": "Good evening, Ms Schmidt!" } },
+    { "id": "freut-mich", "text": "Freut mich!", "translations": ["Nice to meet you!"], "partOfSpeech": "PHRASE", "pronunciation": "froyt mikh" },
+    { "id": "freund", "text": "Freund", "translations": ["friend (male)", "boyfriend"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Freunde", "pronunciation": "froynt", "example": { "text": "Das ist mein Freund Tom.", "translation": "This is my friend Tom." } },
+    { "id": "freundin", "text": "Freundin", "translations": ["friend (female)", "girlfriend"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Freundinnen", "pronunciation": "FROYN-din", "example": { "text": "Das ist meine Freundin Lisa.", "translation": "This is my friend Lisa." } },
+    { "id": "das-ist", "text": "Das ist", "translations": ["This is", "That is"], "partOfSpeech": "PHRASE", "pronunciation": "dahs ist" }
+  ],
+  "grammarNotes": [
+    {
+      "id": "hallo-sein",
+      "title": "sein — to be",
+      "body": "The most important verb in German, and it's irregular. You've practised **ich bin**, **du bist** and **Sie sind**; the other forms come in later units.",
+      "table": [
+        ["Person", "sein", "English"],
+        ["ich", "bin", "I am"],
+        ["du", "bist", "you are (informal)"],
+        ["er / sie / es", "ist", "he / she / it is"],
+        ["wir", "sind", "we are"],
+        ["ihr", "seid", "you are (informal, plural)"],
+        ["sie / Sie", "sind", "they are / you are (formal)"]
+      ]
+    },
+    {
+      "id": "hallo-heissen",
+      "title": "heißen — to be called",
+      "body": "A regular verb: take the stem **heiß-** and add the ending. Because the stem already ends in *ß*, the *du* form is **heißt** rather than *heißst*.",
+      "table": [
+        ["Person", "heißen"],
+        ["ich", "heiße"],
+        ["du", "heißt"],
+        ["er / sie / es", "heißt"],
+        ["wir", "heißen"],
+        ["ihr", "heißt"],
+        ["sie / Sie", "heißen"]
+      ]
+    },
+    {
+      "id": "hallo-du-sie",
+      "title": "du or Sie?",
+      "body": "- **du**: friends, family, children, and people your age in casual settings\n- **Sie**: strangers, shop staff, colleagues you don't know well, older people\n\nWith **Sie**, use the surname: *Herr Weber, Frau Schmidt*. **Frau** is used for all adult women, married or not. When unsure, start with *Sie* — Germans will offer *du* if they want it."
+    },
+    {
+      "id": "hallo-capitals",
+      "title": "Capital letters",
+      "body": "German capitalises **every noun**: *der Name, die Frau, der Morgen*. The formal **Sie** is always capitalised; **ich** is not, unless it starts a sentence."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "h1-greetings",
+      "title": "Greetings",
+      "kind": "LEARN",
+      "introduces": ["hallo", "guten-morgen", "guten-tag", "guten-abend", "gute-nacht", "tschuess", "auf-wiedersehen"],
+      "exercises": [
+        {
+          "id": "h1-e1",
+          "type": "TEACH",
+          "title": "Saying hello",
+          "body": "Germans often greet according to the time of day:\n\n- **Guten Morgen** until about 11 am\n- **Guten Tag** during the day: a polite, all-purpose hello\n- **Guten Abend** from about 6 pm\n- **Gute Nacht** only when someone is going to bed\n\n**Hallo** is the everyday, informal hello and works at any time.",
+          "examples": [
+            { "text": "Hallo!", "translation": "Hello! / Hi!" },
+            { "text": "Guten Morgen!", "translation": "Good morning!" },
+            { "text": "Guten Tag!", "translation": "Hello! / Good day!" },
+            { "text": "Guten Abend!", "translation": "Good evening!" },
+            { "text": "Gute Nacht!", "translation": "Good night!" }
+          ]
+        },
+        {
+          "id": "h1-e2",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Guten Morgen!",
+          "promptLanguage": "TARGET",
+          "options": ["Good morning!", "Good evening!", "Good night!"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "h1-e3",
+          "type": "LISTEN_CHOOSE",
+          "options": ["Guten Abend!", "Guten Morgen!", "Gute Nacht!"],
+          "answerIndex": 0
+        },
+        {
+          "id": "h1-e4",
+          "type": "TEACH",
+          "title": "Saying goodbye",
+          "body": "- **Tschüss** is the friendly, informal *bye*\n- **Auf Wiedersehen** is the polite goodbye: use it in shops, at work and with people you don't know\n\n*Wiedersehen* literally means *seeing again*.",
+          "examples": [
+            { "text": "Tschüss!", "translation": "Bye!" },
+            { "text": "Auf Wiedersehen!", "translation": "Goodbye!" }
+          ]
+        },
+        {
+          "id": "h1-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "Hallo", "base": "Hello" },
+            { "target": "Guten Abend", "base": "Good evening" },
+            { "target": "Gute Nacht", "base": "Good night" },
+            { "target": "Tschüss", "base": "Bye" },
+            { "target": "Auf Wiedersehen", "base": "Goodbye (polite)" }
+          ]
+        },
+        {
+          "id": "h1-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "You're leaving a shop. What do you say?",
+          "prompt": "Leaving a shop",
+          "promptLanguage": "BASE",
+          "options": ["Auf Wiedersehen!", "Gute Nacht!", "Guten Morgen!"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "h1-e7",
+          "type": "TRANSLATE",
+          "source": "Good evening!",
+          "sourceLanguage": "BASE",
+          "accepted": ["Guten Abend!"]
+        },
+        {
+          "id": "h1-e8",
+          "type": "TRANSLATE",
+          "source": "Tschüss!",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Bye!", "Bye-bye!", "Goodbye!", "See you!", "Cheers!"]
+        },
+        {
+          "id": "h1-e9",
+          "type": "LISTEN_TYPE",
+          "text": "Guten Tag!",
+          "translation": "Hello! / Good day!"
+        },
+        {
+          "id": "h1-e10",
+          "type": "SHADOW",
+          "text": "Guten Morgen!",
+          "translation": "Good morning!",
+          "hint": "Stress the first syllable of each word: GOO-ten MOR-gen."
+        },
+        {
+          "id": "h1-e11",
+          "type": "TRANSLATE",
+          "source": "Good night!",
+          "sourceLanguage": "BASE",
+          "accepted": ["Gute Nacht!"]
+        },
+        {
+          "id": "h1-e12",
+          "type": "SHADOW",
+          "text": "Auf Wiedersehen!",
+          "translation": "Goodbye!",
+          "hint": "owf VEE-der-zay-en: the w sounds like v."
+        }
+      ]
+    },
+    {
+      "id": "h2-names",
+      "title": "What's your name?",
+      "kind": "LEARN",
+      "introduces": ["ich", "du", "heissen", "name", "mein", "wie", "und", "ja", "nein"],
+      "exercises": [
+        {
+          "id": "h2-e1",
+          "type": "TEACH",
+          "title": "Asking someone's name",
+          "body": "The verb **heißen** means *to be called*. Germans use it to give their name:\n\n- **Wie heißt du?** What's your name? (literally *How are you called?*)\n- **Ich heiße Anna.** My name is Anna.\n\nYou can also say **Mein Name ist Anna.** It sounds a little more formal.",
+          "examples": [
+            { "text": "Wie heißt du?", "translation": "What's your name?" },
+            { "text": "Ich heiße Anna.", "translation": "My name is Anna." },
+            { "text": "Mein Name ist Tom.", "translation": "My name is Tom." }
+          ]
+        },
+        {
+          "id": "h2-e2",
+          "type": "TEACH",
+          "title": "The letter ß",
+          "body": "**ß** (called *Eszett*) is simply a sharp **ss** sound. It appears after long vowels and after *ei, au, eu*: *heißen, Straße*.\n\nUse the **ß** key under the answer box. If you type *ss* instead, the app accepts it but reminds you.",
+          "examples": [
+            { "text": "heißen", "translation": "to be called" },
+            { "text": "Straße", "translation": "street" }
+          ]
+        },
+        {
+          "id": "h2-e3",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Wie heißt du?",
+          "promptLanguage": "TARGET",
+          "options": ["What's your name?", "How are you?", "Where are you from?"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "h2-e4",
+          "type": "WORD_ORDER",
+          "translation": "My name is Anna.",
+          "answer": "Ich heiße Anna.",
+          "distractors": ["heißt", "du"]
+        },
+        {
+          "id": "h2-e5",
+          "type": "WORD_ORDER",
+          "translation": "What's your name?",
+          "answer": "Wie heißt du?",
+          "distractors": ["heiße", "ich"]
+        },
+        {
+          "id": "h2-e6",
+          "type": "TEACH",
+          "title": "ich and du",
+          "body": "- **ich** = I (only capitalised at the start of a sentence)\n- **du** = you, when talking to one friend, family member or child\n\nThe verb ending changes with the person:\n\n- ich heiß**e**\n- du heiß**t** (usually *-st*, but the stem already ends in ß)",
+          "examples": [
+            { "text": "ich heiße", "translation": "I am called" },
+            { "text": "du heißt", "translation": "you are called" }
+          ]
+        },
+        {
+          "id": "h2-e7",
+          "type": "CLOZE",
+          "before": "Ich",
+          "after": "Lisa.",
+          "accepted": ["heiße"],
+          "translation": "My name is Lisa.",
+          "hint": "heißen → ich …"
+        },
+        {
+          "id": "h2-e8",
+          "type": "CLOZE",
+          "before": "Wie",
+          "after": "du?",
+          "accepted": ["heißt"],
+          "translation": "What's your name?",
+          "hint": "heißen → du …"
+        },
+        {
+          "id": "h2-e9",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "ich", "base": "I" },
+            { "target": "du", "base": "you (informal)" },
+            { "target": "ja", "base": "yes" },
+            { "target": "nein", "base": "no" },
+            { "target": "und", "base": "and" }
+          ]
+        },
+        {
+          "id": "h2-e10",
+          "type": "TRANSLATE",
+          "source": "My name is Tom.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich heiße Tom.", "Mein Name ist Tom."]
+        },
+        {
+          "id": "h2-e11",
+          "type": "TRANSLATE",
+          "source": "Ja, ich heiße Max.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Yes, my name is Max.", "Yes, I am called Max.", "Yes, I'm called Max.", "Yes, I'm Max.", "Yes, I am Max."]
+        },
+        {
+          "id": "h2-e12",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "nein",
+          "promptLanguage": "TARGET",
+          "options": ["no", "nine", "yes"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "h2-e13",
+          "type": "LISTEN_TYPE",
+          "text": "Mein Name ist Anna.",
+          "translation": "My name is Anna."
+        },
+        {
+          "id": "h2-e14",
+          "type": "SHADOW",
+          "text": "Hallo, ich heiße Tom. Und du?",
+          "translation": "Hello, my name is Tom. And you?",
+          "hint": "heißen: HY-sen, ei sounds like eye."
+        }
+      ]
+    },
+    {
+      "id": "h3-how-are-you",
+      "title": "How are you?",
+      "kind": "LEARN",
+      "introduces": ["wie-geht-es-dir", "und-dir", "gut", "sehr", "danke", "bitte", "auch"],
+      "exercises": [
+        {
+          "id": "h3-e1",
+          "type": "TEACH",
+          "title": "Wie geht es dir?",
+          "body": "To ask a friend how they are:\n\n- **Wie geht es dir?** How are you? (literally *How goes it for you?*)\n- Short and casual: **Wie geht's?**\n\nTypical answers:\n\n- **Gut, danke!** Good, thanks!\n- **Sehr gut!** Very good!\n- **Es geht.** So-so.\n\nThen return the question: **Und dir?** And you?",
+          "examples": [
+            { "text": "Wie geht es dir?", "translation": "How are you?" },
+            { "text": "Gut, danke!", "translation": "Good, thanks!" },
+            { "text": "Sehr gut!", "translation": "Very good!" },
+            { "text": "Es geht.", "translation": "So-so." },
+            { "text": "Und dir?", "translation": "And you?" }
+          ]
+        },
+        {
+          "id": "h3-e2",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Gut, danke!",
+          "promptLanguage": "TARGET",
+          "options": ["Good, thanks!", "Very good!", "And you?"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "h3-e3",
+          "type": "WORD_ORDER",
+          "translation": "How are you?",
+          "answer": "Wie geht es dir?",
+          "distractors": ["du", "Sie"]
+        },
+        {
+          "id": "h3-e4",
+          "type": "LISTEN_CHOOSE",
+          "options": ["Sehr gut!", "Gut, danke!", "Und dir?"],
+          "answerIndex": 0
+        },
+        {
+          "id": "h3-e5",
+          "type": "TEACH",
+          "title": "danke and bitte",
+          "body": "- **danke** = thank you, thanks. **Danke schön** = thank you very much\n- **bitte** = please, *and* the reply to *danke*: you're welcome\n\n*Danke! — Bitte!* is one of the most common exchanges in German.",
+          "examples": [
+            { "text": "Danke schön!", "translation": "Thank you very much!" },
+            { "text": "Bitte!", "translation": "You're welcome! / Please!" }
+          ]
+        },
+        {
+          "id": "h3-e6",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "gut", "base": "good" },
+            { "target": "sehr", "base": "very" },
+            { "target": "danke", "base": "thanks" },
+            { "target": "bitte", "base": "please" },
+            { "target": "auch", "base": "also" }
+          ]
+        },
+        {
+          "id": "h3-e7",
+          "type": "TRANSLATE",
+          "source": "Very good, thanks!",
+          "sourceLanguage": "BASE",
+          "accepted": ["Sehr gut, danke!", "Danke, sehr gut!"]
+        },
+        {
+          "id": "h3-e8",
+          "type": "TRANSLATE",
+          "source": "Auch gut, danke.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Good too, thanks.", "Also good, thanks.", "Fine too, thanks.", "Also fine, thanks.", "Well too, thanks.", "Also well, thanks."]
+        },
+        {
+          "id": "h3-e9",
+          "type": "CLOZE",
+          "before": "Wie geht es",
+          "after": "?",
+          "accepted": ["dir"],
+          "translation": "How are you?",
+          "hint": "informal: (to) you"
+        },
+        {
+          "id": "h3-e10",
+          "type": "LISTEN_TYPE",
+          "text": "Danke, gut.",
+          "translation": "Fine, thanks."
+        },
+        {
+          "id": "h3-e11",
+          "type": "SHADOW",
+          "text": "Wie geht es dir?",
+          "translation": "How are you?",
+          "hint": "geht: a long, pure e, like gate without the glide."
+        },
+        {
+          "id": "h3-e12",
+          "type": "SHADOW",
+          "text": "Gut, danke! Und dir?",
+          "translation": "Good, thanks! And you?"
+        }
+      ]
+    },
+    {
+      "id": "h4-formal",
+      "title": "Formal you: Sie",
+      "kind": "LEARN",
+      "introduces": ["sie-formal", "sein", "herr", "frau", "freut-mich"],
+      "exercises": [
+        {
+          "id": "h4-e1",
+          "type": "TEACH",
+          "title": "du or Sie?",
+          "body": "German has two words for *you*:\n\n- **du**: friends, family, children, and people your age in casual settings\n- **Sie**: strangers, shop staff, colleagues you don't know well, older people. Always written with a capital S.\n\nWith **Sie**, use the surname: **Herr Weber** (Mr Weber), **Frau Schmidt** (Mrs/Ms Schmidt). *Frau* is used for all adult women, married or not.",
+          "examples": [
+            { "text": "Wie heißen Sie?", "translation": "What's your name? (formal)" },
+            { "text": "Guten Tag, Herr Weber!", "translation": "Hello, Mr Weber!" },
+            { "text": "Guten Abend, Frau Schmidt!", "translation": "Good evening, Ms Schmidt!" }
+          ]
+        },
+        {
+          "id": "h4-e2",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "You meet your new manager, Mr Fischer. Which greeting fits?",
+          "prompt": "Meeting Mr Fischer",
+          "promptLanguage": "BASE",
+          "options": ["Guten Tag, Herr Fischer!", "Hallo, du!", "Tschüss, Herr Fischer!"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "h4-e3",
+          "type": "TEACH",
+          "title": "The verb sein (to be)",
+          "body": "**sein** is irregular, so learn its forms by heart:\n\n- **ich bin**: I am\n- **du bist**: you are (informal)\n- **Sie sind**: you are (formal)\n\nThe full table is in this unit's notes.",
+          "examples": [
+            { "text": "Ich bin Anna.", "translation": "I am Anna." },
+            { "text": "Du bist Tom.", "translation": "You are Tom." },
+            { "text": "Sind Sie Frau Schmidt?", "translation": "Are you Ms Schmidt?" }
+          ]
+        },
+        {
+          "id": "h4-e4",
+          "type": "CLOZE",
+          "before": "Ich",
+          "after": "Anna.",
+          "accepted": ["bin"],
+          "translation": "I am Anna.",
+          "hint": "sein → ich …"
+        },
+        {
+          "id": "h4-e5",
+          "type": "CLOZE",
+          "before": "Du",
+          "after": "Tom.",
+          "accepted": ["bist"],
+          "translation": "You are Tom.",
+          "hint": "sein → du …"
+        },
+        {
+          "id": "h4-e6",
+          "type": "CLOZE",
+          "before": "",
+          "after": "Sie Herr Weber?",
+          "accepted": ["Sind"],
+          "translation": "Are you Mr Weber?",
+          "hint": "sein → Sie …, starting a question"
+        },
+        {
+          "id": "h4-e7",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "ich bin", "base": "I am" },
+            { "target": "du bist", "base": "you are (informal)" },
+            { "target": "Sie sind", "base": "you are (formal)" },
+            { "target": "Herr", "base": "Mr" },
+            { "target": "Frau", "base": "Mrs / Ms" }
+          ]
+        },
+        {
+          "id": "h4-e8",
+          "type": "WORD_ORDER",
+          "translation": "What's your name? (formal)",
+          "answer": "Wie heißen Sie?",
+          "distractors": ["heißt", "du"]
+        },
+        {
+          "id": "h4-e9",
+          "type": "TEACH",
+          "title": "Freut mich!",
+          "body": "When you're introduced to someone, say **Freut mich!** Nice to meet you! (literally *Pleases me!*)\n\nWith **Sie**, regular verbs look just like the infinitive: **Sie heißen**. For *sein* it's **Sie sind**.",
+          "examples": [
+            { "text": "Freut mich!", "translation": "Nice to meet you!" },
+            { "text": "Freut mich, Frau Schmidt!", "translation": "Nice to meet you, Ms Schmidt!" }
+          ]
+        },
+        {
+          "id": "h4-e10",
+          "type": "TRANSLATE",
+          "source": "Ich bin Herr Weber. Freut mich!",
+          "sourceLanguage": "TARGET",
+          "accepted": [
+            "I am Mr Weber. Nice to meet you!",
+            "I'm Mr Weber. Nice to meet you!",
+            "I am Mr Weber. Pleased to meet you!",
+            "I'm Mr Weber. Pleased to meet you!"
+          ]
+        },
+        {
+          "id": "h4-e11",
+          "type": "TRANSLATE",
+          "source": "Good morning, Ms Schmidt!",
+          "sourceLanguage": "BASE",
+          "accepted": ["Guten Morgen, Frau Schmidt!"]
+        },
+        {
+          "id": "h4-e12",
+          "type": "LISTEN_TYPE",
+          "text": "Wie heißen Sie?",
+          "translation": "What's your name? (formal)"
+        },
+        {
+          "id": "h4-e13",
+          "type": "SHADOW",
+          "text": "Guten Tag! Ich bin Anna Schmidt. Freut mich!",
+          "translation": "Hello! I'm Anna Schmidt. Nice to meet you!",
+          "hint": "Freut: eu sounds like oy."
+        }
+      ]
+    },
+    {
+      "id": "h5-conversation",
+      "title": "First conversation",
+      "kind": "PRACTICE",
+      "introduces": ["freund", "freundin", "das-ist"],
+      "exercises": [
+        {
+          "id": "h5-e1",
+          "type": "TEACH",
+          "title": "Introducing a friend",
+          "body": "**Das ist …** means *This is …*:\n\n- **Das ist mein Freund Tom.** This is my friend Tom.\n- **Das ist meine Freundin Lisa.** This is my friend Lisa.\n\n**mein** becomes **meine** before a feminine word like *Freundin*. You'll learn why in Unit 4; for now, copy the pattern.\n\n*Freund* and *Freundin* can also mean boyfriend and girlfriend. Context makes it clear.",
+          "examples": [
+            { "text": "Das ist mein Freund Tom.", "translation": "This is my friend Tom." },
+            { "text": "Das ist meine Freundin Lisa.", "translation": "This is my friend Lisa." }
+          ]
+        },
+        {
+          "id": "h5-e2",
+          "type": "TEACH",
+          "title": "A first conversation",
+          "body": "Read along, and tap each line to hear it. Then try saying Max's lines yourself.",
+          "examples": [
+            { "text": "Hallo! Ich heiße Lena. Und du?", "translation": "Lena: Hi! I'm Lena. And you?" },
+            { "text": "Ich bin Max. Freut mich!", "translation": "Max: I'm Max. Nice to meet you!" },
+            { "text": "Wie geht es dir, Max?", "translation": "Lena: How are you, Max?" },
+            { "text": "Sehr gut, danke. Und dir?", "translation": "Max: Very good, thanks. And you?" },
+            { "text": "Auch gut. Das ist meine Freundin Sara.", "translation": "Lena: Good too. This is my friend Sara." },
+            { "text": "Hallo, Sara!", "translation": "Max: Hi, Sara!" }
+          ]
+        },
+        {
+          "id": "h5-e3",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Das ist mein Freund Tom.",
+          "promptLanguage": "TARGET",
+          "options": ["This is my friend Tom.", "My name is Tom.", "Tom is very good."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "h5-e4",
+          "type": "WORD_ORDER",
+          "translation": "This is my friend Lisa.",
+          "answer": "Das ist meine Freundin Lisa.",
+          "distractors": ["mein", "Freund"]
+        },
+        {
+          "id": "h5-e5",
+          "type": "TRANSLATE",
+          "source": "Hello, my name is Max. And you?",
+          "sourceLanguage": "BASE",
+          "accepted": [
+            "Hallo, ich heiße Max. Und du?",
+            "Hallo, mein Name ist Max. Und du?",
+            "Hallo, ich bin Max. Und du?",
+            "Hallo, ich heiße Max. Und wie heißt du?",
+            "Hallo, mein Name ist Max. Und wie heißt du?",
+            "Hallo, ich bin Max. Und wie heißt du?"
+          ]
+        },
+        {
+          "id": "h5-e6",
+          "type": "LISTEN_TYPE",
+          "text": "Das ist mein Freund.",
+          "translation": "This is my friend."
+        },
+        {
+          "id": "h5-e7",
+          "type": "TRANSLATE",
+          "source": "Wie geht es dir?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["How are you?", "How are you doing?", "How's it going?", "How is it going?"]
+        },
+        {
+          "id": "h5-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Your friend says Danke! What do you answer?",
+          "prompt": "Danke!",
+          "promptLanguage": "TARGET",
+          "options": ["Bitte!", "Danke!", "Gute Nacht!"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "h5-e9",
+          "type": "CLOZE",
+          "before": "Das ist",
+          "after": "Freundin Sara.",
+          "accepted": ["meine"],
+          "translation": "This is my friend Sara.",
+          "hint": "my, before a feminine word"
+        },
+        {
+          "id": "h5-e10",
+          "type": "TRANSLATE",
+          "source": "Goodbye, Mr Weber!",
+          "sourceLanguage": "BASE",
+          "accepted": ["Auf Wiedersehen, Herr Weber!"]
+        },
+        {
+          "id": "h5-e11",
+          "type": "SHADOW",
+          "text": "Das ist meine Freundin Sara.",
+          "translation": "This is my friend Sara.",
+          "hint": "Freundin: FROYN-din, eu sounds like oy."
+        },
+        {
+          "id": "h5-e12",
+          "type": "SHADOW",
+          "text": "Hallo! Ich heiße Lena. Und du?",
+          "translation": "Hi! I'm Lena. And you?"
+        }
+      ]
+    }
+  ]
+}

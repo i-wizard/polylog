@@ -1,0 +1,17 @@
+{
+  "id": "de-en",
+  "targetLanguage": "de",
+  "baseLanguage": "en",
+  "title": "German for English speakers",
+  "description": "From your first Hallo to confident B1 German.",
+  "greetings": {
+    "morning": "Guten Morgen!",
+    "afternoon": "Guten Tag!",
+    "evening": "Guten Abend!"
+  },
+  "levels": [
+    { "level": "A1", "unitIds": ["00-sounds", "01-hallo"] },
+    { "level": "A2", "unitIds": [] },
+    { "level": "B1", "unitIds": [] }
+  ]
+}
