@@ -45,6 +45,33 @@ export enum ExerciseType {
   SHADOW = 'SHADOW',
 }
 
+/**
+ * Lip positions the app can draw. Language-neutral: each course picks the
+ * shapes that explain its own sounds.
+ */
+export enum MouthShape {
+  /** Lips pulled wide as in a smile, teeth nearly together (English "ee"). */
+  SPREAD = 'SPREAD',
+  /** Relaxed lips, jaw half open (the "e" in "bed"). */
+  HALF_OPEN = 'HALF_OPEN',
+  /** Jaw dropped, lips relaxed (the "a" in "father"). */
+  OPEN = 'OPEN',
+  /** Lips rounded with a medium opening ("o"). */
+  ROUNDED = 'ROUNDED',
+  /** Lips pushed forward into a small tight circle ("oo"). */
+  TIGHT_ROUNDED = 'TIGHT_ROUNDED',
+  /** Upper teeth resting on the lower lip ("f", "v"). */
+  TEETH_ON_LIP = 'TEETH_ON_LIP',
+}
+
+/** A drawn lip position with the sound it makes and a one-line tip. */
+export interface MouthShapeGuide {
+  shape: MouthShape;
+  /** The sound being shown, e.g. "ü". */
+  label: string;
+  caption: string;
+}
+
 /** Which side of a course a piece of text is written in. */
 export enum LanguageRole {
   TARGET = 'TARGET',
@@ -115,6 +142,7 @@ export interface TeachExercise {
   title: string;
   body: string;
   examples?: TeachExample[];
+  mouthShapes?: MouthShapeGuide[];
 }
 
 export interface MultipleChoiceExercise {
@@ -191,6 +219,7 @@ export interface ShadowExercise {
   text: string;
   translation: string;
   hint?: string;
+  mouthShapes?: MouthShapeGuide[];
 }
 
 export type Exercise =

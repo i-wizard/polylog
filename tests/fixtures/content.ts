@@ -45,6 +45,10 @@ export function buildTranslateExercise(id: string): Exercise {
   };
 }
 
+export function buildTeachExercise(id: string): Exercise {
+  return { id, type: ExerciseType.TEACH, title: `Teach ${id}`, body: 'Some explanation.' };
+}
+
 export function buildShadowExercise(id: string): Exercise {
   return { id, type: ExerciseType.SHADOW, text: 'Guten Morgen!', translation: 'Good morning!' };
 }

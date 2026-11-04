@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { ExerciseType, PartOfSpeech } from '../../src/domain/content/types';
+import { ExerciseType, MouthShape, PartOfSpeech } from '../../src/domain/content/types';
 import { validateCourse } from '../../src/domain/content/validateCourse';
 import { getLanguagePack } from '../../src/languages/registry';
 import { germanLanguagePack } from '../../src/languages/de';
@@ -82,5 +82,21 @@ describe('validateCourse', () => {
     });
     const problems = validateCourse({ course: buildCourse(), units: [unit], unitFileIds: FIXTURE_UNIT_FILES, targetPack: germanLanguagePack });
     expect(problems).toContain('lesson-1/mc-bad: answerIndex out of range');
+  });
+
+  it('reports an unknown mouth shape', () => {
+    const unit = buildUnit();
+    unit.lessons[0].exercises.push({
+      id: 'teach-bad',
+      type: ExerciseType.TEACH,
+      title: 'Umlauts',
+      body: 'Round your lips.',
+      mouthShapes: [
+        { shape: MouthShape.TIGHT_ROUNDED, label: 'ü', caption: 'Tight circle' },
+        { shape: 'POUT' as MouthShape, label: 'ö', caption: 'Typo in the shape name' },
+      ],
+    });
+    const problems = validateCourse({ course: buildCourse(), units: [unit], unitFileIds: FIXTURE_UNIT_FILES, targetPack: germanLanguagePack });
+    expect(problems).toEqual(['lesson-1/teach-bad: unknown mouth shape "POUT"']);
   });
 });

@@ -68,6 +68,12 @@
           "type": "TEACH",
           "title": "Umlauts: ä, ö, ü",
           "body": "The two dots change the sound:\n\n- **ä** sounds like the *e* in *bed*\n- **ö**: say *ay* (as in *say*) and round your lips as if to whistle\n- **ü**: say *ee* and round your lips into an *oo*\n\nUmlauts often mark a plural: *Mutter → Mütter* (mother → mothers).",
+          "mouthShapes": [
+            { "shape": "SPREAD", "label": "ee", "caption": "Lips wide, like a smile" },
+            { "shape": "TIGHT_ROUNDED", "label": "ü", "caption": "Keep the ee, push lips into a tight circle" },
+            { "shape": "HALF_OPEN", "label": "ay / ä", "caption": "Relaxed, jaw half open" },
+            { "shape": "ROUNDED", "label": "ö", "caption": "Keep the ay, round your lips" }
+          ],
           "examples": [
             { "text": "Käse", "translation": "cheese" },
             { "text": "schön", "translation": "beautiful, nice" },
@@ -118,14 +124,20 @@
           "type": "SHADOW",
           "text": "Sehr schön!",
           "translation": "Very nice!",
-          "hint": "For ö, get ready to say ay, then round your lips."
+          "hint": "For ö, get ready to say ay, then round your lips.",
+          "mouthShapes": [
+            { "shape": "ROUNDED", "label": "ö", "caption": "Say ay, then round your lips" }
+          ]
         },
         {
           "id": "s1-e10",
           "type": "SHADOW",
           "text": "Tschüss!",
           "translation": "Bye!",
-          "hint": "Round your lips tightly for the ü."
+          "hint": "Round your lips tightly for the ü.",
+          "mouthShapes": [
+            { "shape": "TIGHT_ROUNDED", "label": "ü", "caption": "Say ee with lips in a tight circle" }
+          ]
         }
       ]
     },
@@ -140,6 +152,10 @@
           "type": "TEACH",
           "title": "ei or ie?",
           "body": "Two letter pairs that trip up English speakers:\n\n- **ei** sounds like English *eye*: *mein, drei, nein*\n- **ie** sounds like English *ee*: *vier, Liebe, sie*\n\nTrick: say the English name of the **second** letter. In *ei* that's *i* (eye); in *ie* it's *e* (ee).",
+          "mouthShapes": [
+            { "shape": "OPEN", "label": "ei", "caption": "Start open, then slide to a smile: eye" },
+            { "shape": "SPREAD", "label": "ie", "caption": "Lips wide and still: see" }
+          ],
           "examples": [
             { "text": "drei", "translation": "three", "hint": "ei = eye" },
             { "text": "vier", "translation": "four", "hint": "ie = ee" },
@@ -170,6 +186,10 @@
           "type": "TEACH",
           "title": "eu, äu and au",
           "body": "- **eu** and **äu** both sound like the *oy* in *boy*: *neu, Deutsch, Häuser*\n- **au** sounds like the *ow* in *how*: *Haus, Frau*",
+          "mouthShapes": [
+            { "shape": "OPEN", "label": "au", "caption": "Start open, then round: how" },
+            { "shape": "ROUNDED", "label": "eu / äu", "caption": "Start round, then spread: boy" }
+          ],
           "examples": [
             { "text": "neu", "translation": "new" },
             { "text": "Deutsch", "translation": "German" },
@@ -229,6 +249,9 @@
           "type": "TEACH",
           "title": "W, V, Z and S",
           "body": "- **w** sounds like English *v*: *Wasser, wie*\n- **v** usually sounds like English *f*: *Vater, viel*\n- **z** sounds like the *ts* in *cats*: *Zeit, zehn*\n- **s** before a vowel sounds like English *z*: *Sonne, sieben*",
+          "mouthShapes": [
+            { "shape": "TEETH_ON_LIP", "label": "w and v", "caption": "Upper teeth rest on the lower lip" }
+          ],
           "examples": [
             { "text": "Wasser", "translation": "water", "hint": "VAS-ser" },
             { "text": "Vater", "translation": "father", "hint": "FAH-ter" },
@@ -325,7 +348,10 @@
           "type": "SHADOW",
           "text": "Wie viel Uhr ist es?",
           "translation": "What time is it?",
-          "hint": "w = v and v = f: vee feel oor."
+          "hint": "w = v and v = f: vee feel oor.",
+          "mouthShapes": [
+            { "shape": "TEETH_ON_LIP", "label": "w, v", "caption": "Teeth on lower lip for both" }
+          ]
         }
       ]
     },

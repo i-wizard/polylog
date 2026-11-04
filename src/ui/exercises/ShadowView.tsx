@@ -4,6 +4,7 @@ import type { ShadowExercise } from '../../domain/content/types';
 import { AnswerResult } from '../../domain/grading/answerChecker';
 import { AudioRecorder, isRecordingSupported } from '../../services/speech/audioRecorder';
 import { Logger } from '../../utils/logger';
+import { MouthShapeGuides } from '../components/MouthShapeGuides';
 import { Speakable } from '../components/Speakable';
 import { useSpeaker } from '../hooks/useSpeaker';
 import { CheckButton } from './CheckButton';
@@ -74,6 +75,7 @@ export function ShadowView({ exercise, isLocked, onSubmit }: ExerciseViewProps<S
         </div>
         <p className="exercise-translation">{exercise.translation}</p>
         {exercise.hint && <p className="exercise-hint">{exercise.hint}</p>}
+        {exercise.mouthShapes && exercise.mouthShapes.length > 0 && <MouthShapeGuides guides={exercise.mouthShapes} />}
 
         {canRecord ? (
           <div className="shadow-controls">

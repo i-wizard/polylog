@@ -19,6 +19,9 @@
   --gender-m: #1d4ed8;
   --gender-f: #b91c1c;
   --gender-n: #15803d;
+  --lip: #d47a7f;
+  --mouth-inside: #3d1418;
+  --teeth: #faf7f2;
 
   --radius: 14px;
   --radius-small: 10px;
@@ -52,6 +55,9 @@
     --gender-m: #60a5fa;
     --gender-f: #f87171;
     --gender-n: #4ade80;
+    --lip: #c9666d;
+    --mouth-inside: #2a0c0f;
+    --teeth: #ece7df;
   }
 }
 
@@ -724,6 +730,102 @@ p {
   font-style: italic;
   color: var(--text-muted);
   padding-left: 4px;
+}
+
+/* ---------- Mouth shape drawings ---------- */
+.mouth-guides {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.mouth-guide {
+  margin: 0;
+  padding: 10px;
+  border-radius: var(--radius-small);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+
+.mouth-guide figcaption {
+  display: flex;
+  flex-direction: column;
+}
+
+.mouth-diagram {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+}
+
+.mouth-diagram__lips {
+  fill: var(--lip);
+}
+
+.mouth-diagram__inside {
+  fill: var(--mouth-inside);
+}
+
+.mouth-diagram__teeth {
+  fill: var(--teeth);
+}
+
+.mouth-guide__label {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.mouth-guide__caption {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.3;
+}
+
+/* ---------- Lesson notes overlay ---------- */
+.lesson-notes {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  background: var(--bg);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.lesson-notes__inner {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 0 16px calc(16px + var(--safe-bottom));
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lesson-notes__header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* The safe-area padding lives here so the sticky header also covers the notch while scrolling. */
+  padding: calc(8px + var(--safe-top)) 0 8px;
+  background: var(--bg);
+}
+
+.lesson-notes__title {
+  font-size: 1.25rem;
+}
+
+.lesson-notes__card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
 }
 
 /* ---------- Listening & shadowing ---------- */

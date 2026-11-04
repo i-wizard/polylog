@@ -1,5 +1,15 @@
 import type { LanguagePack } from '../../languages/types';
-import { ExerciseType, PartOfSpeech, type Course, type Exercise, type Unit } from './types';
+import {
+  ExerciseType,
+  MouthShape,
+  PartOfSpeech,
+  type Course,
+  type Exercise,
+  type MouthShapeGuide,
+  type Unit,
+} from './types';
+
+const MOUTH_SHAPES: string[] = Object.values(MouthShape);
 
 /**
  * Checks a course for authoring mistakes the type system can't catch.
@@ -139,9 +149,20 @@ function validateExercise({ exercise, targetPack }: { exercise: Exercise; target
       break;
     }
     case ExerciseType.TEACH:
-    case ExerciseType.LISTEN_TYPE:
     case ExerciseType.SHADOW:
+      problems.push(...validateMouthShapes(exercise.mouthShapes ?? []));
       break;
+    case ExerciseType.LISTEN_TYPE:
+      break;
+  }
+  return problems;
+}
+
+/** Content is plain JSON, so a misspelt shape would only show up as a blank drawing. */
+function validateMouthShapes(guides: MouthShapeGuide[]): string[] {
+  const problems: string[] = [];
+  for (const guide of guides) {
+    if (!MOUTH_SHAPES.includes(guide.shape)) problems.push(`unknown mouth shape "${guide.shape}"`);
   }
   return problems;
 }

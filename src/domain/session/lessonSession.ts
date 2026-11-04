@@ -1,4 +1,4 @@
-import type { Exercise, Lesson } from '../content/types';
+import { ExerciseType, type Exercise, type Lesson, type TeachExercise } from '../content/types';
 
 /**
  * Immutable state of one run through a lesson.
@@ -81,6 +81,21 @@ export function recordAnswer({ session, isCorrect }: { session: LessonSession; i
     missedIds,
     attempts,
   };
+}
+
+/**
+ * Teaching cards the learner has already read in this session, in the order
+ * they were shown. Lets the learner look back at them while answering questions.
+ */
+export function seenTeachExercises(session: LessonSession): TeachExercise[] {
+  const seen: TeachExercise[] = [];
+  for (const exerciseId of session.completedIds) {
+    const exercise = session.exercisesById[exerciseId];
+    if (exercise.type === ExerciseType.TEACH) {
+      seen.push(exercise);
+    }
+  }
+  return seen;
 }
 
 export function isSessionFinished(session: LessonSession): boolean {

@@ -5,10 +5,11 @@ import {
   currentExercise,
   isSessionFinished,
   recordAnswer,
+  seenTeachExercises,
   sessionProgress,
   summarizeSession,
 } from '../../src/domain/session/lessonSession';
-import { buildLesson } from '../fixtures';
+import { buildLesson, buildTeachExercise, buildTranslateExercise } from '../fixtures';
 
 describe('lessonSession', () => {
   it('shows exercises in authored order', () => {
@@ -48,5 +49,23 @@ describe('lessonSession', () => {
       session = recordAnswer({ session, isCorrect: true });
     }
     expect(summarizeSession(session)).toEqual({ totalExercises: 3, firstTryCorrect: 2, mistakes: 1, isPerfect: false });
+  });
+
+  it('lists only the teaching cards already completed, in the order they were read', () => {
+    const lesson = buildLesson({
+      exercises: [
+        buildTeachExercise('t1'),
+        buildTranslateExercise('q1'),
+        buildTeachExercise('t2'),
+        buildTeachExercise('t3'),
+      ],
+    });
+    let session = createLessonSession(lesson);
+    expect(seenTeachExercises(session)).toEqual([]);
+
+    session = recordAnswer({ session, isCorrect: true });
+    session = recordAnswer({ session, isCorrect: true });
+    session = recordAnswer({ session, isCorrect: true });
+    expect(seenTeachExercises(session).map((exercise) => exercise.id)).toEqual(['t1', 't2']);
   });
 });

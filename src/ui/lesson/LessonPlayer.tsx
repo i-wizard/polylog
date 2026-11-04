@@ -1,4 +1,4 @@
-import { X } from 'lucide-react';
+import { BookOpen, X } from 'lucide-react';
 import { useState } from 'react';
 import type { Lesson } from '../../domain/content/types';
 import { AnswerResult } from '../../domain/grading/answerChecker';
@@ -9,6 +9,7 @@ import {
   currentExercise,
   isSessionFinished,
   recordAnswer,
+  seenTeachExercises,
   sessionProgress,
   summarizeSession,
   type LessonResult,
@@ -18,6 +19,7 @@ import { FeedbackSheet } from '../components/FeedbackSheet';
 import { ProgressBar } from '../components/ProgressBar';
 import { ExerciseView, SELF_COMPLETING_TYPES } from '../exercises/ExerciseView';
 import { useSpeaker } from '../hooks/useSpeaker';
+import { LessonNotesSheet } from './LessonNotesSheet';
 
 /**
  * Runs a lesson: shows exercises one at a time, gives feedback, re-queues
@@ -36,7 +38,9 @@ export function LessonPlayer({
   const speakTarget = useSpeaker();
   const [session, setSession] = useState(() => createLessonSession(lesson));
   const [outcome, setOutcome] = useState<AnswerOutcome | null>(null);
+  const [isNotesOpen, setIsNotesOpen] = useState(false);
   const exercise = currentExercise(session);
+  const notes = seenTeachExercises(session);
 
   const advance = (isCorrect: boolean) => {
     const nextSession = recordAnswer({ session, isCorrect });
@@ -73,6 +77,11 @@ export function LessonPlayer({
           <X size={24} />
         </button>
         <ProgressBar value={sessionProgress(session)} label="Lesson progress" />
+        {notes.length > 0 && (
+          <button type="button" className="icon-button" aria-label="Show lesson notes" onClick={() => setIsNotesOpen(true)}>
+            <BookOpen size={22} />
+          </button>
+        )}
       </header>
       <main className="lesson-player__main">
         {exercise && (
@@ -85,6 +94,7 @@ export function LessonPlayer({
         )}
       </main>
       {outcome && <FeedbackSheet outcome={outcome} onContinue={() => advance(outcome.result !== AnswerResult.WRONG)} />}
+      {isNotesOpen && <LessonNotesSheet notes={notes} onClose={() => setIsNotesOpen(false)} />}
     </div>
   );
 }
