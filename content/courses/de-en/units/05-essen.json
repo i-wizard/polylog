@@ -1,0 +1,740 @@
+{
+  "id": "05-essen",
+  "level": "A1",
+  "title": "Food & drink",
+  "description": "Order in a café with möchten, use haben, and meet the accusative.",
+  "icon": "☕",
+  "vocab": [
+    { "id": "kaffee", "text": "Kaffee", "translations": ["coffee"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Kaffees", "pronunciation": "KA-fay", "example": { "text": "Ein Kaffee, bitte.", "translation": "A coffee, please." } },
+    { "id": "tee", "text": "Tee", "translations": ["tea"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Tees", "pronunciation": "tay", "example": { "text": "Ich möchte einen Tee.", "translation": "I'd like a tea." } },
+    { "id": "wasser", "text": "Wasser", "translations": ["water"], "partOfSpeech": "NOUN", "gender": "n", "pronunciation": "VAS-ser", "example": { "text": "Ein Glas Wasser, bitte.", "translation": "A glass of water, please." } },
+    { "id": "milch", "text": "Milch", "translations": ["milk"], "partOfSpeech": "NOUN", "gender": "f", "pronunciation": "milkh (soft ch)", "example": { "text": "Kaffee mit Milch, bitte.", "translation": "Coffee with milk, please." } },
+    { "id": "saft", "text": "Saft", "translations": ["juice"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Säfte", "pronunciation": "zaft", "example": { "text": "Ich trinke einen Saft.", "translation": "I'm drinking a juice." } },
+    { "id": "bier", "text": "Bier", "translations": ["beer"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Biere", "pronunciation": "beer", "example": { "text": "Ein Bier, bitte.", "translation": "A beer, please." } },
+    { "id": "wein", "text": "Wein", "translations": ["wine"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Weine", "pronunciation": "vine", "example": { "text": "Ich möchte einen Wein.", "translation": "I'd like a wine." } },
+    { "id": "moechten", "text": "möchten", "translations": ["would like"], "partOfSpeech": "VERB", "pronunciation": "MÖKH-ten (soft ch)", "example": { "text": "Was möchtest du?", "translation": "What would you like?" } },
+    { "id": "trinken", "text": "trinken", "translations": ["to drink"], "partOfSpeech": "VERB", "pronunciation": "TRING-ken", "example": { "text": "Was möchten Sie trinken?", "translation": "What would you like to drink?" } },
+    { "id": "glas", "text": "Glas", "translations": ["glass"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Gläser", "pronunciation": "glahs", "example": { "text": "Ein Glas Wein, bitte.", "translation": "A glass of wine, please." } },
+    { "id": "tasse", "text": "Tasse", "translations": ["cup"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Tassen", "pronunciation": "TAS-se", "example": { "text": "Eine Tasse Tee, bitte.", "translation": "A cup of tea, please." } },
+    { "id": "essen", "text": "essen", "translations": ["to eat"], "partOfSpeech": "VERB", "pronunciation": "ES-sen", "example": { "text": "Was isst du?", "translation": "What are you eating?" } },
+    { "id": "brot", "text": "Brot", "translations": ["bread"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Brote", "pronunciation": "broht", "example": { "text": "Das Brot ist lecker.", "translation": "The bread is tasty." } },
+    { "id": "broetchen", "text": "Brötchen", "translations": ["bread roll"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Brötchen", "pronunciation": "BRÖT-khen (soft ch)", "example": { "text": "Ich esse ein Brötchen.", "translation": "I'm eating a bread roll." } },
+    { "id": "kaese", "text": "Käse", "translations": ["cheese"], "partOfSpeech": "NOUN", "gender": "m", "pronunciation": "KAY-ze", "example": { "text": "Ein Brötchen mit Käse, bitte.", "translation": "A bread roll with cheese, please." } },
+    { "id": "apfel", "text": "Apfel", "translations": ["apple"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Äpfel", "pronunciation": "AP-fel", "example": { "text": "Ich esse einen Apfel.", "translation": "I'm eating an apple." } },
+    { "id": "ei", "text": "Ei", "translations": ["egg"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Eier", "pronunciation": "eye", "example": { "text": "Ich möchte ein Ei.", "translation": "I'd like an egg." } },
+    { "id": "salat", "text": "Salat", "translations": ["salad", "lettuce"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Salate", "pronunciation": "za-LAHT", "example": { "text": "Ich möchte einen Salat.", "translation": "I'd like a salad." } },
+    { "id": "haben", "text": "haben", "translations": ["to have"], "partOfSpeech": "VERB", "pronunciation": "HAH-ben", "example": { "text": "Ich habe einen Bruder.", "translation": "I have a brother." } },
+    { "id": "hunger", "text": "Hunger", "translations": ["hunger"], "partOfSpeech": "NOUN", "gender": "m", "pronunciation": "HOONG-er", "example": { "text": "Ich habe Hunger.", "translation": "I'm hungry." } },
+    { "id": "durst", "text": "Durst", "translations": ["thirst"], "partOfSpeech": "NOUN", "gender": "m", "pronunciation": "doorst", "example": { "text": "Hast du Durst?", "translation": "Are you thirsty?" } },
+    { "id": "rechnung", "text": "Rechnung", "translations": ["bill (in a restaurant)", "check", "invoice"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Rechnungen", "pronunciation": "REKH-noong", "example": { "text": "Die Rechnung, bitte!", "translation": "The bill, please!" } },
+    { "id": "zahlen", "text": "zahlen", "translations": ["to pay"], "partOfSpeech": "VERB", "pronunciation": "TSAH-len", "example": { "text": "Ich möchte zahlen.", "translation": "I'd like to pay." } },
+    { "id": "euro", "text": "Euro", "translations": ["euro"], "partOfSpeech": "NOUN", "gender": "m", "pronunciation": "OY-roh", "example": { "text": "Das macht fünf Euro.", "translation": "That comes to five euros." } },
+    { "id": "lecker", "text": "lecker", "translations": ["tasty", "delicious"], "partOfSpeech": "ADJECTIVE", "pronunciation": "LEK-er", "example": { "text": "Das Brot ist sehr lecker!", "translation": "The bread is very tasty!" } }
+  ],
+  "grammarNotes": [
+    {
+      "id": "essen-ein-eine",
+      "title": "ein and eine: a / an",
+      "body": "**ein** goes before *der* and *das* words, **eine** before *die* words. There is no *a* in the plural: *Äpfel* = apples.",
+      "table": [
+        ["", "der word", "die word", "das word"],
+        ["the", "der Kaffee", "die Milch", "das Wasser"],
+        ["a", "ein Kaffee", "eine Milch", "ein Wasser"]
+      ]
+    },
+    {
+      "id": "essen-accusative",
+      "title": "The accusative: einen",
+      "body": "When a noun is the **object** of a verb (the thing you want, have, eat or drink), it's in the **accusative** case.\n\nOnly **der** words change: *ein* becomes **einen**. *die* and *das* words stay the same.\n\n- *Das ist **ein** Kaffee.* (subject)\n- *Ich möchte **einen** Kaffee.* (object)\n\n*mein, dein, sein* and *ihr* change the same way: *Das ist mein Tee.* → *Ich trinke **meinen** Tee.*",
+      "table": [
+        ["", "der word", "die word", "das word"],
+        ["subject", "ein Tee", "eine Tasse", "ein Bier"],
+        ["object", "einen Tee", "eine Tasse", "ein Bier"]
+      ]
+    },
+    {
+      "id": "essen-moechten-haben",
+      "title": "möchten and haben",
+      "body": "**möchten** (would like) has no *-t* in the *er/sie* form: *sie möchte*. **haben** (to have) drops the *b* in *du hast* and *er hat*.\n\nWith *möchten*, a second verb goes to the **end** of the sentence: *Ich möchte einen Kaffee **trinken**.*",
+      "table": [
+        ["Person", "möchten", "haben"],
+        ["ich", "möchte", "habe"],
+        ["du", "möchtest", "hast"],
+        ["er / sie / es", "möchte", "hat"],
+        ["wir", "möchten", "haben"],
+        ["ihr", "möchtet", "habt"],
+        ["sie / Sie", "möchten", "haben"]
+      ]
+    },
+    {
+      "id": "essen-essen",
+      "title": "essen: e changes to i",
+      "body": "Like *sprechen*, **essen** changes *e* to *i* in the *du* and *er/sie/es* forms. In *du isst*, the *s* of the ending merges into the *ss*.",
+      "table": [
+        ["Person", "essen", "trinken (regular)"],
+        ["ich", "esse", "trinke"],
+        ["du", "isst", "trinkst"],
+        ["er / sie / es", "isst", "trinkt"],
+        ["wir", "essen", "trinken"],
+        ["ihr", "esst", "trinkt"],
+        ["sie / Sie", "essen", "trinken"]
+      ]
+    },
+    {
+      "id": "essen-hunger",
+      "title": "Hungry and thirsty",
+      "body": "German says *I have hunger*, not *I am hungry*:\n\n- **Ich habe Hunger.** I'm hungry.\n- **Ich habe Durst.** I'm thirsty.\n\nNo article is needed here."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "fd1-drinks",
+      "title": "Drinks",
+      "kind": "LEARN",
+      "introduces": ["kaffee", "tee", "wasser", "milch", "saft", "bier", "wein"],
+      "exercises": [
+        {
+          "id": "fd1-e1",
+          "type": "TEACH",
+          "title": "Something to drink",
+          "body": "Learn each drink with its article. Tap to hear them.\n\n*Wasser* starts with a *v* sound, and *Saft* with a *z* sound.",
+          "examples": [
+            { "text": "der Kaffee", "translation": "coffee" },
+            { "text": "der Tee", "translation": "tea" },
+            { "text": "das Wasser", "translation": "water" },
+            { "text": "die Milch", "translation": "milk" },
+            { "text": "der Saft", "translation": "juice" },
+            { "text": "das Bier", "translation": "beer" },
+            { "text": "der Wein", "translation": "wine" }
+          ]
+        },
+        {
+          "id": "fd1-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Kaffee", "base": "coffee" },
+            { "target": "der Tee", "base": "tea" },
+            { "target": "das Wasser", "base": "water" },
+            { "target": "die Milch", "base": "milk" },
+            { "target": "der Saft", "base": "juice" }
+          ]
+        },
+        {
+          "id": "fd1-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "der, die or das?",
+          "prompt": "Wasser",
+          "promptLanguage": "TARGET",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "fd1-e4",
+          "type": "LISTEN_CHOOSE",
+          "options": ["Bier", "vier"],
+          "answerIndex": 0
+        },
+        {
+          "id": "fd1-e5",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "der Saft",
+          "promptLanguage": "TARGET",
+          "options": ["juice", "tea", "milk"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "fd1-e6",
+          "type": "TEACH",
+          "title": "ein and eine",
+          "body": "**a / an** has two forms:\n\n- **ein** before *der* and *das* words: *ein Kaffee, ein Bier*\n- **eine** before *die* words: *eine Milch*\n\nAdd **bitte** and you can already order!",
+          "examples": [
+            { "text": "Ein Kaffee, bitte.", "translation": "A coffee, please." },
+            { "text": "Ein Wasser, bitte.", "translation": "A water, please." },
+            { "text": "Ein Bier und ein Wein, bitte.", "translation": "A beer and a wine, please." }
+          ]
+        },
+        {
+          "id": "fd1-e7",
+          "type": "CLOZE",
+          "before": "",
+          "after": "Tee, bitte.",
+          "accepted": ["Ein"],
+          "translation": "A tea, please.",
+          "hint": "a, before a der word"
+        },
+        {
+          "id": "fd1-e8",
+          "type": "WORD_ORDER",
+          "translation": "A coffee and a water, please.",
+          "answer": "Ein Kaffee und ein Wasser, bitte.",
+          "distractors": ["eine", "danke"]
+        },
+        {
+          "id": "fd1-e9",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "das Bier", "base": "beer" },
+            { "target": "der Wein", "base": "wine" },
+            { "target": "ein Saft", "base": "a juice" },
+            { "target": "eine Milch", "base": "a milk" }
+          ]
+        },
+        {
+          "id": "fd1-e10",
+          "type": "TRANSLATE",
+          "source": "A tea, please.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ein Tee, bitte.", "Einen Tee, bitte."]
+        },
+        {
+          "id": "fd1-e11",
+          "type": "TRANSLATE",
+          "source": "Ein Bier, bitte.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["A beer, please.", "One beer, please."]
+        },
+        {
+          "id": "fd1-e12",
+          "type": "LISTEN_TYPE",
+          "text": "Ein Wasser, bitte.",
+          "translation": "A water, please."
+        },
+        {
+          "id": "fd1-e13",
+          "type": "SHADOW",
+          "text": "Ein Kaffee und ein Tee, bitte.",
+          "translation": "A coffee and a tea, please.",
+          "hint": "Tee: a long, pure e, like tay without the glide."
+        }
+      ]
+    },
+    {
+      "id": "fd2-would-like",
+      "title": "I'd like…",
+      "kind": "LEARN",
+      "introduces": ["moechten", "trinken", "glas", "tasse"],
+      "exercises": [
+        {
+          "id": "fd2-e1",
+          "type": "TEACH",
+          "title": "Ich möchte …",
+          "body": "**möchten** = would like. It's the politest way to order:\n\n- ich möchte\n- du möchtest\n- er / sie möchte (no *-t*!)\n- wir / sie / Sie möchten",
+          "mouthShapes": [
+            { "shape": "ROUNDED", "label": "ö", "caption": "möchte: say e, then round your lips" }
+          ],
+          "examples": [
+            { "text": "Ich möchte einen Kaffee.", "translation": "I'd like a coffee." },
+            { "text": "Was möchtest du?", "translation": "What would you like?" },
+            { "text": "Sie möchte ein Wasser.", "translation": "She'd like a water." }
+          ]
+        },
+        {
+          "id": "fd2-e2",
+          "type": "TEACH",
+          "title": "einen: the object form",
+          "body": "Look closely:\n\n- *Das ist **ein** Kaffee.* This is a coffee.\n- *Ich möchte **einen** Kaffee.* I'd like a coffee.\n\nWhen a *der* word is the **object** (the thing you want, have, eat or drink), **ein** becomes **einen**. This object form is called the **accusative**.\n\nOnly *der* words change. *die* and *das* words stay the same: *Ich möchte **eine** Milch. Ich möchte **ein** Wasser.*",
+          "examples": [
+            { "text": "Ich möchte einen Tee.", "translation": "I'd like a tea.", "hint": "der Tee → einen" },
+            { "text": "Ich möchte eine Milch.", "translation": "I'd like a milk.", "hint": "die Milch → eine" },
+            { "text": "Ich möchte ein Bier.", "translation": "I'd like a beer.", "hint": "das Bier → ein" }
+          ]
+        },
+        {
+          "id": "fd2-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Ich möchte ___ Tee.",
+          "prompt": "I'd like a tea.",
+          "promptLanguage": "BASE",
+          "options": ["ein", "einen", "eine"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "fd2-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Ich möchte ___ Wasser.",
+          "prompt": "I'd like a water.",
+          "promptLanguage": "BASE",
+          "options": ["ein", "einen", "eine"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "fd2-e5",
+          "type": "CLOZE",
+          "before": "Ich möchte",
+          "after": "Saft.",
+          "accepted": ["einen"],
+          "translation": "I'd like a juice.",
+          "hint": "a, der word as the object"
+        },
+        {
+          "id": "fd2-e6",
+          "type": "CLOZE",
+          "before": "Was",
+          "after": "du trinken?",
+          "accepted": ["möchtest"],
+          "translation": "What would you like to drink?",
+          "hint": "möchten → du …"
+        },
+        {
+          "id": "fd2-e7",
+          "type": "TEACH",
+          "title": "trinken, Glas and Tasse",
+          "body": "- **trinken** = to drink (regular)\n- **das Glas** = the glass, **die Tasse** = the cup\n\nWith *möchten*, a second verb goes to the **end** of the sentence: *Was möchtest du **trinken**?*\n\nGerman doesn't need *of*: **ein Glas Wasser** = a glass of water.",
+          "examples": [
+            { "text": "Was möchten Sie trinken?", "translation": "What would you like to drink?" },
+            { "text": "Ein Glas Wasser, bitte.", "translation": "A glass of water, please." },
+            { "text": "Ich möchte eine Tasse Tee.", "translation": "I'd like a cup of tea." }
+          ]
+        },
+        {
+          "id": "fd2-e8",
+          "type": "WORD_ORDER",
+          "translation": "What would you like to drink? (informal)",
+          "answer": "Was möchtest du trinken?",
+          "distractors": ["möchte", "trinkst"]
+        },
+        {
+          "id": "fd2-e9",
+          "type": "WORD_ORDER",
+          "translation": "I'd like a glass of water.",
+          "answer": "Ich möchte ein Glas Wasser.",
+          "distractors": ["einen", "von"]
+        },
+        {
+          "id": "fd2-e10",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "ich möchte", "base": "I'd like" },
+            { "target": "trinken", "base": "to drink" },
+            { "target": "das Glas", "base": "the glass" },
+            { "target": "die Tasse", "base": "the cup" }
+          ]
+        },
+        {
+          "id": "fd2-e11",
+          "type": "TRANSLATE",
+          "source": "I'd like a coffee.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich möchte einen Kaffee.", "Ich möchte einen Kaffee, bitte.", "Ich möchte bitte einen Kaffee."]
+        },
+        {
+          "id": "fd2-e12",
+          "type": "TRANSLATE",
+          "source": "Möchtest du ein Bier?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Would you like a beer?", "Do you want a beer?"]
+        },
+        {
+          "id": "fd2-e13",
+          "type": "LISTEN_TYPE",
+          "text": "Ich möchte einen Tee.",
+          "translation": "I'd like a tea."
+        },
+        {
+          "id": "fd2-e14",
+          "type": "SHADOW",
+          "text": "Ich möchte einen Kaffee, bitte.",
+          "translation": "I'd like a coffee, please.",
+          "hint": "möchte: round your lips for the ö, then a soft ch."
+        }
+      ]
+    },
+    {
+      "id": "fd3-food",
+      "title": "Food",
+      "kind": "LEARN",
+      "introduces": ["essen", "brot", "broetchen", "kaese", "apfel", "ei", "salat"],
+      "exercises": [
+        {
+          "id": "fd3-e1",
+          "type": "TEACH",
+          "title": "Something to eat",
+          "body": "**das Brötchen**, the bread roll, is the heart of a German breakfast. It ends in *-chen*, so it's *das*.",
+          "examples": [
+            { "text": "das Brot", "translation": "bread" },
+            { "text": "das Brötchen", "translation": "bread roll" },
+            { "text": "der Käse", "translation": "cheese" },
+            { "text": "der Apfel", "translation": "apple" },
+            { "text": "das Ei", "translation": "egg" },
+            { "text": "der Salat", "translation": "salad" }
+          ]
+        },
+        {
+          "id": "fd3-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "das Brot", "base": "bread" },
+            { "target": "das Brötchen", "base": "bread roll" },
+            { "target": "der Käse", "base": "cheese" },
+            { "target": "der Apfel", "base": "apple" },
+            { "target": "das Ei", "base": "egg" }
+          ]
+        },
+        {
+          "id": "fd3-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "der, die or das? Remember the -chen rule.",
+          "prompt": "Brötchen",
+          "promptLanguage": "TARGET",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "fd3-e4",
+          "type": "TEACH",
+          "title": "essen: to eat",
+          "body": "**essen** changes *e* to *i* in the *du* and *er/sie* forms, just like *sprechen*:\n\n- ich esse\n- du **isst**\n- er / sie **isst**\n- wir / sie / Sie essen\n\nThe object takes the accusative, so *der* words need **einen**: *Ich esse **einen** Apfel.*",
+          "examples": [
+            { "text": "Ich esse einen Apfel.", "translation": "I'm eating an apple." },
+            { "text": "Was isst du?", "translation": "What are you eating?" },
+            { "text": "Er isst ein Brötchen.", "translation": "He's eating a bread roll." }
+          ]
+        },
+        {
+          "id": "fd3-e5",
+          "type": "CLOZE",
+          "before": "Was",
+          "after": "du?",
+          "accepted": ["isst"],
+          "translation": "What are you eating?",
+          "hint": "essen → du … (e changes to i)"
+        },
+        {
+          "id": "fd3-e6",
+          "type": "CLOZE",
+          "before": "Ich esse",
+          "after": "Apfel.",
+          "accepted": ["einen"],
+          "translation": "I'm eating an apple.",
+          "hint": "an, der word as the object"
+        },
+        {
+          "id": "fd3-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Er ___ ein Brötchen.",
+          "prompt": "He's eating a bread roll.",
+          "promptLanguage": "BASE",
+          "options": ["esst", "isst", "esse"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "fd3-e8",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "der Salat",
+          "promptLanguage": "TARGET",
+          "options": ["salad", "cheese", "egg"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "fd3-e9",
+          "type": "WORD_ORDER",
+          "translation": "I'm eating a bread roll.",
+          "answer": "Ich esse ein Brötchen.",
+          "distractors": ["einen", "isst"]
+        },
+        {
+          "id": "fd3-e10",
+          "type": "TRANSLATE",
+          "source": "He's eating an apple.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Er isst einen Apfel."]
+        },
+        {
+          "id": "fd3-e11",
+          "type": "TRANSLATE",
+          "source": "Ich möchte ein Ei und einen Salat.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["I'd like an egg and a salad.", "I would like an egg and a salad."]
+        },
+        {
+          "id": "fd3-e12",
+          "type": "LISTEN_TYPE",
+          "text": "Ich esse einen Apfel.",
+          "translation": "I'm eating an apple."
+        },
+        {
+          "id": "fd3-e13",
+          "type": "SHADOW",
+          "text": "Ich möchte ein Brötchen mit Käse.",
+          "translation": "I'd like a bread roll with cheese.",
+          "hint": "Brötchen: ö, then a soft ch. Käse: KAY-ze."
+        }
+      ]
+    },
+    {
+      "id": "fd4-haben",
+      "title": "haben: to have",
+      "kind": "LEARN",
+      "introduces": ["haben", "hunger", "durst"],
+      "exercises": [
+        {
+          "id": "fd4-e1",
+          "type": "TEACH",
+          "title": "haben",
+          "body": "**haben** = to have. It's irregular in the *du* and *er/sie* forms:\n\n- ich habe\n- du **hast**\n- er / sie **hat**\n- wir haben\n- ihr habt\n- sie / Sie haben\n\nLike *möchten*, its object takes the accusative: *Ich habe **einen** Bruder.*",
+          "examples": [
+            { "text": "Ich habe einen Bruder.", "translation": "I have a brother." },
+            { "text": "Hast du eine Schwester?", "translation": "Do you have a sister?" },
+            { "text": "Sie hat zwei Kinder.", "translation": "She has two children." }
+          ]
+        },
+        {
+          "id": "fd4-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "ich habe", "base": "I have" },
+            { "target": "du hast", "base": "you have" },
+            { "target": "er hat", "base": "he has" },
+            { "target": "wir haben", "base": "we have" },
+            { "target": "ihr habt", "base": "you all have" }
+          ]
+        },
+        {
+          "id": "fd4-e3",
+          "type": "CLOZE",
+          "before": "",
+          "after": "du Kinder?",
+          "accepted": ["Hast"],
+          "translation": "Do you have children?",
+          "hint": "haben → du …, starting a question"
+        },
+        {
+          "id": "fd4-e4",
+          "type": "CLOZE",
+          "before": "Lena",
+          "after": "einen Sohn.",
+          "accepted": ["hat"],
+          "translation": "Lena has a son.",
+          "hint": "haben → sie (she) …"
+        },
+        {
+          "id": "fd4-e5",
+          "type": "TEACH",
+          "title": "Hunger and thirst",
+          "body": "German says *I have hunger*, not *I am hungry*:\n\n- **Ich habe Hunger.** I'm hungry.\n- **Ich habe Durst.** I'm thirsty.\n\nNo article is needed.",
+          "examples": [
+            { "text": "Ich habe Hunger.", "translation": "I'm hungry." },
+            { "text": "Hast du Durst?", "translation": "Are you thirsty?" },
+            { "text": "Wir haben Hunger und Durst.", "translation": "We're hungry and thirsty." }
+          ]
+        },
+        {
+          "id": "fd4-e6",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Ich habe Durst.",
+          "promptLanguage": "TARGET",
+          "options": ["I'm thirsty.", "I'm hungry.", "I have a drink."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "fd4-e7",
+          "type": "WORD_ORDER",
+          "translation": "Are you hungry? (informal)",
+          "answer": "Hast du Hunger?",
+          "distractors": ["Bist", "hat"]
+        },
+        {
+          "id": "fd4-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Ich habe ___ Bruder.",
+          "prompt": "I have a brother.",
+          "promptLanguage": "BASE",
+          "options": ["ein", "einen", "eine"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "fd4-e9",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Ich habe ___ Schwester.",
+          "prompt": "I have a sister.",
+          "promptLanguage": "BASE",
+          "options": ["ein", "einen", "eine"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "fd4-e10",
+          "type": "TRANSLATE",
+          "source": "I'm hungry.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich habe Hunger."]
+        },
+        {
+          "id": "fd4-e11",
+          "type": "TRANSLATE",
+          "source": "We have two children.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Wir haben zwei Kinder."]
+        },
+        {
+          "id": "fd4-e12",
+          "type": "TRANSLATE",
+          "source": "Hat er einen Bruder?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Does he have a brother?", "Has he got a brother?"]
+        },
+        {
+          "id": "fd4-e13",
+          "type": "LISTEN_TYPE",
+          "text": "Ich habe Durst.",
+          "translation": "I'm thirsty."
+        },
+        {
+          "id": "fd4-e14",
+          "type": "SHADOW",
+          "text": "Hast du Hunger? Ja, ich habe Hunger!",
+          "translation": "Are you hungry? Yes, I'm hungry!",
+          "hint": "Hunger: HOONG-er, the g is barely heard."
+        }
+      ]
+    },
+    {
+      "id": "fd5-cafe",
+      "title": "At the café",
+      "kind": "PRACTICE",
+      "introduces": ["rechnung", "zahlen", "euro", "lecker"],
+      "exercises": [
+        {
+          "id": "fd5-e1",
+          "type": "TEACH",
+          "title": "Paying",
+          "body": "- **Die Rechnung, bitte!** The bill, please!\n- **zahlen** = to pay: *Ich möchte zahlen.* or just *Zahlen, bitte!*\n- The waiter says **Das macht … Euro.** That comes to … euros.\n\nPrices: *3,50 €* is **drei Euro fünfzig**. Germans write a comma where English uses a dot.\n\nAnd if you enjoyed it: **Das ist sehr lecker!** That's very tasty!",
+          "examples": [
+            { "text": "Die Rechnung, bitte!", "translation": "The bill, please!" },
+            { "text": "Ich möchte zahlen.", "translation": "I'd like to pay." },
+            { "text": "Das macht acht Euro fünfzig.", "translation": "That comes to €8.50." },
+            { "text": "Das ist sehr lecker!", "translation": "That's very tasty!" }
+          ]
+        },
+        {
+          "id": "fd5-e2",
+          "type": "TEACH",
+          "title": "Im Café",
+          "body": "Two friends order in a café. Read along, and tap each line to hear it.",
+          "examples": [
+            { "text": "Guten Tag! Was möchten Sie?", "translation": "Waiter: Hello! What would you like?" },
+            { "text": "Ich möchte einen Kaffee und ein Brötchen mit Käse, bitte.", "translation": "Anna: I'd like a coffee and a bread roll with cheese, please." },
+            { "text": "Und Sie?", "translation": "Waiter: And you?" },
+            { "text": "Einen Tee und einen Apfelsaft, bitte.", "translation": "Paul: A tea and an apple juice, please." },
+            { "text": "Das Brötchen ist sehr lecker!", "translation": "Anna: The bread roll is very tasty!" },
+            { "text": "Zahlen, bitte!", "translation": "Paul: The bill, please!" },
+            { "text": "Das macht elf Euro zwanzig.", "translation": "Waiter: That comes to €11.20." }
+          ]
+        },
+        {
+          "id": "fd5-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the café: what does Paul order?",
+          "prompt": "Paul",
+          "promptLanguage": "BASE",
+          "options": ["a tea and an apple juice", "a coffee and a bread roll", "a water and a beer"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "fd5-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "How much do they pay?",
+          "prompt": "Das macht elf Euro zwanzig.",
+          "promptLanguage": "TARGET",
+          "options": ["€11.20", "€20.11", "€12.20"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "fd5-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Rechnung", "base": "the bill" },
+            { "target": "zahlen", "base": "to pay" },
+            { "target": "der Euro", "base": "the euro" },
+            { "target": "lecker", "base": "tasty" },
+            { "target": "ich möchte", "base": "I'd like" }
+          ]
+        },
+        {
+          "id": "fd5-e6",
+          "type": "WORD_ORDER",
+          "translation": "The bill, please!",
+          "answer": "Die Rechnung, bitte!",
+          "distractors": ["Der", "danke"]
+        },
+        {
+          "id": "fd5-e7",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which price do you hear?",
+          "options": ["Das macht drei Euro fünfzig.", "Das macht fünf Euro dreißig."],
+          "answerIndex": 0
+        },
+        {
+          "id": "fd5-e8",
+          "type": "CLOZE",
+          "before": "Das ist sehr",
+          "after": "!",
+          "accepted": ["lecker"],
+          "translation": "That's very tasty!",
+          "hint": "tasty"
+        },
+        {
+          "id": "fd5-e9",
+          "type": "TRANSLATE",
+          "source": "I'd like to pay.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich möchte zahlen.", "Ich möchte bezahlen.", "Ich möchte bitte zahlen."]
+        },
+        {
+          "id": "fd5-e10",
+          "type": "TRANSLATE",
+          "source": "I'd like a tea and a bread roll, please.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich möchte einen Tee und ein Brötchen, bitte.", "Ich möchte bitte einen Tee und ein Brötchen."]
+        },
+        {
+          "id": "fd5-e11",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "You're hungry and thirsty. What do you say?",
+          "prompt": "Hungry and thirsty",
+          "promptLanguage": "BASE",
+          "options": ["Ich bin Hunger und Durst.", "Ich habe Hunger und Durst.", "Ich habe hungrig."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "fd5-e12",
+          "type": "TRANSLATE",
+          "source": "Das macht sieben Euro.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["That comes to seven euros.", "That's seven euros.", "That is seven euros.", "That makes seven euros.", "That comes to 7 euros.", "That's 7 euros."]
+        },
+        {
+          "id": "fd5-e13",
+          "type": "LISTEN_TYPE",
+          "text": "Die Rechnung, bitte!",
+          "translation": "The bill, please!"
+        },
+        {
+          "id": "fd5-e14",
+          "type": "SHADOW",
+          "text": "Ich möchte einen Kaffee und ein Brötchen, bitte.",
+          "translation": "I'd like a coffee and a bread roll, please."
+        },
+        {
+          "id": "fd5-e15",
+          "type": "SHADOW",
+          "text": "Zahlen, bitte!",
+          "translation": "The bill, please!",
+          "hint": "zahlen: TSAH-len, the z sounds like ts."
+        }
+      ]
+    }
+  ]
+}

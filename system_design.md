@@ -513,7 +513,7 @@ These mirror the user's global guidelines, adapted to TypeScript:
 - [x] Device TTS with slow mode; shadowing recorder
 - [x] Export/import progress
 - [x] Content: Unit 0 (Sounds of German) and Unit 1 (Hallo!)
-- [ ] Content: Units 2–5 (Numbers, Where are you from?, Family, Food & drink)
+- [x] Content: Units 2–5 (Numbers, Where are you from?, Family, Food & drink)
 
 ### Phase 2 — A1–A2 depth
 

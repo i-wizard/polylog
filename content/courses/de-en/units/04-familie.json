@@ -1,0 +1,699 @@
+{
+  "id": "04-familie",
+  "level": "A1",
+  "title": "Family",
+  "description": "Introduce your family with der, die, das, my and your, and your first plurals.",
+  "icon": "👨‍👩‍👧",
+  "vocab": [
+    { "id": "familie", "text": "Familie", "translations": ["family"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Familien", "pronunciation": "fa-MEE-li-e", "example": { "text": "Das ist meine Familie.", "translation": "This is my family." } },
+    { "id": "mutter", "text": "Mutter", "translations": ["mother"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Mütter", "pronunciation": "MOOT-ter", "example": { "text": "Meine Mutter heißt Anna.", "translation": "My mother is called Anna." } },
+    { "id": "vater", "text": "Vater", "translations": ["father"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Väter", "pronunciation": "FAH-ter", "example": { "text": "Das ist mein Vater.", "translation": "This is my father." } },
+    { "id": "bruder", "text": "Bruder", "translations": ["brother"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Brüder", "pronunciation": "BROO-der", "example": { "text": "Wie heißt dein Bruder?", "translation": "What's your brother's name?" } },
+    { "id": "schwester", "text": "Schwester", "translations": ["sister"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Schwestern", "pronunciation": "SHVES-ter", "example": { "text": "Meine Schwester wohnt in Wien.", "translation": "My sister lives in Vienna." } },
+    { "id": "kind", "text": "Kind", "translations": ["child"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Kinder", "pronunciation": "kint", "example": { "text": "Das sind meine Kinder.", "translation": "These are my children." } },
+    { "id": "sohn", "text": "Sohn", "translations": ["son"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Söhne", "pronunciation": "zohn", "example": { "text": "Das ist mein Sohn.", "translation": "This is my son." } },
+    { "id": "tochter", "text": "Tochter", "translations": ["daughter"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Töchter", "pronunciation": "TOKH-ter", "example": { "text": "Meine Tochter heißt Mia.", "translation": "My daughter is called Mia." } },
+    { "id": "mann", "text": "Mann", "translations": ["man", "husband"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Männer", "pronunciation": "man", "example": { "text": "Das ist mein Mann.", "translation": "This is my husband." } },
+    { "id": "dein", "text": "dein", "translations": ["your (informal)"], "partOfSpeech": "PRONOUN", "pronunciation": "dine", "example": { "text": "Wie heißt deine Mutter?", "translation": "What's your mother's name?" } },
+    { "id": "ihr-formal-possessive", "text": "Ihr", "translations": ["your (formal)"], "partOfSpeech": "PRONOUN", "pronunciation": "eer", "example": { "text": "Ist das Ihr Sohn, Frau Weber?", "translation": "Is that your son, Ms Weber?" } },
+    { "id": "sein-possessive", "text": "sein", "translations": ["his"], "partOfSpeech": "PRONOUN", "pronunciation": "zine", "example": { "text": "Tom und seine Schwester", "translation": "Tom and his sister" } },
+    { "id": "ihr-possessive", "text": "ihr", "translations": ["her"], "partOfSpeech": "PRONOUN", "pronunciation": "eer", "example": { "text": "Lena und ihr Bruder", "translation": "Lena and her brother" } },
+    { "id": "oma", "text": "Oma", "translations": ["grandma", "grandmother"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Omas", "pronunciation": "OH-ma", "example": { "text": "Meine Oma wohnt in Wien.", "translation": "My grandma lives in Vienna." } },
+    { "id": "opa", "text": "Opa", "translations": ["grandpa", "grandfather"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Opas", "pronunciation": "OH-pa", "example": { "text": "Mein Opa ist achtzig.", "translation": "My grandpa is eighty." } },
+    { "id": "onkel", "text": "Onkel", "translations": ["uncle"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Onkel", "pronunciation": "ON-kel", "example": { "text": "Das ist mein Onkel.", "translation": "That's my uncle." } },
+    { "id": "tante", "text": "Tante", "translations": ["aunt"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Tanten", "pronunciation": "TAN-te", "example": { "text": "Meine Tante kommt aus Österreich.", "translation": "My aunt comes from Austria." } },
+    { "id": "verheiratet", "text": "verheiratet", "translations": ["married"], "partOfSpeech": "ADJECTIVE", "pronunciation": "fer-HY-ra-tet", "example": { "text": "Bist du verheiratet?", "translation": "Are you married?" } },
+    { "id": "ledig", "text": "ledig", "translations": ["single (not married)"], "partOfSpeech": "ADJECTIVE", "pronunciation": "LAY-dikh", "example": { "text": "Mein Bruder ist ledig.", "translation": "My brother is single." } }
+  ],
+  "grammarNotes": [
+    {
+      "id": "familie-articles",
+      "title": "der, die, das",
+      "body": "Every German noun has a gender, shown by its article:\n\n- **der**: masculine (the app shows these in blue)\n- **die**: feminine (red)\n- **das**: neuter (green)\n\nAlways learn a noun **with** its article: not *Kind*, but *das Kind*.\n\nSome patterns help:\n\n- Male people are usually *der*: der Vater, der Sohn\n- Female people are usually *die*: die Mutter, die Tochter\n- Words ending in **-chen** are always *das*: **das Mädchen** (the girl)\n\nIn the plural, the article is always **die**."
+    },
+    {
+      "id": "familie-possessives",
+      "title": "my, your, his, her",
+      "body": "Possessives add **-e** before a *die* word and before plurals. Before *der* and *das* words they have no ending.\n\nThe ending depends on the noun that **follows**, not on the owner: *Tom und seine Schwester*, *Lena und ihr Bruder*.",
+      "table": [
+        ["", "der / das word", "die word / plural"],
+        ["my", "mein Vater", "meine Mutter"],
+        ["your (informal)", "dein Bruder", "deine Schwester"],
+        ["your (formal)", "Ihr Sohn", "Ihre Tochter"],
+        ["his", "sein Kind", "seine Kinder"],
+        ["her", "ihr Mann", "ihre Eltern"]
+      ]
+    },
+    {
+      "id": "familie-plurals",
+      "title": "Plurals",
+      "body": "German has several plural patterns, so learn each noun's plural along with it. Many plurals also add an umlaut.",
+      "table": [
+        ["Pattern", "Singular", "Plural"],
+        ["-e / ¨e", "der Sohn", "die Söhne"],
+        ["-er / ¨er", "das Kind", "die Kinder"],
+        ["-n / -en", "die Schwester", "die Schwestern"],
+        ["-s", "die Oma", "die Omas"],
+        ["no ending", "der Onkel", "die Onkel"],
+        ["umlaut only", "der Vater", "die Väter"]
+      ]
+    },
+    {
+      "id": "familie-das-ist",
+      "title": "Das ist … / Das sind …",
+      "body": "Use **Das ist** for one person or thing and **Das sind** for more than one:\n\n- *Das ist mein Bruder.* This is my brother.\n- *Das sind meine Eltern.* These are my parents.\n\n**die Eltern** (parents) only exists in the plural."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "f1-family",
+      "title": "My family",
+      "kind": "LEARN",
+      "introduces": ["familie", "mutter", "vater", "bruder", "schwester"],
+      "exercises": [
+        {
+          "id": "f1-e1",
+          "type": "TEACH",
+          "title": "die Familie",
+          "body": "Every German noun has a gender, shown by its article:\n\n- **der** for masculine words (blue in this app)\n- **die** for feminine words (red)\n- **das** for neuter words (green)\n\nAlways learn a noun together with its article. **die Eltern** (the parents) only exists in the plural.",
+          "examples": [
+            { "text": "der Vater", "translation": "the father" },
+            { "text": "die Mutter", "translation": "the mother" },
+            { "text": "der Bruder", "translation": "the brother" },
+            { "text": "die Schwester", "translation": "the sister" },
+            { "text": "die Eltern", "translation": "the parents" }
+          ]
+        },
+        {
+          "id": "f1-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Vater", "base": "the father" },
+            { "target": "die Mutter", "base": "the mother" },
+            { "target": "der Bruder", "base": "the brother" },
+            { "target": "die Schwester", "base": "the sister" },
+            { "target": "die Familie", "base": "the family" }
+          ]
+        },
+        {
+          "id": "f1-e3",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "die Schwester",
+          "promptLanguage": "TARGET",
+          "options": ["the sister", "the mother", "the brother"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "f1-e4",
+          "type": "TEACH",
+          "title": "mein or meine?",
+          "body": "**my** has two forms:\n\n- **mein** before *der* (and *das*) words: *mein Vater*\n- **meine** before *die* words: *meine Mutter*\n\nYou saw this in Unit 1 with *mein Freund* and *meine Freundin*.",
+          "examples": [
+            { "text": "Das ist mein Vater.", "translation": "This is my father." },
+            { "text": "Das ist meine Mutter.", "translation": "This is my mother." },
+            { "text": "Das ist mein Bruder.", "translation": "This is my brother." }
+          ]
+        },
+        {
+          "id": "f1-e5",
+          "type": "CLOZE",
+          "before": "Das ist",
+          "after": "Mutter.",
+          "accepted": ["meine"],
+          "translation": "This is my mother.",
+          "hint": "my, before a die word"
+        },
+        {
+          "id": "f1-e6",
+          "type": "CLOZE",
+          "before": "Das ist",
+          "after": "Bruder.",
+          "accepted": ["mein"],
+          "translation": "This is my brother.",
+          "hint": "my, before a der word"
+        },
+        {
+          "id": "f1-e7",
+          "type": "WORD_ORDER",
+          "translation": "This is my sister.",
+          "answer": "Das ist meine Schwester.",
+          "distractors": ["mein", "Bruder"]
+        },
+        {
+          "id": "f1-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "der, die or das?",
+          "prompt": "Vater",
+          "promptLanguage": "TARGET",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "f1-e9",
+          "type": "TRANSLATE",
+          "source": "This is my father.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Das ist mein Vater."]
+        },
+        {
+          "id": "f1-e10",
+          "type": "TRANSLATE",
+          "source": "Meine Mutter heißt Anna.",
+          "sourceLanguage": "TARGET",
+          "accepted": [
+            "My mother is called Anna.",
+            "My mother's name is Anna.",
+            "My mum is called Anna.",
+            "My mum's name is Anna.",
+            "My mom is called Anna.",
+            "My mom's name is Anna."
+          ]
+        },
+        {
+          "id": "f1-e11",
+          "type": "LISTEN_TYPE",
+          "text": "Das ist meine Familie.",
+          "translation": "This is my family."
+        },
+        {
+          "id": "f1-e12",
+          "type": "SHADOW",
+          "text": "Das ist meine Mutter, und das ist mein Vater.",
+          "translation": "This is my mother, and this is my father.",
+          "hint": "Mutter: a short u, MOOT-ter. Vater: the V sounds like f."
+        }
+      ]
+    },
+    {
+      "id": "f2-genders",
+      "title": "der, die, das",
+      "kind": "LEARN",
+      "introduces": ["kind", "sohn", "tochter", "mann"],
+      "exercises": [
+        {
+          "id": "f2-e1",
+          "type": "TEACH",
+          "title": "Three genders",
+          "body": "Gender is a grammar label, not always about male and female. Some patterns help:\n\n- Male people are usually **der**: *der Sohn*\n- Female people are usually **die**: *die Tochter*\n- **das Kind** (the child) is neuter, for boys and girls alike\n- Words ending in **-chen** are always **das**, even **das Mädchen** (the girl)!",
+          "examples": [
+            { "text": "der Mann", "translation": "the man" },
+            { "text": "der Sohn", "translation": "the son" },
+            { "text": "die Tochter", "translation": "the daughter" },
+            { "text": "das Kind", "translation": "the child" },
+            { "text": "das Mädchen", "translation": "the girl", "hint": "-chen words are always das" }
+          ]
+        },
+        {
+          "id": "f2-e2",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "der, die or das?",
+          "prompt": "Kind",
+          "promptLanguage": "TARGET",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "f2-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "der, die or das?",
+          "prompt": "Tochter",
+          "promptLanguage": "TARGET",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "f2-e4",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Mann", "base": "the man" },
+            { "target": "der Sohn", "base": "the son" },
+            { "target": "die Tochter", "base": "the daughter" },
+            { "target": "das Kind", "base": "the child" },
+            { "target": "die Frau", "base": "the woman" }
+          ]
+        },
+        {
+          "id": "f2-e5",
+          "type": "TEACH",
+          "title": "Mann and Frau",
+          "body": "- **der Mann** = the man, and also *husband*\n- **die Frau** = the woman, and also *wife*\n\nSo **mein Mann** is *my husband* and **meine Frau** is *my wife*.",
+          "examples": [
+            { "text": "Das ist mein Mann.", "translation": "This is my husband." },
+            { "text": "Das ist meine Frau.", "translation": "This is my wife." }
+          ]
+        },
+        {
+          "id": "f2-e6",
+          "type": "CLOZE",
+          "before": "Das ist",
+          "after": "Kind.",
+          "accepted": ["mein"],
+          "translation": "This is my child.",
+          "hint": "my, before a das word"
+        },
+        {
+          "id": "f2-e7",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "meine Frau",
+          "promptLanguage": "TARGET",
+          "options": ["my wife", "my mother", "my sister"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "f2-e8",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Long or short o?",
+          "options": ["Sohn", "Sonne"],
+          "answerIndex": 0
+        },
+        {
+          "id": "f2-e9",
+          "type": "WORD_ORDER",
+          "translation": "This is my husband.",
+          "answer": "Das ist mein Mann.",
+          "distractors": ["meine", "Frau"]
+        },
+        {
+          "id": "f2-e10",
+          "type": "TRANSLATE",
+          "source": "the daughter",
+          "sourceLanguage": "BASE",
+          "accepted": ["die Tochter"]
+        },
+        {
+          "id": "f2-e11",
+          "type": "TRANSLATE",
+          "source": "the child",
+          "sourceLanguage": "BASE",
+          "accepted": ["das Kind"]
+        },
+        {
+          "id": "f2-e12",
+          "type": "LISTEN_TYPE",
+          "text": "Das ist mein Sohn.",
+          "translation": "This is my son."
+        },
+        {
+          "id": "f2-e13",
+          "type": "SHADOW",
+          "text": "Das ist meine Tochter. Sie heißt Mia.",
+          "translation": "This is my daughter. She's called Mia.",
+          "hint": "Tochter: back-of-throat ch after o."
+        }
+      ]
+    },
+    {
+      "id": "f3-your-his-her",
+      "title": "your, his, her",
+      "kind": "LEARN",
+      "introduces": ["dein", "ihr-formal-possessive", "sein-possessive", "ihr-possessive"],
+      "exercises": [
+        {
+          "id": "f3-e1",
+          "type": "TEACH",
+          "title": "dein and Ihr: your",
+          "body": "- **dein** = your (informal), same pattern as *mein*: *dein Vater, deine Mutter*\n- **Ihr** = your (formal), always with a capital I: *Ihr Sohn, Ihre Tochter*",
+          "examples": [
+            { "text": "Wie heißt dein Bruder?", "translation": "What's your brother's name?" },
+            { "text": "Wie heißt deine Schwester?", "translation": "What's your sister's name?" },
+            { "text": "Ist das Ihr Sohn, Frau Weber?", "translation": "Is that your son, Ms Weber?" }
+          ]
+        },
+        {
+          "id": "f3-e2",
+          "type": "CLOZE",
+          "before": "Wie heißt",
+          "after": "Vater?",
+          "accepted": ["dein"],
+          "translation": "What's your father's name?",
+          "hint": "your (informal), before a der word"
+        },
+        {
+          "id": "f3-e3",
+          "type": "CLOZE",
+          "before": "Wie heißt",
+          "after": "Mutter?",
+          "accepted": ["deine"],
+          "translation": "What's your mother's name?",
+          "hint": "your (informal), before a die word"
+        },
+        {
+          "id": "f3-e4",
+          "type": "TEACH",
+          "title": "sein and ihr: his and her",
+          "body": "- **sein** = his: *sein Bruder, seine Schwester*\n- **ihr** = her: *ihr Bruder, ihre Schwester*\n\nThe ending depends on the noun that **follows**, not on the owner. So Tom's sister is *seine Schwester*, with *-e* because *Schwester* is a *die* word.\n\nYes, *sein* also means *to be*, and *ihr* also means *you all*. The sentence makes it clear.",
+          "examples": [
+            { "text": "Tom und seine Schwester", "translation": "Tom and his sister" },
+            { "text": "Lena und ihr Bruder", "translation": "Lena and her brother" },
+            { "text": "Lena und ihre Mutter", "translation": "Lena and her mother" }
+          ]
+        },
+        {
+          "id": "f3-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which one is right?",
+          "prompt": "Lena and her brother",
+          "promptLanguage": "BASE",
+          "options": ["Lena und sein Bruder", "Lena und ihr Bruder", "Lena und ihre Bruder"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "f3-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which one is right?",
+          "prompt": "Tom and his sister",
+          "promptLanguage": "BASE",
+          "options": ["Tom und seine Schwester", "Tom und ihre Schwester", "Tom und sein Schwester"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "f3-e7",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "mein", "base": "my" },
+            { "target": "dein", "base": "your (informal)" },
+            { "target": "Ihr", "base": "your (formal)" },
+            { "target": "sein", "base": "his" },
+            { "target": "ihr", "base": "her" }
+          ]
+        },
+        {
+          "id": "f3-e8",
+          "type": "WORD_ORDER",
+          "translation": "What's your brother's name?",
+          "answer": "Wie heißt dein Bruder?",
+          "distractors": ["deine", "heiße"]
+        },
+        {
+          "id": "f3-e9",
+          "type": "TRANSLATE",
+          "source": "His sister lives in Vienna.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Seine Schwester wohnt in Wien."]
+        },
+        {
+          "id": "f3-e10",
+          "type": "TRANSLATE",
+          "source": "Ihr Vater kommt aus Österreich.",
+          "sourceLanguage": "TARGET",
+          "accepted": [
+            "Her father comes from Austria.",
+            "Her father is from Austria.",
+            "Your father comes from Austria.",
+            "Your father is from Austria."
+          ]
+        },
+        {
+          "id": "f3-e11",
+          "type": "LISTEN_CHOOSE",
+          "options": ["deine Mutter", "meine Mutter"],
+          "answerIndex": 0
+        },
+        {
+          "id": "f3-e12",
+          "type": "LISTEN_TYPE",
+          "text": "Wie heißt deine Schwester?",
+          "translation": "What's your sister's name?"
+        },
+        {
+          "id": "f3-e13",
+          "type": "SHADOW",
+          "text": "Wie heißt dein Bruder? Er heißt Paul.",
+          "translation": "What's your brother's name? He's called Paul."
+        }
+      ]
+    },
+    {
+      "id": "f4-plurals",
+      "title": "Plurals",
+      "kind": "LEARN",
+      "introduces": ["oma", "opa", "onkel", "tante"],
+      "exercises": [
+        {
+          "id": "f4-e1",
+          "type": "TEACH",
+          "title": "One, two, many",
+          "body": "In the plural, the article is always **die**, whatever the gender: *der Bruder → die Brüder*.\n\nGerman has several plural patterns, so learn each noun's plural with it:\n\n- add **-e**, often with an umlaut: der Sohn → die S**ö**hn**e**\n- add **-er**: das Kind → die Kind**er**\n- add **-n** or **-en**: die Tante → die Tante**n**\n- add **-s**: die Oma → die Oma**s**\n- no ending, sometimes an umlaut: der Onkel → die Onkel, der Vater → die V**ä**ter",
+          "examples": [
+            { "text": "die Söhne", "translation": "the sons" },
+            { "text": "die Kinder", "translation": "the children" },
+            { "text": "die Tanten", "translation": "the aunts" },
+            { "text": "die Omas", "translation": "the grandmas" },
+            { "text": "die Väter", "translation": "the fathers" }
+          ]
+        },
+        {
+          "id": "f4-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Oma", "base": "grandma" },
+            { "target": "der Opa", "base": "grandpa" },
+            { "target": "der Onkel", "base": "uncle" },
+            { "target": "die Tante", "base": "aunt" },
+            { "target": "die Eltern", "base": "parents" }
+          ]
+        },
+        {
+          "id": "f4-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "What's the plural?",
+          "prompt": "das Kind",
+          "promptLanguage": "TARGET",
+          "options": ["die Kinder", "die Kinds", "die Kinde"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "f4-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "What's the plural?",
+          "prompt": "der Bruder",
+          "promptLanguage": "TARGET",
+          "options": ["die Bruders", "die Brüder", "der Brüder"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "f4-e5",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "One or more than one?",
+          "options": ["Bruder", "Brüder"],
+          "answerIndex": 1
+        },
+        {
+          "id": "f4-e6",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "One or more than one?",
+          "options": ["Tochter", "Töchter"],
+          "answerIndex": 0
+        },
+        {
+          "id": "f4-e7",
+          "type": "TEACH",
+          "title": "Das sind meine Eltern",
+          "body": "For more than one, use **Das sind** (these are) instead of *Das ist*.\n\nBefore a plural, *mein*, *dein*, *sein* and *ihr* add **-e**, just like before a *die* word: **meine** Eltern, **deine** Kinder.",
+          "examples": [
+            { "text": "Das sind meine Eltern.", "translation": "These are my parents." },
+            { "text": "Das sind meine Kinder.", "translation": "These are my children." },
+            { "text": "Das sind seine Brüder.", "translation": "These are his brothers." }
+          ]
+        },
+        {
+          "id": "f4-e8",
+          "type": "CLOZE",
+          "before": "Das",
+          "after": "meine Eltern.",
+          "accepted": ["sind"],
+          "translation": "These are my parents.",
+          "hint": "is → are, for more than one"
+        },
+        {
+          "id": "f4-e9",
+          "type": "WORD_ORDER",
+          "translation": "These are my children.",
+          "answer": "Das sind meine Kinder.",
+          "distractors": ["ist", "mein"]
+        },
+        {
+          "id": "f4-e10",
+          "type": "TRANSLATE",
+          "source": "the sisters",
+          "sourceLanguage": "BASE",
+          "accepted": ["die Schwestern"]
+        },
+        {
+          "id": "f4-e11",
+          "type": "TRANSLATE",
+          "source": "Meine Oma und mein Opa wohnen in Wien.",
+          "sourceLanguage": "TARGET",
+          "accepted": [
+            "My grandma and my grandpa live in Vienna.",
+            "My grandma and grandpa live in Vienna.",
+            "My grandmother and my grandfather live in Vienna.",
+            "My grandmother and grandfather live in Vienna."
+          ]
+        },
+        {
+          "id": "f4-e12",
+          "type": "LISTEN_TYPE",
+          "text": "Das sind meine Eltern.",
+          "translation": "These are my parents."
+        },
+        {
+          "id": "f4-e13",
+          "type": "SHADOW",
+          "text": "Das sind meine Brüder, Paul und Max.",
+          "translation": "These are my brothers, Paul and Max.",
+          "hint": "Brüder: say ee, then round your lips for the ü.",
+          "mouthShapes": [
+            { "shape": "TIGHT_ROUNDED", "label": "ü", "caption": "Say ee with lips in a tight circle" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f5-my-family",
+      "title": "Talking about family",
+      "kind": "PRACTICE",
+      "introduces": ["verheiratet", "ledig"],
+      "exercises": [
+        {
+          "id": "f5-e1",
+          "type": "TEACH",
+          "title": "Married or single?",
+          "body": "- **verheiratet** = married\n- **ledig** = single (not married)\n\nUse them with *sein*, and they never change: *Ich bin verheiratet. Meine Schwester ist ledig.*",
+          "examples": [
+            { "text": "Bist du verheiratet?", "translation": "Are you married?" },
+            { "text": "Ja, ich bin verheiratet.", "translation": "Yes, I'm married." },
+            { "text": "Nein, ich bin ledig.", "translation": "No, I'm single." }
+          ]
+        },
+        {
+          "id": "f5-e2",
+          "type": "TEACH",
+          "title": "Julia's family",
+          "body": "Julia shows a photo. Read along, and tap each line to hear it.",
+          "examples": [
+            { "text": "Das ist meine Familie.", "translation": "This is my family." },
+            { "text": "Das ist mein Mann. Er heißt Jonas und ist vierzig.", "translation": "This is my husband. He's called Jonas and he's forty." },
+            { "text": "Das sind meine Kinder, Mia und Leo.", "translation": "These are my children, Mia and Leo." },
+            { "text": "Mia ist zwölf und Leo ist neun.", "translation": "Mia is twelve and Leo is nine." },
+            { "text": "Meine Schwester wohnt in Wien. Sie ist ledig.", "translation": "My sister lives in Vienna. She's single." },
+            { "text": "Meine Eltern wohnen in Hamburg.", "translation": "My parents live in Hamburg." }
+          ]
+        },
+        {
+          "id": "f5-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From Julia's photo: how old is Mia?",
+          "prompt": "Mia",
+          "promptLanguage": "BASE",
+          "options": ["12", "9", "40"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "f5-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From Julia's photo: who lives in Vienna?",
+          "prompt": "Wien",
+          "promptLanguage": "TARGET",
+          "options": ["her sister", "her parents", "her husband"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "f5-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "verheiratet", "base": "married" },
+            { "target": "ledig", "base": "single" },
+            { "target": "die Eltern", "base": "the parents" },
+            { "target": "die Kinder", "base": "the children" },
+            { "target": "mein Mann", "base": "my husband" }
+          ]
+        },
+        {
+          "id": "f5-e6",
+          "type": "WORD_ORDER",
+          "translation": "Are you married? (informal)",
+          "answer": "Bist du verheiratet?",
+          "distractors": ["bin", "ledig"]
+        },
+        {
+          "id": "f5-e7",
+          "type": "CLOZE",
+          "before": "Meine Schwester ist",
+          "after": ".",
+          "accepted": ["ledig"],
+          "translation": "My sister is single.",
+          "hint": "single"
+        },
+        {
+          "id": "f5-e8",
+          "type": "TRANSLATE",
+          "source": "My brother is married.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Mein Bruder ist verheiratet."]
+        },
+        {
+          "id": "f5-e9",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which answer fits?",
+          "prompt": "Wie heißt deine Mutter?",
+          "promptLanguage": "TARGET",
+          "options": ["Er heißt Maria.", "Sie heißt Maria.", "Ich heiße Maria."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "f5-e10",
+          "type": "TRANSLATE",
+          "source": "Wer ist das? Das ist mein Onkel.",
+          "sourceLanguage": "TARGET",
+          "accepted": [
+            "Who is that? That is my uncle.",
+            "Who is that? That's my uncle.",
+            "Who's that? That's my uncle.",
+            "Who's that? That is my uncle.",
+            "Who is this? This is my uncle."
+          ]
+        },
+        {
+          "id": "f5-e11",
+          "type": "TRANSLATE",
+          "source": "Her children live in Berlin.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ihre Kinder wohnen in Berlin."]
+        },
+        {
+          "id": "f5-e12",
+          "type": "LISTEN_TYPE",
+          "text": "Mein Bruder ist ledig.",
+          "translation": "My brother is single."
+        },
+        {
+          "id": "f5-e13",
+          "type": "SHADOW",
+          "text": "Das ist mein Mann. Er heißt Jonas.",
+          "translation": "This is my husband. He's called Jonas.",
+          "hint": "Jonas: YOH-nas, the J sounds like y."
+        },
+        {
+          "id": "f5-e14",
+          "type": "SHADOW",
+          "text": "Meine Eltern wohnen in Hamburg.",
+          "translation": "My parents live in Hamburg.",
+          "hint": "Eltern: EL-tern, stress the first syllable."
+        }
+      ]
+    }
+  ]
+}

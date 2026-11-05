@@ -1,0 +1,720 @@
+{
+  "id": "03-woher",
+  "level": "A1",
+  "title": "Where are you from?",
+  "description": "Say where you're from, where you live and which languages you speak.",
+  "icon": "🌍",
+  "vocab": [
+    { "id": "woher", "text": "woher", "translations": ["where from"], "partOfSpeech": "QUESTION_WORD", "pronunciation": "voh-HAIR", "example": { "text": "Woher kommst du?", "translation": "Where are you from?" } },
+    { "id": "kommen", "text": "kommen", "translations": ["to come"], "partOfSpeech": "VERB", "pronunciation": "KOM-men", "example": { "text": "Ich komme aus England.", "translation": "I come from England." } },
+    { "id": "aus", "text": "aus", "translations": ["from (a place)", "out of"], "partOfSpeech": "PREPOSITION", "pronunciation": "ows", "example": { "text": "Sie kommt aus Wien.", "translation": "She comes from Vienna." } },
+    { "id": "aus-deutschland", "text": "aus Deutschland", "translations": ["from Germany"], "partOfSpeech": "PHRASE", "pronunciation": "ows DOYCH-lant" },
+    { "id": "aus-oesterreich", "text": "aus Österreich", "translations": ["from Austria"], "partOfSpeech": "PHRASE", "pronunciation": "ows ÖS-ter-rykh (soft ch)" },
+    { "id": "aus-der-schweiz", "text": "aus der Schweiz", "translations": ["from Switzerland"], "partOfSpeech": "PHRASE", "pronunciation": "ows dair SHVITES" },
+    { "id": "aus-england", "text": "aus England", "translations": ["from England"], "partOfSpeech": "PHRASE", "pronunciation": "ows ENG-lant" },
+    { "id": "wo", "text": "wo", "translations": ["where"], "partOfSpeech": "QUESTION_WORD", "pronunciation": "voh", "example": { "text": "Wo wohnst du?", "translation": "Where do you live?" } },
+    { "id": "wohnen", "text": "wohnen", "translations": ["to live (reside)", "to live (somewhere)"], "partOfSpeech": "VERB", "pronunciation": "VOH-nen", "example": { "text": "Ich wohne in Berlin.", "translation": "I live in Berlin." } },
+    { "id": "in", "text": "in", "translations": ["in"], "partOfSpeech": "PREPOSITION", "pronunciation": "in", "example": { "text": "Lena wohnt in München.", "translation": "Lena lives in Munich." } },
+    { "id": "er", "text": "er", "translations": ["he"], "partOfSpeech": "PRONOUN", "pronunciation": "air", "example": { "text": "Er kommt aus Österreich.", "translation": "He comes from Austria." } },
+    { "id": "sie-she", "text": "sie", "translations": ["she"], "partOfSpeech": "PRONOUN", "pronunciation": "zee", "example": { "text": "Sie wohnt in Hamburg.", "translation": "She lives in Hamburg." } },
+    { "id": "stadt", "text": "Stadt", "translations": ["city", "town"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Städte", "pronunciation": "shtat", "example": { "text": "Ich wohne in der Stadt.", "translation": "I live in the city." } },
+    { "id": "wir", "text": "wir", "translations": ["we"], "partOfSpeech": "PRONOUN", "pronunciation": "veer", "example": { "text": "Wir wohnen in Köln.", "translation": "We live in Cologne." } },
+    { "id": "ihr", "text": "ihr", "translations": ["you (plural, informal)", "you all"], "partOfSpeech": "PRONOUN", "pronunciation": "eer", "example": { "text": "Woher kommt ihr?", "translation": "Where are you all from?" } },
+    { "id": "sie-they", "text": "sie", "translations": ["they"], "partOfSpeech": "PRONOUN", "pronunciation": "zee", "example": { "text": "Sie lernen Deutsch.", "translation": "They're learning German." } },
+    { "id": "lernen", "text": "lernen", "translations": ["to learn"], "partOfSpeech": "VERB", "pronunciation": "LAIR-nen", "example": { "text": "Ich lerne Deutsch.", "translation": "I'm learning German." } },
+    { "id": "machen", "text": "machen", "translations": ["to do", "to make"], "partOfSpeech": "VERB", "pronunciation": "MAKH-en", "example": { "text": "Was machst du?", "translation": "What are you doing?" } },
+    { "id": "was", "text": "was", "translations": ["what"], "partOfSpeech": "QUESTION_WORD", "pronunciation": "vas", "example": { "text": "Was macht ihr?", "translation": "What are you all doing?" } },
+    { "id": "sprechen", "text": "sprechen", "translations": ["to speak"], "partOfSpeech": "VERB", "pronunciation": "SHPREKH-en", "example": { "text": "Sprichst du Deutsch?", "translation": "Do you speak German?" } },
+    { "id": "deutsch", "text": "Deutsch", "translations": ["German (language)"], "partOfSpeech": "PHRASE", "pronunciation": "doych", "example": { "text": "Ich spreche ein bisschen Deutsch.", "translation": "I speak a little German." } },
+    { "id": "englisch", "text": "Englisch", "translations": ["English (language)"], "partOfSpeech": "PHRASE", "pronunciation": "ENG-lish", "example": { "text": "Sprechen Sie Englisch?", "translation": "Do you speak English?" } },
+    { "id": "ein-bisschen", "text": "ein bisschen", "translations": ["a little", "a bit"], "partOfSpeech": "PHRASE", "pronunciation": "ine BISS-khen (soft ch)" },
+    { "id": "wer", "text": "wer", "translations": ["who"], "partOfSpeech": "QUESTION_WORD", "pronunciation": "vair", "example": { "text": "Wer ist das?", "translation": "Who is that?" } },
+    { "id": "aber", "text": "aber", "translations": ["but"], "partOfSpeech": "CONJUNCTION", "pronunciation": "AH-ber", "example": { "text": "Ich komme aus England, aber ich wohne in Berlin.", "translation": "I'm from England, but I live in Berlin." } },
+    { "id": "jetzt", "text": "jetzt", "translations": ["now"], "partOfSpeech": "ADVERB", "pronunciation": "yetst", "example": { "text": "Ich wohne jetzt in Köln.", "translation": "I live in Cologne now." } },
+    { "id": "hier", "text": "hier", "translations": ["here"], "partOfSpeech": "ADVERB", "pronunciation": "heer", "example": { "text": "Ich wohne auch hier.", "translation": "I live here too." } },
+    { "id": "entschuldigung", "text": "Entschuldigung", "translations": ["Excuse me", "Sorry"], "partOfSpeech": "INTERJECTION", "pronunciation": "ent-SHOOL-di-goong" }
+  ],
+  "grammarNotes": [
+    {
+      "id": "woher-present-tense",
+      "title": "Present tense: regular verbs",
+      "body": "Take the infinitive, remove **-en** to get the stem (*lern-en → lern-*), then add the ending for the person.\n\n- **wir**, **sie** (they) and **Sie** (formal you) always look like the infinitive\n- **er**, **sie** (she) and **ihr** all end in **-t**\n\nGerman has only one present tense: *ich lerne* means both *I learn* and *I am learning*.",
+      "table": [
+        ["Person", "Ending", "lernen", "wohnen", "kommen"],
+        ["ich", "-e", "lerne", "wohne", "komme"],
+        ["du", "-st", "lernst", "wohnst", "kommst"],
+        ["er / sie / es", "-t", "lernt", "wohnt", "kommt"],
+        ["wir", "-en", "lernen", "wohnen", "kommen"],
+        ["ihr", "-t", "lernt", "wohnt", "kommt"],
+        ["sie / Sie", "-en", "lernen", "wohnen", "kommen"]
+      ]
+    },
+    {
+      "id": "woher-sprechen",
+      "title": "sprechen: e changes to i",
+      "body": "Some verbs change their vowel in the **du** and **er/sie/es** forms only. *sprechen* is one of them: the *e* becomes *i*. The endings stay regular.",
+      "table": [
+        ["Person", "sprechen"],
+        ["ich", "spreche"],
+        ["du", "sprichst"],
+        ["er / sie / es", "spricht"],
+        ["wir", "sprechen"],
+        ["ihr", "sprecht"],
+        ["sie / Sie", "sprechen"]
+      ]
+    },
+    {
+      "id": "woher-sie",
+      "title": "sie, sie or Sie?",
+      "body": "The same word has three meanings. The verb ending and the capital letter tell them apart:\n\n- **sie** + *-t* = she: *sie wohnt*\n- **sie** + *-en* = they: *sie wohnen*\n- **Sie** + *-en*, always capitalised = you (formal): *Sie wohnen*\n\nAt the start of a sentence, *she/they* are capitalised too, so context decides."
+    },
+    {
+      "id": "woher-w-questions",
+      "title": "W-questions",
+      "body": "Question words start with **w**, and the verb comes **second**, right after the question word.\n\nCareful: **wer** means *who* and **wo** means *where*. They look like the English words swapped around!",
+      "table": [
+        ["German", "English", "Example"],
+        ["wer", "who", "Wer ist das?"],
+        ["was", "what", "Was machst du?"],
+        ["wo", "where", "Wo wohnst du?"],
+        ["woher", "where from", "Woher kommst du?"],
+        ["wie", "how", "Wie heißt du?"]
+      ]
+    },
+    {
+      "id": "woher-countries",
+      "title": "Countries",
+      "body": "Most countries have no article: *aus Deutschland, aus Österreich, aus England*.\n\nA few are feminine and need **der** after *aus*: **die Schweiz → aus der Schweiz**, **die Türkei → aus der Türkei**. A couple are plural: **die USA → aus den USA**."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "w1-where-from",
+      "title": "Where are you from?",
+      "kind": "LEARN",
+      "introduces": ["woher", "kommen", "aus", "aus-deutschland", "aus-oesterreich", "aus-der-schweiz", "aus-england"],
+      "exercises": [
+        {
+          "id": "w1-e1",
+          "type": "TEACH",
+          "title": "Woher kommst du?",
+          "body": "- **Woher kommst du?** Where are you from? (literally *Where-from come you?*)\n- **Woher kommen Sie?** The formal version\n\nAnswer with **Ich komme aus …** I come from …",
+          "examples": [
+            { "text": "Woher kommst du?", "translation": "Where are you from?" },
+            { "text": "Ich komme aus England.", "translation": "I'm from England." },
+            { "text": "Woher kommen Sie?", "translation": "Where are you from? (formal)" },
+            { "text": "Ich komme aus Deutschland.", "translation": "I'm from Germany." }
+          ]
+        },
+        {
+          "id": "w1-e2",
+          "type": "TEACH",
+          "title": "Countries",
+          "body": "Most countries have no article: *aus Deutschland, aus Österreich*.\n\nA few do, and Switzerland is one of them: **die Schweiz → aus der Schweiz**.",
+          "mouthShapes": [
+            { "shape": "ROUNDED", "label": "Ö", "caption": "Österreich: say ay, then round your lips" }
+          ],
+          "examples": [
+            { "text": "aus Deutschland", "translation": "from Germany" },
+            { "text": "aus Österreich", "translation": "from Austria" },
+            { "text": "aus der Schweiz", "translation": "from Switzerland" },
+            { "text": "aus England", "translation": "from England" }
+          ]
+        },
+        {
+          "id": "w1-e3",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Woher kommst du?",
+          "promptLanguage": "TARGET",
+          "options": ["Where are you from?", "Where do you live?", "How old are you?"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "w1-e4",
+          "type": "WORD_ORDER",
+          "translation": "I'm from Germany.",
+          "answer": "Ich komme aus Deutschland.",
+          "distractors": ["kommst", "der"]
+        },
+        {
+          "id": "w1-e5",
+          "type": "LISTEN_CHOOSE",
+          "options": ["aus Österreich", "aus Deutschland"],
+          "answerIndex": 0
+        },
+        {
+          "id": "w1-e6",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "aus Deutschland", "base": "from Germany" },
+            { "target": "aus Österreich", "base": "from Austria" },
+            { "target": "aus der Schweiz", "base": "from Switzerland" },
+            { "target": "aus England", "base": "from England" },
+            { "target": "woher", "base": "where from" }
+          ]
+        },
+        {
+          "id": "w1-e7",
+          "type": "TEACH",
+          "title": "kommen: your first regular verb",
+          "body": "Most German verbs follow one pattern. Take the stem (**komm-**) and add an ending:\n\n- ich komm**e**\n- du komm**st**\n- Sie komm**en**\n\nYou'll learn the rest of the pattern in lesson 3.",
+          "examples": [
+            { "text": "Ich komme aus England.", "translation": "I come from England." },
+            { "text": "Kommst du aus Berlin?", "translation": "Do you come from Berlin?" },
+            { "text": "Woher kommen Sie?", "translation": "Where do you come from? (formal)" }
+          ]
+        },
+        {
+          "id": "w1-e8",
+          "type": "CLOZE",
+          "before": "Ich",
+          "after": "aus England.",
+          "accepted": ["komme"],
+          "translation": "I come from England.",
+          "hint": "kommen → ich …"
+        },
+        {
+          "id": "w1-e9",
+          "type": "CLOZE",
+          "before": "Woher",
+          "after": "du?",
+          "accepted": ["kommst"],
+          "translation": "Where are you from?",
+          "hint": "kommen → du …"
+        },
+        {
+          "id": "w1-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which one is right?",
+          "prompt": "from Switzerland",
+          "promptLanguage": "BASE",
+          "options": ["aus Schweiz", "aus die Schweiz", "aus der Schweiz"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "w1-e11",
+          "type": "TRANSLATE",
+          "source": "Where are you from? (formal)",
+          "sourceLanguage": "BASE",
+          "accepted": ["Woher kommen Sie?"]
+        },
+        {
+          "id": "w1-e12",
+          "type": "TRANSLATE",
+          "source": "Ich komme aus der Schweiz.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["I come from Switzerland.", "I'm from Switzerland.", "I am from Switzerland."]
+        },
+        {
+          "id": "w1-e13",
+          "type": "SHADOW",
+          "text": "Woher kommst du? Ich komme aus England.",
+          "translation": "Where are you from? I'm from England.",
+          "hint": "woher: voh-HAIR, the w sounds like v."
+        }
+      ]
+    },
+    {
+      "id": "w2-where-live",
+      "title": "Where do you live?",
+      "kind": "LEARN",
+      "introduces": ["wo", "wohnen", "in", "er", "sie-she", "stadt"],
+      "exercises": [
+        {
+          "id": "w2-e1",
+          "type": "TEACH",
+          "title": "Wo wohnst du?",
+          "body": "- **wo** = where (a place)\n- **woher** = where from\n- **wohnen** = to live (in a place): *ich wohne, du wohnst, Sie wohnen*\n\nGerman names for some cities differ from English: **Wien** is Vienna, **München** is Munich and **Köln** is Cologne.",
+          "examples": [
+            { "text": "Wo wohnst du?", "translation": "Where do you live?" },
+            { "text": "Ich wohne in Berlin.", "translation": "I live in Berlin." },
+            { "text": "Ich wohne in Wien.", "translation": "I live in Vienna." },
+            { "text": "Ich wohne in der Stadt.", "translation": "I live in the city." }
+          ]
+        },
+        {
+          "id": "w2-e2",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Wo wohnst du?",
+          "promptLanguage": "TARGET",
+          "options": ["Where do you live?", "Where are you from?", "Who are you?"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "w2-e3",
+          "type": "WORD_ORDER",
+          "translation": "I live in Vienna.",
+          "answer": "Ich wohne in Wien.",
+          "distractors": ["aus", "wohnst"]
+        },
+        {
+          "id": "w2-e4",
+          "type": "TEACH",
+          "title": "er and sie: he and she",
+          "body": "- **er** = he\n- **sie** = she\n\nWith *er* and *sie*, regular verbs end in **-t**: er komm**t**, sie wohn**t**.\n\nDon't mix up **sie** (she) with **Sie** (formal you). The verb gives it away: *sie wohnt* is she, *Sie wohnen* is you.",
+          "examples": [
+            { "text": "Er kommt aus Österreich.", "translation": "He comes from Austria." },
+            { "text": "Sie wohnt in Hamburg.", "translation": "She lives in Hamburg." },
+            { "text": "Wo wohnt er?", "translation": "Where does he live?" }
+          ]
+        },
+        {
+          "id": "w2-e5",
+          "type": "CLOZE",
+          "before": "Lena",
+          "after": "in München.",
+          "accepted": ["wohnt"],
+          "translation": "Lena lives in Munich.",
+          "hint": "wohnen → sie (she) …"
+        },
+        {
+          "id": "w2-e6",
+          "type": "CLOZE",
+          "before": "Er",
+          "after": "aus England.",
+          "accepted": ["kommt"],
+          "translation": "He comes from England.",
+          "hint": "kommen → er …"
+        },
+        {
+          "id": "w2-e7",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "wo", "base": "where" },
+            { "target": "woher", "base": "where from" },
+            { "target": "er", "base": "he" },
+            { "target": "sie wohnt", "base": "she lives" },
+            { "target": "die Stadt", "base": "the city" }
+          ]
+        },
+        {
+          "id": "w2-e8",
+          "type": "LISTEN_CHOOSE",
+          "options": ["Wo wohnst du?", "Woher kommst du?"],
+          "answerIndex": 0
+        },
+        {
+          "id": "w2-e9",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Who lives in Vienna? Look at the verb ending.",
+          "prompt": "Sie wohnt in Wien.",
+          "promptLanguage": "TARGET",
+          "options": ["she", "you (formal)"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "w2-e10",
+          "type": "TRANSLATE",
+          "source": "He lives in Berlin.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Er wohnt in Berlin."]
+        },
+        {
+          "id": "w2-e11",
+          "type": "TRANSLATE",
+          "source": "Wo wohnt sie?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Where does she live?", "Where is she living?"]
+        },
+        {
+          "id": "w2-e12",
+          "type": "LISTEN_TYPE",
+          "text": "Ich wohne in Berlin.",
+          "translation": "I live in Berlin."
+        },
+        {
+          "id": "w2-e13",
+          "type": "SHADOW",
+          "text": "Ich komme aus England und wohne in Berlin.",
+          "translation": "I'm from England and I live in Berlin.",
+          "hint": "wohne: VOH-ne, a long o."
+        }
+      ]
+    },
+    {
+      "id": "w3-present-tense",
+      "title": "Regular verbs",
+      "kind": "LEARN",
+      "introduces": ["wir", "ihr", "sie-they", "lernen", "machen", "was"],
+      "exercises": [
+        {
+          "id": "w3-e1",
+          "type": "TEACH",
+          "title": "The present tense",
+          "body": "Every regular verb follows this pattern. Take the stem (**lern-**) and add:\n\n- ich lern**e**\n- du lern**st**\n- er / sie lern**t**\n- wir lern**en**: we\n- ihr lern**t**: you, talking to several friends\n- sie / Sie lern**en**: they / you (formal)\n\n*wir*, *sie* and *Sie* always look just like the infinitive.",
+          "examples": [
+            { "text": "ich lerne", "translation": "I learn / I'm learning" },
+            { "text": "du lernst", "translation": "you learn" },
+            { "text": "er lernt", "translation": "he learns" },
+            { "text": "wir lernen", "translation": "we learn" },
+            { "text": "ihr lernt", "translation": "you (all) learn" },
+            { "text": "sie lernen", "translation": "they learn" }
+          ]
+        },
+        {
+          "id": "w3-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "ich lerne", "base": "I learn" },
+            { "target": "du lernst", "base": "you learn" },
+            { "target": "wir lernen", "base": "we learn" },
+            { "target": "ihr lernt", "base": "you all learn" },
+            { "target": "sie lernen", "base": "they learn" }
+          ]
+        },
+        {
+          "id": "w3-e3",
+          "type": "CLOZE",
+          "before": "Wir",
+          "after": "in Berlin.",
+          "accepted": ["wohnen"],
+          "translation": "We live in Berlin.",
+          "hint": "wohnen → wir …"
+        },
+        {
+          "id": "w3-e4",
+          "type": "CLOZE",
+          "before": "Ihr",
+          "after": "aus Österreich.",
+          "accepted": ["kommt"],
+          "translation": "You (all) come from Austria.",
+          "hint": "kommen → ihr …"
+        },
+        {
+          "id": "w3-e5",
+          "type": "TEACH",
+          "title": "was, machen and lernen",
+          "body": "- **was** = what\n- **machen** = to do, to make\n- **lernen** = to learn\n\nGerman has one present tense for both *I learn* and *I am learning*: **Ich lerne Deutsch.**",
+          "examples": [
+            { "text": "Was machst du?", "translation": "What are you doing?" },
+            { "text": "Ich lerne Deutsch.", "translation": "I'm learning German." },
+            { "text": "Was macht ihr?", "translation": "What are you all doing?" }
+          ]
+        },
+        {
+          "id": "w3-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Wir ___ Deutsch.",
+          "prompt": "We're learning German.",
+          "promptLanguage": "BASE",
+          "options": ["lernt", "lernst", "lernen"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "w3-e7",
+          "type": "WORD_ORDER",
+          "translation": "What are you doing? (informal)",
+          "answer": "Was machst du?",
+          "distractors": ["macht", "wo"]
+        },
+        {
+          "id": "w3-e8",
+          "type": "TEACH",
+          "title": "Two kinds of sie",
+          "body": "**sie** can mean *she* or *they*. The verb ending tells you which:\n\n- sie lern**t** = she learns\n- sie lern**en** = they learn\n\nAnd **Sie** with a capital S, plus *-en*, is the formal *you*.",
+          "examples": [
+            { "text": "Sie lernt Deutsch.", "translation": "She's learning German." },
+            { "text": "Sie lernen Deutsch.", "translation": "They're learning German. / You're learning German. (formal)" }
+          ]
+        },
+        {
+          "id": "w3-e9",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Who is learning? Look at the verb ending.",
+          "prompt": "Anna und Tom? Sie lernen Deutsch.",
+          "promptLanguage": "TARGET",
+          "options": ["they", "she"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "w3-e10",
+          "type": "TRANSLATE",
+          "source": "We live in Hamburg.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Wir wohnen in Hamburg."]
+        },
+        {
+          "id": "w3-e11",
+          "type": "TRANSLATE",
+          "source": "Was macht ihr?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["What are you doing?", "What are you all doing?", "What are you guys doing?", "What do you do?"]
+        },
+        {
+          "id": "w3-e12",
+          "type": "LISTEN_TYPE",
+          "text": "Wir lernen Deutsch.",
+          "translation": "We're learning German."
+        },
+        {
+          "id": "w3-e13",
+          "type": "SHADOW",
+          "text": "Was machst du? Ich lerne Deutsch.",
+          "translation": "What are you doing? I'm learning German.",
+          "hint": "machst: back-of-throat ch after a."
+        }
+      ]
+    },
+    {
+      "id": "w4-languages",
+      "title": "Languages and questions",
+      "kind": "LEARN",
+      "introduces": ["sprechen", "deutsch", "englisch", "ein-bisschen", "wer"],
+      "exercises": [
+        {
+          "id": "w4-e1",
+          "type": "TEACH",
+          "title": "Sprichst du Deutsch?",
+          "body": "**sprechen** = to speak. It's a little irregular: in the *du* and *er/sie* forms, the **e** changes to **i**:\n\n- ich spreche\n- du spr**i**chst\n- er / sie spr**i**cht\n- wir / sie / Sie sprechen\n\nLanguages always start with a capital letter: **Deutsch** (German), **Englisch** (English).",
+          "examples": [
+            { "text": "Sprichst du Deutsch?", "translation": "Do you speak German?" },
+            { "text": "Ja, ein bisschen.", "translation": "Yes, a little." },
+            { "text": "Ich spreche Englisch.", "translation": "I speak English." },
+            { "text": "Er spricht sehr gut Deutsch.", "translation": "He speaks German very well." }
+          ]
+        },
+        {
+          "id": "w4-e2",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Sprichst du Englisch?",
+          "promptLanguage": "TARGET",
+          "options": ["Do you speak English?", "Are you English?", "Are you learning English?"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "w4-e3",
+          "type": "CLOZE",
+          "before": "Er",
+          "after": "Deutsch.",
+          "accepted": ["spricht"],
+          "translation": "He speaks German.",
+          "hint": "sprechen → er … (e changes to i)"
+        },
+        {
+          "id": "w4-e4",
+          "type": "CLOZE",
+          "before": "Wir",
+          "after": "Englisch.",
+          "accepted": ["sprechen"],
+          "translation": "We speak English.",
+          "hint": "sprechen → wir …"
+        },
+        {
+          "id": "w4-e5",
+          "type": "TEACH",
+          "title": "W-questions",
+          "body": "Question words start with **w**, and the verb comes **second**:\n\n- **wer** = who\n- **was** = what\n- **wo** = where\n- **woher** = where from\n- **wie** = how\n\nCareful: **wer** is *who* and **wo** is *where*. They look like the English words swapped around!",
+          "examples": [
+            { "text": "Wer ist das?", "translation": "Who is that?" },
+            { "text": "Was machst du?", "translation": "What are you doing?" },
+            { "text": "Wo wohnt Lena?", "translation": "Where does Lena live?" },
+            { "text": "Wie heißt er?", "translation": "What's his name?" }
+          ]
+        },
+        {
+          "id": "w4-e6",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "wer", "base": "who" },
+            { "target": "was", "base": "what" },
+            { "target": "wo", "base": "where" },
+            { "target": "woher", "base": "where from" },
+            { "target": "wie", "base": "how" }
+          ]
+        },
+        {
+          "id": "w4-e7",
+          "type": "CLOZE",
+          "before": "",
+          "after": "ist das? Das ist Tom.",
+          "accepted": ["Wer"],
+          "translation": "Who is that? That's Tom.",
+          "hint": "who"
+        },
+        {
+          "id": "w4-e8",
+          "type": "CLOZE",
+          "before": "",
+          "after": "kommst du? Aus Wien.",
+          "accepted": ["Woher"],
+          "translation": "Where are you from? From Vienna.",
+          "hint": "where from"
+        },
+        {
+          "id": "w4-e9",
+          "type": "WORD_ORDER",
+          "translation": "Do you speak German? (informal)",
+          "answer": "Sprichst du Deutsch?",
+          "distractors": ["spricht", "ich"]
+        },
+        {
+          "id": "w4-e10",
+          "type": "TRANSLATE",
+          "source": "I speak a little German.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich spreche ein bisschen Deutsch.", "Ich spreche ein wenig Deutsch."]
+        },
+        {
+          "id": "w4-e11",
+          "type": "LISTEN_CHOOSE",
+          "options": ["Wer ist das?", "Wo ist das?"],
+          "answerIndex": 0
+        },
+        {
+          "id": "w4-e12",
+          "type": "LISTEN_TYPE",
+          "text": "Sprichst du Englisch?",
+          "translation": "Do you speak English?"
+        },
+        {
+          "id": "w4-e13",
+          "type": "SHADOW",
+          "text": "Sprechen Sie Englisch? Ja, ein bisschen.",
+          "translation": "Do you speak English? Yes, a little.",
+          "hint": "sprechen: SHPREKH-en, sp at the start sounds like shp."
+        }
+      ]
+    },
+    {
+      "id": "w5-getting-to-know",
+      "title": "Getting to know someone",
+      "kind": "PRACTICE",
+      "introduces": ["aber", "jetzt", "hier", "entschuldigung"],
+      "exercises": [
+        {
+          "id": "w5-e1",
+          "type": "TEACH",
+          "title": "aber, jetzt and hier",
+          "body": "- **aber** = but\n- **jetzt** = now\n- **hier** = here\n\nLike *und*, **aber** doesn't change the word order after it.",
+          "examples": [
+            { "text": "Ich komme aus England, aber ich wohne jetzt in Berlin.", "translation": "I'm from England, but I live in Berlin now." },
+            { "text": "Ich wohne auch hier.", "translation": "I live here too." }
+          ]
+        },
+        {
+          "id": "w5-e2",
+          "type": "TEACH",
+          "title": "Entschuldigung!",
+          "body": "**Entschuldigung!** means *Excuse me!* or *Sorry!* Use it to get a stranger's attention, or to apologise.",
+          "examples": [
+            { "text": "Entschuldigung, sprechen Sie Englisch?", "translation": "Excuse me, do you speak English?" },
+            { "text": "Entschuldigung!", "translation": "Sorry!" }
+          ]
+        },
+        {
+          "id": "w5-e3",
+          "type": "TEACH",
+          "title": "At the language school",
+          "body": "Read along, and tap each line to hear it.",
+          "examples": [
+            { "text": "Hallo! Ich bin Sofia. Wie heißt du?", "translation": "Sofia: Hi! I'm Sofia. What's your name?" },
+            { "text": "Ich heiße Ben. Woher kommst du, Sofia?", "translation": "Ben: I'm Ben. Where are you from, Sofia?" },
+            { "text": "Ich komme aus Spanien, aber ich wohne jetzt in Köln. Und du?", "translation": "Sofia: I'm from Spain, but I live in Cologne now. And you?" },
+            { "text": "Ich komme aus England. Ich wohne auch hier.", "translation": "Ben: I'm from England. I live here too." },
+            { "text": "Sprichst du gut Deutsch?", "translation": "Sofia: Do you speak German well?" },
+            { "text": "Nein, nur ein bisschen!", "translation": "Ben: No, only a little!" }
+          ]
+        },
+        {
+          "id": "w5-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: where is Sofia from?",
+          "prompt": "Sofia",
+          "promptLanguage": "BASE",
+          "options": ["Spain", "England", "Austria"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "w5-e5",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "aber",
+          "promptLanguage": "TARGET",
+          "options": ["but", "and", "also"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "w5-e6",
+          "type": "WORD_ORDER",
+          "translation": "I'm from England, but I live in Berlin now.",
+          "answer": "Ich komme aus England, aber ich wohne jetzt in Berlin.",
+          "alternatives": ["Ich komme aus England, aber jetzt wohne ich in Berlin."],
+          "distractors": ["und", "wohnst"]
+        },
+        {
+          "id": "w5-e7",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "aber", "base": "but" },
+            { "target": "jetzt", "base": "now" },
+            { "target": "hier", "base": "here" },
+            { "target": "Entschuldigung", "base": "Excuse me" },
+            { "target": "ein bisschen", "base": "a little" }
+          ]
+        },
+        {
+          "id": "w5-e8",
+          "type": "TRANSLATE",
+          "source": "Excuse me, do you speak English?",
+          "sourceLanguage": "BASE",
+          "accepted": ["Entschuldigung, sprechen Sie Englisch?", "Entschuldigung, sprichst du Englisch?"]
+        },
+        {
+          "id": "w5-e9",
+          "type": "CLOZE",
+          "before": "Ich wohne",
+          "after": "in Köln.",
+          "accepted": ["jetzt"],
+          "translation": "I live in Cologne now.",
+          "hint": "now"
+        },
+        {
+          "id": "w5-e10",
+          "type": "TRANSLATE",
+          "source": "Er kommt aus Wien, aber er wohnt hier.",
+          "sourceLanguage": "TARGET",
+          "accepted": [
+            "He comes from Vienna, but he lives here.",
+            "He's from Vienna, but he lives here.",
+            "He is from Vienna, but he lives here."
+          ]
+        },
+        {
+          "id": "w5-e11",
+          "type": "TRANSLATE",
+          "source": "Where do you live? (informal)",
+          "sourceLanguage": "BASE",
+          "accepted": ["Wo wohnst du?"]
+        },
+        {
+          "id": "w5-e12",
+          "type": "LISTEN_TYPE",
+          "text": "Ich wohne jetzt hier.",
+          "translation": "I live here now."
+        },
+        {
+          "id": "w5-e13",
+          "type": "SHADOW",
+          "text": "Ich komme aus England, aber ich wohne jetzt in Berlin.",
+          "translation": "I'm from England, but I live in Berlin now.",
+          "hint": "jetzt: yetst, the j sounds like y."
+        },
+        {
+          "id": "w5-e14",
+          "type": "SHADOW",
+          "text": "Entschuldigung, sprechen Sie Englisch?",
+          "translation": "Excuse me, do you speak English?",
+          "hint": "Entschuldigung: ent-SHOOL-di-goong."
+        }
+      ]
+    }
+  ]
+}

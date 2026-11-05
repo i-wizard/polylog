@@ -1,0 +1,726 @@
+{
+  "id": "02-zahlen",
+  "level": "A1",
+  "title": "Numbers",
+  "description": "Count to 100, say your age and give your phone number.",
+  "icon": "🔢",
+  "vocab": [
+    { "id": "null", "text": "null", "translations": ["zero"], "partOfSpeech": "NUMBER", "pronunciation": "nool" },
+    { "id": "eins", "text": "eins", "translations": ["one"], "partOfSpeech": "NUMBER", "pronunciation": "ines" },
+    { "id": "zwei", "text": "zwei", "translations": ["two"], "partOfSpeech": "NUMBER", "pronunciation": "tsvy" },
+    { "id": "drei", "text": "drei", "translations": ["three"], "partOfSpeech": "NUMBER", "pronunciation": "dry" },
+    { "id": "vier", "text": "vier", "translations": ["four"], "partOfSpeech": "NUMBER", "pronunciation": "feer" },
+    { "id": "fuenf", "text": "fünf", "translations": ["five"], "partOfSpeech": "NUMBER", "pronunciation": "fünf (ü: ee with rounded lips)" },
+    { "id": "sechs", "text": "sechs", "translations": ["six"], "partOfSpeech": "NUMBER", "pronunciation": "zeks" },
+    { "id": "sieben", "text": "sieben", "translations": ["seven"], "partOfSpeech": "NUMBER", "pronunciation": "ZEE-ben" },
+    { "id": "acht", "text": "acht", "translations": ["eight"], "partOfSpeech": "NUMBER", "pronunciation": "akht (back-of-throat ch)" },
+    { "id": "neun", "text": "neun", "translations": ["nine"], "partOfSpeech": "NUMBER", "pronunciation": "noyn" },
+    { "id": "zehn", "text": "zehn", "translations": ["ten"], "partOfSpeech": "NUMBER", "pronunciation": "tsayn" },
+    { "id": "elf", "text": "elf", "translations": ["eleven"], "partOfSpeech": "NUMBER", "pronunciation": "elf" },
+    { "id": "zwoelf", "text": "zwölf", "translations": ["twelve"], "partOfSpeech": "NUMBER", "pronunciation": "tsvölf (ö: ay with rounded lips)" },
+    { "id": "dreizehn", "text": "dreizehn", "translations": ["thirteen"], "partOfSpeech": "NUMBER", "pronunciation": "DRY-tsayn" },
+    { "id": "vierzehn", "text": "vierzehn", "translations": ["fourteen"], "partOfSpeech": "NUMBER", "pronunciation": "FEER-tsayn" },
+    { "id": "fuenfzehn", "text": "fünfzehn", "translations": ["fifteen"], "partOfSpeech": "NUMBER", "pronunciation": "FÜNF-tsayn" },
+    { "id": "sechzehn", "text": "sechzehn", "translations": ["sixteen"], "partOfSpeech": "NUMBER", "pronunciation": "ZEKH-tsayn" },
+    { "id": "siebzehn", "text": "siebzehn", "translations": ["seventeen"], "partOfSpeech": "NUMBER", "pronunciation": "ZEEP-tsayn" },
+    { "id": "achtzehn", "text": "achtzehn", "translations": ["eighteen"], "partOfSpeech": "NUMBER", "pronunciation": "AKHT-tsayn" },
+    { "id": "neunzehn", "text": "neunzehn", "translations": ["nineteen"], "partOfSpeech": "NUMBER", "pronunciation": "NOYN-tsayn" },
+    { "id": "zwanzig", "text": "zwanzig", "translations": ["twenty"], "partOfSpeech": "NUMBER", "pronunciation": "TSVAN-tsikh" },
+    { "id": "dreissig", "text": "dreißig", "translations": ["thirty"], "partOfSpeech": "NUMBER", "pronunciation": "DRY-sikh" },
+    { "id": "vierzig", "text": "vierzig", "translations": ["forty"], "partOfSpeech": "NUMBER", "pronunciation": "FEER-tsikh" },
+    { "id": "fuenfzig", "text": "fünfzig", "translations": ["fifty"], "partOfSpeech": "NUMBER", "pronunciation": "FÜNF-tsikh" },
+    { "id": "sechzig", "text": "sechzig", "translations": ["sixty"], "partOfSpeech": "NUMBER", "pronunciation": "ZEKH-tsikh" },
+    { "id": "siebzig", "text": "siebzig", "translations": ["seventy"], "partOfSpeech": "NUMBER", "pronunciation": "ZEEP-tsikh" },
+    { "id": "achtzig", "text": "achtzig", "translations": ["eighty"], "partOfSpeech": "NUMBER", "pronunciation": "AKHT-tsikh" },
+    { "id": "neunzig", "text": "neunzig", "translations": ["ninety"], "partOfSpeech": "NUMBER", "pronunciation": "NOYN-tsikh" },
+    { "id": "hundert", "text": "hundert", "translations": ["a hundred", "one hundred", "hundred"], "partOfSpeech": "NUMBER", "pronunciation": "HOON-dert" },
+    { "id": "alt", "text": "alt", "translations": ["old"], "partOfSpeech": "ADJECTIVE", "pronunciation": "alt", "example": { "text": "Wie alt bist du?", "translation": "How old are you?" } },
+    { "id": "jung", "text": "jung", "translations": ["young"], "partOfSpeech": "ADJECTIVE", "pronunciation": "yoong", "example": { "text": "Lena ist jung.", "translation": "Lena is young." } },
+    { "id": "jahr", "text": "Jahr", "translations": ["year"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Jahre", "pronunciation": "yahr", "example": { "text": "Ich bin zwanzig Jahre alt.", "translation": "I'm twenty years old." } },
+    { "id": "wie-alt-bist-du", "text": "Wie alt bist du?", "translations": ["How old are you? (informal)"], "partOfSpeech": "PHRASE", "pronunciation": "vee ALT bist doo" },
+    { "id": "wie-alt-sind-sie", "text": "Wie alt sind Sie?", "translations": ["How old are you? (formal)"], "partOfSpeech": "PHRASE", "pronunciation": "vee ALT zint zee" },
+    { "id": "telefonnummer", "text": "Telefonnummer", "translations": ["phone number"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Telefonnummern", "pronunciation": "te-le-FOHN-noo-mer", "example": { "text": "Wie ist deine Telefonnummer?", "translation": "What's your phone number?" } },
+    { "id": "handy", "text": "Handy", "translations": ["mobile phone", "cell phone"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Handys", "pronunciation": "HEN-dee", "example": { "text": "Das ist mein Handy.", "translation": "This is my mobile phone." } },
+    { "id": "zwo", "text": "zwo", "translations": ["two (on the phone)"], "partOfSpeech": "NUMBER", "pronunciation": "tsvoh" },
+    { "id": "noch-einmal", "text": "noch einmal", "translations": ["once more", "again"], "partOfSpeech": "PHRASE", "pronunciation": "nokh INE-mahl", "example": { "text": "Noch einmal, bitte.", "translation": "Once more, please." } },
+    { "id": "wie-bitte", "text": "Wie bitte?", "translations": ["Pardon?", "Sorry, what?"], "partOfSpeech": "PHRASE", "pronunciation": "vee BIT-te" }
+  ],
+  "grammarNotes": [
+    {
+      "id": "zahlen-0-20",
+      "title": "Numbers 0–20",
+      "body": "**elf** and **zwölf** are their own words. From 13 to 19, say the number and add **-zehn**: *drei + zehn = dreizehn*.\n\nTwo shortcuts: **sechzehn** drops the *s* of *sechs*, and **siebzehn** drops the *en* of *sieben*.",
+      "table": [
+        ["0–6", "7–13", "14–20"],
+        ["0 null", "7 sieben", "14 vierzehn"],
+        ["1 eins", "8 acht", "15 fünfzehn"],
+        ["2 zwei", "9 neun", "16 sechzehn"],
+        ["3 drei", "10 zehn", "17 siebzehn"],
+        ["4 vier", "11 elf", "18 achtzehn"],
+        ["5 fünf", "12 zwölf", "19 neunzehn"],
+        ["6 sechs", "", "20 zwanzig"]
+      ]
+    },
+    {
+      "id": "zahlen-tens",
+      "title": "Tens and 21–99",
+      "body": "Tens end in **-zig**, except **dreißig**, which ends in *-ßig*. As with the teens, **sechzig** and **siebzig** are shortened.\n\nFrom 21 to 99, German says the **ones first**, then **und**, then the tens, all written as one word:\n\n- *einundzwanzig* = one-and-twenty = 21\n- *fünfunddreißig* = five-and-thirty = 35\n- *neunundneunzig* = 99\n\n*eins* loses its *s* in front of *und*: **ein**undzwanzig.",
+      "table": [
+        ["Number", "German"],
+        ["20", "zwanzig"],
+        ["30", "dreißig"],
+        ["40", "vierzig"],
+        ["50", "fünfzig"],
+        ["60", "sechzig"],
+        ["70", "siebzig"],
+        ["80", "achtzig"],
+        ["90", "neunzig"],
+        ["100", "hundert / einhundert"]
+      ]
+    },
+    {
+      "id": "zahlen-age",
+      "title": "Saying your age",
+      "body": "German uses *sein* (to be) for age, just like English:\n\n- **Wie alt bist du?** / **Wie alt sind Sie?** How old are you?\n- **Ich bin 25 Jahre alt.** or simply **Ich bin 25.**\n\nUse **Jahre** (years) for every age except one: *ein Jahr alt*."
+    },
+    {
+      "id": "zahlen-phone",
+      "title": "Phone numbers",
+      "body": "Germans read phone numbers digit by digit or in pairs: *0171 2468* is *null eins sieben eins, zwo vier sechs acht* or *… vierundzwanzig, achtundsechzig*.\n\nOn the phone, many people say **zwo** instead of *zwei* so it can't be confused with *drei*.\n\nDidn't catch it? Say **Wie bitte?** (Pardon?) or **Noch einmal, bitte.** (Once more, please.)"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "n1-zero-ten",
+      "title": "0 to 10",
+      "kind": "LEARN",
+      "introduces": ["null", "eins", "zwei", "drei", "vier", "fuenf", "sechs", "sieben", "acht", "neun", "zehn"],
+      "exercises": [
+        {
+          "id": "n1-e1",
+          "type": "TEACH",
+          "title": "Counting to ten",
+          "body": "Tap each line to hear it, then count along.\n\nTwo sounds to watch:\n\n- **z** sounds like *ts*: *zwei, zehn*\n- **v** sounds like *f*: *vier*",
+          "mouthShapes": [
+            { "shape": "TEETH_ON_LIP", "label": "vier", "caption": "v = f: teeth on your lower lip" },
+            { "shape": "TIGHT_ROUNDED", "label": "fünf", "caption": "ü: say ee, round your lips tightly" }
+          ],
+          "examples": [
+            { "text": "null", "translation": "0" },
+            { "text": "eins, zwei, drei", "translation": "1, 2, 3" },
+            { "text": "vier, fünf, sechs", "translation": "4, 5, 6" },
+            { "text": "sieben, acht", "translation": "7, 8" },
+            { "text": "neun, zehn", "translation": "9, 10" }
+          ]
+        },
+        {
+          "id": "n1-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "eins", "base": "1" },
+            { "target": "zwei", "base": "2" },
+            { "target": "drei", "base": "3" },
+            { "target": "vier", "base": "4" },
+            { "target": "fünf", "base": "5" }
+          ]
+        },
+        {
+          "id": "n1-e3",
+          "type": "LISTEN_CHOOSE",
+          "options": ["zwei", "drei"],
+          "answerIndex": 1
+        },
+        {
+          "id": "n1-e4",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "sieben",
+          "promptLanguage": "TARGET",
+          "options": ["7", "6", "9"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "n1-e5",
+          "type": "TEACH",
+          "title": "Easy to mix up",
+          "body": "- **neun** (9) sounds like *noyn*. Don't confuse it with **nein** (no), which sounds like *nine*!\n- **sechs** (6) starts with a *z* sound: *zeks*\n- **acht** (8) has the rough *ch* from the back of the throat, as in *Buch*",
+          "examples": [
+            { "text": "neun", "translation": "nine", "hint": "noyn" },
+            { "text": "nein", "translation": "no", "hint": "nine" },
+            { "text": "sechs", "translation": "six", "hint": "zeks" },
+            { "text": "acht", "translation": "eight", "hint": "akht" }
+          ]
+        },
+        {
+          "id": "n1-e6",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "A number or a no?",
+          "options": ["neun", "nein"],
+          "answerIndex": 0
+        },
+        {
+          "id": "n1-e7",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "sechs", "base": "6" },
+            { "target": "sieben", "base": "7" },
+            { "target": "acht", "base": "8" },
+            { "target": "neun", "base": "9" },
+            { "target": "zehn", "base": "10" }
+          ]
+        },
+        {
+          "id": "n1-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which word is this number?",
+          "prompt": "8",
+          "promptLanguage": "BASE",
+          "options": ["acht", "sechs", "null"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "n1-e9",
+          "type": "LISTEN_CHOOSE",
+          "options": ["vier", "fünf", "sechs"],
+          "answerIndex": 1
+        },
+        {
+          "id": "n1-e10",
+          "type": "TRANSLATE",
+          "source": "three",
+          "sourceLanguage": "BASE",
+          "accepted": ["drei"]
+        },
+        {
+          "id": "n1-e11",
+          "type": "TRANSLATE",
+          "source": "zehn",
+          "sourceLanguage": "TARGET",
+          "accepted": ["ten", "10"]
+        },
+        {
+          "id": "n1-e12",
+          "type": "SHADOW",
+          "text": "Eins, zwei, drei, vier, fünf.",
+          "translation": "One, two, three, four, five.",
+          "hint": "zwei: the z sounds like ts. vier: the v sounds like f."
+        },
+        {
+          "id": "n1-e13",
+          "type": "SHADOW",
+          "text": "Sechs, sieben, acht, neun, zehn.",
+          "translation": "Six, seven, eight, nine, ten.",
+          "hint": "sechs: zeks. acht: back-of-throat ch. neun: noyn."
+        }
+      ]
+    },
+    {
+      "id": "n2-eleven-twenty",
+      "title": "11 to 20",
+      "kind": "LEARN",
+      "introduces": ["elf", "zwoelf", "dreizehn", "vierzehn", "fuenfzehn", "sechzehn", "siebzehn", "achtzehn", "neunzehn", "zwanzig"],
+      "exercises": [
+        {
+          "id": "n2-e1",
+          "type": "TEACH",
+          "title": "11 to 19",
+          "body": "**elf** (11) and **zwölf** (12) are their own words.\n\nFrom 13 to 19, say the number and add **-zehn** (ten), just like English *-teen*: *drei + zehn = dreizehn*.\n\nTwo shortcuts:\n\n- **sechzehn** drops the *s* of *sechs*\n- **siebzehn** drops the *en* of *sieben*",
+          "mouthShapes": [
+            { "shape": "ROUNDED", "label": "zwölf", "caption": "ö: say ay, then round your lips" }
+          ],
+          "examples": [
+            { "text": "elf", "translation": "11" },
+            { "text": "zwölf", "translation": "12" },
+            { "text": "dreizehn", "translation": "13" },
+            { "text": "vierzehn", "translation": "14" },
+            { "text": "sechzehn", "translation": "16", "hint": "not sechszehn" },
+            { "text": "siebzehn", "translation": "17", "hint": "not siebenzehn" }
+          ]
+        },
+        {
+          "id": "n2-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "elf", "base": "11" },
+            { "target": "zwölf", "base": "12" },
+            { "target": "dreizehn", "base": "13" },
+            { "target": "vierzehn", "base": "14" },
+            { "target": "fünfzehn", "base": "15" }
+          ]
+        },
+        {
+          "id": "n2-e3",
+          "type": "LISTEN_CHOOSE",
+          "options": ["elf", "zwölf"],
+          "answerIndex": 1
+        },
+        {
+          "id": "n2-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which spelling is right?",
+          "prompt": "16",
+          "promptLanguage": "BASE",
+          "options": ["sechzehn", "sechszehn", "sechzig"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "n2-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which spelling is right?",
+          "prompt": "17",
+          "promptLanguage": "BASE",
+          "options": ["siebenzehn", "siebzehn", "siebzig"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "n2-e6",
+          "type": "TEACH",
+          "title": "Up to twenty",
+          "body": "**zwanzig** (20) ends in **-zig**, which sounds like *tsikh* with the soft *ch* of *ich*.\n\nYou'll meet *-zig* again in every ten from 20 to 90.",
+          "examples": [
+            { "text": "achtzehn", "translation": "18" },
+            { "text": "neunzehn", "translation": "19" },
+            { "text": "zwanzig", "translation": "20", "hint": "TSVAN-tsikh" }
+          ]
+        },
+        {
+          "id": "n2-e7",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "sechzehn", "base": "16" },
+            { "target": "siebzehn", "base": "17" },
+            { "target": "achtzehn", "base": "18" },
+            { "target": "neunzehn", "base": "19" },
+            { "target": "zwanzig", "base": "20" }
+          ]
+        },
+        {
+          "id": "n2-e8",
+          "type": "LISTEN_CHOOSE",
+          "options": ["achtzehn", "neunzehn"],
+          "answerIndex": 1
+        },
+        {
+          "id": "n2-e9",
+          "type": "LISTEN_CHOOSE",
+          "options": ["zwölf", "zwanzig"],
+          "answerIndex": 1
+        },
+        {
+          "id": "n2-e10",
+          "type": "TRANSLATE",
+          "source": "twelve",
+          "sourceLanguage": "BASE",
+          "accepted": ["zwölf"]
+        },
+        {
+          "id": "n2-e11",
+          "type": "TRANSLATE",
+          "source": "neunzehn",
+          "sourceLanguage": "TARGET",
+          "accepted": ["nineteen", "19"]
+        },
+        {
+          "id": "n2-e12",
+          "type": "SHADOW",
+          "text": "Elf, zwölf, dreizehn, vierzehn, fünfzehn.",
+          "translation": "Eleven, twelve, thirteen, fourteen, fifteen.",
+          "hint": "zwölf: round your lips for the ö.",
+          "mouthShapes": [
+            { "shape": "ROUNDED", "label": "ö", "caption": "Say ay, then round your lips" }
+          ]
+        },
+        {
+          "id": "n2-e13",
+          "type": "SHADOW",
+          "text": "Sechzehn, siebzehn, achtzehn, neunzehn, zwanzig.",
+          "translation": "Sixteen, seventeen, eighteen, nineteen, twenty.",
+          "hint": "-zehn sounds like tsayn. zwanzig ends in a soft ch."
+        }
+      ]
+    },
+    {
+      "id": "n3-to-hundred",
+      "title": "Up to 100",
+      "kind": "LEARN",
+      "introduces": ["dreissig", "vierzig", "fuenfzig", "sechzig", "siebzig", "achtzig", "neunzig", "hundert"],
+      "exercises": [
+        {
+          "id": "n3-e1",
+          "type": "TEACH",
+          "title": "Counting in tens",
+          "body": "The tens add **-zig** to the number: *vier → vierzig, fünf → fünfzig*.\n\nWatch out for three of them:\n\n- **dreißig** (30) ends in *-ßig*, not *-zig*\n- **sechzig** (60) and **siebzig** (70) are shortened, just like *sechzehn* and *siebzehn*\n\n100 is **hundert** or **einhundert**.",
+          "examples": [
+            { "text": "dreißig", "translation": "30", "hint": "-ßig, not -zig" },
+            { "text": "vierzig", "translation": "40" },
+            { "text": "fünfzig", "translation": "50" },
+            { "text": "sechzig", "translation": "60" },
+            { "text": "siebzig", "translation": "70" },
+            { "text": "achtzig", "translation": "80" },
+            { "text": "neunzig", "translation": "90" },
+            { "text": "hundert", "translation": "100" }
+          ]
+        },
+        {
+          "id": "n3-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "dreißig", "base": "30" },
+            { "target": "vierzig", "base": "40" },
+            { "target": "fünfzig", "base": "50" },
+            { "target": "sechzig", "base": "60" },
+            { "target": "siebzig", "base": "70" }
+          ]
+        },
+        {
+          "id": "n3-e3",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "-zehn or -zig?",
+          "options": ["vierzehn", "vierzig"],
+          "answerIndex": 1
+        },
+        {
+          "id": "n3-e4",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "-zehn or -ßig?",
+          "options": ["dreizehn", "dreißig"],
+          "answerIndex": 0
+        },
+        {
+          "id": "n3-e5",
+          "type": "TEACH",
+          "title": "21 to 99: ones first",
+          "body": "German says the **ones first**, then **und**, then the tens, like the old English *four-and-twenty*. It's all one word:\n\n- *einundzwanzig* = one-and-twenty = 21\n- *zweiunddreißig* = two-and-thirty = 32\n\n*eins* loses its *s* in front of *und*: **ein**undzwanzig.\n\nTip: when you hear a long number, hold the first part in your head until you hear the ten.",
+          "examples": [
+            { "text": "einundzwanzig", "translation": "21" },
+            { "text": "zweiunddreißig", "translation": "32" },
+            { "text": "fünfundvierzig", "translation": "45" },
+            { "text": "siebenundsechzig", "translation": "67" },
+            { "text": "neunundneunzig", "translation": "99" }
+          ]
+        },
+        {
+          "id": "n3-e6",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "fünfundzwanzig",
+          "promptLanguage": "TARGET",
+          "options": ["25", "52", "15"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "n3-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which one is 38?",
+          "prompt": "38",
+          "promptLanguage": "BASE",
+          "options": ["dreiundachtzig", "achtunddreißig", "achtzehn"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "n3-e8",
+          "type": "LISTEN_CHOOSE",
+          "options": ["vierundfünfzig", "fünfundvierzig"],
+          "answerIndex": 1
+        },
+        {
+          "id": "n3-e9",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "achtzig", "base": "80" },
+            { "target": "neunzig", "base": "90" },
+            { "target": "hundert", "base": "100" },
+            { "target": "dreiundvierzig", "base": "43" }
+          ]
+        },
+        {
+          "id": "n3-e10",
+          "type": "TRANSLATE",
+          "source": "sixty",
+          "sourceLanguage": "BASE",
+          "accepted": ["sechzig"]
+        },
+        {
+          "id": "n3-e11",
+          "type": "TRANSLATE",
+          "source": "einundzwanzig",
+          "sourceLanguage": "TARGET",
+          "accepted": ["twenty-one", "twenty one", "21"]
+        },
+        {
+          "id": "n3-e12",
+          "type": "SHADOW",
+          "text": "Dreißig, vierzig, fünfzig, hundert.",
+          "translation": "Thirty, forty, fifty, a hundred.",
+          "hint": "dreißig: DRY-sikh, with a sharp ss."
+        },
+        {
+          "id": "n3-e13",
+          "type": "SHADOW",
+          "text": "Einundzwanzig, zweiundzwanzig, dreiundzwanzig.",
+          "translation": "Twenty-one, twenty-two, twenty-three.",
+          "hint": "Ones first, then und, then the ten."
+        }
+      ]
+    },
+    {
+      "id": "n4-age",
+      "title": "How old are you?",
+      "kind": "LEARN",
+      "introduces": ["alt", "jung", "jahr", "wie-alt-bist-du", "wie-alt-sind-sie"],
+      "exercises": [
+        {
+          "id": "n4-e1",
+          "type": "TEACH",
+          "title": "Asking someone's age",
+          "body": "German uses *sein* (to be) for age, just like English:\n\n- **Wie alt bist du?** How old are you? (informal)\n- **Wie alt sind Sie?** How old are you? (formal)\n\nAnswer with **Ich bin … Jahre alt.** or just **Ich bin …**\n\n**das Jahr** = the year; the plural is **Jahre**.",
+          "examples": [
+            { "text": "Wie alt bist du?", "translation": "How old are you?" },
+            { "text": "Ich bin zwanzig Jahre alt.", "translation": "I'm twenty years old." },
+            { "text": "Wie alt sind Sie?", "translation": "How old are you? (formal)" },
+            { "text": "Ich bin vierundfünfzig.", "translation": "I'm fifty-four." }
+          ]
+        },
+        {
+          "id": "n4-e2",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Wie alt bist du?",
+          "promptLanguage": "TARGET",
+          "options": ["How old are you?", "What's your name?", "How are you?"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "n4-e3",
+          "type": "WORD_ORDER",
+          "translation": "I'm twenty years old.",
+          "answer": "Ich bin zwanzig Jahre alt.",
+          "distractors": ["Jahr", "bist"]
+        },
+        {
+          "id": "n4-e4",
+          "type": "CLOZE",
+          "before": "Ich bin dreißig",
+          "after": "alt.",
+          "accepted": ["Jahre"],
+          "translation": "I'm thirty years old.",
+          "hint": "years (plural)"
+        },
+        {
+          "id": "n4-e5",
+          "type": "WORD_ORDER",
+          "translation": "How old are you? (formal)",
+          "answer": "Wie alt sind Sie?",
+          "distractors": ["bist", "du"]
+        },
+        {
+          "id": "n4-e6",
+          "type": "TEACH",
+          "title": "alt and jung",
+          "body": "**alt** = old, **jung** = young.\n\nAfter *sein* they never change: *Lena ist jung. Herr Weber ist alt.*",
+          "examples": [
+            { "text": "Lena ist jung.", "translation": "Lena is young." },
+            { "text": "Herr Weber ist sehr alt.", "translation": "Mr Weber is very old." }
+          ]
+        },
+        {
+          "id": "n4-e7",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "alt", "base": "old" },
+            { "target": "jung", "base": "young" },
+            { "target": "das Jahr", "base": "the year" },
+            { "target": "Jahre", "base": "years" }
+          ]
+        },
+        {
+          "id": "n4-e8",
+          "type": "TRANSLATE",
+          "source": "How old are you?",
+          "sourceLanguage": "BASE",
+          "accepted": ["Wie alt bist du?", "Wie alt sind Sie?"]
+        },
+        {
+          "id": "n4-e9",
+          "type": "TRANSLATE",
+          "source": "Ich bin fünfundzwanzig Jahre alt.",
+          "sourceLanguage": "TARGET",
+          "accepted": [
+            "I am twenty-five years old.",
+            "I'm twenty-five years old.",
+            "I am twenty five years old.",
+            "I'm twenty five years old.",
+            "I am 25 years old.",
+            "I'm 25 years old.",
+            "I am twenty-five.",
+            "I'm twenty-five.",
+            "I am 25.",
+            "I'm 25."
+          ]
+        },
+        {
+          "id": "n4-e10",
+          "type": "CLOZE",
+          "before": "Wie alt",
+          "after": "Sie?",
+          "accepted": ["sind"],
+          "translation": "How old are you? (formal)",
+          "hint": "sein → Sie …"
+        },
+        {
+          "id": "n4-e11",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Lena is 17. What does she say?",
+          "prompt": "Lena, 17",
+          "promptLanguage": "BASE",
+          "options": ["Ich bin siebzig.", "Ich bin siebzehn.", "Ich bin sieben."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "n4-e12",
+          "type": "LISTEN_TYPE",
+          "text": "Wie alt bist du?",
+          "translation": "How old are you?"
+        },
+        {
+          "id": "n4-e13",
+          "type": "SHADOW",
+          "text": "Ich bin neunzehn Jahre alt. Und du?",
+          "translation": "I'm nineteen years old. And you?",
+          "hint": "Jahre: YAH-re, the J sounds like an English y."
+        }
+      ]
+    },
+    {
+      "id": "n5-phone",
+      "title": "Phone numbers",
+      "kind": "PRACTICE",
+      "introduces": ["telefonnummer", "handy", "zwo", "noch-einmal", "wie-bitte"],
+      "exercises": [
+        {
+          "id": "n5-e1",
+          "type": "TEACH",
+          "title": "Giving your number",
+          "body": "Germans read phone numbers digit by digit, or in pairs.\n\nOn the phone, many people say **zwo** instead of *zwei*, so it can't be confused with *drei*.\n\n- **Wie ist deine Telefonnummer?** What's your phone number? (informal)\n- **Wie ist Ihre Telefonnummer?** (formal)\n\nA mobile phone is **das Handy**: it looks English, but English speakers don't use it!",
+          "examples": [
+            { "text": "Wie ist deine Telefonnummer?", "translation": "What's your phone number?" },
+            { "text": "Meine Nummer ist null, eins, sieben, zwo.", "translation": "My number is 0 1 7 2." },
+            { "text": "Das ist mein Handy.", "translation": "This is my mobile phone." }
+          ]
+        },
+        {
+          "id": "n5-e2",
+          "type": "TEACH",
+          "title": "Didn't catch that?",
+          "body": "Numbers are fast. These phrases buy you time:\n\n- **Wie bitte?** Pardon? / Sorry, what?\n- **Noch einmal, bitte.** Once more, please.\n- **Langsam, bitte.** Slowly, please.",
+          "examples": [
+            { "text": "Wie bitte?", "translation": "Pardon?" },
+            { "text": "Noch einmal, bitte.", "translation": "Once more, please." },
+            { "text": "Langsam, bitte.", "translation": "Slowly, please." }
+          ]
+        },
+        {
+          "id": "n5-e3",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Wie bitte?",
+          "promptLanguage": "TARGET",
+          "options": ["Pardon?", "How are you?", "Please!"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "n5-e4",
+          "type": "LISTEN_CHOOSE",
+          "options": ["zwo", "drei"],
+          "answerIndex": 0
+        },
+        {
+          "id": "n5-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Telefonnummer", "base": "the phone number" },
+            { "target": "das Handy", "base": "the mobile phone" },
+            { "target": "zwo", "base": "two (on the phone)" },
+            { "target": "Wie bitte?", "base": "Pardon?" },
+            { "target": "noch einmal", "base": "once more" }
+          ]
+        },
+        {
+          "id": "n5-e6",
+          "type": "WORD_ORDER",
+          "translation": "Once more, please.",
+          "answer": "Noch einmal, bitte.",
+          "distractors": ["danke", "nein"]
+        },
+        {
+          "id": "n5-e7",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which number do you hear?",
+          "options": ["null, eins, sieben, drei", "null, eins, sieben, zwo"],
+          "answerIndex": 1
+        },
+        {
+          "id": "n5-e8",
+          "type": "TEACH",
+          "title": "On the phone",
+          "body": "Tap each line to hear it.",
+          "examples": [
+            { "text": "Wie ist deine Handynummer, Max?", "translation": "Lena: What's your mobile number, Max?" },
+            { "text": "Null, eins, sieben, eins, zwo, vier, sechs, acht.", "translation": "Max: 0171 2468." },
+            { "text": "Wie bitte? Noch einmal, bitte.", "translation": "Lena: Pardon? Once more, please." },
+            { "text": "Null, eins, sieben, eins, zwo, vier, sechs, acht.", "translation": "Max: 0171 2468." },
+            { "text": "Danke!", "translation": "Lena: Thanks!" }
+          ]
+        },
+        {
+          "id": "n5-e9",
+          "type": "TRANSLATE",
+          "source": "What's your phone number? (informal)",
+          "sourceLanguage": "BASE",
+          "accepted": ["Wie ist deine Telefonnummer?", "Wie ist deine Nummer?", "Was ist deine Telefonnummer?"]
+        },
+        {
+          "id": "n5-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "You didn't understand. What do you say?",
+          "prompt": "You didn't catch that",
+          "promptLanguage": "BASE",
+          "options": ["Wie alt bist du?", "Gute Nacht!", "Wie bitte?"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "n5-e11",
+          "type": "LISTEN_TYPE",
+          "text": "Noch einmal, bitte.",
+          "translation": "Once more, please."
+        },
+        {
+          "id": "n5-e12",
+          "type": "TRANSLATE",
+          "source": "Wie alt sind Sie, Frau Weber?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["How old are you, Mrs Weber?", "How old are you, Ms Weber?"]
+        },
+        {
+          "id": "n5-e13",
+          "type": "SHADOW",
+          "text": "Wie bitte? Noch einmal, bitte.",
+          "translation": "Pardon? Once more, please."
+        },
+        {
+          "id": "n5-e14",
+          "type": "SHADOW",
+          "text": "Meine Nummer ist null, eins, sieben, zwo.",
+          "translation": "My number is 0 1 7 2.",
+          "hint": "zwo: tsvoh. On the phone it replaces zwei."
+        }
+      ]
+    }
+  ]
+}

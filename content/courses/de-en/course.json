@@ -10,7 +10,7 @@
     "evening": "Guten Abend!"
   },
   "levels": [
-    { "level": "A1", "unitIds": ["00-sounds", "01-hallo"] },
+    { "level": "A1", "unitIds": ["00-sounds", "01-hallo", "02-zahlen", "03-woher", "04-familie", "05-essen"] },
     { "level": "A2", "unitIds": [] },
     { "level": "B1", "unitIds": [] }
   ]
