@@ -1,5 +1,6 @@
 import { Download, Upload } from 'lucide-react';
 import { useEffect, useRef, useState, type ChangeEvent } from 'react';
+import { DAILY_GOAL_OPTIONS } from '../../domain/progress/progress';
 import { listCourses } from '../../services/content/contentRepository';
 import { exportProgress, importProgress, resetProgress, type ProgressBackup } from '../../services/storage/backupService';
 import { saveFile } from '../../services/storage/fileTransfer';
@@ -10,7 +11,6 @@ import { Logger } from '../../utils/logger';
 import { useApp } from '../AppContext';
 import { useSpeaker } from '../hooks/useSpeaker';
 
-const DAILY_GOAL_OPTIONS = [10, 20, 30, 50];
 const NEW_CARD_OPTIONS = [10, 20, 30];
 
 /** Learner preferences, voice setup, and progress backup. */

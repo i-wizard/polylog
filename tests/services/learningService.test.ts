@@ -54,7 +54,14 @@ describe('completeLesson', () => {
     expect(cards.map((card) => card.cardType).sort()).toEqual([CardType.GENDER, CardType.PRODUCE, CardType.RECOGNIZE]);
 
     const activity = await db.dailyActivity.get([FIXTURE_COURSE_ID, TODAY]);
-    expect(activity).toEqual({ courseId: FIXTURE_COURSE_ID, date: TODAY, xp: XP_PER_LESSON, lessonsCompleted: 1, reviewsDone: 0 });
+    expect(activity).toEqual({
+      courseId: FIXTURE_COURSE_ID,
+      date: TODAY,
+      xp: XP_PER_LESSON,
+      lessonsCompleted: 1,
+      reviewsDone: 0,
+      goalXp: DEFAULT_SETTINGS.dailyGoalXp,
+    });
   });
 
   it('repeating a lesson keeps existing card schedules and updates the completion record', async () => {

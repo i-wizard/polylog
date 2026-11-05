@@ -2,6 +2,7 @@ import type { DailyActivity } from '../../domain/progress/progress';
 import type { LessonResult } from '../../domain/session/lessonSession';
 import { Logger } from '../../utils/logger';
 import { db, type LessonProgress } from './db';
+import { getSettings } from './settingsRepository';
 
 /** Ids of every lesson the learner has completed at least once in a course. */
 export async function getCompletedLessonIds(courseId: string): Promise<Set<string>> {
@@ -39,7 +40,12 @@ export async function recordLessonCompletion({
   Logger.info('Lesson completed', { courseId, lessonId, accuracy, timesCompleted: progress.timesCompleted });
 }
 
-/** Adds XP and counters to a day's activity row, creating it if needed. */
+/**
+ * Adds XP and counters to a day's activity row, creating it if needed.
+ *
+ * The current daily goal is stamped on the row so the streak can later judge
+ * this day by the goal that applied then, not by whatever the goal becomes.
+ */
 export async function addDailyActivity({
   courseId,
   date,
@@ -53,6 +59,7 @@ export async function addDailyActivity({
   lessonsCompleted?: number;
   reviewsDone?: number;
 }): Promise<void> {
+  const { dailyGoalXp } = await getSettings();
   await db.transaction('rw', db.dailyActivity, async () => {
     const existing = await db.dailyActivity.get([courseId, date]);
     await db.dailyActivity.put({
@@ -61,6 +68,7 @@ export async function addDailyActivity({
       xp: (existing?.xp ?? 0) + xp,
       lessonsCompleted: (existing?.lessonsCompleted ?? 0) + lessonsCompleted,
       reviewsDone: (existing?.reviewsDone ?? 0) + reviewsDone,
+      goalXp: dailyGoalXp,
     });
   });
 }

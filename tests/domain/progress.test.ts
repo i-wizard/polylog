@@ -14,8 +14,11 @@ const COURSE_ID = 'test-course';
 const TODAY = '2026-11-03';
 const DAILY_GOAL = 30;
 
-function activity({ date, xp }: { date: string; xp: number }): DailyActivity {
-  return { courseId: COURSE_ID, date, xp, lessonsCompleted: 0, reviewsDone: 0 };
+const YESTERDAY = shiftDateKey({ dateKey: TODAY, days: 1 });
+const RAISED_GOAL = 50;
+
+function activity({ date, xp, goalXp = DAILY_GOAL }: { date: string; xp: number; goalXp?: number }): DailyActivity {
+  return { courseId: COURSE_ID, date, xp, lessonsCompleted: 0, reviewsDone: 0, goalXp };
 }
 
 describe('xpForLesson', () => {
@@ -48,6 +51,21 @@ describe('calculateStreak', () => {
   it('is zero after a missed day', () => {
     const activities = [activity({ date: shiftDateKey({ dateKey: TODAY, days: 2 }), xp: 50 })];
     expect(calculateStreak({ activities, dailyGoalXp: DAILY_GOAL, today: TODAY })).toBe(0);
+  });
+
+  it('judges past days by the goal stored with them, not the current goal', () => {
+    const activities = [activity({ date: TODAY, xp: 50 }), activity({ date: YESTERDAY, xp: 30, goalXp: 30 })];
+    expect(calculateStreak({ activities, dailyGoalXp: RAISED_GOAL, today: TODAY })).toBe(2);
+  });
+
+  it('judges today by the current goal', () => {
+    const activities = [activity({ date: TODAY, xp: 30, goalXp: 30 })];
+    expect(calculateStreak({ activities, dailyGoalXp: RAISED_GOAL, today: TODAY })).toBe(0);
+  });
+
+  it('accepts the smallest goal for days recorded before goals were stored', () => {
+    const legacyDay = { ...activity({ date: YESTERDAY, xp: 10 }), goalXp: undefined };
+    expect(calculateStreak({ activities: [legacyDay], dailyGoalXp: RAISED_GOAL, today: TODAY })).toBe(1);
   });
 
   it('crosses month boundaries', () => {
