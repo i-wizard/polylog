@@ -14,7 +14,7 @@ A personal, phone-first language-learning web app. Primary goal: take a total be
 2. Run as a **static site on GitHub Pages**, installable on an **iPhone 14 Pro Max** as a home-screen app (PWA) that works offline.
 3. Make **pronunciation first-class**. Every target-language word and sentence can be heard, slowed down, shadowed, and (later) spoken and checked.
 4. Use **spaced repetition (FSRS)** so vocabulary actually sticks.
-5. Add optional **AI features** (writing feedback, conversation practice, speech-to-text) served by a **companion service on the user's Intel MacBook** (Ollama + Whisper). The app must stay fully usable when the Mac is off.
+5. Add optional **AI features** (a tutor chat, conversation role-plays, and later writing feedback and speech-to-text) served by **Ollama on the user's Intel MacBook**. The app must stay fully usable when the Mac is off.
 6. Be **language-agnostic in the core**. A new language is a *language pack* plus a *course folder*, with no edits to the lesson player, grading, SRS, or storage.
 
 ### Non-goals (for now)
@@ -34,7 +34,7 @@ A personal, phone-first language-learning web app. Primary goal: take a total be
 | GitHub Pages has no SPA fallback routing | Use **hash routing** (`#/lesson/...`). |
 | Repo name decides the URL path | Vite `base: './'` (relative), so the build works under any repo name. |
 | iPhone / iOS Safari | Install to home screen (exempt from Safari's 7-day storage eviction). Audio must start from a user tap. Respect safe-area insets (Dynamic Island, home indicator). |
-| HTTPS page cannot call `http://` LAN addresses (mixed content) | The Mac companion is exposed over **HTTPS via Tailscale Serve**, never as a raw LAN IP. |
+| HTTPS page cannot call `http://` LAN addresses (mixed content) | Ollama on the Mac is exposed over **HTTPS via a Cloudflare quick tunnel** (`tools/start-ai.sh`), never as a raw LAN IP. |
 | Intel MacBook, 32 GB RAM, no Apple-Silicon GPU | Ollama and Whisper run on the CPU, so they are slow. AI features must be asynchronous, streamed, and optional. Use smaller models for chat and larger ones for feedback. |
 | Local 8B LLMs make grammar mistakes | The LLM is **never the authority**. Curriculum and grading are pre-authored and deterministic. LLM output is labelled advisory and cross-checked against the course dictionary. |
 
@@ -50,15 +50,15 @@ A personal, phone-first language-learning web app. Primary goal: take a total be
 │  exercises        lesson session, XP/streak    storage (Dexie / IndexedDB)         │
 │                                                speech (pre-generated audio → TTS)  │
 │                   Language packs (de, …)       recorder (MediaRecorder)            │
-│                                                companion client (optional) ──┐     │
+│                   AI prompts + context         Ollama client (optional) ─────┐     │
 └──────────────────────────────────────────────────────────────────────────────┼─────┘
                                                                                │ HTTPS
-                       static files ▲                                          │ (Tailscale)
+                       static files ▲                                          │ (cloudflared tunnel)
                                     │                                          ▼
-                  ┌─────────────────┴──────┐          ┌──────── MacBook (phase 4) ────────┐
-                  │ GitHub Pages           │          │ Companion API (FastAPI)           │
-                  │ built by GitHub Actions│          │  /transcribe → faster-whisper     │
-                  └────────────────────────┘          │  /feedback, /chat → Ollama        │
+                  ┌─────────────────┴──────┐          ┌──────────── MacBook ──────────────┐
+                  │ GitHub Pages           │          │ Ollama :11434                     │
+                  │ built by GitHub Actions│          │  /api/chat (streaming, JSON mode) │
+                  └────────────────────────┘          │  /api/tags (models, health check) │
                                                       └───────────────────────────────────┘
 ```
 
@@ -84,7 +84,7 @@ Layering rules:
 | Tests | **Vitest** + `fake-indexeddb` | Same config as Vite; storage code tested unmocked |
 | CI/CD | **GitHub Actions** → GitHub Pages | Test, build, deploy on push to `main` |
 | TTS (phase 2) | **Piper** (offline neural TTS) run on the Mac at authoring time | Natural audio, free, consistent across devices |
-| Companion (phase 4) | **FastAPI** + **faster-whisper** + **Ollama** | Matches the user's Python/FastAPI conventions |
+| AI | **Ollama** called directly from the app, reached via a **Cloudflare quick tunnel** | No extra service to run; Ollama already streams, does JSON output and CORS |
 
 No external fonts or CDNs. The app uses the system font stack (SF Pro on iPhone) so it works fully offline.
 
@@ -284,11 +284,12 @@ Comparison is a word-level alignment between transcript and target, highlighting
 
 | Table | Key | Contents |
 |---|---|---|
-| `settings` | `key` | active course, daily goal, speech rate, voice, companion URL/token, unlock-all flag |
+| `settings` | `key` | active course, daily goal, speech rate, voice, Ollama URL and model, unlock-all flag |
 | `lessonProgress` | `[courseId+lessonId]` | first/last completed, best accuracy, times completed |
 | `cards` | `id` | FSRS state (`due`, `stability`, `difficulty`, `reps`, `lapses`, `state`, `lastReview`) + course/vocab/type |
 | `reviewLogs` | auto | card id, rating, reviewed at (for stats and future FSRS optimisation) |
-| `dailyActivity` | `[courseId+date]` | XP, lessons completed, reviews done |
+| `dailyActivity` | `[courseId+date]` | XP, lessons completed, reviews done, the daily goal in force that day |
+| `conversations` (v2) | `id` | AI chats: `<courseId>:tutor` and `<courseId>:roleplay:<scenarioId>`, with their messages |
 
 - Schema changes go through Dexie `version(n).upgrade(...)`, never by editing an old version.
 - On first launch the app calls `navigator.storage.persist()`.
@@ -305,10 +306,11 @@ Bottom tab bar (thumb reach), with routes in parentheses:
 | Today | `#/` | 1 |
 | Path | `#/path` | 1 |
 | Review | `#/review` | 1 |
+| Chat | `#/chat` | 4 |
 | Read | `#/read` | 3 |
 | Settings | `#/settings` | 1 |
 
-Full-screen routes (tab bar hidden): `#/lesson/:unitId/:lessonId`, `#/unit/:unitId/notes`, `#/review/session`.
+Full-screen routes (tab bar hidden): `#/lesson/:unitId/:lessonId`, `#/unit/:unitId/notes`, `#/review/session`, `#/chat/tutor`, `#/chat/roleplay/:scenarioId`.
 
 ### Today
 
@@ -432,22 +434,21 @@ Time expectation: B1 typically takes several hundred hours of study from zero. A
 
 ---
 
-## 14. Companion service (phase 4)
+## 14. AI tutor and role-plays (phase 4)
 
-A small **FastAPI** app in `companion/` running on the MacBook. It is the only component that talks to Ollama and Whisper.
+The app talks to **Ollama on the MacBook directly**. There is no companion service: Ollama already provides streaming chat (`/api/chat`), JSON-schema output (`format`), a model list (`/api/tags`) and CORS (`OLLAMA_ORIGINS`). A Python service would only be worth adding for Whisper. Setup steps are in [`docs/ai-setup.md`](docs/ai-setup.md).
 
-| Endpoint | Purpose |
+| Feature | How it works |
 |---|---|
-| `GET /health` | Reports Ollama and Whisper availability and model names. The app shows/hides AI features based on this. |
-| `POST /transcribe` | Multipart audio + language → transcript (faster-whisper, `int8` on CPU) |
-| `POST /feedback/writing` | `{ courseId, level, task, text }` → `{ corrected, errors: [{ original, correction, category: ErrorCategory, explanation }], comment }`. Uses Ollama's JSON-schema `format` for structured output. |
-| `POST /chat` | `{ scenario, level, messages }` → streamed reply, constrained to the learner's level |
+| **Tutor** (Chat tab, and ✨ in the lesson header) | One ongoing conversation per course. Replies in the language the learner writes in. In a lesson it is told the current exercise and the lesson's teaching cards; the exercise's answer is only included once the learner has answered, because small models leak answers they are asked to keep secret. |
+| **Grounding** | Each tutor question gets the single most relevant course grammar note attached (`findRelevantGrammarNotes`: words weighted by rarity across notes, so no stop-word lists). Without it, the 4B model confidently explained grammar wrongly in testing. |
+| **Role-plays** | `content/courses/<id>/scenarios.json`, one per unit, unlocked when the unit is finished. The opening line is pre-written so a role-play starts instantly. AI lines can be played (device TTS) and translated; the learner's lines can be checked. |
+| **Check my German** | JSON-schema request returning `{ isCorrect, corrected, explanation }`. The app derives the verdict from whether `corrected` differs from the original (ignoring the final full stop), because the model's own boolean was inconsistent. |
 
-- **Access:** `tailscale serve` exposes the service at `https://<mac>.<tailnet>.ts.net`, private to the user's devices, with a valid certificate. It works at home and on mobile data.
-- **Auth:** a bearer token set in the app's Settings, plus CORS allow-listing the GitHub Pages origin. Never expose it with a public tunnel.
-- **Models:** configurable per endpoint. On the Intel CPU, use a ~4B model for chat (latency) and a 7–9B model for writing feedback (quality). Benchmark candidates (Gemma, Qwen, Llama) on German before choosing. The "abliterated" Llama variant offers no benefit here.
-- **Trust:** the app cross-checks LLM corrections against the course dictionary (for example a wrong noun gender) and labels all AI output "AI feedback — may be wrong".
-- **Conventions:** Pydantic DTOs, `response_model` on every route, `Depends()` injection, enums for categories, `CustomLogger`, pytest with fixtures. This follows the user's global coding guidelines.
+- **Prompts** are pure functions in `src/domain/ai/prompts.ts`. The system prompt (rules, level, known words) only changes when the learner completes a lesson, so Ollama can reuse its cached prompt prefix. Per-turn context (exercise, notes) is attached to the latest message instead. Requests send the last 16 messages and `keep_alive: 30m`.
+- **Access:** `tools/start-ai.sh` makes sure Ollama allows the app's origin (`OLLAMA_ORIGINS`, restarting Ollama only if the running instance refuses the CORS preflight), then opens a Cloudflare quick tunnel (`cloudflared tunnel --url http://localhost:11434 --http-host-header localhost:11434`; the host-header rewrite gets past Ollama's localhost-only host check). It prints the `https://….trycloudflare.com` address once it answers and copies it to the clipboard; Settings has a one-tap **Paste**. HTTPS is required because the app itself is served over HTTPS. Trade-offs, accepted for a personal app: the address changes every time the tunnel starts, and it is public but unguessable while running, since Ollama has no authentication. Tailscale was tried first and judged too complex to set up.
+- **Model:** `gemma3:4b` by default, chosen in Settings from the installed models. In testing on the Intel CPU, a warm model starts replying in about 5–15 s (tutor questions with a note attached are the slowest); the first request after the model was unloaded takes about 20–30 s. The Llama 3.1 8B model was no more accurate and took about 70 s.
+- **Trust:** AI output is labelled "may be wrong". Grading, SRS and progress never depend on it.
 
 ---
 
@@ -464,12 +465,12 @@ A small **FastAPI** app in `companion/` running on the MacBook. It is the only c
 │   ├── main.tsx, App.tsx
 │   ├── domain/                  # pure logic: content types, grading, srs, session, progress
 │   ├── languages/               # language packs + registry
-│   ├── services/                # content, storage (Dexie), speech, recorder, companion
+│   ├── services/                # content, storage (Dexie), speech, recorder, AI (Ollama client)
 │   ├── ui/                      # components, exercises, screens, styles
 │   └── utils/                   # logger, small helpers
 ├── tests/                       # vitest; fixtures in tests/fixtures/
-├── tools/                       # (phase 2) audio generation scripts
-├── companion/                   # (phase 4) FastAPI service
+├── tools/                       # start-ai.sh (AI tunnel); (phase 2) audio generation scripts
+├── docs/                        # setup guides (AI: Ollama + Cloudflare tunnel)
 └── .github/workflows/deploy.yml
 ```
 
@@ -484,7 +485,7 @@ These mirror the user's global guidelines, adapted to TypeScript:
 - **JSDoc** on every exported function, class, and component, explaining purpose and usage.
 - Comments explain *why*, not *what*.
 - Single responsibility: screens render, domain functions decide, services do I/O.
-- Use `utils/logger.ts` at important steps and edge cases (audio fallbacks, storage migrations, companion failures).
+- Use `utils/logger.ts` at important steps and edge cases (audio fallbacks, storage migrations, AI request failures).
 - Tests: one behaviour per test, module-level constants, fixtures in `tests/fixtures/`, mocks asserted with their arguments.
 - No dead code or unused imports. `tsc --noEmit` and tests run in CI.
 
@@ -529,10 +530,13 @@ These mirror the user's global guidelines, adapted to TypeScript:
 - Checkpoint tests and placement skip-ahead
 - Content: Units 30–41
 
-### Phase 4 — AI companion
+### Phase 4 — AI
 
-- FastAPI companion, Tailscale setup guide
-- Whisper speaking checks, writing feedback, conversation role-plays
+- [x] Direct-to-Ollama client, one-command tunnel script (`tools/start-ai.sh`) and guide (`docs/ai-setup.md`)
+- [x] Tutor chat (Chat tab + in-lesson), grounded in course grammar notes
+- [x] Conversation role-plays for Units 1–5, with translate and "Check my German"
+- Role-plays for later units (add one to `scenarios.json` per unit)
+- Writing feedback, Whisper speaking checks (would need a small service on the Mac)
 - Exam prep units and the B1 mock exam
 
 ---
@@ -545,5 +549,6 @@ These mirror the user's global guidelines, adapted to TypeScript:
 | iOS TTS voice quality | Enhanced voice setup guide in Settings; Piper clips in phase 2 |
 | iOS speech recognition flaky in home-screen mode | Feature-detect it, keep it as a bonus, and use Whisper on the Mac as the robust path |
 | Data loss on the phone | Home-screen install, `storage.persist()`, export reminders |
-| Slow local LLM on Intel CPU | Streaming, small chat model, async feedback, and AI kept optional |
+| Slow local LLM on Intel CPU | Streaming, a 4B model, a stable cached system prompt, at most one grounding note per question, and AI kept optional |
+| Small LLM explains grammar wrongly | Tutor answers are grounded in the course's own grammar notes; AI output is labelled "may be wrong" |
 | Scope creep | Phases above. Content production is the long pole, so the app shell stays simple. |

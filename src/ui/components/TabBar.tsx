@@ -1,10 +1,11 @@
-import { House, Layers, Map as MapIcon, Settings } from 'lucide-react';
+import { House, Layers, Map as MapIcon, MessageCircle, Settings } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
 const TABS = [
   { to: '/', label: 'Today', Icon: House },
   { to: '/path', label: 'Path', Icon: MapIcon },
   { to: '/review', label: 'Review', Icon: Layers },
+  { to: '/chat', label: 'Chat', Icon: MessageCircle },
   { to: '/settings', label: 'Settings', Icon: Settings },
 ];
 

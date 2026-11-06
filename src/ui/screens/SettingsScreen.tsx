@@ -9,6 +9,7 @@ import { isSpeechSupported, listVoices } from '../../services/speech/speechServi
 import { toLocalDateKey } from '../../utils/date';
 import { Logger } from '../../utils/logger';
 import { useApp } from '../AppContext';
+import { AiSettingsCard } from '../chat/AiSettingsCard';
 import { useSpeaker } from '../hooks/useSpeaker';
 
 const NEW_CARD_OPTIONS = [10, 20, 30];
@@ -85,6 +86,8 @@ export function SettingsScreen() {
           </span>
         </label>
       </section>
+
+      <AiSettingsCard />
 
       <BackupSettings />
 

@@ -6,6 +6,7 @@ import {
   type Course,
   type Exercise,
   type MouthShapeGuide,
+  type Scenario,
   type Unit,
 } from './types';
 
@@ -163,6 +164,21 @@ function validateMouthShapes(guides: MouthShapeGuide[]): string[] {
   const problems: string[] = [];
   for (const guide of guides) {
     if (!MOUTH_SHAPES.includes(guide.shape)) problems.push(`unknown mouth shape "${guide.shape}"`);
+  }
+  return problems;
+}
+
+/**
+ * Checks role-play scenarios: unique ids, a known unit to unlock them, and
+ * the fields the AI prompt and the screen rely on.
+ */
+export function validateScenarios({ scenarios, units }: { scenarios: Scenario[]; units: Unit[] }): string[] {
+  const problems = findDuplicates({ label: 'scenario id', ids: scenarios.map((scenario) => scenario.id) });
+  const unitIds = new Set(units.map((unit) => unit.id));
+  for (const scenario of scenarios) {
+    if (!unitIds.has(scenario.unitId)) problems.push(`scenario ${scenario.id}: unknown unit "${scenario.unitId}"`);
+    if (scenario.goals.length === 0) problems.push(`scenario ${scenario.id}: no goals`);
+    if (!scenario.opening.text.trim()) problems.push(`scenario ${scenario.id}: empty opening line`);
   }
   return problems;
 }

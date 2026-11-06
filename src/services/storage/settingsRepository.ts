@@ -10,6 +10,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
   newCardsPerDay: 20,
   reviewsPerDay: 100,
   unlockAll: false,
+  ollamaModel: 'gemma3:4b',
 };
 
 /** Reads settings, filling in defaults for any field added after the record was saved. */

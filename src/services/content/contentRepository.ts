@@ -1,8 +1,12 @@
-import type { Course, Unit } from '../../domain/content/types';
+import type { Course, Scenario, Unit } from '../../domain/content/types';
 
 const COURSE_ROOT = '/content/courses';
 
 const courseModules = import.meta.glob<Course>('/content/courses/*/course.json', { eager: true, import: 'default' });
+const scenarioModules = import.meta.glob<Scenario[]>('/content/courses/*/scenarios.json', {
+  eager: true,
+  import: 'default',
+});
 const unitLoaders = import.meta.glob<Unit>('/content/courses/*/units/*.json', { import: 'default' });
 
 function unitPath({ courseId, unitId }: { courseId: string; unitId: string }): string {
@@ -51,4 +55,9 @@ export function listUnitFileIds(courseId: string): string[] {
   return Object.keys(unitLoaders)
     .filter((path) => path.startsWith(prefix))
     .map((path) => path.slice(prefix.length).replace(/\.json$/, ''));
+}
+
+/** Role-play scenarios of a course, in unit order. Courses without a scenarios file have none. */
+export function listScenarios(courseId: string): Scenario[] {
+  return scenarioModules[`${COURSE_ROOT}/${courseId}/scenarios.json`] ?? [];
 }

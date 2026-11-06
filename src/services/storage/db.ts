@@ -1,4 +1,5 @@
 import Dexie, { type EntityTable } from 'dexie';
+import type { Conversation } from '../../domain/ai/types';
 import type { DailyActivity } from '../../domain/progress/progress';
 import type { ReviewCard, ReviewLogEntry } from '../../domain/srs/scheduler';
 
@@ -16,6 +17,9 @@ export interface AppSettings {
   /** Lets every lesson be opened regardless of progress. */
   unlockAll: boolean;
   lastExportAt?: number;
+  /** Address of the learner's Ollama server, e.g. the https tunnel address printed by tools/start-ai.sh. AI features are hidden until set. */
+  ollamaUrl?: string;
+  ollamaModel: string;
 }
 
 export interface LessonProgress {
@@ -42,6 +46,7 @@ export class PolylogDatabase extends Dexie {
   cards!: EntityTable<ReviewCard, 'id'>;
   reviewLogs!: EntityTable<StoredReviewLog, 'id'>;
   dailyActivity!: Dexie.Table<DailyActivity, [string, string]>;
+  conversations!: EntityTable<Conversation, 'id'>;
 
   constructor() {
     super('polylog');
@@ -51,6 +56,9 @@ export class PolylogDatabase extends Dexie {
       cards: 'id, courseId, [courseId+due], [courseId+vocabId]',
       reviewLogs: '++id, cardId, courseId, reviewedAt',
       dailyActivity: '[courseId+date], courseId',
+    });
+    this.version(2).stores({
+      conversations: 'id, courseId, updatedAt',
     });
   }
 }

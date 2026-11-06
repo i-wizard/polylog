@@ -252,3 +252,22 @@ export interface Unit {
   grammarNotes: GrammarNote[];
   lessons: Lesson[];
 }
+
+/**
+ * A conversation the learner practises with the AI, unlocked by finishing a unit.
+ *
+ * `aiRole`, `setting` and `goals` are written in the base language: they brief
+ * the AI and are shown to the learner. `opening` is the character's first line,
+ * pre-written so a role-play starts instantly without waiting for the model.
+ */
+export interface Scenario {
+  id: string;
+  unitId: string;
+  icon: string;
+  title: string;
+  aiRole: string;
+  setting: string;
+  goals: string[];
+  opening: VocabExample;
+  usefulPhrases: VocabExample[];
+}

@@ -786,6 +786,253 @@ p {
   line-height: 1.3;
 }
 
+/* ---------- AI chat ---------- */
+.field-row {
+  display: flex;
+  gap: 8px;
+}
+
+.field-row .text-field {
+  flex: 1;
+  min-width: 0;
+}
+
+.field-row .button {
+  flex-shrink: 0;
+}
+
+.task.is-locked {
+  color: var(--text-muted);
+  background: var(--surface-2);
+  border-color: transparent;
+}
+
+.task__emoji {
+  flex-shrink: 0;
+  width: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.chat-screen {
+  max-width: 560px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+
+.chat-screen__header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* The safe-area padding lives here so the sticky header also covers the notch while scrolling. */
+  padding: calc(8px + var(--safe-top)) 0 8px;
+  background: var(--bg);
+}
+
+.chat-screen__title {
+  flex: 1;
+  font-size: 1.15rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chat-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  background: var(--bg);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.chat-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chat-intro {
+  margin: 8px 0 0;
+}
+
+.chat-thread {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 8px;
+}
+
+.chat-bubble {
+  max-width: 85%;
+  padding: 10px 14px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow-wrap: anywhere;
+}
+
+.chat-bubble--ai {
+  align-self: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-bottom-left-radius: 6px;
+}
+
+.chat-bubble--learner {
+  align-self: flex-end;
+  background: var(--primary);
+  color: var(--on-primary);
+  border-bottom-right-radius: 6px;
+}
+
+.chat-bubble__text {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.chat-bubble .rich-text p {
+  margin: 0 0 0.5em;
+}
+
+.chat-bubble .rich-text ul {
+  margin: 0 0 0.5em;
+  padding-left: 1.2em;
+}
+
+.chat-bubble__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-left: -8px;
+}
+
+.chat-bubble--learner .chat-bubble__actions {
+  margin-left: 0;
+}
+
+.chat-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 34px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.chat-bubble--learner .chat-action {
+  background: rgb(255 255 255 / 0.2);
+  color: inherit;
+}
+
+.chat-action:disabled {
+  opacity: 0.6;
+}
+
+.chat-bubble__note {
+  margin: 4px 0 0;
+  padding-top: 6px;
+  border-top: 1px solid currentColor;
+  border-top-color: color-mix(in srgb, currentColor 25%, transparent);
+  font-size: 0.92rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.chat-bubble__note svg {
+  vertical-align: -3px;
+}
+
+.chat-bubble__error {
+  font-size: 0.85rem;
+}
+
+.chat-error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  background: var(--danger-bg);
+  color: var(--danger);
+  font-size: 0.92rem;
+}
+
+.chat-composer {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  gap: 8px;
+  padding: 8px 0 calc(8px + var(--safe-bottom));
+  background: var(--bg);
+}
+
+.chat-composer__input {
+  flex: 1;
+  min-height: 48px;
+  padding: 10px 14px;
+  font-size: 1.05rem;
+}
+
+.chat-composer__send {
+  flex-shrink: 0;
+  width: 52px;
+  padding: 0;
+}
+
+.typing-dots {
+  display: inline-block;
+  width: 36px;
+  height: 18px;
+  background:
+    radial-gradient(circle, var(--text-muted) 3px, transparent 3.5px) 0 50% / 12px 12px no-repeat,
+    radial-gradient(circle, var(--text-muted) 3px, transparent 3.5px) 12px 50% / 12px 12px no-repeat,
+    radial-gradient(circle, var(--text-muted) 3px, transparent 3.5px) 24px 50% / 12px 12px no-repeat;
+  animation: typing-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes typing-pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.scenario-brief {
+  /* <details> doesn't lay out reliably as a flex container, so space its children with margins. */
+  display: block;
+}
+
+.scenario-brief[open] > * + * {
+  margin-top: 10px;
+}
+
+.scenario-brief summary {
+  cursor: pointer;
+}
+
+.scenario-brief__goals {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
 /* ---------- Lesson notes overlay ---------- */
 .lesson-notes {
   position: fixed;

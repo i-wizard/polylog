@@ -1,0 +1,82 @@
+[
+  {
+    "id": "rp-party",
+    "unitId": "01-hallo",
+    "icon": "🎉",
+    "title": "Meeting someone at a party",
+    "aiRole": "Lena, a friendly German student at a house party. You use the informal du.",
+    "setting": "A relaxed house party in Berlin. Lena walks up to the learner, who she has never met.",
+    "goals": ["Greet Lena", "Say your name and ask hers", "Ask how she is", "Say goodbye"],
+    "opening": { "text": "Hallo! Ich bin Lena. Wie heißt du?", "translation": "Hi! I'm Lena. What's your name?" },
+    "usefulPhrases": [
+      { "text": "Ich heiße …", "translation": "My name is …" },
+      { "text": "Freut mich!", "translation": "Nice to meet you!" },
+      { "text": "Wie geht es dir?", "translation": "How are you?" },
+      { "text": "Tschüss!", "translation": "Bye!" }
+    ]
+  },
+  {
+    "id": "rp-numbers",
+    "unitId": "02-zahlen",
+    "icon": "📱",
+    "title": "Swapping phone numbers",
+    "aiRole": "Jonas, a 25-year-old new classmate in a language course. You use du. Your phone number is 0176 482 913. When you say numbers, write them as words.",
+    "setting": "After class, Jonas wants to stay in touch and asks for the learner's number.",
+    "goals": ["Ask Jonas how old he is", "Say how old you are", "Give your phone number", "Ask him to repeat a number"],
+    "opening": { "text": "Hallo! Wie alt bist du eigentlich?", "translation": "Hi! How old are you, by the way?" },
+    "usefulPhrases": [
+      { "text": "Ich bin … Jahre alt.", "translation": "I'm … years old." },
+      { "text": "Meine Telefonnummer ist …", "translation": "My phone number is …" },
+      { "text": "Wie bitte?", "translation": "Pardon?" },
+      { "text": "Noch einmal, bitte.", "translation": "Once more, please." }
+    ]
+  },
+  {
+    "id": "rp-classmate",
+    "unitId": "03-woher",
+    "icon": "🌍",
+    "title": "A new classmate",
+    "aiRole": "Sofia, a student from Spain who lives in Munich and learns German. You use du.",
+    "setting": "The first day of a German course in Munich. Sofia sits next to the learner.",
+    "goals": ["Say where you come from", "Say where you live", "Ask which languages Sofia speaks", "Ask what she does"],
+    "opening": { "text": "Hallo, ich bin Sofia. Woher kommst du?", "translation": "Hi, I'm Sofia. Where are you from?" },
+    "usefulPhrases": [
+      { "text": "Ich komme aus …", "translation": "I come from …" },
+      { "text": "Ich wohne in …", "translation": "I live in …" },
+      { "text": "Ich spreche Englisch und ein bisschen Deutsch.", "translation": "I speak English and a little German." },
+      { "text": "Was machst du hier?", "translation": "What are you doing here?" }
+    ]
+  },
+  {
+    "id": "rp-family",
+    "unitId": "04-familie",
+    "icon": "📷",
+    "title": "Family photos",
+    "aiRole": "Max, a friend showing photos of his family: his sister Anna (a doctor), his brother Tim, and his parents. You use du.",
+    "setting": "Max and the learner look at family photos on his phone in a café.",
+    "goals": ["Ask who someone in a photo is", "Talk about your own family", "Say if you are married or single"],
+    "opening": { "text": "Schau mal, das ist meine Familie! Hast du Geschwister?", "translation": "Look, this is my family! Do you have siblings?" },
+    "usefulPhrases": [
+      { "text": "Wer ist das?", "translation": "Who is that?" },
+      { "text": "Das ist mein Bruder.", "translation": "That's my brother." },
+      { "text": "Ich habe eine Schwester.", "translation": "I have a sister." },
+      { "text": "Ich bin ledig.", "translation": "I'm single." }
+    ]
+  },
+  {
+    "id": "rp-cafe",
+    "unitId": "05-essen",
+    "icon": "☕",
+    "title": "At the café",
+    "aiRole": "A friendly waiter in a small Vienna café. You use the formal Sie. Prices: Kaffee 3 Euro, Tee 2 Euro, Wasser 2 Euro, Saft 3 Euro, Brötchen mit Käse 4 Euro, Apfelkuchen 4 Euro.",
+    "setting": "A small café in Vienna. The learner has just sat down at a table.",
+    "goals": ["Order a drink", "Order something to eat", "Ask for the bill and pay"],
+    "opening": { "text": "Guten Tag! Was möchten Sie trinken?", "translation": "Hello! What would you like to drink?" },
+    "usefulPhrases": [
+      { "text": "Ich möchte einen Kaffee, bitte.", "translation": "I'd like a coffee, please." },
+      { "text": "Ich habe Hunger.", "translation": "I'm hungry." },
+      { "text": "Die Rechnung, bitte.", "translation": "The bill, please." },
+      { "text": "Das ist lecker!", "translation": "That's delicious!" }
+    ]
+  }
+]

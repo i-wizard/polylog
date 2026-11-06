@@ -1,10 +1,10 @@
 import { describe, expect, it } from 'vitest';
 import { ExerciseType, MouthShape, PartOfSpeech } from '../../src/domain/content/types';
-import { validateCourse } from '../../src/domain/content/validateCourse';
+import { validateCourse, validateScenarios } from '../../src/domain/content/validateCourse';
 import { getLanguagePack } from '../../src/languages/registry';
 import { germanLanguagePack } from '../../src/languages/de';
-import { listCourses, listUnitFileIds, loadCourseUnits } from '../../src/services/content/contentRepository';
-import { buildCourse, buildUnit } from '../fixtures';
+import { listCourses, listScenarios, listUnitFileIds, loadCourseUnits } from '../../src/services/content/contentRepository';
+import { buildCourse, buildScenario, buildUnit } from '../fixtures';
 
 const FIXTURE_UNIT_FILES = ['unit-1'];
 
@@ -26,7 +26,22 @@ describe('bundled course content', () => {
       });
       expect(problems).toEqual([]);
     });
+
+    it(`${course.id} role-plays pass validation`, async () => {
+      const units = await loadCourseUnits(course);
+      expect(validateScenarios({ scenarios: listScenarios(course.id), units })).toEqual([]);
+    });
   }
+});
+
+describe('validateScenarios', () => {
+  it('reports duplicate ids and unknown units', () => {
+    const scenarios = [buildScenario(), buildScenario({ unitId: 'unit-9' })];
+    expect(validateScenarios({ scenarios, units: [buildUnit()] })).toEqual([
+      'duplicate scenario id "rp-cafe"',
+      'scenario rp-cafe: unknown unit "unit-9"',
+    ]);
+  });
 });
 
 describe('validateCourse', () => {
