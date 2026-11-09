@@ -4,6 +4,7 @@ import type { Course, Unit } from '../domain/content/types';
 import type { CoursePacks } from '../domain/grading/exerciseGrading';
 import { getLanguagePack } from '../languages/registry';
 import { getCourse, loadCourseUnits } from '../services/content/contentRepository';
+import { prepareSpeech } from '../services/speech/speechService';
 import type { AppSettings } from '../services/storage/db';
 import { DEFAULT_SETTINGS, getSettings } from '../services/storage/settingsRepository';
 import { Logger } from '../utils/logger';
@@ -29,6 +30,15 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [courseData, setCourseData] = useState<CourseData | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const activeCourseId = settings.activeCourseId;
+  const speechLocale = courseData?.packs.target.speechLocale;
+  const voiceUri = settings.voiceUri;
+
+  useEffect(() => {
+    if (!speechLocale) {
+      return undefined;
+    }
+    return prepareSpeech({ locale: speechLocale, voiceUri });
+  }, [speechLocale, voiceUri]);
 
   useEffect(() => {
     let cancelled = false;

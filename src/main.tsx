@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { unlockSpeechOnFirstInteraction } from './services/speech/speechService';
+import { preloadVoices } from './services/speech/speechService';
 import { App } from './ui/App';
 import './ui/styles/global.css';
 import { Logger } from './utils/logger';
@@ -17,7 +17,7 @@ async function requestPersistentStorage(): Promise<void> {
   Logger.info('Persistent storage', { persisted });
 }
 
-unlockSpeechOnFirstInteraction();
+void preloadVoices();
 void requestPersistentStorage();
 
 createRoot(document.getElementById('root') as HTMLElement).render(

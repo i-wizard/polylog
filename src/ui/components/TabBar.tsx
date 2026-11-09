@@ -1,4 +1,4 @@
-import { House, Layers, Map as MapIcon, MessageCircle, Settings } from 'lucide-react';
+import { BookA, House, Layers, Map as MapIcon, MessageCircle, Settings } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
 const TABS = [
@@ -6,6 +6,7 @@ const TABS = [
   { to: '/path', label: 'Path', Icon: MapIcon },
   { to: '/review', label: 'Review', Icon: Layers },
   { to: '/chat', label: 'Chat', Icon: MessageCircle },
+  { to: '/dictionary', label: 'Dictionary', Icon: BookA },
   { to: '/settings', label: 'Settings', Icon: Settings },
 ];
 

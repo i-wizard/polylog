@@ -3,6 +3,7 @@ import { AppProvider } from './AppContext';
 import { TabBar } from './components/TabBar';
 import { UpdateBanner } from './components/UpdateBanner';
 import { ChatScreen } from './screens/ChatScreen';
+import { DictionaryScreen } from './screens/DictionaryScreen';
 import { LessonScreen } from './screens/LessonScreen';
 import { PathScreen } from './screens/PathScreen';
 import { ReviewScreen } from './screens/ReviewScreen';
@@ -41,6 +42,7 @@ export function App() {
             <Route path="/path" element={<PathScreen />} />
             <Route path="/review" element={<ReviewScreen />} />
             <Route path="/chat" element={<ChatScreen />} />
+            <Route path="/dictionary" element={<DictionaryScreen />} />
             <Route path="/settings" element={<SettingsScreen />} />
             <Route path="/unit/:unitId/notes" element={<UnitNotesScreen />} />
           </Route>

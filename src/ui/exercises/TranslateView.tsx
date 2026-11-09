@@ -3,7 +3,7 @@ import { LanguageRole, type TranslateExercise } from '../../domain/content/types
 import { gradeTranslate } from '../../domain/grading/exerciseGrading';
 import { useApp } from '../AppContext';
 import { AnswerInput } from '../components/AnswerInput';
-import { Speakable } from '../components/Speakable';
+import { ListenFirstPrompt } from '../components/ListenFirstPrompt';
 import { CheckButton } from './CheckButton';
 import type { ExerciseViewProps } from './exerciseViewProps';
 
@@ -26,7 +26,7 @@ export function TranslateView({ exercise, isLocked, onSubmit }: ExerciseViewProp
       <div className="exercise-body">
         <p className="exercise-kicker">Translate into {answerPack.name}</p>
         <div className="exercise-prompt">
-          {sourceIsTarget ? <Speakable text={exercise.source} size="large" /> : <span>{exercise.source}</span>}
+          {sourceIsTarget ? <ListenFirstPrompt text={exercise.source} isLocked={isLocked} /> : <span>{exercise.source}</span>}
         </div>
         <AnswerInput
           value={answer}

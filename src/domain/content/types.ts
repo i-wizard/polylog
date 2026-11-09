@@ -25,6 +25,9 @@ export enum PartOfSpeech {
   NUMBER = 'NUMBER',
   INTERJECTION = 'INTERJECTION',
   PHRASE = 'PHRASE',
+  ARTICLE = 'ARTICLE',
+  DETERMINER = 'DETERMINER',
+  PARTICLE = 'PARTICLE',
 }
 
 export enum LessonKind {

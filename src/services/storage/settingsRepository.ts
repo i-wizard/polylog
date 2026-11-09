@@ -7,6 +7,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
   activeCourseId: DEFAULT_COURSE_ID,
   dailyGoalXp: 30,
   speechRate: 0.9,
+  listenFirst: true,
   newCardsPerDay: 20,
   reviewsPerDay: 100,
   unlockAll: false,

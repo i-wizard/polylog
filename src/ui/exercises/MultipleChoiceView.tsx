@@ -3,7 +3,7 @@ import { LanguageRole, type MultipleChoiceExercise } from '../../domain/content/
 import { gradeChoice } from '../../domain/grading/exerciseGrading';
 import { shuffle } from '../../utils/random';
 import { useApp } from '../AppContext';
-import { Speakable } from '../components/Speakable';
+import { ListenFirstPrompt } from '../components/ListenFirstPrompt';
 import { useSpeaker } from '../hooks/useSpeaker';
 import { CheckButton } from './CheckButton';
 import type { ExerciseViewProps } from './exerciseViewProps';
@@ -50,7 +50,7 @@ export function MultipleChoiceView({ exercise, isLocked, onSubmit }: ExerciseVie
       <div className="exercise-body">
         <p className="exercise-kicker">{instruction}</p>
         <div className="exercise-prompt">
-          {promptIsTarget ? <Speakable text={exercise.prompt} size="large" /> : <span>{exercise.prompt}</span>}
+          {promptIsTarget ? <ListenFirstPrompt text={exercise.prompt} isLocked={isLocked} /> : <span>{exercise.prompt}</span>}
         </div>
         <div className="option-list">
           {shuffledIndices.map((index) => (

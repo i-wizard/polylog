@@ -6,6 +6,7 @@ import { CardType, ratingForAnswer, ReviewRating } from '../../domain/srs/schedu
 import { useApp } from '../AppContext';
 import { AnswerInput } from '../components/AnswerInput';
 import { FeedbackSheet } from '../components/FeedbackSheet';
+import { ListenFirstPrompt } from '../components/ListenFirstPrompt';
 import { NounLabel } from '../components/NounLabel';
 import { Speakable } from '../components/Speakable';
 import { CheckButton } from '../exercises/CheckButton';
@@ -51,7 +52,7 @@ function RecognizeCard({ vocab, onRated }: CardViewProps) {
       <div className="exercise-body">
         <p className="exercise-kicker">What does this mean?</p>
         <div className="exercise-prompt">
-          <Speakable text={spokenForm} display={<NounLabel vocab={vocab} />} size="large" />
+          <ListenFirstPrompt text={spokenForm} display={<NounLabel vocab={vocab} />} isLocked={isRevealed} />
         </div>
         {isRevealed && (
           <div className="card reveal">

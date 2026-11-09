@@ -12,6 +12,8 @@ export interface AppSettings {
   /** Multiplier for normal speech; slow mode uses SLOW_SPEECH_RATE. */
   speechRate: number;
   voiceUri?: string;
+  /** Hides target-language question text until tapped, so questions are heard before they are read. */
+  listenFirst: boolean;
   newCardsPerDay: number;
   reviewsPerDay: number;
   /** Lets every lesson be opened regardless of progress. */

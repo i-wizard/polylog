@@ -154,6 +154,17 @@ function VoiceSettings({
       <button type="button" className="button button--secondary" onClick={() => speakTarget(sampleText)}>
         Test voice
       </button>
+      <label className="toggle">
+        <input
+          type="checkbox"
+          checked={settings.listenFirst}
+          onChange={(event) => void updateSettings({ listenFirst: event.target.checked })}
+        />
+        <span>
+          <strong>Listen first</strong>
+          <span className="muted"> — hide {languageName} questions until you tap "Show text"</span>
+        </span>
+      </label>
       <p className="muted small">
         For a much more natural voice on iPhone: Settings → Accessibility → Spoken Content → Voices → {languageName}, then
         download an <em>Enhanced</em> or <em>Premium</em> voice and pick it above.

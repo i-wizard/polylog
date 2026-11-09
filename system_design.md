@@ -243,6 +243,10 @@ Why the strict rules: *den* vs *dem*, *gute* vs *guten* or *wohne* vs *wohnt* ar
 
 Slow mode uses `rate ≈ 0.6` for TTS (or `playbackRate` for clips). Every target-language string in the UI is rendered by a `<Speakable>` component that adds the 🔊 / 🐢 buttons. Audio auto-plays after an answer is checked.
 
+**No delay on the first tap:** the voice list is loaded when the app starts (`preloadVoices`, polled because iOS often neither returns it at once nor fires `voiceschanged`). On the first tap anywhere, `prepareSpeech` speaks a silent utterance with the chosen voice. That unlocks iOS speech for later automatic playback and makes iOS load the voice before the first speaker tap.
+
+**Listen first:** with the `listenFirst` setting on (the default), target-language question prompts are hidden behind a "Show text" button (`<ListenFirstPrompt>`). This applies to multiple choice, translate-from-German and the review "What does this mean?" card. The text appears on tap, and always once the answer is checked.
+
 **iPhone setup (one-off):** Settings → Accessibility → Spoken Content → Voices → German → download an *Enhanced* or *Premium* voice. The Settings screen has a voice picker and a test button.
 
 ### 9.2 Pre-generated audio pipeline (phase 2)
@@ -307,6 +311,7 @@ Bottom tab bar (thumb reach), with routes in parentheses:
 | Path | `#/path` | 1 |
 | Review | `#/review` | 1 |
 | Chat | `#/chat` | 4 |
+| Dictionary | `#/dictionary` | 2 |
 | Read | `#/read` | 3 |
 | Settings | `#/settings` | 1 |
 
@@ -461,6 +466,7 @@ The app talks to **Ollama on the MacBook directly**. There is no companion servi
 ├── package.json / tsconfig.json / vite.config.ts
 ├── public/                      # icons, (phase 2) audio/<courseId>/
 ├── content/courses/de-en/       # course data (JSON)
+├── content/dictionaries/        # offline dictionaries (generated, see docs/dictionary.md)
 ├── src/
 │   ├── main.tsx, App.tsx
 │   ├── domain/                  # pure logic: content types, grading, srs, session, progress
@@ -469,8 +475,8 @@ The app talks to **Ollama on the MacBook directly**. There is no companion servi
 │   ├── ui/                      # components, exercises, screens, styles
 │   └── utils/                   # logger, small helpers
 ├── tests/                       # vitest; fixtures in tests/fixtures/
-├── tools/                       # start-ai.sh (AI tunnel); (phase 2) audio generation scripts
-├── docs/                        # setup guides (AI: Ollama + Cloudflare tunnel)
+├── tools/                       # start-ai.sh (AI tunnel), build-dictionary.mjs; (phase 2) audio generation scripts
+├── docs/                        # setup guides (AI: Ollama + Cloudflare tunnel), dictionary build
 └── .github/workflows/deploy.yml
 ```
 
@@ -519,6 +525,7 @@ These mirror the user's global guidelines, adapted to TypeScript:
 ### Phase 2 — A1–A2 depth
 
 - Piper audio pipeline + manifest lookup
+- [x] Offline dictionary (Dictionary tab): about 23k common German words with gender, plural, IPA and meanings, searchable in German (any inflected form, umlauts optional) or English, with speech
 - `SPEAK` exercises via on-device recognition
 - Grammar reference screen, stats screen, weak-spots queue
 - Content: Units 6–29

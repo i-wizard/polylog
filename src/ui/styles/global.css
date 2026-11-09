@@ -548,6 +548,22 @@ p {
   font-weight: 650;
 }
 
+.reveal-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  padding: 6px 14px;
+  border: 1px dashed var(--border);
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 /* ---------- Options & tiles ---------- */
 .option-list {
   display: flex;
@@ -1436,4 +1452,71 @@ input[type='range'] {
   box-shadow: 0 4px 16px rgb(0 0 0 / 0.15);
   font-size: 0.9rem;
   white-space: nowrap;
+}
+
+/* ---------- Dictionary ---------- */
+.dictionary-search {
+  position: relative;
+  display: block;
+}
+
+.dictionary-search svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.dictionary-search .text-field {
+  padding-left: 44px;
+}
+
+.dictionary-results {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dictionary-entry {
+  gap: 6px;
+}
+
+.dictionary-entry__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.dictionary-entry__pronunciation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 0;
+  font-family: 'Doulos SIL', 'Charis SIL', 'Gentium Plus', var(--font);
+}
+
+.dictionary-entry__meanings {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.dictionary-entry__example {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 6px;
+  border-top: 1px solid var(--border);
+}
+
+.badge {
+  flex-shrink: 0;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 650;
 }
