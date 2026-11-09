@@ -1,6 +1,6 @@
 # Setting up the AI tutor
 
-The **Chat** tab (tutor and role-plays) and the ✨ button in lessons use **Ollama on your Mac**. One script on the Mac gives Ollama a temporary `https://` address, and you paste that address into the app. Everything else in the app works without any of this.
+The **Chat** tab (tutor and role-plays) uses **Ollama on your Mac**. One script on the Mac gives Ollama a temporary `https://` address, and you paste that address into the app. Everything else in the app works without any of this.
 
 ## One-time setup
 

@@ -2,7 +2,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { findRelevantGrammarNotes, formatGrammarNote } from '../../domain/ai/chatContext';
 import type { TurnContext } from '../../domain/ai/prompts';
-import { ChatRole, type ChatMessage, type ConversationRef, type LessonContext } from '../../domain/ai/types';
+import { ChatRole, type ChatMessage, type ConversationRef } from '../../domain/ai/types';
 import type { Unit } from '../../domain/content/types';
 import { connectionFromSettings, describeAiError, generateReply, saveLearnerMessage } from '../../services/ai/chatService';
 import { clearConversation, getConversation } from '../../services/storage/conversationRepository';
@@ -13,18 +13,16 @@ const NO_MESSAGES: ChatMessage[] = [];
 
 function buildTurnContext({
   history,
-  lessonContext,
   referenceUnits,
 }: {
   history: ChatMessage[];
-  lessonContext?: LessonContext;
   referenceUnits?: Unit[];
 }): TurnContext {
   const question = history.findLast((message) => message.role === ChatRole.USER)?.content ?? '';
   const referenceNotes = referenceUnits
     ? findRelevantGrammarNotes({ question, units: referenceUnits }).map(formatGrammarNote)
     : undefined;
-  return { lessonContext, referenceNotes };
+  return { referenceNotes };
 }
 
 export interface ChatState {
@@ -53,13 +51,11 @@ export function useChat({
   conversation,
   systemPrompt,
   leadingMessages = NO_MESSAGES,
-  lessonContext,
   referenceUnits,
 }: {
   conversation: ConversationRef;
   systemPrompt: string;
   leadingMessages?: ChatMessage[];
-  lessonContext?: LessonContext;
   referenceUnits?: Unit[];
 }): ChatState {
   const { settings } = useApp();
@@ -83,7 +79,7 @@ export function useChat({
         setError('Set up the AI tutor in Settings first.');
         return;
       }
-      const context = buildTurnContext({ history, lessonContext, referenceUnits });
+      const context = buildTurnContext({ history, referenceUnits });
       const controller = new AbortController();
       abortRef.current = controller;
       setError(null);
@@ -106,7 +102,7 @@ export function useChat({
         setStreamingText(null);
       }
     },
-    [settings, conversation, systemPrompt, lessonContext, referenceUnits],
+    [settings, conversation, systemPrompt, referenceUnits],
   );
 
   const send = useCallback(

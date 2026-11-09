@@ -46,16 +46,6 @@ export interface Conversation extends ConversationRef {
   updatedAt: number;
 }
 
-/** What the tutor is told about the lesson the learner is in. */
-export interface LessonContext {
-  lessonTitle: string;
-  /** Titles and text of teaching cards already shown in this lesson. */
-  notes: string[];
-  /** Plain-language description of the current exercise, including its answer. */
-  exercise?: string;
-  hasAnswered: boolean;
-}
-
 /** The learner's level and vocabulary, used to keep AI replies understandable. */
 export interface LearnerProfile {
   level: string;

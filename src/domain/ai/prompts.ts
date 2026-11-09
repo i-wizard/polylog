@@ -1,6 +1,6 @@
 import type { Scenario } from '../content/types';
 import type { CoursePacks } from '../grading/exerciseGrading';
-import { ChatRole, type ChatMessage, type LearnerProfile, type LessonContext } from './types';
+import { ChatRole, type ChatMessage, type LearnerProfile } from './types';
 
 /**
  * Prompts for the local chat model.
@@ -68,36 +68,17 @@ export function buildRolePlaySystemPrompt({
 
 /** Extra information attached to the learner's latest message only. */
 export interface TurnContext {
-  lessonContext?: LessonContext;
   /** Course grammar notes relevant to the question, as plain text. */
   referenceNotes?: string[];
 }
 
-/** Wraps the learner's message with what they are looking at and any relevant course notes. */
+/** Wraps the learner's message with any relevant course notes. */
 export function attachTurnContext({ text, context }: { text: string; context: TurnContext }): string {
-  const lines: string[] = [];
-  const { lessonContext, referenceNotes = [] } = context;
-  if (lessonContext) {
-    lines.push(`The learner is in the lesson "${lessonContext.lessonTitle}".`);
-    if (lessonContext.notes.length > 0) {
-      lines.push(`Lesson notes so far: ${lessonContext.notes.join(' | ')}`);
-    }
-    if (lessonContext.exercise) {
-      lines.push(`Current exercise: ${lessonContext.exercise}`);
-      lines.push(
-        lessonContext.hasAnswered
-          ? 'The learner has already answered it, so you may explain the answer fully.'
-          : 'The learner has not answered it yet. Help them work it out with a hint instead of giving the answer.',
-      );
-    }
-  }
-  if (referenceNotes.length > 0) {
-    lines.push(`Course notes that may help:\n${referenceNotes.join('\n\n')}`);
-  }
-  if (lines.length === 0) {
+  const { referenceNotes = [] } = context;
+  if (referenceNotes.length === 0) {
     return text;
   }
-  return `[${lines.join('\n')}]\n\n${text}`;
+  return `[Course notes that may help:\n${referenceNotes.join('\n\n')}]\n\n${text}`;
 }
 
 /**

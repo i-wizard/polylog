@@ -10,7 +10,7 @@ export function TeachView({ exercise, isLocked, onSubmit }: ExerciseViewProps<Te
     <>
       <div className="exercise-body">
         <p className="exercise-kicker">New</p>
-        <TeachContent exercise={exercise} />
+        <TeachContent exercise={exercise} isListenFirst />
       </div>
       <CheckButton
         isLocked={isLocked}

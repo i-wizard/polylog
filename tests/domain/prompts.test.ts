@@ -6,18 +6,12 @@ import {
   buildRolePlaySystemPrompt,
   buildTutorSystemPrompt,
 } from '../../src/domain/ai/prompts';
-import { ChatRole, type LearnerProfile, type LessonContext } from '../../src/domain/ai/types';
+import { ChatRole, type LearnerProfile } from '../../src/domain/ai/types';
 import { GERMAN_ENGLISH_PACKS, buildScenario } from '../fixtures';
 
 const PROFILE: LearnerProfile = { level: 'A1', knownWords: ['der Kaffee', 'trinken'] };
 const SYSTEM_PROMPT = 'You are a tutor.';
-const HINT_FIRST_RULE = 'Help them work it out with a hint instead of giving the answer';
-const LESSON_CONTEXT: LessonContext = {
-  lessonTitle: 'Drinks',
-  notes: [],
-  exercise: 'Translate "coffee" from English into German.',
-  hasAnswered: false,
-};
+const REFERENCE_NOTE = 'Nouns: der Kaffee is masculine.';
 
 describe('buildTutorSystemPrompt', () => {
   it('replies in the language the learner writes in, at their level', () => {
@@ -51,23 +45,12 @@ describe('assembleChatMessages', () => {
     expect(messages).toEqual([{ role: ChatRole.SYSTEM, content: SYSTEM_PROMPT }, ...history]);
   });
 
-  it('attaches the lesson context with the hint-first rule to the latest learner message only', () => {
-    const messages = assembleChatMessages({ systemPrompt: SYSTEM_PROMPT, history, context: { lessonContext: LESSON_CONTEXT } });
+  it('attaches course notes to the latest learner message only', () => {
+    const messages = assembleChatMessages({ systemPrompt: SYSTEM_PROMPT, history, context: { referenceNotes: [REFERENCE_NOTE] } });
     expect(messages[0].content).toBe(SYSTEM_PROMPT);
     expect(messages[1].content).toBe('Hallo!');
-    expect(messages[2].content).toContain('Current exercise: Translate "coffee"');
-    expect(messages[2].content).toContain(HINT_FIRST_RULE);
+    expect(messages[2].content).toContain(REFERENCE_NOTE);
     expect(messages[2].content.endsWith('How do I say coffee?')).toBe(true);
-  });
-
-  it('allows the full answer once the learner has answered', () => {
-    const messages = assembleChatMessages({
-      systemPrompt: SYSTEM_PROMPT,
-      history,
-      context: { lessonContext: { ...LESSON_CONTEXT, hasAnswered: true } },
-    });
-    expect(messages[2].content).not.toContain(HINT_FIRST_RULE);
-    expect(messages[2].content).toContain('you may explain the answer fully');
   });
 });
 

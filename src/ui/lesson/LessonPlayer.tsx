@@ -1,6 +1,5 @@
-import { BookOpen, Sparkles, X } from 'lucide-react';
+import { BookA, BookOpen, X } from 'lucide-react';
 import { useMemo, useState } from 'react';
-import { buildLessonContext } from '../../domain/ai/chatContext';
 import type { Lesson } from '../../domain/content/types';
 import { AnswerResult } from '../../domain/grading/answerChecker';
 import type { AnswerOutcome } from '../../domain/grading/exerciseGrading';
@@ -16,13 +15,12 @@ import {
   type LessonResult,
 } from '../../domain/session/lessonSession';
 import { stopSpeaking } from '../../services/speech/speechService';
-import { useApp } from '../AppContext';
 import { FeedbackSheet } from '../components/FeedbackSheet';
 import { ProgressBar } from '../components/ProgressBar';
 import { ExerciseView, SELF_COMPLETING_TYPES } from '../exercises/ExerciseView';
 import { useSpeaker } from '../hooks/useSpeaker';
 import { LessonNotesSheet } from './LessonNotesSheet';
-import { TutorSheet } from './TutorSheet';
+import { DictionarySheet } from './DictionarySheet';
 
 /**
  * Runs a lesson: shows exercises one at a time, gives feedback, re-queues
@@ -39,18 +37,12 @@ export function LessonPlayer({
   onComplete: (result: LessonResult) => void;
 }) {
   const speakTarget = useSpeaker();
-  const { settings, packs } = useApp();
   const [session, setSession] = useState(() => createLessonSession(lesson));
   const [outcome, setOutcome] = useState<AnswerOutcome | null>(null);
   const [isNotesOpen, setIsNotesOpen] = useState(false);
-  const [isTutorOpen, setIsTutorOpen] = useState(false);
+  const [isDictionaryOpen, setIsDictionaryOpen] = useState(false);
   const exercise = currentExercise(session);
   const notes = useMemo(() => seenTeachExercises(session), [session]);
-  const hasAnswered = outcome !== null;
-  const lessonContext = useMemo(
-    () => buildLessonContext({ lesson, exercise, hasAnswered, notes, packs }),
-    [lesson, exercise, hasAnswered, notes, packs],
-  );
 
   const advance = (isCorrect: boolean) => {
     const nextSession = recordAnswer({ session, isCorrect });
@@ -92,11 +84,9 @@ export function LessonPlayer({
             <BookOpen size={22} />
           </button>
         )}
-        {settings.ollamaUrl && (
-          <button type="button" className="icon-button" aria-label="Ask the tutor" onClick={() => setIsTutorOpen(true)}>
-            <Sparkles size={22} />
-          </button>
-        )}
+        <button type="button" className="icon-button" aria-label="Open the dictionary" onClick={() => setIsDictionaryOpen(true)}>
+          <BookA size={22} />
+        </button>
       </header>
       <main className="lesson-player__main">
         {exercise && (
@@ -110,7 +100,7 @@ export function LessonPlayer({
       </main>
       {outcome && <FeedbackSheet outcome={outcome} onContinue={() => advance(outcome.result !== AnswerResult.WRONG)} />}
       {isNotesOpen && <LessonNotesSheet notes={notes} onClose={() => setIsNotesOpen(false)} />}
-      {isTutorOpen && <TutorSheet lessonContext={lessonContext} onClose={() => setIsTutorOpen(false)} />}
+      {isDictionaryOpen && <DictionarySheet onClose={() => setIsDictionaryOpen(false)} />}
     </div>
   );
 }

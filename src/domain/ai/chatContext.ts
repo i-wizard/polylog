@@ -1,23 +1,9 @@
-import {
-  CefrLevel,
-  ExerciseType,
-  LanguageRole,
-  PartOfSpeech,
-  type Exercise,
-  type GrammarNote,
-  type Lesson,
-  type Scenario,
-  type TeachExercise,
-  type Unit,
-} from '../content/types';
+import { CefrLevel, PartOfSpeech, type GrammarNote, type Scenario, type Unit } from '../content/types';
 import type { CoursePacks } from '../grading/exerciseGrading';
-import { ChatMode, type ChatMessage, type ConversationRef, type LearnerProfile, type LessonContext } from './types';
+import { ChatMode, type ChatMessage, type ConversationRef, type LearnerProfile } from './types';
 
 /** How many earlier messages are sent with each request; older ones are dropped to keep CPU replies fast. */
 export const CHAT_HISTORY_LIMIT = 16;
-
-/** Teaching-card text is trimmed so a long lesson doesn't bloat every tutor request. */
-const NOTE_CHARACTER_LIMIT = 400;
 
 /** Course notes attached to a tutor question. Each one adds several seconds of prompt processing on a CPU. */
 const REFERENCE_NOTE_LIMIT = 1;
@@ -97,93 +83,6 @@ export function isScenarioUnlocked({
 /** The latest messages, oldest first, capped so prompts stay small. */
 export function recentMessages<T extends ChatMessage>(messages: T[], limit: number = CHAT_HISTORY_LIMIT): T[] {
   return messages.slice(-limit);
-}
-
-function languageName({ role, packs }: { role: LanguageRole; packs: CoursePacks }): string {
-  return role === LanguageRole.TARGET ? packs.target.name : packs.base.name;
-}
-
-function otherLanguageName({ role, packs }: { role: LanguageRole; packs: CoursePacks }): string {
-  return role === LanguageRole.TARGET ? packs.base.name : packs.target.name;
-}
-
-function quoteList(items: string[]): string {
-  return items.map((item) => `"${item}"`).join(', ');
-}
-
-/**
- * Describes an exercise in plain words so the tutor can help with it.
- *
- * The answer is only included once the learner has answered: small models
- * leak answers they are told to keep secret, so they are simply not told.
- */
-export function describeExercise({
-  exercise,
-  packs,
-  includeAnswer,
-}: {
-  exercise: Exercise;
-  packs: CoursePacks;
-  includeAnswer: boolean;
-}): string {
-  const answer = (text: string) => (includeAnswer ? ` Correct answer: "${text}".` : '');
-  switch (exercise.type) {
-    case ExerciseType.TEACH:
-      return `Teaching card "${exercise.title}": ${exercise.body.slice(0, NOTE_CHARACTER_LIMIT)}`;
-    case ExerciseType.MULTIPLE_CHOICE:
-      return (
-        `Multiple choice. Question (${languageName({ role: exercise.promptLanguage, packs })}): "${exercise.prompt}". ` +
-        `Options: ${quoteList(exercise.options)}.${answer(exercise.options[exercise.answerIndex])}`
-      );
-    case ExerciseType.MATCH_PAIRS:
-      return `Match the pairs: ${exercise.pairs.map((pair) => `"${pair.target}" = "${pair.base}"`).join(', ')}.`;
-    case ExerciseType.TRANSLATE:
-      return (
-        `Translate "${exercise.source}" from ${languageName({ role: exercise.sourceLanguage, packs })} ` +
-        `into ${otherLanguageName({ role: exercise.sourceLanguage, packs })}.${answer(exercise.accepted[0])}`
-      );
-    case ExerciseType.WORD_ORDER:
-      return `Put word tiles in order to say "${exercise.translation}" in ${packs.target.name}.${answer(exercise.answer)}`;
-    case ExerciseType.CLOZE:
-      return (
-        `Fill the gap: "${exercise.before} ___ ${exercise.after}" (meaning: "${exercise.translation}").` +
-        answer(exercise.accepted[0])
-      );
-    case ExerciseType.LISTEN_CHOOSE:
-      return (
-        `Listening: the learner hears a word and picks it from ${quoteList(exercise.options)}.` +
-        answer(exercise.options[exercise.answerIndex])
-      );
-    case ExerciseType.LISTEN_TYPE:
-      return `Dictation: the learner hears "${exercise.text}" ("${exercise.translation}") and types it.`;
-    case ExerciseType.SHADOW:
-      return `Pronunciation practice: say "${exercise.text}" ("${exercise.translation}") aloud.${exercise.hint ? ` Tip shown: ${exercise.hint}` : ''}`;
-  }
-}
-
-/** What the in-lesson tutor needs to know about where the learner is. */
-export function buildLessonContext({
-  lesson,
-  exercise,
-  hasAnswered,
-  notes,
-  packs,
-}: {
-  lesson: Lesson;
-  exercise: Exercise | null;
-  hasAnswered: boolean;
-  notes: TeachExercise[];
-  packs: CoursePacks;
-}): LessonContext {
-  return {
-    lessonTitle: lesson.title,
-    notes: notes.map((note) => `${note.title}: ${note.body.slice(0, NOTE_CHARACTER_LIMIT)}`),
-    exercise:
-      exercise && exercise.type !== ExerciseType.TEACH
-        ? describeExercise({ exercise, packs, includeAnswer: hasAnswered })
-        : undefined,
-    hasAnswered,
-  };
 }
 
 function wordsOf(text: string): string[] {

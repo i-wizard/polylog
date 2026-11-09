@@ -245,7 +245,7 @@ Slow mode uses `rate ≈ 0.6` for TTS (or `playbackRate` for clips). Every targe
 
 **No delay on the first tap:** the voice list is loaded when the app starts (`preloadVoices`, polled because iOS often neither returns it at once nor fires `voiceschanged`). On the first tap anywhere, `prepareSpeech` speaks a silent utterance with the chosen voice. That unlocks iOS speech for later automatic playback and makes iOS load the voice before the first speaker tap.
 
-**Listen first:** with the `listenFirst` setting on (the default), target-language question prompts are hidden behind a "Show text" button (`<ListenFirstPrompt>`). This applies to multiple choice, translate-from-German and the review "What does this mean?" card. The text appears on tap, and always once the answer is checked.
+**Listen first:** with the `listenFirst` setting on (the default), target-language question prompts are hidden behind a "Show text" button (`<ListenFirstPrompt>`). This applies to multiple choice, translate-from-German, shadowing, the example words on teaching cards and the review "What does this mean?" card. Lesson notes always show the text, since they are for looking things up. The text appears on tap, and always once the answer is checked.
 
 **iPhone setup (one-off):** Settings → Accessibility → Spoken Content → Voices → German → download an *Enhanced* or *Premium* voice. The Settings screen has a voice picker and a test button.
 
@@ -445,7 +445,7 @@ The app talks to **Ollama on the MacBook directly**. There is no companion servi
 
 | Feature | How it works |
 |---|---|
-| **Tutor** (Chat tab, and ✨ in the lesson header) | One ongoing conversation per course. Replies in the language the learner writes in. In a lesson it is told the current exercise and the lesson's teaching cards; the exercise's answer is only included once the learner has answered, because small models leak answers they are asked to keep secret. |
+| **Tutor** (Chat tab) | One ongoing conversation per course. Replies in the language the learner writes in. |
 | **Grounding** | Each tutor question gets the single most relevant course grammar note attached (`findRelevantGrammarNotes`: words weighted by rarity across notes, so no stop-word lists). Without it, the 4B model confidently explained grammar wrongly in testing. |
 | **Role-plays** | `content/courses/<id>/scenarios.json`, one per unit, unlocked when the unit is finished. The opening line is pre-written so a role-play starts instantly. AI lines can be played (device TTS) and translated; the learner's lines can be checked. |
 | **Check my German** | JSON-schema request returning `{ isCorrect, corrected, explanation }`. The app derives the verdict from whether `corrected` differs from the original (ignoring the final full stop), because the model's own boolean was inconsistent. |
@@ -525,7 +525,7 @@ These mirror the user's global guidelines, adapted to TypeScript:
 ### Phase 2 — A1–A2 depth
 
 - Piper audio pipeline + manifest lookup
-- [x] Offline dictionary (Dictionary tab): about 23k common German words with gender, plural, IPA and meanings, searchable in German (any inflected form, umlauts optional) or English, with speech
+- [x] Offline dictionary (Dictionary tab): about 23k common German words with gender, plural, IPA and meanings, searchable in German (any inflected form, umlauts optional) or English, with speech; also opens as a sheet from the lesson header, so a word can be looked up mid-quiz
 - `SPEAK` exercises via on-device recognition
 - Grammar reference screen, stats screen, weak-spots queue
 - Content: Units 6–29
@@ -540,7 +540,7 @@ These mirror the user's global guidelines, adapted to TypeScript:
 ### Phase 4 — AI
 
 - [x] Direct-to-Ollama client, one-command tunnel script (`tools/start-ai.sh`) and guide (`docs/ai-setup.md`)
-- [x] Tutor chat (Chat tab + in-lesson), grounded in course grammar notes
+- [x] Tutor chat (Chat tab), grounded in course grammar notes
 - [x] Conversation role-plays for Units 1–5, with translate and "Check my German"
 - Role-plays for later units (add one to `scenarios.json` per unit)
 - Writing feedback, Whisper speaking checks (would need a small service on the Mac)

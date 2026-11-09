@@ -860,15 +860,6 @@ p {
   text-overflow: ellipsis;
 }
 
-.chat-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 30;
-  background: var(--bg);
-  overflow-y: auto;
-  overscroll-behavior: contain;
-}
-
 .chat-panel {
   flex: 1;
   display: flex;

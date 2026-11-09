@@ -1,4 +1,5 @@
 import type { TeachExercise } from '../../domain/content/types';
+import { ListenFirstPrompt } from '../components/ListenFirstPrompt';
 import { MouthShapeGuides } from '../components/MouthShapeGuides';
 import { RichText } from '../components/RichText';
 import { Speakable } from '../components/Speakable';
@@ -6,8 +7,12 @@ import { Speakable } from '../components/Speakable';
 /**
  * The readable part of a teaching card: title, explanation, lip drawings and
  * audio examples. Shared by the lesson card itself and the lesson notes sheet.
+ *
+ * With `isListenFirst`, the examples follow the "Listen first" setting so the
+ * learner hears new words before reading them; the notes sheet, used for
+ * looking things up, always shows them.
  */
-export function TeachContent({ exercise }: { exercise: TeachExercise }) {
+export function TeachContent({ exercise, isListenFirst = false }: { exercise: TeachExercise; isListenFirst?: boolean }) {
   return (
     <>
       <h2 className="exercise-title">{exercise.title}</h2>
@@ -17,7 +22,11 @@ export function TeachContent({ exercise }: { exercise: TeachExercise }) {
         <ul className="example-list">
           {exercise.examples.map((example) => (
             <li key={example.text} className="example-list__item">
-              <Speakable text={example.text} />
+              {isListenFirst ? (
+                <ListenFirstPrompt text={example.text} isLocked={false} size="normal" />
+              ) : (
+                <Speakable text={example.text} />
+              )}
               {example.translation && <span className="example-list__translation">{example.translation}</span>}
               {example.hint && <span className="example-list__hint">{example.hint}</span>}
             </li>

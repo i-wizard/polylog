@@ -162,7 +162,7 @@ function VoiceSettings({
         />
         <span>
           <strong>Listen first</strong>
-          <span className="muted"> — hide {languageName} questions until you tap "Show text"</span>
+          <span className="muted"> — hide {languageName} text in lessons until you tap "Show text"</span>
         </span>
       </label>
       <p className="muted small">
