@@ -1,4 +1,4 @@
-import { Eye } from 'lucide-react';
+import { Eye, EyeOff } from 'lucide-react';
 import { useState, type ReactNode } from 'react';
 import { useApp } from '../AppContext';
 import { Speakable } from './Speakable';
@@ -6,9 +6,9 @@ import { Speakable } from './Speakable';
 /**
  * Target-language text in a lesson, for listening practice.
  *
- * With the "Listen first" setting on, the text stays hidden behind a
- * "Show text" button so the learner hears it before reading it. It is
- * revealed on tap, and always once the answer has been checked.
+ * With the "Listen first" setting on, the text starts hidden and an eye
+ * button next to the play buttons shows or hides it, so the learner hears
+ * it before reading it. Once the answer has been checked it is always shown.
  */
 export function ListenFirstPrompt({
   text,
@@ -17,7 +17,7 @@ export function ListenFirstPrompt({
   size = 'large',
 }: {
   text: string;
-  /** Optional rendered content once shown (e.g. a coloured noun); defaults to `text`. */
+  /** Optional rendered content (e.g. a coloured noun); defaults to `text`. */
   display?: ReactNode;
   /** True once the answer has been checked or revealed. */
   isLocked: boolean;
@@ -26,16 +26,24 @@ export function ListenFirstPrompt({
   const { settings } = useApp();
   const [isRevealed, setIsRevealed] = useState(false);
 
-  if (!settings.listenFirst || isRevealed || isLocked) {
+  if (!settings.listenFirst || isLocked) {
     return <Speakable text={text} display={display} size={size} />;
   }
+  const iconSize = size === 'large' ? 20 : 16;
   return (
     <Speakable
       text={text}
       size={size}
-      display={
-        <button type="button" className="reveal-text" onClick={() => setIsRevealed(true)}>
-          <Eye size={18} aria-hidden /> Show text
+      display={isRevealed ? display : ''}
+      extraButton={
+        <button
+          type="button"
+          className="icon-button icon-button--subtle"
+          aria-label={isRevealed ? 'Hide text' : 'Show text'}
+          aria-pressed={isRevealed}
+          onClick={() => setIsRevealed(!isRevealed)}
+        >
+          {isRevealed ? <EyeOff size={iconSize} /> : <Eye size={iconSize} />}
         </button>
       }
     />

@@ -548,22 +548,6 @@ p {
   font-weight: 650;
 }
 
-.reveal-text {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  min-height: 40px;
-  padding: 6px 14px;
-  border: 1px dashed var(--border);
-  border-radius: 999px;
-  background: var(--surface-2);
-  color: var(--text-muted);
-  font: inherit;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
 /* ---------- Options & tiles ---------- */
 .option-list {
   display: flex;

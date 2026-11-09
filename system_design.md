@@ -245,7 +245,7 @@ Slow mode uses `rate ≈ 0.6` for TTS (or `playbackRate` for clips). Every targe
 
 **No delay on the first tap:** the voice list is loaded when the app starts (`preloadVoices`, polled because iOS often neither returns it at once nor fires `voiceschanged`). On the first tap anywhere, `prepareSpeech` speaks a silent utterance with the chosen voice. That unlocks iOS speech for later automatic playback and makes iOS load the voice before the first speaker tap.
 
-**Listen first:** with the `listenFirst` setting on (the default), target-language question prompts are hidden behind a "Show text" button (`<ListenFirstPrompt>`). This applies to multiple choice, translate-from-German, shadowing, the example words on teaching cards and the review "What does this mean?" card. Lesson notes always show the text, since they are for looking things up. The text appears on tap, and always once the answer is checked.
+**Listen first:** with the `listenFirst` setting on (the default), target-language text in lessons starts hidden, with an eye button next to the play buttons to show or hide it (`<ListenFirstPrompt>`). This applies to multiple choice, translate-from-German, shadowing, the example words on teaching cards and the review "What does this mean?" card. Lesson notes always show the text, since they are for looking things up. It is always shown once the answer is checked.
 
 **iPhone setup (one-off):** Settings → Accessibility → Spoken Content → Voices → German → download an *Enhanced* or *Premium* voice. The Settings screen has a voice picker and a test button.
 

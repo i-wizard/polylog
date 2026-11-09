@@ -13,11 +13,14 @@ export function Speakable({
   text,
   display,
   size = 'normal',
+  extraButton,
 }: {
   text: string;
   /** Optional rendered content (e.g. a coloured noun); defaults to `text`. */
   display?: ReactNode;
   size?: 'normal' | 'large';
+  /** Another button shown after the play buttons, e.g. to show or hide the text. */
+  extraButton?: ReactNode;
 }) {
   const speakTarget = useSpeaker();
   const { packs } = useApp();
@@ -40,6 +43,7 @@ export function Speakable({
       >
         <Snail size={size === 'large' ? 20 : 16} />
       </button>
+      {extraButton}
       <span className="speakable__text" lang={packs.target.code}>
         {display ?? text}
       </span>
