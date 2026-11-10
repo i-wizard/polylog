@@ -1,0 +1,866 @@
+{
+  "id": "11-einkaufen",
+  "level": "A1",
+  "title": "Shopping & clothes",
+  "description": "Clothes, colours and prices, with dieser and welcher, and buying a jacket in a shop.",
+  "icon": "🛍️",
+  "vocab": [
+    { "id": "kleidung", "text": "Kleidung", "translations": ["clothes", "clothing"], "partOfSpeech": "NOUN", "gender": "f", "pronunciation": "KLY-doong", "example": { "text": "Die Kleidung hier ist schön.", "translation": "The clothes here are nice." } },
+    { "id": "hose", "text": "Hose", "translations": ["trousers", "pants", "pair of trousers"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Hosen", "pronunciation": "HOH-ze", "example": { "text": "Die Hose ist neu.", "translation": "The trousers are new." } },
+    { "id": "hemd", "text": "Hemd", "translations": ["shirt"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Hemden", "pronunciation": "hemt", "example": { "text": "Das Hemd ist weiß.", "translation": "The shirt is white." } },
+    { "id": "jacke", "text": "Jacke", "translations": ["jacket"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Jacken", "pronunciation": "YAK-ke", "example": { "text": "Ich suche eine Jacke.", "translation": "I'm looking for a jacket." } },
+    { "id": "pullover", "text": "Pullover", "translations": ["jumper", "sweater", "pullover"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Pullover", "pronunciation": "poo-LOH-ver", "example": { "text": "Der Pullover ist grau.", "translation": "The jumper is grey." } },
+    { "id": "kleid", "text": "Kleid", "translations": ["dress"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Kleider", "pronunciation": "klite", "example": { "text": "Das Kleid ist rot.", "translation": "The dress is red." } },
+    { "id": "rock", "text": "Rock", "translations": ["skirt"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Röcke", "pronunciation": "rok", "example": { "text": "Ich möchte einen Rock.", "translation": "I'd like a skirt." } },
+    { "id": "schuh", "text": "Schuh", "translations": ["shoe"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Schuhe", "pronunciation": "shoo", "example": { "text": "Die Schuhe sind schwarz.", "translation": "The shoes are black." } },
+    { "id": "t-shirt", "text": "T-Shirt", "translations": ["T-shirt"], "partOfSpeech": "NOUN", "gender": "n", "plural": "T-Shirts", "pronunciation": "TEE-shirt (as in English)", "example": { "text": "Das T-Shirt kostet zehn Euro.", "translation": "The T-shirt costs ten euros." } },
+    { "id": "mantel", "text": "Mantel", "translations": ["coat"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Mäntel", "pronunciation": "MAN-tel", "example": { "text": "Ich suche einen Mantel.", "translation": "I'm looking for a coat." } },
+    { "id": "farbe", "text": "Farbe", "translations": ["colour", "color"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Farben", "pronunciation": "FAR-be", "example": { "text": "Welche Farbe hat die Jacke?", "translation": "What colour is the jacket?" } },
+    { "id": "rot", "text": "rot", "translations": ["red"], "partOfSpeech": "ADJECTIVE", "pronunciation": "roht", "example": { "text": "Der Rock ist rot.", "translation": "The skirt is red." } },
+    { "id": "blau", "text": "blau", "translations": ["blue"], "partOfSpeech": "ADJECTIVE", "pronunciation": "blow (as in how)", "example": { "text": "Die Jacke ist blau.", "translation": "The jacket is blue." } },
+    { "id": "gruen", "text": "grün", "translations": ["green"], "partOfSpeech": "ADJECTIVE", "pronunciation": "grühn (ü: ee with rounded lips)", "example": { "text": "Das Kleid ist grün.", "translation": "The dress is green." } },
+    { "id": "gelb", "text": "gelb", "translations": ["yellow"], "partOfSpeech": "ADJECTIVE", "pronunciation": "gelp", "example": { "text": "Das T-Shirt ist gelb.", "translation": "The T-shirt is yellow." } },
+    { "id": "schwarz", "text": "schwarz", "translations": ["black"], "partOfSpeech": "ADJECTIVE", "pronunciation": "shvarts", "example": { "text": "Die Schuhe sind schwarz.", "translation": "The shoes are black." } },
+    { "id": "weiss", "text": "weiß", "translations": ["white"], "partOfSpeech": "ADJECTIVE", "pronunciation": "vice", "example": { "text": "Das Hemd ist weiß.", "translation": "The shirt is white." } },
+    { "id": "grau", "text": "grau", "translations": ["grey", "gray"], "partOfSpeech": "ADJECTIVE", "pronunciation": "grow (as in how)", "example": { "text": "Der Mantel ist grau.", "translation": "The coat is grey." } },
+    { "id": "braun", "text": "braun", "translations": ["brown"], "partOfSpeech": "ADJECTIVE", "pronunciation": "brown", "example": { "text": "Die Schuhe sind braun.", "translation": "The shoes are brown." } },
+    { "id": "das-gefaellt-mir", "text": "Das gefällt mir.", "translations": ["I like it.", "I like that."], "partOfSpeech": "PHRASE", "pronunciation": "das ge-FELT meer", "example": { "text": "Die Jacke ist blau. Das gefällt mir!", "translation": "The jacket is blue. I like it!" } },
+    { "id": "kosten", "text": "kosten", "translations": ["to cost"], "partOfSpeech": "VERB", "pronunciation": "KOS-ten", "example": { "text": "Was kostet die Jacke?", "translation": "How much is the jacket?" } },
+    { "id": "cent", "text": "Cent", "translations": ["cent"], "partOfSpeech": "NOUN", "gender": "m", "pronunciation": "sent", "example": { "text": "Das kostet neunundneunzig Cent.", "translation": "That costs ninety-nine cents." } },
+    { "id": "teuer", "text": "teuer", "translations": ["expensive"], "partOfSpeech": "ADJECTIVE", "pronunciation": "TOY-er", "example": { "text": "Das ist zu teuer!", "translation": "That's too expensive!" } },
+    { "id": "billig", "text": "billig", "translations": ["cheap"], "partOfSpeech": "ADJECTIVE", "pronunciation": "BIL-likh (soft ch)", "example": { "text": "Das T-Shirt ist billig.", "translation": "The T-shirt is cheap." } },
+    { "id": "kaufen", "text": "kaufen", "translations": ["to buy"], "partOfSpeech": "VERB", "pronunciation": "KOW-fen", "example": { "text": "Ich kaufe den Pullover.", "translation": "I'm buying the jumper." } },
+    { "id": "dieser", "text": "dieser", "translations": ["this (before a noun)", "this", "these"], "partOfSpeech": "DETERMINER", "pronunciation": "DEE-zer", "example": { "text": "Dieser Rock ist schön.", "translation": "This skirt is nice." } },
+    { "id": "welcher", "text": "welcher", "translations": ["which"], "partOfSpeech": "QUESTION_WORD", "pronunciation": "VEL-kher (soft ch)", "example": { "text": "Welcher Mantel ist billig?", "translation": "Which coat is cheap?" } },
+    { "id": "groesse", "text": "Größe", "translations": ["size"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Größen", "pronunciation": "GRÖ-se (long ö: ay with rounded lips)", "example": { "text": "Welche Größe haben Sie?", "translation": "What size are you?" } },
+    { "id": "anprobieren", "text": "anprobieren", "translations": ["to try on"], "partOfSpeech": "VERB", "pronunciation": "AN-pro-bee-ren", "example": { "text": "Kann ich die Hose anprobieren?", "translation": "Can I try the trousers on?" } },
+    { "id": "geschaeft", "text": "Geschäft", "translations": ["shop", "store"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Geschäfte", "pronunciation": "ge-SHEFT", "example": { "text": "Das Geschäft ist am Sonntag zu.", "translation": "The shop is closed on Sunday." } },
+    { "id": "verkaeuferin", "text": "Verkäuferin", "translations": ["shop assistant (female)", "sales assistant"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Verkäuferinnen", "pronunciation": "fer-KOY-fe-rin", "example": { "text": "Die Verkäuferin spricht Englisch.", "translation": "The shop assistant speaks English." } }
+  ],
+  "grammarNotes": [
+    {
+      "id": "kleidung-articles",
+      "title": "Clothes: der, die, das",
+      "body": "Learn every piece of clothing with its article and plural.\n\nTwo things are different from English:\n\n- **die Hose** is singular: it's *one* pair of trousers. *Die Hose **ist** neu.* = The trousers are new. *die Hosen* means several pairs.\n- Shoes come in pairs, so you'll mostly use the plural **die Schuhe**.\n\n**die Kleidung** (clothes) is singular too: *Die Kleidung ist schön.*",
+      "table": [
+        ["Singular", "Plural", "English"],
+        ["die Hose", "die Hosen", "trousers"],
+        ["die Jacke", "die Jacken", "jacket"],
+        ["das Hemd", "die Hemden", "shirt"],
+        ["das Kleid", "die Kleider", "dress"],
+        ["das T-Shirt", "die T-Shirts", "T-shirt"],
+        ["der Pullover", "die Pullover", "jumper"],
+        ["der Rock", "die Röcke", "skirt"],
+        ["der Mantel", "die Mäntel", "coat"],
+        ["der Schuh", "die Schuhe", "shoe"]
+      ]
+    },
+    {
+      "id": "kleidung-colours",
+      "title": "Colours after sein",
+      "body": "After **ist** or **sind**, a colour never changes. It stays the same for *der*, *die* and *das* words and for the plural:\n\n- *Der Rock ist **rot**.*\n- *Die Schuhe sind **rot**.*\n\nTo ask about a colour, say **Welche Farbe hat …?** (literally *Which colour has …?*).\n\nBefore a noun, colours take endings (*eine blaue Jacke*). That comes in a later unit; for now, put the colour after *ist* or *sind*.",
+      "table": [
+        ["German", "English"],
+        ["rot", "red"],
+        ["blau", "blue"],
+        ["grün", "green"],
+        ["gelb", "yellow"],
+        ["schwarz", "black"],
+        ["weiß", "white"],
+        ["grau", "grey"],
+        ["braun", "brown"]
+      ]
+    },
+    {
+      "id": "kleidung-prices",
+      "title": "Prices: kostet or kosten",
+      "body": "Ask **Was kostet …?** or **Wie viel kostet …?** Both mean *How much is …?*\n\nThe verb matches the thing: one thing **kostet**, several things **kosten**.\n\n- *Die Jacke **kostet** neunundvierzig Euro.*\n- *Die Schuhe **kosten** achtzig Euro.*\n\nGermans write a comma where English uses a dot. Say the euros, then the cents, and leave out the word *Cent*. *Euro* and *Cent* don't take a plural after a number.\n\nToo expensive? **Das ist zu teuer!**",
+      "table": [
+        ["Written", "Said"],
+        ["5,00 €", "fünf Euro"],
+        ["12,50 €", "zwölf Euro fünfzig"],
+        ["49,99 €", "neunundvierzig Euro neunundneunzig"],
+        ["0,80 €", "achtzig Cent"]
+      ]
+    },
+    {
+      "id": "kleidung-dieser-welcher",
+      "title": "dieser and welcher",
+      "body": "**dieser** (this) and **welcher** (which) follow the pattern of *der, die, das*. The ending copies the end of the article:\n\n- de**r** → dies**er**, welch**er**\n- di**e** → dies**e**, welch**e**\n- da**s** → dies**es**, welch**es**\n\nWhen a *der* word is the **object**, *der* becomes *den*, and these words change the same way: **diesen**, **welchen**. *die*, *das* and plural words don't change.\n\n- *Ich kaufe **diesen** Mantel.*\n- ***Welchen** Rock möchtest du?*",
+      "table": [
+        ["", "der word", "die word", "das word", "plural"],
+        ["the", "der Rock", "die Hose", "das Hemd", "die Schuhe"],
+        ["this / these", "dieser Rock", "diese Hose", "dieses Hemd", "diese Schuhe"],
+        ["which", "welcher Rock", "welche Hose", "welches Hemd", "welche Schuhe"],
+        ["object: the", "den Rock", "die Hose", "das Hemd", "die Schuhe"],
+        ["object: this", "diesen Rock", "diese Hose", "dieses Hemd", "diese Schuhe"],
+        ["object: which", "welchen Rock", "welche Hose", "welches Hemd", "welche Schuhe"]
+      ]
+    },
+    {
+      "id": "kleidung-shop-phrases",
+      "title": "In a clothes shop",
+      "body": "Use **Sie** with shop assistants. **anprobieren** (to try on) is a separable verb: the prefix *an* jumps to the end, *Ich probiere die Jacke **an**.* After *können* or *möchten* it stays in one piece at the end: *Kann ich die Jacke **anprobieren**?*\n\n**Das gefällt mir.** means *I like it*. Learn it as a fixed phrase.\n\nIn **auch in Blau** (also in blue), the colour is used as a name, so it gets a capital letter.",
+      "table": [
+        ["You want to…", "Say"],
+        ["say what you're looking for", "Ich suche eine Jacke."],
+        ["give your size", "Größe M. / Größe achtunddreißig."],
+        ["ask for another colour", "Haben Sie die Jacke auch in Blau?"],
+        ["try something on", "Kann ich die Jacke anprobieren?"],
+        ["say you like it", "Das gefällt mir."],
+        ["ask the price", "Was kostet die Jacke?"],
+        ["say no politely", "Das ist leider zu teuer."],
+        ["buy it", "Ich kaufe diese Jacke."]
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "sh1-clothes",
+      "title": "Clothes",
+      "kind": "LEARN",
+      "introduces": ["kleidung", "hose", "hemd", "jacke", "pullover", "kleid", "rock", "schuh", "t-shirt", "mantel"],
+      "exercises": [
+        {
+          "id": "sh1-e1",
+          "type": "TEACH",
+          "title": "Something to wear",
+          "body": "**die Kleidung** means clothes. Learn each piece with its article. Tap to hear them.\n\n*Jacke* starts with a *y* sound, and *Hose* has a long *o*, like *hose* in English.",
+          "examples": [
+            { "text": "die Kleidung", "translation": "clothes" },
+            { "text": "die Hose", "translation": "trousers" },
+            { "text": "das Hemd", "translation": "shirt" },
+            { "text": "die Jacke", "translation": "jacket" },
+            { "text": "der Pullover", "translation": "jumper, sweater" },
+            { "text": "das T-Shirt", "translation": "T-shirt" }
+          ]
+        },
+        {
+          "id": "sh1-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Hose", "base": "trousers" },
+            { "target": "das Hemd", "base": "shirt" },
+            { "target": "die Jacke", "base": "jacket" },
+            { "target": "der Pullover", "base": "jumper" },
+            { "target": "die Kleidung", "base": "clothes" }
+          ]
+        },
+        {
+          "id": "sh1-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "der, die or das?",
+          "prompt": "Hemd",
+          "promptLanguage": "TARGET",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "sh1-e4",
+          "type": "TEACH",
+          "title": "One pair of trousers: die Hose",
+          "body": "English says *the trousers **are***, but German counts one pair as **one** thing:\n\n- *Die Hose **ist** neu.* = The trousers are new.\n- *die Hosen* = several pairs of trousers\n\nPlurals to learn: *die Hemden, die Jacken, die T-Shirts*. **der Pullover** stays the same: *die Pullover*.",
+          "examples": [
+            { "text": "Die Hose ist neu.", "translation": "The trousers are new." },
+            { "text": "Ich habe zwei Hosen.", "translation": "I have two pairs of trousers." },
+            { "text": "Er hat drei Pullover.", "translation": "He has three jumpers." }
+          ]
+        },
+        {
+          "id": "sh1-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which sentence is right?",
+          "prompt": "The trousers are new.",
+          "promptLanguage": "BASE",
+          "options": ["Die Hose ist neu.", "Die Hose sind neu.", "Der Hose ist neu."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "sh1-e6",
+          "type": "TEACH",
+          "title": "More clothes",
+          "body": "Shoes usually come in pairs, so you'll mostly hear the plural **die Schuhe**.\n\nWatch the plurals with an umlaut: *der Rock → die **Röcke***, *der Mantel → die **Mäntel***.",
+          "examples": [
+            { "text": "das Kleid", "translation": "dress", "hint": "plural: die Kleider" },
+            { "text": "der Rock", "translation": "skirt", "hint": "plural: die Röcke" },
+            { "text": "der Mantel", "translation": "coat", "hint": "plural: die Mäntel" },
+            { "text": "der Schuh", "translation": "shoe", "hint": "plural: die Schuhe" }
+          ]
+        },
+        {
+          "id": "sh1-e7",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "das Kleid", "base": "the dress" },
+            { "target": "der Rock", "base": "the skirt" },
+            { "target": "der Mantel", "base": "the coat" },
+            { "target": "die Schuhe", "base": "the shoes" },
+            { "target": "das T-Shirt", "base": "the T-shirt" }
+          ]
+        },
+        {
+          "id": "sh1-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "What's the plural?",
+          "prompt": "der Rock",
+          "promptLanguage": "TARGET",
+          "options": ["die Röcke", "die Rocks", "die Rocken"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "sh1-e9",
+          "type": "TEACH",
+          "title": "Ich suche einen Mantel.",
+          "body": "With **suchen** (to look for), **möchten** and **haben**, the clothes are the **object**. Remember: only *der* words change, *ein* → **einen** and *der* → **den**.\n\n- *Ich suche **einen** Mantel.* (der Mantel)\n- *Ich suche **eine** Jacke.* (die Jacke)\n- *Ich suche **ein** Kleid.* (das Kleid)",
+          "examples": [
+            { "text": "Ich suche einen Mantel.", "translation": "I'm looking for a coat." },
+            { "text": "Ich möchte eine Hose.", "translation": "I'd like a pair of trousers." },
+            { "text": "Wo ist der Pullover?", "translation": "Where is the jumper?" },
+            { "text": "Ich suche den Pullover.", "translation": "I'm looking for the jumper." }
+          ]
+        },
+        {
+          "id": "sh1-e10",
+          "type": "CLOZE",
+          "before": "Ich suche",
+          "after": "Rock.",
+          "accepted": ["einen"],
+          "translation": "I'm looking for a skirt.",
+          "hint": "a, der word as the object"
+        },
+        {
+          "id": "sh1-e11",
+          "type": "WORD_ORDER",
+          "translation": "I'm looking for a jacket and a jumper.",
+          "answer": "Ich suche eine Jacke und einen Pullover.",
+          "distractors": ["ein", "Hose"]
+        },
+        {
+          "id": "sh1-e12",
+          "type": "TRANSLATE",
+          "source": "I'd like a dress.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich möchte ein Kleid.", "Ich möchte ein Kleid, bitte.", "Ich möchte bitte ein Kleid."]
+        },
+        {
+          "id": "sh1-e13",
+          "type": "TRANSLATE",
+          "source": "Wo sind meine Schuhe?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Where are my shoes?"]
+        },
+        {
+          "id": "sh1-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Ich suche einen Mantel.",
+          "translation": "I'm looking for a coat."
+        },
+        {
+          "id": "sh1-e15",
+          "type": "SHADOW",
+          "text": "die Hose, das Hemd, die Jacke, der Pullover",
+          "translation": "the trousers, the shirt, the jacket, the jumper",
+          "hint": "Pullover: poo-LOH-ver, stress the second syllable."
+        }
+      ]
+    },
+    {
+      "id": "sh2-colours",
+      "title": "Colours",
+      "kind": "LEARN",
+      "introduces": ["farbe", "rot", "blau", "gruen", "gelb", "schwarz", "weiss", "grau", "braun", "das-gefaellt-mir"],
+      "exercises": [
+        {
+          "id": "sh2-e1",
+          "type": "TEACH",
+          "title": "Colours",
+          "body": "**die Farbe** = the colour. Tap to hear the colours.\n\n*blau, grau* and *braun* all have the *ow* sound of English *how*. **weiß** sounds like English *vice*.",
+          "mouthShapes": [
+            { "shape": "TIGHT_ROUNDED", "label": "ü", "caption": "grün: say ee, then round your lips" }
+          ],
+          "examples": [
+            { "text": "rot", "translation": "red" },
+            { "text": "blau", "translation": "blue" },
+            { "text": "grün", "translation": "green" },
+            { "text": "gelb", "translation": "yellow" },
+            { "text": "schwarz", "translation": "black" },
+            { "text": "weiß", "translation": "white" },
+            { "text": "grau", "translation": "grey" },
+            { "text": "braun", "translation": "brown" }
+          ]
+        },
+        {
+          "id": "sh2-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "rot", "base": "red" },
+            { "target": "blau", "base": "blue" },
+            { "target": "grün", "base": "green" },
+            { "target": "gelb", "base": "yellow" },
+            { "target": "schwarz", "base": "black" }
+          ]
+        },
+        {
+          "id": "sh2-e3",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "weiß", "base": "white" },
+            { "target": "grau", "base": "grey" },
+            { "target": "braun", "base": "brown" },
+            { "target": "die Farbe", "base": "the colour" }
+          ]
+        },
+        {
+          "id": "sh2-e4",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which colour do you hear?",
+          "options": ["blau", "grau"],
+          "answerIndex": 1
+        },
+        {
+          "id": "sh2-e5",
+          "type": "TEACH",
+          "title": "Die Jacke ist blau.",
+          "body": "After **ist** or **sind**, a colour never changes. It's the same for *der*, *die* and *das* words, and for the plural.\n\nTo ask about the colour: **Welche Farbe hat …?** = What colour is …?\n\nBefore a noun, colours take endings (*eine blaue Jacke*). That comes later. For now, put the colour after *ist* or *sind*.",
+          "examples": [
+            { "text": "Der Rock ist rot.", "translation": "The skirt is red." },
+            { "text": "Die Jacke ist blau.", "translation": "The jacket is blue." },
+            { "text": "Das Hemd ist weiß.", "translation": "The shirt is white." },
+            { "text": "Die Schuhe sind schwarz.", "translation": "The shoes are black." },
+            { "text": "Welche Farbe hat die Hose?", "translation": "What colour are the trousers?" }
+          ]
+        },
+        {
+          "id": "sh2-e6",
+          "type": "CLOZE",
+          "before": "Die Schuhe",
+          "after": "braun.",
+          "accepted": ["sind"],
+          "translation": "The shoes are brown.",
+          "hint": "sein → plural"
+        },
+        {
+          "id": "sh2-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which sentence is right?",
+          "prompt": "The jacket is green.",
+          "promptLanguage": "BASE",
+          "options": ["Die Jacke ist grün.", "Die Jacke sind grün.", "Die Jacke grün ist."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "sh2-e8",
+          "type": "WORD_ORDER",
+          "translation": "The dress is red.",
+          "answer": "Das Kleid ist rot.",
+          "distractors": ["Der", "sind"]
+        },
+        {
+          "id": "sh2-e9",
+          "type": "TEACH",
+          "title": "Das gefällt mir.",
+          "body": "**Das gefällt mir.** = I like it. (Literally: *That pleases me.*) Use it for things you see, like clothes, a flat or a town. Learn it as a fixed phrase.\n\n- **Das gefällt mir nicht.** = I don't like it.\n- **Das gefällt mir sehr gut!** = I really like it!\n\nThe *ä* in *gefällt* sounds like the *e* in *bed*.",
+          "examples": [
+            { "text": "Das gefällt mir.", "translation": "I like it." },
+            { "text": "Das gefällt mir nicht.", "translation": "I don't like it." },
+            { "text": "Die Jacke ist rot. Das gefällt mir sehr gut!", "translation": "The jacket is red. I really like it!" }
+          ]
+        },
+        {
+          "id": "sh2-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "You see a jacket and you really like it. What do you say?",
+          "prompt": "A jacket you like",
+          "promptLanguage": "BASE",
+          "options": ["Das gefällt mir sehr gut!", "Das gefällt mir nicht.", "Wie bitte?"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "sh2-e11",
+          "type": "CLOZE",
+          "before": "Der Pullover ist gelb. Das",
+          "after": "mir nicht.",
+          "accepted": ["gefällt"],
+          "translation": "The jumper is yellow. I don't like it.",
+          "hint": "the fixed phrase: Das … mir."
+        },
+        {
+          "id": "sh2-e12",
+          "type": "TRANSLATE",
+          "source": "The shirt is white.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Das Hemd ist weiß.", "Das Hemd ist weiss."]
+        },
+        {
+          "id": "sh2-e13",
+          "type": "TRANSLATE",
+          "source": "Der Mantel ist grau. Das gefällt mir nicht.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["The coat is grey. I don't like it.", "The coat is gray. I don't like it.", "The coat is grey. I don't like that.", "The coat is gray. I don't like that.", "The coat is grey. I do not like it.", "The coat is gray. I do not like it."]
+        },
+        {
+          "id": "sh2-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Die Schuhe sind schwarz.",
+          "translation": "The shoes are black."
+        },
+        {
+          "id": "sh2-e15",
+          "type": "SHADOW",
+          "text": "Die Jacke ist blau. Das gefällt mir!",
+          "translation": "The jacket is blue. I like it!",
+          "hint": "gefällt: ge-FELT, stress the second syllable."
+        }
+      ]
+    },
+    {
+      "id": "sh3-prices",
+      "title": "How much is it?",
+      "kind": "LEARN",
+      "introduces": ["kosten", "cent", "teuer", "billig", "kaufen"],
+      "exercises": [
+        {
+          "id": "sh3-e1",
+          "type": "TEACH",
+          "title": "Was kostet …?",
+          "body": "**kosten** = to cost. To ask the price, say **Was kostet …?** or **Wie viel kostet …?** Both mean *How much is …?*\n\nThe verb matches the thing:\n\n- one thing: *Die Jacke **kostet** neunundvierzig Euro.*\n- several things: *Die Schuhe **kosten** achtzig Euro.*",
+          "examples": [
+            { "text": "Was kostet die Jacke?", "translation": "How much is the jacket?" },
+            { "text": "Die Jacke kostet neunundvierzig Euro.", "translation": "The jacket costs forty-nine euros." },
+            { "text": "Wie viel kosten die Schuhe?", "translation": "How much are the shoes?" },
+            { "text": "Die Schuhe kosten achtzig Euro.", "translation": "The shoes cost eighty euros." }
+          ]
+        },
+        {
+          "id": "sh3-e2",
+          "type": "CLOZE",
+          "before": "Was",
+          "after": "die Schuhe?",
+          "accepted": ["kosten"],
+          "translation": "How much are the shoes?",
+          "hint": "kosten → several things"
+        },
+        {
+          "id": "sh3-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Das T-Shirt ___ zwölf Euro.",
+          "prompt": "The T-shirt costs twelve euros.",
+          "promptLanguage": "BASE",
+          "options": ["kostet", "kosten", "koste"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "sh3-e4",
+          "type": "TEACH",
+          "title": "Euro and Cent",
+          "body": "Germans write a comma where English uses a dot: *12,50 €*. Say the euros, then the cents, and leave out the word *Cent*:\n\n- *12,50 €* = **zwölf Euro fünfzig**\n- *0,99 €* = **neunundneunzig Cent**\n\n**der Cent** sounds like English *sent*. *Euro* and *Cent* don't take a plural after a number: *zwanzig Euro, fünfzig Cent*.",
+          "examples": [
+            { "text": "zwölf Euro fünfzig", "translation": "€12.50" },
+            { "text": "neunzehn Euro neunundneunzig", "translation": "€19.99" },
+            { "text": "achtzig Cent", "translation": "€0.80" },
+            { "text": "Das T-Shirt kostet neun Euro neunzig.", "translation": "The T-shirt costs €9.90." }
+          ]
+        },
+        {
+          "id": "sh3-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "How much is it?",
+          "prompt": "Das kostet neunzehn Euro neunzig.",
+          "promptLanguage": "TARGET",
+          "options": ["€19.90", "€90.19", "€9.90"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "sh3-e6",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which price do you hear?",
+          "options": ["Die Jacke kostet dreißig Euro.", "Die Jacke kostet dreizehn Euro."],
+          "answerIndex": 0
+        },
+        {
+          "id": "sh3-e7",
+          "type": "TEACH",
+          "title": "teuer and billig",
+          "body": "- **teuer** = expensive\n- **billig** = cheap\n- **zu teuer** = too expensive\n\nLike colours, they don't change after *ist* or *sind*: *Die Schuhe sind teuer.*\n\nThe *-ig* at the end of *billig* sounds like *ich*: BIL-likh.",
+          "examples": [
+            { "text": "Der Mantel ist teuer.", "translation": "The coat is expensive." },
+            { "text": "Das T-Shirt ist billig.", "translation": "The T-shirt is cheap." },
+            { "text": "Das ist zu teuer!", "translation": "That's too expensive!" }
+          ]
+        },
+        {
+          "id": "sh3-e8",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "teuer", "base": "expensive" },
+            { "target": "billig", "base": "cheap" },
+            { "target": "zu teuer", "base": "too expensive" },
+            { "target": "kosten", "base": "to cost" },
+            { "target": "der Cent", "base": "the cent" }
+          ]
+        },
+        {
+          "id": "sh3-e9",
+          "type": "TEACH",
+          "title": "kaufen: to buy",
+          "body": "**kaufen** = to buy. It's regular: *ich kaufe, du kaufst, er / sie kauft, wir kaufen.*\n\nThe thing you buy is the object, so *der* words change: *Ich kaufe **den** Pullover. Ich kaufe **einen** Mantel.*\n\nDon't mix it up with **einkaufen** (to go shopping), which splits: *Ich kaufe heute **ein**.* = I'm going shopping today.",
+          "examples": [
+            { "text": "Ich kaufe den Pullover.", "translation": "I'm buying the jumper." },
+            { "text": "Kaufst du die Schuhe?", "translation": "Are you buying the shoes?" },
+            { "text": "Sie kauft ein Kleid.", "translation": "She's buying a dress." }
+          ]
+        },
+        {
+          "id": "sh3-e10",
+          "type": "CLOZE",
+          "before": "Ich",
+          "after": "den Mantel.",
+          "accepted": ["kaufe"],
+          "translation": "I'm buying the coat.",
+          "hint": "kaufen → ich …"
+        },
+        {
+          "id": "sh3-e11",
+          "type": "WORD_ORDER",
+          "translation": "The shoes cost eighty euros.",
+          "answer": "Die Schuhe kosten achtzig Euro.",
+          "distractors": ["kostet", "Cent"]
+        },
+        {
+          "id": "sh3-e12",
+          "type": "TRANSLATE",
+          "source": "How much is the jacket?",
+          "sourceLanguage": "BASE",
+          "accepted": ["Was kostet die Jacke?", "Wie viel kostet die Jacke?", "Wieviel kostet die Jacke?"]
+        },
+        {
+          "id": "sh3-e13",
+          "type": "TRANSLATE",
+          "source": "Der Mantel kostet neunundachtzig Euro. Das ist zu teuer!",
+          "sourceLanguage": "TARGET",
+          "accepted": ["The coat costs eighty-nine euros. That's too expensive!", "The coat costs eighty-nine euros. That is too expensive!", "The coat costs 89 euros. That's too expensive!", "The coat costs €89. That's too expensive!", "The coat is eighty-nine euros. That's too expensive!", "The coat is 89 euros. That's too expensive!", "The coat costs eighty-nine euros. It's too expensive!"]
+        },
+        {
+          "id": "sh3-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Wie viel kostet die Hose?",
+          "translation": "How much are the trousers?"
+        },
+        {
+          "id": "sh3-e15",
+          "type": "SHADOW",
+          "text": "Was kostet der Pullover? Neununddreißig Euro fünfzig.",
+          "translation": "How much is the jumper? €39.50.",
+          "hint": "Hold the nine in your head until you hear the thirty: neun-und-dreißig."
+        }
+      ]
+    },
+    {
+      "id": "sh4-this-which",
+      "title": "This one? Which one?",
+      "kind": "LEARN",
+      "introduces": ["dieser", "welcher", "groesse", "anprobieren"],
+      "exercises": [
+        {
+          "id": "sh4-e1",
+          "type": "TEACH",
+          "title": "dieser: this",
+          "body": "**dieser** = this. It follows the pattern of *der, die, das*, and its ending copies the end of the article:\n\n- de**r** Rock → dies**er** Rock\n- di**e** Hose → dies**e** Hose\n- da**s** Hemd → dies**es** Hemd\n- di**e** Schuhe → dies**e** Schuhe (these shoes)",
+          "examples": [
+            { "text": "Dieser Rock ist schön.", "translation": "This skirt is nice." },
+            { "text": "Diese Jacke ist teuer.", "translation": "This jacket is expensive." },
+            { "text": "Dieses Hemd ist billig.", "translation": "This shirt is cheap." },
+            { "text": "Diese Schuhe sind schwarz.", "translation": "These shoes are black." }
+          ]
+        },
+        {
+          "id": "sh4-e2",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? ___ Hemd ist weiß.",
+          "prompt": "This shirt is white.",
+          "promptLanguage": "BASE",
+          "options": ["Dieser", "Diese", "Dieses"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "sh4-e3",
+          "type": "CLOZE",
+          "before": "",
+          "after": "Mantel ist zu teuer.",
+          "accepted": ["Dieser"],
+          "translation": "This coat is too expensive.",
+          "hint": "this, before a der word"
+        },
+        {
+          "id": "sh4-e4",
+          "type": "TEACH",
+          "title": "welcher: which",
+          "body": "**welcher** = which. It works exactly like *dieser*:\n\n- **welcher** Rock (der)\n- **welche** Jacke (die)\n- **welches** Kleid (das)\n- **welche** Schuhe (plural)\n\nNow you can see why it's **Welche Farbe …?** *Farbe* is a *die* word.",
+          "examples": [
+            { "text": "Welcher Rock ist billig?", "translation": "Which skirt is cheap?" },
+            { "text": "Welche Schuhe sind teuer?", "translation": "Which shoes are expensive?" },
+            { "text": "Welches Kleid ist rot?", "translation": "Which dress is red?" }
+          ]
+        },
+        {
+          "id": "sh4-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "welcher Mantel", "base": "which coat" },
+            { "target": "welches T-Shirt", "base": "which T-shirt" },
+            { "target": "welche Schuhe", "base": "which shoes" },
+            { "target": "dieser Rock", "base": "this skirt" },
+            { "target": "diese Schuhe", "base": "these shoes" }
+          ]
+        },
+        {
+          "id": "sh4-e6",
+          "type": "TEACH",
+          "title": "diesen and welchen",
+          "body": "When a *der* word is the **object**, *der* becomes **den**, and *dieser* and *welcher* change the same way:\n\n- *der* → **den**\n- *dieser* → **diesen**\n- *welcher* → **welchen**\n\n*die*, *das* and plural words don't change: *Ich kaufe **diese** Jacke.*",
+          "examples": [
+            { "text": "Ich kaufe diesen Pullover.", "translation": "I'm buying this jumper." },
+            { "text": "Welchen Mantel möchtest du?", "translation": "Which coat would you like?" },
+            { "text": "Ich möchte dieses Kleid.", "translation": "I'd like this dress." }
+          ]
+        },
+        {
+          "id": "sh4-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Ich kaufe ___ Rock.",
+          "prompt": "I'm buying this skirt.",
+          "promptLanguage": "BASE",
+          "options": ["dieser", "diesen", "dieses"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "sh4-e8",
+          "type": "CLOZE",
+          "before": "",
+          "after": "Mantel möchten Sie?",
+          "accepted": ["Welchen"],
+          "translation": "Which coat would you like?",
+          "hint": "which, der word as the object"
+        },
+        {
+          "id": "sh4-e9",
+          "type": "TEACH",
+          "title": "Größe and anprobieren",
+          "body": "- **die Größe** = the size. Sizes are letters like *S, M, L* or numbers like *achtunddreißig*.\n- **Welche Größe haben Sie?** = What size are you?\n- **anprobieren** = to try on\n\n**anprobieren** is separable, like *aufstehen*: the prefix **an** jumps to the end. After *können* or *möchten*, it stays in one piece at the end.",
+          "examples": [
+            { "text": "Welche Größe haben Sie?", "translation": "What size are you?" },
+            { "text": "Größe M, bitte.", "translation": "Size M, please." },
+            { "text": "Ich probiere die Jacke an.", "translation": "I'm trying the jacket on." },
+            { "text": "Kann ich die Hose anprobieren?", "translation": "Can I try the trousers on?" }
+          ]
+        },
+        {
+          "id": "sh4-e10",
+          "type": "CLOZE",
+          "before": "Ich probiere den Pullover",
+          "after": ".",
+          "accepted": ["an"],
+          "translation": "I'm trying the jumper on.",
+          "hint": "the prefix of anprobieren"
+        },
+        {
+          "id": "sh4-e11",
+          "type": "WORD_ORDER",
+          "translation": "Can I try on this jacket?",
+          "answer": "Kann ich diese Jacke anprobieren?",
+          "distractors": ["probiere", "dieser"]
+        },
+        {
+          "id": "sh4-e12",
+          "type": "TRANSLATE",
+          "source": "What size are you? (formal)",
+          "sourceLanguage": "BASE",
+          "accepted": ["Welche Größe haben Sie?", "Welche Grösse haben Sie?"]
+        },
+        {
+          "id": "sh4-e13",
+          "type": "TRANSLATE",
+          "source": "Welchen Pullover kaufst du?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Which jumper are you buying?", "Which sweater are you buying?", "Which pullover are you buying?", "Which jumper do you buy?", "Which sweater do you buy?", "Which jumper are you going to buy?", "Which sweater are you going to buy?"]
+        },
+        {
+          "id": "sh4-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Ich probiere diese Hose an.",
+          "translation": "I'm trying these trousers on."
+        },
+        {
+          "id": "sh4-e15",
+          "type": "SHADOW",
+          "text": "Kann ich dieses Hemd anprobieren?",
+          "translation": "Can I try this shirt on?",
+          "hint": "anprobieren: AN-pro-bee-ren, stress the prefix."
+        }
+      ]
+    },
+    {
+      "id": "sh5-shop",
+      "title": "In the clothes shop",
+      "kind": "PRACTICE",
+      "introduces": ["geschaeft", "verkaeuferin"],
+      "exercises": [
+        {
+          "id": "sh5-e1",
+          "type": "TEACH",
+          "title": "Shopping phrases",
+          "body": "- **das Geschäft** = the shop\n- **die Verkäuferin** = the shop assistant (a woman); a man is **der Verkäufer**\n\nUse **Sie** with shop assistants. Useful phrases:\n\n- **Was suchen Sie?** = What are you looking for?\n- **Haben Sie die Jacke auch in Blau?** = Do you also have the jacket in blue? Here the colour is used as a name, so it gets a capital letter.\n- **Das ist leider zu teuer.** = Unfortunately that's too expensive.",
+          "examples": [
+            { "text": "Was suchen Sie?", "translation": "What are you looking for?" },
+            { "text": "Ich suche eine Jacke.", "translation": "I'm looking for a jacket." },
+            { "text": "Haben Sie die Jacke auch in Blau?", "translation": "Do you also have the jacket in blue?" },
+            { "text": "Das ist leider zu teuer.", "translation": "Unfortunately that's too expensive." }
+          ]
+        },
+        {
+          "id": "sh5-e2",
+          "type": "TEACH",
+          "title": "Im Geschäft",
+          "body": "Jonas is buying a jacket. Read along, and tap each line to hear it.",
+          "examples": [
+            { "text": "Guten Tag! Was suchen Sie?", "translation": "Shop assistant: Hello! What are you looking for?" },
+            { "text": "Guten Tag! Ich suche eine Jacke.", "translation": "Jonas: Hello! I'm looking for a jacket." },
+            { "text": "Welche Größe haben Sie?", "translation": "Shop assistant: What size are you?" },
+            { "text": "Größe M.", "translation": "Jonas: Size M." },
+            { "text": "Diese Jacke hier ist neu. Die Farbe ist grün.", "translation": "Shop assistant: This jacket here is new. The colour is green." },
+            { "text": "Hm, das gefällt mir nicht. Haben Sie die Jacke auch in Blau?", "translation": "Jonas: Hm, I don't like it. Do you also have the jacket in blue?" },
+            { "text": "Ja, hier. Möchten Sie die Jacke anprobieren?", "translation": "Shop assistant: Yes, here. Would you like to try the jacket on?" },
+            { "text": "Ja, bitte. … Das gefällt mir! Was kostet die Jacke?", "translation": "Jonas: Yes, please. … I like it! How much is the jacket?" },
+            { "text": "Neunundachtzig Euro.", "translation": "Shop assistant: Eighty-nine euros." },
+            { "text": "Oh, das ist leider zu teuer.", "translation": "Jonas: Oh, unfortunately that's too expensive." },
+            { "text": "Und diese Jacke hier? Die Jacke ist auch blau. Neunundvierzig Euro.", "translation": "Shop assistant: And this jacket here? It's blue too. Forty-nine euros." },
+            { "text": "Super! Ich kaufe diese Jacke. Danke!", "translation": "Jonas: Great! I'll buy this jacket. Thanks!" }
+          ]
+        },
+        {
+          "id": "sh5-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the shop: why doesn't Jonas like the first jacket?",
+          "prompt": "Hm, das gefällt mir nicht.",
+          "promptLanguage": "TARGET",
+          "options": ["He doesn't like the colour.", "It's too expensive.", "It's the wrong size."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "sh5-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the shop: how much is the jacket Jonas buys?",
+          "prompt": "The jacket Jonas buys",
+          "promptLanguage": "BASE",
+          "options": ["€49", "€89", "€94"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "sh5-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "das Geschäft", "base": "the shop" },
+            { "target": "die Verkäuferin", "base": "the shop assistant" },
+            { "target": "anprobieren", "base": "to try on" },
+            { "target": "zu teuer", "base": "too expensive" },
+            { "target": "Was suchen Sie?", "base": "What are you looking for?" }
+          ]
+        },
+        {
+          "id": "sh5-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "The shop assistant asks: Welche Größe haben Sie? What do you answer?",
+          "prompt": "Welche Größe haben Sie?",
+          "promptLanguage": "TARGET",
+          "options": ["Größe achtunddreißig.", "Neununddreißig Euro.", "Die Hose ist grau."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "sh5-e7",
+          "type": "WORD_ORDER",
+          "translation": "Do you also have the jacket in blue?",
+          "answer": "Haben Sie die Jacke auch in Blau?",
+          "distractors": ["Hast", "der"]
+        },
+        {
+          "id": "sh5-e8",
+          "type": "CLOZE",
+          "before": "Kann ich diese Hose",
+          "after": "?",
+          "accepted": ["anprobieren"],
+          "translation": "Can I try these trousers on?",
+          "hint": "to try on, in one piece at the end"
+        },
+        {
+          "id": "sh5-e9",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which price do you hear?",
+          "options": ["Vierundfünfzig Euro.", "Fünfundvierzig Euro."],
+          "answerIndex": 1
+        },
+        {
+          "id": "sh5-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "The coat costs too much for you. What do you say?",
+          "prompt": "Der Mantel kostet neunundneunzig Euro.",
+          "promptLanguage": "TARGET",
+          "options": ["Das ist leider zu teuer.", "Das ist billig.", "Ich kaufe diesen Mantel."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "sh5-e11",
+          "type": "TRANSLATE",
+          "source": "I'm buying this coat.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich kaufe diesen Mantel.", "Ich kaufe diesen Mantel hier."]
+        },
+        {
+          "id": "sh5-e12",
+          "type": "TRANSLATE",
+          "source": "Can I try on this dress?",
+          "sourceLanguage": "BASE",
+          "accepted": ["Kann ich dieses Kleid anprobieren?", "Kann ich das Kleid anprobieren?"]
+        },
+        {
+          "id": "sh5-e13",
+          "type": "TRANSLATE",
+          "source": "Haben Sie diese Schuhe auch in Braun?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Do you also have these shoes in brown?", "Do you have these shoes in brown too?", "Do you have these shoes in brown as well?", "Do you have these shoes in brown, too?", "Have you also got these shoes in brown?", "Have you got these shoes in brown too?", "Do you have these shoes in brown?"]
+        },
+        {
+          "id": "sh5-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Was kostet diese Jacke?",
+          "translation": "How much is this jacket?"
+        },
+        {
+          "id": "sh5-e15",
+          "type": "SHADOW",
+          "text": "Guten Tag! Ich suche eine Jacke, Größe M.",
+          "translation": "Hello! I'm looking for a jacket, size M.",
+          "hint": "Größe: GRÖ-se, a long ö with rounded lips."
+        },
+        {
+          "id": "sh5-e16",
+          "type": "SHADOW",
+          "text": "Das gefällt mir! Ich kaufe diese Jacke.",
+          "translation": "I like it! I'll buy this jacket."
+        }
+      ]
+    }
+  ]
+}

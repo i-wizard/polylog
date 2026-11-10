@@ -1,0 +1,978 @@
+{
+  "id": "14-was-war",
+  "level": "A1",
+  "title": "What happened?",
+  "description": "Talking about the past with war, hatte and the Perfekt (with haben and sein), then a checkpoint reviewing all of A1.",
+  "icon": "📖",
+  "vocab": [
+    { "id": "gestern", "text": "gestern", "translations": ["yesterday"], "partOfSpeech": "ADVERB", "pronunciation": "GES-tern", "example": { "text": "Gestern war Sonntag.", "translation": "Yesterday was Sunday." } },
+    { "id": "vorgestern", "text": "vorgestern", "translations": ["the day before yesterday", "day before yesterday"], "partOfSpeech": "ADVERB", "pronunciation": "FOR-ges-tern", "example": { "text": "Vorgestern hatte ich einen Termin.", "translation": "The day before yesterday I had an appointment." } },
+    { "id": "war", "text": "war", "translations": ["was (past of sein)", "was", "were"], "partOfSpeech": "VERB", "pronunciation": "vahr", "example": { "text": "Ich war gestern müde.", "translation": "I was tired yesterday." } },
+    { "id": "hatte", "text": "hatte", "translations": ["had (past of haben)", "had"], "partOfSpeech": "VERB", "pronunciation": "HAT-te", "example": { "text": "Ich hatte leider keine Zeit.", "translation": "Unfortunately I didn't have time." } },
+    { "id": "wie-war", "text": "Wie war …?", "translations": ["How was …?", "How was it?"], "partOfSpeech": "PHRASE", "pronunciation": "vee VAHR", "example": { "text": "Wie war dein Wochenende?", "translation": "How was your weekend?" } },
+    { "id": "party", "text": "Party", "translations": ["party"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Partys", "pronunciation": "PAR-tee", "example": { "text": "Die Party war toll!", "translation": "The party was great!" } },
+    { "id": "toll", "text": "toll", "translations": ["great", "brilliant", "fantastic"], "partOfSpeech": "ADJECTIVE", "pronunciation": "tol", "example": { "text": "Das Wochenende war toll!", "translation": "The weekend was great!" } },
+    { "id": "langweilig", "text": "langweilig", "translations": ["boring"], "partOfSpeech": "ADJECTIVE", "pronunciation": "LANG-vy-likh (soft ch)", "example": { "text": "Der Film war langweilig.", "translation": "The film was boring." } },
+    { "id": "was-hast-du-gemacht", "text": "Was hast du gemacht?", "translations": ["What did you do? (informal)", "What have you done?"], "partOfSpeech": "PHRASE", "pronunciation": "vas hast doo ge-MAKHT (back-of-throat ch)", "example": { "text": "Was hast du am Wochenende gemacht?", "translation": "What did you do at the weekend?" } },
+    { "id": "letzte-woche", "text": "letzte Woche", "translations": ["last week"], "partOfSpeech": "PHRASE", "pronunciation": "LETS-te VO-khe (back-of-throat ch)", "example": { "text": "Letzte Woche war ich in Berlin.", "translation": "Last week I was in Berlin." } },
+    { "id": "letztes-jahr", "text": "letztes Jahr", "translations": ["last year"], "partOfSpeech": "PHRASE", "pronunciation": "LETS-tes YAHR", "example": { "text": "Letztes Jahr habe ich in Wien gewohnt.", "translation": "Last year I lived in Vienna." } },
+    { "id": "besuchen", "text": "besuchen", "translations": ["to visit"], "partOfSpeech": "VERB", "pronunciation": "be-ZOO-khen (back-of-throat ch)", "example": { "text": "Am Sonntag habe ich meine Oma besucht.", "translation": "On Sunday I visited my grandma." } },
+    { "id": "telefonieren", "text": "telefonieren", "translations": ["to talk on the phone", "to phone"], "partOfSpeech": "VERB", "pronunciation": "te-le-fo-NEE-ren", "example": { "text": "Wir haben gestern telefoniert.", "translation": "We talked on the phone yesterday." } },
+    { "id": "schreiben", "text": "schreiben", "translations": ["to write"], "partOfSpeech": "VERB", "pronunciation": "SHRY-ben", "example": { "text": "Ich habe eine Nachricht geschrieben.", "translation": "I wrote a message." } },
+    { "id": "nachricht", "text": "Nachricht", "translations": ["message", "text message"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Nachrichten", "pronunciation": "NAKH-rikht (first ch back-of-throat, second soft)", "example": { "text": "Hast du meine Nachricht gelesen?", "translation": "Did you read my message?" } },
+    { "id": "schon", "text": "schon", "translations": ["already", "yet (in questions)"], "partOfSpeech": "ADVERB", "pronunciation": "shohn (long o)", "example": { "text": "Ich habe schon gegessen.", "translation": "I've already eaten." } },
+    { "id": "noch-nicht", "text": "noch nicht", "translations": ["not yet"], "partOfSpeech": "PHRASE", "pronunciation": "nokh NIKHT (first ch back-of-throat, second soft)", "example": { "text": "Ich habe den Film noch nicht gesehen.", "translation": "I haven't seen the film yet." } },
+    { "id": "was-ist-passiert", "text": "Was ist passiert?", "translations": ["What happened?", "What's happened?"], "partOfSpeech": "PHRASE", "pronunciation": "vas ist pa-SEERT", "example": { "text": "Oh nein! Was ist passiert?", "translation": "Oh no! What happened?" } },
+    { "id": "urlaub", "text": "Urlaub", "translations": ["holiday (time off)", "vacation", "holiday"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Urlaube", "pronunciation": "OOR-lowp (ow as in cow)", "example": { "text": "Wir sind im Urlaub nach Italien gefahren.", "translation": "We went to Italy on holiday." } },
+    { "id": "reise", "text": "Reise", "translations": ["journey", "trip"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Reisen", "pronunciation": "RY-ze", "example": { "text": "Die Reise war toll.", "translation": "The trip was great." } },
+    { "id": "foto", "text": "Foto", "translations": ["photo", "picture"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Fotos", "pronunciation": "FOH-toh", "example": { "text": "Ich habe viele Fotos gemacht.", "translation": "I took lots of photos." } },
+    { "id": "schade", "text": "Schade!", "translations": ["What a pity!", "Shame!", "Too bad!"], "partOfSpeech": "INTERJECTION", "pronunciation": "SHAH-de", "example": { "text": "Du kannst nicht kommen? Schade!", "translation": "You can't come? What a pity!" } },
+    { "id": "lange", "text": "lange", "translations": ["for a long time", "long"], "partOfSpeech": "ADVERB", "pronunciation": "LANG-e", "example": { "text": "Am Sonntag habe ich lange geschlafen.", "translation": "On Sunday I slept in." } },
+    { "id": "ausflug", "text": "Ausflug", "translations": ["day trip", "outing", "excursion"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Ausflüge", "pronunciation": "OWS-flook", "example": { "text": "Am Samstag haben wir einen Ausflug gemacht.", "translation": "On Saturday we went on a day trip." } }
+  ],
+  "grammarNotes": [
+    {
+      "id": "perfekt-war-hatte",
+      "title": "war and hatte: was and had",
+      "body": "**sein** and **haben** have their own short past forms, and Germans use them all the time:\n\n- *Ich **war** krank.* = I was ill.\n- *Ich **hatte** keine Zeit.* = I didn't have time.\n\nLike the modal verbs, **ich** and **er / sie / es** look the same and have no ending.\n\nTo ask about something that's over, use **Wie war …?**: *Wie war das Wochenende?*",
+      "table": [
+        ["Person", "sein → war", "haben → hatte"],
+        ["ich", "war", "hatte"],
+        ["du", "warst", "hattest"],
+        ["er / sie / es", "war", "hatte"],
+        ["wir", "waren", "hatten"],
+        ["ihr", "wart", "hattet"],
+        ["sie / Sie", "waren", "hatten"]
+      ]
+    },
+    {
+      "id": "perfekt-structure",
+      "title": "The Perfekt: talking about the past",
+      "body": "Spoken German uses the **Perfekt** for most things that happened in the past. It has two parts:\n\n- a form of **haben** (or *sein*) in second place\n- the **past participle** at the very end\n\nIt works like a modal verb: the second part waits at the end. One Perfekt covers English *I played*, *I have played* and *I did play*.\n\nYou can start with a time. *haben* stays second, so *ich* moves after it.",
+      "table": [
+        ["1", "2 (haben / sein)", "middle", "end"],
+        ["Ich", "habe", "gestern Fußball", "gespielt."],
+        ["Gestern", "habe", "ich Fußball", "gespielt."],
+        ["Was", "hast", "du am Wochenende", "gemacht?"],
+        ["Wir", "sind", "nach Berlin", "gefahren."]
+      ]
+    },
+    {
+      "id": "perfekt-participles",
+      "title": "Making the past participle",
+      "body": "Most participles start with **ge-**:\n\n- **Regular verbs**: ge- + stem + **-t**. If the stem ends in *-t*, add an *e*: *gearbeitet*.\n- **Irregular verbs**: ge- + stem + **-en**, and the vowel sometimes changes. Learn these by heart.\n- **Separable verbs**: **ge** goes between the prefix and the verb, all in one word: *eingekauft*.\n- **No ge-** for verbs ending in **-ieren** and verbs starting with **be-**: *telefoniert, besucht*.",
+      "table": [
+        ["Type", "Verb", "Participle"],
+        ["regular", "spielen", "gespielt"],
+        ["regular", "kaufen", "gekauft"],
+        ["regular, stem ends in -t", "arbeiten", "gearbeitet"],
+        ["irregular", "essen", "gegessen"],
+        ["irregular", "trinken", "getrunken"],
+        ["irregular", "sehen", "gesehen"],
+        ["irregular", "treffen", "getroffen"],
+        ["irregular", "schreiben", "geschrieben"],
+        ["separable", "einkaufen", "eingekauft"],
+        ["separable", "anrufen", "angerufen"],
+        ["-ieren", "telefonieren", "telefoniert"],
+        ["be-", "besuchen", "besucht"]
+      ]
+    },
+    {
+      "id": "perfekt-sein",
+      "title": "haben or sein?",
+      "body": "Most verbs use **haben**. A small group uses **sein**: verbs of **moving from one place to another**, plus **bleiben** (to stay). For now, learn these five: *gehen, fahren, kommen, aufstehen, bleiben*. You also know *passieren* from **Was ist passiert?**\n\nFor *sein* and *haben* themselves, use **war** and **hatte** instead of the Perfekt: *Ich war krank. Ich hatte Fieber.*\n\nDon't mix up **nach Hause** (going home) and **zu Hause** (at home).",
+      "table": [
+        ["Verb", "Perfekt"],
+        ["gehen", "Ich bin nach Hause gegangen."],
+        ["fahren", "Wir sind nach Berlin gefahren."],
+        ["kommen", "Er ist um acht Uhr gekommen."],
+        ["aufstehen", "Ich bin um sieben Uhr aufgestanden."],
+        ["bleiben", "Sie ist zu Hause geblieben."]
+      ]
+    },
+    {
+      "id": "perfekt-time-words",
+      "title": "Time words for the past",
+      "body": "Like *heute* and *morgen*, these need no *am* or *im*. Put one first and the verb still comes second: *Gestern **war** ich müde.*\n\n**letzte Woche** and **letztes Jahr** are fixed phrases: the ending of *letzt-* matches the noun (*die Woche, das Jahr*).\n\n**schon** (already) and **noch nicht** (not yet) go in the middle, before the participle: *Ich habe **noch nicht** gegessen.*",
+      "table": [
+        ["German", "English"],
+        ["gestern", "yesterday"],
+        ["vorgestern", "the day before yesterday"],
+        ["letzte Woche", "last week"],
+        ["letztes Jahr", "last year"],
+        ["am Wochenende", "at the weekend"],
+        ["im Urlaub", "on holiday"],
+        ["schon", "already"],
+        ["noch nicht", "not yet"]
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "pf1-war-hatte",
+      "title": "Yesterday: war and hatte",
+      "kind": "LEARN",
+      "introduces": ["gestern", "vorgestern", "war", "hatte", "wie-war", "party", "toll", "langweilig"],
+      "exercises": [
+        {
+          "id": "pf1-e1",
+          "type": "TEACH",
+          "title": "gestern: yesterday",
+          "body": "Time to talk about the past! Start with two time words:\n\n- **gestern** = yesterday\n- **vorgestern** = the day before yesterday\n\nYou know *heute, morgen* and *übermorgen*. Now you can go the other way. Like *heute*, they need no *am*.",
+          "examples": [
+            { "text": "vorgestern", "translation": "the day before yesterday", "hint": "stress: FOR-ges-tern" },
+            { "text": "gestern", "translation": "yesterday" },
+            { "text": "heute", "translation": "today" },
+            { "text": "morgen", "translation": "tomorrow" },
+            { "text": "übermorgen", "translation": "the day after tomorrow" }
+          ]
+        },
+        {
+          "id": "pf1-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "vorgestern", "base": "the day before yesterday" },
+            { "target": "gestern", "base": "yesterday" },
+            { "target": "heute", "base": "today" },
+            { "target": "morgen", "base": "tomorrow" },
+            { "target": "übermorgen", "base": "the day after tomorrow" }
+          ]
+        },
+        {
+          "id": "pf1-e3",
+          "type": "TEACH",
+          "title": "war: was",
+          "body": "**sein** (to be) has a short past form: **war** = was.\n\n- ich **war** = I was\n- du **warst** = you were\n- er / sie / es **war** = he / she / it was\n- wir **waren** = we were\n- ihr **wart** = you (all) were\n- sie / Sie **waren** = they were / you were (formal)\n\nJust like the modal verbs, *ich* and *er / sie* look the same and have no ending.",
+          "examples": [
+            { "text": "Gestern war Sonntag.", "translation": "Yesterday was Sunday." },
+            { "text": "Ich war gestern müde.", "translation": "I was tired yesterday." },
+            { "text": "Wir waren am Wochenende in Berlin.", "translation": "We were in Berlin at the weekend." },
+            { "text": "Wo warst du?", "translation": "Where were you?" }
+          ]
+        },
+        {
+          "id": "pf1-e4",
+          "type": "CLOZE",
+          "before": "Ich",
+          "after": "gestern in Berlin.",
+          "accepted": ["war"],
+          "translation": "I was in Berlin yesterday.",
+          "hint": "sein → ich … (past)"
+        },
+        {
+          "id": "pf1-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Wir ___ am Wochenende in Wien.",
+          "prompt": "We were in Vienna at the weekend.",
+          "promptLanguage": "BASE",
+          "options": ["war", "warst", "waren"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "pf1-e6",
+          "type": "TEACH",
+          "title": "hatte: had",
+          "body": "**haben** has a past form too: **hatte** = had.\n\n- ich **hatte**\n- du **hattest**\n- er / sie / es **hatte**\n- wir **hatten**\n- ihr **hattet**\n- sie / Sie **hatten**\n\nA sentence you'll use a lot: **Ich hatte keine Zeit.** = I didn't have time.",
+          "examples": [
+            { "text": "Ich hatte keine Zeit.", "translation": "I didn't have time." },
+            { "text": "Gestern hatte ich einen Termin.", "translation": "Yesterday I had an appointment." },
+            { "text": "Er hatte Fieber.", "translation": "He had a temperature." }
+          ]
+        },
+        {
+          "id": "pf1-e7",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "ich war", "base": "I was" },
+            { "target": "du warst", "base": "you were" },
+            { "target": "wir waren", "base": "we were" },
+            { "target": "ich hatte", "base": "I had" },
+            { "target": "wir hatten", "base": "we had" }
+          ]
+        },
+        {
+          "id": "pf1-e8",
+          "type": "CLOZE",
+          "before": "Ich",
+          "after": "leider keine Zeit.",
+          "accepted": ["hatte"],
+          "translation": "Unfortunately I didn't have time.",
+          "hint": "haben → ich … (past)"
+        },
+        {
+          "id": "pf1-e9",
+          "type": "TEACH",
+          "title": "Wie war …? How was …?",
+          "body": "To ask about something that's over, say **Wie war …?** = How was …?\n\nAnswer with *war* too:\n\n- **toll** = great\n- **gut** = good\n- **langweilig** = boring\n\n**die Party** is the English word, said the German way: *PAR-tee*.",
+          "examples": [
+            { "text": "Wie war die Party?", "translation": "How was the party?" },
+            { "text": "Die Party war toll!", "translation": "The party was great!" },
+            { "text": "Wie war der Film?", "translation": "How was the film?" },
+            { "text": "Der Film war langweilig.", "translation": "The film was boring." },
+            { "text": "Wie war dein Wochenende?", "translation": "How was your weekend?" }
+          ]
+        },
+        {
+          "id": "pf1-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "A friend asks you this. The film was boring. What do you say?",
+          "prompt": "Wie war der Film?",
+          "promptLanguage": "TARGET",
+          "options": ["Der Film war toll!", "Der Film war langweilig.", "Ich hatte keine Zeit."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "pf1-e11",
+          "type": "WORD_ORDER",
+          "translation": "How was the party?",
+          "answer": "Wie war die Party?",
+          "distractors": ["waren", "der"]
+        },
+        {
+          "id": "pf1-e12",
+          "type": "TRANSLATE",
+          "source": "I was tired yesterday.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich war gestern müde.", "Gestern war ich müde."]
+        },
+        {
+          "id": "pf1-e13",
+          "type": "TRANSLATE",
+          "source": "Vorgestern hatte ich keine Zeit.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["The day before yesterday I didn't have time.", "The day before yesterday I had no time.", "I didn't have time the day before yesterday.", "I had no time the day before yesterday.", "The day before yesterday I did not have time.", "I did not have time the day before yesterday.", "The day before yesterday I didn't have any time."]
+        },
+        {
+          "id": "pf1-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Wie war dein Wochenende?",
+          "translation": "How was your weekend?"
+        },
+        {
+          "id": "pf1-e15",
+          "type": "SHADOW",
+          "text": "Wie war die Party? Die Party war toll!",
+          "translation": "How was the party? The party was great!",
+          "hint": "war: vahr, with a long a. The w sounds like English v."
+        }
+      ]
+    },
+    {
+      "id": "pf2-perfekt-haben",
+      "title": "What did you do? The Perfekt",
+      "kind": "LEARN",
+      "introduces": ["was-hast-du-gemacht", "letzte-woche", "letztes-jahr", "besuchen", "telefonieren"],
+      "exercises": [
+        {
+          "id": "pf2-e1",
+          "type": "TEACH",
+          "title": "The Perfekt",
+          "body": "For most verbs, spoken German talks about the past with the **Perfekt**. It has two parts:\n\n- a form of **haben** in second place\n- the **past participle** at the very end\n\n*Ich **habe** Fußball **gespielt**.* = I played football.\n\nIt works just like a modal verb, where the second verb waits at the end. And one Perfekt covers *I played*, *I have played* and *I did play*.",
+          "examples": [
+            { "text": "Ich habe Fußball gespielt.", "translation": "I played football." },
+            { "text": "Du hast Tennis gespielt.", "translation": "You played tennis." },
+            { "text": "Er hat Deutsch gelernt.", "translation": "He learned German." },
+            { "text": "Wir haben gekocht.", "translation": "We cooked." }
+          ]
+        },
+        {
+          "id": "pf2-e2",
+          "type": "TEACH",
+          "title": "ge- … -t",
+          "body": "For regular verbs, the participle is easy. Take the stem (the verb without *-en*), put **ge-** in front and **-t** at the end:\n\n- spiel*en* → **ge**spiel**t**\n- mach*en* → **ge**mach**t**\n- kauf*en* → **ge**kauf**t**\n\nIf the stem ends in *-t*, add an extra *e*, just like in *er arbeitet*: arbeit*en* → **ge**arbeit**et**.",
+          "examples": [
+            { "text": "gespielt", "translation": "played" },
+            { "text": "gemacht", "translation": "made, done" },
+            { "text": "gekauft", "translation": "bought" },
+            { "text": "gekocht", "translation": "cooked" },
+            { "text": "gewohnt", "translation": "lived" },
+            { "text": "gearbeitet", "translation": "worked" }
+          ]
+        },
+        {
+          "id": "pf2-e3",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "gespielt", "base": "played" },
+            { "target": "gemacht", "base": "made, done" },
+            { "target": "gekauft", "base": "bought" },
+            { "target": "gekocht", "base": "cooked" },
+            { "target": "gearbeitet", "base": "worked" }
+          ]
+        },
+        {
+          "id": "pf2-e4",
+          "type": "CLOZE",
+          "before": "Ich habe gestern Tennis",
+          "after": ".",
+          "accepted": ["gespielt"],
+          "translation": "I played tennis yesterday.",
+          "hint": "spielen → participle"
+        },
+        {
+          "id": "pf2-e5",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which do you hear?",
+          "options": ["Ich habe gekocht.", "Ich habe gekauft."],
+          "answerIndex": 0
+        },
+        {
+          "id": "pf2-e6",
+          "type": "TEACH",
+          "title": "Was hast du gemacht?",
+          "body": "To ask *What did you do?*, put **machen** in the Perfekt: **Was hast du gemacht?** To someone you call *Sie*: **Was haben Sie gemacht?**\n\nYou can start with a time. *haben* stays second, so *ich* moves after it: ***Gestern** habe ich gearbeitet.*\n\nTwo fixed phrases for further back: **letzte Woche** = last week, **letztes Jahr** = last year. Like *gestern*, they need no *am* or *im*.",
+          "examples": [
+            { "text": "Was hast du gestern gemacht?", "translation": "What did you do yesterday?" },
+            { "text": "Gestern habe ich gearbeitet.", "translation": "Yesterday I worked." },
+            { "text": "Letzte Woche habe ich eine Jacke gekauft.", "translation": "Last week I bought a jacket." },
+            { "text": "Letztes Jahr habe ich in Wien gewohnt.", "translation": "Last year I lived in Vienna." }
+          ]
+        },
+        {
+          "id": "pf2-e7",
+          "type": "WORD_ORDER",
+          "translation": "What did you do yesterday? (informal)",
+          "answer": "Was hast du gestern gemacht?",
+          "distractors": ["machst", "habe"]
+        },
+        {
+          "id": "pf2-e8",
+          "type": "WORD_ORDER",
+          "translation": "Last week I learned German. (start with last week)",
+          "answer": "Letzte Woche habe ich Deutsch gelernt.",
+          "distractors": ["lerne", "hat"]
+        },
+        {
+          "id": "pf2-e9",
+          "type": "TEACH",
+          "title": "besuchen and telefonieren: no ge-",
+          "body": "Two kinds of verbs don't take **ge-**:\n\n- verbs ending in **-ieren**: *telefonieren* (to talk on the phone) → **telefoniert**\n- verbs starting with **be-**: *besuchen* (to visit) → **besucht**\n\nThey still end in *-t* and still use *haben*. Don't mix up *telefonieren* (having a phone conversation) with *anrufen* (calling someone).",
+          "examples": [
+            { "text": "Ich habe meine Oma besucht.", "translation": "I visited my grandma." },
+            { "text": "Wir haben gestern telefoniert.", "translation": "We talked on the phone yesterday." },
+            { "text": "Hast du mit Anna telefoniert?", "translation": "Did you talk to Anna on the phone?" }
+          ]
+        },
+        {
+          "id": "pf2-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which participle is right?",
+          "prompt": "besuchen",
+          "promptLanguage": "TARGET",
+          "options": ["gebesucht", "besucht", "besuchen"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "pf2-e11",
+          "type": "CLOZE",
+          "before": "Ich habe am Sonntag mit Anna",
+          "after": ".",
+          "accepted": ["telefoniert"],
+          "translation": "I talked to Anna on the phone on Sunday.",
+          "hint": "telefonieren → participle (no ge-)"
+        },
+        {
+          "id": "pf2-e12",
+          "type": "TRANSLATE",
+          "source": "Last week I visited my grandma.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Letzte Woche habe ich meine Oma besucht.", "Ich habe letzte Woche meine Oma besucht.", "Ich habe meine Oma letzte Woche besucht."]
+        },
+        {
+          "id": "pf2-e13",
+          "type": "TRANSLATE",
+          "source": "Was hast du am Wochenende gemacht?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["What did you do at the weekend?", "What did you do on the weekend?", "What did you do over the weekend?", "What did you do this weekend?", "What did you do at the weekend, then?"]
+        },
+        {
+          "id": "pf2-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Ich habe gestern Fußball gespielt.",
+          "translation": "I played football yesterday."
+        },
+        {
+          "id": "pf2-e15",
+          "type": "SHADOW",
+          "text": "Was hast du gestern gemacht?",
+          "translation": "What did you do yesterday?",
+          "hint": "gemacht: ge-MAKHT, with the ch from the back of the throat."
+        }
+      ]
+    },
+    {
+      "id": "pf3-irregular",
+      "title": "Eaten, seen, written",
+      "kind": "LEARN",
+      "introduces": ["schreiben", "nachricht", "schon", "noch-nicht"],
+      "exercises": [
+        {
+          "id": "pf3-e1",
+          "type": "TEACH",
+          "title": "ge- … -en",
+          "body": "Many everyday verbs are **irregular**: their participle ends in **-en** instead of *-t*. They still use *haben*:\n\n- essen → **gegessen**\n- trinken → **getrunken**\n- lesen → **gelesen**\n- sehen → **gesehen**\n- schlafen → **geschlafen**\n\nThere's no rule to tell you which verbs do this, so learn each participle with its verb.",
+          "examples": [
+            { "text": "Ich habe ein Brötchen gegessen.", "translation": "I ate a bread roll." },
+            { "text": "Wir haben einen Kaffee getrunken.", "translation": "We drank a coffee." },
+            { "text": "Er hat ein Buch gelesen.", "translation": "He read a book." },
+            { "text": "Hast du den Film gesehen?", "translation": "Have you seen the film?" }
+          ]
+        },
+        {
+          "id": "pf3-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "gegessen", "base": "eaten" },
+            { "target": "getrunken", "base": "drunk" },
+            { "target": "gelesen", "base": "read" },
+            { "target": "gesehen", "base": "seen" },
+            { "target": "geschlafen", "base": "slept" }
+          ]
+        },
+        {
+          "id": "pf3-e3",
+          "type": "CLOZE",
+          "before": "Ich habe zwei Tassen Kaffee",
+          "after": ".",
+          "accepted": ["getrunken"],
+          "translation": "I drank two cups of coffee.",
+          "hint": "trinken → participle (-en, and the vowel changes)"
+        },
+        {
+          "id": "pf3-e4",
+          "type": "TEACH",
+          "title": "Vowel changes",
+          "body": "Some participles change their vowel too:\n\n- trinken → getr**u**nken\n- treffen → getr**o**ffen\n- sprechen → gespr**o**chen\n- schreiben → geschr**ie**ben\n\n**schreiben** = to write, and **die Nachricht** = the message. A text on your phone is a *Nachricht* too.",
+          "examples": [
+            { "text": "Ich habe Anna getroffen.", "translation": "I met Anna." },
+            { "text": "Wir haben Deutsch gesprochen.", "translation": "We spoke German." },
+            { "text": "Ich habe eine Nachricht geschrieben.", "translation": "I wrote a message." },
+            { "text": "Hast du meine Nachricht gelesen?", "translation": "Did you read my message?" }
+          ]
+        },
+        {
+          "id": "pf3-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which participle is right?",
+          "prompt": "schreiben",
+          "promptLanguage": "TARGET",
+          "options": ["geschreibt", "geschrieben", "geschreiben"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "pf3-e6",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Hast du meine Nachricht gelesen?",
+          "promptLanguage": "TARGET",
+          "options": ["Did you read my message?", "Are you reading my message?", "Did you write my message?"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "pf3-e7",
+          "type": "TEACH",
+          "title": "Separable verbs: ge in the middle",
+          "body": "With separable verbs, **ge** goes *between* the prefix and the verb, all in one word:\n\n- einkaufen → ein**ge**kauft\n- fernsehen → fern**ge**sehen\n- anrufen → an**ge**rufen\n\nThe stress stays on the prefix: **EIN**gekauft, **FERN**gesehen, **AN**gerufen.",
+          "examples": [
+            { "text": "Ich habe gestern eingekauft.", "translation": "I went shopping yesterday." },
+            { "text": "Wir haben ferngesehen.", "translation": "We watched TV." },
+            { "text": "Hast du deine Mutter angerufen?", "translation": "Did you call your mother?" }
+          ]
+        },
+        {
+          "id": "pf3-e8",
+          "type": "CLOZE",
+          "before": "Am Samstag habe ich",
+          "after": ".",
+          "accepted": ["eingekauft"],
+          "translation": "On Saturday I went shopping.",
+          "hint": "einkaufen → participle (ge in the middle)"
+        },
+        {
+          "id": "pf3-e9",
+          "type": "TEACH",
+          "title": "schon and noch nicht",
+          "body": "- **schon** = already\n- **noch nicht** = not yet\n\nThey go in the middle, before the participle: *Ich habe **schon** gegessen.*\n\nIn a question, *schon* is often just English *yet*: *Hast du **schon** gegessen?* = Have you eaten yet?",
+          "examples": [
+            { "text": "Hast du schon gegessen?", "translation": "Have you eaten yet?" },
+            { "text": "Ja, ich habe schon gegessen.", "translation": "Yes, I've already eaten." },
+            { "text": "Nein, ich habe noch nicht gegessen.", "translation": "No, I haven't eaten yet." },
+            { "text": "Ich habe den Film noch nicht gesehen.", "translation": "I haven't seen the film yet." }
+          ]
+        },
+        {
+          "id": "pf3-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "A friend asks you this. You haven't eaten yet. What do you say?",
+          "prompt": "Hast du schon gegessen?",
+          "promptLanguage": "TARGET",
+          "options": ["Ja, ich habe schon gegessen.", "Nein, ich habe noch nicht gegessen.", "Nein, ich habe keinen Hunger."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "pf3-e11",
+          "type": "WORD_ORDER",
+          "translation": "I haven't seen the film yet.",
+          "answer": "Ich habe den Film noch nicht gesehen.",
+          "distractors": ["sehe", "der"]
+        },
+        {
+          "id": "pf3-e12",
+          "type": "TRANSLATE",
+          "source": "I called my mother yesterday.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich habe gestern meine Mutter angerufen.", "Gestern habe ich meine Mutter angerufen.", "Ich habe meine Mutter gestern angerufen."]
+        },
+        {
+          "id": "pf3-e13",
+          "type": "TRANSLATE",
+          "source": "Wir haben Deutsch gesprochen.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["We spoke German.", "We have spoken German.", "We were speaking German.", "We talked in German.", "We spoke in German."]
+        },
+        {
+          "id": "pf3-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Hast du meine Nachricht gelesen?",
+          "translation": "Did you read my message?"
+        },
+        {
+          "id": "pf3-e15",
+          "type": "SHADOW",
+          "text": "Nein, ich habe noch nicht gegessen.",
+          "translation": "No, I haven't eaten yet.",
+          "hint": "noch nicht: the ch in noch is from the back of the throat, the ch in nicht is soft."
+        }
+      ]
+    },
+    {
+      "id": "pf4-perfekt-sein",
+      "title": "I went: the Perfekt with sein",
+      "kind": "LEARN",
+      "introduces": ["was-ist-passiert", "urlaub", "reise", "foto"],
+      "exercises": [
+        {
+          "id": "pf4-e1",
+          "type": "TEACH",
+          "title": "Some verbs use sein",
+          "body": "A few verbs make the Perfekt with **sein** instead of *haben*. Mostly they're verbs of **moving from one place to another**:\n\n- gehen → ich **bin** … **gegangen**\n- fahren → ich **bin** … **gefahren**\n- kommen → ich **bin** … **gekommen**\n\nYou know **nach** from Unit 12: *nach Berlin* = to Berlin, *nach Hause* = home.",
+          "examples": [
+            { "text": "Ich bin nach Hause gegangen.", "translation": "I went home." },
+            { "text": "Wir sind nach Berlin gefahren.", "translation": "We went to Berlin." },
+            { "text": "Er ist um zehn Uhr gekommen.", "translation": "He came at ten o'clock." },
+            { "text": "Bist du mit dem Bus gefahren?", "translation": "Did you go by bus?" }
+          ]
+        },
+        {
+          "id": "pf4-e2",
+          "type": "CLOZE",
+          "before": "Wir",
+          "after": "nach Wien gefahren.",
+          "accepted": ["sind"],
+          "translation": "We went to Vienna.",
+          "hint": "fahren uses sein → wir …"
+        },
+        {
+          "id": "pf4-e3",
+          "type": "WORD_ORDER",
+          "translation": "He went home.",
+          "answer": "Er ist nach Hause gegangen.",
+          "distractors": ["hat", "geht"]
+        },
+        {
+          "id": "pf4-e4",
+          "type": "TEACH",
+          "title": "aufstehen and bleiben",
+          "body": "Two more *sein* verbs you'll use every day:\n\n- **aufstehen** → ich **bin** um sieben Uhr **aufgestanden**. Getting out of bed is a move too!\n- **bleiben** (to stay) → ich **bin** zu Hause **geblieben**. *bleiben* is the odd one out: no movement, but still *sein*.\n\nRemember **zu Hause** (at home) from Unit 13.",
+          "examples": [
+            { "text": "Ich bin um sieben Uhr aufgestanden.", "translation": "I got up at seven o'clock." },
+            { "text": "Sie ist zu Hause geblieben.", "translation": "She stayed at home." },
+            { "text": "Wann bist du aufgestanden?", "translation": "When did you get up?" }
+          ]
+        },
+        {
+          "id": "pf4-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "ich bin gegangen", "base": "I went" },
+            { "target": "ich bin gekommen", "base": "I came" },
+            { "target": "ich bin geblieben", "base": "I stayed" },
+            { "target": "ich bin aufgestanden", "base": "I got up" },
+            { "target": "ich habe gegessen", "base": "I ate" }
+          ]
+        },
+        {
+          "id": "pf4-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "haben or sein? Ich ___ gestern zu Hause geblieben.",
+          "prompt": "I stayed at home yesterday.",
+          "promptLanguage": "BASE",
+          "options": ["habe", "bin"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "pf4-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "haben or sein? Wir ___ einen Film gesehen.",
+          "prompt": "We watched a film.",
+          "promptLanguage": "BASE",
+          "options": ["haben", "sind"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "pf4-e8",
+          "type": "TEACH",
+          "title": "Was ist passiert?",
+          "body": "**Was ist passiert?** = What happened? *passieren* uses **sein**, and it has no *ge-* because it ends in *-ieren*.\n\nTo answer with *sein* or *haben* themselves, don't use the Perfekt: use **war** and **hatte**.",
+          "examples": [
+            { "text": "Was ist passiert?", "translation": "What happened?" },
+            { "text": "Ich war krank.", "translation": "I was ill." },
+            { "text": "Ich hatte Fieber und bin zu Hause geblieben.", "translation": "I had a temperature and stayed at home." }
+          ]
+        },
+        {
+          "id": "pf4-e9",
+          "type": "TEACH",
+          "title": "Urlaub, Reise, Foto",
+          "body": "- **der Urlaub** = holiday, time off work. **im Urlaub** = on holiday.\n- **die Reise** = the journey, the trip\n- **das Foto** = the photo. In German you *make* photos: **Fotos machen** = to take photos.",
+          "examples": [
+            { "text": "Wo warst du im Urlaub?", "translation": "Where were you on holiday?" },
+            { "text": "Wir sind im Urlaub nach Italien gefahren.", "translation": "We went to Italy on holiday." },
+            { "text": "Die Reise war toll.", "translation": "The trip was great." },
+            { "text": "Ich habe viele Fotos gemacht.", "translation": "I took lots of photos." }
+          ]
+        },
+        {
+          "id": "pf4-e10",
+          "type": "CLOZE",
+          "before": "Im Urlaub habe ich viele Fotos",
+          "after": ".",
+          "accepted": ["gemacht"],
+          "translation": "On holiday I took lots of photos.",
+          "hint": "machen → participle"
+        },
+        {
+          "id": "pf4-e11",
+          "type": "WORD_ORDER",
+          "translation": "We went to Berlin on holiday.",
+          "answer": "Wir sind im Urlaub nach Berlin gefahren.",
+          "distractors": ["haben", "fahren"]
+        },
+        {
+          "id": "pf4-e12",
+          "type": "TRANSLATE",
+          "source": "I got up at seven o'clock.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich bin um sieben Uhr aufgestanden.", "Um sieben Uhr bin ich aufgestanden.", "Ich bin um sieben aufgestanden.", "Um sieben bin ich aufgestanden.", "Ich bin um 7 Uhr aufgestanden.", "Um 7 Uhr bin ich aufgestanden."]
+        },
+        {
+          "id": "pf4-e13",
+          "type": "TRANSLATE",
+          "source": "Wo warst du im Urlaub?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Where were you on holiday?", "Where did you go on holiday?", "Where were you on vacation?", "Where did you go on vacation?", "Where did you go for your holiday?", "Where did you go for your holidays?"]
+        },
+        {
+          "id": "pf4-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Ich bin zu Hause geblieben.",
+          "translation": "I stayed at home."
+        },
+        {
+          "id": "pf4-e15",
+          "type": "SHADOW",
+          "text": "Was ist passiert? Ich war krank.",
+          "translation": "What happened? I was ill.",
+          "hint": "passiert: pa-SEERT, stress at the end."
+        }
+      ]
+    },
+    {
+      "id": "pf5-weekend",
+      "title": "Monday morning",
+      "kind": "PRACTICE",
+      "introduces": ["lange", "ausflug", "schade"],
+      "exercises": [
+        {
+          "id": "pf5-e1",
+          "type": "TEACH",
+          "title": "Talking about the weekend",
+          "body": "Three more words for Monday morning:\n\n- **lange** = for a long time. **lange schlafen** = to sleep in.\n- **der Ausflug** = the day trip, the outing. **einen Ausflug machen** = to go on a day trip.\n- **Schade!** = What a pity! Shame!",
+          "examples": [
+            { "text": "Am Sonntag habe ich lange geschlafen.", "translation": "On Sunday I slept in." },
+            { "text": "Wir haben einen Ausflug gemacht.", "translation": "We went on a day trip." },
+            { "text": "Du warst krank? Schade!", "translation": "You were ill? What a pity!" }
+          ]
+        },
+        {
+          "id": "pf5-e2",
+          "type": "TEACH",
+          "title": "Montagmorgen",
+          "body": "It's Monday morning at work. Lena asks her colleague Tom about his weekend. Read along, and tap each line to hear it.",
+          "examples": [
+            { "text": "Guten Morgen, Tom! Wie war dein Wochenende?", "translation": "Lena: Good morning, Tom! How was your weekend?" },
+            { "text": "Gut, danke! Am Samstag habe ich lange geschlafen. Dann habe ich Fußball gespielt.", "translation": "Tom: Good, thanks! On Saturday I slept in. Then I played football." },
+            { "text": "Toll! Und am Sonntag?", "translation": "Lena: Great! And on Sunday?" },
+            { "text": "Am Sonntag war ich müde. Ich bin zu Hause geblieben und habe ferngesehen. Und du? Was hast du gemacht?", "translation": "Tom: On Sunday I was tired. I stayed at home and watched TV. And you? What did you do?" },
+            { "text": "Am Samstag haben wir einen Ausflug gemacht. Wir sind nach Potsdam gefahren.", "translation": "Lena: On Saturday we went on a day trip. We went to Potsdam." },
+            { "text": "Schön! Und wie war es?", "translation": "Tom: Nice! And how was it?" },
+            { "text": "Sehr schön! Ich habe viele Fotos gemacht. Aber am Sonntag war mein Sohn krank.", "translation": "Lena: Really nice! I took lots of photos. But on Sunday my son was ill." },
+            { "text": "Oh, schade! Was ist passiert?", "translation": "Tom: Oh, what a pity! What happened?" },
+            { "text": "Er hatte Fieber. Wir sind zu Hause geblieben.", "translation": "Lena: He had a temperature. We stayed at home." },
+            { "text": "Oh nein! Gute Besserung!", "translation": "Tom: Oh no! I hope he gets well soon!" }
+          ]
+        },
+        {
+          "id": "pf5-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: what did Tom do on Saturday?",
+          "prompt": "Am Samstag …",
+          "promptLanguage": "TARGET",
+          "options": ["He slept in and played football.", "He stayed at home and watched TV.", "He went to Potsdam."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "pf5-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: why did Lena stay at home on Sunday?",
+          "prompt": "Wir sind zu Hause geblieben.",
+          "promptLanguage": "TARGET",
+          "options": ["She was tired.", "Her son was ill.", "She had to work."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 1
+        },
+        {
+          "id": "pf5-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "lange", "base": "for a long time" },
+            { "target": "der Ausflug", "base": "the day trip" },
+            { "target": "Schade!", "base": "What a pity!" },
+            { "target": "Wie war dein Wochenende?", "base": "How was your weekend?" },
+            { "target": "Was ist passiert?", "base": "What happened?" }
+          ]
+        },
+        {
+          "id": "pf5-e6",
+          "type": "CLOZE",
+          "before": "Am Samstag habe ich lange",
+          "after": ".",
+          "accepted": ["geschlafen"],
+          "translation": "On Saturday I slept in.",
+          "hint": "schlafen → participle (-en)"
+        },
+        {
+          "id": "pf5-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Your colleague says this. What's the best answer?",
+          "prompt": "Am Sonntag war mein Sohn krank.",
+          "promptLanguage": "TARGET",
+          "options": ["Oh, schade!", "Toll!", "Das passt."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "pf5-e8",
+          "type": "WORD_ORDER",
+          "translation": "On Saturday we went on a day trip.",
+          "answer": "Am Samstag haben wir einen Ausflug gemacht.",
+          "distractors": ["sind", "ein"]
+        },
+        {
+          "id": "pf5-e9",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which do you hear?",
+          "options": ["Ich hatte keine Zeit.", "Ich habe keine Zeit."],
+          "answerIndex": 0
+        },
+        {
+          "id": "pf5-e10",
+          "type": "TRANSLATE",
+          "source": "How was your weekend? (informal)",
+          "sourceLanguage": "BASE",
+          "accepted": ["Wie war dein Wochenende?", "Wie war das Wochenende?"]
+        },
+        {
+          "id": "pf5-e11",
+          "type": "TRANSLATE",
+          "source": "I stayed at home on Sunday.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich bin am Sonntag zu Hause geblieben.", "Am Sonntag bin ich zu Hause geblieben.", "Ich bin am Sonntag zuhause geblieben.", "Am Sonntag bin ich zuhause geblieben."]
+        },
+        {
+          "id": "pf5-e12",
+          "type": "TRANSLATE",
+          "source": "Wir sind nach Potsdam gefahren und ich habe viele Fotos gemacht.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["We went to Potsdam and I took lots of photos.", "We went to Potsdam and I took a lot of photos.", "We went to Potsdam and I took many photos.", "We drove to Potsdam and I took lots of photos.", "We drove to Potsdam and I took a lot of photos.", "We travelled to Potsdam and I took lots of photos.", "We went to Potsdam and I took lots of pictures.", "We went to Potsdam and I took a lot of pictures.", "We went to Potsdam, and I took lots of photos."]
+        },
+        {
+          "id": "pf5-e13",
+          "type": "LISTEN_TYPE",
+          "text": "Was hast du am Wochenende gemacht?",
+          "translation": "What did you do at the weekend?"
+        },
+        {
+          "id": "pf5-e14",
+          "type": "SHADOW",
+          "text": "Guten Morgen! Wie war dein Wochenende?",
+          "translation": "Good morning! How was your weekend?"
+        },
+        {
+          "id": "pf5-e15",
+          "type": "SHADOW",
+          "text": "Am Samstag habe ich lange geschlafen. Dann habe ich Fußball gespielt.",
+          "translation": "On Saturday I slept in. Then I played football.",
+          "hint": "Stress the participles: ge-SHLAH-fen, ge-SHPEELT."
+        }
+      ]
+    },
+    {
+      "id": "pf6-checkpoint",
+      "title": "A1 checkpoint",
+      "kind": "PRACTICE",
+      "introduces": [],
+      "exercises": [
+        {
+          "id": "pf6-e1",
+          "type": "TEACH",
+          "title": "A1 checkpoint",
+          "body": "You've reached the end of A1! This lesson mixes everything from Units 1 to 14:\n\n- greetings and numbers\n- *einen* and *kein* after *möchten* and *es gibt*\n- telling the time\n- verb second, *gern* and modal verbs\n- *den*, colours and prices\n- *mit dem* and *zum*\n- *wehtun*\n- *war, hatte* and the Perfekt\n\nGot something wrong? No problem: look back at that unit's grammar notes.",
+          "examples": [
+            { "text": "Ich möchte einen Kaffee, bitte.", "translation": "I'd like a coffee, please." },
+            { "text": "Am Samstag muss ich arbeiten.", "translation": "On Saturday I have to work." },
+            { "text": "Gestern bin ich mit dem Bus gefahren.", "translation": "Yesterday I went by bus." }
+          ]
+        },
+        {
+          "id": "pf6-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "Guten Abend!", "base": "Good evening!" },
+            { "target": "Wie heißt du?", "base": "What's your name? (informal)" },
+            { "target": "Freut mich!", "base": "Nice to meet you!" },
+            { "target": "siebenundvierzig", "base": "forty-seven" },
+            { "target": "Tschüss!", "base": "Bye!" }
+          ]
+        },
+        {
+          "id": "pf6-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which word fits? Ich möchte ___ Kaffee, bitte.",
+          "prompt": "I'd like a coffee, please.",
+          "promptLanguage": "BASE",
+          "options": ["ein", "eine", "einen"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "pf6-e4",
+          "type": "CLOZE",
+          "before": "Hier gibt es",
+          "after": "Supermarkt.",
+          "accepted": ["keinen"],
+          "translation": "There's no supermarket here.",
+          "hint": "kein + der Supermarkt, after es gibt"
+        },
+        {
+          "id": "pf6-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "What time is it?",
+          "prompt": "Es ist Viertel vor neun.",
+          "promptLanguage": "TARGET",
+          "options": ["8:45", "9:15", "8:30"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "pf6-e6",
+          "type": "WORD_ORDER",
+          "translation": "At the weekend I like playing tennis. (start with the weekend)",
+          "answer": "Am Wochenende spiele ich gern Tennis.",
+          "distractors": ["spielt", "Im"]
+        },
+        {
+          "id": "pf6-e7",
+          "type": "CLOZE",
+          "before": "Ich finde",
+          "after": "Tisch schön.",
+          "accepted": ["den"],
+          "translation": "I think the table is nice.",
+          "hint": "der Tisch, as the object"
+        },
+        {
+          "id": "pf6-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "What does the shop assistant say?",
+          "prompt": "Der Pullover ist blau und kostet neunundzwanzig Euro.",
+          "promptLanguage": "TARGET",
+          "options": ["blue, €29", "blue, €92", "grey, €29"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "pf6-e9",
+          "type": "CLOZE",
+          "before": "Ich fahre mit",
+          "after": "Bus zum Bahnhof.",
+          "accepted": ["dem"],
+          "translation": "I'm going to the station by bus.",
+          "hint": "mit + der Bus"
+        },
+        {
+          "id": "pf6-e10",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Mein Kopf tut weh.",
+          "promptLanguage": "TARGET",
+          "options": ["My head hurts.", "My back hurts.", "My stomach hurts."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "pf6-e11",
+          "type": "CLOZE",
+          "before": "Gestern",
+          "after": "ich mit dem Zug nach Hamburg gefahren.",
+          "accepted": ["bin"],
+          "translation": "Yesterday I went to Hamburg by train.",
+          "hint": "fahren: haben or sein?"
+        },
+        {
+          "id": "pf6-e12",
+          "type": "TRANSLATE",
+          "source": "Can you come tomorrow? (informal)",
+          "sourceLanguage": "BASE",
+          "accepted": ["Kannst du morgen kommen?"]
+        },
+        {
+          "id": "pf6-e13",
+          "type": "TRANSLATE",
+          "source": "Letzte Woche war ich krank und hatte keine Zeit.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Last week I was ill and didn't have time.", "Last week I was sick and didn't have time.", "Last week I was ill and had no time.", "Last week I was sick and had no time.", "I was ill last week and didn't have time.", "I was sick last week and didn't have time.", "I was ill last week and had no time.", "I was sick last week and had no time.", "Last week I was ill and did not have time.", "Last week I was sick and did not have time.", "Last week I was ill and didn't have any time.", "Last week I was sick and didn't have any time."]
+        },
+        {
+          "id": "pf6-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Gestern habe ich einen Freund getroffen.",
+          "translation": "Yesterday I met a friend."
+        },
+        {
+          "id": "pf6-e15",
+          "type": "SHADOW",
+          "text": "Am Wochenende bin ich nach Berlin gefahren. Das war toll!",
+          "translation": "At the weekend I went to Berlin. That was great!",
+          "hint": "Keep bin short and gefahren long: ge-FAH-ren."
+        }
+      ]
+    }
+  ]
+}

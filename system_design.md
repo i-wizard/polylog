@@ -528,7 +528,8 @@ These mirror the user's global guidelines, adapted to TypeScript:
 - [x] Offline dictionary (Dictionary tab): about 23k common German words with gender, plural, IPA and meanings, searchable in German (any inflected form, umlauts optional) or English, with speech; also opens as a sheet from the lesson header, so a word can be looked up mid-quiz
 - `SPEAK` exercises via on-device recognition
 - Grammar reference screen, stats screen, weak-spots queue
-- Content: Units 6–29
+- [x] Content: Units 6–14 (rest of A1: Around town to What happened?, with the A1 checkpoint)
+- Content: Units 15–29
 
 ### Phase 3 — B1 skills
 
@@ -541,7 +542,7 @@ These mirror the user's global guidelines, adapted to TypeScript:
 
 - [x] Direct-to-Ollama client, one-command tunnel script (`tools/start-ai.sh`) and guide (`docs/ai-setup.md`)
 - [x] Tutor chat (Chat tab), grounded in course grammar notes
-- [x] Conversation role-plays for Units 1–5, with translate and "Check my German"
+- [x] Conversation role-plays for Units 1–14, with translate and "Check my German"
 - Role-plays for later units (add one to `scenarios.json` per unit)
 - Writing feedback, Whisper speaking checks (would need a small service on the Mac)
 - Exam prep units and the B1 mock exam

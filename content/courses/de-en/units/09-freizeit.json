@@ -1,0 +1,835 @@
+{
+  "id": "09-freizeit",
+  "level": "A1",
+  "title": "Free time",
+  "description": "Hobbies with gern, lieber and am liebsten, how often you do things, verb-second word order in full, and making plans with friends.",
+  "icon": "⚽",
+  "vocab": [
+    { "id": "freizeit", "text": "Freizeit", "translations": ["free time", "spare time", "leisure"], "partOfSpeech": "NOUN", "gender": "f", "pronunciation": "FRY-tsite", "example": { "text": "Am Wochenende habe ich Freizeit.", "translation": "I have free time at the weekend." } },
+    { "id": "hobby", "text": "Hobby", "translations": ["hobby"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Hobbys", "pronunciation": "HO-bee", "example": { "text": "Was sind deine Hobbys?", "translation": "What are your hobbies?" } },
+    { "id": "spielen", "text": "spielen", "translations": ["to play"], "partOfSpeech": "VERB", "pronunciation": "SHPEE-len", "example": { "text": "Wir spielen am Samstag Fußball.", "translation": "We're playing football on Saturday." } },
+    { "id": "fussball", "text": "Fußball", "translations": ["football", "soccer"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Fußbälle", "pronunciation": "FOOS-bal (long oo)", "example": { "text": "Ich spiele gern Fußball.", "translation": "I like playing football." } },
+    { "id": "tennis", "text": "Tennis", "translations": ["tennis"], "partOfSpeech": "NOUN", "gender": "n", "pronunciation": "TEN-nis", "example": { "text": "Spielst du Tennis?", "translation": "Do you play tennis?" } },
+    { "id": "sport", "text": "Sport", "translations": ["sport", "sports", "exercise"], "partOfSpeech": "NOUN", "gender": "m", "pronunciation": "shport", "example": { "text": "Ich mache gern Sport.", "translation": "I like doing sport." } },
+    { "id": "musik", "text": "Musik", "translations": ["music"], "partOfSpeech": "NOUN", "gender": "f", "pronunciation": "moo-ZEEK", "example": { "text": "Ich höre gern Musik.", "translation": "I like listening to music." } },
+    { "id": "hoeren", "text": "hören", "translations": ["to listen to", "to hear"], "partOfSpeech": "VERB", "pronunciation": "HÖ-ren (ö: ay with rounded lips)", "example": { "text": "Hörst du Musik?", "translation": "Are you listening to music?" } },
+    { "id": "gern", "text": "gern", "translations": ["like doing (with a verb)", "gladly", "with pleasure"], "partOfSpeech": "ADVERB", "pronunciation": "gairn", "example": { "text": "Ich tanze gern.", "translation": "I like dancing." } },
+    { "id": "tanzen", "text": "tanzen", "translations": ["to dance"], "partOfSpeech": "VERB", "pronunciation": "TAN-tsen", "example": { "text": "Tanzt du gern?", "translation": "Do you like dancing?" } },
+    { "id": "schwimmen", "text": "schwimmen", "translations": ["to swim"], "partOfSpeech": "VERB", "pronunciation": "SHVIM-men", "example": { "text": "Wir schwimmen am Sonntag.", "translation": "We're going swimming on Sunday." } },
+    { "id": "singen", "text": "singen", "translations": ["to sing"], "partOfSpeech": "VERB", "pronunciation": "ZING-en", "example": { "text": "Sie singt sehr gern.", "translation": "She really likes singing." } },
+    { "id": "wandern", "text": "wandern", "translations": ["to hike", "to go hiking", "to go walking"], "partOfSpeech": "VERB", "pronunciation": "VAN-dern", "example": { "text": "Am Wochenende wandern wir.", "translation": "We go hiking at the weekend." } },
+    { "id": "lieber", "text": "lieber", "translations": ["rather (prefer doing)", "rather", "preferably"], "partOfSpeech": "ADVERB", "pronunciation": "LEE-ber", "example": { "text": "Ich schwimme gern, aber ich tanze lieber.", "translation": "I like swimming, but I prefer dancing." } },
+    { "id": "am-liebsten", "text": "am liebsten", "translations": ["most of all (like doing best)", "most of all", "best of all"], "partOfSpeech": "PHRASE", "pronunciation": "am LEEP-sten", "example": { "text": "Am liebsten lese ich.", "translation": "Most of all I like reading." } },
+    { "id": "lesen", "text": "lesen", "translations": ["to read"], "partOfSpeech": "VERB", "pronunciation": "LAY-zen", "example": { "text": "Liest du gern?", "translation": "Do you like reading?" } },
+    { "id": "buch", "text": "Buch", "translations": ["book"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Bücher", "pronunciation": "bookh (long oo, back-of-throat ch)", "example": { "text": "Ich lese ein Buch.", "translation": "I'm reading a book." } },
+    { "id": "sehen", "text": "sehen", "translations": ["to see", "to watch"], "partOfSpeech": "VERB", "pronunciation": "ZAY-en (silent h)", "example": { "text": "Ich sehe das Hotel.", "translation": "I can see the hotel." } },
+    { "id": "film", "text": "Film", "translations": ["film", "movie"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Filme", "pronunciation": "film", "example": { "text": "Wir sehen heute einen Film.", "translation": "We're watching a film today." } },
+    { "id": "treffen", "text": "treffen", "translations": ["to meet"], "partOfSpeech": "VERB", "pronunciation": "TREF-fen", "example": { "text": "Ich treffe am Samstag Freunde.", "translation": "I'm meeting friends on Saturday." } },
+    { "id": "oft", "text": "oft", "translations": ["often"], "partOfSpeech": "ADVERB", "pronunciation": "oft", "example": { "text": "Ich spiele oft Tennis.", "translation": "I often play tennis." } },
+    { "id": "manchmal", "text": "manchmal", "translations": ["sometimes"], "partOfSpeech": "ADVERB", "pronunciation": "MANKH-mahl (soft ch)", "example": { "text": "Manchmal singe ich.", "translation": "Sometimes I sing." } },
+    { "id": "nie", "text": "nie", "translations": ["never"], "partOfSpeech": "ADVERB", "pronunciation": "nee", "example": { "text": "Er tanzt nie.", "translation": "He never dances." } },
+    { "id": "lust", "text": "Lust", "translations": ["desire (to do something)", "wish", "fancy"], "partOfSpeech": "NOUN", "gender": "f", "pronunciation": "loost (short oo)", "example": { "text": "Ich habe keine Lust.", "translation": "I don't feel like it." } },
+    { "id": "hast-du-lust", "text": "Hast du Lust?", "translations": ["Do you feel like it? (informal)", "Do you fancy it?", "Are you up for it?"], "partOfSpeech": "PHRASE", "pronunciation": "hast doo LOOST", "example": { "text": "Wir gehen ins Kino. Hast du Lust?", "translation": "We're going to the cinema. Do you feel like coming?" } },
+    { "id": "zusammen", "text": "zusammen", "translations": ["together"], "partOfSpeech": "ADVERB", "pronunciation": "tsoo-ZAM-men", "example": { "text": "Wollen wir zusammen kochen?", "translation": "Shall we cook together?" } },
+    { "id": "wollen-wir", "text": "Wollen wir …?", "translations": ["Shall we …?", "Do you want to … (together)?"], "partOfSpeech": "PHRASE", "pronunciation": "VOL-len veer", "example": { "text": "Wollen wir am Sonntag wandern?", "translation": "Shall we go hiking on Sunday?" } },
+    { "id": "ins-kino", "text": "ins Kino", "translations": ["to the cinema", "to the movies"], "partOfSpeech": "PHRASE", "pronunciation": "ins KEE-no", "example": { "text": "Gehen wir ins Kino?", "translation": "Shall we go to the cinema?" } },
+    { "id": "gute-idee", "text": "Gute Idee!", "translations": ["Good idea!"], "partOfSpeech": "PHRASE", "pronunciation": "GOO-te ee-DAY", "example": { "text": "Tennis am Samstag? Gute Idee!", "translation": "Tennis on Saturday? Good idea!" } },
+    { "id": "konzert", "text": "Konzert", "translations": ["concert"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Konzerte", "pronunciation": "kon-TSERT", "example": { "text": "Am Freitag gibt es ein Konzert.", "translation": "There's a concert on Friday." } }
+  ],
+  "grammarNotes": [
+    {
+      "id": "freizeit-gern",
+      "title": "gern, lieber, am liebsten",
+      "body": "To say you **like doing** something, take the verb and add **gern** (literally *gladly*). There's no separate *like* verb: *gern* goes right after the verb, or after *du* in a question.\n\n- *Ich spiele **gern** Tennis.* = I like playing tennis.\n- *Spielst du **gern** Tennis?* = Do you like playing tennis?\n- *Ich tanze **nicht gern**.* = I don't like dancing. (*nicht so gern* = not that keen)\n\nTo compare, use **lieber** (rather, prefer) and **am liebsten** (most of all), like *good, better, best*. *am liebsten* often comes first, so the verb comes straight after it: ***Am liebsten** lese ich.*\n\nYou'll also hear **gerne**: it means exactly the same.",
+      "table": [
+        ["Form", "Example", "Meaning"],
+        ["gern", "Ich schwimme gern.", "I like swimming."],
+        ["lieber", "Ich tanze lieber.", "I prefer dancing."],
+        ["am liebsten", "Am liebsten lese ich.", "Most of all I like reading."],
+        ["nicht gern", "Ich singe nicht gern.", "I don't like singing."]
+      ]
+    },
+    {
+      "id": "freizeit-verb-second",
+      "title": "Verb second: anything can go first",
+      "body": "In a German statement, the verb with the ending is always the **second item**. Usually the subject comes first, but almost anything can take position 1: a time, a place, a *how often* word, even the object. The verb stays in position 2, and the subject moves to just **after** the verb.\n\n- Count *items*, not words: *am Wochenende* is one item.\n- *und*, *aber* and a *Ja,* or *Nein,* at the start don't count: *Ja, am Sonntag **habe** ich Zeit.*\n- Separable prefixes and second verbs still go to the **end**: *Abends sehe ich **fern**. Morgen muss ich **arbeiten**.*\n\nIn a **yes/no question**, position 1 stays empty and the verb comes **first**: *Spielst du gern Fußball?* In a **W-question**, the question word takes position 1: *Was machst du?*",
+      "table": [
+        ["Position 1", "Verb", "Subject", "Rest"],
+        ["Ich", "spiele", "(already first)", "am Wochenende Tennis."],
+        ["Am Wochenende", "spiele", "ich", "Tennis."],
+        ["Oft", "lese", "ich", "abends."],
+        ["Hier", "spielen", "wir", "Fußball."],
+        ["Tennis", "spiele", "ich", "gern."],
+        ["Morgen", "muss", "ich", "arbeiten."],
+        ["Was", "machst", "du", "am Wochenende?"],
+        ["(empty)", "Spielst", "du", "gern Fußball?"]
+      ]
+    },
+    {
+      "id": "freizeit-vowel-change",
+      "title": "lesen, sehen, treffen: vowel changes",
+      "body": "Some common verbs change their vowel in the **du** and **er / sie / es** forms only. All the other forms are regular.\n\n- **e → ie**: *lesen → du liest*, *sehen → er sieht* (just like *fernsehen*)\n- **e → i**: *treffen → du triffst, er trifft* (just like *sprechen* and *essen*)\n\n*du liest* has only one *s*, because the stem *les-* already ends in an *s* sound.",
+      "table": [
+        ["Person", "lesen", "sehen", "treffen"],
+        ["ich", "lese", "sehe", "treffe"],
+        ["du", "liest", "siehst", "triffst"],
+        ["er / sie / es", "liest", "sieht", "trifft"],
+        ["wir", "lesen", "sehen", "treffen"],
+        ["ihr", "lest", "seht", "trefft"],
+        ["sie / Sie", "lesen", "sehen", "treffen"]
+      ]
+    },
+    {
+      "id": "freizeit-how-often",
+      "title": "How often? immer, oft, manchmal, nie",
+      "body": "These words say how often you do something. They usually go right **after the verb**: *Ich lese **oft**.* In a question or after inversion, they come after the subject: *Liest du **oft**?*\n\nYou can also put one first. The verb is still second: ***Manchmal** singe ich.*\n\n**nie** already means *not ever*, so never add *nicht* to it: *Ich tanze nie.* = I never dance.",
+      "table": [
+        ["Word", "Example", "Meaning"],
+        ["immer", "Ich stehe immer um sieben Uhr auf.", "I always get up at seven."],
+        ["oft", "Ich spiele oft Tennis.", "I often play tennis."],
+        ["manchmal", "Manchmal singe ich.", "Sometimes I sing."],
+        ["nie", "Er tanzt nie.", "He never dances."]
+      ]
+    },
+    {
+      "id": "freizeit-plans",
+      "title": "Making plans",
+      "body": "Learn these as chunks.\n\n**Gehen wir …?** and **Wollen wir …?** both mean *Shall we …?* The verb comes first, then *wir*. With *wollen*, the second verb goes to the end: *Wollen wir zusammen **wandern**?*\n\n**ins Kino** = to the cinema. Just learn it as a chunk for now: *Ich gehe gern ins Kino.*\n\n**die Lust** is the wish to do something: *Hast du Lust?* = Do you feel like it? *Ich habe keine Lust.* = I don't feel like it.",
+      "table": [
+        ["You want to…", "Say"],
+        ["ask about plans", "Was machst du am Wochenende?"],
+        ["suggest something", "Gehen wir ins Kino? / Wollen wir zusammen schwimmen?"],
+        ["ask if they're keen", "Hast du Lust?"],
+        ["say yes", "Ja, gern! / Gute Idee!"],
+        ["say no politely", "Ich habe leider keine Zeit. / Ich habe keine Lust."],
+        ["say goodbye", "Bis Sonntag!"]
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "fz1-hobbies",
+      "title": "Hobbies",
+      "kind": "LEARN",
+      "introduces": ["freizeit", "hobby", "spielen", "fussball", "tennis", "sport", "musik", "hoeren"],
+      "exercises": [
+        {
+          "id": "fz1-e1",
+          "type": "TEACH",
+          "title": "Freizeit and Hobbys",
+          "body": "- **die Freizeit** = free time (*frei* = free + *die Zeit* = time)\n- **das Hobby** = the hobby, plural **die Hobbys**, just like English\n\nTo ask a friend: **Was sind deine Hobbys?**\n\nYou'll also hear **Was machst du in deiner Freizeit?** (What do you do in your free time?) Learn it as a chunk for now.",
+          "examples": [
+            { "text": "Was sind deine Hobbys?", "translation": "What are your hobbies?" },
+            { "text": "Am Wochenende habe ich Freizeit.", "translation": "I have free time at the weekend." },
+            { "text": "Was machst du in deiner Freizeit?", "translation": "What do you do in your free time?" }
+          ]
+        },
+        {
+          "id": "fz1-e2",
+          "type": "TEACH",
+          "title": "spielen: to play",
+          "body": "**spielen** = to play, a regular verb: ich spiele, du spielst, er spielt. The *sp* at the start sounds like *shp*.\n\nUse it for games and ball sports:\n\n- **der Fußball** = football (soccer)\n- **das Tennis** = tennis\n\nNo article needed: *Ich spiele Fußball.* = I play football.",
+          "examples": [
+            { "text": "Ich spiele Fußball.", "translation": "I play football." },
+            { "text": "Spielst du Tennis?", "translation": "Do you play tennis?" },
+            { "text": "Wir spielen am Samstag Fußball.", "translation": "We're playing football on Saturday." }
+          ]
+        },
+        {
+          "id": "fz1-e3",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Freizeit", "base": "free time" },
+            { "target": "das Hobby", "base": "the hobby" },
+            { "target": "spielen", "base": "to play" },
+            { "target": "der Fußball", "base": "football" },
+            { "target": "das Tennis", "base": "tennis" }
+          ]
+        },
+        {
+          "id": "fz1-e4",
+          "type": "CLOZE",
+          "before": "Er",
+          "after": "Tennis.",
+          "accepted": ["spielt"],
+          "translation": "He plays tennis.",
+          "hint": "spielen → er …"
+        },
+        {
+          "id": "fz1-e5",
+          "type": "WORD_ORDER",
+          "translation": "We're playing football on Saturday.",
+          "answer": "Wir spielen am Samstag Fußball.",
+          "alternatives": ["Wir spielen Fußball am Samstag."],
+          "distractors": ["spielt", "im"]
+        },
+        {
+          "id": "fz1-e6",
+          "type": "TEACH",
+          "title": "Sport machen, Musik hören",
+          "body": "- **der Sport** = sport. In German you *make* sport: **Sport machen** = to do sport, to exercise.\n- **die Musik** = music. Stress the end: *moo-ZEEK*.\n- **hören** = to hear, to listen to. **Musik hören** = to listen to music. No extra word for *to*!",
+          "mouthShapes": [
+            { "shape": "ROUNDED", "label": "ö", "caption": "hören: say ay, then round your lips" }
+          ],
+          "examples": [
+            { "text": "Ich mache Sport.", "translation": "I do sport." },
+            { "text": "Machst du Sport?", "translation": "Do you do any sport?" },
+            { "text": "Ich höre Musik.", "translation": "I'm listening to music." },
+            { "text": "Hörst du Musik?", "translation": "Are you listening to music?" }
+          ]
+        },
+        {
+          "id": "fz1-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which verb goes with Sport?",
+          "prompt": "I do sport.",
+          "promptLanguage": "BASE",
+          "options": ["Ich spiele Sport.", "Ich mache Sport.", "Ich höre Sport."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "fz1-e8",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "Fußball spielen", "base": "to play football" },
+            { "target": "Sport machen", "base": "to do sport" },
+            { "target": "Musik hören", "base": "to listen to music" },
+            { "target": "Tennis spielen", "base": "to play tennis" }
+          ]
+        },
+        {
+          "id": "fz1-e9",
+          "type": "CLOZE",
+          "before": "",
+          "after": "du Musik?",
+          "accepted": ["Hörst"],
+          "translation": "Are you listening to music?",
+          "hint": "hören → du …, starting a question"
+        },
+        {
+          "id": "fz1-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "der, die or das?",
+          "prompt": "Musik",
+          "promptLanguage": "TARGET",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "fz1-e11",
+          "type": "TRANSLATE",
+          "source": "Do you play tennis? (informal)",
+          "sourceLanguage": "BASE",
+          "accepted": ["Spielst du Tennis?"]
+        },
+        {
+          "id": "fz1-e12",
+          "type": "TRANSLATE",
+          "source": "Was sind deine Hobbys?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["What are your hobbies?", "What're your hobbies?"]
+        },
+        {
+          "id": "fz1-e13",
+          "type": "TRANSLATE",
+          "source": "I listen to music in the evening.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich höre abends Musik.", "Abends höre ich Musik.", "Ich höre am Abend Musik.", "Am Abend höre ich Musik.", "Ich höre Musik am Abend."]
+        },
+        {
+          "id": "fz1-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Wir spielen am Sonntag Tennis.",
+          "translation": "We're playing tennis on Sunday."
+        },
+        {
+          "id": "fz1-e15",
+          "type": "SHADOW",
+          "text": "Ich spiele Fußball und höre Musik.",
+          "translation": "I play football and listen to music.",
+          "hint": "spiele: sp sounds like shp. Musik: moo-ZEEK, stress the end."
+        }
+      ]
+    },
+    {
+      "id": "fz2-gern",
+      "title": "I like it: gern",
+      "kind": "LEARN",
+      "introduces": ["gern", "tanzen", "schwimmen", "singen", "wandern", "lieber", "am-liebsten"],
+      "exercises": [
+        {
+          "id": "fz2-e1",
+          "type": "TEACH",
+          "title": "gern: liking to do something",
+          "body": "To say you **like doing** something, take the verb and add **gern** right after it:\n\n- *Ich spiele Fußball.* = I play football.\n- *Ich spiele **gern** Fußball.* = I like playing football.\n\nThere's no separate verb for *like* here: **gern** (literally *gladly*) does the job. In a question it comes after *du*: *Spielst du **gern** Tennis?*\n\nYou'll also hear **gerne**. It means exactly the same.",
+          "examples": [
+            { "text": "Ich spiele gern Fußball.", "translation": "I like playing football." },
+            { "text": "Ich höre gern Musik.", "translation": "I like listening to music." },
+            { "text": "Spielst du gern Tennis?", "translation": "Do you like playing tennis?" },
+            { "text": "Was machst du gern?", "translation": "What do you like doing?" }
+          ]
+        },
+        {
+          "id": "fz2-e2",
+          "type": "CLOZE",
+          "before": "Ich höre",
+          "after": "Musik.",
+          "accepted": ["gern", "gerne"],
+          "translation": "I like listening to music.",
+          "hint": "like doing"
+        },
+        {
+          "id": "fz2-e3",
+          "type": "TEACH",
+          "title": "Dance, swim, sing, hike",
+          "body": "Four more regular verbs:\n\n- **tanzen** = to dance\n- **schwimmen** = to swim\n- **singen** = to sing\n- **wandern** = to hike, to go walking in the countryside\n\nTwo small things: *tanzen* already ends in an *s* sound, so it's just du **tanzt**. And *wandern* keeps its *e* for *ich*: ich **wandere**, du wanderst, er wandert.",
+          "examples": [
+            { "text": "Tanzt du gern?", "translation": "Do you like dancing?" },
+            { "text": "Wir schwimmen am Samstag.", "translation": "We're going swimming on Saturday." },
+            { "text": "Sie singt gern.", "translation": "She likes singing." },
+            { "text": "Ich wandere gern.", "translation": "I like hiking." }
+          ]
+        },
+        {
+          "id": "fz2-e4",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "tanzen", "base": "to dance" },
+            { "target": "schwimmen", "base": "to swim" },
+            { "target": "singen", "base": "to sing" },
+            { "target": "wandern", "base": "to hike" },
+            { "target": "spielen", "base": "to play" }
+          ]
+        },
+        {
+          "id": "fz2-e5",
+          "type": "WORD_ORDER",
+          "translation": "Do you like swimming? (informal)",
+          "answer": "Schwimmst du gern?",
+          "distractors": ["Schwimmen", "nicht"]
+        },
+        {
+          "id": "fz2-e6",
+          "type": "TEACH",
+          "title": "nicht gern",
+          "body": "Don't like it? Put **nicht** before *gern*:\n\n- *Ich tanze **nicht gern**.* = I don't like dancing.\n- *Ich schwimme **nicht so gern**.* = I'm not that keen on swimming.\n\n*nicht so gern* is softer, and very common.",
+          "examples": [
+            { "text": "Ich tanze nicht gern.", "translation": "I don't like dancing." },
+            { "text": "Ich schwimme nicht so gern.", "translation": "I'm not that keen on swimming." },
+            { "text": "Er singt sehr gern.", "translation": "He really likes singing." }
+          ]
+        },
+        {
+          "id": "fz2-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "A friend asks you this. You love singing. What do you say?",
+          "prompt": "Singst du gern?",
+          "promptLanguage": "TARGET",
+          "options": ["Ja, ich singe sehr gern!", "Nein, ich singe nicht gern.", "Ja, ich schwimme gern."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "fz2-e8",
+          "type": "TEACH",
+          "title": "lieber and am liebsten",
+          "body": "*gern* has two bigger forms, just like *good, better, best*:\n\n- **gern** = like doing\n- **lieber** = prefer doing, would rather\n- **am liebsten** = like doing most of all\n\n*Ich schwimme gern, aber ich tanze **lieber**.* = I like swimming, but I prefer dancing.\n\n**am liebsten** often goes first. The verb stays **second**, so *ich* moves after it: ***Am liebsten** tanze ich.*",
+          "examples": [
+            { "text": "Ich schwimme gern, aber ich tanze lieber.", "translation": "I like swimming, but I prefer dancing." },
+            { "text": "Am liebsten wandere ich.", "translation": "Most of all I like hiking." },
+            { "text": "Was machst du am liebsten?", "translation": "What do you like doing most?" }
+          ]
+        },
+        {
+          "id": "fz2-e9",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which word fits? Ich tanze gern, aber ich singe ___.",
+          "prompt": "I like dancing, but I prefer singing.",
+          "promptLanguage": "BASE",
+          "options": ["gern", "lieber", "am liebsten"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "fz2-e10",
+          "type": "CLOZE",
+          "before": "",
+          "after": "spiele ich Tennis.",
+          "accepted": ["Am liebsten"],
+          "translation": "Most of all I like playing tennis.",
+          "hint": "most of all (two words)"
+        },
+        {
+          "id": "fz2-e11",
+          "type": "WORD_ORDER",
+          "translation": "Most of all I like hiking.",
+          "answer": "Am liebsten wandere ich.",
+          "distractors": ["wandern", "lieber"]
+        },
+        {
+          "id": "fz2-e12",
+          "type": "TRANSLATE",
+          "source": "I don't like dancing.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich tanze nicht gern.", "Ich tanze nicht gerne."]
+        },
+        {
+          "id": "fz2-e13",
+          "type": "TRANSLATE",
+          "source": "Ich schwimme gern, aber ich wandere lieber.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["I like swimming, but I prefer hiking.", "I like swimming but I prefer hiking.", "I like to swim, but I prefer to hike.", "I like swimming, but I'd rather hike.", "I like to swim, but I'd rather hike.", "I like swimming, but I prefer walking.", "I like swimming, but I like hiking more.", "I like swimming, but I like hiking better.", "I like swimming, but I prefer going hiking."]
+        },
+        {
+          "id": "fz2-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Was machst du am liebsten?",
+          "translation": "What do you like doing most?"
+        },
+        {
+          "id": "fz2-e15",
+          "type": "SHADOW",
+          "text": "Ich schwimme gern, aber am liebsten tanze ich.",
+          "translation": "I like swimming, but most of all I like dancing.",
+          "hint": "gern is one syllable: gairn. liebsten: LEEP-sten."
+        }
+      ]
+    },
+    {
+      "id": "fz3-books-films",
+      "title": "Books, films and friends",
+      "kind": "LEARN",
+      "introduces": ["lesen", "buch", "sehen", "film", "treffen"],
+      "exercises": [
+        {
+          "id": "fz3-e1",
+          "type": "TEACH",
+          "title": "lesen: e changes to ie",
+          "body": "**lesen** = to read. Like *fernsehen*, it changes **e → ie** in the *du* and *er/sie/es* forms:\n\n- ich lese\n- du **liest**\n- er / sie **liest**\n- wir / sie / Sie lesen\n\n*du liest* has only one *s*: the stem already ends in *s*.\n\n**das Buch** = the book, plural **die Bücher**.",
+          "mouthShapes": [
+            { "shape": "TIGHT_ROUNDED", "label": "ü", "caption": "Bücher: say ee, then round your lips" }
+          ],
+          "examples": [
+            { "text": "Ich lese ein Buch.", "translation": "I'm reading a book." },
+            { "text": "Liest du gern?", "translation": "Do you like reading?" },
+            { "text": "Lena liest abends.", "translation": "Lena reads in the evening." },
+            { "text": "Er liest gern Bücher.", "translation": "He likes reading books." }
+          ]
+        },
+        {
+          "id": "fz3-e2",
+          "type": "CLOZE",
+          "before": "Er",
+          "after": "ein Buch.",
+          "accepted": ["liest"],
+          "translation": "He's reading a book.",
+          "hint": "lesen → er … (e changes to ie)"
+        },
+        {
+          "id": "fz3-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? ___ du gern?",
+          "prompt": "Do you like reading?",
+          "promptLanguage": "BASE",
+          "options": ["Lest", "Liest", "Liesst"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "fz3-e4",
+          "type": "TEACH",
+          "title": "sehen: to see, to watch",
+          "body": "**sehen** = to see, to watch. You know it from *fernsehen*, and it changes the same way: du **siehst**, er / sie **sieht**. The *h* is silent: *ZAY-en*.\n\n**der Film** = the film, plural **die Filme**. It's a *der* word, so as an object it becomes **einen Film**, as you learned in Unit 5.",
+          "examples": [
+            { "text": "Ich sehe einen Film.", "translation": "I'm watching a film." },
+            { "text": "Siehst du gern Filme?", "translation": "Do you like watching films?" },
+            { "text": "Tom sieht abends einen Film.", "translation": "Tom watches a film in the evening." },
+            { "text": "Ich sehe das Hotel.", "translation": "I can see the hotel." }
+          ]
+        },
+        {
+          "id": "fz3-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "lesen", "base": "to read" },
+            { "target": "das Buch", "base": "the book" },
+            { "target": "die Bücher", "base": "the books" },
+            { "target": "sehen", "base": "to see" },
+            { "target": "der Film", "base": "the film" }
+          ]
+        },
+        {
+          "id": "fz3-e6",
+          "type": "CLOZE",
+          "before": "Tom",
+          "after": "einen Film.",
+          "accepted": ["sieht"],
+          "translation": "Tom is watching a film.",
+          "hint": "sehen → er … (e changes to ie)"
+        },
+        {
+          "id": "fz3-e7",
+          "type": "TEACH",
+          "title": "treffen: e changes to i",
+          "body": "**treffen** = to meet (when you've arranged it). It changes **e → i**, like *sprechen* and *essen*:\n\n- ich treffe\n- du **triffst**\n- er / sie **trifft**\n- wir / sie / Sie treffen\n\nThe person you meet is the object, so *mein* becomes **meinen** for a *der* word: *Ich treffe **meinen** Bruder.*",
+          "examples": [
+            { "text": "Ich treffe Freunde.", "translation": "I'm meeting friends." },
+            { "text": "Triffst du heute Anna?", "translation": "Are you meeting Anna today?" },
+            { "text": "Er trifft am Samstag seinen Bruder.", "translation": "He's meeting his brother on Saturday." }
+          ]
+        },
+        {
+          "id": "fz3-e8",
+          "type": "CLOZE",
+          "before": "Lena",
+          "after": "am Sonntag Freunde.",
+          "accepted": ["trifft"],
+          "translation": "Lena is meeting friends on Sunday.",
+          "hint": "treffen → sie (she) … (e changes to i)"
+        },
+        {
+          "id": "fz3-e9",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Du ___ heute Tom.",
+          "prompt": "You're meeting Tom today.",
+          "promptLanguage": "BASE",
+          "options": ["treffst", "triffst", "trifft"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "fz3-e10",
+          "type": "WORD_ORDER",
+          "translation": "Do you like reading books? (informal)",
+          "answer": "Liest du gern Bücher?",
+          "distractors": ["Lest", "Buch"]
+        },
+        {
+          "id": "fz3-e11",
+          "type": "WORD_ORDER",
+          "translation": "In the evening I watch a film. (start with the time)",
+          "answer": "Abends sehe ich einen Film.",
+          "distractors": ["sieht", "ein"]
+        },
+        {
+          "id": "fz3-e12",
+          "type": "TRANSLATE",
+          "source": "She likes reading.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Sie liest gern.", "Sie liest gerne."]
+        },
+        {
+          "id": "fz3-e13",
+          "type": "TRANSLATE",
+          "source": "Am Samstag trifft Tom seinen Bruder.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["On Saturday Tom is meeting his brother.", "On Saturday Tom meets his brother.", "On Saturday, Tom is meeting his brother.", "On Saturday, Tom meets his brother.", "Tom is meeting his brother on Saturday.", "Tom's meeting his brother on Saturday.", "Tom meets his brother on Saturday."]
+        },
+        {
+          "id": "fz3-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Er liest gern Bücher.",
+          "translation": "He likes reading books."
+        },
+        {
+          "id": "fz3-e15",
+          "type": "SHADOW",
+          "text": "Ich lese ein Buch und du siehst einen Film.",
+          "translation": "I'm reading a book and you're watching a film.",
+          "hint": "siehst: the h is silent, zeest. Buch: long oo, then a ch from the back of the throat."
+        }
+      ]
+    },
+    {
+      "id": "fz4-word-order",
+      "title": "Anything can go first",
+      "kind": "LEARN",
+      "introduces": ["oft", "manchmal", "nie"],
+      "exercises": [
+        {
+          "id": "fz4-e1",
+          "type": "TEACH",
+          "title": "Verb second, always",
+          "body": "You've seen that you can start with a time, and then the subject moves after the verb. Here's the full rule:\n\n**Almost anything** can go first: a time, a place, even the object. Whatever comes first, the verb stays in **position 2**, and the subject comes **right after it**.\n\n- *Ich spiele am Wochenende Tennis.*\n- ***Am Wochenende** spiele ich Tennis.*\n- ***Tennis** spiele ich am Wochenende.*\n\nAll three mean *I play tennis at the weekend*. Whatever you put first gets a little extra weight.",
+          "examples": [
+            { "text": "Ich spiele am Wochenende Tennis.", "translation": "I play tennis at the weekend.", "hint": "subject first" },
+            { "text": "Am Wochenende spiele ich Tennis.", "translation": "At the weekend I play tennis.", "hint": "time first" },
+            { "text": "Tennis spiele ich am Wochenende.", "translation": "Tennis is what I play at the weekend.", "hint": "object first" }
+          ]
+        },
+        {
+          "id": "fz4-e2",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which sentence is right?",
+          "prompt": "At the weekend I play tennis.",
+          "promptLanguage": "BASE",
+          "options": ["Am Wochenende ich spiele Tennis.", "Am Wochenende spiele ich Tennis.", "Am Wochenende spielen ich Tennis."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "fz4-e3",
+          "type": "WORD_ORDER",
+          "translation": "On Sunday we play football. (start with the day)",
+          "answer": "Am Sonntag spielen wir Fußball.",
+          "distractors": ["spielt", "ich"]
+        },
+        {
+          "id": "fz4-e4",
+          "type": "TEACH",
+          "title": "How often? oft, manchmal, nie",
+          "body": "- **immer** = always (you know this one)\n- **oft** = often\n- **manchmal** = sometimes\n- **nie** = never\n\nPut them right after the verb: *Ich lese **oft**. Er tanzt **nie**.*\n\nOr put one first, and the verb is still second: ***Manchmal** singe ich.*",
+          "examples": [
+            { "text": "Ich spiele oft Tennis.", "translation": "I often play tennis." },
+            { "text": "Manchmal singe ich.", "translation": "Sometimes I sing." },
+            { "text": "Er tanzt nie.", "translation": "He never dances." },
+            { "text": "Wir wandern immer am Sonntag.", "translation": "We always go hiking on Sunday." }
+          ]
+        },
+        {
+          "id": "fz4-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "immer", "base": "always" },
+            { "target": "oft", "base": "often" },
+            { "target": "manchmal", "base": "sometimes" },
+            { "target": "nie", "base": "never" }
+          ]
+        },
+        {
+          "id": "fz4-e6",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Ich sehe nie fern.",
+          "promptLanguage": "TARGET",
+          "options": ["I never watch TV.", "I always watch TV.", "I sometimes watch TV."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "fz4-e7",
+          "type": "CLOZE",
+          "before": "",
+          "after": "lese ich abends.",
+          "accepted": ["Oft"],
+          "translation": "I often read in the evening.",
+          "hint": "often"
+        },
+        {
+          "id": "fz4-e8",
+          "type": "TEACH",
+          "title": "Starting with a place or an object",
+          "body": "A place can go first too: ***Hier** spielen wir Fußball.*\n\nYou can even start with the object, to stress it or contrast it: ***Fußball** spiele ich nie, aber **Tennis** spiele ich oft.*\n\nCount *items*, not words: *am Wochenende* or *in Berlin* is one item. And *und* and *aber* don't count at all: *…, aber **am liebsten** lese ich.*",
+          "examples": [
+            { "text": "Hier spielen wir Fußball.", "translation": "We play football here." },
+            { "text": "In Berlin wohnt mein Bruder.", "translation": "My brother lives in Berlin." },
+            { "text": "Fußball spiele ich nicht gern.", "translation": "Football is something I don't like playing." }
+          ]
+        },
+        {
+          "id": "fz4-e9",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which sentence is right?",
+          "prompt": "My sister lives in Vienna.",
+          "promptLanguage": "BASE",
+          "options": ["In Wien meine Schwester wohnt.", "In Wien wohnt meine Schwester.", "In Wien wohnen meine Schwester."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "fz4-e10",
+          "type": "TEACH",
+          "title": "Questions: verb first",
+          "body": "In a yes/no question, nothing comes before the verb. The verb goes **first**, then the subject:\n\n- *Du spielst gern Fußball.* (statement)\n- ***Spielst** du gern Fußball?* (question)\n\nW-questions follow the verb-second rule: the question word takes position 1, the verb comes next. ***Was** machst du am Wochenende?*",
+          "examples": [
+            { "text": "Spielst du gern Fußball?", "translation": "Do you like playing football?" },
+            { "text": "Liest du oft?", "translation": "Do you read often?" },
+            { "text": "Was machst du am Wochenende?", "translation": "What are you doing at the weekend?" }
+          ]
+        },
+        {
+          "id": "fz4-e11",
+          "type": "WORD_ORDER",
+          "translation": "Do you often play tennis? (informal)",
+          "answer": "Spielst du oft Tennis?",
+          "distractors": ["Spielt", "nie"]
+        },
+        {
+          "id": "fz4-e12",
+          "type": "TRANSLATE",
+          "source": "At the weekend I often read.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Am Wochenende lese ich oft.", "Ich lese am Wochenende oft.", "Ich lese oft am Wochenende.", "Oft lese ich am Wochenende."]
+        },
+        {
+          "id": "fz4-e13",
+          "type": "TRANSLATE",
+          "source": "Manchmal sehen wir abends einen Film.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Sometimes we watch a film in the evening.", "Sometimes we watch a movie in the evening.", "We sometimes watch a film in the evening.", "We sometimes watch a movie in the evening.", "Sometimes we watch a film in the evenings.", "We sometimes watch a film in the evenings.", "Sometimes in the evening we watch a film.", "Sometimes we see a film in the evening.", "Sometimes, we watch a film in the evening."]
+        },
+        {
+          "id": "fz4-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Am Wochenende spiele ich Tennis.",
+          "translation": "At the weekend I play tennis."
+        },
+        {
+          "id": "fz4-e15",
+          "type": "SHADOW",
+          "text": "Fußball spiele ich nie, aber Tennis spiele ich oft.",
+          "translation": "I never play football, but I often play tennis.",
+          "hint": "Stress the contrast: FUSS-ball … TEN-nis."
+        }
+      ]
+    },
+    {
+      "id": "fz5-weekend",
+      "title": "Plans for the weekend",
+      "kind": "PRACTICE",
+      "introduces": ["lust", "hast-du-lust", "zusammen", "wollen-wir", "ins-kino", "gute-idee", "konzert"],
+      "exercises": [
+        {
+          "id": "fz5-e1",
+          "type": "TEACH",
+          "title": "Making plans",
+          "body": "- **Gehen wir ins Kino?** = Shall we go to the cinema? Verb first, then *wir*. **ins Kino** = to the cinema; learn it as a chunk.\n- **Wollen wir …?** = Shall we …? The second verb goes to the end: *Wollen wir **zusammen** wandern?* (**zusammen** = together)\n- **Hast du Lust?** = Do you feel like it? **die Lust** is the wish to do something. **Ich habe keine Lust.** = I don't feel like it.\n- **Ja, gern!** = Yes, I'd love to! **Gute Idee!** = Good idea!\n- **das Konzert** = the concert, said *kon-TSERT*",
+          "examples": [
+            { "text": "Gehen wir am Freitag ins Kino?", "translation": "Shall we go to the cinema on Friday?" },
+            { "text": "Wollen wir zusammen schwimmen?", "translation": "Shall we go swimming together?" },
+            { "text": "Hast du Lust?", "translation": "Do you feel like it?" },
+            { "text": "Ja, gern!", "translation": "Yes, I'd love to!" },
+            { "text": "Ich habe leider keine Lust.", "translation": "Sorry, I don't feel like it." }
+          ]
+        },
+        {
+          "id": "fz5-e2",
+          "type": "TEACH",
+          "title": "Das Wochenende",
+          "body": "Tom calls Lena to make plans. Read along, and tap each line to hear it.",
+          "examples": [
+            { "text": "Hallo Lena! Was machst du am Wochenende?", "translation": "Tom: Hi Lena! What are you doing at the weekend?" },
+            { "text": "Am Samstag muss ich leider arbeiten. Aber am Sonntag habe ich Zeit.", "translation": "Lena: Unfortunately I have to work on Saturday. But I'm free on Sunday." },
+            { "text": "Gehen wir am Sonntag ins Kino? Hast du Lust?", "translation": "Tom: Shall we go to the cinema on Sunday? Do you feel like it?" },
+            { "text": "Hmm, ich sehe nicht so gern Filme. Am liebsten wandere ich.", "translation": "Lena: Hmm, I'm not that keen on films. Most of all I like hiking." },
+            { "text": "Wandern? Gute Idee! Wollen wir zusammen wandern?", "translation": "Tom: Hiking? Good idea! Shall we go hiking together?" },
+            { "text": "Ja, gern! Um wie viel Uhr?", "translation": "Lena: Yes, I'd love to! What time?" },
+            { "text": "Um zehn Uhr? Und am Abend gibt es ein Konzert.", "translation": "Tom: At ten? And in the evening there's a concert." },
+            { "text": "Ein Konzert? Super! Ich höre sehr gern Musik.", "translation": "Lena: A concert? Great! I really like listening to music." },
+            { "text": "Dann bis Sonntag!", "translation": "Tom: See you on Sunday, then!" },
+            { "text": "Bis Sonntag, Tom!", "translation": "Lena: See you on Sunday, Tom!" }
+          ]
+        },
+        {
+          "id": "fz5-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the call: why can't Lena do Saturday?",
+          "prompt": "Am Samstag muss ich leider arbeiten.",
+          "promptLanguage": "TARGET",
+          "options": ["She has to work.", "She's going hiking.", "She doesn't like films."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "fz5-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the call: what does Lena like doing most of all?",
+          "prompt": "Am liebsten wandere ich.",
+          "promptLanguage": "TARGET",
+          "options": ["hiking", "watching films", "swimming"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "fz5-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the call: what are Tom and Lena doing on Sunday?",
+          "prompt": "Tom and Lena's Sunday",
+          "promptLanguage": "BASE",
+          "options": ["Hiking, then a concert", "The cinema, then a concert", "Hiking, then the cinema"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "fz5-e6",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "Hast du Lust?", "base": "Do you feel like it?" },
+            { "target": "zusammen", "base": "together" },
+            { "target": "Gute Idee!", "base": "Good idea!" },
+            { "target": "Ja, gern!", "base": "Yes, I'd love to!" },
+            { "target": "das Konzert", "base": "the concert" }
+          ]
+        },
+        {
+          "id": "fz5-e7",
+          "type": "WORD_ORDER",
+          "translation": "Shall we play tennis together?",
+          "answer": "Wollen wir zusammen Tennis spielen?",
+          "distractors": ["Willst", "spielt"]
+        },
+        {
+          "id": "fz5-e8",
+          "type": "CLOZE",
+          "before": "",
+          "after": "wir ins Kino?",
+          "accepted": ["Gehen"],
+          "translation": "Shall we go to the cinema?",
+          "hint": "gehen → wir …, starting a question"
+        },
+        {
+          "id": "fz5-e9",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which day do you hear?",
+          "options": ["Gehen wir am Samstag ins Kino?", "Gehen wir am Sonntag ins Kino?"],
+          "answerIndex": 0
+        },
+        {
+          "id": "fz5-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "A friend asks you this, but you don't feel like it. What do you say?",
+          "prompt": "Wollen wir zusammen schwimmen?",
+          "promptLanguage": "TARGET",
+          "options": ["Ja, gern!", "Gute Idee!", "Ich habe leider keine Lust."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "fz5-e11",
+          "type": "TRANSLATE",
+          "source": "Shall we go to the cinema on Friday?",
+          "sourceLanguage": "BASE",
+          "accepted": ["Gehen wir am Freitag ins Kino?", "Gehen wir Freitag ins Kino?", "Wollen wir am Freitag ins Kino gehen?", "Wollen wir Freitag ins Kino gehen?", "Gehen wir am Freitag zusammen ins Kino?", "Wollen wir am Freitag zusammen ins Kino gehen?", "Sollen wir am Freitag ins Kino gehen?"]
+        },
+        {
+          "id": "fz5-e12",
+          "type": "TRANSLATE",
+          "source": "Am Sonntag habe ich Zeit. Hast du Lust?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["I'm free on Sunday. Do you feel like it?", "On Sunday I'm free. Do you feel like it?", "I have time on Sunday. Do you feel like it?", "On Sunday I have time. Do you feel like it?", "I'm free on Sunday. Do you fancy it?", "I'm free on Sunday. Are you up for it?", "On Sunday I'm free. Do you fancy it?", "On Sunday I'm free. Are you up for it?", "I am free on Sunday. Do you feel like it?"]
+        },
+        {
+          "id": "fz5-e13",
+          "type": "TRANSLATE",
+          "source": "I don't like watching films, but I like reading.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich sehe nicht gern Filme, aber ich lese gern.", "Ich sehe nicht gerne Filme, aber ich lese gerne.", "Ich sehe nicht gern Filme, aber ich lese gerne.", "Ich sehe nicht gerne Filme, aber ich lese gern.", "Ich sehe Filme nicht gern, aber ich lese gern.", "Filme sehe ich nicht gern, aber ich lese gern.", "Ich sehe nicht gern Filme aber ich lese gern."]
+        },
+        {
+          "id": "fz5-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Wollen wir zusammen wandern?",
+          "translation": "Shall we go hiking together?"
+        },
+        {
+          "id": "fz5-e15",
+          "type": "SHADOW",
+          "text": "Gehen wir am Sonntag ins Kino? Hast du Lust?",
+          "translation": "Shall we go to the cinema on Sunday? Do you feel like it?",
+          "hint": "Lust: a short oo, loost. Let your voice rise at the end of each question."
+        }
+      ]
+    }
+  ]
+}

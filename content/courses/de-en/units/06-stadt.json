@@ -1,0 +1,827 @@
+{
+  "id": "06-stadt",
+  "level": "A1",
+  "title": "Around town",
+  "description": "Find your way around town with es gibt, kein and nicht, and learn the plurals of places.",
+  "icon": "🏙️",
+  "vocab": [
+    { "id": "bahnhof", "text": "Bahnhof", "translations": ["train station", "railway station", "station"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Bahnhöfe", "pronunciation": "BAHN-hohf", "example": { "text": "Wo ist der Bahnhof?", "translation": "Where's the train station?" } },
+    { "id": "supermarkt", "text": "Supermarkt", "translations": ["supermarket"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Supermärkte", "pronunciation": "ZOO-per-markt", "example": { "text": "Gibt es hier einen Supermarkt?", "translation": "Is there a supermarket around here?" } },
+    { "id": "baeckerei", "text": "Bäckerei", "translations": ["bakery", "baker's"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Bäckereien", "pronunciation": "beck-e-RYE", "example": { "text": "Ich suche eine Bäckerei.", "translation": "I'm looking for a bakery." } },
+    { "id": "apotheke", "text": "Apotheke", "translations": ["pharmacy", "chemist's"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Apotheken", "pronunciation": "a-po-TAY-ke", "example": { "text": "Entschuldigung, wo ist die Apotheke?", "translation": "Excuse me, where's the pharmacy?" } },
+    { "id": "bank", "text": "Bank", "translations": ["bank"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Banken", "pronunciation": "bank", "example": { "text": "Die Bank ist da rechts.", "translation": "The bank is there on the right." } },
+    { "id": "post", "text": "Post", "translations": ["post office", "post", "mail"], "partOfSpeech": "NOUN", "gender": "f", "pronunciation": "posst", "example": { "text": "Die Post ist nicht weit.", "translation": "The post office isn't far." } },
+    { "id": "kino", "text": "Kino", "translations": ["cinema", "movie theater"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Kinos", "pronunciation": "KEE-noh", "example": { "text": "Es gibt zwei Kinos.", "translation": "There are two cinemas." } },
+    { "id": "restaurant", "text": "Restaurant", "translations": ["restaurant"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Restaurants", "pronunciation": "res-toh-RAHNG (nasal ng)", "example": { "text": "Das Restaurant ist sehr gut.", "translation": "The restaurant is very good." } },
+    { "id": "es-gibt", "text": "es gibt", "translations": ["there is", "there are"], "partOfSpeech": "PHRASE", "pronunciation": "ess gipt", "example": { "text": "Es gibt einen Park.", "translation": "There's a park." } },
+    { "id": "park", "text": "Park", "translations": ["park"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Parks", "pronunciation": "park", "example": { "text": "Gibt es hier einen Park?", "translation": "Is there a park around here?" } },
+    { "id": "platz", "text": "Platz", "translations": ["square (in a town)", "square", "space"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Plätze", "pronunciation": "plats", "example": { "text": "Es gibt einen Platz und eine Kirche.", "translation": "There's a square and a church." } },
+    { "id": "kirche", "text": "Kirche", "translations": ["church"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Kirchen", "pronunciation": "KEER-khe (soft ch)", "example": { "text": "Die Kirche ist sehr alt.", "translation": "The church is very old." } },
+    { "id": "schule", "text": "Schule", "translations": ["school"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Schulen", "pronunciation": "SHOO-le", "example": { "text": "Die Schule ist nah.", "translation": "The school is close by." } },
+    { "id": "museum", "text": "Museum", "translations": ["museum"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Museen", "pronunciation": "moo-ZAY-oom", "example": { "text": "Gibt es hier ein Museum?", "translation": "Is there a museum around here?" } },
+    { "id": "hotel", "text": "Hotel", "translations": ["hotel"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Hotels", "pronunciation": "ho-TEL", "example": { "text": "Ich suche ein Hotel.", "translation": "I'm looking for a hotel." } },
+    { "id": "strasse", "text": "Straße", "translations": ["street", "road"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Straßen", "pronunciation": "SHTRAH-se", "example": { "text": "Wo ist die Goethestraße?", "translation": "Where is Goethestraße?" } },
+    { "id": "haltestelle", "text": "Haltestelle", "translations": ["stop (bus or tram)", "bus stop", "tram stop", "stop"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Haltestellen", "pronunciation": "HAL-te-shtel-le", "example": { "text": "Wo ist die Haltestelle?", "translation": "Where's the stop?" } },
+    { "id": "cafe", "text": "Café", "translations": ["café", "cafe", "coffee shop"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Cafés", "pronunciation": "ka-FAY", "example": { "text": "Es gibt viele Cafés.", "translation": "There are lots of cafés." } },
+    { "id": "haus", "text": "Haus", "translations": ["house", "building"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Häuser", "pronunciation": "house", "example": { "text": "Das Haus ist sehr alt.", "translation": "The house is very old." } },
+    { "id": "theater", "text": "Theater", "translations": ["theatre", "theater"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Theater", "pronunciation": "tay-AH-ter", "example": { "text": "Gibt es hier ein Theater?", "translation": "Is there a theatre around here?" } },
+    { "id": "viele", "text": "viele", "translations": ["many", "a lot of", "lots of"], "partOfSpeech": "DETERMINER", "pronunciation": "FEE-le", "example": { "text": "Es gibt viele Restaurants.", "translation": "There are lots of restaurants." } },
+    { "id": "kein", "text": "kein", "translations": ["no (not a)", "not a", "not any", "no"], "partOfSpeech": "DETERMINER", "pronunciation": "kine", "example": { "text": "Es gibt keinen Bahnhof.", "translation": "There's no train station." } },
+    { "id": "nicht", "text": "nicht", "translations": ["not"], "partOfSpeech": "ADVERB", "pronunciation": "nikht (soft ch)", "example": { "text": "Das ist nicht weit.", "translation": "That's not far." } },
+    { "id": "weit", "text": "weit", "translations": ["far", "far away"], "partOfSpeech": "ADJECTIVE", "pronunciation": "vite", "example": { "text": "Ist das weit?", "translation": "Is it far?" } },
+    { "id": "nah", "text": "nah", "translations": ["near", "close", "close by"], "partOfSpeech": "ADJECTIVE", "pronunciation": "nah", "example": { "text": "Die Bank ist sehr nah.", "translation": "The bank is very close." } },
+    { "id": "links", "text": "links", "translations": ["left", "on the left", "to the left"], "partOfSpeech": "ADVERB", "pronunciation": "links", "example": { "text": "Die Post ist links.", "translation": "The post office is on the left." } },
+    { "id": "rechts", "text": "rechts", "translations": ["right", "on the right", "to the right"], "partOfSpeech": "ADVERB", "pronunciation": "rekhts (soft ch)", "example": { "text": "Das Kino ist da rechts.", "translation": "The cinema is there on the right." } },
+    { "id": "geradeaus", "text": "geradeaus", "translations": ["straight ahead", "straight on"], "partOfSpeech": "ADVERB", "pronunciation": "ge-rah-de-OWS", "example": { "text": "Immer geradeaus!", "translation": "Keep going straight ahead!" } },
+    { "id": "da", "text": "da", "translations": ["there"], "partOfSpeech": "ADVERB", "pronunciation": "dah", "example": { "text": "Der Bahnhof ist da.", "translation": "The train station is over there." } },
+    { "id": "suchen", "text": "suchen", "translations": ["to look for", "to search for"], "partOfSpeech": "VERB", "pronunciation": "ZOO-khen (rough ch)", "example": { "text": "Ich suche eine Apotheke.", "translation": "I'm looking for a pharmacy." } }
+  ],
+  "grammarNotes": [
+    {
+      "id": "stadt-es-gibt",
+      "title": "es gibt: there is, there are",
+      "body": "**es gibt** means both *there is* and *there are*. It never changes.\n\nThe place after *es gibt* is the object, so it takes the accusative, just like after *ich möchte* and *ich habe*: *der* words take **einen**, *die* and *das* words don't change. Plurals have no *a*.\n\nTo ask, swap the two words and add **hier** for *around here*: **Gibt es hier** einen Park?",
+      "table": [
+        ["", "es gibt …"],
+        ["der Park", "Es gibt einen Park."],
+        ["die Bank", "Es gibt eine Bank."],
+        ["das Kino", "Es gibt ein Kino."],
+        ["die Kinos (plural)", "Es gibt zwei Kinos."]
+      ]
+    },
+    {
+      "id": "stadt-plurals",
+      "title": "Plurals of places",
+      "body": "In the plural, the article is always **die**. Learn each noun's plural along with it; these patterns cover most of them.\n\nWatch out: *die Bank* (the bank) becomes **die Banken**. *die Bänke* are benches!",
+      "table": [
+        ["Pattern", "Singular", "Plural"],
+        ["-s", "das Kino", "die Kinos"],
+        ["-n / -en", "die Straße", "die Straßen"],
+        ["-e, often with ¨", "der Platz", "die Plätze"],
+        ["-er with ¨", "das Haus", "die Häuser"],
+        ["no ending", "das Theater", "die Theater"],
+        ["-um → -en", "das Museum", "die Museen"]
+      ]
+    },
+    {
+      "id": "stadt-kein",
+      "title": "kein: no, not a",
+      "body": "**kein** means *no*, *not a* or *not any*. It takes the same endings as *ein*, so you just add a **k**.\n\nUnlike *ein*, **kein** also has a plural form: **keine**.\n\n- *Es gibt keinen Park.* There's no park.\n- *Ich habe keine Kinder.* I don't have any children.",
+      "table": [
+        ["", "a", "no / not a"],
+        ["der word (Das ist …)", "ein Park", "kein Park"],
+        ["der word (Es gibt …)", "einen Park", "keinen Park"],
+        ["die word", "eine Bank", "keine Bank"],
+        ["das word", "ein Kino", "kein Kino"],
+        ["plural", "Kinos", "keine Kinos"]
+      ]
+    },
+    {
+      "id": "stadt-kein-nicht",
+      "title": "kein or nicht?",
+      "body": "Both make a sentence negative, but they're used differently:\n\n- **kein** goes before a noun that would otherwise have *ein* or no article at all: *Das ist kein Hotel. Es gibt keine Cafés. Ich spreche kein Deutsch.*\n- **nicht** is for everything else: verbs, words like *weit* and *hier*, and nouns with *der, die, das*: *Das ist nicht weit. Ich wohne nicht hier. Das ist nicht das Hotel.*\n\nGerman has no word for *don't*: *I don't live here* is simply *Ich wohne nicht hier.*"
+    },
+    {
+      "id": "stadt-directions",
+      "title": "Asking the way",
+      "body": "Asking:\n\n- **Entschuldigung, wo ist …?** Excuse me, where is …?\n- **Gibt es hier …?** Is there … around here?\n- **Ich suche …** I'm looking for …\n- **Ist das weit?** Is it far?\n\nAnswers:\n\n- **links** left, **rechts** right\n- **geradeaus** straight ahead, **immer geradeaus** keep going straight ahead\n- **da** there, **da links** there on the left\n- **nicht weit** not far, **nah** close"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "tw1-places",
+      "title": "Places in town",
+      "kind": "LEARN",
+      "introduces": ["bahnhof", "supermarkt", "baeckerei", "apotheke", "bank", "post", "kino", "restaurant"],
+      "exercises": [
+        {
+          "id": "tw1-e1",
+          "type": "TEACH",
+          "title": "Shops and stations",
+          "body": "Learn each place with its article. Tap to hear them.\n\n*Supermarkt* starts with a *z* sound. In *Bäckerei*, stress the end: beck-e-RYE.",
+          "examples": [
+            { "text": "der Bahnhof", "translation": "train station" },
+            { "text": "der Supermarkt", "translation": "supermarket" },
+            { "text": "die Bäckerei", "translation": "bakery" },
+            { "text": "die Apotheke", "translation": "pharmacy" }
+          ]
+        },
+        {
+          "id": "tw1-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Bahnhof", "base": "train station" },
+            { "target": "der Supermarkt", "base": "supermarket" },
+            { "target": "die Bäckerei", "base": "bakery" },
+            { "target": "die Apotheke", "base": "pharmacy" }
+          ]
+        },
+        {
+          "id": "tw1-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Where do you buy these?",
+          "prompt": "Brot und Brötchen",
+          "promptLanguage": "TARGET",
+          "options": ["die Bäckerei", "die Apotheke", "der Bahnhof"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "tw1-e4",
+          "type": "TEACH",
+          "title": "More places",
+          "body": "**die Post** is the post office (and also the mail itself).\n\n*Restaurant* is said the French way, with a nasal ending: res-toh-RAHNG.",
+          "examples": [
+            { "text": "die Bank", "translation": "bank" },
+            { "text": "die Post", "translation": "post office" },
+            { "text": "das Kino", "translation": "cinema" },
+            { "text": "das Restaurant", "translation": "restaurant" }
+          ]
+        },
+        {
+          "id": "tw1-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Bank", "base": "bank" },
+            { "target": "die Post", "base": "post office" },
+            { "target": "das Kino", "base": "cinema" },
+            { "target": "das Restaurant", "base": "restaurant" },
+            { "target": "der Bahnhof", "base": "train station" }
+          ]
+        },
+        {
+          "id": "tw1-e6",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "das Kino",
+          "promptLanguage": "TARGET",
+          "options": ["post office", "cinema", "bank"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 1
+        },
+        {
+          "id": "tw1-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "der, die or das?",
+          "prompt": "Supermarkt",
+          "promptLanguage": "TARGET",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "tw1-e8",
+          "type": "TEACH",
+          "title": "Wo ist …?",
+          "body": "To ask where a place is, use **Wo ist** (where is) and the place with *der, die* or *das*.\n\nStart politely with **Entschuldigung** (excuse me).",
+          "examples": [
+            { "text": "Entschuldigung, wo ist der Bahnhof?", "translation": "Excuse me, where's the train station?" },
+            { "text": "Wo ist die Apotheke?", "translation": "Where's the pharmacy?" },
+            { "text": "Die Bank ist hier.", "translation": "The bank is here." }
+          ]
+        },
+        {
+          "id": "tw1-e9",
+          "type": "CLOZE",
+          "before": "Wo ist",
+          "after": "Bahnhof?",
+          "accepted": ["der"],
+          "translation": "Where's the train station?",
+          "hint": "the, Bahnhof is a der word"
+        },
+        {
+          "id": "tw1-e10",
+          "type": "CLOZE",
+          "before": "Entschuldigung, wo ist",
+          "after": "Apotheke?",
+          "accepted": ["die"],
+          "translation": "Excuse me, where's the pharmacy?",
+          "hint": "the, Apotheke is a die word"
+        },
+        {
+          "id": "tw1-e11",
+          "type": "WORD_ORDER",
+          "translation": "Excuse me, where is the cinema?",
+          "answer": "Entschuldigung, wo ist das Kino?",
+          "distractors": ["der", "wer"]
+        },
+        {
+          "id": "tw1-e12",
+          "type": "TRANSLATE",
+          "source": "Where is the supermarket?",
+          "sourceLanguage": "BASE",
+          "accepted": ["Wo ist der Supermarkt?", "Entschuldigung, wo ist der Supermarkt?"]
+        },
+        {
+          "id": "tw1-e13",
+          "type": "TRANSLATE",
+          "source": "Wo ist die Post?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Where is the post office?", "Where's the post office?"]
+        },
+        {
+          "id": "tw1-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Wo ist der Bahnhof?",
+          "translation": "Where's the train station?"
+        },
+        {
+          "id": "tw1-e15",
+          "type": "SHADOW",
+          "text": "Entschuldigung, wo ist die Apotheke?",
+          "translation": "Excuse me, where's the pharmacy?",
+          "hint": "Apotheke: a-po-TAY-ke, the th is just a t."
+        }
+      ]
+    },
+    {
+      "id": "tw2-es-gibt",
+      "title": "There is…",
+      "kind": "LEARN",
+      "introduces": ["es-gibt", "park", "platz", "kirche", "schule", "museum", "hotel"],
+      "exercises": [
+        {
+          "id": "tw2-e1",
+          "type": "TEACH",
+          "title": "Around the town",
+          "body": "A few more places. **der Platz** is a town square. Remember, *z* sounds like *ts*: plats.\n\n*Museum* has three syllables: moo-ZAY-oom.",
+          "examples": [
+            { "text": "der Park", "translation": "park" },
+            { "text": "der Platz", "translation": "square" },
+            { "text": "die Kirche", "translation": "church" },
+            { "text": "die Schule", "translation": "school" },
+            { "text": "das Museum", "translation": "museum" },
+            { "text": "das Hotel", "translation": "hotel" }
+          ]
+        },
+        {
+          "id": "tw2-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Park", "base": "park" },
+            { "target": "der Platz", "base": "square" },
+            { "target": "die Kirche", "base": "church" },
+            { "target": "die Schule", "base": "school" },
+            { "target": "das Museum", "base": "museum" }
+          ]
+        },
+        {
+          "id": "tw2-e3",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "die Kirche",
+          "promptLanguage": "TARGET",
+          "options": ["school", "church", "square"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 1
+        },
+        {
+          "id": "tw2-e4",
+          "type": "TEACH",
+          "title": "Es gibt …",
+          "body": "**es gibt** = there is. Use it to say what a town has.\n\nThe place after *es gibt* is the object, so *der* words take **einen**, just like after *ich möchte* and *ich habe*. *die* and *das* words don't change.",
+          "examples": [
+            { "text": "Es gibt einen Park.", "translation": "There's a park.", "hint": "der Park → einen" },
+            { "text": "Es gibt eine Kirche.", "translation": "There's a church.", "hint": "die Kirche → eine" },
+            { "text": "Es gibt ein Hotel.", "translation": "There's a hotel.", "hint": "das Hotel → ein" }
+          ]
+        },
+        {
+          "id": "tw2-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Es gibt ___ Park.",
+          "prompt": "There's a park.",
+          "promptLanguage": "BASE",
+          "options": ["ein", "einen", "eine"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "tw2-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Es gibt ___ Schule.",
+          "prompt": "There's a school.",
+          "promptLanguage": "BASE",
+          "options": ["ein", "einen", "eine"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "tw2-e7",
+          "type": "CLOZE",
+          "before": "Es gibt",
+          "after": "Museum.",
+          "accepted": ["ein"],
+          "translation": "There's a museum.",
+          "hint": "a, Museum is a das word"
+        },
+        {
+          "id": "tw2-e8",
+          "type": "CLOZE",
+          "before": "Es gibt",
+          "after": "Platz.",
+          "accepted": ["einen"],
+          "translation": "There's a square.",
+          "hint": "a, Platz is a der word"
+        },
+        {
+          "id": "tw2-e9",
+          "type": "TEACH",
+          "title": "Gibt es …?",
+          "body": "To ask, swap the two words: **Gibt es …?** Is there …?\n\nAdd **hier** (here) to mean *around here*.",
+          "examples": [
+            { "text": "Gibt es hier einen Supermarkt?", "translation": "Is there a supermarket around here?" },
+            { "text": "Gibt es hier eine Apotheke?", "translation": "Is there a pharmacy around here?" },
+            { "text": "Ja, es gibt hier eine Apotheke.", "translation": "Yes, there's a pharmacy here." }
+          ]
+        },
+        {
+          "id": "tw2-e10",
+          "type": "WORD_ORDER",
+          "translation": "Is there a hotel around here?",
+          "answer": "Gibt es hier ein Hotel?",
+          "distractors": ["einen", "ist"]
+        },
+        {
+          "id": "tw2-e11",
+          "type": "CLOZE",
+          "before": "",
+          "after": "es hier eine Bank?",
+          "accepted": ["Gibt"],
+          "translation": "Is there a bank around here?",
+          "hint": "es gibt, as a question"
+        },
+        {
+          "id": "tw2-e12",
+          "type": "TRANSLATE",
+          "source": "There's a church and a school.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Es gibt eine Kirche und eine Schule."]
+        },
+        {
+          "id": "tw2-e13",
+          "type": "TRANSLATE",
+          "source": "Gibt es hier einen Park?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Is there a park around here?", "Is there a park here?", "Is there a park near here?"]
+        },
+        {
+          "id": "tw2-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Es gibt einen Bahnhof.",
+          "translation": "There's a train station."
+        },
+        {
+          "id": "tw2-e15",
+          "type": "SHADOW",
+          "text": "Gibt es hier ein Museum?",
+          "translation": "Is there a museum around here?",
+          "hint": "gibt: a short i, and the b sounds like p. Museum: moo-ZAY-oom."
+        }
+      ]
+    },
+    {
+      "id": "tw3-plurals",
+      "title": "Plurals",
+      "kind": "LEARN",
+      "introduces": ["strasse", "haltestelle", "cafe", "haus", "theater", "viele"],
+      "exercises": [
+        {
+          "id": "tw3-e1",
+          "type": "TEACH",
+          "title": "One place, many places",
+          "body": "Remember: in the plural, the article is always **die**, whatever the gender.\n\nMany places add **-s**, like in English, or **-n / -en**.\n\nNew words: **das Café** (ka-FAY, stress the end, unlike *der Kaffee*), **die Straße** (street) and **die Haltestelle** (bus or tram stop).",
+          "examples": [
+            { "text": "das Kino – die Kinos", "translation": "cinema – cinemas" },
+            { "text": "das Café – die Cafés", "translation": "café – cafés" },
+            { "text": "die Straße – die Straßen", "translation": "street – streets" },
+            { "text": "die Haltestelle – die Haltestellen", "translation": "stop – stops" },
+            { "text": "die Bank – die Banken", "translation": "bank – banks" }
+          ]
+        },
+        {
+          "id": "tw3-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Straße", "base": "street" },
+            { "target": "die Haltestelle", "base": "bus stop" },
+            { "target": "das Café", "base": "café" },
+            { "target": "die Kinos", "base": "cinemas" },
+            { "target": "die Banken", "base": "banks" }
+          ]
+        },
+        {
+          "id": "tw3-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "What's the plural?",
+          "prompt": "die Straße",
+          "promptLanguage": "TARGET",
+          "options": ["die Straßes", "die Straßen", "der Straßen"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "tw3-e4",
+          "type": "TEACH",
+          "title": "-e, -er and umlauts",
+          "body": "Other plurals add **-e** or **-er**, often with an umlaut too. Some don't change at all: only *die* tells you it's plural.\n\nNew words: **das Haus** (house) and **das Theater** (theatre, tay-AH-ter).",
+          "examples": [
+            { "text": "der Bahnhof – die Bahnhöfe", "translation": "station – stations", "hint": "-e and an umlaut" },
+            { "text": "der Platz – die Plätze", "translation": "square – squares", "hint": "-e and an umlaut" },
+            { "text": "das Haus – die Häuser", "translation": "house – houses", "hint": "-er and an umlaut" },
+            { "text": "das Theater – die Theater", "translation": "theatre – theatres", "hint": "no change" },
+            { "text": "das Museum – die Museen", "translation": "museum – museums", "hint": "odd one out: -um becomes -en" }
+          ]
+        },
+        {
+          "id": "tw3-e5",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "One or more than one?",
+          "options": ["Platz", "Plätze"],
+          "answerIndex": 1
+        },
+        {
+          "id": "tw3-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "What's the plural?",
+          "prompt": "das Haus",
+          "promptLanguage": "TARGET",
+          "options": ["die Hauses", "die Hause", "die Häuser"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "tw3-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which one means more than one?",
+          "prompt": "the theatres",
+          "promptLanguage": "BASE",
+          "options": ["das Theater", "die Theater", "der Theater"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "tw3-e8",
+          "type": "TEACH",
+          "title": "viele: many",
+          "body": "**viele** = many, a lot of. It goes before a plural, with no article.\n\n*es gibt* stays the same for one thing or many: *there is* and *there are* are both **es gibt**.",
+          "examples": [
+            { "text": "Es gibt viele Cafés.", "translation": "There are lots of cafés." },
+            { "text": "Es gibt zwei Bahnhöfe.", "translation": "There are two train stations." },
+            { "text": "Es gibt viele Häuser und Straßen.", "translation": "There are many houses and streets." }
+          ]
+        },
+        {
+          "id": "tw3-e9",
+          "type": "CLOZE",
+          "before": "Es gibt viele",
+          "after": ".",
+          "accepted": ["Restaurants"],
+          "translation": "There are lots of restaurants.",
+          "hint": "plural of das Restaurant"
+        },
+        {
+          "id": "tw3-e10",
+          "type": "CLOZE",
+          "before": "Es gibt drei",
+          "after": ".",
+          "accepted": ["Kirchen"],
+          "translation": "There are three churches.",
+          "hint": "plural of die Kirche"
+        },
+        {
+          "id": "tw3-e11",
+          "type": "WORD_ORDER",
+          "translation": "There are many cafés.",
+          "answer": "Es gibt viele Cafés.",
+          "distractors": ["sind", "die"]
+        },
+        {
+          "id": "tw3-e12",
+          "type": "TRANSLATE",
+          "source": "There are two hotels.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Es gibt zwei Hotels."]
+        },
+        {
+          "id": "tw3-e13",
+          "type": "TRANSLATE",
+          "source": "Es gibt viele Straßen und Plätze.",
+          "sourceLanguage": "TARGET",
+          "accepted": [
+            "There are many streets and squares.",
+            "There are a lot of streets and squares.",
+            "There are lots of streets and squares."
+          ]
+        },
+        {
+          "id": "tw3-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Es gibt viele Häuser.",
+          "translation": "There are many houses."
+        },
+        {
+          "id": "tw3-e15",
+          "type": "SHADOW",
+          "text": "Es gibt zwei Bahnhöfe und viele Haltestellen.",
+          "translation": "There are two train stations and lots of stops.",
+          "hint": "Bahnhöfe: say e, then round your lips for the ö.",
+          "mouthShapes": [
+            { "shape": "ROUNDED", "label": "ö", "caption": "Bahnhöfe: say e, then round your lips" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tw4-kein-nicht",
+      "title": "kein or nicht?",
+      "kind": "LEARN",
+      "introduces": ["kein", "nicht", "weit", "nah"],
+      "exercises": [
+        {
+          "id": "tw4-e1",
+          "type": "TEACH",
+          "title": "kein: no, not a",
+          "body": "To say there **isn't** something, use **kein**. It means *no* or *not a*, and it takes the same endings as *ein*, so you just add a **k**:\n\n- *Es gibt **einen** Park.* → *Es gibt **keinen** Park.*\n- *Es gibt **eine** Bank.* → *Es gibt **keine** Bank.*\n- *Es gibt **ein** Kino.* → *Es gibt **kein** Kino.*",
+          "examples": [
+            { "text": "Es gibt keinen Supermarkt.", "translation": "There's no supermarket.", "hint": "der Supermarkt → keinen" },
+            { "text": "Es gibt keine Apotheke.", "translation": "There's no pharmacy.", "hint": "die Apotheke → keine" },
+            { "text": "Es gibt kein Hotel.", "translation": "There's no hotel.", "hint": "das Hotel → kein" }
+          ]
+        },
+        {
+          "id": "tw4-e2",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Es gibt ___ Bahnhof.",
+          "prompt": "There's no train station.",
+          "promptLanguage": "BASE",
+          "options": ["kein", "keinen", "keine"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "tw4-e3",
+          "type": "CLOZE",
+          "before": "Es gibt",
+          "after": "Post.",
+          "accepted": ["keine"],
+          "translation": "There's no post office.",
+          "hint": "no, before a die word"
+        },
+        {
+          "id": "tw4-e4",
+          "type": "TEACH",
+          "title": "keine in the plural",
+          "body": "There's no plural *a*: *Es gibt Cafés* = there are cafés.\n\nBut **kein** does have a plural: before any plural noun, it's **keine**.\n\nIt works after *haben* too: *Ich habe keine Kinder.*",
+          "examples": [
+            { "text": "Es gibt keine Hotels.", "translation": "There are no hotels." },
+            { "text": "Es gibt keine Kinos.", "translation": "There are no cinemas." },
+            { "text": "Ich habe keine Kinder.", "translation": "I don't have any children." }
+          ]
+        },
+        {
+          "id": "tw4-e5",
+          "type": "CLOZE",
+          "before": "Es gibt",
+          "after": "Restaurants.",
+          "accepted": ["keine"],
+          "translation": "There are no restaurants.",
+          "hint": "no, before a plural"
+        },
+        {
+          "id": "tw4-e6",
+          "type": "TEACH",
+          "title": "nicht: not",
+          "body": "**weit** = far. **nah** = near, close.\n\n**nicht** = not. In a short sentence with *ist*, it comes right after *ist*: *Das ist weit.* → *Das ist **nicht** weit.*\n\nGerman has no word for *don't*. Just add **nicht**: *Ich wohne **nicht** hier.*",
+          "examples": [
+            { "text": "Ist das weit?", "translation": "Is it far?" },
+            { "text": "Nein, das ist nicht weit.", "translation": "No, it isn't far." },
+            { "text": "Die Bank ist sehr nah.", "translation": "The bank is very close." },
+            { "text": "Ich wohne nicht hier.", "translation": "I don't live here." }
+          ]
+        },
+        {
+          "id": "tw4-e7",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "weit", "base": "far" },
+            { "target": "nah", "base": "near" },
+            { "target": "nicht", "base": "not" },
+            { "target": "kein Hotel", "base": "no hotel" },
+            { "target": "keine Kinos", "base": "no cinemas" }
+          ]
+        },
+        {
+          "id": "tw4-e8",
+          "type": "WORD_ORDER",
+          "translation": "The train station isn't far.",
+          "answer": "Der Bahnhof ist nicht weit.",
+          "distractors": ["kein", "nah"]
+        },
+        {
+          "id": "tw4-e9",
+          "type": "TEACH",
+          "title": "kein or nicht?",
+          "body": "Both make a sentence negative, but they're used differently:\n\n- **kein** goes before a noun that would otherwise have *ein*, or no article at all.\n- **nicht** is for everything else: verbs, words like *weit*, and nouns with *der, die, das*.",
+          "examples": [
+            { "text": "Das ist kein Hotel.", "translation": "That's not a hotel.", "hint": "ein Hotel → kein Hotel" },
+            { "text": "Das ist nicht das Hotel.", "translation": "That's not the hotel.", "hint": "with das, use nicht" },
+            { "text": "Ich spreche kein Deutsch.", "translation": "I don't speak German.", "hint": "no article before Deutsch, so kein" }
+          ]
+        },
+        {
+          "id": "tw4-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "kein or nicht? Das ist ___ Museum.",
+          "prompt": "That's not a museum.",
+          "promptLanguage": "BASE",
+          "options": ["kein", "nicht"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "tw4-e11",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "kein or nicht? Die Schule ist ___ weit.",
+          "prompt": "The school isn't far.",
+          "promptLanguage": "BASE",
+          "options": ["keine", "nicht"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "tw4-e12",
+          "type": "TRANSLATE",
+          "source": "Es gibt hier keinen Supermarkt.",
+          "sourceLanguage": "TARGET",
+          "accepted": [
+            "There's no supermarket here.",
+            "There is no supermarket here.",
+            "There isn't a supermarket here.",
+            "There's no supermarket around here.",
+            "There is no supermarket around here.",
+            "There isn't a supermarket around here."
+          ]
+        },
+        {
+          "id": "tw4-e13",
+          "type": "TRANSLATE",
+          "source": "I don't live here.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich wohne nicht hier.", "Ich wohne hier nicht."]
+        },
+        {
+          "id": "tw4-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Das ist nicht weit.",
+          "translation": "That's not far."
+        },
+        {
+          "id": "tw4-e15",
+          "type": "SHADOW",
+          "text": "Es gibt keinen Park, aber es gibt viele Cafés.",
+          "translation": "There's no park, but there are lots of cafés.",
+          "hint": "kein rhymes with mine. Cafés: stress the end, ka-FAYS."
+        }
+      ]
+    },
+    {
+      "id": "tw5-the-way",
+      "title": "Asking the way",
+      "kind": "PRACTICE",
+      "introduces": ["links", "rechts", "geradeaus", "da", "suchen"],
+      "exercises": [
+        {
+          "id": "tw5-e1",
+          "type": "TEACH",
+          "title": "Left, right, straight ahead",
+          "body": "- **links** = left, on the left\n- **rechts** = right, on the right\n- **geradeaus** = straight ahead\n- **da** = there: *da links* = there on the left\n\n**Immer geradeaus!** means *keep going straight ahead*. You'll also hear **dort** for *there*.",
+          "examples": [
+            { "text": "Die Post ist da links.", "translation": "The post office is there on the left." },
+            { "text": "Das Kino ist hier rechts.", "translation": "The cinema is here on the right." },
+            { "text": "Der Bahnhof? Immer geradeaus!", "translation": "The train station? Keep going straight ahead!" }
+          ]
+        },
+        {
+          "id": "tw5-e2",
+          "type": "TEACH",
+          "title": "Ich suche …",
+          "body": "**suchen** = to look for. It's regular: *ich suche, du suchst, er sucht*.\n\nWhat you're looking for is the object, so *der* words take **einen**: *Ich suche **einen** Supermarkt.*\n\n*Entschuldigung, ich suche …* is a polite way to ask for help.",
+          "examples": [
+            { "text": "Entschuldigung, ich suche eine Apotheke.", "translation": "Excuse me, I'm looking for a pharmacy." },
+            { "text": "Ich suche einen Supermarkt.", "translation": "I'm looking for a supermarket." },
+            { "text": "Was suchen Sie?", "translation": "What are you looking for?" }
+          ]
+        },
+        {
+          "id": "tw5-e3",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "links", "base": "left" },
+            { "target": "rechts", "base": "right" },
+            { "target": "geradeaus", "base": "straight ahead" },
+            { "target": "da", "base": "there" },
+            { "target": "suchen", "base": "to look for" }
+          ]
+        },
+        {
+          "id": "tw5-e4",
+          "type": "TEACH",
+          "title": "Wo ist der Bahnhof?",
+          "body": "Tom is new in town and stops a woman in the street. Read along, and tap each line to hear it.",
+          "examples": [
+            { "text": "Entschuldigung, ich suche eine Apotheke.", "translation": "Tom: Excuse me, I'm looking for a pharmacy." },
+            { "text": "Nein, es gibt hier keine Apotheke.", "translation": "Woman: No, there's no pharmacy here." },
+            { "text": "Aber es gibt einen Supermarkt, da links.", "translation": "Woman: But there's a supermarket, there on the left." },
+            { "text": "Danke! Und wo ist der Bahnhof?", "translation": "Tom: Thanks! And where's the train station?" },
+            { "text": "Der Bahnhof? Immer geradeaus!", "translation": "Woman: The train station? Keep going straight ahead!" },
+            { "text": "Ist das weit?", "translation": "Tom: Is it far?" },
+            { "text": "Nein, das ist nicht weit. Das ist sehr nah.", "translation": "Woman: No, it isn't far. It's very close." }
+          ]
+        },
+        {
+          "id": "tw5-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: what is there on the left?",
+          "prompt": "da links",
+          "promptLanguage": "TARGET",
+          "options": ["a supermarket", "a pharmacy", "the train station"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "tw5-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: where is the train station?",
+          "prompt": "der Bahnhof",
+          "promptLanguage": "TARGET",
+          "options": ["on the right", "straight ahead", "very far away"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 1
+        },
+        {
+          "id": "tw5-e7",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Left or right?",
+          "options": ["Die Bank ist links.", "Die Bank ist rechts."],
+          "answerIndex": 1
+        },
+        {
+          "id": "tw5-e8",
+          "type": "CLOZE",
+          "before": "Entschuldigung, ich",
+          "after": "einen Supermarkt.",
+          "accepted": ["suche"],
+          "translation": "Excuse me, I'm looking for a supermarket.",
+          "hint": "suchen → ich …"
+        },
+        {
+          "id": "tw5-e9",
+          "type": "WORD_ORDER",
+          "translation": "Excuse me, is there a bank around here?",
+          "answer": "Entschuldigung, gibt es hier eine Bank?",
+          "distractors": ["ist", "einen"]
+        },
+        {
+          "id": "tw5-e10",
+          "type": "WORD_ORDER",
+          "translation": "The cinema is there on the right.",
+          "answer": "Das Kino ist da rechts.",
+          "distractors": ["links", "Der"]
+        },
+        {
+          "id": "tw5-e11",
+          "type": "TRANSLATE",
+          "source": "I'm looking for a pharmacy.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich suche eine Apotheke.", "Entschuldigung, ich suche eine Apotheke."]
+        },
+        {
+          "id": "tw5-e12",
+          "type": "TRANSLATE",
+          "source": "Die Post ist links.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["The post office is on the left.", "The post office is to the left.", "The post office is left."]
+        },
+        {
+          "id": "tw5-e13",
+          "type": "LISTEN_TYPE",
+          "text": "Die Bank ist da rechts.",
+          "translation": "The bank is there on the right."
+        },
+        {
+          "id": "tw5-e14",
+          "type": "SHADOW",
+          "text": "Entschuldigung, gibt es hier eine Apotheke?",
+          "translation": "Excuse me, is there a pharmacy around here?",
+          "hint": "Entschuldigung: ent-SHOOL-di-goong, stress the second syllable."
+        },
+        {
+          "id": "tw5-e15",
+          "type": "SHADOW",
+          "text": "Der Bahnhof? Immer geradeaus!",
+          "translation": "The train station? Keep going straight ahead!",
+          "hint": "geradeaus: ge-rah-de-OWS, stress the end."
+        }
+      ]
+    }
+  ]
+}

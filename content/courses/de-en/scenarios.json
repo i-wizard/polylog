@@ -78,5 +78,149 @@
       { "text": "Die Rechnung, bitte.", "translation": "The bill, please." },
       { "text": "Das ist lecker!", "translation": "That's delicious!" }
     ]
+  },
+  {
+    "id": "rp-directions",
+    "unitId": "06-stadt",
+    "icon": "🗺️",
+    "title": "Asking for directions",
+    "aiRole": "Herr Weber, a helpful older man who lives in the town. You use the formal Sie. Near here there is a bakery (Bäckerei) straight ahead and then left, a pharmacy (Apotheke) on the right, and the train station (Bahnhof) is quite far. There is no bank nearby. Give directions only with links, rechts, geradeaus, da, weit and nah.",
+    "setting": "A street corner in a small German town. The learner stops a passer-by for help.",
+    "goals": ["Ask if there is a bakery nearby", "Ask where the train station is", "Ask about something that isn't there", "Say thank you and goodbye"],
+    "opening": { "text": "Ja, bitte? Kann ich Ihnen helfen?", "translation": "Yes? Can I help you?" },
+    "usefulPhrases": [
+      { "text": "Entschuldigung, gibt es hier eine Bäckerei?", "translation": "Excuse me, is there a bakery here?" },
+      { "text": "Wo ist der Bahnhof?", "translation": "Where is the train station?" },
+      { "text": "Ist das weit?", "translation": "Is that far?" },
+      { "text": "Vielen Dank!", "translation": "Thanks a lot!" }
+    ]
+  },
+  {
+    "id": "rp-routine",
+    "unitId": "07-tag",
+    "icon": "⏰",
+    "title": "Talking about your day",
+    "aiRole": "Mia, a 30-year-old nurse and new neighbour. You use the informal du. Your routine: you get up at half past five, start work at half past six, finish at three, cook in the evening and go to bed at ten. Say times in words.",
+    "setting": "Mia and the learner chat on the stairs of their apartment building in the morning.",
+    "goals": ["Say when you get up", "Ask when Mia starts work", "Describe your evening", "Ask what time it is"],
+    "opening": { "text": "Guten Morgen! Du bist aber früh wach! Wann stehst du denn auf?", "translation": "Good morning! You're up early! When do you get up?" },
+    "usefulPhrases": [
+      { "text": "Ich stehe um sieben Uhr auf.", "translation": "I get up at seven o'clock." },
+      { "text": "Wann fängst du an?", "translation": "When do you start?" },
+      { "text": "Abends sehe ich fern.", "translation": "In the evening I watch TV." },
+      { "text": "Wie spät ist es?", "translation": "What time is it?" }
+    ]
+  },
+  {
+    "id": "rp-appointment",
+    "unitId": "08-termine",
+    "icon": "📅",
+    "title": "Booking a doctor's appointment",
+    "aiRole": "Frau Schulz, the receptionist at a doctor's practice, on the phone. You use the formal Sie. Free slots: Monday at nine, Wednesday at half past two, Friday at eleven. Tuesday and Thursday are full. Ask for the learner's name at the end and confirm the appointment.",
+    "setting": "The learner phones Dr. Becker's practice to book an appointment.",
+    "goals": ["Say you need an appointment", "Turn down a day that doesn't suit you", "Agree on a day and time", "Give your name"],
+    "opening": { "text": "Praxis Dr. Becker, Schulz am Apparat. Guten Tag!", "translation": "Dr. Becker's practice, Schulz speaking. Hello!" },
+    "usefulPhrases": [
+      { "text": "Ich möchte einen Termin, bitte.", "translation": "I'd like an appointment, please." },
+      { "text": "Am Montag kann ich leider nicht.", "translation": "Unfortunately I can't on Monday." },
+      { "text": "Geht es am Mittwoch?", "translation": "Does Wednesday work?" },
+      { "text": "Das passt gut.", "translation": "That suits me well." }
+    ]
+  },
+  {
+    "id": "rp-weekend",
+    "unitId": "09-freizeit",
+    "icon": "⚽",
+    "title": "Planning the weekend",
+    "aiRole": "Jonas, a friend from your German course. You use du. You like football, swimming and the cinema, and you don't like dancing. You have time on Saturday afternoon and Sunday, not on Friday.",
+    "setting": "Jonas calls the learner on Thursday evening to plan something for the weekend.",
+    "goals": ["Say what you like doing", "Ask what Jonas likes doing", "Suggest something to do together", "Agree on a day and time"],
+    "opening": { "text": "Hallo! Hast du am Wochenende Zeit? Was machst du gern?", "translation": "Hi! Are you free at the weekend? What do you like doing?" },
+    "usefulPhrases": [
+      { "text": "Ich spiele gern Tennis.", "translation": "I like playing tennis." },
+      { "text": "Hast du Lust?", "translation": "Do you feel like it?" },
+      { "text": "Am Samstag habe ich Zeit.", "translation": "I'm free on Saturday." },
+      { "text": "Wollen wir zusammen schwimmen?", "translation": "Shall we go swimming together?" }
+    ]
+  },
+  {
+    "id": "rp-flat",
+    "unitId": "10-wohnung",
+    "icon": "🏠",
+    "title": "Viewing a flat",
+    "aiRole": "Frau Klein, a landlady showing a flat for rent. You use Sie. The flat has two rooms, a big kitchen, a small bathroom and a balcony. The living room is bright and quiet; the bedroom is small. The rent is 750 euros. There is a table and a bed but no sofa. Say numbers in words.",
+    "setting": "The learner is viewing a flat for rent and asks the landlady about it.",
+    "goals": ["Ask about the rooms", "Say what you think of the flat", "Ask how much the rent is", "Say what you still need"],
+    "opening": { "text": "Guten Tag! Kommen Sie herein. Das ist die Wohnung.", "translation": "Hello! Come in. This is the flat." },
+    "usefulPhrases": [
+      { "text": "Wie groß ist die Küche?", "translation": "How big is the kitchen?" },
+      { "text": "Ich finde das Wohnzimmer sehr schön.", "translation": "I think the living room is very nice." },
+      { "text": "Wie hoch ist die Miete?", "translation": "How much is the rent?" },
+      { "text": "Ich brauche noch ein Sofa.", "translation": "I still need a sofa." }
+    ]
+  },
+  {
+    "id": "rp-shop",
+    "unitId": "11-einkaufen",
+    "icon": "🛍️",
+    "title": "Buying clothes",
+    "aiRole": "A friendly shop assistant in a clothes shop. You use Sie. You have jackets in blue, black and green (79 euros), jumpers in grey and red (39 euros 90) and trousers (49 euros). Sizes S to XL. Say prices in words.",
+    "setting": "A clothes shop in Hamburg. The learner is looking for something to wear.",
+    "goals": ["Say what you're looking for", "Ask about colours and sizes", "Ask the price", "Decide and pay"],
+    "opening": { "text": "Guten Tag! Kann ich Ihnen helfen?", "translation": "Hello! Can I help you?" },
+    "usefulPhrases": [
+      { "text": "Ich suche eine Jacke.", "translation": "I'm looking for a jacket." },
+      { "text": "Haben Sie die Jacke in Blau?", "translation": "Do you have the jacket in blue?" },
+      { "text": "Was kostet dieser Pullover?", "translation": "How much is this jumper?" },
+      { "text": "Kann ich die Hose anprobieren?", "translation": "Can I try on the trousers?" }
+    ]
+  },
+  {
+    "id": "rp-station",
+    "unitId": "12-unterwegs",
+    "icon": "🚆",
+    "title": "At the train station",
+    "aiRole": "A helpful employee at the information desk of Munich main station. You use Sie. To get to the airport the learner takes the S-Bahn S8 from platform 1; it leaves every 20 minutes and takes 40 minutes. A ticket costs 13 euros and is sold at the machine over there. Say numbers in words.",
+    "setting": "Munich main station. The learner needs to get to the airport.",
+    "goals": ["Ask how to get to the airport", "Ask which platform", "Ask how long it takes", "Ask where to buy a ticket"],
+    "opening": { "text": "Guten Tag! Wie kann ich Ihnen helfen?", "translation": "Hello! How can I help you?" },
+    "usefulPhrases": [
+      { "text": "Wie komme ich zum Flughafen?", "translation": "How do I get to the airport?" },
+      { "text": "Von welchem Gleis?", "translation": "From which platform?" },
+      { "text": "Muss ich umsteigen?", "translation": "Do I have to change trains?" },
+      { "text": "Wo kann ich eine Fahrkarte kaufen?", "translation": "Where can I buy a ticket?" }
+    ]
+  },
+  {
+    "id": "rp-doctor",
+    "unitId": "13-gesundheit",
+    "icon": "🩺",
+    "title": "At the doctor's",
+    "aiRole": "Dr. Becker, a calm family doctor. You use Sie. Ask what is wrong, how long they've had it and whether they have a fever. Then give simple advice: stay at home for three days, drink a lot of tea, take one tablet in the morning and one in the evening. Give a prescription for the pharmacy.",
+    "setting": "Dr. Becker's consulting room. The learner doesn't feel well.",
+    "goals": ["Say what hurts", "Say what other symptoms you have", "Understand the doctor's advice", "Say thank you and goodbye"],
+    "opening": { "text": "Guten Tag! Bitte setzen Sie sich. Was fehlt Ihnen?", "translation": "Hello! Please sit down. What's the matter?" },
+    "usefulPhrases": [
+      { "text": "Mein Kopf tut weh.", "translation": "My head hurts." },
+      { "text": "Ich habe Fieber und Husten.", "translation": "I have a fever and a cough." },
+      { "text": "Wie oft soll ich die Tabletten nehmen?", "translation": "How often should I take the tablets?" },
+      { "text": "Danke, Frau Doktor!", "translation": "Thank you, doctor!" }
+    ]
+  },
+  {
+    "id": "rp-monday",
+    "unitId": "14-was-war",
+    "icon": "📖",
+    "title": "Monday morning chat",
+    "aiRole": "Sophie, a friendly colleague. You use du. At the weekend you visited your parents in Hamburg by train, went swimming on Sunday and watched a film in the evening. Ask the learner about their weekend and react with interest. Use the Perfekt and war/hatte.",
+    "setting": "Monday morning in the office kitchen. Sophie is making a coffee.",
+    "goals": ["Say how your weekend was", "Say two things you did", "Ask what Sophie did", "React to her story"],
+    "opening": { "text": "Guten Morgen! Na, wie war dein Wochenende?", "translation": "Good morning! So, how was your weekend?" },
+    "usefulPhrases": [
+      { "text": "Mein Wochenende war super!", "translation": "My weekend was great!" },
+      { "text": "Ich habe Freunde getroffen.", "translation": "I met friends." },
+      { "text": "Am Sonntag bin ich zu Hause geblieben.", "translation": "On Sunday I stayed at home." },
+      { "text": "Und was hast du gemacht?", "translation": "And what did you do?" }
+    ]
   }
 ]

@@ -1,0 +1,840 @@
+{
+  "id": "10-wohnung",
+  "level": "A1",
+  "title": "At home",
+  "description": "Rooms and furniture, the accusative den, and describing your home with adjectives. Then view a flat for rent.",
+  "icon": "🏠",
+  "vocab": [
+    { "id": "wohnung", "text": "Wohnung", "translations": ["flat", "apartment"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Wohnungen", "pronunciation": "VOH-noong", "example": { "text": "Die Wohnung hat drei Zimmer.", "translation": "The flat has three rooms." } },
+    { "id": "zimmer", "text": "Zimmer", "translations": ["room"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Zimmer", "pronunciation": "TSIM-mer", "example": { "text": "Das Zimmer ist sehr hell.", "translation": "The room is very bright." } },
+    { "id": "kueche", "text": "Küche", "translations": ["kitchen"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Küchen", "pronunciation": "KÜ-khe (short ü, soft ch)", "example": { "text": "Die Küche ist klein.", "translation": "The kitchen is small." } },
+    { "id": "bad", "text": "Bad", "translations": ["bathroom"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Bäder", "pronunciation": "baht", "example": { "text": "Wo ist das Bad?", "translation": "Where is the bathroom?" } },
+    { "id": "schlafzimmer", "text": "Schlafzimmer", "translations": ["bedroom"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Schlafzimmer", "pronunciation": "SHLAHF-tsim-mer", "example": { "text": "Das Schlafzimmer ist ruhig.", "translation": "The bedroom is quiet." } },
+    { "id": "wohnzimmer", "text": "Wohnzimmer", "translations": ["living room"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Wohnzimmer", "pronunciation": "VOHN-tsim-mer", "example": { "text": "Das Wohnzimmer ist gemütlich.", "translation": "The living room is cosy." } },
+    { "id": "balkon", "text": "Balkon", "translations": ["balcony"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Balkone", "pronunciation": "bal-KOHN", "example": { "text": "Die Wohnung hat einen Balkon.", "translation": "The flat has a balcony." } },
+    { "id": "garten", "text": "Garten", "translations": ["garden"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Gärten", "pronunciation": "GAR-ten", "example": { "text": "Das Haus hat einen Garten.", "translation": "The house has a garden." } },
+    { "id": "tisch", "text": "Tisch", "translations": ["table"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Tische", "pronunciation": "tish", "example": { "text": "Ich brauche einen Tisch.", "translation": "I need a table." } },
+    { "id": "stuhl", "text": "Stuhl", "translations": ["chair"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Stühle", "pronunciation": "shtool", "example": { "text": "Brauchst du den Stuhl?", "translation": "Do you need the chair?" } },
+    { "id": "bett", "text": "Bett", "translations": ["bed"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Betten", "pronunciation": "bet", "example": { "text": "Das Bett ist neu.", "translation": "The bed is new." } },
+    { "id": "sofa", "text": "Sofa", "translations": ["sofa", "couch"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Sofas", "pronunciation": "ZOH-fa", "example": { "text": "Das Sofa ist sehr gemütlich.", "translation": "The sofa is very cosy." } },
+    { "id": "lampe", "text": "Lampe", "translations": ["lamp"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Lampen", "pronunciation": "LAM-pe", "example": { "text": "Die Lampe ist schön.", "translation": "The lamp is beautiful." } },
+    { "id": "schrank", "text": "Schrank", "translations": ["cupboard", "wardrobe", "closet"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Schränke", "pronunciation": "shrank", "example": { "text": "Der Schrank ist zu groß.", "translation": "The cupboard is too big." } },
+    { "id": "fenster", "text": "Fenster", "translations": ["window"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Fenster", "pronunciation": "FEN-ster", "example": { "text": "Das Zimmer hat zwei Fenster.", "translation": "The room has two windows." } },
+    { "id": "tuer", "text": "Tür", "translations": ["door"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Türen", "pronunciation": "tür (long ü: ee with rounded lips)", "example": { "text": "Die Tür ist da links.", "translation": "The door is there on the left." } },
+    { "id": "brauchen", "text": "brauchen", "translations": ["to need"], "partOfSpeech": "VERB", "pronunciation": "BROW-khen (back-of-throat ch)", "example": { "text": "Ich brauche den Tisch.", "translation": "I need the table." } },
+    { "id": "gross", "text": "groß", "translations": ["big", "large", "tall"], "partOfSpeech": "ADJECTIVE", "pronunciation": "grohs", "example": { "text": "Die Küche ist groß.", "translation": "The kitchen is big." } },
+    { "id": "klein", "text": "klein", "translations": ["small", "little"], "partOfSpeech": "ADJECTIVE", "pronunciation": "kline", "example": { "text": "Das Bad ist klein.", "translation": "The bathroom is small." } },
+    { "id": "hell", "text": "hell", "translations": ["bright", "light"], "partOfSpeech": "ADJECTIVE", "pronunciation": "hel", "example": { "text": "Das Wohnzimmer ist hell.", "translation": "The living room is bright." } },
+    { "id": "dunkel", "text": "dunkel", "translations": ["dark"], "partOfSpeech": "ADJECTIVE", "pronunciation": "DOON-kel", "example": { "text": "Das Schlafzimmer ist dunkel.", "translation": "The bedroom is dark." } },
+    { "id": "neu", "text": "neu", "translations": ["new"], "partOfSpeech": "ADJECTIVE", "pronunciation": "noy", "example": { "text": "Das Sofa ist neu.", "translation": "The sofa is new." } },
+    { "id": "zu-too", "text": "zu", "translations": ["too (as in too big)", "too"], "partOfSpeech": "ADVERB", "pronunciation": "tsoo", "example": { "text": "Das Zimmer ist zu klein.", "translation": "The room is too small." } },
+    { "id": "finden", "text": "finden", "translations": ["to find", "to think (an opinion)"], "partOfSpeech": "VERB", "pronunciation": "FIN-den", "example": { "text": "Wie findest du die Wohnung?", "translation": "What do you think of the flat?" } },
+    { "id": "schoen", "text": "schön", "translations": ["beautiful", "nice", "lovely"], "partOfSpeech": "ADJECTIVE", "pronunciation": "shöhn (long ö: ay with rounded lips)", "example": { "text": "Ich finde den Garten schön.", "translation": "I think the garden is beautiful." } },
+    { "id": "gemuetlich", "text": "gemütlich", "translations": ["cosy", "comfortable"], "partOfSpeech": "ADJECTIVE", "pronunciation": "ge-MÜHT-likh (soft ch)", "example": { "text": "Das Wohnzimmer ist sehr gemütlich.", "translation": "The living room is very cosy." } },
+    { "id": "ruhig", "text": "ruhig", "translations": ["quiet", "calm"], "partOfSpeech": "ADJECTIVE", "pronunciation": "ROO-ikh (soft ch)", "example": { "text": "Die Straße ist ruhig.", "translation": "The street is quiet." } },
+    { "id": "laut", "text": "laut", "translations": ["loud", "noisy"], "partOfSpeech": "ADJECTIVE", "pronunciation": "lowt (rhymes with out)", "example": { "text": "Die Straße ist zu laut.", "translation": "The street is too noisy." } },
+    { "id": "miete", "text": "Miete", "translations": ["rent"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Mieten", "pronunciation": "MEE-te", "example": { "text": "Die Miete ist achthundert Euro.", "translation": "The rent is eight hundred euros." } },
+    { "id": "vermieter", "text": "Vermieter", "translations": ["landlord"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Vermieter", "pronunciation": "fer-MEE-ter", "example": { "text": "Der Vermieter wohnt hier.", "translation": "The landlord lives here." } },
+    { "id": "vermieterin", "text": "Vermieterin", "translations": ["landlady"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Vermieterinnen", "pronunciation": "fer-MEE-te-rin", "example": { "text": "Die Vermieterin heißt Frau Krause.", "translation": "The landlady is called Ms Krause." } }
+  ],
+  "grammarNotes": [
+    {
+      "id": "wohnung-rooms",
+      "title": "Rooms and furniture: der, die or das?",
+      "body": "Learn every noun with its article. There's no rule for most of them, but one trick helps a lot:\n\nWhen a word is built from two parts, the **last part** decides the article. *Schlafzimmer* (schlafen + Zimmer) and *Wohnzimmer* (wohnen + Zimmer) are both **das**, because it's *das Zimmer*.\n\n*Zimmer* and *Fenster* don't change in the plural: *ein Zimmer, zwei Zimmer*.",
+      "table": [
+        ["der", "die", "das"],
+        ["der Balkon", "die Wohnung", "das Zimmer"],
+        ["der Garten", "die Küche", "das Bad"],
+        ["der Tisch", "die Lampe", "das Bett"],
+        ["der Stuhl", "die Tür", "das Sofa"],
+        ["der Schrank", "", "das Fenster"]
+      ]
+    },
+    {
+      "id": "wohnung-accusative-den",
+      "title": "The accusative: der becomes den",
+      "body": "You met the accusative in *Food & drink*: when a noun is the **object** of a verb (the thing you need, want, have or look for), *ein* becomes *einen*.\n\n**the** works the same way. Only *der* words change: **der** becomes **den**. *die*, *das* and the plural *die* stay the same.\n\n- *Der Tisch ist neu.* (subject)\n- *Ich brauche **den** Tisch.* (object)",
+      "table": [
+        ["", "der word", "die word", "das word", "plural"],
+        ["subject", "der Tisch", "die Lampe", "das Bett", "die Stühle"],
+        ["object", "den Tisch", "die Lampe", "das Bett", "die Stühle"]
+      ]
+    },
+    {
+      "id": "wohnung-accusative-summary",
+      "title": "One pattern: den, einen, keinen, meinen",
+      "body": "All the little words before a *der* noun change in the same way when the noun is the object: they end in **-en**.\n\n*dein, sein, ihr* and *Ihr* follow *mein*: *Ich finde **deinen** Balkon schön.*\n\n*die* and *das* words never change in the accusative, so you only have to watch out for *der* words.",
+      "table": [
+        ["Subject (der word)", "Object (der word)", "Example"],
+        ["der", "den", "Ich brauche den Tisch."],
+        ["ein", "einen", "Ich brauche einen Tisch."],
+        ["kein", "keinen", "Ich brauche keinen Tisch."],
+        ["mein", "meinen", "Ich brauche meinen Tisch."]
+      ]
+    },
+    {
+      "id": "wohnung-adjectives",
+      "title": "Describing things: sein and finden",
+      "body": "After **sein** (to be) and **finden** (to find, to think), an adjective has **no ending**. It just goes at the end:\n\n- *Die Küche ist **groß**.*\n- *Ich finde die Wohnung **gemütlich**.* (I think the flat is cosy.)\n\nTo ask what something is like: **Wie ist …?** To ask someone's opinion: **Wie findest du …?** or **Wie finden Sie …?** *finden* adds an *e* in *du findest* and *er findet*, like *arbeiten*.\n\nMake an adjective stronger or weaker:\n\n- **sehr** = very: *sehr hell*\n- **zu** = too, which means it's a problem: *zu klein*\n- **nicht so** = not very: *nicht so laut*",
+      "table": [
+        ["Adjective", "Opposite"],
+        ["groß (big)", "klein (small)"],
+        ["hell (bright)", "dunkel (dark)"],
+        ["ruhig (quiet)", "laut (loud)"],
+        ["neu (new)", "alt (old)"]
+      ]
+    },
+    {
+      "id": "wohnung-viewing",
+      "title": "Viewing a flat",
+      "body": "Use **Sie** with a landlord (*der Vermieter*) or landlady (*die Vermieterin*).\n\nRents are in hundreds. Say the number, then **hundert**, all as one word: *acht + hundert = **achthundert***. *Euro* has no plural: *achthundert Euro*.\n\nFlat sizes are in **Quadratmeter** (square metres): *sechzig Quadratmeter* = 60 m².",
+      "table": [
+        ["You want to…", "Say"],
+        ["ask how big it is", "Wie groß ist die Wohnung?"],
+        ["ask about the rent", "Wie hoch ist die Miete?"],
+        ["ask if it has something", "Hat die Wohnung einen Balkon?"],
+        ["ask for an opinion", "Wie finden Sie die Küche?"],
+        ["give your opinion", "Ich finde die Küche sehr schön."],
+        ["say there's a problem", "Das Schlafzimmer ist zu klein."],
+        ["say you want to rent it", "Ich möchte die Wohnung mieten."]
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "hm1-rooms",
+      "title": "Rooms",
+      "kind": "LEARN",
+      "introduces": ["wohnung", "zimmer", "kueche", "bad", "schlafzimmer", "wohnzimmer", "balkon", "garten"],
+      "exercises": [
+        {
+          "id": "hm1-e1",
+          "type": "TEACH",
+          "title": "Die Wohnung",
+          "body": "**die Wohnung** is a flat or apartment. You know the verb *wohnen* (to live), and *Wohnung* comes from it.\n\n**das Zimmer** is a room. Put another word in front to say which room:\n\n- *schlafen* (to sleep) + *Zimmer* = **das Schlafzimmer**, the bedroom\n- *wohnen* (to live) + *Zimmer* = **das Wohnzimmer**, the living room\n\nThe last part decides the article, so both are *das*.",
+          "examples": [
+            { "text": "die Wohnung", "translation": "the flat" },
+            { "text": "das Zimmer", "translation": "the room" },
+            { "text": "das Schlafzimmer", "translation": "the bedroom" },
+            { "text": "das Wohnzimmer", "translation": "the living room" },
+            { "text": "die Küche", "translation": "the kitchen" },
+            { "text": "das Bad", "translation": "the bathroom" }
+          ]
+        },
+        {
+          "id": "hm1-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Wohnung", "base": "the flat" },
+            { "target": "das Zimmer", "base": "the room" },
+            { "target": "die Küche", "base": "the kitchen" },
+            { "target": "das Bad", "base": "the bathroom" },
+            { "target": "das Schlafzimmer", "base": "the bedroom" }
+          ]
+        },
+        {
+          "id": "hm1-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "der, die or das? Think of Zimmer.",
+          "prompt": "Wohnzimmer",
+          "promptLanguage": "TARGET",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "hm1-e4",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "die Küche",
+          "promptLanguage": "TARGET",
+          "options": ["the bathroom", "the kitchen", "the bedroom"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 1
+        },
+        {
+          "id": "hm1-e5",
+          "type": "TEACH",
+          "title": "Balkon and Garten",
+          "body": "- **der Balkon** = the balcony. Stress the end: *bal-KOHN*.\n- **der Garten** = the garden. Plural: *die Gärten*.\n\nTo show someone around, say **Das ist …** To ask where a room is: **Wo ist …?**",
+          "examples": [
+            { "text": "Das ist die Küche.", "translation": "This is the kitchen." },
+            { "text": "Wo ist das Bad?", "translation": "Where is the bathroom?" },
+            { "text": "Der Balkon ist hier.", "translation": "The balcony is here." },
+            { "text": "Der Garten ist da links.", "translation": "The garden is there on the left." }
+          ]
+        },
+        {
+          "id": "hm1-e6",
+          "type": "CLOZE",
+          "before": "Das ist",
+          "after": "Küche.",
+          "accepted": ["die"],
+          "translation": "This is the kitchen.",
+          "hint": "the, die word"
+        },
+        {
+          "id": "hm1-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "der, die or das?",
+          "prompt": "Balkon",
+          "promptLanguage": "TARGET",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "hm1-e8",
+          "type": "TEACH",
+          "title": "Die Wohnung hat …",
+          "body": "To say what a flat has, use **haben**. The rooms are the object, so *der* words take **einen**, just like *Ich habe einen Bruder*:\n\n- *Die Wohnung hat **einen** Balkon.*\n- *Die Wohnung hat **eine** Küche und **ein** Bad.*\n\nYou can also use **es gibt**: *Es gibt einen Garten.*\n\n*Zimmer* is the same in the plural: *drei Zimmer*.",
+          "examples": [
+            { "text": "Die Wohnung hat drei Zimmer.", "translation": "The flat has three rooms." },
+            { "text": "Die Wohnung hat einen Balkon.", "translation": "The flat has a balcony." },
+            { "text": "Es gibt einen Garten.", "translation": "There's a garden." }
+          ]
+        },
+        {
+          "id": "hm1-e9",
+          "type": "CLOZE",
+          "before": "Die Wohnung hat",
+          "after": "Balkon.",
+          "accepted": ["einen"],
+          "translation": "The flat has a balcony.",
+          "hint": "a, der word as the object"
+        },
+        {
+          "id": "hm1-e10",
+          "type": "WORD_ORDER",
+          "translation": "The flat has two rooms and a kitchen.",
+          "answer": "Die Wohnung hat zwei Zimmer und eine Küche.",
+          "distractors": ["einen", "ist"]
+        },
+        {
+          "id": "hm1-e11",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Balkon", "base": "the balcony" },
+            { "target": "der Garten", "base": "the garden" },
+            { "target": "das Wohnzimmer", "base": "the living room" },
+            { "target": "drei Zimmer", "base": "three rooms" }
+          ]
+        },
+        {
+          "id": "hm1-e12",
+          "type": "TRANSLATE",
+          "source": "The flat has a balcony.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Die Wohnung hat einen Balkon."]
+        },
+        {
+          "id": "hm1-e13",
+          "type": "TRANSLATE",
+          "source": "Wo ist das Schlafzimmer?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Where is the bedroom?", "Where's the bedroom?"]
+        },
+        {
+          "id": "hm1-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Das Haus hat einen Garten.",
+          "translation": "The house has a garden."
+        },
+        {
+          "id": "hm1-e15",
+          "type": "SHADOW",
+          "text": "Die Wohnung hat drei Zimmer, eine Küche und ein Bad.",
+          "translation": "The flat has three rooms, a kitchen and a bathroom.",
+          "hint": "Wohnung: a long o, VOH-noong. Zimmer starts with a ts sound."
+        }
+      ]
+    },
+    {
+      "id": "hm2-furniture",
+      "title": "Furniture",
+      "kind": "LEARN",
+      "introduces": ["tisch", "stuhl", "bett", "sofa", "lampe", "schrank", "fenster", "tuer", "brauchen"],
+      "exercises": [
+        {
+          "id": "hm2-e1",
+          "type": "TEACH",
+          "title": "Furniture",
+          "body": "Learn each word with its article. Tap to hear them.\n\n*st* at the start of a word sounds like *sht*: **Stuhl** is *shtool*.\n\nSome plurals add an umlaut: *der Stuhl → die Stühle*, *der Schrank → die Schränke*.",
+          "examples": [
+            { "text": "der Tisch", "translation": "table" },
+            { "text": "der Stuhl", "translation": "chair" },
+            { "text": "der Schrank", "translation": "cupboard, wardrobe" },
+            { "text": "das Bett", "translation": "bed" },
+            { "text": "das Sofa", "translation": "sofa" },
+            { "text": "das Fenster", "translation": "window" },
+            { "text": "die Lampe", "translation": "lamp" },
+            { "text": "die Tür", "translation": "door" }
+          ]
+        },
+        {
+          "id": "hm2-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Tisch", "base": "table" },
+            { "target": "der Stuhl", "base": "chair" },
+            { "target": "das Bett", "base": "bed" },
+            { "target": "die Lampe", "base": "lamp" },
+            { "target": "die Tür", "base": "door" }
+          ]
+        },
+        {
+          "id": "hm2-e3",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which word do you hear?",
+          "options": ["das Bett", "das Bad"],
+          "answerIndex": 0
+        },
+        {
+          "id": "hm2-e4",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "das Fenster",
+          "promptLanguage": "TARGET",
+          "options": ["the window", "the door", "the cupboard"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "hm2-e5",
+          "type": "TEACH",
+          "title": "brauchen: to need",
+          "body": "**brauchen** = to need. It's regular:\n\n- ich brauche\n- du brauchst\n- er / sie braucht\n- wir / sie / Sie brauchen\n\nThe thing you need is the object, so *der* words take **einen**, just like after *möchten* and *haben*.",
+          "examples": [
+            { "text": "Ich brauche einen Stuhl.", "translation": "I need a chair." },
+            { "text": "Brauchst du eine Lampe?", "translation": "Do you need a lamp?" },
+            { "text": "Wir brauchen ein Sofa.", "translation": "We need a sofa." }
+          ]
+        },
+        {
+          "id": "hm2-e6",
+          "type": "CLOZE",
+          "before": "Ich brauche",
+          "after": "Schrank.",
+          "accepted": ["einen"],
+          "translation": "I need a cupboard.",
+          "hint": "a, der word as the object"
+        },
+        {
+          "id": "hm2-e7",
+          "type": "TEACH",
+          "title": "der becomes den",
+          "body": "*ein* becomes *einen* for an object. **the** does the same: **der** becomes **den**.\n\n- *Der Tisch ist hier.* The table is here. (subject)\n- *Ich brauche **den** Tisch.* I need the table. (object)\n\nOnly *der* words change. *die*, *das* and the plural *die* stay the same.",
+          "examples": [
+            { "text": "Ich brauche den Tisch.", "translation": "I need the table.", "hint": "der Tisch → den" },
+            { "text": "Ich brauche die Lampe.", "translation": "I need the lamp.", "hint": "die Lampe → die" },
+            { "text": "Ich brauche das Sofa.", "translation": "I need the sofa.", "hint": "das Sofa → das" },
+            { "text": "Ich brauche die Stühle.", "translation": "I need the chairs.", "hint": "plural die → die" }
+          ]
+        },
+        {
+          "id": "hm2-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Ich brauche ___ Stuhl.",
+          "prompt": "I need the chair.",
+          "promptLanguage": "BASE",
+          "options": ["der", "den", "die"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "hm2-e9",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Brauchst du ___ Sofa?",
+          "prompt": "Do you need the sofa?",
+          "promptLanguage": "BASE",
+          "options": ["den", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "hm2-e10",
+          "type": "CLOZE",
+          "before": "Wir brauchen",
+          "after": "Tisch nicht.",
+          "accepted": ["den"],
+          "translation": "We don't need the table.",
+          "hint": "the, der word as the object"
+        },
+        {
+          "id": "hm2-e11",
+          "type": "WORD_ORDER",
+          "translation": "I'd like the table and the lamp.",
+          "answer": "Ich möchte den Tisch und die Lampe.",
+          "distractors": ["der", "das"]
+        },
+        {
+          "id": "hm2-e12",
+          "type": "TRANSLATE",
+          "source": "Do you need the chair? (informal)",
+          "sourceLanguage": "BASE",
+          "accepted": ["Brauchst du den Stuhl?"]
+        },
+        {
+          "id": "hm2-e13",
+          "type": "TRANSLATE",
+          "source": "Ich brauche ein Bett und einen Schrank.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["I need a bed and a cupboard.", "I need a bed and a wardrobe.", "I need a bed and a closet."]
+        },
+        {
+          "id": "hm2-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Ich brauche den Tisch.",
+          "translation": "I need the table."
+        },
+        {
+          "id": "hm2-e15",
+          "type": "SHADOW",
+          "text": "Ich brauche einen Tisch und zwei Stühle.",
+          "translation": "I need a table and two chairs.",
+          "hint": "Stühle: the st sounds like sht, and the ü is long."
+        }
+      ]
+    },
+    {
+      "id": "hm3-describing",
+      "title": "Big, small, bright",
+      "kind": "LEARN",
+      "introduces": ["gross", "klein", "hell", "dunkel", "neu", "zu-too"],
+      "exercises": [
+        {
+          "id": "hm3-e1",
+          "type": "TEACH",
+          "title": "Die Küche ist groß.",
+          "body": "To describe something, use **sein** + an adjective. The adjective goes at the end and **never changes**, whether the noun is *der*, *die* or *das*.\n\nAdjectives are easy to learn in opposite pairs. You already know *alt* (old) from talking about age.",
+          "examples": [
+            { "text": "Die Küche ist groß.", "translation": "The kitchen is big." },
+            { "text": "Das Bad ist klein.", "translation": "The bathroom is small." },
+            { "text": "Das Wohnzimmer ist hell.", "translation": "The living room is bright." },
+            { "text": "Das Schlafzimmer ist dunkel.", "translation": "The bedroom is dark." },
+            { "text": "Der Tisch ist neu.", "translation": "The table is new." },
+            { "text": "Der Stuhl ist alt.", "translation": "The chair is old." }
+          ]
+        },
+        {
+          "id": "hm3-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "groß", "base": "big" },
+            { "target": "klein", "base": "small" },
+            { "target": "hell", "base": "bright" },
+            { "target": "dunkel", "base": "dark" },
+            { "target": "neu", "base": "new" }
+          ]
+        },
+        {
+          "id": "hm3-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which word is the opposite?",
+          "prompt": "hell",
+          "promptLanguage": "TARGET",
+          "options": ["klein", "dunkel", "neu"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "hm3-e4",
+          "type": "CLOZE",
+          "before": "Das Bad ist",
+          "after": ".",
+          "accepted": ["klein"],
+          "translation": "The bathroom is small.",
+          "hint": "small"
+        },
+        {
+          "id": "hm3-e5",
+          "type": "TEACH",
+          "title": "Wie ist …?",
+          "body": "To ask what something is like, say **Wie ist …?** (literally *How is …?*).\n\nTo ask about size, put the adjective after *wie*: **Wie groß ist …?** = How big is …?",
+          "examples": [
+            { "text": "Wie ist die Küche?", "translation": "What's the kitchen like?" },
+            { "text": "Die Küche ist groß und hell.", "translation": "The kitchen is big and bright." },
+            { "text": "Wie groß ist das Zimmer?", "translation": "How big is the room?" }
+          ]
+        },
+        {
+          "id": "hm3-e6",
+          "type": "WORD_ORDER",
+          "translation": "The kitchen is big and bright.",
+          "answer": "Die Küche ist groß und hell.",
+          "distractors": ["klein", "den"]
+        },
+        {
+          "id": "hm3-e7",
+          "type": "TEACH",
+          "title": "sehr, zu, nicht so",
+          "body": "Three little words change how strong an adjective is:\n\n- **sehr** = very: *sehr hell*\n- **zu** = too: *zu klein*. Like in English, *too* means it's a problem.\n- **nicht so** = not very, not that: *nicht so groß*\n\n*Das Zimmer ist sehr klein* is just a fact. *Das Zimmer ist **zu** klein* means it's too small for you.",
+          "examples": [
+            { "text": "Das Zimmer ist sehr hell.", "translation": "The room is very bright." },
+            { "text": "Das Zimmer ist zu klein.", "translation": "The room is too small." },
+            { "text": "Das Bad ist nicht so groß.", "translation": "The bathroom isn't very big." }
+          ]
+        },
+        {
+          "id": "hm3-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "The room is small, and that's a problem for you. What do you say?",
+          "prompt": "A room that's too small",
+          "promptLanguage": "BASE",
+          "options": ["Das Zimmer ist zu klein.", "Das Zimmer ist sehr groß.", "Das Zimmer ist nicht so klein."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "hm3-e9",
+          "type": "CLOZE",
+          "before": "Das Sofa ist",
+          "after": "alt.",
+          "accepted": ["zu"],
+          "translation": "The sofa is too old.",
+          "hint": "too"
+        },
+        {
+          "id": "hm3-e10",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Das Bad ist nicht so groß.",
+          "promptLanguage": "TARGET",
+          "options": ["The bathroom isn't very big.", "The bathroom is too big.", "The bathroom is very big."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "hm3-e11",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "sehr hell", "base": "very bright" },
+            { "target": "zu dunkel", "base": "too dark" },
+            { "target": "nicht so groß", "base": "not very big" },
+            { "target": "alt", "base": "old" }
+          ]
+        },
+        {
+          "id": "hm3-e12",
+          "type": "TRANSLATE",
+          "source": "The room is too small.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Das Zimmer ist zu klein."]
+        },
+        {
+          "id": "hm3-e13",
+          "type": "TRANSLATE",
+          "source": "Der Tisch ist neu, aber der Stuhl ist alt.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["The table is new, but the chair is old.", "The table is new but the chair is old.", "The table's new, but the chair's old.", "The table's new but the chair's old."]
+        },
+        {
+          "id": "hm3-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Das Schlafzimmer ist sehr dunkel.",
+          "translation": "The bedroom is very dark."
+        },
+        {
+          "id": "hm3-e15",
+          "type": "SHADOW",
+          "text": "Wie groß ist die Küche?",
+          "translation": "How big is the kitchen?",
+          "hint": "groß: a long o, like grohs. Küche: a short ü, then a soft ch."
+        }
+      ]
+    },
+    {
+      "id": "hm4-opinions",
+      "title": "What do you think?",
+      "kind": "LEARN",
+      "introduces": ["finden", "schoen", "gemuetlich", "ruhig", "laut"],
+      "exercises": [
+        {
+          "id": "hm4-e1",
+          "type": "TEACH",
+          "title": "Ich finde … schön.",
+          "body": "**finden** = to find. Germans also use it to give an opinion: *Ich finde die Wohnung schön.* = I think the flat is nice.\n\nLike *arbeiten*, it adds an *e* in two forms:\n\n- ich finde\n- du **findest**\n- er / sie **findet**\n- wir / sie / Sie finden\n\nTo ask someone's opinion: **Wie findest du …?** or, politely, **Wie finden Sie …?**",
+          "examples": [
+            { "text": "Ich finde die Wohnung schön.", "translation": "I think the flat is beautiful." },
+            { "text": "Wie findest du das Sofa?", "translation": "What do you think of the sofa?" },
+            { "text": "Sie findet die Küche zu klein.", "translation": "She thinks the kitchen is too small." }
+          ]
+        },
+        {
+          "id": "hm4-e2",
+          "type": "CLOZE",
+          "before": "Wie",
+          "after": "du das Zimmer?",
+          "accepted": ["findest"],
+          "translation": "What do you think of the room?",
+          "hint": "finden → du … (add an e, like arbeitest)"
+        },
+        {
+          "id": "hm4-e3",
+          "type": "TEACH",
+          "title": "gemütlich, ruhig, laut",
+          "body": "- **gemütlich** = cosy. A very German word: warm, comfortable and relaxed. You'll hear it a lot!\n- **ruhig** = quiet, calm\n- **laut** = loud, noisy\n\nA short answer is fine too: *Wie findest du das Sofa? **Sehr gemütlich!***",
+          "mouthShapes": [
+            { "shape": "TIGHT_ROUNDED", "label": "ü", "caption": "gemütlich: say ee, then round your lips" }
+          ],
+          "examples": [
+            { "text": "Das Wohnzimmer ist sehr gemütlich.", "translation": "The living room is very cosy." },
+            { "text": "Das Schlafzimmer ist ruhig.", "translation": "The bedroom is quiet." },
+            { "text": "Die Straße ist laut.", "translation": "The street is noisy." }
+          ]
+        },
+        {
+          "id": "hm4-e4",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "schön", "base": "beautiful" },
+            { "target": "gemütlich", "base": "cosy" },
+            { "target": "ruhig", "base": "quiet" },
+            { "target": "laut", "base": "loud" },
+            { "target": "finden", "base": "to find" }
+          ]
+        },
+        {
+          "id": "hm4-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which word is the opposite?",
+          "prompt": "ruhig",
+          "promptLanguage": "TARGET",
+          "options": ["laut", "hell", "schön"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "hm4-e6",
+          "type": "TEACH",
+          "title": "Ich finde den Balkon schön.",
+          "body": "With *finden*, the thing you give an opinion on is the **object**. So *der* words take **den**:\n\n- *Der Balkon ist schön.*\n- *Ich finde **den** Balkon schön.*\n\n*die* and *das* words don't change: *Ich finde **das** Bett gemütlich.*\n\nThe adjective goes at the very end, with no ending.",
+          "examples": [
+            { "text": "Ich finde den Balkon schön.", "translation": "I think the balcony is beautiful." },
+            { "text": "Wie findest du den Garten?", "translation": "What do you think of the garden?" },
+            { "text": "Ich finde das Bett gemütlich.", "translation": "I think the bed is comfortable." }
+          ]
+        },
+        {
+          "id": "hm4-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Ich finde ___ Garten schön.",
+          "prompt": "I think the garden is beautiful.",
+          "promptLanguage": "BASE",
+          "options": ["der", "den", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "hm4-e8",
+          "type": "WORD_ORDER",
+          "translation": "I think the sofa is very cosy.",
+          "answer": "Ich finde das Sofa sehr gemütlich.",
+          "distractors": ["den", "bin"]
+        },
+        {
+          "id": "hm4-e9",
+          "type": "TEACH",
+          "title": "One pattern for der words",
+          "body": "Now you've seen it four times. When a *der* word is the object, the word in front of it ends in **-en**:\n\n- der → **den**\n- ein → **einen**\n- kein → **keinen**\n- mein → **meinen** (and *deinen, seinen, ihren*)\n\n*die* and *das* words never change in the accusative.",
+          "examples": [
+            { "text": "Ich brauche den Tisch.", "translation": "I need the table." },
+            { "text": "Ich brauche einen Tisch.", "translation": "I need a table." },
+            { "text": "Ich brauche keinen Tisch.", "translation": "I don't need a table." },
+            { "text": "Ich brauche meinen Tisch.", "translation": "I need my table." }
+          ]
+        },
+        {
+          "id": "hm4-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Wir haben ___ Garten.",
+          "prompt": "We don't have a garden.",
+          "promptLanguage": "BASE",
+          "options": ["kein", "keinen", "keine"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "hm4-e11",
+          "type": "CLOZE",
+          "before": "Wie findest du",
+          "after": "Balkon?",
+          "accepted": ["meinen"],
+          "translation": "What do you think of my balcony?",
+          "hint": "my, der word as the object"
+        },
+        {
+          "id": "hm4-e12",
+          "type": "TRANSLATE",
+          "source": "I think the flat is very quiet.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich finde die Wohnung sehr ruhig.", "Ich finde, die Wohnung ist sehr ruhig."]
+        },
+        {
+          "id": "hm4-e13",
+          "type": "TRANSLATE",
+          "source": "Wie findest du den Garten?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["What do you think of the garden?", "What do you think about the garden?", "How do you like the garden?", "How do you find the garden?"]
+        },
+        {
+          "id": "hm4-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Ich finde den Balkon sehr schön.",
+          "translation": "I think the balcony is very beautiful."
+        },
+        {
+          "id": "hm4-e15",
+          "type": "SHADOW",
+          "text": "Wie findest du das Wohnzimmer? Sehr gemütlich!",
+          "translation": "What do you think of the living room? Very cosy!",
+          "hint": "gemütlich: ge-MÜHT-likh. Stress the long ü."
+        }
+      ]
+    },
+    {
+      "id": "hm5-viewing",
+      "title": "Viewing a flat",
+      "kind": "PRACTICE",
+      "introduces": ["miete", "vermieter", "vermieterin"],
+      "exercises": [
+        {
+          "id": "hm5-e1",
+          "type": "TEACH",
+          "title": "Flat hunting",
+          "body": "- **die Miete** = the rent\n- **der Vermieter / die Vermieterin** = the landlord / the landlady. Both contain *Miete*!\n- **Wie hoch ist die Miete?** = How much is the rent? Learn it as a fixed phrase.\n- **der Quadratmeter** = square metre: *sechzig Quadratmeter* = 60 m²\n- **mieten** = to rent: *Ich möchte die Wohnung mieten.*\n\nRents are in hundreds: *acht + hundert = **achthundert***, written as one word.\n\nUse **Sie** with a landlord.",
+          "examples": [
+            { "text": "Wie hoch ist die Miete?", "translation": "How much is the rent?" },
+            { "text": "Die Miete ist achthundert Euro.", "translation": "The rent is €800." },
+            { "text": "Die Wohnung hat sechzig Quadratmeter.", "translation": "The flat is sixty square metres." },
+            { "text": "Ich möchte die Wohnung mieten.", "translation": "I'd like to rent the flat." }
+          ]
+        },
+        {
+          "id": "hm5-e2",
+          "type": "TEACH",
+          "title": "Die Wohnung",
+          "body": "Tom Becker is looking at a flat for rent. Read along, and tap each line to hear it.",
+          "examples": [
+            { "text": "Guten Tag, Herr Becker! Ich bin Frau Krause, die Vermieterin.", "translation": "Ms Krause: Hello, Mr Becker! I'm Ms Krause, the landlady." },
+            { "text": "Guten Tag, Frau Krause! Freut mich.", "translation": "Tom: Hello, Ms Krause! Nice to meet you." },
+            { "text": "Das ist das Wohnzimmer. Die Wohnung hat zwei Zimmer, eine Küche und ein Bad.", "translation": "Ms Krause: This is the living room. The flat has two rooms, a kitchen and a bathroom." },
+            { "text": "Das Wohnzimmer ist sehr hell und gemütlich!", "translation": "Tom: The living room is very bright and cosy!" },
+            { "text": "Ja, und es gibt einen Balkon. Wie finden Sie den Balkon?", "translation": "Ms Krause: Yes, and there's a balcony. What do you think of the balcony?" },
+            { "text": "Ich finde den Balkon sehr schön. Wie groß ist die Wohnung?", "translation": "Tom: I think the balcony is very nice. How big is the flat?" },
+            { "text": "Sechzig Quadratmeter. Und die Straße ist nicht so laut.", "translation": "Ms Krause: Sixty square metres. And the street isn't very noisy." },
+            { "text": "Das Schlafzimmer ist ein bisschen klein, aber das ist kein Problem. Wie hoch ist die Miete?", "translation": "Tom: The bedroom is a bit small, but that's no problem. How much is the rent?" },
+            { "text": "Die Miete ist achthundert Euro.", "translation": "Ms Krause: The rent is €800." },
+            { "text": "Gut! Ich möchte die Wohnung mieten.", "translation": "Tom: Good! I'd like to rent the flat." }
+          ]
+        },
+        {
+          "id": "hm5-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the viewing: what does the flat have?",
+          "prompt": "Die Wohnung",
+          "promptLanguage": "TARGET",
+          "options": ["two rooms, a kitchen, a bathroom and a balcony", "three rooms, a kitchen and a garden", "two rooms, a bathroom and a garden"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "hm5-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "How much is the rent?",
+          "prompt": "Die Miete ist achthundert Euro.",
+          "promptLanguage": "TARGET",
+          "options": ["€800", "€80", "€8,000"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "hm5-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the viewing: what does Tom say about the bedroom?",
+          "prompt": "Das Schlafzimmer ist ein bisschen klein.",
+          "promptLanguage": "TARGET",
+          "options": ["It's a bit small.", "It's too dark.", "It's very cosy."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "hm5-e6",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Miete", "base": "the rent" },
+            { "target": "der Vermieter", "base": "the landlord" },
+            { "target": "die Vermieterin", "base": "the landlady" },
+            { "target": "Wie hoch ist die Miete?", "base": "How much is the rent?" },
+            { "target": "nicht so laut", "base": "not very noisy" }
+          ]
+        },
+        {
+          "id": "hm5-e7",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which rent do you hear?",
+          "options": ["Die Miete ist sechshundert Euro.", "Die Miete ist siebenhundert Euro."],
+          "answerIndex": 1
+        },
+        {
+          "id": "hm5-e8",
+          "type": "CLOZE",
+          "before": "Wie",
+          "after": "Sie die Küche?",
+          "accepted": ["finden"],
+          "translation": "What do you think of the kitchen? (formal)",
+          "hint": "finden → Sie …"
+        },
+        {
+          "id": "hm5-e9",
+          "type": "WORD_ORDER",
+          "translation": "How much is the rent?",
+          "answer": "Wie hoch ist die Miete?",
+          "distractors": ["groß", "der"]
+        },
+        {
+          "id": "hm5-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "The landlady asks this, and you like the kitchen a lot. What do you say?",
+          "prompt": "Wie finden Sie die Küche?",
+          "promptLanguage": "TARGET",
+          "options": ["Ich finde die Küche sehr schön.", "Die Küche ist zu klein.", "Wie hoch ist die Miete?"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "hm5-e11",
+          "type": "TRANSLATE",
+          "source": "Does the flat have a balcony?",
+          "sourceLanguage": "BASE",
+          "accepted": ["Hat die Wohnung einen Balkon?", "Gibt es einen Balkon?", "Gibt es hier einen Balkon?"]
+        },
+        {
+          "id": "hm5-e12",
+          "type": "TRANSLATE",
+          "source": "The bedroom is too dark.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Das Schlafzimmer ist zu dunkel."]
+        },
+        {
+          "id": "hm5-e13",
+          "type": "TRANSLATE",
+          "source": "Die Miete ist neunhundert Euro.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["The rent is nine hundred euros.", "The rent is 900 euros.", "The rent is €900.", "The rent's nine hundred euros.", "The rent's 900 euros.", "The rent's €900."]
+        },
+        {
+          "id": "hm5-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Wie hoch ist die Miete?",
+          "translation": "How much is the rent?"
+        },
+        {
+          "id": "hm5-e15",
+          "type": "SHADOW",
+          "text": "Ich finde die Wohnung sehr gemütlich. Wie hoch ist die Miete?",
+          "translation": "I think the flat is very cosy. How much is the rent?",
+          "hint": "hoch ends in a back-of-throat ch. Let your voice fall at the end of a W-question."
+        }
+      ]
+    }
+  ]
+}

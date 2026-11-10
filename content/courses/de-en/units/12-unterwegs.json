@@ -1,0 +1,846 @@
+{
+  "id": "12-unterwegs",
+  "level": "A1",
+  "title": "Getting around",
+  "description": "Buses, trains and directions: travel with mit, zum and zur, meet the dative, and give instructions with the imperative.",
+  "icon": "🚆",
+  "vocab": [
+    { "id": "bus", "text": "Bus", "translations": ["bus"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Busse", "pronunciation": "bus (u as in 'put')", "example": { "text": "Der Bus kommt um acht Uhr.", "translation": "The bus comes at eight o'clock." } },
+    { "id": "zug", "text": "Zug", "translations": ["train"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Züge", "pronunciation": "tsook (long oo, as in 'zoo')", "example": { "text": "Ich fahre mit dem Zug.", "translation": "I'm going by train." } },
+    { "id": "u-bahn", "text": "U-Bahn", "translations": ["underground (train)", "underground", "subway", "metro"], "partOfSpeech": "NOUN", "gender": "f", "plural": "U-Bahnen", "pronunciation": "OO-bahn", "example": { "text": "Nehmen Sie die U-Bahn!", "translation": "Take the underground!" } },
+    { "id": "strassenbahn", "text": "Straßenbahn", "translations": ["tram", "streetcar"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Straßenbahnen", "pronunciation": "SHTRAH-sen-bahn", "example": { "text": "Wir fahren mit der Straßenbahn.", "translation": "We're going by tram." } },
+    { "id": "auto", "text": "Auto", "translations": ["car"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Autos", "pronunciation": "OW-toh", "example": { "text": "Fährst du mit dem Auto?", "translation": "Are you going by car?" } },
+    { "id": "fahrrad", "text": "Fahrrad", "translations": ["bicycle", "bike"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Fahrräder", "pronunciation": "FAHR-raht", "example": { "text": "Sie fährt mit dem Fahrrad zur Arbeit.", "translation": "She cycles to work." } },
+    { "id": "taxi", "text": "Taxi", "translations": ["taxi", "cab"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Taxis", "pronunciation": "TAK-see", "example": { "text": "Wir nehmen ein Taxi.", "translation": "We're taking a taxi." } },
+    { "id": "fahren", "text": "fahren", "translations": ["to go (by vehicle)", "to drive", "to ride", "to travel"], "partOfSpeech": "VERB", "pronunciation": "FAH-ren", "example": { "text": "Der Zug fährt um neun Uhr.", "translation": "The train goes at nine o'clock." } },
+    { "id": "mit", "text": "mit", "translations": ["with", "by (with transport)"], "partOfSpeech": "PREPOSITION", "pronunciation": "mit", "example": { "text": "Ich fahre mit dem Bus.", "translation": "I'm going by bus." } },
+    { "id": "zu-fuss", "text": "zu Fuß", "translations": ["on foot"], "partOfSpeech": "PHRASE", "pronunciation": "tsoo FOOS (long oo)", "example": { "text": "Ich gehe zu Fuß.", "translation": "I'm walking." } },
+    { "id": "nehmen", "text": "nehmen", "translations": ["to take"], "partOfSpeech": "VERB", "pronunciation": "NAY-men", "example": { "text": "Sie nimmt den Bus.", "translation": "She takes the bus." } },
+    { "id": "einsteigen", "text": "einsteigen", "translations": ["to get on (a vehicle)", "to get in", "to board"], "partOfSpeech": "VERB", "pronunciation": "INE-shty-gen", "example": { "text": "Wir steigen hier ein.", "translation": "We're getting on here." } },
+    { "id": "aussteigen", "text": "aussteigen", "translations": ["to get off (a vehicle)", "to get out"], "partOfSpeech": "VERB", "pronunciation": "OWS-shty-gen", "example": { "text": "Ich steige hier aus.", "translation": "I'm getting off here." } },
+    { "id": "umsteigen", "text": "umsteigen", "translations": ["to change (trains or buses)", "to change", "to transfer"], "partOfSpeech": "VERB", "pronunciation": "OOM-shty-gen", "example": { "text": "Muss ich umsteigen?", "translation": "Do I have to change?" } },
+    { "id": "wie-lange-dauert-das", "text": "Wie lange dauert das?", "translations": ["How long does it take?"], "partOfSpeech": "PHRASE", "pronunciation": "vee LANG-e DOW-ert das", "example": { "text": "Wie lange dauert das? Zwanzig Minuten.", "translation": "How long does it take? Twenty minutes." } },
+    { "id": "zu", "text": "zu", "translations": ["to (a place or person)", "to"], "partOfSpeech": "PREPOSITION", "pronunciation": "tsoo", "example": { "text": "Ich gehe zum Supermarkt.", "translation": "I'm going to the supermarket." } },
+    { "id": "wie-komme-ich-zum", "text": "Wie komme ich zum …?", "translations": ["How do I get to …?", "How do I get to the …?"], "partOfSpeech": "PHRASE", "pronunciation": "vee KOM-me ikh tsoom (soft ch)", "example": { "text": "Entschuldigung, wie komme ich zum Bahnhof?", "translation": "Excuse me, how do I get to the train station?" } },
+    { "id": "flughafen", "text": "Flughafen", "translations": ["airport"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Flughäfen", "pronunciation": "FLOOK-hah-fen", "example": { "text": "Wie komme ich zum Flughafen?", "translation": "How do I get to the airport?" } },
+    { "id": "nach-place", "text": "nach", "translations": ["to (a city or country)"], "partOfSpeech": "PREPOSITION", "pronunciation": "nahkh (back-of-throat ch)", "example": { "text": "Wir fahren morgen nach Berlin.", "translation": "We're going to Berlin tomorrow." } },
+    { "id": "nach-hause", "text": "nach Hause", "translations": ["home (going home)", "home"], "partOfSpeech": "PHRASE", "pronunciation": "nahkh HOW-ze", "example": { "text": "Um sechs Uhr gehe ich nach Hause.", "translation": "At six o'clock I go home." } },
+    { "id": "ampel", "text": "Ampel", "translations": ["traffic light", "traffic lights"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Ampeln", "pronunciation": "AM-pel", "example": { "text": "Gehen Sie an der Ampel links.", "translation": "Turn left at the traffic lights." } },
+    { "id": "ecke", "text": "Ecke", "translations": ["corner"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Ecken", "pronunciation": "EK-ke", "example": { "text": "Die Apotheke ist an der Ecke.", "translation": "The pharmacy is on the corner." } },
+    { "id": "fahrkarte", "text": "Fahrkarte", "translations": ["ticket (for travel)", "ticket"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Fahrkarten", "pronunciation": "FAHR-kar-te", "example": { "text": "Eine Fahrkarte nach Berlin, bitte.", "translation": "A ticket to Berlin, please." } },
+    { "id": "gleis", "text": "Gleis", "translations": ["platform (track)", "platform", "track"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Gleise", "pronunciation": "glice", "example": { "text": "Welches Gleis? Gleis drei.", "translation": "Which platform? Platform three." } },
+    { "id": "hin-und-zurueck", "text": "hin und zurück", "translations": ["return (there and back)", "there and back", "round trip"], "partOfSpeech": "PHRASE", "pronunciation": "hin unt tsoo-RÜK (ü: ee with rounded lips)", "example": { "text": "Eine Fahrkarte hin und zurück, bitte.", "translation": "A return ticket, please." } },
+    { "id": "abfahren", "text": "abfahren", "translations": ["to depart", "to leave (by vehicle)"], "partOfSpeech": "VERB", "pronunciation": "AP-fah-ren", "example": { "text": "Wann fährt der Zug ab?", "translation": "When does the train leave?" } },
+    { "id": "gute-fahrt", "text": "Gute Fahrt!", "translations": ["Have a good journey!", "Safe travels!"], "partOfSpeech": "PHRASE", "pronunciation": "GOO-te FAHRT", "example": { "text": "Danke! Gute Fahrt!", "translation": "Thanks! Have a good journey!" } }
+  ],
+  "grammarNotes": [
+    {
+      "id": "unterwegs-fahren-nehmen",
+      "title": "fahren, nehmen and the -steigen verbs",
+      "body": "**fahren** means to go in or on anything with wheels: a bus, a train, a car, a bike. For walking, use **gehen**. Two handy chunks: **Auto fahren** (to drive) and **Fahrrad fahren** (to cycle).\n\nBoth verbs change their vowel in the **du** and **er / sie / es** forms only:\n\n- **a → ä**: *du fährst, er fährt* (like *schlafen*)\n- **e → i**: *du nimmst, er nimmt*. *nehmen* also drops its *h* and doubles the *m*.\n\n**einsteigen** (get on), **aussteigen** (get off) and **umsteigen** (change) are separable, like *aufstehen*: *Ich **steige** hier **aus**.* After a modal they stay in one piece at the end: *Ich muss hier **aussteigen**.*",
+      "table": [
+        ["Person", "fahren", "nehmen"],
+        ["ich", "fahre", "nehme"],
+        ["du", "fährst", "nimmst"],
+        ["er / sie / es", "fährt", "nimmt"],
+        ["wir", "fahren", "nehmen"],
+        ["ihr", "fahrt", "nehmt"],
+        ["sie / Sie", "fahren", "nehmen"]
+      ]
+    },
+    {
+      "id": "unterwegs-dative",
+      "title": "The dative: dem and der",
+      "body": "After a few little words, German uses a third form of *der, die, das*: the **dative**. In this unit you meet it after **mit** (with, by), **zu** (to) and **in** (in, for where something is).\n\n- **der** and **das** become **dem**: *mit dem Bus, mit dem Auto*\n- **die** becomes **der**: *mit der U-Bahn*\n- **ein** becomes **einem**, **eine** becomes **einer**: *mit einem Freund, mit einer Freundin*. *mein, dein* and *kein* do the same: *mit meiner Mutter*.\n\nCompare the object form you already know. *Ich nehme **den** Bus* and *Ich fahre mit **dem** Bus* mean the same thing, but *nehmen* takes the object form and *mit* takes the dative.",
+      "table": [
+        ["", "der word", "das word", "die word"],
+        ["Subject", "der Bus", "das Auto", "die U-Bahn"],
+        ["Object: Ich nehme …", "den Bus", "das Auto", "die U-Bahn"],
+        ["Dative: mit …", "dem Bus", "dem Auto", "der U-Bahn"],
+        ["Dative with ein: mit …", "einem Freund", "einem Kind", "einer Freundin"],
+        ["Dative with mein: mit …", "meinem Bruder", "meinem Kind", "meiner Mutter"]
+      ]
+    },
+    {
+      "id": "unterwegs-zum-zur-im",
+      "title": "zum, zur, nach and im: where to, and where",
+      "body": "**zu** (to) also takes the dative, and it almost always merges with the article:\n\n- zu + dem = **zum**: *zum Bahnhof, zum Kino*\n- zu + der = **zur**: *zur Post, zur Arbeit*\n\nUse **zu** for places in town and for people. For cities and countries, which have no article, use **nach**: *nach Berlin, nach Österreich*. Going home is always **nach Hause**.\n\n**in** takes the dative when it says *where something is*: in + dem = **im**, and *in der* stays as it is: *im Park, im Zug, in der Stadt*. (Going *into* a place works differently; for now, use *zu* for going somewhere.)\n\n**zu Fuß** (on foot) is a fixed phrase with no article.",
+      "table": [
+        ["Short form", "Long form", "Example"],
+        ["zum", "zu dem", "zum Bahnhof, zum Kino"],
+        ["zur", "zu der", "zur Post, zur Arbeit"],
+        ["im", "in dem", "im Park, im Zug"],
+        ["in der", "(no short form)", "in der Stadt, in der U-Bahn"],
+        ["nach", "(cities, countries)", "nach Berlin, nach Hause"]
+      ]
+    },
+    {
+      "id": "unterwegs-imperative",
+      "title": "Giving instructions: the imperative",
+      "body": "The **imperative** is the form for instructions and directions.\n\n- **Sie** (polite): the verb comes **first**, then *Sie*: *Nehmen Sie die U-Bahn!* It looks like a question, but your voice goes down.\n- **du** (a friend): take the *du* form and drop **du** and **-st**: *du nimmst → **Nimm!*** *du gehst → **Geh!*** If the *du* form has an *ä*, it goes back to *a*: *du fährst → **Fahr!***\n- **ihr** (several friends): just the *ihr* form without *ihr*: *Nehmt den Bus!*\n\nSeparable prefixes go to the end, as usual: *Steigen Sie hier aus! Steig hier aus!* Add **bitte** to sound friendlier: *Nehmen Sie bitte den Bus.*",
+      "table": [
+        ["Verb", "Sie", "du", "ihr"],
+        ["gehen", "Gehen Sie!", "Geh!", "Geht!"],
+        ["fahren", "Fahren Sie!", "Fahr!", "Fahrt!"],
+        ["nehmen", "Nehmen Sie!", "Nimm!", "Nehmt!"],
+        ["aussteigen", "Steigen Sie aus!", "Steig aus!", "Steigt aus!"]
+      ]
+    },
+    {
+      "id": "unterwegs-phrases",
+      "title": "Asking the way and buying a ticket",
+      "body": "Learn these as whole phrases. **an der Ampel** (at the traffic lights) and **an der Ecke** (on the corner) use the dative *der*, just like *mit der*.\n\nAt the station, **einfach** means a one-way ticket and **hin und zurück** a return. The platform is **das Gleis**, and timetables use the 24-hour clock.",
+      "table": [
+        ["You want to…", "Say"],
+        ["ask the way", "Wie komme ich zum Bahnhof? / zur Post?"],
+        ["give directions", "Gehen Sie geradeaus und dann an der Ampel links."],
+        ["buy a ticket", "Eine Fahrkarte zum Flughafen, bitte."],
+        ["say one way or return", "Einfach. / Hin und zurück."],
+        ["ask about the platform", "Welches Gleis?"],
+        ["ask about changing", "Muss ich umsteigen?"],
+        ["ask how long", "Wie lange dauert das?"],
+        ["ask when it leaves", "Wann fährt der Zug ab?"]
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "gt1-vehicles",
+      "title": "Bus, train and bike",
+      "kind": "LEARN",
+      "introduces": ["bus", "zug", "u-bahn", "strassenbahn", "auto", "fahrrad", "taxi", "fahren", "mit", "zu-fuss"],
+      "exercises": [
+        {
+          "id": "gt1-e1",
+          "type": "TEACH",
+          "title": "Getting around town",
+          "body": "Here's how to get around. Learn each word with its *der, die* or *das*.\n\n- **die U-Bahn** is the underground (U for *Untergrund*)\n- **die Straßenbahn** is the tram: *Straße* (street) + *Bahn* (railway)\n\nTap to hear them.",
+          "examples": [
+            { "text": "der Bus", "translation": "the bus" },
+            { "text": "der Zug", "translation": "the train" },
+            { "text": "die U-Bahn", "translation": "the underground" },
+            { "text": "die Straßenbahn", "translation": "the tram" },
+            { "text": "das Auto", "translation": "the car" },
+            { "text": "das Fahrrad", "translation": "the bicycle" },
+            { "text": "das Taxi", "translation": "the taxi" }
+          ]
+        },
+        {
+          "id": "gt1-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Bus", "base": "the bus" },
+            { "target": "der Zug", "base": "the train" },
+            { "target": "die U-Bahn", "base": "the underground" },
+            { "target": "die Straßenbahn", "base": "the tram" },
+            { "target": "das Fahrrad", "base": "the bicycle" }
+          ]
+        },
+        {
+          "id": "gt1-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "der, die or das? Think of U-Bahn.",
+          "prompt": "Straßenbahn",
+          "promptLanguage": "TARGET",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "gt1-e4",
+          "type": "TEACH",
+          "title": "fahren: to go by vehicle",
+          "body": "English says *go* for everything. German says **gehen** when you walk and **fahren** when wheels are involved: a bus, a train, a car, a bike.\n\n*fahren* changes **a → ä** in the *du* and *er / sie* forms, just like *schlafen*:\n\n- ich fahre\n- du **fährst**\n- er / sie **fährt**\n- wir fahren\n- ihr fahrt\n- sie / Sie fahren",
+          "examples": [
+            { "text": "Ich fahre heute.", "translation": "I'm driving today." },
+            { "text": "Fährst du morgen?", "translation": "Are you going tomorrow?" },
+            { "text": "Der Bus fährt um acht Uhr.", "translation": "The bus goes at eight o'clock." }
+          ]
+        },
+        {
+          "id": "gt1-e5",
+          "type": "CLOZE",
+          "before": "Der Zug",
+          "after": "um neun Uhr.",
+          "accepted": ["fährt"],
+          "translation": "The train goes at nine o'clock.",
+          "hint": "fahren → er / sie / es …"
+        },
+        {
+          "id": "gt1-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? ___ du morgen?",
+          "prompt": "Are you going tomorrow?",
+          "promptLanguage": "BASE",
+          "options": ["Fahrst", "Fährst", "Fahren"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "gt1-e7",
+          "type": "TEACH",
+          "title": "mit dem Bus: by bus",
+          "body": "To say *how* you travel, use **mit** (with) + the vehicle. You know *mit* from *Kaffee mit Milch*.\n\nAfter *mit*, the article changes:\n\n- **der** and **das** → **dem**: *mit dem Bus, mit dem Auto*\n- **die** → **der**: *mit der U-Bahn*\n\nThis new form is called the **dative**. Don't worry: you only need it after a few little words, and *mit* is the first.",
+          "examples": [
+            { "text": "Ich fahre mit dem Bus.", "translation": "I'm going by bus." },
+            { "text": "Wir fahren mit dem Auto.", "translation": "We're going by car." },
+            { "text": "Sie fährt mit der U-Bahn.", "translation": "She's going by underground." },
+            { "text": "Fährst du mit der Straßenbahn?", "translation": "Are you going by tram?" }
+          ]
+        },
+        {
+          "id": "gt1-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "die U-Bahn. What does it become after mit?",
+          "prompt": "by underground",
+          "promptLanguage": "BASE",
+          "options": ["mit der U-Bahn", "mit die U-Bahn", "mit dem U-Bahn"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "gt1-e9",
+          "type": "CLOZE",
+          "before": "Ich fahre mit",
+          "after": "Fahrrad.",
+          "accepted": ["dem"],
+          "translation": "I'm going by bike.",
+          "hint": "das Fahrrad → mit …"
+        },
+        {
+          "id": "gt1-e10",
+          "type": "TEACH",
+          "title": "zu Fuß: on foot",
+          "body": "When you walk, say **zu Fuß** (on foot) with *gehen*. It's a fixed phrase with no article, so learn it whole.\n\n*Ich gehe zu Fuß* simply means *I'm walking*.",
+          "examples": [
+            { "text": "Ich gehe zu Fuß.", "translation": "I'm walking." },
+            { "text": "Fährst du mit dem Auto? Nein, ich gehe zu Fuß.", "translation": "Are you going by car? No, I'm walking." }
+          ]
+        },
+        {
+          "id": "gt1-e11",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "mit dem Zug", "base": "by train" },
+            { "target": "mit dem Auto", "base": "by car" },
+            { "target": "mit der Straßenbahn", "base": "by tram" },
+            { "target": "mit dem Taxi", "base": "by taxi" },
+            { "target": "zu Fuß", "base": "on foot" }
+          ]
+        },
+        {
+          "id": "gt1-e12",
+          "type": "WORD_ORDER",
+          "translation": "I'm going by underground.",
+          "answer": "Ich fahre mit der U-Bahn.",
+          "distractors": ["dem", "gehe"]
+        },
+        {
+          "id": "gt1-e13",
+          "type": "TRANSLATE",
+          "source": "She goes to work by bike.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Sie fährt mit dem Fahrrad zur Arbeit.", "Sie fährt mit dem Rad zur Arbeit.", "Mit dem Fahrrad fährt sie zur Arbeit.", "Sie fährt zur Arbeit mit dem Fahrrad."]
+        },
+        {
+          "id": "gt1-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Ich fahre mit dem Zug.",
+          "translation": "I'm going by train."
+        },
+        {
+          "id": "gt1-e15",
+          "type": "SHADOW",
+          "text": "Fährst du mit dem Auto? Nein, ich gehe zu Fuß.",
+          "translation": "Are you going by car? No, I'm walking.",
+          "hint": "Fuß has a long oo, like 'food'."
+        }
+      ]
+    },
+    {
+      "id": "gt2-nehmen",
+      "title": "Take the bus",
+      "kind": "LEARN",
+      "introduces": ["nehmen", "einsteigen", "aussteigen", "umsteigen", "wie-lange-dauert-das"],
+      "exercises": [
+        {
+          "id": "gt2-e1",
+          "type": "TEACH",
+          "title": "nehmen: to take",
+          "body": "**nehmen** = to take. In the *du* and *er / sie* forms the *e* changes to **i**, the *h* drops out and the *m* doubles:\n\n- ich nehme\n- du **nimmst**\n- er / sie **nimmt**\n- wir nehmen\n- ihr nehmt\n- sie / Sie nehmen\n\nYou *take* a bus or a train, just like in English.",
+          "examples": [
+            { "text": "Ich nehme den Bus.", "translation": "I'm taking the bus." },
+            { "text": "Nimmst du die U-Bahn?", "translation": "Are you taking the underground?" },
+            { "text": "Er nimmt ein Taxi.", "translation": "He's taking a taxi." }
+          ]
+        },
+        {
+          "id": "gt2-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "ich nehme", "base": "I take" },
+            { "target": "du nimmst", "base": "you take (informal)" },
+            { "target": "sie nimmt", "base": "she takes" },
+            { "target": "wir nehmen", "base": "we take" },
+            { "target": "Sie nehmen", "base": "you take (formal)" }
+          ]
+        },
+        {
+          "id": "gt2-e3",
+          "type": "CLOZE",
+          "before": "Er",
+          "after": "den Bus.",
+          "accepted": ["nimmt"],
+          "translation": "He takes the bus.",
+          "hint": "nehmen → er …"
+        },
+        {
+          "id": "gt2-e4",
+          "type": "TEACH",
+          "title": "den Bus or dem Bus?",
+          "body": "There are two ways to say *I'm going by bus*:\n\n- *Ich nehme **den** Bus.* After *nehmen*, the bus is the object, so *der* becomes **den**, as you learnt in Unit 10. *die* and *das* don't change.\n- *Ich fahre mit **dem** Bus.* After *mit*, it's the dative: *der* and *das* become **dem**, *die* becomes **der**.\n\nSame meaning, different little word, different form. The word before the noun decides.",
+          "examples": [
+            { "text": "Ich nehme den Zug.", "translation": "I'm taking the train." },
+            { "text": "Ich fahre mit dem Zug.", "translation": "I'm going by train." },
+            { "text": "Wir nehmen die Straßenbahn.", "translation": "We're taking the tram." },
+            { "text": "Wir fahren mit der Straßenbahn.", "translation": "We're going by tram." }
+          ]
+        },
+        {
+          "id": "gt2-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which one is right?",
+          "prompt": "I'm going by train.",
+          "promptLanguage": "BASE",
+          "options": ["Ich fahre mit dem Zug.", "Ich fahre mit den Zug.", "Ich nehme dem Zug."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "gt2-e6",
+          "type": "TEACH",
+          "title": "mit einem Freund: with a friend",
+          "body": "*mit* also means *with* a person. **ein** changes after *mit* too:\n\n- **ein** → **einem** (der and das words)\n- **eine** → **einer** (die words)\n\n*mein, dein, sein* and *ihr* follow the same pattern: *mit **meinem** Bruder, mit **meiner** Mutter*.",
+          "examples": [
+            { "text": "Ich fahre mit einem Freund.", "translation": "I'm going with a friend." },
+            { "text": "Er fährt mit einer Freundin.", "translation": "He's going with a friend." },
+            { "text": "Sie kommt mit ihrem Vater.", "translation": "She's coming with her father." },
+            { "text": "Ich fahre mit meiner Mutter.", "translation": "I'm going with my mother." }
+          ]
+        },
+        {
+          "id": "gt2-e7",
+          "type": "CLOZE",
+          "before": "Ich fahre mit",
+          "after": "Schwester.",
+          "accepted": ["meiner"],
+          "translation": "I'm going with my sister.",
+          "hint": "my, die Schwester → mit …"
+        },
+        {
+          "id": "gt2-e8",
+          "type": "TEACH",
+          "title": "Getting on, off and changing",
+          "body": "Three separable verbs, built on *steigen* (to climb):\n\n- **einsteigen** = to get on, get in\n- **aussteigen** = to get off, get out\n- **umsteigen** = to change (trains or buses)\n\nJust like *aufstehen*, the prefix jumps to the end: *Ich **steige** hier **aus**.* After *müssen* or *können*, the verb stays in one piece at the end: *Ich muss hier **aussteigen**.*\n\nStress the prefix: **EIN**steigen, **AUS**steigen, **UM**steigen.",
+          "examples": [
+            { "text": "Wir steigen hier ein.", "translation": "We're getting on here." },
+            { "text": "Ich steige hier aus.", "translation": "I'm getting off here." },
+            { "text": "Wo steigen wir um?", "translation": "Where do we change?" },
+            { "text": "Muss ich umsteigen?", "translation": "Do I have to change?" }
+          ]
+        },
+        {
+          "id": "gt2-e9",
+          "type": "WORD_ORDER",
+          "translation": "I'm getting off here.",
+          "answer": "Ich steige hier aus.",
+          "distractors": ["ein", "steigen"]
+        },
+        {
+          "id": "gt2-e10",
+          "type": "TEACH",
+          "title": "Wie lange dauert das?",
+          "body": "**Wie lange dauert das?** = How long does it take? (*dauern* = to last, to take time)\n\nAnswer with an amount of time: *zehn Minuten, eine Stunde*. Or in a full sentence: *Das dauert zehn Minuten.*",
+          "examples": [
+            { "text": "Wie lange dauert das?", "translation": "How long does it take?" },
+            { "text": "Zwanzig Minuten.", "translation": "Twenty minutes." },
+            { "text": "Mit dem Bus dauert das eine Stunde.", "translation": "By bus it takes an hour." }
+          ]
+        },
+        {
+          "id": "gt2-e11",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Someone asks you this. Which answer fits?",
+          "prompt": "Wie lange dauert das?",
+          "promptLanguage": "TARGET",
+          "options": ["Um zwanzig Uhr.", "Zwanzig Minuten.", "Mit dem Bus."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "gt2-e12",
+          "type": "TRANSLATE",
+          "source": "Wir nehmen die Straßenbahn.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["We're taking the tram.", "We are taking the tram.", "We take the tram.", "We're taking the streetcar.", "We take the streetcar."]
+        },
+        {
+          "id": "gt2-e13",
+          "type": "TRANSLATE",
+          "source": "Do I have to change?",
+          "sourceLanguage": "BASE",
+          "accepted": ["Muss ich umsteigen?"]
+        },
+        {
+          "id": "gt2-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Sie nimmt den Bus.",
+          "translation": "She takes the bus."
+        },
+        {
+          "id": "gt2-e15",
+          "type": "SHADOW",
+          "text": "Wie lange dauert das? Zwanzig Minuten.",
+          "translation": "How long does it take? Twenty minutes.",
+          "hint": "dauert: DOW-ert, like the 'ow' in 'now'."
+        }
+      ]
+    },
+    {
+      "id": "gt3-zum-zur",
+      "title": "To the station: zum and zur",
+      "kind": "LEARN",
+      "introduces": ["zu", "wie-komme-ich-zum", "flughafen", "nach-place", "nach-hause"],
+      "exercises": [
+        {
+          "id": "gt3-e1",
+          "type": "TEACH",
+          "title": "zu: to a place",
+          "body": "**zu** = to. Like *mit*, it takes the dative, and it almost always merges with the article:\n\n- zu + dem = **zum** (der and das words)\n- zu + der = **zur** (die words)\n\nYou already know one: *Ich gehe **zur** Arbeit.*",
+          "examples": [
+            { "text": "zum Bahnhof", "translation": "to the train station" },
+            { "text": "zum Kino", "translation": "to the cinema" },
+            { "text": "zur Post", "translation": "to the post office" },
+            { "text": "Ich gehe zum Supermarkt.", "translation": "I'm going to the supermarket." },
+            { "text": "Wir fahren zur Bank.", "translation": "We're driving to the bank." }
+          ]
+        },
+        {
+          "id": "gt3-e2",
+          "type": "CLOZE",
+          "before": "Ich gehe",
+          "after": "Apotheke.",
+          "accepted": ["zur"],
+          "translation": "I'm going to the pharmacy.",
+          "hint": "die Apotheke → zu + der"
+        },
+        {
+          "id": "gt3-e3",
+          "type": "TEACH",
+          "title": "Wie komme ich zum …?",
+          "body": "**Wie komme ich zum …?** = How do I get to …? Use **zur** for *die* words: *Wie komme ich zur Post?*\n\n**der Flughafen** = the airport. It's *Flug* (flight) + *Hafen* (harbour).\n\nStart with *Entschuldigung* to be polite.",
+          "examples": [
+            { "text": "Entschuldigung, wie komme ich zum Bahnhof?", "translation": "Excuse me, how do I get to the train station?" },
+            { "text": "Wie komme ich zur Haltestelle?", "translation": "How do I get to the stop?" },
+            { "text": "Wie komme ich zum Flughafen?", "translation": "How do I get to the airport?" }
+          ]
+        },
+        {
+          "id": "gt3-e4",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "zum Bahnhof", "base": "to the train station" },
+            { "target": "zur Post", "base": "to the post office" },
+            { "target": "zum Flughafen", "base": "to the airport" },
+            { "target": "zur Haltestelle", "base": "to the stop" },
+            { "target": "zum Park", "base": "to the park" }
+          ]
+        },
+        {
+          "id": "gt3-e5",
+          "type": "WORD_ORDER",
+          "translation": "Excuse me, how do I get to the airport?",
+          "answer": "Entschuldigung, wie komme ich zum Flughafen?",
+          "distractors": ["zur", "kommt"]
+        },
+        {
+          "id": "gt3-e6",
+          "type": "TEACH",
+          "title": "nach Berlin, nach Hause",
+          "body": "For **cities and countries**, which have no article, use **nach** instead of *zu*:\n\n- *Ich fahre **nach** Berlin.*\n- *Wir fahren **nach** Österreich.*\n\nGoing home is always **nach Hause**. Learn it as a chunk.\n\nSo: *zum Bahnhof* (a place in town), but *nach Berlin* (a city).",
+          "examples": [
+            { "text": "Ich fahre morgen nach Berlin.", "translation": "I'm going to Berlin tomorrow." },
+            { "text": "Fährt der Zug nach Wien?", "translation": "Does the train go to Vienna?" },
+            { "text": "Um sechs Uhr gehe ich nach Hause.", "translation": "At six o'clock I go home." }
+          ]
+        },
+        {
+          "id": "gt3-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which word fits? Wir fahren ___ Hamburg.",
+          "prompt": "We're going to Hamburg.",
+          "promptLanguage": "BASE",
+          "options": ["zum", "nach", "zur"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "gt3-e8",
+          "type": "CLOZE",
+          "before": "Um sechs Uhr gehe ich",
+          "after": "Hause.",
+          "accepted": ["nach"],
+          "translation": "At six o'clock I go home.",
+          "hint": "home, as a destination"
+        },
+        {
+          "id": "gt3-e9",
+          "type": "TEACH",
+          "title": "im Zug, in der Stadt: where you are",
+          "body": "**in** also takes the dative when it says *where something is*:\n\n- in + dem = **im**: *im Park, im Zug, im Bahnhof*\n- *in der* has no short form: *in der Stadt, in der U-Bahn*\n\nYou've seen both already: *im Mai* and *Ich wohne in der Stadt.*",
+          "examples": [
+            { "text": "Ich bin im Zug.", "translation": "I'm on the train." },
+            { "text": "Sie ist in der U-Bahn.", "translation": "She's on the underground." },
+            { "text": "Wir sind im Park.", "translation": "We're in the park." },
+            { "text": "Der Supermarkt ist im Bahnhof.", "translation": "The supermarket is in the station." }
+          ]
+        },
+        {
+          "id": "gt3-e10",
+          "type": "CLOZE",
+          "before": "Ich bin",
+          "after": "Bus.",
+          "accepted": ["im"],
+          "translation": "I'm on the bus.",
+          "hint": "der Bus, where you are: in + dem"
+        },
+        {
+          "id": "gt3-e11",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which fits? Lena ist ___ Stadt.",
+          "prompt": "Lena is in town.",
+          "promptLanguage": "BASE",
+          "options": ["im", "in der", "zur"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "gt3-e12",
+          "type": "TRANSLATE",
+          "source": "How do I get to the train station?",
+          "sourceLanguage": "BASE",
+          "accepted": ["Wie komme ich zum Bahnhof?", "Entschuldigung, wie komme ich zum Bahnhof?"]
+        },
+        {
+          "id": "gt3-e13",
+          "type": "TRANSLATE",
+          "source": "Ich fahre mit dem Zug nach Berlin.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["I'm going to Berlin by train.", "I am going to Berlin by train.", "I'm taking the train to Berlin.", "I go to Berlin by train.", "I'm travelling to Berlin by train.", "I'm traveling to Berlin by train.", "I'm going by train to Berlin."]
+        },
+        {
+          "id": "gt3-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Wie komme ich zur Post?",
+          "translation": "How do I get to the post office?"
+        },
+        {
+          "id": "gt3-e15",
+          "type": "SHADOW",
+          "text": "Entschuldigung, wie komme ich zum Flughafen?",
+          "translation": "Excuse me, how do I get to the airport?",
+          "hint": "Flughafen: FLOOK-hah-fen, stress the first syllable."
+        }
+      ]
+    },
+    {
+      "id": "gt4-imperative",
+      "title": "Go straight ahead!",
+      "kind": "LEARN",
+      "introduces": ["ampel", "ecke"],
+      "exercises": [
+        {
+          "id": "gt4-e1",
+          "type": "TEACH",
+          "title": "Nehmen Sie die U-Bahn!",
+          "body": "To give directions or instructions, use the **imperative**. For someone you call *Sie*, put the verb **first** and *Sie* right after it:\n\n- *Sie nehmen die U-Bahn.* = You take the underground.\n- ***Nehmen Sie** die U-Bahn!* = Take the underground!\n\nIt looks like a question, but your voice goes down at the end. Separable prefixes still go to the end: *Steigen Sie hier **aus**!*",
+          "examples": [
+            { "text": "Gehen Sie geradeaus!", "translation": "Go straight ahead!" },
+            { "text": "Nehmen Sie den Bus!", "translation": "Take the bus!" },
+            { "text": "Fahren Sie mit der Straßenbahn!", "translation": "Go by tram!" },
+            { "text": "Steigen Sie hier aus!", "translation": "Get off here!" }
+          ]
+        },
+        {
+          "id": "gt4-e2",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which is the polite instruction?",
+          "prompt": "Take the underground!",
+          "promptLanguage": "BASE",
+          "options": ["Nehmen Sie die U-Bahn!", "Nehmen die U-Bahn Sie!", "Sie die U-Bahn nehmen!"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "gt4-e3",
+          "type": "WORD_ORDER",
+          "translation": "Go straight ahead! (formal)",
+          "answer": "Gehen Sie geradeaus!",
+          "distractors": ["Geh", "du"]
+        },
+        {
+          "id": "gt4-e4",
+          "type": "TEACH",
+          "title": "die Ampel, die Ecke",
+          "body": "- **die Ampel** = the traffic lights\n- **die Ecke** = the corner\n\nTo say *at the traffic lights* and *on the corner*, use **an der Ampel** and **an der Ecke**. *an* means *at*, and it takes the dative *der*, just like *mit der*. Learn them as chunks.",
+          "examples": [
+            { "text": "Gehen Sie an der Ampel links.", "translation": "Turn left at the traffic lights." },
+            { "text": "Fahren Sie an der Ecke rechts.", "translation": "Turn right at the corner." },
+            { "text": "Die Apotheke ist an der Ecke.", "translation": "The pharmacy is on the corner." }
+          ]
+        },
+        {
+          "id": "gt4-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Ampel", "base": "the traffic lights" },
+            { "target": "die Ecke", "base": "the corner" },
+            { "target": "an der Ampel", "base": "at the traffic lights" },
+            { "target": "an der Ecke", "base": "on the corner" },
+            { "target": "geradeaus", "base": "straight ahead" }
+          ]
+        },
+        {
+          "id": "gt4-e6",
+          "type": "CLOZE",
+          "before": "Gehen Sie an der",
+          "after": "rechts.",
+          "accepted": ["Ampel"],
+          "translation": "Turn right at the traffic lights.",
+          "hint": "the traffic lights"
+        },
+        {
+          "id": "gt4-e7",
+          "type": "TEACH",
+          "title": "Nimm den Bus! The du-form",
+          "body": "For a friend, take the *du* form and drop **du** and **-st**:\n\n- du gehst → **Geh!**\n- du nimmst → **Nimm!**\n- du steigst aus → **Steig aus!**\n\nOne catch: if the *du* form has an **ä**, it goes back to **a**: du fährst → **Fahr!** You'll sometimes hear an extra *-e* (*Fahre!*), which is fine too.\n\nFor several friends, use the *ihr* form without *ihr*: *Nehmt den Bus!*",
+          "examples": [
+            { "text": "Nimm den Bus!", "translation": "Take the bus!" },
+            { "text": "Fahr geradeaus!", "translation": "Go straight ahead!" },
+            { "text": "Steig hier aus!", "translation": "Get off here!" },
+            { "text": "Geh zu Fuß!", "translation": "Walk!" }
+          ]
+        },
+        {
+          "id": "gt4-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "You're telling a friend. Which is right?",
+          "prompt": "Take the bus!",
+          "promptLanguage": "BASE",
+          "options": ["Nimmst den Bus!", "Nimm den Bus!", "Nehm den Bus!"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "gt4-e9",
+          "type": "CLOZE",
+          "before": "",
+          "after": "geradeaus!",
+          "accepted": ["Fahr", "Fahre"],
+          "translation": "Drive straight ahead! (to a friend)",
+          "hint": "fahren, du-form: du fährst → …"
+        },
+        {
+          "id": "gt4-e10",
+          "type": "WORD_ORDER",
+          "translation": "Get off here! (to a friend)",
+          "answer": "Steig hier aus!",
+          "distractors": ["Steigst", "ein"]
+        },
+        {
+          "id": "gt4-e11",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "A stranger asks: Wie komme ich zum Bahnhof? Which answer is polite?",
+          "prompt": "Wie komme ich zum Bahnhof?",
+          "promptLanguage": "TARGET",
+          "options": ["Nimm die Straßenbahn!", "Nehmen Sie die Straßenbahn.", "Nehmt die Straßenbahn!"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "gt4-e12",
+          "type": "TRANSLATE",
+          "source": "Turn left at the traffic lights. (formal)",
+          "sourceLanguage": "BASE",
+          "accepted": ["Gehen Sie an der Ampel links.", "Gehen Sie an der Ampel links!", "Fahren Sie an der Ampel links.", "Fahren Sie an der Ampel links!", "Gehen Sie bitte an der Ampel links."]
+        },
+        {
+          "id": "gt4-e13",
+          "type": "TRANSLATE",
+          "source": "Nimm die U-Bahn. Das ist nicht weit.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Take the underground. It isn't far.", "Take the underground. It's not far.", "Take the subway. It isn't far.", "Take the subway. It's not far.", "Take the metro. It isn't far.", "Take the metro. It's not far.", "Take the tube. It isn't far.", "Take the tube. It's not far.", "Take the underground. That isn't far.", "Take the underground. It is not far."]
+        },
+        {
+          "id": "gt4-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Gehen Sie an der Ecke rechts.",
+          "translation": "Turn right at the corner."
+        },
+        {
+          "id": "gt4-e15",
+          "type": "SHADOW",
+          "text": "Gehen Sie geradeaus und dann an der Ampel links.",
+          "translation": "Go straight ahead and then turn left at the traffic lights.",
+          "hint": "Let your voice go down: it's an instruction, not a question."
+        }
+      ]
+    },
+    {
+      "id": "gt5-station",
+      "title": "At the train station",
+      "kind": "PRACTICE",
+      "introduces": ["fahrkarte", "gleis", "hin-und-zurueck", "abfahren", "gute-fahrt"],
+      "exercises": [
+        {
+          "id": "gt5-e1",
+          "type": "TEACH",
+          "title": "Buying a ticket",
+          "body": "- **die Fahrkarte** = the ticket\n- **einfach** = one way, **hin und zurück** = return (there and back)\n- **das Gleis** = the platform: *Gleis drei* = platform three\n- **abfahren** = to leave, depart. It's separable: *Der Zug **fährt** um zehn Uhr **ab**.*\n- **Gute Fahrt!** = Have a good journey!\n\nAsk for a ticket with *zu* or *nach*: *Eine Fahrkarte **zum** Flughafen / **nach** Berlin, bitte.*",
+          "examples": [
+            { "text": "Eine Fahrkarte nach Berlin, bitte.", "translation": "A ticket to Berlin, please." },
+            { "text": "Einfach oder hin und zurück?", "translation": "One way or return?" },
+            { "text": "Welches Gleis?", "translation": "Which platform?" },
+            { "text": "Der Zug fährt um zehn Uhr ab.", "translation": "The train leaves at ten o'clock." }
+          ]
+        },
+        {
+          "id": "gt5-e2",
+          "type": "TEACH",
+          "title": "Am Bahnhof",
+          "body": "Tom is at the train station. He needs to get to the airport. Read along, and tap each line to hear it.",
+          "examples": [
+            { "text": "Guten Tag! Wie komme ich zum Flughafen?", "translation": "Tom: Hello! How do I get to the airport?" },
+            { "text": "Nehmen Sie den Zug. Das dauert vierzig Minuten.", "translation": "Clerk: Take the train. It takes forty minutes." },
+            { "text": "Gut. Eine Fahrkarte zum Flughafen, bitte.", "translation": "Tom: Good. A ticket to the airport, please." },
+            { "text": "Einfach oder hin und zurück?", "translation": "Clerk: One way or return?" },
+            { "text": "Hin und zurück, bitte. Muss ich umsteigen?", "translation": "Tom: Return, please. Do I have to change?" },
+            { "text": "Ja, Sie müssen in Neustadt umsteigen. Das macht vierzehn Euro.", "translation": "Clerk: Yes, you have to change in Neustadt. That's fourteen euros." },
+            { "text": "Und welches Gleis?", "translation": "Tom: And which platform?" },
+            { "text": "Gleis sieben. Der Zug fährt um zehn Uhr zwölf ab.", "translation": "Clerk: Platform seven. The train leaves at 10:12." },
+            { "text": "Danke schön!", "translation": "Tom: Thank you very much!" },
+            { "text": "Bitte. Gute Fahrt!", "translation": "Clerk: You're welcome. Have a good journey!" }
+          ]
+        },
+        {
+          "id": "gt5-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: which ticket does Tom buy?",
+          "prompt": "Hin und zurück, bitte.",
+          "promptLanguage": "TARGET",
+          "options": ["a return ticket", "a one-way ticket", "a ticket to Neustadt"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "gt5-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: where does the train leave from, and when?",
+          "prompt": "der Zug zum Flughafen",
+          "promptLanguage": "TARGET",
+          "options": ["platform 7 at 10:12", "platform 12 at 10:07", "platform 7 at 12:10"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "gt5-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: does Tom have to change trains?",
+          "prompt": "Muss ich umsteigen?",
+          "promptLanguage": "TARGET",
+          "options": ["No, the train goes straight there.", "Yes, in Neustadt.", "Yes, at the airport."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 1
+        },
+        {
+          "id": "gt5-e6",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Fahrkarte", "base": "the ticket" },
+            { "target": "das Gleis", "base": "the platform" },
+            { "target": "hin und zurück", "base": "return (there and back)" },
+            { "target": "abfahren", "base": "to depart" },
+            { "target": "Gute Fahrt!", "base": "Have a good journey!" }
+          ]
+        },
+        {
+          "id": "gt5-e7",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Getting on or getting off?",
+          "options": ["Ich steige hier ein.", "Ich steige hier aus."],
+          "answerIndex": 1
+        },
+        {
+          "id": "gt5-e8",
+          "type": "WORD_ORDER",
+          "translation": "A ticket to the airport, please.",
+          "answer": "Eine Fahrkarte zum Flughafen, bitte.",
+          "distractors": ["zur", "Ein"]
+        },
+        {
+          "id": "gt5-e9",
+          "type": "CLOZE",
+          "before": "Der Zug fährt um zehn Uhr",
+          "after": ".",
+          "accepted": ["ab"],
+          "translation": "The train leaves at ten o'clock.",
+          "hint": "abfahren: the prefix goes to the end"
+        },
+        {
+          "id": "gt5-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "The clerk asks this, and you want a return ticket. What do you say?",
+          "prompt": "Einfach oder hin und zurück?",
+          "promptLanguage": "TARGET",
+          "options": ["Gleis sieben, bitte.", "Hin und zurück, bitte.", "Gute Fahrt!"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "gt5-e11",
+          "type": "TRANSLATE",
+          "source": "When does the train leave?",
+          "sourceLanguage": "BASE",
+          "accepted": ["Wann fährt der Zug ab?", "Wann fährt der Zug?"]
+        },
+        {
+          "id": "gt5-e12",
+          "type": "TRANSLATE",
+          "source": "Take the train to the airport. (formal)",
+          "sourceLanguage": "BASE",
+          "accepted": ["Nehmen Sie den Zug zum Flughafen.", "Nehmen Sie den Zug zum Flughafen!", "Fahren Sie mit dem Zug zum Flughafen.", "Fahren Sie mit dem Zug zum Flughafen!", "Nehmen Sie bitte den Zug zum Flughafen."]
+        },
+        {
+          "id": "gt5-e13",
+          "type": "TRANSLATE",
+          "source": "Sie müssen in Neustadt umsteigen.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["You have to change in Neustadt.", "You have to change trains in Neustadt.", "You must change in Neustadt.", "You must change trains in Neustadt.", "You need to change in Neustadt.", "You need to change trains in Neustadt.", "They have to change in Neustadt.", "They have to change trains in Neustadt."]
+        },
+        {
+          "id": "gt5-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Der Zug fährt um zehn Uhr ab.",
+          "translation": "The train leaves at ten o'clock."
+        },
+        {
+          "id": "gt5-e15",
+          "type": "SHADOW",
+          "text": "Guten Tag! Eine Fahrkarte zum Flughafen, bitte. Hin und zurück.",
+          "translation": "Hello! A ticket to the airport, please. Return.",
+          "hint": "zurück: tsoo-RÜK, stress the second syllable and round your lips for the ü."
+        }
+      ]
+    }
+  ]
+}

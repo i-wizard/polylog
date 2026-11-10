@@ -1,0 +1,843 @@
+{
+  "id": "08-termine",
+  "level": "A1",
+  "title": "Appointments",
+  "description": "Days, months and making appointments, with am, im, um and the modal verbs können, müssen and wollen.",
+  "icon": "📅",
+  "vocab": [
+    { "id": "montag", "text": "Montag", "translations": ["Monday"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Montage", "pronunciation": "MOHN-tahk", "example": { "text": "Ich arbeite am Montag.", "translation": "I work on Monday." } },
+    { "id": "dienstag", "text": "Dienstag", "translations": ["Tuesday"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Dienstage", "pronunciation": "DEENS-tahk", "example": { "text": "Hast du am Dienstag Zeit?", "translation": "Are you free on Tuesday?" } },
+    { "id": "mittwoch", "text": "Mittwoch", "translations": ["Wednesday"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Mittwoche", "pronunciation": "MIT-vokh (back-of-throat ch)", "example": { "text": "Heute ist Mittwoch.", "translation": "Today is Wednesday." } },
+    { "id": "donnerstag", "text": "Donnerstag", "translations": ["Thursday"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Donnerstage", "pronunciation": "DON-ers-tahk", "example": { "text": "Der Termin ist am Donnerstag.", "translation": "The appointment is on Thursday." } },
+    { "id": "freitag", "text": "Freitag", "translations": ["Friday"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Freitage", "pronunciation": "FRY-tahk", "example": { "text": "Am Freitag kann ich leider nicht.", "translation": "Unfortunately I can't on Friday." } },
+    { "id": "samstag", "text": "Samstag", "translations": ["Saturday"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Samstage", "pronunciation": "ZAMS-tahk", "example": { "text": "Was machst du am Samstag?", "translation": "What are you doing on Saturday?" } },
+    { "id": "sonntag", "text": "Sonntag", "translations": ["Sunday"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Sonntage", "pronunciation": "ZON-tahk", "example": { "text": "Am Sonntag kochen wir.", "translation": "On Sunday we're cooking." } },
+    { "id": "tag", "text": "Tag", "translations": ["day"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Tage", "pronunciation": "tahk", "example": { "text": "Ein Tag hat vierundzwanzig Stunden.", "translation": "A day has twenty-four hours." } },
+    { "id": "heute", "text": "heute", "translations": ["today"], "partOfSpeech": "ADVERB", "pronunciation": "HOY-te", "example": { "text": "Heute ist Montag.", "translation": "Today is Monday." } },
+    { "id": "am", "text": "am", "translations": ["on (with days)", "on"], "partOfSpeech": "PREPOSITION", "pronunciation": "am", "example": { "text": "Wir kochen am Sonntag.", "translation": "We're cooking on Sunday." } },
+    { "id": "morgen", "text": "morgen", "translations": ["tomorrow"], "partOfSpeech": "ADVERB", "pronunciation": "MOR-gen", "example": { "text": "Morgen habe ich Zeit.", "translation": "I'm free tomorrow." } },
+    { "id": "uebermorgen", "text": "übermorgen", "translations": ["the day after tomorrow", "day after tomorrow"], "partOfSpeech": "ADVERB", "pronunciation": "Ü-ber-mor-gen (ü: ee with rounded lips)", "example": { "text": "Übermorgen ist Sonntag.", "translation": "The day after tomorrow is Sunday." } },
+    { "id": "woche", "text": "Woche", "translations": ["week"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Wochen", "pronunciation": "VO-khe (back-of-throat ch)", "example": { "text": "Die Woche hat sieben Tage.", "translation": "The week has seven days." } },
+    { "id": "wochenende", "text": "Wochenende", "translations": ["weekend"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Wochenenden", "pronunciation": "VO-khen-en-de", "example": { "text": "Was machst du am Wochenende?", "translation": "What are you doing at the weekend?" } },
+    { "id": "monat", "text": "Monat", "translations": ["month"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Monate", "pronunciation": "MOH-naht", "example": { "text": "Ein Jahr hat zwölf Monate.", "translation": "A year has twelve months." } },
+    { "id": "im", "text": "im", "translations": ["in (with months)", "in"], "partOfSpeech": "PREPOSITION", "pronunciation": "im", "example": { "text": "Mein Geburtstag ist im Mai.", "translation": "My birthday is in May." } },
+    { "id": "koennen", "text": "können", "translations": ["can", "to be able to"], "partOfSpeech": "VERB", "pronunciation": "KÖN-nen (ö: ay with rounded lips)", "example": { "text": "Kannst du am Montag kommen?", "translation": "Can you come on Monday?" } },
+    { "id": "zeit", "text": "Zeit", "translations": ["time"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Zeiten", "pronunciation": "tsite", "example": { "text": "Hast du heute Zeit?", "translation": "Are you free today?" } },
+    { "id": "wann", "text": "wann", "translations": ["when"], "partOfSpeech": "QUESTION_WORD", "pronunciation": "van", "example": { "text": "Wann ist der Termin?", "translation": "When is the appointment?" } },
+    { "id": "wann-hast-du-zeit", "text": "Wann hast du Zeit?", "translations": ["When are you free? (informal)", "When do you have time?"], "partOfSpeech": "PHRASE", "pronunciation": "van hast doo TSITE", "example": { "text": "Wann hast du Zeit? Am Samstag?", "translation": "When are you free? On Saturday?" } },
+    { "id": "leider", "text": "leider", "translations": ["unfortunately"], "partOfSpeech": "ADVERB", "pronunciation": "LY-der", "example": { "text": "Ich kann leider nicht.", "translation": "Unfortunately I can't." } },
+    { "id": "vielleicht", "text": "vielleicht", "translations": ["maybe", "perhaps"], "partOfSpeech": "ADVERB", "pronunciation": "fee-LYKHT (soft ch)", "example": { "text": "Vielleicht am Dienstag?", "translation": "Maybe on Tuesday?" } },
+    { "id": "das-geht", "text": "Das geht.", "translations": ["That works.", "That's fine.", "That's possible."], "partOfSpeech": "PHRASE", "pronunciation": "das GATE", "example": { "text": "Am Freitag um acht Uhr? Ja, das geht.", "translation": "On Friday at eight? Yes, that works." } },
+    { "id": "muessen", "text": "müssen", "translations": ["must", "to have to"], "partOfSpeech": "VERB", "pronunciation": "MÜS-sen (ü: ee with rounded lips)", "example": { "text": "Ich muss morgen arbeiten.", "translation": "I have to work tomorrow." } },
+    { "id": "wollen", "text": "wollen", "translations": ["to want"], "partOfSpeech": "VERB", "pronunciation": "VOL-len", "example": { "text": "Ich will Deutsch lernen.", "translation": "I want to learn German." } },
+    { "id": "termin", "text": "Termin", "translations": ["appointment"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Termine", "pronunciation": "ter-MEEN", "example": { "text": "Ich habe morgen einen Termin.", "translation": "I have an appointment tomorrow." } },
+    { "id": "arzt", "text": "Arzt", "translations": ["doctor (male)", "doctor"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Ärzte", "pronunciation": "ahrtst", "example": { "text": "Der Arzt hat am Montag Zeit.", "translation": "The doctor is free on Monday." } },
+    { "id": "aerztin", "text": "Ärztin", "translations": ["doctor (female)", "doctor"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Ärztinnen", "pronunciation": "AIRTS-tin", "example": { "text": "Meine Schwester ist Ärztin.", "translation": "My sister is a doctor." } },
+    { "id": "praxis", "text": "Praxis", "translations": ["doctor's practice", "doctor's office", "surgery"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Praxen", "pronunciation": "PRAK-sis", "example": { "text": "Praxis Dr. Weber, guten Tag!", "translation": "Dr. Weber's practice, hello!" } },
+    { "id": "das-passt", "text": "Das passt.", "translations": ["That suits me.", "That fits.", "That works for me."], "partOfSpeech": "PHRASE", "pronunciation": "das PAST", "example": { "text": "Um zehn Uhr? Das passt gut.", "translation": "At ten? That suits me fine." } },
+    { "id": "kein-problem", "text": "Kein Problem!", "translations": ["No problem!"], "partOfSpeech": "PHRASE", "pronunciation": "kine pro-BLAME", "example": { "text": "Kein Problem! Dann am Mittwoch.", "translation": "No problem! Wednesday, then." } },
+    { "id": "bis", "text": "bis", "translations": ["until", "till"], "partOfSpeech": "PREPOSITION", "pronunciation": "bis", "example": { "text": "Bis morgen!", "translation": "See you tomorrow!" } }
+  ],
+  "grammarNotes": [
+    {
+      "id": "termine-days-months",
+      "title": "Days and months",
+      "body": "All days and months are **der** words: *der Montag, der Mai*.\n\nMost days end in **-tag** (day), said *tahk*: a *g* at the end of a word sounds like *k*. **Mittwoch** means *midweek*.\n\nThe months look a lot like English: *Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember*.",
+      "table": [
+        ["German", "English"],
+        ["der Montag", "Monday"],
+        ["der Dienstag", "Tuesday"],
+        ["der Mittwoch", "Wednesday"],
+        ["der Donnerstag", "Thursday"],
+        ["der Freitag", "Friday"],
+        ["der Samstag", "Saturday"],
+        ["der Sonntag", "Sunday"]
+      ]
+    },
+    {
+      "id": "termine-am-im-um",
+      "title": "am, im, um: saying when",
+      "body": "German uses three little words to say *when*:\n\n- **um** + a clock time: *um zehn Uhr* (at ten o'clock)\n- **am** + a day: *am Montag* (on Monday), and *am Wochenende* (at the weekend)\n- **im** + a month: *im Mai* (in May)\n\n**heute, morgen** and **übermorgen** need no little word: *Morgen habe ich Zeit.*\n\nPut the day before the time: *am Montag um zehn Uhr*.",
+      "table": [
+        ["Word", "Used with", "Example"],
+        ["um", "clock times", "um zehn Uhr"],
+        ["am", "days, the weekend", "am Montag, am Wochenende"],
+        ["im", "months", "im Juli"],
+        ["(none)", "heute, morgen, übermorgen", "Morgen arbeite ich."]
+      ]
+    },
+    {
+      "id": "termine-modals",
+      "title": "Modal verbs: können, müssen, wollen",
+      "body": "**können** (can), **müssen** (must, to have to) and **wollen** (to want) are *modal verbs*. They follow their own pattern:\n\n- The singular has a different vowel: *ich kann*, *ich muss*, *ich will*.\n- **ich** and **er / sie / es** have no ending and look the same: *ich kann, sie kann*.\n- The plural is regular again.\n\nCareful: **ich will** means *I want*, not *I will*. To ask or order politely, use *möchten* instead.",
+      "table": [
+        ["Person", "können", "müssen", "wollen"],
+        ["ich", "kann", "muss", "will"],
+        ["du", "kannst", "musst", "willst"],
+        ["er / sie / es", "kann", "muss", "will"],
+        ["wir", "können", "müssen", "wollen"],
+        ["ihr", "könnt", "müsst", "wollt"],
+        ["sie / Sie", "können", "müssen", "wollen"]
+      ]
+    },
+    {
+      "id": "termine-word-order",
+      "title": "Word order: verb second, infinitive last",
+      "body": "The verb with the ending always comes **second** in a statement. With a modal verb, the second verb goes to the **very end**, in its infinitive form.\n\nYou can start with a time instead of the subject. The verb stays second, so the subject moves **after** it: *Morgen muss ich arbeiten.*\n\nIn a yes/no question the modal comes first: *Kannst du am Montag kommen?*\n\nWhen the meaning is clear, the second verb can be left out: *Am Montag kann ich nicht.* (I can't make it on Monday.)",
+      "table": [
+        ["1", "2 (verb)", "middle", "end"],
+        ["Ich", "muss", "morgen", "arbeiten."],
+        ["Morgen", "muss", "ich", "arbeiten."],
+        ["Wir", "wollen", "am Sonntag", "kochen."],
+        ["Am Montag", "kann", "ich leider nicht.", ""]
+      ]
+    },
+    {
+      "id": "termine-phrases",
+      "title": "Making an appointment",
+      "body": "Learn these as fixed phrases. Use the *Sie* forms with a doctor's practice or anyone you don't know well.\n\n**leider** (unfortunately) makes a *no* polite. **Das geht.** means *that's possible*, and **Das passt.** means *that suits me*.",
+      "table": [
+        ["You want to…", "Say"],
+        ["ask if someone is free", "Haben Sie am Montag Zeit? / Hast du am Montag Zeit?"],
+        ["ask when", "Wann haben Sie Zeit? / Wann hast du Zeit?"],
+        ["suggest a time", "Geht es um zehn Uhr?"],
+        ["say yes", "Das geht. / Das passt."],
+        ["say no politely", "Am Dienstag kann ich leider nicht."],
+        ["say it's fine", "Kein Problem!"],
+        ["say goodbye", "Bis Montag!"]
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ap1-days",
+      "title": "Days of the week",
+      "kind": "LEARN",
+      "introduces": ["montag", "dienstag", "mittwoch", "donnerstag", "freitag", "samstag", "sonntag", "tag", "heute", "am"],
+      "exercises": [
+        {
+          "id": "ap1-e1",
+          "type": "TEACH",
+          "title": "The days of the week",
+          "body": "All days are *der* words, and most end in **-tag** (day). Only **Mittwoch** is different: it means *midweek*.\n\nA *g* at the end of a word sounds like *k*, so *-tag* is said *tahk*. Tap to hear them.",
+          "examples": [
+            { "text": "der Montag", "translation": "Monday" },
+            { "text": "der Dienstag", "translation": "Tuesday" },
+            { "text": "der Mittwoch", "translation": "Wednesday" },
+            { "text": "der Donnerstag", "translation": "Thursday" },
+            { "text": "der Freitag", "translation": "Friday" },
+            { "text": "der Samstag", "translation": "Saturday" },
+            { "text": "der Sonntag", "translation": "Sunday" }
+          ]
+        },
+        {
+          "id": "ap1-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "Montag", "base": "Monday" },
+            { "target": "Dienstag", "base": "Tuesday" },
+            { "target": "Mittwoch", "base": "Wednesday" },
+            { "target": "Donnerstag", "base": "Thursday" },
+            { "target": "Freitag", "base": "Friday" }
+          ]
+        },
+        {
+          "id": "ap1-e3",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Mittwoch",
+          "promptLanguage": "TARGET",
+          "options": ["Wednesday", "Monday", "Thursday"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "ap1-e4",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which day do you hear?",
+          "options": ["Dienstag", "Donnerstag"],
+          "answerIndex": 1
+        },
+        {
+          "id": "ap1-e5",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Saturday",
+          "promptLanguage": "BASE",
+          "options": ["Sonntag", "Samstag", "Montag"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "ap1-e6",
+          "type": "TEACH",
+          "title": "Heute ist Montag.",
+          "body": "- **heute** = today\n- **der Tag** = the day. You know it from *Guten Tag!*\n\nTo say what day it is, you don't need an article: **Heute ist Freitag.**",
+          "examples": [
+            { "text": "Heute ist Montag.", "translation": "Today is Monday." },
+            { "text": "Ist heute Freitag?", "translation": "Is it Friday today?" },
+            { "text": "Nein, heute ist Donnerstag.", "translation": "No, today is Thursday." }
+          ]
+        },
+        {
+          "id": "ap1-e7",
+          "type": "CLOZE",
+          "before": "Heute ist",
+          "after": ".",
+          "accepted": ["Sonntag"],
+          "translation": "Today is Sunday.",
+          "hint": "Sunday"
+        },
+        {
+          "id": "ap1-e8",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "Samstag", "base": "Saturday" },
+            { "target": "Sonntag", "base": "Sunday" },
+            { "target": "heute", "base": "today" },
+            { "target": "der Tag", "base": "the day" }
+          ]
+        },
+        {
+          "id": "ap1-e9",
+          "type": "TEACH",
+          "title": "am Montag: on Monday",
+          "body": "To say **on** a day, use **am**: *am Montag* = on Monday.\n\nIt goes after the verb, just like in English: *Ich arbeite **am Montag**.*",
+          "examples": [
+            { "text": "am Montag", "translation": "on Monday" },
+            { "text": "Ich arbeite am Montag.", "translation": "I work on Monday." },
+            { "text": "Was machst du am Sonntag?", "translation": "What are you doing on Sunday?" }
+          ]
+        },
+        {
+          "id": "ap1-e10",
+          "type": "CLOZE",
+          "before": "Ich arbeite",
+          "after": "Freitag.",
+          "accepted": ["am"],
+          "translation": "I work on Friday.",
+          "hint": "on, before a day"
+        },
+        {
+          "id": "ap1-e11",
+          "type": "WORD_ORDER",
+          "translation": "What are you doing on Saturday? (informal)",
+          "answer": "Was machst du am Samstag?",
+          "distractors": ["im", "macht"]
+        },
+        {
+          "id": "ap1-e12",
+          "type": "TRANSLATE",
+          "source": "Today is Wednesday.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Heute ist Mittwoch."]
+        },
+        {
+          "id": "ap1-e13",
+          "type": "TRANSLATE",
+          "source": "Ich arbeite am Donnerstag.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["I work on Thursday.", "I'm working on Thursday.", "I am working on Thursday.", "I work Thursday.", "I'm working Thursday."]
+        },
+        {
+          "id": "ap1-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Heute ist Donnerstag.",
+          "translation": "Today is Thursday."
+        },
+        {
+          "id": "ap1-e15",
+          "type": "SHADOW",
+          "text": "Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag.",
+          "translation": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.",
+          "hint": "Stress the first syllable of every day, and end -tag with a k sound."
+        }
+      ]
+    },
+    {
+      "id": "ap2-when",
+      "title": "Tomorrow, weeks and months",
+      "kind": "LEARN",
+      "introduces": ["morgen", "uebermorgen", "woche", "wochenende", "monat", "im"],
+      "exercises": [
+        {
+          "id": "ap2-e1",
+          "type": "TEACH",
+          "title": "morgen and übermorgen",
+          "body": "- **heute** = today\n- **morgen** = tomorrow\n- **übermorgen** = the day after tomorrow\n\nDon't mix up **morgen** (tomorrow, small *m*) with **der Morgen** (the morning) in *Guten Morgen!*\n\nThese words need no *am*: *Morgen ist Samstag.*",
+          "mouthShapes": [
+            { "shape": "TIGHT_ROUNDED", "label": "ü", "caption": "übermorgen: say ee, then round your lips" }
+          ],
+          "examples": [
+            { "text": "Heute ist Freitag.", "translation": "Today is Friday." },
+            { "text": "Morgen ist Samstag.", "translation": "Tomorrow is Saturday." },
+            { "text": "Übermorgen ist Sonntag.", "translation": "The day after tomorrow is Sunday." }
+          ]
+        },
+        {
+          "id": "ap2-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "heute", "base": "today" },
+            { "target": "morgen", "base": "tomorrow" },
+            { "target": "übermorgen", "base": "the day after tomorrow" },
+            { "target": "Guten Morgen!", "base": "Good morning!" },
+            { "target": "am Sonntag", "base": "on Sunday" }
+          ]
+        },
+        {
+          "id": "ap2-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Heute ist Dienstag. Which day is übermorgen?",
+          "prompt": "Heute ist Dienstag.",
+          "promptLanguage": "TARGET",
+          "options": ["Mittwoch", "Donnerstag", "Freitag"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "ap2-e4",
+          "type": "TEACH",
+          "title": "Week, weekend, month",
+          "body": "- **die Woche** = the week\n- **das Wochenende** = the weekend (*Woche* + *das Ende*, the end)\n- **der Monat** = the month\n\nFor the weekend, say **am Wochenende**, just like *am Montag*.",
+          "examples": [
+            { "text": "Die Woche hat sieben Tage.", "translation": "The week has seven days." },
+            { "text": "Was machst du am Wochenende?", "translation": "What are you doing at the weekend?" },
+            { "text": "Ein Jahr hat zwölf Monate.", "translation": "A year has twelve months." }
+          ]
+        },
+        {
+          "id": "ap2-e5",
+          "type": "TEACH",
+          "title": "The months",
+          "body": "The months look a lot like English, and they're all *der* words. Tap to hear them.\n\n*Juni* and *Juli* sound very alike. On the phone, people often say **Juno** and **Julei** to keep them apart.",
+          "examples": [
+            { "text": "der Januar", "translation": "January" },
+            { "text": "der Februar", "translation": "February" },
+            { "text": "der März", "translation": "March" },
+            { "text": "der April", "translation": "April" },
+            { "text": "der Mai", "translation": "May" },
+            { "text": "der Juni", "translation": "June" },
+            { "text": "der Juli", "translation": "July" },
+            { "text": "der August", "translation": "August" },
+            { "text": "der September", "translation": "September" },
+            { "text": "der Oktober", "translation": "October" },
+            { "text": "der November", "translation": "November" },
+            { "text": "der Dezember", "translation": "December" }
+          ]
+        },
+        {
+          "id": "ap2-e6",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "Januar", "base": "January" },
+            { "target": "März", "base": "March" },
+            { "target": "Mai", "base": "May" },
+            { "target": "Oktober", "base": "October" },
+            { "target": "Dezember", "base": "December" }
+          ]
+        },
+        {
+          "id": "ap2-e7",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which month do you hear?",
+          "options": ["Juni", "Juli"],
+          "answerIndex": 1
+        },
+        {
+          "id": "ap2-e8",
+          "type": "TEACH",
+          "title": "im Mai: in May",
+          "body": "To say **in** a month, use **im**: *im Mai* = in May.\n\nNow you have three little words for *when*:\n\n- **um** + a clock time: *um acht Uhr*\n- **am** + a day: *am Montag, am Wochenende*\n- **im** + a month: *im Juli*\n\nPut the day before the time: *am Freitag um acht Uhr*.",
+          "examples": [
+            { "text": "Mein Geburtstag ist im Mai.", "translation": "My birthday is in May." },
+            { "text": "Das Konzert ist am Freitag um acht Uhr.", "translation": "The concert is on Friday at eight o'clock." }
+          ]
+        },
+        {
+          "id": "ap2-e9",
+          "type": "CLOZE",
+          "before": "Mein Geburtstag ist",
+          "after": "Juni.",
+          "accepted": ["im"],
+          "translation": "My birthday is in June.",
+          "hint": "in, before a month"
+        },
+        {
+          "id": "ap2-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "am, im or um? Das Konzert ist ___ acht Uhr.",
+          "prompt": "The concert is at eight o'clock.",
+          "promptLanguage": "BASE",
+          "options": ["am", "im", "um"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "ap2-e11",
+          "type": "TEACH",
+          "title": "Time first, verb second",
+          "body": "In a German statement, the verb always comes **second**. You can start with a time instead of *ich*, but then the subject moves **after** the verb:\n\n- *Ich arbeite morgen.*\n- ***Morgen** arbeite ich.*\n\nBoth mean *I'm working tomorrow*. Starting with the time is very common.",
+          "examples": [
+            { "text": "Morgen arbeite ich.", "translation": "I'm working tomorrow." },
+            { "text": "Am Samstag kochen wir.", "translation": "We're cooking on Saturday." },
+            { "text": "Im Mai wohnt sie in Wien.", "translation": "In May she's living in Vienna." }
+          ]
+        },
+        {
+          "id": "ap2-e12",
+          "type": "WORD_ORDER",
+          "translation": "On Sunday we're cooking. (start with the day)",
+          "answer": "Am Sonntag kochen wir.",
+          "distractors": ["Im", "ich"]
+        },
+        {
+          "id": "ap2-e13",
+          "type": "TRANSLATE",
+          "source": "Was machst du am Wochenende?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["What are you doing at the weekend?", "What are you doing on the weekend?", "What are you doing this weekend?", "What do you do at the weekend?", "What do you do on the weekend?", "What do you do at weekends?", "What do you do on weekends?"]
+        },
+        {
+          "id": "ap2-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Mein Geburtstag ist im Juli.",
+          "translation": "My birthday is in July."
+        },
+        {
+          "id": "ap2-e15",
+          "type": "SHADOW",
+          "text": "Morgen ist Freitag. Übermorgen ist Samstag.",
+          "translation": "Tomorrow is Friday. The day after tomorrow is Saturday.",
+          "hint": "übermorgen: round your lips for the ü, and stress the first syllable."
+        }
+      ]
+    },
+    {
+      "id": "ap3-koennen",
+      "title": "Can you? können",
+      "kind": "LEARN",
+      "introduces": ["koennen", "zeit", "wann", "wann-hast-du-zeit", "leider", "vielleicht", "das-geht"],
+      "exercises": [
+        {
+          "id": "ap3-e1",
+          "type": "TEACH",
+          "title": "können: can",
+          "body": "**können** = can, to be able to. It's a *modal verb*, so it has its own pattern:\n\n- ich **kann**\n- du **kannst**\n- er / sie **kann** (no *-t*!)\n- wir können\n- ihr könnt\n- sie / Sie können\n\nThe singular uses *a*; the plural keeps the *ö*.",
+          "mouthShapes": [
+            { "shape": "ROUNDED", "label": "ö", "caption": "können: say e, then round your lips" }
+          ],
+          "examples": [
+            { "text": "ich kann", "translation": "I can" },
+            { "text": "du kannst", "translation": "you can" },
+            { "text": "sie kann", "translation": "she can" },
+            { "text": "wir können", "translation": "we can" }
+          ]
+        },
+        {
+          "id": "ap3-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "ich kann", "base": "I can" },
+            { "target": "du kannst", "base": "you can" },
+            { "target": "er kann", "base": "he can" },
+            { "target": "wir können", "base": "we can" },
+            { "target": "ihr könnt", "base": "you all can" }
+          ]
+        },
+        {
+          "id": "ap3-e3",
+          "type": "TEACH",
+          "title": "The second verb goes to the end",
+          "body": "Like *möchten*, **können** usually comes with a second verb. *können* stays in second place, and the other verb goes to the **very end**, unchanged:\n\n- *Ich **kann** am Montag **kommen**.*\n- ***Kannst** du morgen **kochen**?*\n\nWhen it's clear what you mean, you can leave the second verb out: *Ich kann am Montag.* = I can make it on Monday.",
+          "examples": [
+            { "text": "Ich kann am Montag kommen.", "translation": "I can come on Monday." },
+            { "text": "Kannst du heute kochen?", "translation": "Can you cook today?" },
+            { "text": "Sie kann ein bisschen Deutsch sprechen.", "translation": "She can speak a little German." }
+          ]
+        },
+        {
+          "id": "ap3-e4",
+          "type": "CLOZE",
+          "before": "",
+          "after": "du morgen kommen?",
+          "accepted": ["Kannst"],
+          "translation": "Can you come tomorrow?",
+          "hint": "können → du …, starting a question"
+        },
+        {
+          "id": "ap3-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Where does the second verb go?",
+          "prompt": "Can you cook tomorrow?",
+          "promptLanguage": "BASE",
+          "options": ["Kannst du morgen kochen?", "Kannst du kochen morgen?", "Kochen du kannst morgen?"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "ap3-e6",
+          "type": "WORD_ORDER",
+          "translation": "I can come on Tuesday.",
+          "answer": "Ich kann am Dienstag kommen.",
+          "distractors": ["kommt", "im"]
+        },
+        {
+          "id": "ap3-e7",
+          "type": "TEACH",
+          "title": "Zeit and wann",
+          "body": "- **die Zeit** = time\n- **Zeit haben** = to have time, to be free\n- **wann** = when\n\n**Wann hast du Zeit?** is how you ask a friend *When are you free?* To someone you call *Sie*: **Wann haben Sie Zeit?**",
+          "examples": [
+            { "text": "Hast du am Samstag Zeit?", "translation": "Are you free on Saturday?" },
+            { "text": "Wann hast du Zeit?", "translation": "When are you free?" },
+            { "text": "Ich habe morgen Zeit.", "translation": "I'm free tomorrow." }
+          ]
+        },
+        {
+          "id": "ap3-e8",
+          "type": "CLOZE",
+          "before": "",
+          "after": "hast du Zeit?",
+          "accepted": ["Wann"],
+          "translation": "When are you free?",
+          "hint": "when"
+        },
+        {
+          "id": "ap3-e9",
+          "type": "TEACH",
+          "title": "Yes, no, maybe",
+          "body": "- **Das geht.** = That works. That's fine.\n- **leider** = unfortunately. It makes a *no* polite.\n- **vielleicht** = maybe\n\nTo say you can't make it, start with the day: **Am Montag kann ich leider nicht.** The verb is still second!",
+          "examples": [
+            { "text": "Ja, das geht!", "translation": "Yes, that works!" },
+            { "text": "Am Montag kann ich leider nicht.", "translation": "Unfortunately I can't on Monday." },
+            { "text": "Vielleicht am Dienstag?", "translation": "Maybe on Tuesday?" }
+          ]
+        },
+        {
+          "id": "ap3-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Your friend asks this, but you're busy on Friday. What do you say?",
+          "prompt": "Hast du am Freitag Zeit?",
+          "promptLanguage": "TARGET",
+          "options": ["Ja, das geht.", "Am Freitag kann ich leider nicht.", "Wann hast du Zeit?"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "ap3-e11",
+          "type": "WORD_ORDER",
+          "translation": "Unfortunately I can't on Monday. (start with the day)",
+          "answer": "Am Montag kann ich leider nicht.",
+          "distractors": ["kannst", "Im"]
+        },
+        {
+          "id": "ap3-e12",
+          "type": "TRANSLATE",
+          "source": "Are you free on Saturday? (informal)",
+          "sourceLanguage": "BASE",
+          "accepted": ["Hast du am Samstag Zeit?", "Hast du Samstag Zeit?", "Bist du am Samstag frei?"]
+        },
+        {
+          "id": "ap3-e13",
+          "type": "TRANSLATE",
+          "source": "Vielleicht kann ich morgen kommen.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Maybe I can come tomorrow.", "Perhaps I can come tomorrow.", "I can maybe come tomorrow.", "Maybe I can come tomorrow"]
+        },
+        {
+          "id": "ap3-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Wann hast du Zeit?",
+          "translation": "When are you free?"
+        },
+        {
+          "id": "ap3-e15",
+          "type": "SHADOW",
+          "text": "Am Dienstag kann ich leider nicht.",
+          "translation": "Unfortunately I can't on Tuesday.",
+          "hint": "leider: LY-der. Keep the a in kann short and clear."
+        }
+      ]
+    },
+    {
+      "id": "ap4-must-want",
+      "title": "Must and want",
+      "kind": "LEARN",
+      "introduces": ["muessen", "wollen", "termin", "arzt", "aerztin"],
+      "exercises": [
+        {
+          "id": "ap4-e1",
+          "type": "TEACH",
+          "title": "müssen: must, have to",
+          "body": "**müssen** = must, to have to. It works just like *können*: no ending for *ich* and *er/sie*, and the second verb goes to the end.\n\n- ich **muss**\n- du **musst**\n- er / sie **muss**\n- wir müssen\n- ihr müsst\n- sie / Sie müssen\n\nThe *ü* only appears in the plural.",
+          "examples": [
+            { "text": "Ich muss morgen arbeiten.", "translation": "I have to work tomorrow." },
+            { "text": "Musst du heute kochen?", "translation": "Do you have to cook today?" },
+            { "text": "Er muss am Samstag arbeiten.", "translation": "He has to work on Saturday." }
+          ]
+        },
+        {
+          "id": "ap4-e2",
+          "type": "CLOZE",
+          "before": "Ich",
+          "after": "morgen arbeiten.",
+          "accepted": ["muss"],
+          "translation": "I have to work tomorrow.",
+          "hint": "müssen → ich …"
+        },
+        {
+          "id": "ap4-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Wir ___ heute einkaufen.",
+          "prompt": "We have to go shopping today.",
+          "promptLanguage": "BASE",
+          "options": ["muss", "müssen", "musst"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "ap4-e4",
+          "type": "WORD_ORDER",
+          "translation": "I have to work on Saturday.",
+          "answer": "Ich muss am Samstag arbeiten.",
+          "distractors": ["arbeite", "musst"]
+        },
+        {
+          "id": "ap4-e5",
+          "type": "TEACH",
+          "title": "wollen: to want",
+          "body": "**wollen** = to want. Watch out: **ich will** means *I want*, not *I will*!\n\n- ich **will**\n- du **willst**\n- er / sie **will**\n- wir wollen\n- ihr wollt\n- sie / Sie wollen\n\n*wollen* is quite direct. To order or ask politely, use *möchten*: *Ich möchte einen Kaffee.*",
+          "examples": [
+            { "text": "Ich will Deutsch lernen.", "translation": "I want to learn German." },
+            { "text": "Willst du am Sonntag kochen?", "translation": "Do you want to cook on Sunday?" },
+            { "text": "Wir wollen am Wochenende schlafen.", "translation": "We want to sleep at the weekend." }
+          ]
+        },
+        {
+          "id": "ap4-e6",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "ich will", "base": "I want" },
+            { "target": "du willst", "base": "you want" },
+            { "target": "ich muss", "base": "I have to" },
+            { "target": "du musst", "base": "you have to" },
+            { "target": "ich kann", "base": "I can" }
+          ]
+        },
+        {
+          "id": "ap4-e7",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Ich will Deutsch lernen.",
+          "promptLanguage": "TARGET",
+          "options": ["I want to learn German.", "I will learn German.", "I can learn German."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "ap4-e8",
+          "type": "CLOZE",
+          "before": "",
+          "after": "du am Wochenende kochen?",
+          "accepted": ["Willst"],
+          "translation": "Do you want to cook at the weekend?",
+          "hint": "wollen → du …, starting a question"
+        },
+        {
+          "id": "ap4-e9",
+          "type": "TEACH",
+          "title": "Termin and Arzt",
+          "body": "- **der Termin** = the appointment: at the doctor's, at work or with a friend\n- **der Arzt** = the doctor (a man)\n- **die Ärztin** = the doctor (a woman)\n\nAdding **-in** makes the female form, just like *Freund* → *Freundin*. For jobs, German drops the *a*: *Sie ist Ärztin.* = She's a doctor.",
+          "examples": [
+            { "text": "Ich habe morgen einen Termin.", "translation": "I have an appointment tomorrow." },
+            { "text": "Der Arzt hat am Montag Zeit.", "translation": "The doctor is free on Monday." },
+            { "text": "Meine Schwester ist Ärztin.", "translation": "My sister is a doctor." }
+          ]
+        },
+        {
+          "id": "ap4-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "der, die or das? Think of Freundin.",
+          "prompt": "Ärztin",
+          "promptLanguage": "TARGET",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "ap4-e11",
+          "type": "TRANSLATE",
+          "source": "I have an appointment on Monday.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich habe am Montag einen Termin.", "Am Montag habe ich einen Termin.", "Ich habe einen Termin am Montag."]
+        },
+        {
+          "id": "ap4-e12",
+          "type": "TRANSLATE",
+          "source": "Musst du morgen arbeiten?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Do you have to work tomorrow?", "Must you work tomorrow?", "Have you got to work tomorrow?", "Do you need to work tomorrow?"]
+        },
+        {
+          "id": "ap4-e13",
+          "type": "TRANSLATE",
+          "source": "She wants to learn German.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Sie will Deutsch lernen."]
+        },
+        {
+          "id": "ap4-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Ich muss morgen arbeiten.",
+          "translation": "I have to work tomorrow."
+        },
+        {
+          "id": "ap4-e15",
+          "type": "SHADOW",
+          "text": "Ich habe am Montag einen Termin.",
+          "translation": "I have an appointment on Monday.",
+          "hint": "Termin: ter-MEEN, stress the second syllable."
+        }
+      ]
+    },
+    {
+      "id": "ap5-booking",
+      "title": "Booking an appointment",
+      "kind": "PRACTICE",
+      "introduces": ["praxis", "das-passt", "kein-problem", "bis"],
+      "exercises": [
+        {
+          "id": "ap5-e1",
+          "type": "TEACH",
+          "title": "On the phone",
+          "body": "A doctor's practice is **die Praxis**. Useful phrases for the call:\n\n- **Hier ist …** = This is … (saying who's calling)\n- **Ich möchte einen Termin machen.** = I'd like to make an appointment.\n- **Geht es um zehn Uhr?** = Does ten o'clock work?\n- **Das passt.** = That suits me.\n- **Kein Problem!** = No problem!\n- **Bis Montag!** = See you on Monday! (**bis** = until)",
+          "examples": [
+            { "text": "Hier ist Tom Becker.", "translation": "This is Tom Becker." },
+            { "text": "Ich möchte einen Termin machen.", "translation": "I'd like to make an appointment." },
+            { "text": "Geht es um zehn Uhr?", "translation": "Does ten o'clock work?" },
+            { "text": "Das passt gut.", "translation": "That suits me fine." },
+            { "text": "Bis Montag!", "translation": "See you on Monday!" }
+          ]
+        },
+        {
+          "id": "ap5-e2",
+          "type": "TEACH",
+          "title": "In der Praxis",
+          "body": "Tom calls his doctor's practice. Read along, and tap each line to hear it.",
+          "examples": [
+            { "text": "Praxis Dr. Weber, guten Tag!", "translation": "Receptionist: Dr. Weber's practice, hello!" },
+            { "text": "Guten Tag, hier ist Tom Becker. Ich möchte einen Termin machen.", "translation": "Tom: Hello, this is Tom Becker. I'd like to make an appointment." },
+            { "text": "Können Sie am Montag um neun Uhr?", "translation": "Receptionist: Can you make it on Monday at nine?" },
+            { "text": "Am Montag kann ich leider nicht. Ich muss arbeiten.", "translation": "Tom: Unfortunately I can't on Monday. I have to work." },
+            { "text": "Kein Problem. Haben Sie am Mittwoch Zeit?", "translation": "Receptionist: No problem. Are you free on Wednesday?" },
+            { "text": "Ja. Geht es um zehn Uhr?", "translation": "Tom: Yes. Does ten o'clock work?" },
+            { "text": "Ja, das geht. Am Mittwoch um zehn Uhr.", "translation": "Receptionist: Yes, that works. Wednesday at ten." },
+            { "text": "Das passt. Danke!", "translation": "Tom: That suits me. Thanks!" },
+            { "text": "Bis Mittwoch, Herr Becker. Auf Wiedersehen!", "translation": "Receptionist: See you on Wednesday, Mr Becker. Goodbye!" }
+          ]
+        },
+        {
+          "id": "ap5-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the call: why can't Tom come on Monday?",
+          "prompt": "Am Montag kann ich leider nicht.",
+          "promptLanguage": "TARGET",
+          "options": ["He has to work.", "He wants to sleep.", "He's cooking."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "ap5-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the call: when is Tom's appointment?",
+          "prompt": "Tom's appointment",
+          "promptLanguage": "BASE",
+          "options": ["Wednesday at 10:00", "Monday at 9:00", "Wednesday at 9:00"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "ap5-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Praxis", "base": "the doctor's practice" },
+            { "target": "Das passt.", "base": "That suits me." },
+            { "target": "Kein Problem!", "base": "No problem!" },
+            { "target": "Bis Montag!", "base": "See you on Monday!" },
+            { "target": "leider", "base": "unfortunately" }
+          ]
+        },
+        {
+          "id": "ap5-e6",
+          "type": "WORD_ORDER",
+          "translation": "I'd like to make an appointment.",
+          "answer": "Ich möchte einen Termin machen.",
+          "distractors": ["ein", "mache"]
+        },
+        {
+          "id": "ap5-e7",
+          "type": "CLOZE",
+          "before": "",
+          "after": "es um zehn Uhr?",
+          "accepted": ["Geht"],
+          "translation": "Does ten o'clock work?",
+          "hint": "gehen → es …"
+        },
+        {
+          "id": "ap5-e8",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which appointment do you hear?",
+          "options": ["Am Dienstag um neun Uhr.", "Am Donnerstag um neun Uhr."],
+          "answerIndex": 1
+        },
+        {
+          "id": "ap5-e9",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "The receptionist asks this, and Friday at eight suits you. What do you say?",
+          "prompt": "Geht es am Freitag um acht Uhr?",
+          "promptLanguage": "TARGET",
+          "options": ["Ja, das passt.", "Am Freitag kann ich leider nicht.", "Wann hast du Zeit?"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "ap5-e10",
+          "type": "TRANSLATE",
+          "source": "Are you free on Thursday? (formal)",
+          "sourceLanguage": "BASE",
+          "accepted": ["Haben Sie am Donnerstag Zeit?", "Haben Sie Donnerstag Zeit?", "Sind Sie am Donnerstag frei?"]
+        },
+        {
+          "id": "ap5-e11",
+          "type": "TRANSLATE",
+          "source": "Unfortunately I can't on Monday.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Am Montag kann ich leider nicht.", "Ich kann am Montag leider nicht.", "Leider kann ich am Montag nicht.", "Ich kann leider am Montag nicht."]
+        },
+        {
+          "id": "ap5-e12",
+          "type": "TRANSLATE",
+          "source": "Kein Problem. Geht es am Freitag?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["No problem. Does Friday work?", "No problem. Is Friday OK?", "No problem. Is Friday okay?", "No problem. Does Friday suit you?", "No problem. How about Friday?", "No problem. Is Friday possible?", "No problem. Does it work on Friday?"]
+        },
+        {
+          "id": "ap5-e13",
+          "type": "LISTEN_TYPE",
+          "text": "Haben Sie am Montag Zeit?",
+          "translation": "Are you free on Monday?"
+        },
+        {
+          "id": "ap5-e14",
+          "type": "SHADOW",
+          "text": "Guten Tag, hier ist Tom Becker. Ich möchte einen Termin machen.",
+          "translation": "Hello, this is Tom Becker. I'd like to make an appointment."
+        },
+        {
+          "id": "ap5-e15",
+          "type": "SHADOW",
+          "text": "Am Montag kann ich leider nicht. Geht es am Mittwoch?",
+          "translation": "Unfortunately I can't on Monday. Does Wednesday work?",
+          "hint": "Let your voice rise at the end of the question."
+        }
+      ]
+    }
+  ]
+}

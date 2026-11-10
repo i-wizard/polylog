@@ -1,0 +1,820 @@
+{
+  "id": "07-tag",
+  "level": "A1",
+  "title": "My day",
+  "description": "Tell the time, talk about your daily routine and split verbs like aufstehen.",
+  "icon": "⏰",
+  "vocab": [
+    { "id": "uhr", "text": "Uhr", "translations": ["o'clock", "clock", "watch"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Uhren", "pronunciation": "oor", "example": { "text": "Es ist drei Uhr.", "translation": "It's three o'clock." } },
+    { "id": "wie-spaet-ist-es", "text": "Wie spät ist es?", "translations": ["What time is it?"], "partOfSpeech": "PHRASE", "pronunciation": "vee SHPAYT ist es", "example": { "text": "Entschuldigung, wie spät ist es?", "translation": "Excuse me, what time is it?" } },
+    { "id": "um", "text": "um", "translations": ["at (a time)"], "partOfSpeech": "PREPOSITION", "pronunciation": "oom (short oo)", "example": { "text": "Ich lerne um acht Uhr Deutsch.", "translation": "I study German at eight o'clock." } },
+    { "id": "stunde", "text": "Stunde", "translations": ["hour"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Stunden", "pronunciation": "SHTOON-de", "example": { "text": "Eine Stunde hat sechzig Minuten.", "translation": "An hour has sixty minutes." } },
+    { "id": "minute", "text": "Minute", "translations": ["minute"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Minuten", "pronunciation": "mee-NOO-te", "example": { "text": "Ich komme in fünf Minuten.", "translation": "I'm coming in five minutes." } },
+    { "id": "halb", "text": "halb", "translations": ["half"], "partOfSpeech": "ADVERB", "pronunciation": "halp", "example": { "text": "Es ist halb vier.", "translation": "It's half past three (3:30)." } },
+    { "id": "viertel", "text": "Viertel", "translations": ["quarter"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Viertel", "pronunciation": "FIR-tel", "example": { "text": "Es ist Viertel nach acht.", "translation": "It's quarter past eight." } },
+    { "id": "nach-time", "text": "nach", "translations": ["past (telling the time)", "after"], "partOfSpeech": "PREPOSITION", "pronunciation": "nahkh (back-of-throat ch)", "example": { "text": "Es ist zehn nach drei.", "translation": "It's ten past three." } },
+    { "id": "vor-time", "text": "vor", "translations": ["to (telling the time)", "before"], "partOfSpeech": "PREPOSITION", "pronunciation": "for", "example": { "text": "Es ist Viertel vor neun.", "translation": "It's quarter to nine." } },
+    { "id": "aufstehen", "text": "aufstehen", "translations": ["to get up"], "partOfSpeech": "VERB", "pronunciation": "OWF-shtay-en", "example": { "text": "Ich stehe um sieben Uhr auf.", "translation": "I get up at seven o'clock." } },
+    { "id": "anfangen", "text": "anfangen", "translations": ["to start", "to begin"], "partOfSpeech": "VERB", "pronunciation": "AN-fang-en", "example": { "text": "Der Film fängt um acht Uhr an.", "translation": "The film starts at eight o'clock." } },
+    { "id": "einkaufen", "text": "einkaufen", "translations": ["to go shopping", "to shop"], "partOfSpeech": "VERB", "pronunciation": "INE-kow-fen", "example": { "text": "Ich kaufe abends ein.", "translation": "I go shopping in the evening." } },
+    { "id": "anrufen", "text": "anrufen", "translations": ["to call (on the phone)", "to phone", "to ring"], "partOfSpeech": "VERB", "pronunciation": "AN-roo-fen", "example": { "text": "Ich rufe meine Mutter an.", "translation": "I'm calling my mother." } },
+    { "id": "fernsehen", "text": "fernsehen", "translations": ["to watch TV", "to watch television"], "partOfSpeech": "VERB", "pronunciation": "FERN-zay-en", "example": { "text": "Wir sehen abends fern.", "translation": "We watch TV in the evening." } },
+    { "id": "immer", "text": "immer", "translations": ["always"], "partOfSpeech": "ADVERB", "pronunciation": "IM-mer", "example": { "text": "Ich stehe immer um sechs Uhr auf.", "translation": "I always get up at six o'clock." } },
+    { "id": "fruehstueck", "text": "Frühstück", "translations": ["breakfast"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Frühstücke", "pronunciation": "FRÜ-shtük (ü: ee with rounded lips)", "example": { "text": "Das Frühstück ist um acht Uhr.", "translation": "Breakfast is at eight o'clock." } },
+    { "id": "mittagessen", "text": "Mittagessen", "translations": ["lunch"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Mittagessen", "pronunciation": "MIT-tahk-es-sen", "example": { "text": "Das Mittagessen ist um eins.", "translation": "Lunch is at one." } },
+    { "id": "abendessen", "text": "Abendessen", "translations": ["dinner", "supper", "evening meal"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Abendessen", "pronunciation": "AH-bent-es-sen", "example": { "text": "Ich koche das Abendessen.", "translation": "I'm cooking dinner." } },
+    { "id": "fruehstuecken", "text": "frühstücken", "translations": ["to have breakfast"], "partOfSpeech": "VERB", "pronunciation": "FRÜ-shtük-en", "example": { "text": "Wir frühstücken um halb acht.", "translation": "We have breakfast at half past seven." } },
+    { "id": "kochen", "text": "kochen", "translations": ["to cook"], "partOfSpeech": "VERB", "pronunciation": "KOKH-en (back-of-throat ch)", "example": { "text": "Was kochst du?", "translation": "What are you cooking?" } },
+    { "id": "schlafen", "text": "schlafen", "translations": ["to sleep"], "partOfSpeech": "VERB", "pronunciation": "SHLAH-fen", "example": { "text": "Das Kind schläft.", "translation": "The child is sleeping." } },
+    { "id": "morgens", "text": "morgens", "translations": ["in the morning", "in the mornings"], "partOfSpeech": "ADVERB", "pronunciation": "MOR-gens", "example": { "text": "Morgens trinke ich Kaffee.", "translation": "In the morning I drink coffee." } },
+    { "id": "mittags", "text": "mittags", "translations": ["at midday", "at lunchtime", "at noon"], "partOfSpeech": "ADVERB", "pronunciation": "MIT-tahks", "example": { "text": "Mittags esse ich einen Salat.", "translation": "At midday I eat a salad." } },
+    { "id": "abends", "text": "abends", "translations": ["in the evening", "in the evenings"], "partOfSpeech": "ADVERB", "pronunciation": "AH-bents", "example": { "text": "Abends sehe ich fern.", "translation": "In the evening I watch TV." } },
+    { "id": "arbeiten", "text": "arbeiten", "translations": ["to work"], "partOfSpeech": "VERB", "pronunciation": "AR-bye-ten", "example": { "text": "Er arbeitet in Berlin.", "translation": "He works in Berlin." } },
+    { "id": "arbeit", "text": "Arbeit", "translations": ["work", "job"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Arbeiten", "pronunciation": "AR-bite", "example": { "text": "Die Arbeit fängt um neun Uhr an.", "translation": "Work starts at nine o'clock." } },
+    { "id": "gehen", "text": "gehen", "translations": ["to go", "to walk"], "partOfSpeech": "VERB", "pronunciation": "GAY-en", "example": { "text": "Ich gehe um elf Uhr ins Bett.", "translation": "I go to bed at eleven o'clock." } },
+    { "id": "zuerst", "text": "zuerst", "translations": ["first (of all)", "first", "at first"], "partOfSpeech": "ADVERB", "pronunciation": "tsoo-AIRST", "example": { "text": "Zuerst frühstücke ich.", "translation": "First I have breakfast." } },
+    { "id": "dann", "text": "dann", "translations": ["then"], "partOfSpeech": "ADVERB", "pronunciation": "dan", "example": { "text": "Zuerst stehe ich auf, dann trinke ich einen Kaffee.", "translation": "First I get up, then I drink a coffee." } },
+    { "id": "spaeter", "text": "später", "translations": ["later"], "partOfSpeech": "ADVERB", "pronunciation": "SHPAY-ter", "example": { "text": "Bis später!", "translation": "See you later!" } }
+  ],
+  "grammarNotes": [
+    {
+      "id": "tag-time",
+      "title": "Telling the time: full hours",
+      "body": "Ask **Wie spät ist es?** or **Wie viel Uhr ist es?** Answer with **Es ist … Uhr.**\n\n- One o'clock is **ein Uhr**, not *eins Uhr*. Without *Uhr* it's *Es ist eins.*\n- **um** + time = *at*: *um acht Uhr* = at eight o'clock. To ask *At what time?*, say **Um wie viel Uhr?**\n- **Uhr** is a time on the clock, **Stunde** is an amount of time: *drei Uhr* = three o'clock, *drei Stunden* = three hours.\n\nTimetables, shops and the radio use the 24-hour clock, with *Uhr* in the middle: *15:30* = **fünfzehn Uhr dreißig**, *8:10* = **acht Uhr zehn**.",
+      "table": [
+        ["Clock", "German"],
+        ["1:00", "ein Uhr"],
+        ["3:00", "drei Uhr"],
+        ["12:00", "zwölf Uhr"],
+        ["8:10", "acht Uhr zehn"],
+        ["15:30", "fünfzehn Uhr dreißig"]
+      ]
+    },
+    {
+      "id": "tag-halb",
+      "title": "halb, Viertel, nach and vor",
+      "body": "**halb** looks *forward* to the next hour: **halb vier** means halfway to four, so it's **3:30**, not 4:30. Always think one hour ahead: *halb acht* = 7:30, *halb eins* = 12:30.\n\n**Viertel nach** (quarter past) and **Viertel vor** (quarter to) work just like English. Minutes use **nach** and **vor** too: *zehn nach zwei* = 2:10, *zehn vor zwei* = 1:50.\n\nWith *halb*, *Viertel*, *nach* and *vor*, leave out *Uhr*: *Es ist halb vier.*\n\nNear the half hour you'll also hear times counted from *halb*: *fünf vor halb vier* = 3:25, *fünf nach halb vier* = 3:35.",
+      "table": [
+        ["Time", "German", "Think of it as"],
+        ["3:05", "fünf nach drei", "5 past 3"],
+        ["3:15", "Viertel nach drei", "quarter past 3"],
+        ["3:20", "zwanzig nach drei", "20 past 3"],
+        ["3:30", "halb vier", "halfway to 4"],
+        ["3:45", "Viertel vor vier", "quarter to 4"],
+        ["3:50", "zehn vor vier", "10 to 4"]
+      ]
+    },
+    {
+      "id": "tag-separable",
+      "title": "Separable verbs",
+      "body": "Verbs like **aufstehen** have a small prefix that splits off. In a normal sentence, the verb goes **second** as usual and the prefix jumps to the **very end**:\n\n- *aufstehen* → Ich **stehe** um sieben Uhr **auf**.\n- *anrufen* → Ich **rufe** meine Mutter **an**.\n\nWhen the verb is in its dictionary form, it stays in one piece, for example after *möchten*: *Ich möchte **fernsehen**.*\n\nThe stress is always on the prefix: **AUF**stehen, **AN**rufen, **FERN**sehen.",
+      "table": [
+        ["Verb", "Prefix", "In a sentence"],
+        ["aufstehen", "auf", "Ich stehe um sieben Uhr auf."],
+        ["anfangen", "an", "Der Film fängt um acht Uhr an."],
+        ["einkaufen", "ein", "Ich kaufe um fünf Uhr ein."],
+        ["anrufen", "an", "Ich rufe Anna an."],
+        ["fernsehen", "fern", "Wir sehen abends fern."]
+      ]
+    },
+    {
+      "id": "tag-verb-second",
+      "title": "Time first, verb second",
+      "body": "In a German statement, the verb is always the **second** item. Usually the subject comes first, but you can start with a time instead. Then the subject moves to just **after** the verb:\n\n- *Ich stehe um sieben Uhr auf.*\n- *Um sieben Uhr stehe ich auf.*\n- *Morgens trinke ich Kaffee.*\n- *Zuerst frühstücke ich, dann gehe ich zur Arbeit.*\n\nSecond means the second *item*, not the second word: *um sieben Uhr* counts as one item. You'll practise this more in Unit 9.",
+      "table": [
+        ["1st", "2nd: verb", "Rest"],
+        ["Ich", "stehe", "um sieben Uhr auf."],
+        ["Um sieben Uhr", "stehe", "ich auf."],
+        ["Morgens", "trinke", "ich Kaffee."],
+        ["Dann", "frühstücke", "ich."]
+      ]
+    },
+    {
+      "id": "tag-vowel-change",
+      "title": "schlafen, anfangen, fernsehen: vowel changes",
+      "body": "Like *sprechen* and *essen*, some verbs change their vowel in the **du** and **er/sie/es** forms only:\n\n- **a → ä**: *schlafen → du schläfst*, *anfangen → er fängt an*\n- **e → ie**: *fernsehen → sie sieht fern*\n\nAll the other forms are regular.",
+      "table": [
+        ["Person", "schlafen", "anfangen", "fernsehen"],
+        ["ich", "schlafe", "fange an", "sehe fern"],
+        ["du", "schläfst", "fängst an", "siehst fern"],
+        ["er / sie / es", "schläft", "fängt an", "sieht fern"],
+        ["wir", "schlafen", "fangen an", "sehen fern"],
+        ["ihr", "schlaft", "fangt an", "seht fern"],
+        ["sie / Sie", "schlafen", "fangen an", "sehen fern"]
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "dy1-what-time",
+      "title": "What time is it?",
+      "kind": "LEARN",
+      "introduces": ["uhr", "wie-spaet-ist-es", "um", "stunde", "minute"],
+      "exercises": [
+        {
+          "id": "dy1-e1",
+          "type": "TEACH",
+          "title": "Wie spät ist es?",
+          "body": "To ask the time, say **Wie spät ist es?** (literally *How late is it?*). You'll also hear **Wie viel Uhr ist es?** Both mean *What time is it?*\n\nFor full hours, answer **Es ist … Uhr.** with the numbers you already know. **die Uhr** is the clock, and in times it means *o'clock*.",
+          "examples": [
+            { "text": "Wie spät ist es?", "translation": "What time is it?" },
+            { "text": "Wie viel Uhr ist es?", "translation": "What time is it?" },
+            { "text": "Es ist drei Uhr.", "translation": "It's three o'clock." },
+            { "text": "Es ist zehn Uhr.", "translation": "It's ten o'clock." }
+          ]
+        },
+        {
+          "id": "dy1-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "zwei Uhr", "base": "2:00" },
+            { "target": "fünf Uhr", "base": "5:00" },
+            { "target": "acht Uhr", "base": "8:00" },
+            { "target": "elf Uhr", "base": "11:00" },
+            { "target": "zwölf Uhr", "base": "12:00" }
+          ]
+        },
+        {
+          "id": "dy1-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "What time is it?",
+          "prompt": "Es ist neun Uhr.",
+          "promptLanguage": "TARGET",
+          "options": ["9:00", "19:00", "7:00"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "dy1-e4",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which time do you hear?",
+          "options": ["Es ist zwei Uhr.", "Es ist drei Uhr."],
+          "answerIndex": 1
+        },
+        {
+          "id": "dy1-e5",
+          "type": "TEACH",
+          "title": "ein Uhr, not eins Uhr",
+          "body": "One small trap: right before **Uhr**, *eins* loses its *s*: **Es ist ein Uhr.**\n\nIn everyday speech people often drop *Uhr* altogether. Then *eins* keeps its *s*: **Es ist eins.**",
+          "examples": [
+            { "text": "Es ist ein Uhr.", "translation": "It's one o'clock." },
+            { "text": "Es ist eins.", "translation": "It's one." },
+            { "text": "Es ist sieben.", "translation": "It's seven." }
+          ]
+        },
+        {
+          "id": "dy1-e6",
+          "type": "CLOZE",
+          "before": "Es ist",
+          "after": "Uhr.",
+          "accepted": ["ein"],
+          "translation": "It's one o'clock.",
+          "hint": "one, right before Uhr"
+        },
+        {
+          "id": "dy1-e7",
+          "type": "WORD_ORDER",
+          "translation": "Excuse me, what time is it?",
+          "answer": "Entschuldigung, wie spät ist es?",
+          "distractors": ["Uhr", "sind"]
+        },
+        {
+          "id": "dy1-e8",
+          "type": "TEACH",
+          "title": "um: at",
+          "body": "**um** + a time = *at* that time:\n\n- *Es ist acht Uhr.* It's eight o'clock.\n- *Ich lerne **um** acht Uhr Deutsch.* I study German at eight o'clock.\n\nTo ask *At what time?*, say **Um wie viel Uhr?**",
+          "examples": [
+            { "text": "Um wie viel Uhr?", "translation": "At what time?" },
+            { "text": "Um neun Uhr.", "translation": "At nine o'clock." },
+            { "text": "Ich lerne um acht Uhr Deutsch.", "translation": "I study German at eight o'clock." }
+          ]
+        },
+        {
+          "id": "dy1-e9",
+          "type": "WORD_ORDER",
+          "translation": "I study German at eight o'clock.",
+          "answer": "Ich lerne um acht Uhr Deutsch.",
+          "alternatives": ["Ich lerne Deutsch um acht Uhr."],
+          "distractors": ["in", "lernst"]
+        },
+        {
+          "id": "dy1-e10",
+          "type": "TEACH",
+          "title": "Stunde and Minute",
+          "body": "- **die Stunde** = the hour, plural **Stunden**\n- **die Minute** = the minute, plural **Minuten**\n\nDon't mix up *Uhr* and *Stunde*. **Uhr** is a time on the clock: *drei Uhr* = three o'clock. **Stunde** is an amount of time: *drei Stunden* = three hours.",
+          "examples": [
+            { "text": "Eine Stunde hat sechzig Minuten.", "translation": "An hour has sixty minutes." },
+            { "text": "Ich lerne zwei Stunden Deutsch.", "translation": "I study German for two hours." },
+            { "text": "Ich komme in fünf Minuten.", "translation": "I'm coming in five minutes." }
+          ]
+        },
+        {
+          "id": "dy1-e11",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Uhr or Stunden? Ich lerne drei ___ Deutsch.",
+          "prompt": "I study German for three hours.",
+          "promptLanguage": "BASE",
+          "options": ["Uhr", "Stunden"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "dy1-e12",
+          "type": "TRANSLATE",
+          "source": "It's four o'clock.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Es ist vier Uhr.", "Es ist vier.", "Es ist 4 Uhr."]
+        },
+        {
+          "id": "dy1-e13",
+          "type": "TRANSLATE",
+          "source": "Ich komme in zehn Minuten.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["I'm coming in ten minutes.", "I am coming in ten minutes.", "I'll come in ten minutes.", "I will come in ten minutes.", "I'll be there in ten minutes.", "I come in ten minutes.", "I'm coming in 10 minutes.", "I'll come in 10 minutes.", "I'll be there in 10 minutes."]
+        },
+        {
+          "id": "dy1-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Es ist ein Uhr.",
+          "translation": "It's one o'clock."
+        },
+        {
+          "id": "dy1-e15",
+          "type": "SHADOW",
+          "text": "Wie spät ist es? Es ist elf Uhr.",
+          "translation": "What time is it? It's eleven o'clock.",
+          "hint": "spät: sp sounds like shp. Uhr: a long oo."
+        }
+      ]
+    },
+    {
+      "id": "dy2-half-quarter",
+      "title": "Half past, quarter to",
+      "kind": "LEARN",
+      "introduces": ["halb", "viertel", "nach-time", "vor-time"],
+      "exercises": [
+        {
+          "id": "dy2-e1",
+          "type": "TEACH",
+          "title": "halb: the big trap",
+          "body": "This one catches every English speaker:\n\n**halb vier** does *not* mean half past four. It means **half past three** (3:30).\n\nGerman counts *towards* the next hour: *halb vier* = halfway to four. So always think one hour **ahead**:\n\n- 3:30 = **halb vier**\n- 7:30 = **halb acht**\n- 12:30 = **halb eins**\n\nThere's no *Uhr* here: *Es ist halb vier.*",
+          "examples": [
+            { "text": "Es ist halb vier.", "translation": "It's 3:30.", "hint": "halfway to four" },
+            { "text": "Es ist halb acht.", "translation": "It's 7:30.", "hint": "halfway to eight" },
+            { "text": "Es ist halb eins.", "translation": "It's 12:30.", "hint": "without Uhr, eins keeps its s" }
+          ]
+        },
+        {
+          "id": "dy2-e2",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "What time is it? Remember: think one hour ahead.",
+          "prompt": "Es ist halb vier.",
+          "promptLanguage": "TARGET",
+          "options": ["3:30", "4:30", "4:00"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "dy2-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "How do you say this time?",
+          "prompt": "9:30",
+          "promptLanguage": "BASE",
+          "options": ["halb neun", "halb zehn", "neun Uhr halb"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "dy2-e4",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which time do you hear?",
+          "options": ["Es ist halb drei.", "Es ist halb vier."],
+          "answerIndex": 0
+        },
+        {
+          "id": "dy2-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "halb zwei", "base": "1:30" },
+            { "target": "halb sechs", "base": "5:30" },
+            { "target": "halb elf", "base": "10:30" },
+            { "target": "halb eins", "base": "12:30" }
+          ]
+        },
+        {
+          "id": "dy2-e6",
+          "type": "TEACH",
+          "title": "Viertel nach, Viertel vor",
+          "body": "**das Viertel** = the quarter. *Viertel* starts with an *f* sound, just like *vier*.\n\n- **nach** = past: *Viertel nach drei* = 3:15\n- **vor** = to: *Viertel vor vier* = 3:45\n\nThese work just like English *quarter past* and *quarter to*. No trap this time!",
+          "examples": [
+            { "text": "Es ist Viertel nach drei.", "translation": "It's quarter past three." },
+            { "text": "Es ist Viertel vor vier.", "translation": "It's quarter to four." },
+            { "text": "Es ist Viertel nach zwölf.", "translation": "It's quarter past twelve." }
+          ]
+        },
+        {
+          "id": "dy2-e7",
+          "type": "CLOZE",
+          "before": "Es ist Viertel",
+          "after": "acht.",
+          "accepted": ["nach"],
+          "translation": "It's quarter past eight.",
+          "hint": "past"
+        },
+        {
+          "id": "dy2-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "What time is it?",
+          "prompt": "Es ist Viertel vor zwölf.",
+          "promptLanguage": "TARGET",
+          "options": ["11:45", "12:15", "12:45"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "dy2-e9",
+          "type": "TEACH",
+          "title": "Five past, ten to",
+          "body": "Minutes work the same way: number + **nach** or **vor** + hour.\n\n- *fünf nach sechs* = 6:05\n- *zwanzig nach sechs* = 6:20\n- *zehn vor sieben* = 6:50\n\nPeople usually leave out *Minuten* here, just as English drops *minutes* in *ten past six*.",
+          "examples": [
+            { "text": "Es ist fünf nach sechs.", "translation": "It's five past six." },
+            { "text": "Es ist zwanzig nach sechs.", "translation": "It's twenty past six." },
+            { "text": "Es ist zehn vor sieben.", "translation": "It's ten to seven." }
+          ]
+        },
+        {
+          "id": "dy2-e10",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Past or to?",
+          "options": ["Es ist zehn nach sechs.", "Es ist zehn vor sechs."],
+          "answerIndex": 1
+        },
+        {
+          "id": "dy2-e11",
+          "type": "WORD_ORDER",
+          "translation": "It's twenty past four.",
+          "answer": "Es ist zwanzig nach vier.",
+          "distractors": ["vor", "Uhr"]
+        },
+        {
+          "id": "dy2-e12",
+          "type": "TRANSLATE",
+          "source": "It's half past seven.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Es ist halb acht.", "Es ist sieben Uhr dreißig."]
+        },
+        {
+          "id": "dy2-e13",
+          "type": "TRANSLATE",
+          "source": "Es ist Viertel nach neun.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["It's quarter past nine.", "It is quarter past nine.", "It's a quarter past nine.", "It is a quarter past nine.", "It's 9:15.", "It is 9:15.", "It's nine fifteen.", "It is nine fifteen."]
+        },
+        {
+          "id": "dy2-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Es ist halb neun.",
+          "translation": "It's 8:30."
+        },
+        {
+          "id": "dy2-e15",
+          "type": "SHADOW",
+          "text": "Es ist Viertel vor acht.",
+          "translation": "It's quarter to eight.",
+          "hint": "Viertel: the v sounds like f, just like in vier."
+        }
+      ]
+    },
+    {
+      "id": "dy3-separable",
+      "title": "Getting up",
+      "kind": "LEARN",
+      "introduces": ["aufstehen", "anfangen", "einkaufen", "anrufen", "fernsehen", "immer"],
+      "exercises": [
+        {
+          "id": "dy3-e1",
+          "type": "TEACH",
+          "title": "Separable verbs",
+          "body": "Some German verbs come in two parts: a small **prefix** and a verb. **aufstehen** (to get up) is *auf* + *stehen*.\n\nIn a normal sentence the verb splits. The main part goes second, as usual, and the **prefix jumps to the very end**:\n\n- *aufstehen* → Ich **stehe** um sieben Uhr **auf**.\n\nThe stress is always on the prefix: **AUF**stehen.",
+          "examples": [
+            { "text": "aufstehen", "translation": "to get up", "hint": "stress: AUF-stehen" },
+            { "text": "Ich stehe um sieben Uhr auf.", "translation": "I get up at seven o'clock." },
+            { "text": "Er steht um sechs Uhr auf.", "translation": "He gets up at six o'clock." },
+            { "text": "Um wie viel Uhr stehst du auf?", "translation": "What time do you get up?" }
+          ]
+        },
+        {
+          "id": "dy3-e2",
+          "type": "CLOZE",
+          "before": "Ich stehe um acht Uhr",
+          "after": ".",
+          "accepted": ["auf"],
+          "translation": "I get up at eight o'clock.",
+          "hint": "the prefix of aufstehen"
+        },
+        {
+          "id": "dy3-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which sentence is right?",
+          "prompt": "He gets up at six o'clock.",
+          "promptLanguage": "BASE",
+          "options": ["Er steht um sechs Uhr auf.", "Er aufsteht um sechs Uhr.", "Er um sechs Uhr aufsteht."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "dy3-e4",
+          "type": "TEACH",
+          "title": "More separable verbs",
+          "body": "These all split the same way, and the prefix is always stressed:\n\n- **AN**fangen = to start\n- **EIN**kaufen = to go shopping\n- **AN**rufen = to call (on the phone)\n- **FERN**sehen = to watch TV\n\nOne thing to watch: **anfangen** changes *a* to *ä* with *er/sie/es*: *Der Film **fängt** um acht Uhr **an**.*",
+          "examples": [
+            { "text": "Der Film fängt um acht Uhr an.", "translation": "The film starts at eight o'clock." },
+            { "text": "Ich kaufe um fünf Uhr ein.", "translation": "I go shopping at five o'clock." },
+            { "text": "Ich rufe meine Mutter an.", "translation": "I'm calling my mother." },
+            { "text": "Wir sehen um neun Uhr fern.", "translation": "We watch TV at nine o'clock." }
+          ]
+        },
+        {
+          "id": "dy3-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "aufstehen", "base": "to get up" },
+            { "target": "anfangen", "base": "to start" },
+            { "target": "einkaufen", "base": "to go shopping" },
+            { "target": "anrufen", "base": "to call (on the phone)" },
+            { "target": "fernsehen", "base": "to watch TV" }
+          ]
+        },
+        {
+          "id": "dy3-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which sentence is right?",
+          "prompt": "I'm calling Anna.",
+          "promptLanguage": "BASE",
+          "options": ["Ich rufe an Anna.", "Ich anrufe Anna.", "Ich rufe Anna an."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "dy3-e7",
+          "type": "CLOZE",
+          "before": "Wir sehen um acht Uhr",
+          "after": ".",
+          "accepted": ["fern"],
+          "translation": "We watch TV at eight o'clock.",
+          "hint": "the prefix of fernsehen"
+        },
+        {
+          "id": "dy3-e8",
+          "type": "CLOZE",
+          "before": "Der Film",
+          "after": "um neun Uhr an.",
+          "accepted": ["fängt"],
+          "translation": "The film starts at nine o'clock.",
+          "hint": "anfangen → er/sie/es … (a changes to ä)"
+        },
+        {
+          "id": "dy3-e9",
+          "type": "TEACH",
+          "title": "Starting with the time",
+          "body": "You can also start a sentence with the time. The verb stays in **second place**, so *ich* moves to just after it:\n\n- *Ich stehe um sieben Uhr auf.*\n- ***Um sieben Uhr** stehe ich auf.*\n\nBoth mean the same. The prefix stays at the end either way. You'll practise this more in Unit 9.",
+          "examples": [
+            { "text": "Um sieben Uhr stehe ich auf.", "translation": "At seven o'clock I get up." },
+            { "text": "Um fünf Uhr kaufe ich ein.", "translation": "At five o'clock I go shopping." }
+          ]
+        },
+        {
+          "id": "dy3-e10",
+          "type": "WORD_ORDER",
+          "translation": "Yes, I get up at seven o'clock.",
+          "answer": "Ja, ich stehe um sieben Uhr auf.",
+          "alternatives": ["Ja, um sieben Uhr stehe ich auf."],
+          "distractors": ["aufstehen", "steht"]
+        },
+        {
+          "id": "dy3-e11",
+          "type": "TEACH",
+          "title": "immer: always",
+          "body": "**immer** = always. Put it right after the verb:\n\n- *Ich stehe **immer** um sechs Uhr auf.*\n- *Wir sehen **immer** um acht Uhr fern.*",
+          "examples": [
+            { "text": "Ich stehe immer um sechs Uhr auf.", "translation": "I always get up at six o'clock." },
+            { "text": "Wir sehen immer um acht Uhr fern.", "translation": "We always watch TV at eight o'clock." }
+          ]
+        },
+        {
+          "id": "dy3-e12",
+          "type": "TRANSLATE",
+          "source": "I always get up at six.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich stehe immer um sechs Uhr auf.", "Ich stehe immer um sechs auf.", "Um sechs Uhr stehe ich immer auf.", "Um sechs stehe ich immer auf.", "Ich stehe immer um 6 Uhr auf.", "Ich stehe immer um 6 auf.", "Um 6 Uhr stehe ich immer auf."]
+        },
+        {
+          "id": "dy3-e13",
+          "type": "TRANSLATE",
+          "source": "Um wie viel Uhr stehst du auf?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["What time do you get up?", "At what time do you get up?", "When do you get up?"]
+        },
+        {
+          "id": "dy3-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Wir kaufen um fünf Uhr ein.",
+          "translation": "We go shopping at five o'clock."
+        },
+        {
+          "id": "dy3-e15",
+          "type": "SHADOW",
+          "text": "Ich stehe immer um sieben Uhr auf.",
+          "translation": "I always get up at seven o'clock.",
+          "hint": "stehe: st sounds like sht. Stress the prefix: AUF."
+        }
+      ]
+    },
+    {
+      "id": "dy4-meals-sleep",
+      "title": "Meals and sleep",
+      "kind": "LEARN",
+      "introduces": ["fruehstueck", "mittagessen", "abendessen", "fruehstuecken", "kochen", "schlafen", "morgens", "mittags", "abends"],
+      "exercises": [
+        {
+          "id": "dy4-e1",
+          "type": "TEACH",
+          "title": "Three meals",
+          "body": "All three meals are *das* words:\n\n- **das Frühstück** = breakfast\n- **das Mittagessen** = lunch (*Mittag* = midday + *Essen* = food)\n- **das Abendessen** = dinner (*Abend* = evening + *Essen*)\n\nA compound word always takes the article of its **last** part: *das Essen*, so *das Mittagessen*.",
+          "examples": [
+            { "text": "das Frühstück", "translation": "breakfast" },
+            { "text": "das Mittagessen", "translation": "lunch" },
+            { "text": "das Abendessen", "translation": "dinner" },
+            { "text": "Das Frühstück ist um acht Uhr.", "translation": "Breakfast is at eight o'clock." }
+          ]
+        },
+        {
+          "id": "dy4-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "das Frühstück", "base": "breakfast" },
+            { "target": "das Mittagessen", "base": "lunch" },
+            { "target": "das Abendessen", "base": "dinner" },
+            { "target": "das Brötchen", "base": "bread roll" }
+          ]
+        },
+        {
+          "id": "dy4-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "der, die or das? Look at the last part of the word.",
+          "prompt": "Abendessen",
+          "promptLanguage": "TARGET",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "dy4-e4",
+          "type": "TEACH",
+          "title": "frühstücken and kochen",
+          "body": "- **frühstücken** = to have breakfast. It's one word that never splits: *Ich frühstücke um sieben Uhr.*\n- **kochen** = to cook, a regular verb: *ich koche, du kochst, er kocht*",
+          "examples": [
+            { "text": "Ich frühstücke um sieben Uhr.", "translation": "I have breakfast at seven o'clock." },
+            { "text": "Was kochst du?", "translation": "What are you cooking?" },
+            { "text": "Ich koche das Abendessen.", "translation": "I'm cooking dinner." }
+          ]
+        },
+        {
+          "id": "dy4-e5",
+          "type": "CLOZE",
+          "before": "Er",
+          "after": "das Mittagessen.",
+          "accepted": ["kocht"],
+          "translation": "He's cooking lunch.",
+          "hint": "kochen → er …"
+        },
+        {
+          "id": "dy4-e6",
+          "type": "TEACH",
+          "title": "morgens, mittags, abends",
+          "body": "Add **-s** to a part of the day and you get *in the …*, usually as a habit:\n\n- **morgens** = in the morning\n- **mittags** = at midday\n- **abends** = in the evening\n\nThey come from *Morgen*, *Mittag* and *Abend* (as in *Guten Morgen*), but they're not nouns, so they're written in lowercase.\n\nStart a sentence with one and the verb still comes **second**: *Morgens **trinke** ich Kaffee.*",
+          "examples": [
+            { "text": "Morgens trinke ich Kaffee.", "translation": "In the morning I drink coffee." },
+            { "text": "Mittags esse ich ein Brötchen.", "translation": "At midday I eat a bread roll." },
+            { "text": "Abends sehe ich fern.", "translation": "In the evening I watch TV." }
+          ]
+        },
+        {
+          "id": "dy4-e7",
+          "type": "WORD_ORDER",
+          "translation": "In the evening I cook dinner.",
+          "answer": "Abends koche ich das Abendessen.",
+          "distractors": ["kochst", "morgens"]
+        },
+        {
+          "id": "dy4-e8",
+          "type": "TEACH",
+          "title": "schlafen: a changes to ä",
+          "body": "**schlafen** = to sleep. Like *anfangen*, it changes **a** to **ä** in the *du* and *er/sie/es* forms:\n\n- ich schlafe\n- du **schläfst**\n- er / sie **schläft**\n- wir / sie / Sie schlafen\n\n*fernsehen* changes too, *e* to *ie*: *Er **sieht** abends **fern**.*",
+          "examples": [
+            { "text": "Schläfst du?", "translation": "Are you asleep?" },
+            { "text": "Das Kind schläft.", "translation": "The child is sleeping." },
+            { "text": "Ich schlafe acht Stunden.", "translation": "I sleep for eight hours." },
+            { "text": "Er sieht abends fern.", "translation": "He watches TV in the evening." }
+          ]
+        },
+        {
+          "id": "dy4-e9",
+          "type": "CLOZE",
+          "before": "Er",
+          "after": "acht Stunden.",
+          "accepted": ["schläft"],
+          "translation": "He sleeps for eight hours.",
+          "hint": "schlafen → er … (a changes to ä)"
+        },
+        {
+          "id": "dy4-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? ___ du?",
+          "prompt": "Are you asleep?",
+          "promptLanguage": "BASE",
+          "options": ["Schlafst", "Schläfst", "Schläft"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "dy4-e11",
+          "type": "CLOZE",
+          "before": "Lena",
+          "after": "abends fern.",
+          "accepted": ["sieht"],
+          "translation": "Lena watches TV in the evening.",
+          "hint": "fernsehen → sie (she) … (e changes to ie)"
+        },
+        {
+          "id": "dy4-e12",
+          "type": "TRANSLATE",
+          "source": "We have breakfast at half past seven.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Wir frühstücken um halb acht.", "Um halb acht frühstücken wir.", "Wir frühstücken um sieben Uhr dreißig.", "Um sieben Uhr dreißig frühstücken wir."]
+        },
+        {
+          "id": "dy4-e13",
+          "type": "TRANSLATE",
+          "source": "Mittags esse ich einen Salat.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["At midday I eat a salad.", "At lunchtime I eat a salad.", "At noon I eat a salad.", "I eat a salad at midday.", "I eat a salad at lunchtime.", "I eat a salad at noon.", "At midday I have a salad.", "At lunchtime I have a salad.", "I have a salad at lunchtime.", "I have a salad at midday."]
+        },
+        {
+          "id": "dy4-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Morgens trinke ich Kaffee.",
+          "translation": "In the morning I drink coffee."
+        },
+        {
+          "id": "dy4-e15",
+          "type": "SHADOW",
+          "text": "Morgens frühstücke ich, abends koche ich.",
+          "translation": "In the morning I have breakfast, in the evening I cook.",
+          "hint": "frühstücke: for ü, say ee with rounded lips."
+        }
+      ]
+    },
+    {
+      "id": "dy5-my-day",
+      "title": "My day",
+      "kind": "PRACTICE",
+      "introduces": ["arbeiten", "arbeit", "gehen", "zuerst", "dann", "spaeter"],
+      "exercises": [
+        {
+          "id": "dy5-e1",
+          "type": "TEACH",
+          "title": "Work and going",
+          "body": "- **arbeiten** = to work. The stem *arbeit-* ends in *-t*, so add an extra **e** to make it easy to say: du arbeit**e**st, er arbeit**e**t.\n- **die Arbeit** = work, the job\n- **gehen** = to go, a regular verb: ich gehe, du gehst, er geht\n\nTwo handy chunks to learn whole: **zur Arbeit gehen** = to go to work, **ins Bett gehen** = to go to bed.",
+          "examples": [
+            { "text": "Wo arbeitest du?", "translation": "Where do you work?" },
+            { "text": "Die Arbeit fängt um neun Uhr an.", "translation": "Work starts at nine o'clock." },
+            { "text": "Ich gehe um acht Uhr zur Arbeit.", "translation": "I go to work at eight o'clock." },
+            { "text": "Ich gehe um elf Uhr ins Bett.", "translation": "I go to bed at eleven o'clock." }
+          ]
+        },
+        {
+          "id": "dy5-e2",
+          "type": "TEACH",
+          "title": "zuerst, dann, später",
+          "body": "Tell your day in order:\n\n- **zuerst** = first\n- **dann** = then\n- **später** = later\n\nThey work like a time: put one first and the verb comes **second**. *Zuerst **stehe** ich auf. Dann **frühstücke** ich.*\n\nAnd when you leave: **Bis später!** = See you later!",
+          "examples": [
+            { "text": "Zuerst stehe ich auf, dann frühstücke ich.", "translation": "First I get up, then I have breakfast." },
+            { "text": "Später sehe ich fern.", "translation": "Later I watch TV." },
+            { "text": "Bis später!", "translation": "See you later!" }
+          ]
+        },
+        {
+          "id": "dy5-e3",
+          "type": "TEACH",
+          "title": "Lenas Tag",
+          "body": "Tom asks Lena about her day. Read along, and tap each line to hear it.",
+          "examples": [
+            { "text": "Lena, um wie viel Uhr stehst du auf?", "translation": "Tom: Lena, what time do you get up?" },
+            { "text": "Ich stehe immer um halb sieben auf.", "translation": "Lena: I always get up at half past six." },
+            { "text": "Und dann?", "translation": "Tom: And then?" },
+            { "text": "Zuerst trinke ich einen Kaffee, dann frühstücke ich.", "translation": "Lena: First I drink a coffee, then I have breakfast." },
+            { "text": "Um acht Uhr gehe ich zur Arbeit. Die Arbeit fängt um halb neun an.", "translation": "Lena: At eight o'clock I go to work. Work starts at half past eight." },
+            { "text": "Und abends?", "translation": "Tom: And in the evening?" },
+            { "text": "Abends koche ich, und später sehe ich fern. Um elf Uhr gehe ich ins Bett.", "translation": "Lena: In the evening I cook, and later I watch TV. At eleven o'clock I go to bed." }
+          ]
+        },
+        {
+          "id": "dy5-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From Lena's day: what time does she get up?",
+          "prompt": "Ich stehe immer um halb sieben auf.",
+          "promptLanguage": "TARGET",
+          "options": ["6:30", "7:30", "7:00"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "dy5-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "arbeiten", "base": "to work" },
+            { "target": "gehen", "base": "to go" },
+            { "target": "zuerst", "base": "first" },
+            { "target": "dann", "base": "then" },
+            { "target": "später", "base": "later" }
+          ]
+        },
+        {
+          "id": "dy5-e6",
+          "type": "CLOZE",
+          "before": "Anna",
+          "after": "acht Stunden.",
+          "accepted": ["arbeitet"],
+          "translation": "Anna works eight hours.",
+          "hint": "arbeiten → sie (she) … (with an extra e)"
+        },
+        {
+          "id": "dy5-e7",
+          "type": "WORD_ORDER",
+          "translation": "First I get up, then I drink a coffee.",
+          "answer": "Zuerst stehe ich auf, dann trinke ich einen Kaffee.",
+          "distractors": ["steht", "ein"]
+        },
+        {
+          "id": "dy5-e8",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which time do you hear?",
+          "options": ["Ich gehe um halb elf ins Bett.", "Ich gehe um halb zwölf ins Bett."],
+          "answerIndex": 0
+        },
+        {
+          "id": "dy5-e9",
+          "type": "TRANSLATE",
+          "source": "I go to bed at eleven.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich gehe um elf Uhr ins Bett.", "Ich gehe um elf ins Bett.", "Um elf Uhr gehe ich ins Bett.", "Um elf gehe ich ins Bett.", "Ich gehe um 11 Uhr ins Bett.", "Ich gehe um 11 ins Bett.", "Um 11 Uhr gehe ich ins Bett."]
+        },
+        {
+          "id": "dy5-e10",
+          "type": "TRANSLATE",
+          "source": "Zuerst frühstücke ich, dann gehe ich zur Arbeit.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["First I have breakfast, then I go to work.", "First I eat breakfast, then I go to work.", "First I have breakfast and then I go to work.", "First I eat breakfast and then I go to work.", "First I have breakfast, then I'm going to work.", "First, I have breakfast, then I go to work."]
+        },
+        {
+          "id": "dy5-e11",
+          "type": "TRANSLATE",
+          "source": "What time do you get up? (informal)",
+          "sourceLanguage": "BASE",
+          "accepted": ["Um wie viel Uhr stehst du auf?", "Um wieviel Uhr stehst du auf?", "Wann stehst du auf?"]
+        },
+        {
+          "id": "dy5-e12",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "A friend asks you this. Which answer is right?",
+          "prompt": "Um wie viel Uhr stehst du auf?",
+          "promptLanguage": "TARGET",
+          "options": ["Ich aufstehe um sieben Uhr.", "Ich stehe um sieben Uhr auf.", "Es ist sieben Uhr."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "dy5-e13",
+          "type": "TRANSLATE",
+          "source": "Abends rufe ich meine Mutter an.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["In the evening I call my mother.", "In the evening I phone my mother.", "In the evening I ring my mother.", "I call my mother in the evening.", "I phone my mother in the evening.", "In the evenings I call my mother.", "I call my mother in the evenings.", "In the evening I call my mom.", "In the evening I call my mum."]
+        },
+        {
+          "id": "dy5-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Die Arbeit fängt um neun Uhr an.",
+          "translation": "Work starts at nine o'clock."
+        },
+        {
+          "id": "dy5-e15",
+          "type": "SHADOW",
+          "text": "Zuerst stehe ich auf, dann frühstücke ich.",
+          "translation": "First I get up, then I have breakfast.",
+          "hint": "zuerst: z sounds like ts, tsoo-AIRST."
+        }
+      ]
+    }
+  ]
+}

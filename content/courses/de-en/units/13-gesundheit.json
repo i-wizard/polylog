@@ -1,0 +1,837 @@
+{
+  "id": "13-gesundheit",
+  "level": "A1",
+  "title": "Health",
+  "description": "Body parts, saying what hurts with wehtun, and following the doctor's advice with sollen and the polite imperative.",
+  "icon": "🩺",
+  "vocab": [
+    { "id": "kopf", "text": "Kopf", "translations": ["head"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Köpfe", "pronunciation": "kopf (say the p and f together)", "example": { "text": "Mein Kopf tut weh.", "translation": "My head hurts." } },
+    { "id": "bauch", "text": "Bauch", "translations": ["stomach", "belly", "tummy"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Bäuche", "pronunciation": "bowkh (back-of-throat ch)", "example": { "text": "Tut dein Bauch weh?", "translation": "Does your stomach hurt?" } },
+    { "id": "hals", "text": "Hals", "translations": ["neck", "throat"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Hälse", "pronunciation": "hals", "example": { "text": "Mein Hals tut weh.", "translation": "My throat hurts." } },
+    { "id": "ruecken", "text": "Rücken", "translations": ["back (body part)", "back"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Rücken", "pronunciation": "RÜK-ken (ü: ee with rounded lips)", "example": { "text": "Mein Rücken tut sehr weh.", "translation": "My back really hurts." } },
+    { "id": "arm", "text": "Arm", "translations": ["arm"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Arme", "pronunciation": "ahrm", "example": { "text": "Tut Ihr Arm weh?", "translation": "Does your arm hurt?" } },
+    { "id": "bein", "text": "Bein", "translations": ["leg"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Beine", "pronunciation": "bine", "example": { "text": "Mein Bein tut weh.", "translation": "My leg hurts." } },
+    { "id": "hand", "text": "Hand", "translations": ["hand"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Hände", "pronunciation": "hant (final d sounds like t)", "example": { "text": "Ich habe zwei Hände.", "translation": "I have two hands." } },
+    { "id": "fuss", "text": "Fuß", "translations": ["foot"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Füße", "pronunciation": "fooss (long oo)", "example": { "text": "Meine Füße tun weh.", "translation": "My feet hurt." } },
+    { "id": "auge", "text": "Auge", "translations": ["eye"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Augen", "pronunciation": "OW-ge", "example": { "text": "Meine Augen sind blau.", "translation": "My eyes are blue." } },
+    { "id": "zahn", "text": "Zahn", "translations": ["tooth"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Zähne", "pronunciation": "tsahn (long a; z sounds like ts)", "example": { "text": "Das Kind hat zwei Zähne.", "translation": "The child has two teeth." } },
+    { "id": "wehtun", "text": "wehtun", "translations": ["to hurt"], "partOfSpeech": "VERB", "pronunciation": "VAY-toon", "example": { "text": "Wo tut es weh?", "translation": "Where does it hurt?" } },
+    { "id": "schmerz", "text": "Schmerz", "translations": ["pain", "ache"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Schmerzen", "pronunciation": "shmairts", "example": { "text": "Ich habe Kopfschmerzen.", "translation": "I have a headache." } },
+    { "id": "fieber", "text": "Fieber", "translations": ["fever", "temperature (fever)"], "partOfSpeech": "NOUN", "gender": "n", "pronunciation": "FEE-ber", "example": { "text": "Haben Sie Fieber?", "translation": "Do you have a temperature?" } },
+    { "id": "krank", "text": "krank", "translations": ["ill", "sick"], "partOfSpeech": "ADJECTIVE", "pronunciation": "krank", "example": { "text": "Ich bin heute krank.", "translation": "I'm ill today." } },
+    { "id": "gesund", "text": "gesund", "translations": ["healthy", "well"], "partOfSpeech": "ADJECTIVE", "pronunciation": "ge-ZOONT", "example": { "text": "Meine Oma ist sehr gesund.", "translation": "My grandma is very healthy." } },
+    { "id": "muede", "text": "müde", "translations": ["tired"], "partOfSpeech": "ADJECTIVE", "pronunciation": "MÜ-de (ü: ee with rounded lips)", "example": { "text": "Bist du müde?", "translation": "Are you tired?" } },
+    { "id": "husten", "text": "Husten", "translations": ["cough"], "partOfSpeech": "NOUN", "gender": "m", "pronunciation": "HOO-sten", "example": { "text": "Ich habe Husten.", "translation": "I have a cough." } },
+    { "id": "erkaeltung", "text": "Erkältung", "translations": ["cold (illness)", "cold"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Erkältungen", "pronunciation": "air-KEL-toong", "example": { "text": "Ich habe eine Erkältung.", "translation": "I have a cold." } },
+    { "id": "gute-besserung", "text": "Gute Besserung!", "translations": ["Get well soon!"], "partOfSpeech": "PHRASE", "pronunciation": "GOO-te BES-se-roong", "example": { "text": "Du bist krank? Gute Besserung!", "translation": "You're ill? Get well soon!" } },
+    { "id": "sollen", "text": "sollen", "translations": ["should", "to be supposed to"], "partOfSpeech": "VERB", "pronunciation": "ZOL-len", "example": { "text": "Ich soll viel Wasser trinken.", "translation": "I'm supposed to drink a lot of water." } },
+    { "id": "bleiben", "text": "bleiben", "translations": ["to stay"], "partOfSpeech": "VERB", "pronunciation": "BLY-ben", "example": { "text": "Ich bleibe heute zu Hause.", "translation": "I'm staying at home today." } },
+    { "id": "zu-hause", "text": "zu Hause", "translations": ["at home"], "partOfSpeech": "PHRASE", "pronunciation": "tsoo HOW-ze", "example": { "text": "Bleiben Sie zu Hause!", "translation": "Stay at home!" } },
+    { "id": "tablette", "text": "Tablette", "translations": ["tablet (pill)", "pill", "tablet"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Tabletten", "pronunciation": "ta-BLET-te", "example": { "text": "Nehmen Sie morgens eine Tablette.", "translation": "Take a tablet in the morning." } },
+    { "id": "medikament", "text": "Medikament", "translations": ["medicine", "medication"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Medikamente", "pronunciation": "may-dee-ka-MENT", "example": { "text": "Brauchen Sie ein Medikament?", "translation": "Do you need medicine?" } },
+    { "id": "rezept", "text": "Rezept", "translations": ["prescription", "recipe"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Rezepte", "pronunciation": "re-TSEPT", "example": { "text": "Hier ist Ihr Rezept.", "translation": "Here is your prescription." } },
+    { "id": "krankenhaus", "text": "Krankenhaus", "translations": ["hospital"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Krankenhäuser", "pronunciation": "KRANK-en-house", "example": { "text": "Er ist im Krankenhaus.", "translation": "He's in hospital." } },
+    { "id": "was-fehlt-ihnen", "text": "Was fehlt Ihnen?", "translations": ["What's the matter? (formal)", "What's wrong?"], "partOfSpeech": "PHRASE", "pronunciation": "vas FAYLT EE-nen", "example": { "text": "Guten Tag! Was fehlt Ihnen?", "translation": "Hello! What's the matter?" } }
+  ],
+  "grammarNotes": [
+    {
+      "id": "gesundheit-body",
+      "title": "Body parts and their plurals",
+      "body": "Most body parts are **der** words. The ones to watch are **die Hand**, **das Bein** and **das Auge**.\n\nIn the plural the article is always **die**. Many short *der* words add an umlaut and **-e**: *der Fuß → die Füße*. **Rücken** stays the same, and **Auge** adds **-n**.\n\nLearn each body part with its article and plural.",
+      "table": [
+        ["Singular", "Plural", "English"],
+        ["der Kopf", "die Köpfe", "head"],
+        ["der Hals", "die Hälse", "neck, throat"],
+        ["der Rücken", "die Rücken", "back"],
+        ["der Bauch", "die Bäuche", "stomach"],
+        ["der Arm", "die Arme", "arm"],
+        ["die Hand", "die Hände", "hand"],
+        ["das Bein", "die Beine", "leg"],
+        ["der Fuß", "die Füße", "foot"],
+        ["das Auge", "die Augen", "eye"],
+        ["der Zahn", "die Zähne", "tooth"]
+      ]
+    },
+    {
+      "id": "gesundheit-wehtun",
+      "title": "wehtun: saying what hurts",
+      "body": "**wehtun** (to hurt) is a separable verb, like *aufstehen*: **tut** goes second and **weh** jumps to the end.\n\nThe body part is the subject, just like in English:\n\n- one thing → **tut**: *Mein Kopf tut weh.*\n- more than one → **tun**: *Meine Füße tun weh.*\n\nUse **meine** for *die* words and for all plurals: *Meine Hand tut weh. Meine Augen tun weh.*\n\nTo say something doesn't hurt, put **nicht** just before *weh*: *Mein Bauch tut nicht weh.*\n\nYou'll also hear **Mir tut der Kopf weh.** It means the same (literally *To me the head hurts*). You'll learn *mir* later.",
+      "table": [
+        ["German", "English"],
+        ["Mein Kopf tut weh.", "My head hurts."],
+        ["Meine Füße tun weh.", "My feet hurt."],
+        ["Tut dein Arm weh?", "Does your arm hurt?"],
+        ["Wo tut es weh?", "Where does it hurt?"],
+        ["Es tut nicht weh.", "It doesn't hurt."]
+      ]
+    },
+    {
+      "id": "gesundheit-whats-wrong",
+      "title": "Saying what's wrong: sein or haben",
+      "body": "Use **sein** for how you *are*: *Ich bin krank. Ich bin müde. Ich bin gesund.*\n\nUse **haben** for things you *have*: *Ich habe Fieber. Ich habe Husten. Ich habe eine Erkältung.*\n\nAches are long compound words: a body part + **Schmerzen** (pains). Say them in the plural with no article: *Ich habe Kopfschmerzen.* English often says *a headache*, but German has no *eine* here.\n\nTwo fixed phrases: the doctor asks **Was fehlt Ihnen?** (What's the matter?), and you say **Gute Besserung!** (Get well soon!) to anyone who's ill.",
+      "table": [
+        ["English", "German"],
+        ["I have a headache.", "Ich habe Kopfschmerzen."],
+        ["I have stomach ache.", "Ich habe Bauchschmerzen."],
+        ["I have a sore throat.", "Ich habe Halsschmerzen."],
+        ["I have back pain.", "Ich habe Rückenschmerzen."],
+        ["I have toothache.", "Ich habe Zahnschmerzen."],
+        ["I have a temperature.", "Ich habe Fieber."],
+        ["I have a cough.", "Ich habe Husten."],
+        ["I have a cold.", "Ich habe eine Erkältung."]
+      ]
+    },
+    {
+      "id": "gesundheit-sollen",
+      "title": "sollen: should, supposed to",
+      "body": "**sollen** follows the modal pattern you know from *können, müssen* and *wollen*: no ending for **ich** and **er / sie / es**, and the second verb goes to the end. Its vowel never changes.\n\n**müssen** and **sollen** are close, but not the same:\n\n- **müssen** = it's necessary: *Ich muss arbeiten.* (I have no choice.)\n- **sollen** = someone tells or advises you: *Ich soll im Bett bleiben.* (The doctor says so.)\n\nTo ask for advice, say **Was soll ich machen?** (What should I do?)",
+      "table": [
+        ["Person", "sollen", "müssen"],
+        ["ich", "soll", "muss"],
+        ["du", "sollst", "musst"],
+        ["er / sie / es", "soll", "muss"],
+        ["wir", "sollen", "müssen"],
+        ["ihr", "sollt", "müsst"],
+        ["sie / Sie", "sollen", "müssen"]
+      ]
+    },
+    {
+      "id": "gesundheit-imperative",
+      "title": "Polite advice: Nehmen Sie …!",
+      "body": "To tell someone you call *Sie* what to do, take the *Sie* form of the verb, put it **first**, and keep **Sie** right after it. It ends with an exclamation mark.\n\nSeparable verbs split as usual: *Sie rufen morgen an.* → **Rufen Sie morgen an!**\n\nAdd **bitte** to sound softer: *Bitte bleiben Sie zu Hause.* or *Bleiben Sie bitte zu Hause.*",
+      "table": [
+        ["Statement", "Advice"],
+        ["Sie nehmen die Tabletten.", "Nehmen Sie die Tabletten!"],
+        ["Sie bleiben zu Hause.", "Bleiben Sie zu Hause!"],
+        ["Sie trinken viel Tee.", "Trinken Sie viel Tee!"],
+        ["Sie schlafen viel.", "Schlafen Sie viel!"],
+        ["Sie rufen morgen an.", "Rufen Sie morgen an!"]
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "hl1-body",
+      "title": "Head to toe",
+      "kind": "LEARN",
+      "introduces": ["kopf", "hals", "ruecken", "bauch", "arm", "hand", "bein", "fuss", "auge", "zahn"],
+      "exercises": [
+        {
+          "id": "hl1-e1",
+          "type": "TEACH",
+          "title": "Head, neck, back",
+          "body": "Most body parts are **der** words. Learn each one with its article. Tap to hear them.\n\n**der Hals** means both *neck* and *throat*.",
+          "examples": [
+            { "text": "der Kopf", "translation": "the head" },
+            { "text": "der Hals", "translation": "the neck, the throat" },
+            { "text": "der Rücken", "translation": "the back", "hint": "RÜK-ken: round your lips for the ü" },
+            { "text": "der Bauch", "translation": "the stomach, the belly", "hint": "back-of-throat ch" },
+            { "text": "der Arm", "translation": "the arm" }
+          ]
+        },
+        {
+          "id": "hl1-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Kopf", "base": "the head" },
+            { "target": "der Hals", "base": "the neck" },
+            { "target": "der Rücken", "base": "the back" },
+            { "target": "der Bauch", "base": "the stomach" },
+            { "target": "der Arm", "base": "the arm" }
+          ]
+        },
+        {
+          "id": "hl1-e3",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Bauch",
+          "promptLanguage": "TARGET",
+          "options": ["stomach", "back", "head"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "hl1-e4",
+          "type": "TEACH",
+          "title": "Hand, leg, foot, eye, tooth",
+          "body": "Watch the articles here: **die Hand**, but **das Bein** and **das Auge**.\n\nThe **ß** in *Fuß* is a sharp *s* after a long vowel: *fooss*. The **Z** in *Zahn* sounds like *ts*.",
+          "examples": [
+            { "text": "die Hand", "translation": "the hand" },
+            { "text": "das Bein", "translation": "the leg" },
+            { "text": "der Fuß", "translation": "the foot" },
+            { "text": "das Auge", "translation": "the eye" },
+            { "text": "der Zahn", "translation": "the tooth" }
+          ]
+        },
+        {
+          "id": "hl1-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Hand", "base": "the hand" },
+            { "target": "das Bein", "base": "the leg" },
+            { "target": "der Fuß", "base": "the foot" },
+            { "target": "das Auge", "base": "the eye" },
+            { "target": "der Zahn", "base": "the tooth" }
+          ]
+        },
+        {
+          "id": "hl1-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "der, die or das?",
+          "prompt": "Auge",
+          "promptLanguage": "TARGET",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "hl1-e7",
+          "type": "TEACH",
+          "title": "Two hands, two feet",
+          "body": "In the plural the article is always **die**. Many body parts add an umlaut and **-e**:\n\n- *die Hand* → **die Hände**\n- *der Fuß* → **die Füße**\n- *der Zahn* → **die Zähne**\n- *der Kopf* → **die Köpfe**\n\nSome just add **-e** or **-n**: *die Arme, die Beine, die Augen*. And *der Rücken* → *die Rücken* stays the same.",
+          "examples": [
+            { "text": "die Hände", "translation": "the hands" },
+            { "text": "die Füße", "translation": "the feet" },
+            { "text": "die Zähne", "translation": "the teeth" },
+            { "text": "Ich habe zwei Augen.", "translation": "I have two eyes." }
+          ]
+        },
+        {
+          "id": "hl1-e8",
+          "type": "CLOZE",
+          "before": "Ich habe zwei",
+          "after": ".",
+          "accepted": ["Hände"],
+          "translation": "I have two hands.",
+          "hint": "plural of Hand (add an umlaut)"
+        },
+        {
+          "id": "hl1-e9",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "What's the plural?",
+          "prompt": "der Fuß",
+          "promptLanguage": "TARGET",
+          "options": ["die Füße", "die Fuße", "die Füßen"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "hl1-e10",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "One or more? Which do you hear?",
+          "options": ["der Zahn", "die Zähne"],
+          "answerIndex": 1
+        },
+        {
+          "id": "hl1-e11",
+          "type": "WORD_ORDER",
+          "translation": "I have two arms and two legs.",
+          "answer": "Ich habe zwei Arme und zwei Beine.",
+          "distractors": ["Armen", "hat"]
+        },
+        {
+          "id": "hl1-e12",
+          "type": "TRANSLATE",
+          "source": "The child has two teeth.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Das Kind hat zwei Zähne."]
+        },
+        {
+          "id": "hl1-e13",
+          "type": "TRANSLATE",
+          "source": "Meine Augen sind blau.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["My eyes are blue."]
+        },
+        {
+          "id": "hl1-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Ich habe zwei Hände und zwei Füße.",
+          "translation": "I have two hands and two feet."
+        },
+        {
+          "id": "hl1-e15",
+          "type": "SHADOW",
+          "text": "der Kopf, der Hals, der Rücken, der Bauch",
+          "translation": "the head, the neck, the back, the stomach",
+          "hint": "Bauch: back-of-throat ch, as in Loch Ness. Rücken: round your lips for the ü."
+        }
+      ]
+    },
+    {
+      "id": "hl2-it-hurts",
+      "title": "It hurts!",
+      "kind": "LEARN",
+      "introduces": ["wehtun", "schmerz", "fieber"],
+      "exercises": [
+        {
+          "id": "hl2-e1",
+          "type": "TEACH",
+          "title": "Mein Kopf tut weh.",
+          "body": "**wehtun** = to hurt. It's a separable verb, like *aufstehen*: **tut** goes second and **weh** jumps to the very end.\n\nThe body part is the subject, just like in English:\n\n- *Mein Kopf **tut weh**.* = My head hurts.\n- *Mein Bauch **tut weh**.* = My stomach hurts.\n\nThe stress is on the prefix: **WEH**tun.",
+          "examples": [
+            { "text": "Mein Kopf tut weh.", "translation": "My head hurts." },
+            { "text": "Mein Bauch tut weh.", "translation": "My stomach hurts." },
+            { "text": "Mein Rücken tut sehr weh.", "translation": "My back really hurts." }
+          ]
+        },
+        {
+          "id": "hl2-e2",
+          "type": "CLOZE",
+          "before": "Mein Bauch tut",
+          "after": ".",
+          "accepted": ["weh"],
+          "translation": "My stomach hurts.",
+          "hint": "the prefix of wehtun"
+        },
+        {
+          "id": "hl2-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which sentence is right?",
+          "prompt": "My back hurts.",
+          "promptLanguage": "BASE",
+          "options": ["Mein Rücken tut weh.", "Mein Rücken wehtut.", "Mein Rücken weh tut."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "hl2-e4",
+          "type": "TEACH",
+          "title": "tut or tun?",
+          "body": "- One thing hurts → **tut**: *Mein Fuß **tut** weh.*\n- More than one thing hurts → **tun**: *Meine Füße **tun** weh.*\n\nUse **meine** for *die* words and for all plurals, as you learned with family words: *Meine Hand tut weh. Meine Augen tun weh.*\n\nTo ask a friend: *Tut dein Kopf weh?*",
+          "examples": [
+            { "text": "Mein Fuß tut weh.", "translation": "My foot hurts." },
+            { "text": "Meine Füße tun weh.", "translation": "My feet hurt." },
+            { "text": "Meine Hand tut weh.", "translation": "My hand hurts." },
+            { "text": "Tut dein Kopf weh?", "translation": "Does your head hurt?" }
+          ]
+        },
+        {
+          "id": "hl2-e5",
+          "type": "CLOZE",
+          "before": "Meine Hände",
+          "after": "weh.",
+          "accepted": ["tun"],
+          "translation": "My hands hurt.",
+          "hint": "tut or tun? Hände is plural."
+        },
+        {
+          "id": "hl2-e6",
+          "type": "WORD_ORDER",
+          "translation": "My feet hurt.",
+          "answer": "Meine Füße tun weh.",
+          "distractors": ["tut", "Mein"]
+        },
+        {
+          "id": "hl2-e7",
+          "type": "TEACH",
+          "title": "Wo tut es weh?",
+          "body": "- **Es tut weh.** = It hurts.\n- **Tut es weh?** = Does it hurt?\n- **Wo tut es weh?** = Where does it hurt? This is often the doctor's first question.\n\nTo say it doesn't hurt, put **nicht** just before *weh*: *Es tut **nicht** weh.*",
+          "examples": [
+            { "text": "Wo tut es weh?", "translation": "Where does it hurt?" },
+            { "text": "Hier. Mein Arm tut weh.", "translation": "Here. My arm hurts." },
+            { "text": "Es tut nicht weh.", "translation": "It doesn't hurt." }
+          ]
+        },
+        {
+          "id": "hl2-e8",
+          "type": "WORD_ORDER",
+          "translation": "Where does it hurt?",
+          "answer": "Wo tut es weh?",
+          "distractors": ["tun", "Was"]
+        },
+        {
+          "id": "hl2-e9",
+          "type": "TEACH",
+          "title": "Kopfschmerzen: a headache",
+          "body": "**der Schmerz** = pain. You'll nearly always hear the plural, **Schmerzen**.\n\nPut a body part in front to make one long word: *Kopf* + *Schmerzen* = **Kopfschmerzen** (headache). Say it with **haben** and no article:\n\n- *Ich habe **Kopfschmerzen**.* = I have a headache.\n- **Bauchschmerzen** = stomach ache\n- **Halsschmerzen** = a sore throat\n\n**das Fieber** = fever, a temperature. Also with *haben*: *Ich habe Fieber.*",
+          "examples": [
+            { "text": "Ich habe Kopfschmerzen.", "translation": "I have a headache." },
+            { "text": "Hast du Bauchschmerzen?", "translation": "Do you have stomach ache?" },
+            { "text": "Ich habe Halsschmerzen und Fieber.", "translation": "I have a sore throat and a temperature." }
+          ]
+        },
+        {
+          "id": "hl2-e10",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "Kopfschmerzen", "base": "headache" },
+            { "target": "Bauchschmerzen", "base": "stomach ache" },
+            { "target": "Halsschmerzen", "base": "sore throat" },
+            { "target": "Zahnschmerzen", "base": "toothache" },
+            { "target": "Fieber", "base": "fever" }
+          ]
+        },
+        {
+          "id": "hl2-e11",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Your tooth hurts. What do you say?",
+          "prompt": "Toothache",
+          "promptLanguage": "BASE",
+          "options": ["Ich habe Zahnschmerzen.", "Ich bin Zahnschmerzen.", "Ich habe Kopfschmerzen."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "hl2-e12",
+          "type": "TRANSLATE",
+          "source": "I have a headache and a fever.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich habe Kopfschmerzen und Fieber.", "Ich habe Fieber und Kopfschmerzen.", "Mein Kopf tut weh und ich habe Fieber."]
+        },
+        {
+          "id": "hl2-e13",
+          "type": "TRANSLATE",
+          "source": "Mein Rücken tut weh.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["My back hurts.", "My back is hurting.", "My back aches.", "My back is aching.", "My back is sore.", "I have back pain.", "I've got back pain."]
+        },
+        {
+          "id": "hl2-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Mein Kopf tut weh.",
+          "translation": "My head hurts."
+        },
+        {
+          "id": "hl2-e15",
+          "type": "SHADOW",
+          "text": "Meine Füße tun weh.",
+          "translation": "My feet hurt.",
+          "hint": "Füße: round your lips for the ü. weh: a long ay sound."
+        }
+      ]
+    },
+    {
+      "id": "hl3-ill",
+      "title": "I'm ill",
+      "kind": "LEARN",
+      "introduces": ["krank", "gesund", "muede", "husten", "erkaeltung", "gute-besserung"],
+      "exercises": [
+        {
+          "id": "hl3-e1",
+          "type": "TEACH",
+          "title": "krank, gesund, müde",
+          "body": "These words describe how you are, so they come after **sein**:\n\n- **krank** = ill, sick\n- **gesund** = healthy, well\n- **müde** = tired",
+          "mouthShapes": [
+            { "shape": "TIGHT_ROUNDED", "label": "ü", "caption": "müde: say ee, then round your lips" }
+          ],
+          "examples": [
+            { "text": "Ich bin heute krank.", "translation": "I'm ill today." },
+            { "text": "Bist du müde?", "translation": "Are you tired?" },
+            { "text": "Meine Oma ist sehr gesund.", "translation": "My grandma is very healthy." }
+          ]
+        },
+        {
+          "id": "hl3-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "krank", "base": "ill" },
+            { "target": "gesund", "base": "healthy" },
+            { "target": "müde", "base": "tired" },
+            { "target": "sehr", "base": "very" },
+            { "target": "heute", "base": "today" }
+          ]
+        },
+        {
+          "id": "hl3-e3",
+          "type": "CLOZE",
+          "before": "Ich bin heute",
+          "after": ".",
+          "accepted": ["krank"],
+          "translation": "I'm ill today.",
+          "hint": "ill"
+        },
+        {
+          "id": "hl3-e4",
+          "type": "TEACH",
+          "title": "Husten and Erkältung",
+          "body": "- **der Husten** = cough\n- **die Erkältung** = a cold (the illness)\n\nThese are things you *have*, so use **haben**: *Ich habe Husten.* *Erkältung* needs **eine**; *Husten* and *Fieber* don't.\n\nSo: **sein** for how you are (*krank, müde*), **haben** for what you have (*Fieber, Husten, eine Erkältung, Kopfschmerzen*).",
+          "examples": [
+            { "text": "Ich habe Husten.", "translation": "I have a cough." },
+            { "text": "Ich habe eine Erkältung.", "translation": "I have a cold." },
+            { "text": "Er ist krank. Er hat Fieber.", "translation": "He's ill. He has a temperature." }
+          ]
+        },
+        {
+          "id": "hl3-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which sentence is right?",
+          "prompt": "I have a cold.",
+          "promptLanguage": "BASE",
+          "options": ["Ich habe eine Erkältung.", "Ich bin eine Erkältung.", "Ich habe ein Erkältung."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "hl3-e6",
+          "type": "CLOZE",
+          "before": "Ich",
+          "after": "Husten und Fieber.",
+          "accepted": ["habe"],
+          "translation": "I have a cough and a temperature.",
+          "hint": "haben or sein?"
+        },
+        {
+          "id": "hl3-e7",
+          "type": "CLOZE",
+          "before": "Er",
+          "after": "sehr müde.",
+          "accepted": ["ist"],
+          "translation": "He's very tired.",
+          "hint": "haben or sein?"
+        },
+        {
+          "id": "hl3-e8",
+          "type": "TEACH",
+          "title": "Gute Besserung!",
+          "body": "When someone is ill, say **Gute Besserung!** = Get well soon! (literally *good improvement*).\n\nIf a friend asks *Wie geht es dir?* and you're not well, you can say **Nicht gut. Ich bin krank.**",
+          "examples": [
+            { "text": "Wie geht es dir?", "translation": "How are you?" },
+            { "text": "Nicht gut. Ich bin krank.", "translation": "Not good. I'm ill." },
+            { "text": "Oh nein! Gute Besserung!", "translation": "Oh no! Get well soon!" }
+          ]
+        },
+        {
+          "id": "hl3-e9",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Your friend says this. What do you say?",
+          "prompt": "Ich bin krank.",
+          "promptLanguage": "TARGET",
+          "options": ["Gute Besserung!", "Gute Nacht!", "Freut mich!"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "hl3-e10",
+          "type": "WORD_ORDER",
+          "translation": "I'm tired and I have a cough.",
+          "answer": "Ich bin müde und ich habe Husten.",
+          "distractors": ["hat", "ist"]
+        },
+        {
+          "id": "hl3-e11",
+          "type": "TRANSLATE",
+          "source": "I have a cold.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich habe eine Erkältung.", "Ich bin erkältet."]
+        },
+        {
+          "id": "hl3-e12",
+          "type": "TRANSLATE",
+          "source": "Bist du krank?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Are you ill?", "Are you sick?"]
+        },
+        {
+          "id": "hl3-e13",
+          "type": "TRANSLATE",
+          "source": "My son is ill.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Mein Sohn ist krank."]
+        },
+        {
+          "id": "hl3-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Ich habe eine Erkältung.",
+          "translation": "I have a cold."
+        },
+        {
+          "id": "hl3-e15",
+          "type": "SHADOW",
+          "text": "Ich bin krank. Ich habe Husten und Fieber.",
+          "translation": "I'm ill. I have a cough and a temperature.",
+          "hint": "Husten: HOO-sten, with a long oo. Fieber: FEE-ber."
+        }
+      ]
+    },
+    {
+      "id": "hl4-advice",
+      "title": "Doctor's orders",
+      "kind": "LEARN",
+      "introduces": ["sollen", "bleiben", "zu-hause", "tablette", "medikament"],
+      "exercises": [
+        {
+          "id": "hl4-e1",
+          "type": "TEACH",
+          "title": "sollen: should",
+          "body": "**sollen** = should, to be supposed to. Use it for what someone else says you should do: the doctor, your mother, your boss.\n\nIt's a modal verb like *müssen*: no ending for *ich* and *er/sie*, and the second verb goes to the end.\n\n- ich **soll**\n- du **sollst**\n- er / sie **soll**\n- wir sollen\n- ihr sollt\n- sie / Sie sollen\n\n**viel** = a lot (of), as in *Wie viel?*",
+          "examples": [
+            { "text": "Ich soll viel Wasser trinken.", "translation": "I'm supposed to drink a lot of water." },
+            { "text": "Du sollst viel schlafen.", "translation": "You should sleep a lot." },
+            { "text": "Er soll heute nicht arbeiten.", "translation": "He's not supposed to work today." }
+          ]
+        },
+        {
+          "id": "hl4-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "ich soll", "base": "I should" },
+            { "target": "du sollst", "base": "you should" },
+            { "target": "er soll", "base": "he should" },
+            { "target": "wir sollen", "base": "we should" },
+            { "target": "ihr sollt", "base": "you all should" }
+          ]
+        },
+        {
+          "id": "hl4-e3",
+          "type": "CLOZE",
+          "before": "Ich",
+          "after": "viel Tee trinken.",
+          "accepted": ["soll"],
+          "translation": "I'm supposed to drink a lot of tea.",
+          "hint": "sollen → ich …"
+        },
+        {
+          "id": "hl4-e4",
+          "type": "TEACH",
+          "title": "bleiben and zu Hause",
+          "body": "- **bleiben** = to stay. It's regular: *ich bleibe, du bleibst, er bleibt*.\n- **zu Hause** = at home. Learn it as one fixed phrase.\n- **im Bett** = in bed\n\nWith *sollen*, **bleiben** goes to the end: *Ich soll zu Hause **bleiben**.*",
+          "examples": [
+            { "text": "Ich bleibe heute zu Hause.", "translation": "I'm staying at home today." },
+            { "text": "Du sollst zu Hause bleiben.", "translation": "You should stay at home." },
+            { "text": "Sie soll im Bett bleiben.", "translation": "She's supposed to stay in bed." }
+          ]
+        },
+        {
+          "id": "hl4-e5",
+          "type": "WORD_ORDER",
+          "translation": "I'm supposed to stay at home.",
+          "answer": "Ich soll zu Hause bleiben.",
+          "distractors": ["bleibe", "sollst"]
+        },
+        {
+          "id": "hl4-e6",
+          "type": "TEACH",
+          "title": "sollen or müssen?",
+          "body": "- **müssen** = must, have to. It's necessary: *Ich **muss** arbeiten.* (I have no choice.)\n- **sollen** = should, be supposed to. Someone tells or advises you: *Ich **soll** im Bett bleiben.* (The doctor says so.)\n\nTo ask for advice: **Was soll ich machen?** = What should I do?",
+          "examples": [
+            { "text": "Ich muss morgen arbeiten.", "translation": "I have to work tomorrow." },
+            { "text": "Ich soll im Bett bleiben.", "translation": "I'm supposed to stay in bed." },
+            { "text": "Was soll ich machen?", "translation": "What should I do?" }
+          ]
+        },
+        {
+          "id": "hl4-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "The doctor told you to drink lots of water. Which fits best?",
+          "prompt": "I'm supposed to drink a lot of water.",
+          "promptLanguage": "BASE",
+          "options": ["Ich soll viel Wasser trinken.", "Ich will viel Wasser trinken.", "Ich kann viel Wasser trinken."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "hl4-e8",
+          "type": "TEACH",
+          "title": "Nehmen Sie …! Polite advice",
+          "body": "In Unit 12 you used the *imperative* for directions. A doctor uses the polite *Sie* form to give advice. Put the verb **first**, then **Sie**:\n\n- *Sie bleiben zu Hause.* → **Bleiben Sie** zu Hause!\n- *Sie nehmen die Tabletten.* → **Nehmen Sie** die Tabletten!\n\nSeparable verbs split as usual: **Rufen Sie** morgen **an**!\n\n- **die Tablette** = tablet, pill\n- **das Medikament** = medicine",
+          "examples": [
+            { "text": "Bleiben Sie zu Hause!", "translation": "Stay at home!" },
+            { "text": "Nehmen Sie morgens eine Tablette.", "translation": "Take a tablet in the morning." },
+            { "text": "Trinken Sie viel Tee!", "translation": "Drink lots of tea!" },
+            { "text": "Rufen Sie morgen an!", "translation": "Call tomorrow!" }
+          ]
+        },
+        {
+          "id": "hl4-e9",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Tablette", "base": "the tablet" },
+            { "target": "das Medikament", "base": "the medicine" },
+            { "target": "bleiben", "base": "to stay" },
+            { "target": "zu Hause", "base": "at home" },
+            { "target": "sollen", "base": "should" }
+          ]
+        },
+        {
+          "id": "hl4-e10",
+          "type": "CLOZE",
+          "before": "",
+          "after": "Sie zu Hause!",
+          "accepted": ["Bleiben"],
+          "translation": "Stay at home!",
+          "hint": "bleiben, as polite advice"
+        },
+        {
+          "id": "hl4-e11",
+          "type": "WORD_ORDER",
+          "translation": "Take a tablet in the morning and in the evening.",
+          "answer": "Nehmen Sie morgens und abends eine Tablette.",
+          "distractors": ["Nimm", "einen"]
+        },
+        {
+          "id": "hl4-e12",
+          "type": "TRANSLATE",
+          "source": "Stay in bed! (formal)",
+          "sourceLanguage": "BASE",
+          "accepted": ["Bleiben Sie im Bett!", "Bleiben Sie bitte im Bett!", "Bitte bleiben Sie im Bett!"]
+        },
+        {
+          "id": "hl4-e13",
+          "type": "TRANSLATE",
+          "source": "Brauche ich ein Medikament?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Do I need medicine?", "Do I need a medicine?", "Do I need any medicine?", "Do I need medication?", "Do I need any medication?"]
+        },
+        {
+          "id": "hl4-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Sie sollen viel Wasser trinken.",
+          "translation": "You should drink a lot of water."
+        },
+        {
+          "id": "hl4-e15",
+          "type": "SHADOW",
+          "text": "Nehmen Sie die Tabletten und bleiben Sie zu Hause.",
+          "translation": "Take the tablets and stay at home.",
+          "hint": "Tabletten: ta-BLET-ten, stress the middle. Hause: HOW-ze."
+        }
+      ]
+    },
+    {
+      "id": "hl5-doctor",
+      "title": "At the doctor's",
+      "kind": "PRACTICE",
+      "introduces": ["was-fehlt-ihnen", "rezept", "krankenhaus"],
+      "exercises": [
+        {
+          "id": "hl5-e1",
+          "type": "TEACH",
+          "title": "At the doctor's",
+          "body": "- **Was fehlt Ihnen?** = What's the matter? The doctor's question (literally *What is missing for you?*). Learn it as a fixed phrase.\n- **das Rezept** = prescription. You take it to the *Apotheke*.\n- **das Krankenhaus** = hospital (literally *sick house*)",
+          "examples": [
+            { "text": "Guten Tag! Was fehlt Ihnen?", "translation": "Hello! What's the matter?" },
+            { "text": "Hier ist Ihr Rezept.", "translation": "Here is your prescription." },
+            { "text": "Gehen Sie mit dem Rezept zur Apotheke.", "translation": "Take the prescription to the pharmacy." },
+            { "text": "Er ist im Krankenhaus.", "translation": "He's in hospital." }
+          ]
+        },
+        {
+          "id": "hl5-e2",
+          "type": "TEACH",
+          "title": "Was fehlt Ihnen?",
+          "body": "Tom is ill and sees the doctor. Read along, and tap each line to hear it.",
+          "examples": [
+            { "text": "Guten Tag, Herr Becker. Was fehlt Ihnen?", "translation": "Doctor: Hello, Mr Becker. What's the matter?" },
+            { "text": "Ich bin krank. Ich habe Kopfschmerzen und Halsschmerzen.", "translation": "Tom: I'm ill. I have a headache and a sore throat." },
+            { "text": "Haben Sie Fieber?", "translation": "Doctor: Do you have a temperature?" },
+            { "text": "Ja, ein bisschen. Und ich bin sehr müde.", "translation": "Tom: Yes, a little. And I'm very tired." },
+            { "text": "Tut Ihr Bauch auch weh?", "translation": "Doctor: Does your stomach hurt too?" },
+            { "text": "Nein, mein Bauch tut nicht weh.", "translation": "Tom: No, my stomach doesn't hurt." },
+            { "text": "Sie haben eine Erkältung.", "translation": "Doctor: You have a cold." },
+            { "text": "Was soll ich machen?", "translation": "Tom: What should I do?" },
+            { "text": "Bleiben Sie drei Tage zu Hause und trinken Sie viel Tee.", "translation": "Doctor: Stay at home for three days and drink lots of tea." },
+            { "text": "Brauche ich ein Medikament?", "translation": "Tom: Do I need any medicine?" },
+            { "text": "Ja, hier ist ein Rezept. Nehmen Sie morgens und abends eine Tablette.", "translation": "Doctor: Yes, here is a prescription. Take a tablet in the morning and in the evening." },
+            { "text": "Danke!", "translation": "Tom: Thanks!" },
+            { "text": "Gute Besserung, Herr Becker!", "translation": "Doctor: Get well soon, Mr Becker!" }
+          ]
+        },
+        {
+          "id": "hl5-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the visit: what's wrong with Tom?",
+          "prompt": "Was fehlt Ihnen?",
+          "promptLanguage": "TARGET",
+          "options": ["a headache and a sore throat", "stomach ache and a temperature", "toothache"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "hl5-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the visit: what should Tom do?",
+          "prompt": "Was soll Tom machen?",
+          "promptLanguage": "TARGET",
+          "options": ["stay at home for three days and drink tea", "go to hospital", "work and take a tablet every hour"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "hl5-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "Was fehlt Ihnen?", "base": "What's the matter?" },
+            { "target": "das Rezept", "base": "the prescription" },
+            { "target": "das Krankenhaus", "base": "the hospital" },
+            { "target": "die Apotheke", "base": "the pharmacy" },
+            { "target": "Gute Besserung!", "base": "Get well soon!" }
+          ]
+        },
+        {
+          "id": "hl5-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "The doctor asks: Was fehlt Ihnen? You have a sore throat. What do you say?",
+          "prompt": "Was fehlt Ihnen?",
+          "promptLanguage": "TARGET",
+          "options": ["Ich habe Halsschmerzen.", "Mein Hals tut weh nicht.", "Ich bin Halsschmerzen."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "hl5-e7",
+          "type": "CLOZE",
+          "before": "Was",
+          "after": "Ihnen?",
+          "accepted": ["fehlt"],
+          "translation": "What's the matter?",
+          "hint": "the doctor's question"
+        },
+        {
+          "id": "hl5-e8",
+          "type": "WORD_ORDER",
+          "translation": "Here is your prescription. (formal)",
+          "answer": "Hier ist Ihr Rezept.",
+          "distractors": ["Ihre", "sind"]
+        },
+        {
+          "id": "hl5-e9",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "What does the patient have? Which do you hear?",
+          "options": ["Ich habe Bauchschmerzen.", "Ich habe Rückenschmerzen."],
+          "answerIndex": 1
+        },
+        {
+          "id": "hl5-e10",
+          "type": "TRANSLATE",
+          "source": "What should I do?",
+          "sourceLanguage": "BASE",
+          "accepted": ["Was soll ich machen?", "Was soll ich tun?"]
+        },
+        {
+          "id": "hl5-e11",
+          "type": "TRANSLATE",
+          "source": "My throat hurts and I have a temperature.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Mein Hals tut weh und ich habe Fieber.", "Mein Hals tut weh und ich habe auch Fieber.", "Ich habe Halsschmerzen und Fieber.", "Ich habe Fieber und mein Hals tut weh."]
+        },
+        {
+          "id": "hl5-e12",
+          "type": "TRANSLATE",
+          "source": "Er ist im Krankenhaus.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["He's in hospital.", "He is in hospital.", "He's in the hospital.", "He is in the hospital."]
+        },
+        {
+          "id": "hl5-e13",
+          "type": "LISTEN_TYPE",
+          "text": "Was fehlt Ihnen?",
+          "translation": "What's the matter?"
+        },
+        {
+          "id": "hl5-e14",
+          "type": "SHADOW",
+          "text": "Ich habe Kopfschmerzen und Halsschmerzen.",
+          "translation": "I have a headache and a sore throat.",
+          "hint": "Stress the body part: KOPF-shmair-tsen, HALS-shmair-tsen."
+        },
+        {
+          "id": "hl5-e15",
+          "type": "SHADOW",
+          "text": "Was soll ich machen?",
+          "translation": "What should I do?",
+          "hint": "soll: a short o. Let your voice fall at the end of a W-question."
+        }
+      ]
+    }
+  ]
+}
