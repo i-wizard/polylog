@@ -1,0 +1,928 @@
+{
+  "id": "17-reisen",
+  "level": "A2",
+  "title": "Travel",
+  "description": "Holidays by the sea and in the mountains: the two-way prepositions with Wo? (dative) and Wohin? (accusative), liegen/legen and stehen/stellen, and booking a holiday flat.",
+  "icon": "🧳",
+  "vocab": [
+    { "id": "wohin", "text": "wohin", "translations": ["where to", "where (to)"], "partOfSpeech": "QUESTION_WORD", "pronunciation": "vo-HIN", "example": { "text": "Wohin fährst du im Urlaub?", "translation": "Where are you going on holiday?" } },
+    { "id": "ferienwohnung", "text": "Ferienwohnung", "translations": ["holiday flat", "holiday apartment", "vacation rental"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Ferienwohnungen", "pronunciation": "FAY-ree-en-voh-noong", "example": { "text": "Wir haben eine Ferienwohnung am Meer gebucht.", "translation": "We've booked a holiday flat by the sea." } },
+    { "id": "buchen", "text": "buchen", "translations": ["to book"], "partOfSpeech": "VERB", "pronunciation": "BOO-khen (back-of-throat ch)", "example": { "text": "Ich möchte ein Zimmer buchen.", "translation": "I'd like to book a room." } },
+    { "id": "fliegen", "text": "fliegen", "translations": ["to fly"], "partOfSpeech": "VERB", "pronunciation": "FLEE-gen", "example": { "text": "Letztes Jahr sind wir nach Italien geflogen.", "translation": "Last year we flew to Italy." } },
+    { "id": "land", "text": "Land", "translations": ["country", "land"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Länder", "pronunciation": "lant", "example": { "text": "Welche Länder hast du schon besucht?", "translation": "Which countries have you visited?" } },
+    { "id": "ausland", "text": "Ausland", "translations": ["abroad", "foreign countries"], "partOfSpeech": "NOUN", "gender": "n", "pronunciation": "OWS-lant", "example": { "text": "Mein Bruder arbeitet im Ausland.", "translation": "My brother works abroad." } },
+    { "id": "strand", "text": "Strand", "translations": ["beach"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Strände", "pronunciation": "shtrant", "example": { "text": "Die Kinder spielen am Strand.", "translation": "The children are playing on the beach." } },
+    { "id": "meer", "text": "Meer", "translations": ["sea"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Meere", "pronunciation": "mayr (long e, like 'may')", "example": { "text": "Im Urlaub fahren wir ans Meer.", "translation": "On holiday we're going to the seaside." } },
+    { "id": "berg", "text": "Berg", "translations": ["mountain"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Berge", "pronunciation": "bairk (the g sounds like k)", "example": { "text": "Am Wochenende fahren wir in die Berge.", "translation": "At the weekend we're going to the mountains." } },
+    { "id": "see", "text": "See", "translations": ["lake"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Seen", "pronunciation": "zay", "example": { "text": "Wir wohnen am See.", "translation": "We live by the lake." } },
+    { "id": "an", "text": "an", "translations": ["at (the edge of)", "at", "by", "on"], "partOfSpeech": "PREPOSITION", "pronunciation": "an", "example": { "text": "Wir fahren an den Strand.", "translation": "We're going to the beach." } },
+    { "id": "auf", "text": "auf", "translations": ["on (top of)", "on", "onto"], "partOfSpeech": "PREPOSITION", "pronunciation": "owf (ow as in 'cow')", "example": { "text": "Der Pass liegt auf dem Tisch.", "translation": "The passport is on the table." } },
+    { "id": "koffer", "text": "Koffer", "translations": ["suitcase", "case"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Koffer", "pronunciation": "KOF-fer", "example": { "text": "Der Koffer steht neben der Tür.", "translation": "The suitcase is next to the door." } },
+    { "id": "pass", "text": "Pass", "translations": ["passport"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Pässe", "pronunciation": "pas (short a)", "example": { "text": "Wo ist mein Pass?", "translation": "Where's my passport?" } },
+    { "id": "unter", "text": "unter", "translations": ["under", "underneath", "below"], "partOfSpeech": "PREPOSITION", "pronunciation": "OON-ter", "example": { "text": "Der Koffer ist unter dem Bett.", "translation": "The suitcase is under the bed." } },
+    { "id": "ueber", "text": "über", "translations": ["above", "over"], "partOfSpeech": "PREPOSITION", "pronunciation": "Ü-ber (long ü: ee with rounded lips)", "example": { "text": "Die Lampe ist über dem Tisch.", "translation": "The lamp is above the table." } },
+    { "id": "vor-place", "text": "vor", "translations": ["in front of"], "partOfSpeech": "PREPOSITION", "pronunciation": "for (long o)", "example": { "text": "Das Taxi ist vor dem Hotel.", "translation": "The taxi is in front of the hotel." } },
+    { "id": "hinter", "text": "hinter", "translations": ["behind"], "partOfSpeech": "PREPOSITION", "pronunciation": "HIN-ter", "example": { "text": "Der Garten ist hinter dem Haus.", "translation": "The garden is behind the house." } },
+    { "id": "neben", "text": "neben", "translations": ["next to", "beside"], "partOfSpeech": "PREPOSITION", "pronunciation": "NAY-ben", "example": { "text": "Der Stuhl steht neben dem Bett.", "translation": "The chair is next to the bed." } },
+    { "id": "zwischen", "text": "zwischen", "translations": ["between"], "partOfSpeech": "PREPOSITION", "pronunciation": "TSVI-shen", "example": { "text": "Die Bäckerei ist zwischen der Post und der Bank.", "translation": "The bakery is between the post office and the bank." } },
+    { "id": "liegen", "text": "liegen", "translations": ["to lie (be lying flat)", "to lie", "to be lying"], "partOfSpeech": "VERB", "pronunciation": "LEE-gen", "example": { "text": "Das Buch liegt auf dem Tisch.", "translation": "The book is on the table." } },
+    { "id": "legen", "text": "legen", "translations": ["to lay (put down flat)", "to lay", "to put (flat)"], "partOfSpeech": "VERB", "pronunciation": "LAY-gen", "example": { "text": "Ich lege das Buch auf den Tisch.", "translation": "I'm putting the book on the table." } },
+    { "id": "stehen", "text": "stehen", "translations": ["to stand (be upright)", "to stand", "to be standing"], "partOfSpeech": "VERB", "pronunciation": "SHTAY-en (silent h)", "example": { "text": "Das Glas steht auf dem Tisch.", "translation": "The glass is on the table." } },
+    { "id": "stellen", "text": "stellen", "translations": ["to put (upright)", "to put", "to place"], "partOfSpeech": "VERB", "pronunciation": "SHTEL-len", "example": { "text": "Ich stelle das Glas auf den Tisch.", "translation": "I'm putting the glass on the table." } },
+    { "id": "packen", "text": "packen", "translations": ["to pack"], "partOfSpeech": "VERB", "pronunciation": "PAK-ken", "example": { "text": "Hast du schon gepackt?", "translation": "Have you packed yet?" } },
+    { "id": "handtuch", "text": "Handtuch", "translations": ["towel"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Handtücher", "pronunciation": "HANT-tookh (long oo, back-of-throat ch)", "example": { "text": "Das Handtuch liegt im Bad.", "translation": "The towel is in the bathroom." } },
+    { "id": "schluessel", "text": "Schlüssel", "translations": ["key"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Schlüssel", "pronunciation": "SHLÜS-sel (short ü)", "example": { "text": "Hier ist der Schlüssel.", "translation": "Here's the key." } },
+    { "id": "nacht", "text": "Nacht", "translations": ["night"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Nächte", "pronunciation": "nakht (back-of-throat ch)", "example": { "text": "Das Zimmer kostet achtzig Euro pro Nacht.", "translation": "The room costs eighty euros a night." } }
+  ],
+  "grammarNotes": [
+    {
+      "id": "reisen-wo-wohin",
+      "title": "Wo? or Wohin? The two-way prepositions",
+      "body": "Nine prepositions can take **two cases**: **in, an, auf, unter, über, vor, hinter, neben, zwischen**. The question decides which one:\n\n- **Wo?** (where something is, no movement to another place) → **dative**: *Wir sind **am** Strand. Das Buch liegt auf **dem** Tisch.*\n- **Wohin?** (movement to a place) → **accusative**: *Wir fahren **an den** Strand. Ich lege das Buch auf **den** Tisch.*\n\nFour short forms are used all the time: **im** (in dem), **ins** (in das), **am** (an dem), **ans** (an das). In speech, *auf das* often becomes *aufs*.\n\nIn the dative plural, the article is **den** and the noun adds **-n** if it doesn't already end in one: *in den Berge**n***.",
+      "table": [
+        ["", "der word", "das word", "die word", "plural"],
+        ["Wo? → dative", "dem", "dem", "der", "den (+ -n)"],
+        ["Wohin? → accusative", "den", "das", "die", "die"],
+        ["Wo? in …", "im Park", "im Kino", "in der Stadt", "in den Bergen"],
+        ["Wohin? in …", "in den Park", "ins Kino", "in die Stadt", "in die Berge"],
+        ["Wo? an …", "am Strand", "am Meer", "an der Ostsee", "an den Seen"],
+        ["Wohin? an …", "an den Strand", "ans Meer", "an die Ostsee", "an die Seen"]
+      ]
+    },
+    {
+      "id": "reisen-places",
+      "title": "Where to on holiday: nach, in, an or auf?",
+      "body": "- Cities and countries with no article: **nach** for *Wohin?*, plain **in** for *Wo?*: *nach Spanien / in Spanien*.\n- Countries with an article, like **die Schweiz**, use the two-way *in*: *in die Schweiz / in der Schweiz*.\n- Water (the sea, a lake, the beach) takes **an**: *ans Meer / am Meer*.\n- The mountains take **in** with the plural: *in die Berge / in den Bergen*. Going up a mountain is **auf**.\n\n**der See** is a lake. **die See** means the sea, used mainly in *die Nordsee* (the North Sea) and *die Ostsee* (the Baltic): *an der Ostsee*.\n\nFor past trips, use the Perfekt. **fliegen** and **fahren** are moving verbs, so they take *sein*: *Wir sind nach Italien **geflogen**.*",
+      "table": [
+        ["Place", "Wohin? (going there)", "Wo? (being there)"],
+        ["a city", "nach Berlin", "in Berlin"],
+        ["a country", "nach Spanien", "in Spanien"],
+        ["a country with die", "in die Schweiz", "in der Schweiz"],
+        ["abroad", "ins Ausland", "im Ausland"],
+        ["the sea", "ans Meer", "am Meer"],
+        ["the beach", "an den Strand", "am Strand"],
+        ["a lake", "an den See", "am See"],
+        ["the mountains", "in die Berge", "in den Bergen"],
+        ["a mountain top", "auf den Berg", "auf dem Berg"],
+        ["home", "nach Hause", "zu Hause"]
+      ]
+    },
+    {
+      "id": "reisen-position",
+      "title": "Where is it? Position words",
+      "body": "These words describe where something is. When they answer **Wo?**, they take the dative: *der* and *das* become **dem**, *die* becomes **der**.\n\n**zwischen** (between) needs two things joined by *und*, and both are in the dative: *zwischen **dem** Bett und **dem** Fenster*.\n\n**vor** also appears in times (*Viertel vor acht*). With a place it means *in front of*.",
+      "table": [
+        ["Preposition", "Meaning", "Wo? (dative)"],
+        ["in", "in", "im Koffer"],
+        ["an", "at, by (the edge of)", "am Meer"],
+        ["auf", "on (top of)", "auf dem Tisch"],
+        ["unter", "under", "unter dem Bett"],
+        ["über", "above, over", "über dem Tisch"],
+        ["vor", "in front of", "vor dem Hotel"],
+        ["hinter", "behind", "hinter dem Haus"],
+        ["neben", "next to", "neben der Tür"],
+        ["zwischen", "between", "zwischen dem Bett und dem Fenster"]
+      ]
+    },
+    {
+      "id": "reisen-liegen-legen",
+      "title": "liegen or legen? stehen or stellen?",
+      "body": "These two pairs match the two cases:\n\n- **liegen** (to be lying flat) and **stehen** (to be standing upright) say where something **is** → *Wo?* → dative. They have no object.\n- **legen** (to put down flat) and **stellen** (to put upright) say where you **put** something → *Wohin?* → accusative. They always have an object: the thing you put.\n\nGerman uses *liegen* and *stehen* where English just says *is*: *Das Handy **liegt** auf dem Tisch. Der Koffer **steht** neben der Tür.*\n\nAll four use *haben* in the Perfekt. (In southern Germany, Austria and Switzerland you'll also hear *ist gelegen* and *ist gestanden*.)",
+      "table": [
+        ["Verb", "Question", "Case", "Example", "Perfekt"],
+        ["liegen", "Wo?", "dative", "Das Buch liegt auf dem Tisch.", "hat gelegen"],
+        ["legen", "Wohin?", "accusative", "Ich lege das Buch auf den Tisch.", "hat gelegt"],
+        ["stehen", "Wo?", "dative", "Der Koffer steht neben der Tür.", "hat gestanden"],
+        ["stellen", "Wohin?", "accusative", "Ich stelle den Koffer neben die Tür.", "hat gestellt"]
+      ]
+    },
+    {
+      "id": "reisen-booking",
+      "title": "Booking a holiday flat",
+      "body": "Use **Sie** with the owner of a holiday flat. Rooms and flats are usually priced **pro Nacht** (per night).\n\n**buchen** (to book) and **packen** (to pack) are regular: *Ich habe gebucht. Ich habe gepackt.* **fliegen** (to fly) uses *sein*: *Ich bin geflogen.*\n\n**frei** means *available* here: *Ist die Wohnung noch frei?* **Schönen Urlaub!** (Have a nice holiday!) is a fixed phrase.",
+      "table": [
+        ["You want to…", "Say"],
+        ["book", "Ich möchte eine Ferienwohnung buchen."],
+        ["ask if it's available", "Ist die Wohnung im August noch frei?"],
+        ["ask the price", "Was kostet die Wohnung pro Nacht?"],
+        ["ask where something is", "Wo ist der Schlüssel? Wo sind die Handtücher?"],
+        ["ask where to put something", "Wohin kann ich den Koffer stellen?"],
+        ["ask the way to the beach", "Wie komme ich zum Strand?"],
+        ["wish someone a nice holiday", "Schönen Urlaub!"]
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "tv1-wohin",
+      "title": "Where to? in den, in die, ins",
+      "kind": "LEARN",
+      "introduces": ["wohin", "ferienwohnung", "buchen", "fliegen", "land", "ausland"],
+      "exercises": [
+        {
+          "id": "tv1-e1",
+          "type": "TEACH",
+          "title": "wo or wohin?",
+          "body": "You know **wo** = where. When someone is *going* somewhere, German asks a different question: **wohin** = where to.\n\n- **Wo** bist du? = Where are you? (a place, no movement)\n- **Wohin** fährst du? = Where are you going?\n\nEnglish often drops the *to*, but German doesn't: if there's movement towards a place, ask **wohin**. Stress the end: *vo-HIN*.",
+          "examples": [
+            { "text": "Wo bist du?", "translation": "Where are you?" },
+            { "text": "Wohin fährst du?", "translation": "Where are you going?" },
+            { "text": "Wo wohnt ihr?", "translation": "Where do you live? (plural)" },
+            { "text": "Wohin fahrt ihr im Urlaub?", "translation": "Where are you going on holiday? (plural)" }
+          ]
+        },
+        {
+          "id": "tv1-e2",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which question word fits? ___ gehst du?",
+          "prompt": "Where are you going?",
+          "promptLanguage": "BASE",
+          "options": ["Wo", "Wohin", "Woher"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "tv1-e3",
+          "type": "TEACH",
+          "title": "im Park or in den Park?",
+          "body": "In Unit 12 you used **in** with the dative to say *where something is*: *im Park, in der Stadt*.\n\nWhen you **go into** a place, *in* takes the **accusative** instead. That's the object form you know from *Ich brauche **den** Tisch*:\n\n- **Wo?** → dative: *Ich bin **im** Park.* (in dem)\n- **Wohin?** → accusative: *Ich gehe **in den** Park.*\n\nSo the question decides the case. Prepositions that work like this are called **two-way prepositions**. *in* is the first of nine.",
+          "examples": [
+            { "text": "Ich bin im Park.", "translation": "I'm in the park." },
+            { "text": "Ich gehe in den Park.", "translation": "I'm going to the park." },
+            { "text": "Sie ist in der Stadt.", "translation": "She's in town." },
+            { "text": "Sie geht in die Stadt.", "translation": "She's going into town." }
+          ]
+        },
+        {
+          "id": "tv1-e4",
+          "type": "TEACH",
+          "title": "ins Kino = in das Kino",
+          "body": "Remember **ins Kino** from Unit 9? Now you can see how it works. *das Kino* is a *das* word, and going there is *Wohin?*, so it's **in das Kino**. *in* + *das* shortens to **ins**.\n\nWhere you are is still the dative: **im Kino**.\n\n- der word: *im Park* → *in den Park*\n- die word: *in der Stadt* → *in die Stadt*\n- das word: *im Kino* → *ins Kino*",
+          "examples": [
+            { "text": "Wir gehen ins Kino.", "translation": "We're going to the cinema." },
+            { "text": "Wir sind im Kino.", "translation": "We're at the cinema." },
+            { "text": "Gehst du ins Café?", "translation": "Are you going to the café?" },
+            { "text": "Ich bin im Café.", "translation": "I'm at the café." }
+          ]
+        },
+        {
+          "id": "tv1-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "im Park", "base": "in the park" },
+            { "target": "in den Park", "base": "to the park" },
+            { "target": "in der Stadt", "base": "in town" },
+            { "target": "in die Stadt", "base": "into town" },
+            { "target": "ins Kino", "base": "to the cinema" }
+          ]
+        },
+        {
+          "id": "tv1-e6",
+          "type": "CLOZE",
+          "before": "Wir gehen",
+          "after": "Park.",
+          "accepted": ["in den"],
+          "translation": "We're going to the park.",
+          "hint": "der Park. Wohin? → in + accusative"
+        },
+        {
+          "id": "tv1-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which fits? Ich bin ___ Kino.",
+          "prompt": "I'm at the cinema.",
+          "promptLanguage": "BASE",
+          "options": ["im", "ins", "in den"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "tv1-e8",
+          "type": "TEACH",
+          "title": "Booking and flying",
+          "body": "- **die Ferienwohnung** = the holiday flat: *Ferien* (holidays) + *Wohnung*. Like *Wohnung*, it's a *die* word.\n- **buchen** = to book. It's regular: *Ich habe ein Hotel **gebucht**.*\n- **fliegen** = to fly. Like *fahren*, it's a moving verb, so the Perfekt uses **sein**: *Wir **sind** nach Spanien **geflogen**.* The participle changes its vowel: *geflogen*.",
+          "examples": [
+            { "text": "Wir buchen eine Ferienwohnung.", "translation": "We're booking a holiday flat." },
+            { "text": "Ich fliege morgen nach Spanien.", "translation": "I'm flying to Spain tomorrow." },
+            { "text": "Wir haben ein Hotel gebucht.", "translation": "We booked a hotel." },
+            { "text": "Letztes Jahr sind wir nach Italien geflogen.", "translation": "Last year we flew to Italy." }
+          ]
+        },
+        {
+          "id": "tv1-e9",
+          "type": "CLOZE",
+          "before": "Letztes Jahr",
+          "after": "wir nach Italien geflogen.",
+          "accepted": ["sind"],
+          "translation": "Last year we flew to Italy.",
+          "hint": "fliegen: haben or sein?"
+        },
+        {
+          "id": "tv1-e10",
+          "type": "TEACH",
+          "title": "nach Spanien, in die Schweiz, ins Ausland",
+          "body": "Most countries and cities have no article. For those you know **nach** for *Wohin?*: *nach Spanien, nach Berlin*. For *Wo?*, just use **in**: *in Spanien, in Berlin*.\n\nA few countries do have an article, like **die Schweiz**. They use the two-way *in*, like any other noun: *Wir fahren **in die** Schweiz. Wir wohnen **in der** Schweiz.* You already know *aus der Schweiz*.\n\n**das Land** = the country. **das Ausland** = abroad, literally the *out-country*. It's a noun: **ins Ausland** (Wohin?), **im Ausland** (Wo?).",
+          "examples": [
+            { "text": "Wir fliegen nach Spanien.", "translation": "We're flying to Spain." },
+            { "text": "Wir sind in Spanien.", "translation": "We're in Spain." },
+            { "text": "Wir fahren in die Schweiz.", "translation": "We're going to Switzerland." },
+            { "text": "Fährst du ins Ausland?", "translation": "Are you going abroad?" },
+            { "text": "Mein Bruder arbeitet im Ausland.", "translation": "My brother works abroad." }
+          ]
+        },
+        {
+          "id": "tv1-e11",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which fits? Im Urlaub fahren wir ___ Schweiz.",
+          "prompt": "On holiday we're going to Switzerland.",
+          "promptLanguage": "BASE",
+          "options": ["nach", "in die", "in der"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "tv1-e12",
+          "type": "WORD_ORDER",
+          "translation": "Where are you flying to on holiday? (to several friends)",
+          "answer": "Wohin fliegt ihr im Urlaub?",
+          "distractors": ["Wo", "fliegen"]
+        },
+        {
+          "id": "tv1-e13",
+          "type": "TRANSLATE",
+          "source": "We booked a holiday flat.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Wir haben eine Ferienwohnung gebucht."]
+        },
+        {
+          "id": "tv1-e14",
+          "type": "TRANSLATE",
+          "source": "Letztes Jahr sind wir ins Ausland geflogen.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Last year we flew abroad.", "Last year we went abroad.", "We flew abroad last year.", "We went abroad last year.", "Last year we travelled abroad.", "Last year we traveled abroad.", "Last year, we flew abroad."]
+        },
+        {
+          "id": "tv1-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Wohin fährst du im Urlaub?",
+          "translation": "Where are you going on holiday?"
+        },
+        {
+          "id": "tv1-e16",
+          "type": "SHADOW",
+          "text": "Wohin fährst du? Ich fahre in die Stadt.",
+          "translation": "Where are you going? I'm going into town.",
+          "hint": "wohin: vo-HIN, stress the second syllable."
+        }
+      ]
+    },
+    {
+      "id": "tv2-meer",
+      "title": "To the sea: an and auf",
+      "kind": "LEARN",
+      "introduces": ["strand", "meer", "berg", "see", "an", "auf"],
+      "exercises": [
+        {
+          "id": "tv2-e1",
+          "type": "TEACH",
+          "title": "Beach, sea, mountains",
+          "body": "Where do you like to go on holiday? Learn each place with its article:\n\n- **der Strand** = the beach\n- **das Meer** = the sea\n- **der Berg** = the mountain. You'll often use the plural: **die Berge**.\n- **der See** = the lake\n\nCareful: **die See** exists too. It's another word for the sea, used mostly in *die Nordsee* (the North Sea) and *die Ostsee* (the Baltic). For now, remember: **der See** is a lake.",
+          "examples": [
+            { "text": "der Strand", "translation": "the beach" },
+            { "text": "das Meer", "translation": "the sea", "hint": "a long e, like 'may'" },
+            { "text": "der Berg", "translation": "the mountain" },
+            { "text": "die Berge", "translation": "the mountains" },
+            { "text": "der See", "translation": "the lake" }
+          ]
+        },
+        {
+          "id": "tv2-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Strand", "base": "the beach" },
+            { "target": "das Meer", "base": "the sea" },
+            { "target": "der Berg", "base": "the mountain" },
+            { "target": "die Berge", "base": "the mountains" },
+            { "target": "der See", "base": "the lake" }
+          ]
+        },
+        {
+          "id": "tv2-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "der, die or das? Think of the lake.",
+          "prompt": "See (lake)",
+          "promptLanguage": "TARGET",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "tv2-e4",
+          "type": "TEACH",
+          "title": "am Meer, ans Meer",
+          "body": "**an** means *at*, *by the side of*. Use it for water: the sea, a lake, the beach. It's a two-way preposition, just like *in*:\n\n- **Wo?** → dative. an + dem = **am**: *Wir sind **am** Meer. Wir sind **am** Strand.*\n- **Wohin?** → accusative: *Wir gehen **an den** Strand.* With a *das* word, an + das = **ans**: *Wir fahren **ans** Meer.*\n\nYou've met *an* before: *an der Ampel, an der Ecke*. That's *Wo?*, so it's the dative.",
+          "examples": [
+            { "text": "Wir sind am Meer.", "translation": "We're at the seaside." },
+            { "text": "Wir fahren ans Meer.", "translation": "We're going to the seaside." },
+            { "text": "Die Kinder spielen am Strand.", "translation": "The children are playing on the beach." },
+            { "text": "Gehen wir an den Strand?", "translation": "Shall we go to the beach?" },
+            { "text": "Wir wohnen am See.", "translation": "We live by the lake." }
+          ]
+        },
+        {
+          "id": "tv2-e5",
+          "type": "CLOZE",
+          "before": "Die Kinder spielen",
+          "after": "Strand.",
+          "accepted": ["am"],
+          "translation": "The children are playing on the beach.",
+          "hint": "der Strand. Wo? → an + dem"
+        },
+        {
+          "id": "tv2-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which fits? Im Urlaub fahren wir ___ Meer.",
+          "prompt": "On holiday we go to the seaside.",
+          "promptLanguage": "BASE",
+          "options": ["am", "ans", "an den"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "tv2-e7",
+          "type": "TEACH",
+          "title": "in die Berge, auf den Berg",
+          "body": "For the mountains, German uses **in** with the plural:\n\n- **Wohin?** → *Wir fahren **in die** Berge.*\n- **Wo?** → *Wir sind **in den** Bergen.*\n\nIn the dative plural, the article is **den** and the noun adds **-n**: *die Berge → in den Berge**n***.\n\n**auf** = on, on top of. You go *up* a mountain with *auf*: *Wir gehen **auf den** Berg.* (Wohin?) At the top: *Wir sind **auf dem** Berg.* (Wo?)",
+          "examples": [
+            { "text": "Wir fahren in die Berge.", "translation": "We're going to the mountains." },
+            { "text": "Wir wandern gern in den Bergen.", "translation": "We like hiking in the mountains." },
+            { "text": "Wir gehen auf den Berg.", "translation": "We're going up the mountain." },
+            { "text": "Jetzt sind wir auf dem Berg.", "translation": "Now we're at the top of the mountain." }
+          ]
+        },
+        {
+          "id": "tv2-e8",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "am Meer", "base": "at the seaside" },
+            { "target": "ans Meer", "base": "to the seaside" },
+            { "target": "in den Bergen", "base": "in the mountains" },
+            { "target": "in die Berge", "base": "to the mountains" },
+            { "target": "auf dem Berg", "base": "at the top of the mountain" }
+          ]
+        },
+        {
+          "id": "tv2-e9",
+          "type": "CLOZE",
+          "before": "Wir wandern gern in den",
+          "after": ".",
+          "accepted": ["Bergen"],
+          "translation": "We like hiking in the mountains.",
+          "hint": "die Berge. Wo? → dative plural"
+        },
+        {
+          "id": "tv2-e10",
+          "type": "TEACH",
+          "title": "nach, an or in?",
+          "body": "Now you can say where you're going on holiday. The little word depends on the place:\n\n- a city, or a country with no article → **nach**: *nach Spanien, nach Wien*\n- the sea, a lake, the beach → **an**: *ans Meer, an den See, an den Strand*\n- the mountains, and countries with an article → **in**: *in die Berge, in die Schweiz*\n\nYou can combine them: *Wir fliegen **nach** Spanien und fahren dann **ans** Meer.*",
+          "examples": [
+            { "text": "Wir fliegen nach Spanien.", "translation": "We're flying to Spain." },
+            { "text": "Wir fahren an den See.", "translation": "We're going to the lake." },
+            { "text": "Wir fahren in die Berge.", "translation": "We're going to the mountains." },
+            { "text": "Wir fliegen nach Spanien und fahren dann ans Meer.", "translation": "We're flying to Spain and then going to the seaside." }
+          ]
+        },
+        {
+          "id": "tv2-e11",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which one is right?",
+          "prompt": "I'm going to the beach.",
+          "promptLanguage": "BASE",
+          "options": ["Ich gehe an den Strand.", "Ich gehe am Strand.", "Ich gehe nach Strand."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "tv2-e12",
+          "type": "WORD_ORDER",
+          "translation": "Last year we went to the seaside. (start with last year)",
+          "answer": "Letztes Jahr sind wir ans Meer gefahren.",
+          "distractors": ["am", "haben"]
+        },
+        {
+          "id": "tv2-e13",
+          "type": "TRANSLATE",
+          "source": "We're at the lake.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Wir sind am See."]
+        },
+        {
+          "id": "tv2-e14",
+          "type": "TRANSLATE",
+          "source": "Am Wochenende fahren wir in die Berge.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["At the weekend we're going to the mountains.", "At the weekend we are going to the mountains.", "At the weekend we go to the mountains.", "On the weekend we're going to the mountains.", "On the weekend we go to the mountains.", "We're going to the mountains at the weekend.", "We're going to the mountains on the weekend.", "We go to the mountains at the weekend.", "We go to the mountains on the weekend.", "This weekend we're going to the mountains.", "We're going to the mountains this weekend."]
+        },
+        {
+          "id": "tv2-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Wir fahren ans Meer.",
+          "translation": "We're going to the seaside."
+        },
+        {
+          "id": "tv2-e16",
+          "type": "SHADOW",
+          "text": "Wohin fahrt ihr im Urlaub? Wir fahren ans Meer.",
+          "translation": "Where are you going on holiday? We're going to the seaside.",
+          "hint": "Meer has a long e, like the 'ay' in 'may'. Don't say it like English 'mere'."
+        }
+      ]
+    },
+    {
+      "id": "tv3-koffer",
+      "title": "Under the bed: position words",
+      "kind": "LEARN",
+      "introduces": ["koffer", "pass", "unter", "ueber", "vor-place", "hinter", "neben", "zwischen"],
+      "exercises": [
+        {
+          "id": "tv3-e1",
+          "type": "TEACH",
+          "title": "der Koffer, der Pass",
+          "body": "Time to pack!\n\n- **der Koffer** = the suitcase. The plural is the same: *die Koffer*.\n- **der Pass** = the passport. Plural: *die Pässe*.\n\nYou know *im* for where something is: *Dein Pass ist **im** Koffer.*",
+          "examples": [
+            { "text": "der Koffer", "translation": "the suitcase" },
+            { "text": "der Pass", "translation": "the passport" },
+            { "text": "Wo ist mein Pass?", "translation": "Where's my passport?" },
+            { "text": "Dein Pass ist im Koffer.", "translation": "Your passport is in the suitcase." }
+          ]
+        },
+        {
+          "id": "tv3-e2",
+          "type": "TEACH",
+          "title": "auf, unter, über",
+          "body": "Here are more two-way prepositions. When they say *where something is*, use the **dative**, just like *im* and *am*:\n\n- **auf** = on (on top of): *auf dem Tisch*\n- **unter** = under: *unter dem Bett*\n- **über** = above, over: *über dem Tisch*\n\nRemember the dative: *der* and *das* → **dem**, *die* → **der**.",
+          "examples": [
+            { "text": "Der Pass ist auf dem Tisch.", "translation": "The passport is on the table." },
+            { "text": "Der Koffer ist unter dem Bett.", "translation": "The suitcase is under the bed." },
+            { "text": "Die Lampe ist über dem Tisch.", "translation": "The lamp is above the table." },
+            { "text": "Der Pass ist unter der Jacke.", "translation": "The passport is under the jacket." }
+          ]
+        },
+        {
+          "id": "tv3-e3",
+          "type": "CLOZE",
+          "before": "Der Koffer ist unter",
+          "after": "Bett.",
+          "accepted": ["dem"],
+          "translation": "The suitcase is under the bed.",
+          "hint": "das Bett. Wo? → dative"
+        },
+        {
+          "id": "tv3-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which sentence means this?",
+          "prompt": "The lamp is above the table.",
+          "promptLanguage": "BASE",
+          "options": ["Die Lampe ist über dem Tisch.", "Die Lampe ist unter dem Tisch.", "Die Lampe ist auf dem Tisch."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "tv3-e5",
+          "type": "TEACH",
+          "title": "vor, hinter, neben",
+          "body": "- **vor** = in front of: *vor dem Hotel*. You know *vor* from times: *Viertel vor acht*. Same word, different job.\n- **hinter** = behind: *hinter dem Haus*\n- **neben** = next to: *neben dem Bett*\n\nSame pattern again: *Wo?* → dative. With a *die* word: *neben **der** Tür*.",
+          "examples": [
+            { "text": "Das Taxi ist vor dem Hotel.", "translation": "The taxi is in front of the hotel." },
+            { "text": "Der Garten ist hinter dem Haus.", "translation": "The garden is behind the house." },
+            { "text": "Der Stuhl ist neben dem Bett.", "translation": "The chair is next to the bed." },
+            { "text": "Mein Koffer ist neben der Tür.", "translation": "My suitcase is next to the door." }
+          ]
+        },
+        {
+          "id": "tv3-e6",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "unter", "base": "under" },
+            { "target": "über", "base": "above" },
+            { "target": "vor", "base": "in front of" },
+            { "target": "hinter", "base": "behind" },
+            { "target": "neben", "base": "next to" }
+          ]
+        },
+        {
+          "id": "tv3-e7",
+          "type": "CLOZE",
+          "before": "Mein Koffer ist neben",
+          "after": "Tür.",
+          "accepted": ["der"],
+          "translation": "My suitcase is next to the door.",
+          "hint": "die Tür. Wo? → dative"
+        },
+        {
+          "id": "tv3-e8",
+          "type": "TEACH",
+          "title": "zwischen: between",
+          "body": "**zwischen** = between. It needs two things joined with *und*, and both are in the dative:\n\n- *zwischen **dem** Bett und **dem** Fenster*\n- *zwischen **der** Post und **der** Bank*",
+          "examples": [
+            { "text": "Der Tisch ist zwischen dem Bett und dem Fenster.", "translation": "The table is between the bed and the window." },
+            { "text": "Die Bäckerei ist zwischen der Post und der Bank.", "translation": "The bakery is between the post office and the bank." },
+            { "text": "Das Hotel ist zwischen dem Bahnhof und dem Park.", "translation": "The hotel is between the station and the park." }
+          ]
+        },
+        {
+          "id": "tv3-e9",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Die Bäckerei ist zwischen der Post und dem Supermarkt.",
+          "promptLanguage": "TARGET",
+          "options": ["The bakery is between the post office and the supermarket.", "The bakery is behind the post office and the supermarket.", "The bakery is next to the post office, in the supermarket."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "tv3-e10",
+          "type": "TEACH",
+          "title": "All nine together",
+          "body": "You've now met all nine two-way prepositions:\n\n**in, an, auf, unter, über, vor, hinter, neben, zwischen**\n\nThey all follow one rule:\n\n- **Wo?** (where something is) → dative: *dem, der, dem*\n- **Wohin?** (movement to a place) → accusative: *den, die, das*\n\nIn this lesson you used them for *Wo?*. In the next one you'll put things somewhere, which is *Wohin?*.",
+          "examples": [
+            { "text": "Wo ist der Pass? Im Koffer.", "translation": "Where's the passport? In the suitcase." },
+            { "text": "Wohin fährst du? Ans Meer.", "translation": "Where are you going? To the seaside." },
+            { "text": "Wo ist das Taxi? Vor dem Hotel.", "translation": "Where's the taxi? In front of the hotel." }
+          ]
+        },
+        {
+          "id": "tv3-e11",
+          "type": "WORD_ORDER",
+          "translation": "My passport is in the suitcase.",
+          "answer": "Mein Pass ist im Koffer.",
+          "distractors": ["in", "den"]
+        },
+        {
+          "id": "tv3-e12",
+          "type": "TRANSLATE",
+          "source": "The suitcase is under the bed.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Der Koffer ist unter dem Bett.", "Der Koffer liegt unter dem Bett.", "Der Koffer steht unter dem Bett."]
+        },
+        {
+          "id": "tv3-e13",
+          "type": "TRANSLATE",
+          "source": "The garden is behind the house.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Der Garten ist hinter dem Haus.", "Der Garten liegt hinter dem Haus."]
+        },
+        {
+          "id": "tv3-e14",
+          "type": "TRANSLATE",
+          "source": "Das Hotel ist zwischen dem Bahnhof und dem Park.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["The hotel is between the station and the park.", "The hotel is between the train station and the park.", "The hotel is between the railway station and the park.", "The hotel's between the station and the park.", "The hotel's between the train station and the park."]
+        },
+        {
+          "id": "tv3-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Wo ist mein Pass?",
+          "translation": "Where's my passport?"
+        },
+        {
+          "id": "tv3-e16",
+          "type": "SHADOW",
+          "text": "Der Koffer ist unter dem Bett, und der Pass ist im Koffer.",
+          "translation": "The suitcase is under the bed, and the passport is in the suitcase.",
+          "hint": "unter: OON-ter, with a short oo. Koffer: KOF-fer."
+        }
+      ]
+    },
+    {
+      "id": "tv4-legen",
+      "title": "liegen or legen? stehen or stellen?",
+      "kind": "LEARN",
+      "introduces": ["liegen", "legen", "stehen", "stellen", "packen", "handtuch"],
+      "exercises": [
+        {
+          "id": "tv4-e1",
+          "type": "TEACH",
+          "title": "liegen and legen",
+          "body": "Two verbs that look alike but do different jobs:\n\n- **liegen** = to lie, to be lying (flat). It says *where something is* → **Wo?** → dative.\n- **legen** = to lay, to put (flat). You move something → **Wohin?** → accusative.\n\n*Das Buch **liegt** auf **dem** Tisch.* (where it is)\n*Ich **lege** das Buch auf **den** Tisch.* (where I put it)\n\n*legen* always has an object: the thing you put down.",
+          "examples": [
+            { "text": "Das Buch liegt auf dem Tisch.", "translation": "The book is on the table." },
+            { "text": "Ich lege das Buch auf den Tisch.", "translation": "I'm putting the book on the table." },
+            { "text": "Das Handy liegt im Koffer.", "translation": "The phone is in the suitcase." },
+            { "text": "Ich lege das Handy in den Koffer.", "translation": "I'm putting the phone in the suitcase." }
+          ]
+        },
+        {
+          "id": "tv4-e2",
+          "type": "CLOZE",
+          "before": "Ich lege den Pass auf",
+          "after": "Tisch.",
+          "accepted": ["den"],
+          "translation": "I'm putting the passport on the table.",
+          "hint": "der Tisch. legen → Wohin? → accusative"
+        },
+        {
+          "id": "tv4-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "liegt or legt? Der Pass ___ im Koffer.",
+          "prompt": "The passport is in the suitcase.",
+          "promptLanguage": "BASE",
+          "options": ["liegt", "legt"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "tv4-e4",
+          "type": "TEACH",
+          "title": "stehen and stellen",
+          "body": "The same kind of pair exists for things that stand **upright**: glasses, chairs, shoes, a suitcase on its wheels.\n\n- **stehen** = to stand, to be standing → **Wo?** → dative\n- **stellen** = to put (upright), to stand something somewhere → **Wohin?** → accusative\n\nGermans use *liegen* and *stehen* much more than English uses *lie* and *stand*. Where English just says *is*, German often says *liegt* or *steht*.",
+          "examples": [
+            { "text": "Das Glas steht auf dem Tisch.", "translation": "The glass is on the table." },
+            { "text": "Ich stelle das Glas auf den Tisch.", "translation": "I'm putting the glass on the table." },
+            { "text": "Der Koffer steht neben der Tür.", "translation": "The suitcase is next to the door." },
+            { "text": "Ich stelle den Koffer neben die Tür.", "translation": "I'm putting the suitcase next to the door." }
+          ]
+        },
+        {
+          "id": "tv4-e5",
+          "type": "CLOZE",
+          "before": "Ich stelle den Koffer neben",
+          "after": "Tür.",
+          "accepted": ["die"],
+          "translation": "I'm putting the suitcase next to the door.",
+          "hint": "die Tür. stellen → Wohin? → accusative"
+        },
+        {
+          "id": "tv4-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which fits? Die Schuhe ___ unter dem Bett.",
+          "prompt": "The shoes are under the bed.",
+          "promptLanguage": "BASE",
+          "options": ["stehen", "stellen", "legen"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "tv4-e7",
+          "type": "TEACH",
+          "title": "packen, das Handtuch",
+          "body": "- **packen** = to pack. It's regular: *ich packe, du packst*. Perfekt: *Ich habe **gepackt**.*\n- **das Handtuch** = the towel: *Hand* + *Tuch* (cloth). Plural: *die Handtücher*.\n\nWhen you pack, you put things *into* the suitcase. That's movement, so it's **Wohin?**: *in den Koffer*.",
+          "examples": [
+            { "text": "Ich packe meinen Koffer.", "translation": "I'm packing my suitcase." },
+            { "text": "Ich lege das Handtuch in den Koffer.", "translation": "I'm putting the towel in the suitcase." },
+            { "text": "Hast du schon gepackt?", "translation": "Have you packed yet?" },
+            { "text": "Das Handtuch liegt im Bad.", "translation": "The towel is in the bathroom." }
+          ]
+        },
+        {
+          "id": "tv4-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which fits? Ich lege das Handtuch ___ Bett.",
+          "prompt": "I'm putting the towel on the bed.",
+          "promptLanguage": "BASE",
+          "options": ["auf das", "auf dem", "auf der"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "tv4-e9",
+          "type": "TEACH",
+          "title": "In the past: gelegt, gestellt",
+          "body": "*legen* and *stellen* are regular, so their Perfekt is easy, with *haben*:\n\n- legen → *Ich habe … **gelegt**.*\n- stellen → *Ich habe … **gestellt**.*\n\nThe place is still *Wohin?*, so it stays in the accusative: *Ich habe den Pass **in den** Koffer gelegt.*\n\nTo ask where someone put something, use **wohin**: *Wohin hast du meinen Pass gelegt?*",
+          "examples": [
+            { "text": "Wohin hast du meinen Pass gelegt?", "translation": "Where did you put my passport?" },
+            { "text": "Ich habe den Pass in den Koffer gelegt.", "translation": "I put the passport in the suitcase." },
+            { "text": "Wir haben die Stühle auf den Balkon gestellt.", "translation": "We put the chairs on the balcony." }
+          ]
+        },
+        {
+          "id": "tv4-e10",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "liegen", "base": "to be lying (flat)" },
+            { "target": "legen", "base": "to lay (put down flat)" },
+            { "target": "stehen", "base": "to be standing" },
+            { "target": "stellen", "base": "to put (upright)" },
+            { "target": "packen", "base": "to pack" }
+          ]
+        },
+        {
+          "id": "tv4-e11",
+          "type": "WORD_ORDER",
+          "translation": "I put the passport in the suitcase.",
+          "answer": "Ich habe den Pass in den Koffer gelegt.",
+          "distractors": ["dem", "gelegen"]
+        },
+        {
+          "id": "tv4-e12",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Your friend asks this. Which answer is right?",
+          "prompt": "Wo ist das Handtuch?",
+          "promptLanguage": "TARGET",
+          "options": ["Es liegt auf dem Bett.", "Es legt auf dem Bett.", "Es liegt auf das Bett."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "tv4-e13",
+          "type": "TRANSLATE",
+          "source": "The suitcase is standing next to the door.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Der Koffer steht neben der Tür."]
+        },
+        {
+          "id": "tv4-e14",
+          "type": "TRANSLATE",
+          "source": "Ich stelle die Schuhe unter das Bett.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["I'm putting the shoes under the bed.", "I am putting the shoes under the bed.", "I put the shoes under the bed.", "I'm putting my shoes under the bed.", "I put my shoes under the bed.", "I'm placing the shoes under the bed.", "I place the shoes under the bed."]
+        },
+        {
+          "id": "tv4-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Das Buch liegt auf dem Tisch.",
+          "translation": "The book is on the table."
+        },
+        {
+          "id": "tv4-e16",
+          "type": "SHADOW",
+          "text": "Ich lege das Buch auf den Tisch. Jetzt liegt es auf dem Tisch.",
+          "translation": "I'm putting the book on the table. Now it's lying on the table.",
+          "hint": "legen: LAY-gen. liegen: LEE-gen. Keep the two vowels apart."
+        }
+      ]
+    },
+    {
+      "id": "tv5-ferienwohnung",
+      "title": "The holiday flat",
+      "kind": "PRACTICE",
+      "introduces": ["schluessel", "nacht"],
+      "exercises": [
+        {
+          "id": "tv5-e1",
+          "type": "TEACH",
+          "title": "Booking a holiday flat",
+          "body": "Two last words, and two handy phrases:\n\n- **der Schlüssel** = the key. Plural: *die Schlüssel*.\n- **die Nacht** = the night. Plural: *die Nächte*. **pro Nacht** = per night.\n- **Ist die Wohnung noch frei?** = Is the flat still available? (*frei* = free, available)\n- **Schönen Urlaub!** = Have a nice holiday! Learn it as a chunk.",
+          "examples": [
+            { "text": "Hier ist der Schlüssel.", "translation": "Here's the key." },
+            { "text": "Das Zimmer kostet achtzig Euro pro Nacht.", "translation": "The room costs eighty euros a night." },
+            { "text": "Ist die Wohnung im August noch frei?", "translation": "Is the flat still available in August?" },
+            { "text": "Schönen Urlaub!", "translation": "Have a nice holiday!" }
+          ]
+        },
+        {
+          "id": "tv5-e2",
+          "type": "TEACH",
+          "title": "Am Telefon",
+          "body": "Anna wants to book a holiday flat on the Baltic coast: *an der Ostsee*. She calls the owner, Frau Krüger. Read along, and tap each line to hear it.",
+          "examples": [
+            { "text": "Guten Tag, Frau Krüger! Ich möchte Ihre Ferienwohnung an der Ostsee buchen. Ist sie im August noch frei?", "translation": "Anna: Hello, Mrs Krüger! I'd like to book your holiday flat on the Baltic coast. Is it still available in August?" },
+            { "text": "Ja, im August ist sie noch frei. Wie lange möchten Sie bleiben?", "translation": "Frau Krüger: Yes, it's still available in August. How long would you like to stay?" },
+            { "text": "Eine Woche. Was kostet die Wohnung pro Nacht?", "translation": "Anna: A week. How much is the flat per night?" },
+            { "text": "Neunzig Euro pro Nacht. Die Wohnung ist direkt am Strand.", "translation": "Frau Krüger: Ninety euros a night. The flat is right on the beach." },
+            { "text": "Toll! Dann buche ich die Wohnung.", "translation": "Anna: Great! Then I'll book the flat." }
+          ]
+        },
+        {
+          "id": "tv5-e3",
+          "type": "TEACH",
+          "title": "In der Ferienwohnung",
+          "body": "In August, Anna arrives at the flat. Frau Krüger shows her where everything is.",
+          "examples": [
+            { "text": "Herzlich willkommen! Hier ist der Schlüssel.", "translation": "Frau Krüger: Welcome! Here's the key." },
+            { "text": "Danke! Wohin kann ich den Koffer stellen?", "translation": "Anna: Thanks! Where can I put the suitcase?" },
+            { "text": "Stellen Sie den Koffer ins Schlafzimmer, neben den Schrank.", "translation": "Frau Krüger: Put the suitcase in the bedroom, next to the wardrobe." },
+            { "text": "Und wo sind die Handtücher?", "translation": "Anna: And where are the towels?" },
+            { "text": "Die Handtücher liegen im Schlafzimmer auf dem Bett.", "translation": "Frau Krüger: The towels are on the bed in the bedroom." },
+            { "text": "Gibt es hier einen Supermarkt?", "translation": "Anna: Is there a supermarket here?" },
+            { "text": "Ja, hinter dem Bahnhof, zwischen der Post und der Apotheke.", "translation": "Frau Krüger: Yes, behind the station, between the post office and the pharmacy." },
+            { "text": "Und wie komme ich zum Strand?", "translation": "Anna: And how do I get to the beach?" },
+            { "text": "Der Strand ist direkt hinter dem Haus. Zwei Minuten zu Fuß!", "translation": "Frau Krüger: The beach is right behind the house. Two minutes on foot!" },
+            { "text": "Super! Danke schön!", "translation": "Anna: Great! Thank you very much!" },
+            { "text": "Bitte! Schönen Urlaub!", "translation": "Frau Krüger: You're welcome! Have a nice holiday!" }
+          ]
+        },
+        {
+          "id": "tv5-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the phone call: how much is the flat?",
+          "prompt": "Was kostet die Wohnung pro Nacht?",
+          "promptLanguage": "TARGET",
+          "options": ["€90 a night", "€19 a night", "€90 a week"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "tv5-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: where are the towels?",
+          "prompt": "Wo sind die Handtücher?",
+          "promptLanguage": "TARGET",
+          "options": ["In the bathroom, next to the cupboard.", "On the bed in the bedroom.", "Under the bed in the bedroom."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 1
+        },
+        {
+          "id": "tv5-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: where is the supermarket?",
+          "prompt": "Gibt es hier einen Supermarkt?",
+          "promptLanguage": "TARGET",
+          "options": ["In front of the station, next to the bank.", "Behind the house, by the beach.", "Behind the station, between the post office and the pharmacy."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 2
+        },
+        {
+          "id": "tv5-e7",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Schlüssel", "base": "the key" },
+            { "target": "pro Nacht", "base": "per night" },
+            { "target": "Schönen Urlaub!", "base": "Have a nice holiday!" },
+            { "target": "an der Ostsee", "base": "on the Baltic coast" },
+            { "target": "direkt am Strand", "base": "right on the beach" }
+          ]
+        },
+        {
+          "id": "tv5-e8",
+          "type": "CLOZE",
+          "before": "Stellen Sie den Koffer neben",
+          "after": "Schrank.",
+          "accepted": ["den"],
+          "translation": "Put the suitcase next to the wardrobe.",
+          "hint": "der Schrank. stellen → Wohin? → accusative"
+        },
+        {
+          "id": "tv5-e9",
+          "type": "CLOZE",
+          "before": "Die Handtücher liegen auf",
+          "after": "Bett.",
+          "accepted": ["dem"],
+          "translation": "The towels are on the bed.",
+          "hint": "das Bett. liegen → Wo? → dative"
+        },
+        {
+          "id": "tv5-e10",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Being there or going there? Which do you hear?",
+          "options": ["Wir sind am Meer.", "Wir fahren ans Meer."],
+          "answerIndex": 1
+        },
+        {
+          "id": "tv5-e11",
+          "type": "WORD_ORDER",
+          "translation": "Where can I put the suitcase?",
+          "answer": "Wohin kann ich den Koffer stellen?",
+          "distractors": ["Wo", "dem"]
+        },
+        {
+          "id": "tv5-e12",
+          "type": "TRANSLATE",
+          "source": "I'd like to book a holiday flat.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich möchte eine Ferienwohnung buchen.", "Ich möchte gern eine Ferienwohnung buchen.", "Ich möchte gerne eine Ferienwohnung buchen."]
+        },
+        {
+          "id": "tv5-e13",
+          "type": "TRANSLATE",
+          "source": "The key is on the table.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Der Schlüssel liegt auf dem Tisch.", "Der Schlüssel ist auf dem Tisch."]
+        },
+        {
+          "id": "tv5-e14",
+          "type": "TRANSLATE",
+          "source": "Letztes Jahr sind wir an die Ostsee gefahren und haben eine Ferienwohnung gebucht.",
+          "sourceLanguage": "TARGET",
+          "accepted": [
+            "Last year we went to the Baltic Sea and booked a holiday flat.",
+            "Last year we went to the Baltic and booked a holiday flat.",
+            "Last year we went to the Baltic coast and booked a holiday flat.",
+            "Last year we went to the Baltic Sea and booked a holiday apartment.",
+            "Last year we went to the Baltic and booked a holiday apartment.",
+            "Last year we went to the Baltic coast and booked a holiday apartment.",
+            "Last year we went to the Baltic Sea and rented a holiday flat.",
+            "Last year we drove to the Baltic Sea and booked a holiday flat.",
+            "Last year we drove to the Baltic and booked a holiday flat.",
+            "Last year we drove to the Baltic coast and booked a holiday flat.",
+            "Last year we went to the Baltic Sea and booked a vacation rental.",
+            "We went to the Baltic Sea last year and booked a holiday flat.",
+            "We went to the Baltic last year and booked a holiday flat.",
+            "Last year, we went to the Baltic Sea and booked a holiday flat."
+          ]
+        },
+        {
+          "id": "tv5-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Der Supermarkt ist hinter dem Bahnhof.",
+          "translation": "The supermarket is behind the station."
+        },
+        {
+          "id": "tv5-e16",
+          "type": "SHADOW",
+          "text": "Danke! Wohin kann ich den Koffer stellen?",
+          "translation": "Thanks! Where can I put the suitcase?",
+          "hint": "wohin: vo-HIN. stellen: SHTEL-len, with sh at the start."
+        }
+      ]
+    }
+  ]
+}

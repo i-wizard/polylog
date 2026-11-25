@@ -1,0 +1,881 @@
+{
+  "id": "16-arbeit",
+  "level": "A2",
+  "title": "Work",
+  "description": "Jobs and the office: say what you do and where you work, use mir, dir and ihm with helfen, and give reasons with weil. Then a first day at a new job.",
+  "icon": "💼",
+  "vocab": [
+    { "id": "beruf", "text": "Beruf", "translations": ["profession", "job", "occupation"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Berufe", "pronunciation": "be-ROOF", "example": { "text": "Was sind Sie von Beruf?", "translation": "What do you do for a living?" } },
+    { "id": "lehrer", "text": "Lehrer", "translations": ["teacher (male)", "teacher"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Lehrer", "pronunciation": "LAY-rer", "example": { "text": "Mein Vater ist Lehrer.", "translation": "My father is a teacher." } },
+    { "id": "lehrerin", "text": "Lehrerin", "translations": ["teacher (female)", "teacher"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Lehrerinnen", "pronunciation": "LAY-re-rin", "example": { "text": "Ich bin Lehrerin.", "translation": "I'm a teacher." } },
+    { "id": "kellner", "text": "Kellner", "translations": ["waiter"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Kellner", "pronunciation": "KEL-ner", "example": { "text": "Mein Bruder ist Kellner.", "translation": "My brother is a waiter." } },
+    { "id": "kellnerin", "text": "Kellnerin", "translations": ["waitress"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Kellnerinnen", "pronunciation": "KEL-ne-rin", "example": { "text": "Die Kellnerin spricht Englisch.", "translation": "The waitress speaks English." } },
+    { "id": "verkaeufer", "text": "Verkäufer", "translations": ["shop assistant (male)", "salesman", "sales assistant"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Verkäufer", "pronunciation": "fer-KOY-fer", "example": { "text": "Der Verkäufer ist sehr jung.", "translation": "The shop assistant is very young." } },
+    { "id": "koch", "text": "Koch", "translations": ["cook (male)", "cook", "chef (in a kitchen)"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Köche", "pronunciation": "kokh (short o, back-of-throat ch)", "example": { "text": "Er ist Koch in einem Restaurant.", "translation": "He's a cook in a restaurant." } },
+    { "id": "koechin", "text": "Köchin", "translations": ["cook (female)", "cook"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Köchinnen", "pronunciation": "KÖ-khin (short ö, soft ch)", "example": { "text": "Meine Mutter ist Köchin.", "translation": "My mother is a cook." } },
+    { "id": "firma", "text": "Firma", "translations": ["company", "firm"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Firmen", "pronunciation": "FIR-ma (i as in 'fit')", "example": { "text": "Sie arbeitet bei einer Firma in Hamburg.", "translation": "She works for a company in Hamburg." } },
+    { "id": "buero", "text": "Büro", "translations": ["office"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Büros", "pronunciation": "bü-ROH (ü: ee with rounded lips)", "example": { "text": "Ich arbeite im Büro.", "translation": "I work in an office." } },
+    { "id": "bei", "text": "bei", "translations": ["at (a company or someone's place)", "at", "for (a company)"], "partOfSpeech": "PREPOSITION", "pronunciation": "by", "example": { "text": "Er arbeitet bei der Post.", "translation": "He works for the post office." } },
+    { "id": "als-job", "text": "als", "translations": ["as (a job)", "as"], "partOfSpeech": "PREPOSITION", "pronunciation": "als", "example": { "text": "Ich arbeite als Kellner.", "translation": "I work as a waiter." } },
+    { "id": "kollege", "text": "Kollege", "translations": ["colleague (male)", "colleague", "co-worker"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Kollegen", "pronunciation": "ko-LAY-ge", "example": { "text": "Mein Kollege heißt Jonas.", "translation": "My colleague is called Jonas." } },
+    { "id": "kollegin", "text": "Kollegin", "translations": ["colleague (female)", "colleague", "co-worker"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Kolleginnen", "pronunciation": "ko-LAY-gin", "example": { "text": "Meine Kollegin kommt aus Österreich.", "translation": "My colleague comes from Austria." } },
+    { "id": "chef", "text": "Chef", "translations": ["boss (male)", "boss", "manager"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Chefs", "pronunciation": "shef", "example": { "text": "Der Chef ist heute nicht da.", "translation": "The boss isn't in today." } },
+    { "id": "chefin", "text": "Chefin", "translations": ["boss (female)", "boss", "manager"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Chefinnen", "pronunciation": "SHE-fin", "example": { "text": "Meine Chefin heißt Frau Schulz.", "translation": "My boss is called Ms Schulz." } },
+    { "id": "helfen", "text": "helfen", "translations": ["to help"], "partOfSpeech": "VERB", "pronunciation": "HEL-fen", "example": { "text": "Kannst du mir helfen?", "translation": "Can you help me?" } },
+    { "id": "mir", "text": "mir", "translations": ["me (dative)", "to me", "me"], "partOfSpeech": "PRONOUN", "pronunciation": "meer", "example": { "text": "Mir tut der Kopf weh.", "translation": "My head hurts." } },
+    { "id": "dir", "text": "dir", "translations": ["you (dative, informal)", "to you", "you"], "partOfSpeech": "PRONOUN", "pronunciation": "deer", "example": { "text": "Ich helfe dir.", "translation": "I'll help you." } },
+    { "id": "ihm", "text": "ihm", "translations": ["him (dative)", "to him", "him"], "partOfSpeech": "PRONOUN", "pronunciation": "eem", "example": { "text": "Wie geht es ihm?", "translation": "How is he?" } },
+    { "id": "ihr-dative", "text": "ihr", "translations": ["her (dative)", "to her"], "partOfSpeech": "PRONOUN", "pronunciation": "eer", "example": { "text": "Ich helfe ihr.", "translation": "I'm helping her." } },
+    { "id": "uns", "text": "uns", "translations": ["us (dative)", "to us", "us"], "partOfSpeech": "PRONOUN", "pronunciation": "oons", "example": { "text": "Hilfst du uns?", "translation": "Will you help us?" } },
+    { "id": "euch", "text": "euch", "translations": ["you all (dative, informal)", "to you (plural)", "you (plural)"], "partOfSpeech": "PRONOUN", "pronunciation": "oykh (soft ch)", "example": { "text": "Wie geht es euch?", "translation": "How are you all?" } },
+    { "id": "ihnen-dative", "text": "Ihnen", "translations": ["you (dative, formal)", "to you (formal)"], "partOfSpeech": "PRONOUN", "pronunciation": "EE-nen", "example": { "text": "Kann ich Ihnen helfen?", "translation": "Can I help you?" } },
+    { "id": "weil", "text": "weil", "translations": ["because"], "partOfSpeech": "CONJUNCTION", "pronunciation": "vile", "example": { "text": "Ich bin müde, weil ich viel arbeite.", "translation": "I'm tired because I work a lot." } },
+    { "id": "warum", "text": "warum", "translations": ["why"], "partOfSpeech": "QUESTION_WORD", "pronunciation": "va-ROOM", "example": { "text": "Warum lernst du Deutsch?", "translation": "Why are you learning German?" } },
+    { "id": "verdienen", "text": "verdienen", "translations": ["to earn"], "partOfSpeech": "VERB", "pronunciation": "fer-DEE-nen", "example": { "text": "Er verdient nicht viel.", "translation": "He doesn't earn much." } },
+    { "id": "geld", "text": "Geld", "translations": ["money"], "partOfSpeech": "NOUN", "gender": "n", "pronunciation": "gelt", "example": { "text": "Ich muss Geld verdienen.", "translation": "I have to earn money." } },
+    { "id": "besprechung", "text": "Besprechung", "translations": ["meeting (at work)", "meeting"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Besprechungen", "pronunciation": "be-SHPRE-khoong (soft ch)", "example": { "text": "Um zehn Uhr habe ich eine Besprechung.", "translation": "At ten o'clock I have a meeting." } },
+    { "id": "e-mail", "text": "E-Mail", "translations": ["email", "e-mail"], "partOfSpeech": "NOUN", "gender": "f", "plural": "E-Mails", "pronunciation": "EE-mayl", "example": { "text": "Ich schreibe eine E-Mail.", "translation": "I'm writing an email." } },
+    { "id": "feierabend", "text": "Feierabend", "translations": ["end of the working day", "finishing time", "home time"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Feierabende", "pronunciation": "FY-er-ah-bent", "example": { "text": "Ich habe um fünf Uhr Feierabend.", "translation": "I finish work at five o'clock." } },
+    { "id": "pause", "text": "Pause", "translations": ["break (a rest)", "break"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Pausen", "pronunciation": "POW-ze", "example": { "text": "Wann machen wir Pause?", "translation": "When are we taking a break?" } }
+  ],
+  "grammarNotes": [
+    {
+      "id": "arbeit-jobs",
+      "title": "Jobs: no article, and -in for women",
+      "body": "To say what someone does, use **sein** and the job with **no article**. English says *a teacher*, German doesn't:\n\n- *Ich bin **Lehrerin**.* = I'm a teacher.\n- *Er ist **Koch**.* = He's a cook.\n\nTo ask: **Was sind Sie von Beruf?** or, to a friend, **Was bist du von Beruf?** (literally *What are you by profession?*)\n\nAdd **-in** for a woman, like *Freund → Freundin*. Some jobs add an umlaut too: *Arzt → Ärztin, Koch → Köchin*. The plural of *-in* is always **-innen**: *zwei Lehrerinnen*.\n\nWatch out: **der Chef** is the boss, never a cook. A cook is **der Koch**.",
+      "table": [
+        ["Man", "Woman", "English"],
+        ["der Lehrer", "die Lehrerin", "teacher"],
+        ["der Kellner", "die Kellnerin", "waiter, waitress"],
+        ["der Verkäufer", "die Verkäuferin", "shop assistant"],
+        ["der Koch", "die Köchin", "cook"],
+        ["der Arzt", "die Ärztin", "doctor"],
+        ["der Kollege", "die Kollegin", "colleague"],
+        ["der Chef", "die Chefin", "boss"]
+      ]
+    },
+    {
+      "id": "arbeit-where",
+      "title": "Where you work: im, bei and als",
+      "body": "Three little words answer **Wo arbeitest du?**\n\n- **in** for the place you sit: *im Büro, in einem Restaurant*. It takes the dative, as in Unit 12.\n- **bei** for the company or organisation: *bei einer Firma, bei der Post*. Treat it just like *mit*: it always takes the dative, so *die* becomes *der* and *eine* becomes *einer*.\n- **als** for the job you do, with no article: *als Kellner*.\n\n*Ich bin Kellner* and *Ich arbeite als Kellner* mean the same thing.",
+      "table": [
+        ["Word", "Used for", "Example"],
+        ["im / in der / in einem", "the place", "Ich arbeite im Büro."],
+        ["bei", "the company", "Sie arbeitet bei einer Firma in Hamburg."],
+        ["bei", "an organisation", "Er arbeitet bei der Post."],
+        ["als", "the job", "Ich arbeite als Koch."]
+      ]
+    },
+    {
+      "id": "arbeit-dative-pronouns",
+      "title": "mir, dir, ihm: the dative pronouns",
+      "body": "Just as *der* becomes *dem* after *mit*, the words for *I, you, he* … have a **dative** form. You already know some of them from fixed phrases: *Wie geht es **dir**? Das gefällt **mir**. Was fehlt **Ihnen**?*\n\nUse them:\n\n- after **mit, zu** and **bei**: *Kommst du mit **mir**?*\n- with **helfen**: *Ich helfe **dir**.*\n\n**ihr** now has three jobs: *ihr* (you all), *ihr* (her, as in *ihr Bruder*) and *ihr* (to her). The sentence tells you which.\n\nDon't mix these up with **mich** and **dich**, as in *Freut mich!* That's a different form, which you'll meet later.",
+      "table": [
+        ["Subject", "Dative", "Example"],
+        ["ich", "mir", "Kannst du mir helfen?"],
+        ["du", "dir", "Wie geht es dir?"],
+        ["er", "ihm", "Der Chef hilft ihm."],
+        ["sie (she)", "ihr", "Ich helfe ihr."],
+        ["es", "ihm", "Das Kind ist krank. Wie geht es ihm?"],
+        ["wir", "uns", "Hilfst du uns?"],
+        ["ihr", "euch", "Wie geht es euch?"],
+        ["sie (they)", "ihnen", "Wie geht es ihnen?"],
+        ["Sie (formal)", "Ihnen", "Kann ich Ihnen helfen?"]
+      ]
+    },
+    {
+      "id": "arbeit-helfen",
+      "title": "helfen: help someone with the dative",
+      "body": "**helfen** changes **e → i** in the *du* and *er / sie / es* forms, like *nehmen* and *sprechen*.\n\nThe person you help always takes the **dative**: *Ich helfe **dir**. Der Chef hilft **ihm**.* English says *help him*, so this feels odd at first.\n\nAdd **gern** to sound friendly: *Ich helfe dir gern!* = I'm happy to help you!",
+      "table": [
+        ["Person", "helfen"],
+        ["ich", "helfe"],
+        ["du", "hilfst"],
+        ["er / sie / es", "hilft"],
+        ["wir", "helfen"],
+        ["ihr", "helft"],
+        ["sie / Sie", "helfen"]
+      ]
+    },
+    {
+      "id": "arbeit-weil",
+      "title": "weil: the verb goes to the end",
+      "body": "**weil** = because. It joins a reason onto a sentence, and it changes the word order: in the *weil* part, the verb with the ending goes to the **very end**.\n\n- Put a **comma** before *weil*.\n- With a modal verb, the modal goes last, after the other verb: *weil ich arbeiten **muss***.\n- *war* and *hatte* go last too: *weil ich krank **war***.\n\nTo answer **Warum?** (why?), you can use the *weil* part on its own: *Warum lernst du Deutsch? **Weil ich in Berlin arbeite.***\n\nYou may also hear **denn** (because). After *denn* the verb stays second: *Ich bin müde, denn ich arbeite viel.* In everyday speech, *weil* is much more common.",
+      "table": [
+        ["Main part", "weil", "middle", "verb at the end"],
+        ["Ich bin müde,", "weil", "ich viel", "arbeite."],
+        ["Ich lerne Deutsch,", "weil", "ich in Berlin", "wohne."],
+        ["Ich komme nicht,", "weil", "ich", "arbeiten muss."],
+        ["Ich war nicht da,", "weil", "ich krank", "war."],
+        ["Ich bin zu Hause geblieben,", "weil", "ich Fieber", "hatte."]
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "wk1-jobs",
+      "title": "What do you do?",
+      "kind": "LEARN",
+      "introduces": ["beruf", "lehrer", "lehrerin", "kellner", "kellnerin", "verkaeufer", "koch", "koechin"],
+      "exercises": [
+        {
+          "id": "wk1-e1",
+          "type": "TEACH",
+          "title": "Was sind Sie von Beruf?",
+          "body": "**der Beruf** = the job, the profession.\n\nTo ask what someone does:\n\n- **Was sind Sie von Beruf?** (polite)\n- **Was bist du von Beruf?** (a friend)\n\nLiterally *What are you by profession?* Answer with **sein** and the job, with **no article**: *Ich bin Lehrer.* English says *a teacher*, German doesn't.",
+          "examples": [
+            { "text": "Was sind Sie von Beruf?", "translation": "What do you do for a living?" },
+            { "text": "Ich bin Lehrer.", "translation": "I'm a teacher." },
+            { "text": "Was bist du von Beruf?", "translation": "What do you do? (informal)" },
+            { "text": "Ich bin Kellner.", "translation": "I'm a waiter." }
+          ]
+        },
+        {
+          "id": "wk1-e2",
+          "type": "TEACH",
+          "title": "Lehrer, Lehrerin",
+          "body": "Most jobs have a form for men and a form for women. Add **-in** for a woman, just like *Freund → Freundin*:\n\n- der Lehrer → die **Lehrerin** (teacher)\n- der Kellner → die **Kellnerin** (waiter, waitress)\n- der Verkäufer → die **Verkäuferin** (shop assistant), from Unit 11\n\nSome add an umlaut too. You know *Arzt → Ärztin* from Unit 8. **der Koch** (cook) works the same way: die **Köchin**.",
+          "examples": [
+            { "text": "der Lehrer, die Lehrerin", "translation": "the teacher (man, woman)" },
+            { "text": "der Kellner, die Kellnerin", "translation": "the waiter, the waitress" },
+            { "text": "der Verkäufer, die Verkäuferin", "translation": "the shop assistant (man, woman)" },
+            { "text": "der Koch, die Köchin", "translation": "the cook (man, woman)", "hint": "Koch has the back-of-throat ch; Köchin has the soft one" }
+          ]
+        },
+        {
+          "id": "wk1-e3",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Lehrer", "base": "the teacher (male)" },
+            { "target": "die Lehrerin", "base": "the teacher (female)" },
+            { "target": "der Kellner", "base": "the waiter" },
+            { "target": "die Kellnerin", "base": "the waitress" },
+            { "target": "der Koch", "base": "the cook (male)" }
+          ]
+        },
+        {
+          "id": "wk1-e4",
+          "type": "CLOZE",
+          "before": "Meine Mutter ist",
+          "after": ".",
+          "accepted": ["Köchin"],
+          "translation": "My mother is a cook.",
+          "hint": "der Koch → the female form (with an umlaut)"
+        },
+        {
+          "id": "wk1-e5",
+          "type": "TEACH",
+          "title": "No article with jobs",
+          "body": "After **sein**, a job has no *ein* or *eine*:\n\n- *Ich bin Lehrerin.* ✔\n- *Ich bin eine Lehrerin.* ✘\n\nBut when you talk about a **person**, not their job, the article comes back as usual: ***Der** Kellner spricht Englisch.* = The waiter speaks English.",
+          "examples": [
+            { "text": "Meine Schwester ist Lehrerin.", "translation": "My sister is a teacher." },
+            { "text": "Er ist Koch in einem Restaurant.", "translation": "He's a cook in a restaurant." },
+            { "text": "Die Kellnerin spricht Englisch.", "translation": "The waitress speaks English." }
+          ]
+        },
+        {
+          "id": "wk1-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which is right?",
+          "prompt": "Anna is a waitress.",
+          "promptLanguage": "BASE",
+          "options": ["Anna ist eine Kellnerin.", "Anna ist Kellner.", "Anna ist Kellnerin."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "wk1-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which is right?",
+          "prompt": "I'm a teacher. (a man speaking)",
+          "promptLanguage": "BASE",
+          "options": ["Ich bin Lehrer.", "Ich bin ein Lehrer.", "Ich bin Lehrerin."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "wk1-e8",
+          "type": "WORD_ORDER",
+          "translation": "What do you do for a living? (formal)",
+          "answer": "Was sind Sie von Beruf?",
+          "distractors": ["bist", "ein"]
+        },
+        {
+          "id": "wk1-e9",
+          "type": "TEACH",
+          "title": "Plurals: -innen",
+          "body": "The plural of every *-in* word ends in **-innen**:\n\n- die Lehrerin → zwei **Lehrerinnen**\n- die Köchin → zwei **Köchinnen**\n\nThe men's forms ending in *-er* don't change: *ein Lehrer, zwei Lehrer*. And **der Koch** becomes **die Köche**.",
+          "examples": [
+            { "text": "zwei Lehrerinnen", "translation": "two teachers (women)" },
+            { "text": "drei Kellner", "translation": "three waiters" },
+            { "text": "Die Köche kommen aus Italien.", "translation": "The cooks come from Italy." }
+          ]
+        },
+        {
+          "id": "wk1-e10",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Verkäufer", "base": "the shop assistant (male)" },
+            { "target": "die Verkäuferin", "base": "the shop assistant (female)" },
+            { "target": "der Arzt", "base": "the doctor (male)" },
+            { "target": "die Ärztin", "base": "the doctor (female)" },
+            { "target": "die Köchin", "base": "the cook (female)" }
+          ]
+        },
+        {
+          "id": "wk1-e11",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which plural is right?",
+          "prompt": "two waitresses",
+          "promptLanguage": "BASE",
+          "options": ["zwei Kellnerin", "zwei Kellnerinnen", "zwei Kellnerinen"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "wk1-e12",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which do you hear?",
+          "options": ["Er ist Koch.", "Sie ist Köchin."],
+          "answerIndex": 1
+        },
+        {
+          "id": "wk1-e13",
+          "type": "TRANSLATE",
+          "source": "My sister is a teacher.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Meine Schwester ist Lehrerin."]
+        },
+        {
+          "id": "wk1-e14",
+          "type": "TRANSLATE",
+          "source": "Mein Bruder ist Verkäufer.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["My brother is a shop assistant.", "My brother's a shop assistant.", "My brother is a sales assistant.", "My brother's a sales assistant.", "My brother is a salesman.", "My brother's a salesman.", "My brother is a salesperson.", "My brother is a sales clerk.", "My brother is a salesclerk."]
+        },
+        {
+          "id": "wk1-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Was sind Sie von Beruf?",
+          "translation": "What do you do for a living?"
+        },
+        {
+          "id": "wk1-e16",
+          "type": "SHADOW",
+          "text": "Was bist du von Beruf? Ich bin Lehrerin.",
+          "translation": "What do you do? I'm a teacher.",
+          "hint": "Beruf: be-ROOF, stress the second syllable."
+        }
+      ]
+    },
+    {
+      "id": "wk2-office",
+      "title": "At the office",
+      "kind": "LEARN",
+      "introduces": ["firma", "buero", "bei", "als-job", "kollege", "kollegin", "chef", "chefin"],
+      "exercises": [
+        {
+          "id": "wk2-e1",
+          "type": "TEACH",
+          "title": "im Büro, bei einer Firma",
+          "body": "You know **Wo arbeitest du?** Here are two ways to answer:\n\n- **das Büro** = the office. Where you sit is *in* + dative, as in Unit 12: **im Büro**.\n- **die Firma** = the company. For the company you work for, use **bei**: *Ich arbeite **bei einer Firma**.*\n\n**bei** is new, but treat it just like *mit*: it always takes the dative. So *die Firma* → **bei der Firma**, *eine Firma* → **bei einer Firma**.",
+          "examples": [
+            { "text": "Ich arbeite im Büro.", "translation": "I work in an office." },
+            { "text": "Sie arbeitet bei einer Firma in Hamburg.", "translation": "She works for a company in Hamburg." },
+            { "text": "Er arbeitet bei der Post.", "translation": "He works for the post office." },
+            { "text": "Arbeitest du bei der Bank?", "translation": "Do you work at the bank?" }
+          ]
+        },
+        {
+          "id": "wk2-e2",
+          "type": "CLOZE",
+          "before": "Ich arbeite",
+          "after": "Büro.",
+          "accepted": ["im"],
+          "translation": "I work in an office.",
+          "hint": "das Büro, where you are: in + dem"
+        },
+        {
+          "id": "wk2-e3",
+          "type": "CLOZE",
+          "before": "Sie arbeitet bei",
+          "after": "Firma in Hamburg.",
+          "accepted": ["einer"],
+          "translation": "She works for a company in Hamburg.",
+          "hint": "bei + eine Firma (dative, like mit)"
+        },
+        {
+          "id": "wk2-e4",
+          "type": "TEACH",
+          "title": "als Kellner: as a waiter",
+          "body": "To say what job you do, use **als** (as) + the job. Just like after *sein*, there's **no article**:\n\n- *Ich arbeite **als** Kellner.* = I work as a waiter.\n- *Ich bin Kellner.* = I'm a waiter.\n\nBoth mean the same. You can add the place too: *Sie arbeitet als Köchin in einem Restaurant.*",
+          "examples": [
+            { "text": "Ich arbeite als Kellner.", "translation": "I work as a waiter." },
+            { "text": "Sie arbeitet als Köchin in einem Restaurant.", "translation": "She works as a cook in a restaurant." },
+            { "text": "Er arbeitet als Lehrer in Wien.", "translation": "He works as a teacher in Vienna." }
+          ]
+        },
+        {
+          "id": "wk2-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which word fits? Ich arbeite ___ Koch in einem Restaurant.",
+          "prompt": "I work as a cook in a restaurant.",
+          "promptLanguage": "BASE",
+          "options": ["bei", "als", "im"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "wk2-e6",
+          "type": "WORD_ORDER",
+          "translation": "She works as a waitress in a café.",
+          "answer": "Sie arbeitet als Kellnerin in einem Café.",
+          "distractors": ["eine", "bei"]
+        },
+        {
+          "id": "wk2-e7",
+          "type": "TEACH",
+          "title": "Kollegen und Chefs",
+          "body": "The people you work with:\n\n- **der Kollege** / **die Kollegin** = the colleague\n- **der Chef** / **die Chefin** = the boss\n\nCareful: **der Chef** is the boss, not a cook! A cook is *der Koch*.\n\nPlurals: *die Kollegen, die Kolleginnen, die Chefs, die Chefinnen*.",
+          "examples": [
+            { "text": "Mein Kollege heißt Jonas.", "translation": "My colleague is called Jonas." },
+            { "text": "Meine Kollegin kommt aus Österreich.", "translation": "My colleague comes from Austria." },
+            { "text": "Der Chef ist heute nicht da.", "translation": "The boss isn't in today." },
+            { "text": "Meine Chefin heißt Frau Schulz.", "translation": "My boss is called Ms Schulz." }
+          ]
+        },
+        {
+          "id": "wk2-e8",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Kollege", "base": "the colleague (male)" },
+            { "target": "die Kollegin", "base": "the colleague (female)" },
+            { "target": "der Chef", "base": "the boss (male)" },
+            { "target": "die Chefin", "base": "the boss (female)" },
+            { "target": "das Büro", "base": "the office" }
+          ]
+        },
+        {
+          "id": "wk2-e9",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Careful, this one looks like English!",
+          "prompt": "der Chef",
+          "promptLanguage": "TARGET",
+          "options": ["the cook", "the boss", "the colleague"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 1
+        },
+        {
+          "id": "wk2-e10",
+          "type": "CLOZE",
+          "before": "Meine",
+          "after": "heißt Frau Schulz.",
+          "accepted": ["Chefin"],
+          "translation": "My boss is called Ms Schulz.",
+          "hint": "the boss (a woman)"
+        },
+        {
+          "id": "wk2-e11",
+          "type": "WORD_ORDER",
+          "translation": "I work in an office in Berlin.",
+          "answer": "Ich arbeite in einem Büro in Berlin.",
+          "distractors": ["arbeitet", "eine"]
+        },
+        {
+          "id": "wk2-e12",
+          "type": "TRANSLATE",
+          "source": "I work for a company in Hamburg.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich arbeite bei einer Firma in Hamburg.", "In Hamburg arbeite ich bei einer Firma.", "Ich arbeite in Hamburg bei einer Firma.", "Ich arbeite für eine Firma in Hamburg."]
+        },
+        {
+          "id": "wk2-e13",
+          "type": "TRANSLATE",
+          "source": "Er arbeitet bei der Post.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["He works for the post office.", "He works at the post office.", "He works for the Post Office.", "He works at the Post Office.", "He works in the post office.", "He works for the postal service."]
+        },
+        {
+          "id": "wk2-e14",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which do you hear?",
+          "options": ["Mein Kollege ist neu.", "Meine Kollegin ist neu."],
+          "answerIndex": 1
+        },
+        {
+          "id": "wk2-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Ich arbeite als Kellner.",
+          "translation": "I work as a waiter."
+        },
+        {
+          "id": "wk2-e16",
+          "type": "SHADOW",
+          "text": "Wo arbeitest du? Ich arbeite bei einer Firma in Berlin.",
+          "translation": "Where do you work? I work for a company in Berlin.",
+          "hint": "Firma: FIR-ma. bei rhymes with English 'by'."
+        }
+      ]
+    },
+    {
+      "id": "wk3-help",
+      "title": "Can you help me?",
+      "kind": "LEARN",
+      "introduces": ["helfen", "mir", "dir", "ihm", "ihr-dative", "uns", "euch", "ihnen-dative"],
+      "exercises": [
+        {
+          "id": "wk3-e1",
+          "type": "TEACH",
+          "title": "You already know mir and dir",
+          "body": "Look at some phrases you already know:\n\n- *Wie geht es **dir**?* (literally *How goes it for you?*)\n- *Das gefällt **mir**.* (literally *That pleases me.*)\n- *Was fehlt **Ihnen**?* (literally *What is missing for you?*)\n\n**mir, dir** and **Ihnen** are the **dative** forms of *ich, du* and *Sie*. Just as *der* becomes *dem* after *mit*, these little words change too. In Unit 13 you heard *Mir tut der Kopf weh*. Now you know why!",
+          "examples": [
+            { "text": "Wie geht es dir?", "translation": "How are you? (informal)" },
+            { "text": "Wie geht es Ihnen?", "translation": "How are you? (formal)" },
+            { "text": "Das gefällt mir.", "translation": "I like it." },
+            { "text": "Mir tut der Kopf weh.", "translation": "My head hurts." }
+          ]
+        },
+        {
+          "id": "wk3-e2",
+          "type": "TEACH",
+          "title": "helfen: to help",
+          "body": "**helfen** = to help. It changes **e → i** in the *du* and *er / sie* forms, like *nehmen*:\n\n- ich helfe\n- du **hilfst**\n- er / sie **hilft**\n- wir helfen\n- ihr helft\n- sie / Sie helfen\n\nThe person you help takes the **dative**: *Kannst du **mir** helfen?* In a question with *können*, *helfen* goes to the end.",
+          "examples": [
+            { "text": "Kannst du mir helfen?", "translation": "Can you help me?" },
+            { "text": "Ja, ich helfe dir.", "translation": "Yes, I'll help you." },
+            { "text": "Ich helfe dir gern!", "translation": "I'm happy to help you!" }
+          ]
+        },
+        {
+          "id": "wk3-e3",
+          "type": "CLOZE",
+          "before": "Kannst du",
+          "after": "helfen?",
+          "accepted": ["mir"],
+          "translation": "Can you help me?",
+          "hint": "ich → dative"
+        },
+        {
+          "id": "wk3-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form of helfen fits? Die Chefin ___ mir.",
+          "prompt": "The boss is helping me.",
+          "promptLanguage": "BASE",
+          "options": ["helft", "helfe", "hilft"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "wk3-e5",
+          "type": "TEACH",
+          "title": "ihm and ihr: him and her",
+          "body": "- **er** → **ihm** (him)\n- **sie** (she) → **ihr** (her)\n- **es** → **ihm**, like *er*\n\n*ihr* has a lot of jobs now: *ihr* (you all), *ihr Bruder* (her brother) and *ich helfe ihr* (I help her). The sentence tells you which one it is.",
+          "examples": [
+            { "text": "Der Chef hilft ihm.", "translation": "The boss is helping him." },
+            { "text": "Wie geht es ihm?", "translation": "How is he?" },
+            { "text": "Ich helfe ihr.", "translation": "I'm helping her." },
+            { "text": "Wie geht es ihr?", "translation": "How is she?" }
+          ]
+        },
+        {
+          "id": "wk3-e6",
+          "type": "CLOZE",
+          "before": "Anna hat viel Arbeit. Ich helfe",
+          "after": ".",
+          "accepted": ["ihr"],
+          "translation": "Anna has a lot of work. I'm helping her.",
+          "hint": "sie (she) → dative"
+        },
+        {
+          "id": "wk3-e7",
+          "type": "TEACH",
+          "title": "uns, euch, Ihnen",
+          "body": "- **wir** → **uns** (us)\n- **ihr** (you all) → **euch**\n- **sie** (they) → **ihnen**\n- **Sie** (formal) → **Ihnen**, always with a capital *I*\n\nIn a shop you'll often hear **Kann ich Ihnen helfen?** = Can I help you?",
+          "examples": [
+            { "text": "Kann ich Ihnen helfen?", "translation": "Can I help you?" },
+            { "text": "Hilfst du uns?", "translation": "Will you help us?" },
+            { "text": "Wir helfen euch.", "translation": "We'll help you." },
+            { "text": "Wie geht es euch?", "translation": "How are you all?" }
+          ]
+        },
+        {
+          "id": "wk3-e8",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "mir", "base": "to me" },
+            { "target": "dir", "base": "to you (informal)" },
+            { "target": "ihm", "base": "to him" },
+            { "target": "ihr", "base": "to her" },
+            { "target": "uns", "base": "to us" }
+          ]
+        },
+        {
+          "id": "wk3-e9",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "You work in a shop. A customer comes in. What do you say?",
+          "prompt": "Can I help you?",
+          "promptLanguage": "BASE",
+          "options": ["Kann ich Sie helfen?", "Kann ich Ihnen helfen?", "Kann ich euch helfen?"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "wk3-e10",
+          "type": "TEACH",
+          "title": "mit mir, mit dir",
+          "body": "After **mit**, **zu** and **bei**, use the dative forms too, just like *mit dem Bus*:\n\n- *mit **mir*** = with me\n- *mit **dir*** = with you\n- *bei **uns*** = at our place",
+          "examples": [
+            { "text": "Trinkst du einen Kaffee mit mir?", "translation": "Will you have a coffee with me?" },
+            { "text": "Ich gehe mit dir zum Bahnhof.", "translation": "I'll go to the station with you." },
+            { "text": "Sie arbeitet mit ihm im Büro.", "translation": "She works with him in the office." },
+            { "text": "Am Samstag essen wir bei uns.", "translation": "On Saturday we're eating at our place." }
+          ]
+        },
+        {
+          "id": "wk3-e11",
+          "type": "CLOZE",
+          "before": "Trinkst du einen Kaffee mit",
+          "after": "?",
+          "accepted": ["mir"],
+          "translation": "Will you have a coffee with me?",
+          "hint": "mit + ich → dative"
+        },
+        {
+          "id": "wk3-e12",
+          "type": "WORD_ORDER",
+          "translation": "Can you help us? (informal)",
+          "answer": "Kannst du uns helfen?",
+          "distractors": ["euch", "hilfst"]
+        },
+        {
+          "id": "wk3-e13",
+          "type": "TRANSLATE",
+          "source": "The boss is helping him. (a male boss)",
+          "sourceLanguage": "BASE",
+          "accepted": ["Der Chef hilft ihm."]
+        },
+        {
+          "id": "wk3-e14",
+          "type": "TRANSLATE",
+          "source": "Wie geht es ihr?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["How is she?", "How's she doing?", "How is she doing?", "How's she?", "How is she feeling?"]
+        },
+        {
+          "id": "wk3-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Kannst du mir helfen?",
+          "translation": "Can you help me?"
+        },
+        {
+          "id": "wk3-e16",
+          "type": "SHADOW",
+          "text": "Kannst du mir helfen? Ja, ich helfe dir gern.",
+          "translation": "Can you help me? Yes, I'm happy to help you.",
+          "hint": "mir and dir have a long ee: 'meer' and 'deer'."
+        }
+      ]
+    },
+    {
+      "id": "wk4-weil",
+      "title": "Because I work a lot",
+      "kind": "LEARN",
+      "introduces": ["weil", "warum", "verdienen", "geld", "besprechung", "e-mail"],
+      "exercises": [
+        {
+          "id": "wk4-e1",
+          "type": "TEACH",
+          "title": "weil: the verb goes to the end",
+          "body": "**weil** = because. It joins a reason onto a sentence:\n\n- *Ich bin müde. Ich arbeite viel.*\n- *Ich bin müde, **weil** ich viel **arbeite**.*\n\nIn the *weil* part, the verb with the ending jumps to the **very end**. This is new: until now the verb was always second. Always put a **comma** before *weil*.\n\n**viel** = a lot.",
+          "examples": [
+            { "text": "Ich bin müde, weil ich viel arbeite.", "translation": "I'm tired because I work a lot." },
+            { "text": "Ich lerne Deutsch, weil ich in Berlin wohne.", "translation": "I'm learning German because I live in Berlin." },
+            { "text": "Er ist zu Hause, weil er krank ist.", "translation": "He's at home because he's ill." }
+          ]
+        },
+        {
+          "id": "wk4-e2",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which is right?",
+          "prompt": "I'm tired because I work a lot.",
+          "promptLanguage": "BASE",
+          "options": ["Ich bin müde, weil ich arbeite viel.", "Ich bin müde, weil ich viel arbeite.", "Ich bin müde, weil arbeite ich viel."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "wk4-e3",
+          "type": "WORD_ORDER",
+          "translation": "I'm learning German because I live in Berlin.",
+          "answer": "Ich lerne Deutsch, weil ich in Berlin wohne.",
+          "distractors": ["wohnt", "bin"]
+        },
+        {
+          "id": "wk4-e4",
+          "type": "TEACH",
+          "title": "Warum? Weil …",
+          "body": "**warum** = why. To answer, you can say just the *weil* part on its own, with the verb at the end:\n\n- *Warum lernst du Deutsch?*\n- ***Weil** ich in Berlin **arbeite**.*\n\nIn the question, *warum* works like *wo* or *was*: the verb comes second.",
+          "examples": [
+            { "text": "Warum lernst du Deutsch?", "translation": "Why are you learning German?" },
+            { "text": "Weil ich in Berlin arbeite.", "translation": "Because I work in Berlin." },
+            { "text": "Warum bist du müde?", "translation": "Why are you tired?" },
+            { "text": "Weil ich viel arbeite.", "translation": "Because I work a lot." }
+          ]
+        },
+        {
+          "id": "wk4-e5",
+          "type": "CLOZE",
+          "before": "Warum lernst du Deutsch? Weil ich in Berlin",
+          "after": ".",
+          "accepted": ["arbeite"],
+          "translation": "Why are you learning German? Because I work in Berlin.",
+          "hint": "arbeiten → ich …, at the very end"
+        },
+        {
+          "id": "wk4-e6",
+          "type": "TEACH",
+          "title": "weil ich arbeiten muss",
+          "body": "With a modal verb, the **modal goes last**, after the other verb:\n\n- *Ich muss arbeiten.*\n- *Ich komme nicht, weil ich arbeiten **muss**.*\n\n*war* and *hatte* also go to the end:\n\n- *Ich war nicht da, weil ich krank **war**.*\n- *Ich bin nicht gekommen, weil ich keine Zeit **hatte**.*",
+          "examples": [
+            { "text": "Ich komme nicht, weil ich arbeiten muss.", "translation": "I'm not coming because I have to work." },
+            { "text": "Er lernt Deutsch, weil er in Wien wohnen will.", "translation": "He's learning German because he wants to live in Vienna." },
+            { "text": "Ich war nicht da, weil ich krank war.", "translation": "I wasn't there because I was ill." }
+          ]
+        },
+        {
+          "id": "wk4-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which ending is right? Ich komme nicht, …",
+          "prompt": "I'm not coming because I have to work.",
+          "promptLanguage": "BASE",
+          "options": ["… weil ich arbeiten muss.", "… weil ich muss arbeiten.", "… weil muss ich arbeiten."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "wk4-e8",
+          "type": "WORD_ORDER",
+          "translation": "I wasn't there because I was ill.",
+          "answer": "Ich war nicht da, weil ich krank war.",
+          "distractors": ["bin", "hatte"]
+        },
+        {
+          "id": "wk4-e9",
+          "type": "TEACH",
+          "title": "Geld verdienen",
+          "body": "- **verdienen** = to earn\n- **das Geld** = money\n\nLike *be-* verbs, verbs starting with **ver-** take no *ge-* in the Perfekt: *Ich habe gut **verdient**.*\n\n**Wie viel** = how much. But careful: in Germany, *Wie viel verdienst du?* is a very personal question!",
+          "examples": [
+            { "text": "Er verdient nicht viel.", "translation": "He doesn't earn much." },
+            { "text": "Ich muss Geld verdienen.", "translation": "I have to earn money." },
+            { "text": "Ich arbeite am Samstag, weil ich Geld verdienen muss.", "translation": "I work on Saturdays because I have to earn money." }
+          ]
+        },
+        {
+          "id": "wk4-e10",
+          "type": "CLOZE",
+          "before": "Sie arbeitet viel, weil sie Geld verdienen",
+          "after": ".",
+          "accepted": ["muss"],
+          "translation": "She works a lot because she has to earn money.",
+          "hint": "müssen → sie …, at the very end"
+        },
+        {
+          "id": "wk4-e11",
+          "type": "TEACH",
+          "title": "Besprechung and E-Mail",
+          "body": "Two words for office life:\n\n- **die Besprechung** = the meeting (at work)\n- **die E-Mail** = the email. In Germany it's *die*.\n\nYou can use them in a *weil* part too: *Ich kann nicht kommen, weil ich eine Besprechung **habe**.*",
+          "examples": [
+            { "text": "Um zehn Uhr habe ich eine Besprechung.", "translation": "At ten o'clock I have a meeting." },
+            { "text": "Ich schreibe eine E-Mail.", "translation": "I'm writing an email." },
+            { "text": "Ich kann nicht kommen, weil ich eine Besprechung habe.", "translation": "I can't come because I have a meeting." }
+          ]
+        },
+        {
+          "id": "wk4-e12",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Besprechung", "base": "the meeting" },
+            { "target": "die E-Mail", "base": "the email" },
+            { "target": "das Geld", "base": "the money" },
+            { "target": "verdienen", "base": "to earn" },
+            { "target": "warum", "base": "why" }
+          ]
+        },
+        {
+          "id": "wk4-e13",
+          "type": "TRANSLATE",
+          "source": "I can't come because I have a meeting.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich kann nicht kommen, weil ich eine Besprechung habe.", "Ich kann nicht kommen weil ich eine Besprechung habe.", "Ich kann leider nicht kommen, weil ich eine Besprechung habe.", "Ich kann leider nicht kommen weil ich eine Besprechung habe."]
+        },
+        {
+          "id": "wk4-e14",
+          "type": "TRANSLATE",
+          "source": "Ich schreibe eine E-Mail, weil die Chefin nicht da ist.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["I'm writing an email because the boss isn't there.", "I'm writing an email because the boss isn't here.", "I'm writing an email because the boss isn't in.", "I am writing an email because the boss is not there.", "I am writing an email because the boss is not here.", "I'm writing an e-mail because the boss isn't there.", "I'm writing an e-mail because the boss isn't here.", "I write an email because the boss isn't there.", "I'm writing an email, because the boss isn't there.", "I'm writing an email because the boss is not there.", "I'm writing an email because the boss is not here."]
+        },
+        {
+          "id": "wk4-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Warum lernst du Deutsch?",
+          "translation": "Why are you learning German?"
+        },
+        {
+          "id": "wk4-e16",
+          "type": "SHADOW",
+          "text": "Ich komme nicht, weil ich arbeiten muss.",
+          "translation": "I'm not coming because I have to work.",
+          "hint": "Pause slightly at the comma, then let your voice fall on muss at the very end."
+        }
+      ]
+    },
+    {
+      "id": "wk5-first-day",
+      "title": "First day at work",
+      "kind": "PRACTICE",
+      "introduces": ["feierabend", "pause"],
+      "exercises": [
+        {
+          "id": "wk5-e1",
+          "type": "TEACH",
+          "title": "Working hours",
+          "body": "Two more words for the working day:\n\n- **der Feierabend** = the end of the working day, and the free time after it (literally *party evening*). **Ich habe um fünf Uhr Feierabend.** = I finish work at five.\n- **die Pause** = the break. **Pause machen** = to take a break.\n\nAnd for working hours: **von** neun **bis** fünf = from nine to five.",
+          "examples": [
+            { "text": "Ich habe um fünf Uhr Feierabend.", "translation": "I finish work at five o'clock." },
+            { "text": "Wann machen wir Pause?", "translation": "When are we taking a break?" },
+            { "text": "Wir arbeiten von neun bis fünf.", "translation": "We work from nine to five." }
+          ]
+        },
+        {
+          "id": "wk5-e2",
+          "type": "TEACH",
+          "title": "Neu im Büro",
+          "body": "It's Emma's first day at a new job. Her colleague Jonas shows her around. Colleagues often say *du* to each other in Germany. Read along, and tap each line to hear it.",
+          "examples": [
+            { "text": "Hallo! Bist du neu hier? Ich bin Jonas.", "translation": "Jonas: Hi! Are you new here? I'm Jonas." },
+            { "text": "Ja, ich heiße Emma. Freut mich!", "translation": "Emma: Yes, my name's Emma. Nice to meet you!" },
+            { "text": "Freut mich auch! Komm, das ist dein Büro. Und da links ist die Küche. Wo hast du letztes Jahr gearbeitet?", "translation": "Jonas: Nice to meet you too! Come on, this is your office. And there on the left is the kitchen. Where did you work last year?" },
+            { "text": "Ich war Verkäuferin, aber ich habe nicht viel verdient. Und du?", "translation": "Emma: I was a shop assistant, but I didn't earn much. And you?" },
+            { "text": "Ich arbeite hier im Büro. Aber letztes Jahr war ich Koch in einem Restaurant!", "translation": "Jonas: I work here in the office. But last year I was a cook in a restaurant!" },
+            { "text": "Koch? Warum arbeitest du jetzt im Büro?", "translation": "Emma: A cook? Why do you work in an office now?" },
+            { "text": "Weil ich am Wochenende nicht arbeiten will. Hier arbeiten wir von neun bis fünf. Um fünf Uhr habe ich Feierabend!", "translation": "Jonas: Because I don't want to work at weekends. Here we work from nine to five. At five o'clock I finish work!" },
+            { "text": "Super! Und wer ist die Chefin?", "translation": "Emma: Great! And who's the boss?" },
+            { "text": "Frau Schulz. Sie ist toll und hilft dir gern. Um zehn Uhr haben wir eine Besprechung. Du kannst mit mir gehen.", "translation": "Jonas: Ms Schulz. She's great and she's happy to help you. At ten o'clock we have a meeting. You can go with me." },
+            { "text": "Danke! Und wann machen wir Pause?", "translation": "Emma: Thanks! And when do we take a break?" },
+            { "text": "Um zwölf Uhr. Dann essen wir zusammen in der Küche, okay?", "translation": "Jonas: At twelve o'clock. Then we'll eat together in the kitchen, okay?" },
+            { "text": "Ja, gern! Danke, Jonas!", "translation": "Emma: Yes, I'd love to! Thanks, Jonas!" }
+          ]
+        },
+        {
+          "id": "wk5-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: what was Emma's job last year?",
+          "prompt": "Wo hast du letztes Jahr gearbeitet?",
+          "promptLanguage": "TARGET",
+          "options": ["She was a cook.", "She was a shop assistant.", "She was a waitress."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 1
+        },
+        {
+          "id": "wk5-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: why does Jonas work in an office now?",
+          "prompt": "Warum arbeitest du jetzt im Büro?",
+          "promptLanguage": "TARGET",
+          "options": ["He earns more money.", "He was ill.", "He doesn't want to work at weekends."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 2
+        },
+        {
+          "id": "wk5-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: when is the break?",
+          "prompt": "Wann machen wir Pause?",
+          "promptLanguage": "TARGET",
+          "options": ["at twelve o'clock", "at ten o'clock", "at five o'clock"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "wk5-e6",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Feierabend", "base": "the end of the working day" },
+            { "target": "die Pause", "base": "the break" },
+            { "target": "die Besprechung", "base": "the meeting" },
+            { "target": "die Chefin", "base": "the boss (female)" },
+            { "target": "von neun bis fünf", "base": "from nine to five" }
+          ]
+        },
+        {
+          "id": "wk5-e7",
+          "type": "CLOZE",
+          "before": "Um fünf Uhr habe ich",
+          "after": ".",
+          "accepted": ["Feierabend"],
+          "translation": "At five o'clock I finish work.",
+          "hint": "the end of the working day"
+        },
+        {
+          "id": "wk5-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Your new colleague asks you this. What's the best answer?",
+          "prompt": "Kannst du mir helfen?",
+          "promptLanguage": "TARGET",
+          "options": ["Ja, ich helfe dir gern.", "Ja, ich helfe mir gern.", "Ja, du hilfst mir."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "wk5-e9",
+          "type": "WORD_ORDER",
+          "translation": "I work in the office because I don't want to work at the weekend.",
+          "answer": "Ich arbeite im Büro, weil ich am Wochenende nicht arbeiten will.",
+          "distractors": ["möchte", "wollen"]
+        },
+        {
+          "id": "wk5-e10",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which do you hear?",
+          "options": ["Ich habe um fünf Uhr Feierabend.", "Ich habe um zehn Uhr eine Besprechung."],
+          "answerIndex": 1
+        },
+        {
+          "id": "wk5-e11",
+          "type": "TRANSLATE",
+          "source": "When do we take a break?",
+          "sourceLanguage": "BASE",
+          "accepted": ["Wann machen wir Pause?", "Wann machen wir eine Pause?", "Wann haben wir Pause?"]
+        },
+        {
+          "id": "wk5-e12",
+          "type": "TRANSLATE",
+          "source": "Last year she was a cook.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Letztes Jahr war sie Köchin.", "Sie war letztes Jahr Köchin."]
+        },
+        {
+          "id": "wk5-e13",
+          "type": "TRANSLATE",
+          "source": "Sie hilft dir gern.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["She's happy to help you.", "She is happy to help you.", "She likes helping you.", "She likes to help you.", "She'll gladly help you.", "She will gladly help you.", "She's glad to help you.", "She is glad to help you.", "She'll be happy to help you.", "She gladly helps you."]
+        },
+        {
+          "id": "wk5-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Wann machen wir Pause?",
+          "translation": "When are we taking a break?"
+        },
+        {
+          "id": "wk5-e15",
+          "type": "SHADOW",
+          "text": "Warum arbeitest du jetzt im Büro? Weil ich am Wochenende nicht arbeiten will.",
+          "translation": "Why do you work in an office now? Because I don't want to work at weekends.",
+          "hint": "Feel the verb at the end of the weil part: … nicht arbeiten WILL."
+        }
+      ]
+    }
+  ]
+}

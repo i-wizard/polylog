@@ -1,0 +1,1861 @@
+{
+  "id": "18-menschen",
+  "level": "A2",
+  "title": "Describing people",
+  "description": "Describe how people look and what they're like with tragen and aussehen, and learn adjective endings after der, die, das. Then find people at a party.",
+  "icon": "🧑‍🤝‍🧑",
+  "vocab": [
+    {
+      "id": "haar",
+      "text": "Haar",
+      "translations": [
+        "hair"
+      ],
+      "partOfSpeech": "NOUN",
+      "gender": "n",
+      "plural": "Haare",
+      "pronunciation": "hahr (long a)",
+      "example": {
+        "text": "Seine Haare sind kurz und blond.",
+        "translation": "His hair is short and blond."
+      }
+    },
+    {
+      "id": "lang",
+      "text": "lang",
+      "translations": [
+        "long"
+      ],
+      "partOfSpeech": "ADJECTIVE",
+      "pronunciation": "lang (ng as in 'sing')",
+      "example": {
+        "text": "Ihre Haare sind sehr lang.",
+        "translation": "Her hair is very long."
+      }
+    },
+    {
+      "id": "kurz",
+      "text": "kurz",
+      "translations": [
+        "short"
+      ],
+      "partOfSpeech": "ADJECTIVE",
+      "pronunciation": "koorts (short oo)",
+      "example": {
+        "text": "Meine Haare sind jetzt kurz.",
+        "translation": "My hair is short now."
+      }
+    },
+    {
+      "id": "blond",
+      "text": "blond",
+      "translations": [
+        "blond",
+        "blonde",
+        "fair-haired"
+      ],
+      "partOfSpeech": "ADJECTIVE",
+      "pronunciation": "blont (d sounds like t)",
+      "example": {
+        "text": "Meine Schwester ist blond.",
+        "translation": "My sister is blonde."
+      }
+    },
+    {
+      "id": "lockig",
+      "text": "lockig",
+      "translations": [
+        "curly"
+      ],
+      "partOfSpeech": "ADJECTIVE",
+      "pronunciation": "LOK-ikh (soft ch)",
+      "example": {
+        "text": "Seine Haare sind lockig.",
+        "translation": "His hair is curly."
+      }
+    },
+    {
+      "id": "schlank",
+      "text": "schlank",
+      "translations": [
+        "slim",
+        "slender"
+      ],
+      "partOfSpeech": "ADJECTIVE",
+      "pronunciation": "shlank",
+      "example": {
+        "text": "Mein Bruder ist groß und schlank.",
+        "translation": "My brother is tall and slim."
+      }
+    },
+    {
+      "id": "dick",
+      "text": "dick",
+      "translations": [
+        "fat",
+        "thick"
+      ],
+      "partOfSpeech": "ADJECTIVE",
+      "pronunciation": "dik",
+      "example": {
+        "text": "Das Buch ist sehr dick.",
+        "translation": "The book is very thick."
+      }
+    },
+    {
+      "id": "duenn",
+      "text": "dünn",
+      "translations": [
+        "thin"
+      ],
+      "partOfSpeech": "ADJECTIVE",
+      "pronunciation": "dün (short ü: ee with rounded lips)",
+      "example": {
+        "text": "Er ist sehr dünn.",
+        "translation": "He's very thin."
+      }
+    },
+    {
+      "id": "huebsch",
+      "text": "hübsch",
+      "translations": [
+        "pretty"
+      ],
+      "partOfSpeech": "ADJECTIVE",
+      "pronunciation": "hüpsh (short ü: ee with rounded lips)",
+      "example": {
+        "text": "Sie ist sehr hübsch.",
+        "translation": "She's very pretty."
+      }
+    },
+    {
+      "id": "ziemlich",
+      "text": "ziemlich",
+      "translations": [
+        "quite (rather)",
+        "rather",
+        "fairly"
+      ],
+      "partOfSpeech": "ADVERB",
+      "pronunciation": "TSEEM-likh (soft ch)",
+      "example": {
+        "text": "Er ist ziemlich groß.",
+        "translation": "He's quite tall."
+      }
+    },
+    {
+      "id": "brille",
+      "text": "Brille",
+      "translations": [
+        "glasses (spectacles)",
+        "glasses",
+        "spectacles"
+      ],
+      "partOfSpeech": "NOUN",
+      "gender": "f",
+      "plural": "Brillen",
+      "pronunciation": "BRIL-le",
+      "example": {
+        "text": "Ich trage eine Brille.",
+        "translation": "I wear glasses."
+      }
+    },
+    {
+      "id": "bart",
+      "text": "Bart",
+      "translations": [
+        "beard"
+      ],
+      "partOfSpeech": "NOUN",
+      "gender": "m",
+      "plural": "Bärte",
+      "pronunciation": "bahrt (long a)",
+      "example": {
+        "text": "Mein Vater trägt einen Bart.",
+        "translation": "My father has a beard."
+      }
+    },
+    {
+      "id": "glatze",
+      "text": "Glatze",
+      "translations": [
+        "bald head"
+      ],
+      "partOfSpeech": "NOUN",
+      "gender": "f",
+      "plural": "Glatzen",
+      "pronunciation": "GLAT-se",
+      "example": {
+        "text": "Mein Opa hat eine Glatze.",
+        "translation": "My grandpa is bald."
+      }
+    },
+    {
+      "id": "tragen",
+      "text": "tragen",
+      "translations": [
+        "to wear",
+        "to carry"
+      ],
+      "partOfSpeech": "VERB",
+      "pronunciation": "TRAH-gen",
+      "example": {
+        "text": "Sie trägt heute ein Kleid.",
+        "translation": "She's wearing a dress today."
+      }
+    },
+    {
+      "id": "aussehen",
+      "text": "aussehen",
+      "translations": [
+        "to look (appearance)",
+        "to look",
+        "to appear"
+      ],
+      "partOfSpeech": "VERB",
+      "pronunciation": "OWS-zay-en (ow as in cow)",
+      "example": {
+        "text": "Du siehst müde aus.",
+        "translation": "You look tired."
+      }
+    },
+    {
+      "id": "wie-sieht-er-aus",
+      "text": "Wie sieht er aus?",
+      "translations": [
+        "What does he look like?"
+      ],
+      "partOfSpeech": "PHRASE",
+      "pronunciation": "vee ZEET air OWS",
+      "example": {
+        "text": "Wie sieht dein Bruder aus?",
+        "translation": "What does your brother look like?"
+      }
+    },
+    {
+      "id": "nett",
+      "text": "nett",
+      "translations": [
+        "nice (kind)",
+        "nice",
+        "kind"
+      ],
+      "partOfSpeech": "ADJECTIVE",
+      "pronunciation": "net",
+      "example": {
+        "text": "Die Frau ist sehr nett.",
+        "translation": "The woman is very nice."
+      }
+    },
+    {
+      "id": "freundlich",
+      "text": "freundlich",
+      "translations": [
+        "friendly"
+      ],
+      "partOfSpeech": "ADJECTIVE",
+      "pronunciation": "FROYNT-likh (soft ch)",
+      "example": {
+        "text": "Die Verkäuferin ist sehr freundlich.",
+        "translation": "The shop assistant is very friendly."
+      }
+    },
+    {
+      "id": "lustig",
+      "text": "lustig",
+      "translations": [
+        "funny",
+        "fun"
+      ],
+      "partOfSpeech": "ADJECTIVE",
+      "pronunciation": "LOOS-tikh (short oo, soft ch)",
+      "example": {
+        "text": "Mein Onkel ist sehr lustig.",
+        "translation": "My uncle is very funny."
+      }
+    },
+    {
+      "id": "ernst",
+      "text": "ernst",
+      "translations": [
+        "serious"
+      ],
+      "partOfSpeech": "ADJECTIVE",
+      "pronunciation": "airnst (short e, as in 'bed')",
+      "example": {
+        "text": "Der Film war ziemlich ernst.",
+        "translation": "The film was quite serious."
+      }
+    },
+    {
+      "id": "schuechtern",
+      "text": "schüchtern",
+      "translations": [
+        "shy"
+      ],
+      "partOfSpeech": "ADJECTIVE",
+      "pronunciation": "SHÜKH-tern (short ü, soft ch)",
+      "example": {
+        "text": "Das kleine Mädchen ist schüchtern.",
+        "translation": "The little girl is shy."
+      }
+    },
+    {
+      "id": "sympathisch",
+      "text": "sympathisch",
+      "translations": [
+        "likeable",
+        "nice",
+        "pleasant"
+      ],
+      "partOfSpeech": "ADJECTIVE",
+      "pronunciation": "züm-PAH-tish (y sounds like ü)",
+      "example": {
+        "text": "Dein Bruder ist sehr sympathisch.",
+        "translation": "Your brother is really likeable."
+      }
+    },
+    {
+      "id": "maedchen",
+      "text": "Mädchen",
+      "translations": [
+        "girl"
+      ],
+      "partOfSpeech": "NOUN",
+      "gender": "n",
+      "plural": "Mädchen",
+      "pronunciation": "MAYT-khen (soft ch)",
+      "example": {
+        "text": "Das kleine Mädchen heißt Mia.",
+        "translation": "The little girl is called Mia."
+      }
+    },
+    {
+      "id": "mensch",
+      "text": "Mensch",
+      "translations": [
+        "human being",
+        "person"
+      ],
+      "partOfSpeech": "NOUN",
+      "gender": "m",
+      "plural": "Menschen",
+      "pronunciation": "mensh",
+      "example": {
+        "text": "In Berlin wohnen viele Menschen.",
+        "translation": "Lots of people live in Berlin."
+      }
+    },
+    {
+      "id": "leute",
+      "text": "die Leute",
+      "translations": [
+        "people",
+        "folks"
+      ],
+      "partOfSpeech": "PHRASE",
+      "pronunciation": "dee LOY-te",
+      "example": {
+        "text": "Die Leute hier sind sehr nett.",
+        "translation": "The people here are very nice."
+      }
+    },
+    {
+      "id": "kennen",
+      "text": "kennen",
+      "translations": [
+        "to know (a person or place)",
+        "to know"
+      ],
+      "partOfSpeech": "VERB",
+      "pronunciation": "KEN-nen",
+      "example": {
+        "text": "Kennst du den großen Mann?",
+        "translation": "Do you know the tall man?"
+      }
+    },
+    {
+      "id": "da-drueben",
+      "text": "da drüben",
+      "translations": [
+        "over there"
+      ],
+      "partOfSpeech": "PHRASE",
+      "pronunciation": "dah DRÜ-ben (long ü)",
+      "example": {
+        "text": "Wer ist die Frau da drüben?",
+        "translation": "Who's the woman over there?"
+      }
+    },
+    {
+      "id": "hut",
+      "text": "Hut",
+      "translations": [
+        "hat"
+      ],
+      "partOfSpeech": "NOUN",
+      "gender": "m",
+      "plural": "Hüte",
+      "pronunciation": "hoot (long oo)",
+      "example": {
+        "text": "Der Mann mit dem Hut ist mein Opa.",
+        "translation": "The man in the hat is my grandpa."
+      }
+    }
+  ],
+  "grammarNotes": [
+    {
+      "id": "menschen-looks",
+      "title": "Describing someone: sein, aussehen, tragen",
+      "body": "Three verbs do most of the work:\n\n- **sein** for size, build and hair: *Er ist groß. Seine Haare sind kurz.*\n- **aussehen** (to look) for the impression someone gives: *Er sieht nett aus.*\n- **tragen** (to wear) for glasses, a beard and clothes: *Sie trägt eine Brille.*\n\nAfter *sein* and *aussehen*, the adjective has **no ending**, just like in Unit 10.\n\n**die Haare** is plural, so use *sind*. For people, **groß** means *tall* and **klein** means *short*. **kurz** is for things like hair.\n\nYou'll often hear *Er hat kurze Haare* (He has short hair). With no *der/die/das* in front, the ending works differently: learn it as a chunk for now.",
+      "table": [
+        [
+          "You want to…",
+          "Say"
+        ],
+        [
+          "describe hair",
+          "Seine Haare sind kurz und blond."
+        ],
+        [
+          "describe height",
+          "Er ist groß. / Sie ist klein."
+        ],
+        [
+          "describe build",
+          "Sie ist schlank."
+        ],
+        [
+          "mention glasses",
+          "Sie trägt eine Brille."
+        ],
+        [
+          "mention a beard",
+          "Er trägt einen Bart."
+        ],
+        [
+          "say someone is bald",
+          "Er hat eine Glatze."
+        ],
+        [
+          "ask about looks",
+          "Wie sieht er aus?"
+        ],
+        [
+          "ask about character",
+          "Wie ist er?"
+        ],
+        [
+          "give an impression",
+          "Er sieht nett aus."
+        ]
+      ]
+    },
+    {
+      "id": "menschen-verbs",
+      "title": "tragen and aussehen",
+      "body": "**tragen** (to wear, to carry) changes **a → ä** in the *du* and *er / sie / es* forms, like *fahren*.\n\n**aussehen** (to look) is separable, and changes **e → ie** like *sehen*. The *aus* goes to the end, and the adjective goes just before it: *Du **siehst** heute toll **aus**.* After a modal verb it stays in one piece: *Ich möchte gut **aussehen**.*\n\nTwo words to watch:\n\n- **sympathisch** is a false friend. It means *likeable*, not *sympathetic*.\n- **dick** is as direct as English *fat*. The friendly word is **schlank** (slim).",
+      "table": [
+        [
+          "Person",
+          "tragen",
+          "aussehen"
+        ],
+        [
+          "ich",
+          "trage",
+          "sehe … aus"
+        ],
+        [
+          "du",
+          "trägst",
+          "siehst … aus"
+        ],
+        [
+          "er / sie / es",
+          "trägt",
+          "sieht … aus"
+        ],
+        [
+          "wir",
+          "tragen",
+          "sehen … aus"
+        ],
+        [
+          "ihr",
+          "tragt",
+          "seht … aus"
+        ],
+        [
+          "sie / Sie",
+          "tragen",
+          "sehen … aus"
+        ]
+      ]
+    },
+    {
+      "id": "menschen-adjective-e",
+      "title": "Adjectives before a noun: der nette Mann",
+      "body": "After *sein*, an adjective has no ending: *Der Mann ist nett.*\n\nWhen the adjective goes **before** the noun, it needs an ending. After **der, die, das** in the subject form (the **nominative**: the person or thing doing the action), the ending is always **-e**:\n\n- *der nett**e** Mann*\n- *die nett**e** Frau*\n- *das nett**e** Kind*\n\n**dieser** and **welcher** work the same way: *dieser groß**e** Mann, welches klein**e** Kind*.\n\nNow colours can go before a noun too: *Der rot**e** Mantel ist schön.* After *ein* and *eine* the endings are different; that comes in Unit 23.",
+      "table": [
+        [
+          "After sein: no ending",
+          "Before the noun: -e"
+        ],
+        [
+          "Der Mann ist nett.",
+          "der nette Mann"
+        ],
+        [
+          "Die Frau ist lustig.",
+          "die lustige Frau"
+        ],
+        [
+          "Das Kind ist klein.",
+          "das kleine Kind"
+        ],
+        [
+          "Dieser Mann ist groß.",
+          "dieser große Mann"
+        ]
+      ]
+    },
+    {
+      "id": "menschen-adjective-table",
+      "title": "-e or -en? The whole table",
+      "body": "After **der, die, das** (and *dieser, welcher*), an adjective before a noun ends in **-e** or **-en**. Nothing else!\n\n- 🟩 **-e** in five places: all three singular subjects, plus *die* and *das* words as objects (they don't change in the object form).\n- 🟦 **-en** everywhere else: *der* words as objects (*den*), the whole dative (after *mit, zu, in*), and all plurals.\n\nQuick check: after **den** or **dem**, after *mit der*, and with any plural, it's always **-en**.",
+      "table": [
+        [
+          "",
+          "subject",
+          "object",
+          "dative: mit …"
+        ],
+        [
+          "der (Mann)",
+          "🟩 der nette",
+          "🟦 den netten",
+          "🟦 dem netten"
+        ],
+        [
+          "die (Frau)",
+          "🟩 die nette",
+          "🟩 die nette",
+          "🟦 der netten"
+        ],
+        [
+          "das (Kind)",
+          "🟩 das nette",
+          "🟩 das nette",
+          "🟦 dem netten"
+        ],
+        [
+          "plural (Leute)",
+          "🟦 die netten",
+          "🟦 die netten",
+          "🟦 den netten"
+        ]
+      ]
+    },
+    {
+      "id": "menschen-leute",
+      "title": "Leute, Menschen and the dative plural",
+      "body": "Both words mean *people*:\n\n- **die Leute** is the everyday word for a group of people. It only exists in the plural: *Die Leute hier sind nett.*\n- **der Mensch** is a human being. The plural **die Menschen** is for people in general and sounds a little more serious: *In Berlin wohnen viele Menschen.*\n\nIn conversation, *Leute* is usually the one you want.\n\nIn the **dative plural** (after *mit, zu, in*), the article is **den** and the noun adds **-n** if it can: *mit den Kinder**n***. Nouns that already end in *-n* or in *-s* stay as they are: *mit den Frauen, mit den Fotos*. German uses **mit** where English says *with* or *in*: *der Mann mit dem Hut* = the man in the hat.",
+      "table": [
+        [
+          "Singular",
+          "Plural",
+          "Dative plural: mit …"
+        ],
+        [
+          "das Kind",
+          "die Kinder",
+          "den Kindern"
+        ],
+        [
+          "der Mann",
+          "die Männer",
+          "den Männern"
+        ],
+        [
+          "das Haar",
+          "die Haare",
+          "den Haaren"
+        ],
+        [
+          "(none)",
+          "die Leute",
+          "den Leuten"
+        ],
+        [
+          "der Mensch",
+          "die Menschen",
+          "den Menschen"
+        ],
+        [
+          "die Frau",
+          "die Frauen",
+          "den Frauen"
+        ]
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "pe1-looks",
+      "title": "Tall, slim, blond",
+      "kind": "LEARN",
+      "introduces": [
+        "haar",
+        "lang",
+        "kurz",
+        "blond",
+        "lockig",
+        "schlank",
+        "dick",
+        "duenn",
+        "huebsch",
+        "ziemlich"
+      ],
+      "exercises": [
+        {
+          "id": "pe1-e1",
+          "type": "TEACH",
+          "title": "die Haare: hair",
+          "body": "Time to describe people! Start with hair. **das Haar** is one single hair, so for the hair on your head Germans use the plural: **die Haare**.\n\nBecause it's plural, use **sind**: *Seine Haare **sind** kurz.*\n\n- **lang** = long\n- **kurz** = short\n- **blond** = blond\n- **lockig** = curly\n\nYou also know *dunkel, braun, schwarz, grau* and *rot*. After *sind*, adjectives have no ending, just like in Unit 10.",
+          "examples": [
+            {
+              "text": "Ihre Haare sind lang.",
+              "translation": "Her hair is long."
+            },
+            {
+              "text": "Seine Haare sind kurz und dunkel.",
+              "translation": "His hair is short and dark."
+            },
+            {
+              "text": "Meine Haare sind lockig.",
+              "translation": "My hair is curly."
+            },
+            {
+              "text": "Er hat kurze Haare.",
+              "translation": "He has short hair.",
+              "hint": "a common chunk: no article, so a different ending"
+            }
+          ]
+        },
+        {
+          "id": "pe1-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            {
+              "target": "lang",
+              "base": "long"
+            },
+            {
+              "target": "kurz",
+              "base": "short"
+            },
+            {
+              "target": "blond",
+              "base": "blond"
+            },
+            {
+              "target": "lockig",
+              "base": "curly"
+            },
+            {
+              "target": "dunkel",
+              "base": "dark"
+            }
+          ]
+        },
+        {
+          "id": "pe1-e3",
+          "type": "CLOZE",
+          "before": "Seine Haare",
+          "after": "kurz.",
+          "accepted": [
+            "sind"
+          ],
+          "translation": "His hair is short.",
+          "hint": "die Haare is plural"
+        },
+        {
+          "id": "pe1-e4",
+          "type": "TEACH",
+          "title": "Tall, short, slim",
+          "body": "For someone's height and build:\n\n- **groß** = tall. For people, *groß* means tall, not big.\n- **klein** = short (for people). Use *kurz* for things like hair.\n- **schlank** = slim\n- **dünn** = thin\n- **dick** = fat\n\n*dick* is as direct as English *fat*, so be careful saying it about someone. *schlank* is the friendly, positive word. For things, *dick* just means *thick*.",
+          "examples": [
+            {
+              "text": "Mein Bruder ist groß und schlank.",
+              "translation": "My brother is tall and slim."
+            },
+            {
+              "text": "Meine Oma ist klein.",
+              "translation": "My grandma is short."
+            },
+            {
+              "text": "Er ist sehr dünn.",
+              "translation": "He's very thin."
+            },
+            {
+              "text": "Das Buch ist sehr dick.",
+              "translation": "The book is very thick."
+            }
+          ]
+        },
+        {
+          "id": "pe1-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which word fits? Mein Vater ist sehr ___.",
+          "prompt": "My father is very tall.",
+          "promptLanguage": "BASE",
+          "options": [
+            "lang",
+            "groß",
+            "kurz"
+          ],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "pe1-e6",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            {
+              "target": "groß",
+              "base": "tall"
+            },
+            {
+              "target": "klein",
+              "base": "short (of a person)"
+            },
+            {
+              "target": "schlank",
+              "base": "slim"
+            },
+            {
+              "target": "dünn",
+              "base": "thin"
+            },
+            {
+              "target": "dick",
+              "base": "fat"
+            }
+          ]
+        },
+        {
+          "id": "pe1-e7",
+          "type": "TEACH",
+          "title": "hübsch and ziemlich",
+          "body": "- **hübsch** = pretty. Use it for women, girls, children and things.\n- **ziemlich** = quite, rather. It goes before the adjective, just like *sehr*.\n\nFrom weak to strong: *nicht so groß → ziemlich groß → sehr groß*.",
+          "examples": [
+            {
+              "text": "Sie ist sehr hübsch.",
+              "translation": "She's very pretty."
+            },
+            {
+              "text": "Das Kleid ist hübsch.",
+              "translation": "The dress is pretty."
+            },
+            {
+              "text": "Er ist ziemlich groß.",
+              "translation": "He's quite tall."
+            },
+            {
+              "text": "Meine Haare sind ziemlich lang.",
+              "translation": "My hair is quite long."
+            }
+          ]
+        },
+        {
+          "id": "pe1-e8",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Er ist ziemlich klein.",
+          "promptLanguage": "TARGET",
+          "options": [
+            "He's quite short.",
+            "He's very tall.",
+            "He's quite thin."
+          ],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "pe1-e9",
+          "type": "CLOZE",
+          "before": "Meine Schwester ist groß und",
+          "after": ".",
+          "accepted": [
+            "schlank"
+          ],
+          "translation": "My sister is tall and slim.",
+          "hint": "slim"
+        },
+        {
+          "id": "pe1-e10",
+          "type": "WORD_ORDER",
+          "translation": "Her hair is long and blond.",
+          "answer": "Ihre Haare sind lang und blond.",
+          "distractors": [
+            "ist",
+            "lange"
+          ]
+        },
+        {
+          "id": "pe1-e11",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which do you hear?",
+          "options": [
+            "Er ist dünn.",
+            "Er ist dick."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "pe1-e12",
+          "type": "TRANSLATE",
+          "source": "My brother is tall and slim.",
+          "sourceLanguage": "BASE",
+          "accepted": [
+            "Mein Bruder ist groß und schlank."
+          ]
+        },
+        {
+          "id": "pe1-e13",
+          "type": "TRANSLATE",
+          "source": "Seine Haare sind kurz und lockig.",
+          "sourceLanguage": "TARGET",
+          "accepted": [
+            "His hair is short and curly.",
+            "His hair's short and curly."
+          ]
+        },
+        {
+          "id": "pe1-e14",
+          "type": "TRANSLATE",
+          "source": "She is quite pretty.",
+          "sourceLanguage": "BASE",
+          "accepted": [
+            "Sie ist ziemlich hübsch."
+          ]
+        },
+        {
+          "id": "pe1-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Meine Haare sind ziemlich lang.",
+          "translation": "My hair is quite long."
+        },
+        {
+          "id": "pe1-e16",
+          "type": "SHADOW",
+          "text": "Er ist groß und schlank. Seine Haare sind kurz.",
+          "translation": "He's tall and slim. His hair is short.",
+          "hint": "groß has a long o. kurz: koorts, with a short oo."
+        }
+      ]
+    },
+    {
+      "id": "pe2-glasses",
+      "title": "Glasses and a beard",
+      "kind": "LEARN",
+      "introduces": [
+        "tragen",
+        "brille",
+        "bart",
+        "glatze",
+        "aussehen",
+        "wie-sieht-er-aus"
+      ],
+      "exercises": [
+        {
+          "id": "pe2-e1",
+          "type": "TEACH",
+          "title": "tragen: to wear",
+          "body": "**tragen** means to wear (and also to carry). It changes its vowel like *fahren*: **a → ä** in the *du* and *er / sie / es* forms.\n\n- ich trage\n- du **trägst**\n- er / sie / es **trägt**\n- wir tragen\n\nWhat you wear is the object, so *der* words take **den** or **einen**: *Er trägt **einen** Mantel.*",
+          "examples": [
+            {
+              "text": "Er trägt einen Mantel.",
+              "translation": "He's wearing a coat."
+            },
+            {
+              "text": "Ich trage heute ein Kleid.",
+              "translation": "I'm wearing a dress today."
+            },
+            {
+              "text": "Was trägst du morgen?",
+              "translation": "What are you wearing tomorrow?"
+            },
+            {
+              "text": "Sie trägt eine Jacke.",
+              "translation": "She's wearing a jacket."
+            }
+          ]
+        },
+        {
+          "id": "pe2-e2",
+          "type": "CLOZE",
+          "before": "Er",
+          "after": "heute einen Mantel.",
+          "accepted": [
+            "trägt"
+          ],
+          "translation": "He's wearing a coat today.",
+          "hint": "tragen → er … (a → ä)"
+        },
+        {
+          "id": "pe2-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Du ___ heute eine Jacke.",
+          "prompt": "You're wearing a jacket today.",
+          "promptLanguage": "BASE",
+          "options": [
+            "tragst",
+            "trägst",
+            "trägt"
+          ],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "pe2-e4",
+          "type": "TEACH",
+          "title": "Brille, Bart, Glatze",
+          "body": "- **die Brille** = glasses. It's singular in German: *eine Brille* is one pair of glasses. You *wear* it: *Sie trägt eine Brille.*\n- **der Bart** = the beard. You can *wear* a beard too: *Er trägt einen Bart.* *Er hat einen Bart* is also fine.\n- **die Glatze** = a bald head. *Er hat eine Glatze.* = He's bald.",
+          "examples": [
+            {
+              "text": "Sie trägt eine Brille.",
+              "translation": "She wears glasses."
+            },
+            {
+              "text": "Er trägt einen Bart.",
+              "translation": "He has a beard."
+            },
+            {
+              "text": "Mein Opa hat eine Glatze.",
+              "translation": "My grandpa is bald."
+            },
+            {
+              "text": "Ich muss eine Brille tragen.",
+              "translation": "I have to wear glasses."
+            }
+          ]
+        },
+        {
+          "id": "pe2-e5",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            {
+              "target": "die Brille",
+              "base": "the glasses"
+            },
+            {
+              "target": "der Bart",
+              "base": "the beard"
+            },
+            {
+              "target": "die Glatze",
+              "base": "the bald head"
+            },
+            {
+              "target": "die Haare",
+              "base": "the hair"
+            },
+            {
+              "target": "die Augen",
+              "base": "the eyes"
+            }
+          ]
+        },
+        {
+          "id": "pe2-e6",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Mein Opa hat eine Glatze.",
+          "promptLanguage": "TARGET",
+          "options": [
+            "My grandpa wears glasses.",
+            "My grandpa is bald.",
+            "My grandpa has a beard."
+          ],
+          "optionsLanguage": "BASE",
+          "answerIndex": 1
+        },
+        {
+          "id": "pe2-e7",
+          "type": "WORD_ORDER",
+          "translation": "Does your father wear glasses?",
+          "answer": "Trägt dein Vater eine Brille?",
+          "distractors": [
+            "Trägst",
+            "einen"
+          ]
+        },
+        {
+          "id": "pe2-e8",
+          "type": "TEACH",
+          "title": "aussehen: to look",
+          "body": "To say how someone **looks**, use **aussehen**. It's separable, and it changes its vowel like *sehen*: *er **sieht** … **aus***.\n\n- **Wie sieht er aus?** = What does he look like?\n- *Er sieht müde aus.* = He looks tired.\n\nThe adjective goes just before *aus*, and like after *sein*, it has **no ending**. To ask what someone is like as a person, say **Wie ist er?**",
+          "examples": [
+            {
+              "text": "Wie sieht dein Bruder aus?",
+              "translation": "What does your brother look like?"
+            },
+            {
+              "text": "Er ist groß und trägt eine Brille.",
+              "translation": "He's tall and wears glasses."
+            },
+            {
+              "text": "Du siehst müde aus.",
+              "translation": "You look tired."
+            },
+            {
+              "text": "Das sieht toll aus!",
+              "translation": "That looks great!"
+            }
+          ]
+        },
+        {
+          "id": "pe2-e9",
+          "type": "CLOZE",
+          "before": "Du siehst heute müde",
+          "after": ".",
+          "accepted": [
+            "aus"
+          ],
+          "translation": "You look tired today.",
+          "hint": "aussehen is separable"
+        },
+        {
+          "id": "pe2-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "A friend asks you this. Which answer fits?",
+          "prompt": "Wie sieht dein Bruder aus?",
+          "promptLanguage": "TARGET",
+          "options": [
+            "Er wohnt in Berlin.",
+            "Er ist groß und trägt einen Bart.",
+            "Er hat keine Zeit."
+          ],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "pe2-e11",
+          "type": "WORD_ORDER",
+          "translation": "What does your sister look like?",
+          "answer": "Wie sieht deine Schwester aus?",
+          "distractors": [
+            "siehst",
+            "aussehen"
+          ]
+        },
+        {
+          "id": "pe2-e12",
+          "type": "TRANSLATE",
+          "source": "He's tall and wears glasses.",
+          "sourceLanguage": "BASE",
+          "accepted": [
+            "Er ist groß und trägt eine Brille.",
+            "Er ist groß und hat eine Brille.",
+            "Er ist groß und trägt Brille."
+          ]
+        },
+        {
+          "id": "pe2-e13",
+          "type": "TRANSLATE",
+          "source": "Wie sieht deine Freundin aus?",
+          "sourceLanguage": "TARGET",
+          "accepted": [
+            "What does your friend look like?",
+            "What does your girlfriend look like?"
+          ]
+        },
+        {
+          "id": "pe2-e14",
+          "type": "TRANSLATE",
+          "source": "You look tired. (informal)",
+          "sourceLanguage": "BASE",
+          "accepted": [
+            "Du siehst müde aus."
+          ]
+        },
+        {
+          "id": "pe2-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Mein Opa hat eine Glatze und trägt einen Bart.",
+          "translation": "My grandpa is bald and has a beard."
+        },
+        {
+          "id": "pe2-e16",
+          "type": "SHADOW",
+          "text": "Wie sieht er aus? Er ist groß und trägt eine Brille.",
+          "translation": "What does he look like? He's tall and wears glasses.",
+          "hint": "sieht: zeet, with a long ee. trägt: the ä is like the e in 'bed', but longer."
+        }
+      ]
+    },
+    {
+      "id": "pe3-character",
+      "title": "Nice, funny, shy",
+      "kind": "LEARN",
+      "introduces": [
+        "nett",
+        "freundlich",
+        "lustig",
+        "ernst",
+        "schuechtern",
+        "sympathisch",
+        "maedchen"
+      ],
+      "exercises": [
+        {
+          "id": "pe3-e1",
+          "type": "TEACH",
+          "title": "What are they like?",
+          "body": "To ask what someone is like as a person, say **Wie ist er?** or **Wie ist sie?**\n\n- **nett** = nice, kind\n- **freundlich** = friendly\n- **lustig** = funny, fun\n- **ernst** = serious\n- **schüchtern** = shy\n\nYou already know **ruhig** (quiet) and **laut** (loud) too.",
+          "examples": [
+            {
+              "text": "Wie ist dein Bruder?",
+              "translation": "What's your brother like?"
+            },
+            {
+              "text": "Er ist lustig und ziemlich laut.",
+              "translation": "He's funny and quite loud."
+            },
+            {
+              "text": "Meine Schwester ist ruhig und ein bisschen schüchtern.",
+              "translation": "My sister is quiet and a bit shy."
+            },
+            {
+              "text": "Frau Weber ist sehr freundlich.",
+              "translation": "Ms Weber is very friendly."
+            }
+          ]
+        },
+        {
+          "id": "pe3-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            {
+              "target": "nett",
+              "base": "nice"
+            },
+            {
+              "target": "freundlich",
+              "base": "friendly"
+            },
+            {
+              "target": "lustig",
+              "base": "funny"
+            },
+            {
+              "target": "ernst",
+              "base": "serious"
+            },
+            {
+              "target": "schüchtern",
+              "base": "shy"
+            }
+          ]
+        },
+        {
+          "id": "pe3-e3",
+          "type": "TEACH",
+          "title": "sympathisch: a false friend",
+          "body": "**sympathisch** does *not* mean sympathetic. It means **likeable**: someone you like straight away.\n\n*Er ist sehr sympathisch.* = He's really likeable. / I really like him.\n\nPut **un-** in front for the opposite: *unsympathisch* = not likeable, *unfreundlich* = unfriendly.",
+          "examples": [
+            {
+              "text": "Dein Bruder ist sehr sympathisch.",
+              "translation": "Your brother is really likeable."
+            },
+            {
+              "text": "Er sieht sympathisch aus.",
+              "translation": "He looks nice."
+            },
+            {
+              "text": "Der Kellner war unfreundlich.",
+              "translation": "The waiter was unfriendly."
+            }
+          ]
+        },
+        {
+          "id": "pe3-e4",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Anna ist sehr sympathisch.",
+          "promptLanguage": "TARGET",
+          "options": [
+            "Anna is very sympathetic.",
+            "Anna is very likeable.",
+            "Anna is very shy."
+          ],
+          "optionsLanguage": "BASE",
+          "answerIndex": 1
+        },
+        {
+          "id": "pe3-e5",
+          "type": "CLOZE",
+          "before": "Mein Bruder ist nicht laut. Er ist",
+          "after": ".",
+          "accepted": [
+            "ruhig"
+          ],
+          "translation": "My brother isn't loud. He's quiet.",
+          "hint": "quiet"
+        },
+        {
+          "id": "pe3-e6",
+          "type": "TEACH",
+          "title": "Before a noun: der nette Mann",
+          "body": "So far, adjectives came **after** the noun, with *sein* or *aussehen*, and had no ending: *Der Mann ist nett.*\n\nWhen an adjective goes **before** a noun, it needs an ending. After **der, die, das**, in the subject form (the **nominative**: the person doing the action), it's always **-e**:\n\n- **der** nett**e** Mann\n- **die** nett**e** Frau\n- **das** nett**e** Kind\n\nOne ending for all three genders!",
+          "examples": [
+            {
+              "text": "Der Mann ist nett.",
+              "translation": "The man is nice.",
+              "hint": "after sein: no ending"
+            },
+            {
+              "text": "Der nette Mann heißt Tom.",
+              "translation": "The nice man is called Tom.",
+              "hint": "before the noun: -e"
+            },
+            {
+              "text": "Die lustige Frau ist meine Tante.",
+              "translation": "The funny woman is my aunt."
+            },
+            {
+              "text": "Das kleine Kind ist mein Sohn.",
+              "translation": "The little child is my son."
+            }
+          ]
+        },
+        {
+          "id": "pe3-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Der ___ Mann heißt Peter.",
+          "prompt": "The friendly man is called Peter.",
+          "promptLanguage": "BASE",
+          "options": [
+            "freundlich",
+            "freundliche",
+            "freundlichen"
+          ],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "pe3-e8",
+          "type": "CLOZE",
+          "before": "Die",
+          "after": "Frau ist meine Tante.",
+          "accepted": [
+            "lustige"
+          ],
+          "translation": "The funny woman is my aunt.",
+          "hint": "lustig, before a noun"
+        },
+        {
+          "id": "pe3-e9",
+          "type": "TEACH",
+          "title": "das Mädchen, dieser and welcher",
+          "body": "**das Mädchen** = the girl. Words ending in **-chen** are always *das*, even for a girl.\n\n**dieser** (this) and **welcher** (which) work just like *der, die, das*, so the adjective after them ends in **-e** too:\n\n- *dies**er** groß**e** Mann*\n- *welch**es** klein**e** Mädchen*\n\nAnd now colours can go before the noun: *Der rot**e** Mantel ist schön.*",
+          "examples": [
+            {
+              "text": "Das kleine Mädchen ist meine Tochter.",
+              "translation": "The little girl is my daughter."
+            },
+            {
+              "text": "Welches Mädchen ist deine Tochter?",
+              "translation": "Which girl is your daughter?"
+            },
+            {
+              "text": "Das blonde Mädchen.",
+              "translation": "The blonde girl."
+            },
+            {
+              "text": "Dieser große Mann ist mein Bruder.",
+              "translation": "This tall man is my brother."
+            }
+          ]
+        },
+        {
+          "id": "pe3-e10",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which sentence is right?",
+          "prompt": "The child is shy.",
+          "promptLanguage": "BASE",
+          "options": [
+            "Das Kind ist schüchterne.",
+            "Das Kind ist schüchtern.",
+            "Das schüchtern Kind ist."
+          ],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "pe3-e11",
+          "type": "CLOZE",
+          "before": "Das",
+          "after": "Mädchen ist meine Tochter.",
+          "accepted": [
+            "kleine"
+          ],
+          "translation": "The little girl is my daughter.",
+          "hint": "klein, before a noun"
+        },
+        {
+          "id": "pe3-e12",
+          "type": "WORD_ORDER",
+          "translation": "The funny man is my uncle.",
+          "answer": "Der lustige Mann ist mein Onkel.",
+          "distractors": [
+            "lustig",
+            "lustigen"
+          ]
+        },
+        {
+          "id": "pe3-e13",
+          "type": "TRANSLATE",
+          "source": "The young woman is very nice.",
+          "sourceLanguage": "BASE",
+          "accepted": [
+            "Die junge Frau ist sehr nett.",
+            "Die junge Frau ist sehr sympathisch.",
+            "Die junge Frau ist sehr freundlich."
+          ]
+        },
+        {
+          "id": "pe3-e14",
+          "type": "TRANSLATE",
+          "source": "Der ernste Mann ist mein Vater.",
+          "sourceLanguage": "TARGET",
+          "accepted": [
+            "The serious man is my father.",
+            "The serious man is my dad."
+          ]
+        },
+        {
+          "id": "pe3-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Die nette Frau heißt Anna.",
+          "translation": "The nice woman is called Anna."
+        },
+        {
+          "id": "pe3-e16",
+          "type": "SHADOW",
+          "text": "Der nette Mann ist sehr sympathisch.",
+          "translation": "The nice man is really likeable.",
+          "hint": "sympathisch: züm-PAH-tish, with the stress on PAH."
+        }
+      ]
+    },
+    {
+      "id": "pe4-endings",
+      "title": "-e or -en?",
+      "kind": "LEARN",
+      "introduces": [
+        "kennen",
+        "leute",
+        "mensch"
+      ],
+      "exercises": [
+        {
+          "id": "pe4-e1",
+          "type": "TEACH",
+          "title": "kennen: to know someone",
+          "body": "**kennen** = to know a person or a place, to be familiar with it. It's regular: *ich kenne, du kennst, er kennt*.\n\nThe person you know is the **object**, so *der* becomes **den**: *Ich kenne **den** Mann.*",
+          "examples": [
+            {
+              "text": "Kennst du Anna?",
+              "translation": "Do you know Anna?"
+            },
+            {
+              "text": "Ich kenne Berlin sehr gut.",
+              "translation": "I know Berlin very well."
+            },
+            {
+              "text": "Ich kenne den Mann nicht.",
+              "translation": "I don't know the man."
+            }
+          ]
+        },
+        {
+          "id": "pe4-e2",
+          "type": "TEACH",
+          "title": "The object: den großen Mann",
+          "body": "When a *der* word is the object, **der → den**. The adjective changes too: **-e → -en**.\n\n- *Der groß**e** Mann ist hier.* (subject)\n- *Kennst du **den** groß**en** Mann?* (object)\n\n*die* and *das* words don't change in the object form, so they keep **-e**:\n\n- *Ich kenne **die** nett**e** Frau.*\n- *Ich kenne **das** klein**e** Kind.*\n\nEasy to remember: after **den**, it's **-en**.",
+          "examples": [
+            {
+              "text": "Kennst du den großen Mann?",
+              "translation": "Do you know the tall man?"
+            },
+            {
+              "text": "Ich kenne die nette Frau.",
+              "translation": "I know the nice woman."
+            },
+            {
+              "text": "Wir kennen das kleine Mädchen.",
+              "translation": "We know the little girl."
+            }
+          ]
+        },
+        {
+          "id": "pe4-e3",
+          "type": "CLOZE",
+          "before": "Kennst du den",
+          "after": "Mann?",
+          "accepted": [
+            "großen"
+          ],
+          "translation": "Do you know the tall man?",
+          "hint": "groß, after den"
+        },
+        {
+          "id": "pe4-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Ich kenne die ___ Frau.",
+          "prompt": "I know the friendly woman.",
+          "promptLanguage": "BASE",
+          "options": [
+            "freundliche",
+            "freundlichen"
+          ],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "pe4-e5",
+          "type": "TEACH",
+          "title": "Colours and clothes",
+          "body": "In Unit 11, colours could only go after *ist*. Now they can go before the noun, with the same endings. Clothes after **tragen** are objects, so watch the *der* words:\n\n- *Der rot**e** Mantel ist schön.* (subject)\n- *Sie trägt **den** rot**en** Mantel.* (object)",
+          "examples": [
+            {
+              "text": "Er trägt den blauen Pullover.",
+              "translation": "He's wearing the blue jumper."
+            },
+            {
+              "text": "Sie trägt die schwarze Jacke.",
+              "translation": "She's wearing the black jacket."
+            },
+            {
+              "text": "Ich nehme das weiße Hemd.",
+              "translation": "I'll take the white shirt."
+            },
+            {
+              "text": "Der graue Mantel ist zu teuer.",
+              "translation": "The grey coat is too expensive."
+            }
+          ]
+        },
+        {
+          "id": "pe4-e6",
+          "type": "CLOZE",
+          "before": "Er trägt den",
+          "after": "Pullover.",
+          "accepted": [
+            "blauen"
+          ],
+          "translation": "He's wearing the blue jumper.",
+          "hint": "blau, after den"
+        },
+        {
+          "id": "pe4-e7",
+          "type": "TEACH",
+          "title": "Plural and dative: always -en",
+          "body": "Two more places, and both are easy: the ending is **always -en**.\n\n- **Plural**: *die nett**en** Kinder*\n- **Dative**, after *mit, zu, in*: *mit dem nett**en** Mann, mit der nett**en** Frau, mit dem nett**en** Kind*\n\nIn the dative plural, the article is **den** and the noun adds **-n**: *mit den Haare**n***.\n\nSo the whole rule: 🟩 **-e** after *der, die, das* as the subject, and after *die, das* as the object. 🟦 **-en** everywhere else.",
+          "examples": [
+            {
+              "text": "Die kleinen Kinder spielen im Park.",
+              "translation": "The little children are playing in the park."
+            },
+            {
+              "text": "Die Frau mit der roten Jacke heißt Lena.",
+              "translation": "The woman in the red jacket is called Lena."
+            },
+            {
+              "text": "Der Mann mit den kurzen Haaren ist mein Bruder.",
+              "translation": "The man with the short hair is my brother."
+            },
+            {
+              "text": "Ich fahre mit dem neuen Auto.",
+              "translation": "I'm going in the new car."
+            }
+          ]
+        },
+        {
+          "id": "pe4-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Die Frau mit der ___ Jacke heißt Lena.",
+          "prompt": "The woman in the red jacket is called Lena.",
+          "promptLanguage": "BASE",
+          "options": [
+            "rote",
+            "roten"
+          ],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "pe4-e9",
+          "type": "TEACH",
+          "title": "Leute and Menschen",
+          "body": "Both mean *people*:\n\n- **die Leute** is the everyday word for a group of people. It only exists in the plural: *Die Leute hier sind nett.*\n- **der Mensch** is a human being. The plural **die Menschen** is for people in general and sounds a bit more serious: *In Berlin wohnen viele Menschen.*\n\nIn conversation, *Leute* is usually the one you want. Both are plural, so the adjective ends in **-en**: *die nett**en** Leute*.",
+          "examples": [
+            {
+              "text": "Die Leute hier sind sehr freundlich.",
+              "translation": "The people here are very friendly."
+            },
+            {
+              "text": "Kennst du die netten Leute?",
+              "translation": "Do you know the nice people?"
+            },
+            {
+              "text": "In Berlin wohnen viele Menschen.",
+              "translation": "Lots of people live in Berlin."
+            }
+          ]
+        },
+        {
+          "id": "pe4-e10",
+          "type": "CLOZE",
+          "before": "Die",
+          "after": "Leute hier sind sehr nett.",
+          "accepted": [
+            "jungen"
+          ],
+          "translation": "The young people here are very nice.",
+          "hint": "jung, plural"
+        },
+        {
+          "id": "pe4-e11",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            {
+              "target": "die Leute",
+              "base": "people"
+            },
+            {
+              "target": "der Mensch",
+              "base": "human being"
+            },
+            {
+              "target": "kennen",
+              "base": "to know (a person)"
+            },
+            {
+              "target": "den großen Mann",
+              "base": "the tall man (object)"
+            },
+            {
+              "target": "mit dem großen Mann",
+              "base": "with the tall man"
+            }
+          ]
+        },
+        {
+          "id": "pe4-e12",
+          "type": "WORD_ORDER",
+          "translation": "Do you know the man with the short hair?",
+          "answer": "Kennst du den Mann mit den kurzen Haaren?",
+          "distractors": [
+            "kurze",
+            "dem"
+          ]
+        },
+        {
+          "id": "pe4-e13",
+          "type": "TRANSLATE",
+          "source": "She's wearing the black coat today.",
+          "sourceLanguage": "BASE",
+          "accepted": [
+            "Sie trägt heute den schwarzen Mantel.",
+            "Heute trägt sie den schwarzen Mantel.",
+            "Sie trägt den schwarzen Mantel heute."
+          ]
+        },
+        {
+          "id": "pe4-e14",
+          "type": "TRANSLATE",
+          "source": "Gestern habe ich die netten Leute im Park getroffen.",
+          "sourceLanguage": "TARGET",
+          "accepted": [
+            "Yesterday I met the nice people in the park.",
+            "I met the nice people in the park yesterday.",
+            "Yesterday I met the nice people at the park.",
+            "I met the nice people at the park yesterday."
+          ]
+        },
+        {
+          "id": "pe4-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Kennst du den großen Mann mit dem Bart?",
+          "translation": "Do you know the tall man with the beard?"
+        },
+        {
+          "id": "pe4-e16",
+          "type": "SHADOW",
+          "text": "Die Leute hier sind sehr nett.",
+          "translation": "The people here are very nice.",
+          "hint": "Leute: LOY-te. eu sounds like the oy in 'boy'."
+        }
+      ]
+    },
+    {
+      "id": "pe5-party",
+      "title": "Who's that? At the party",
+      "kind": "PRACTICE",
+      "introduces": [
+        "da-drueben",
+        "hut"
+      ],
+      "exercises": [
+        {
+          "id": "pe5-e1",
+          "type": "TEACH",
+          "title": "Finding someone",
+          "body": "- **da drüben** = over there\n- **der Hut** = the hat\n\nTo pick someone out, German uses **mit** where English often says *in* or *with*: *der Mann **mit dem** Hut* = the man in the hat, *die Frau **mit der** Brille* = the woman with glasses. After *mit* comes the dative, so adjectives end in **-en**.\n\n**auf der Party** = at the party.",
+          "examples": [
+            {
+              "text": "Wer ist der Mann da drüben?",
+              "translation": "Who's the man over there?"
+            },
+            {
+              "text": "Der Mann mit dem Hut?",
+              "translation": "The man in the hat?"
+            },
+            {
+              "text": "Nein, der große Mann mit der Brille.",
+              "translation": "No, the tall man with glasses."
+            },
+            {
+              "text": "Die Frau mit den langen Haaren ist meine Schwester.",
+              "translation": "The woman with the long hair is my sister."
+            }
+          ]
+        },
+        {
+          "id": "pe5-e2",
+          "type": "TEACH",
+          "title": "Auf der Party",
+          "body": "Lena is at Tom's party, and she doesn't know anyone. Tom tells her who's who. Read along, and tap each line to hear it.",
+          "examples": [
+            {
+              "text": "Tom, ich kenne die Leute hier nicht. Wer ist der Mann da drüben?",
+              "translation": "Lena: Tom, I don't know the people here. Who's the man over there?"
+            },
+            {
+              "text": "Welcher Mann? Der Mann mit dem Hut?",
+              "translation": "Tom: Which man? The man in the hat?"
+            },
+            {
+              "text": "Nein, der große Mann mit der Brille und dem Bart.",
+              "translation": "Lena: No, the tall man with the glasses and the beard."
+            },
+            {
+              "text": "Ach, das ist Paul, mein Kollege. Er ist sehr nett, aber ein bisschen schüchtern.",
+              "translation": "Tom: Oh, that's Paul, my colleague. He's very nice, but a bit shy."
+            },
+            {
+              "text": "Und die blonde Frau? Sie sieht sympathisch aus.",
+              "translation": "Lena: And the blonde woman? She looks nice."
+            },
+            {
+              "text": "Die Frau mit den langen Haaren? Das ist Sara, seine Freundin. Sie ist sehr lustig!",
+              "translation": "Tom: The woman with the long hair? That's Sara, his girlfriend. She's really funny!"
+            },
+            {
+              "text": "Und wer ist der kleine Mann mit der Glatze? Er sieht so ernst aus.",
+              "translation": "Lena: And who's the short bald man? He looks so serious."
+            },
+            {
+              "text": "Das ist mein Chef! Er ist aber sehr freundlich.",
+              "translation": "Tom: That's my boss! But he's actually very friendly."
+            },
+            {
+              "text": "Wollen wir zu Paul und Sara gehen?",
+              "translation": "Lena: Shall we go over to Paul and Sara?"
+            },
+            {
+              "text": "Gute Idee!",
+              "translation": "Tom: Good idea!"
+            }
+          ]
+        },
+        {
+          "id": "pe5-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: who is the tall man with the beard?",
+          "prompt": "der große Mann mit der Brille und dem Bart",
+          "promptLanguage": "TARGET",
+          "options": [
+            "Tom's colleague",
+            "Tom's boss",
+            "Sara's brother"
+          ],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "pe5-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: what is Sara like?",
+          "prompt": "Wie ist Sara?",
+          "promptLanguage": "TARGET",
+          "options": [
+            "She's shy.",
+            "She's serious.",
+            "She's really funny."
+          ],
+          "optionsLanguage": "BASE",
+          "answerIndex": 2
+        },
+        {
+          "id": "pe5-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: what does Tom's boss look like?",
+          "prompt": "Wie sieht der Chef aus?",
+          "promptLanguage": "TARGET",
+          "options": [
+            "short and bald",
+            "tall with a beard",
+            "blond with long hair"
+          ],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "pe5-e6",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            {
+              "target": "da drüben",
+              "base": "over there"
+            },
+            {
+              "target": "der Hut",
+              "base": "the hat"
+            },
+            {
+              "target": "der Mann mit dem Hut",
+              "base": "the man in the hat"
+            },
+            {
+              "target": "die Frau mit der Brille",
+              "base": "the woman with glasses"
+            },
+            {
+              "target": "Er sieht ernst aus.",
+              "base": "He looks serious."
+            }
+          ]
+        },
+        {
+          "id": "pe5-e7",
+          "type": "CLOZE",
+          "before": "Die Frau mit den",
+          "after": "Haaren ist Sara.",
+          "accepted": [
+            "langen"
+          ],
+          "translation": "The woman with the long hair is Sara.",
+          "hint": "lang, after mit den"
+        },
+        {
+          "id": "pe5-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which word fits? Der Mann mit ___ Hut ist mein Chef.",
+          "prompt": "The man in the hat is my boss.",
+          "promptLanguage": "BASE",
+          "options": [
+            "der",
+            "den",
+            "dem"
+          ],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "pe5-e9",
+          "type": "CLOZE",
+          "before": "Und wer ist der",
+          "after": "Mann mit der Glatze?",
+          "accepted": [
+            "kleine"
+          ],
+          "translation": "And who's the short man with the bald head?",
+          "hint": "klein, subject"
+        },
+        {
+          "id": "pe5-e10",
+          "type": "WORD_ORDER",
+          "translation": "Who's the tall man with the glasses?",
+          "answer": "Wer ist der große Mann mit der Brille?",
+          "distractors": [
+            "großen",
+            "dem"
+          ]
+        },
+        {
+          "id": "pe5-e11",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which do you hear?",
+          "options": [
+            "die nette Frau",
+            "die netten Frauen"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "pe5-e12",
+          "type": "TRANSLATE",
+          "source": "The blonde woman looks friendly.",
+          "sourceLanguage": "BASE",
+          "accepted": [
+            "Die blonde Frau sieht freundlich aus."
+          ]
+        },
+        {
+          "id": "pe5-e13",
+          "type": "TRANSLATE",
+          "source": "Er ist sehr nett, aber ein bisschen schüchtern.",
+          "sourceLanguage": "TARGET",
+          "accepted": [
+            "He's very nice, but a bit shy.",
+            "He is very nice, but a bit shy.",
+            "He's very nice but a bit shy.",
+            "He is very nice but a bit shy.",
+            "He's very nice, but a little shy.",
+            "He's very nice but a little shy.",
+            "He is very nice, but a little shy.",
+            "He is very nice but a little shy.",
+            "He's really nice, but a bit shy.",
+            "He's really nice but a bit shy.",
+            "He's very kind, but a bit shy.",
+            "He's very kind but a bit shy."
+          ]
+        },
+        {
+          "id": "pe5-e14",
+          "type": "TRANSLATE",
+          "source": "Who is the woman with the long hair?",
+          "sourceLanguage": "BASE",
+          "accepted": [
+            "Wer ist die Frau mit den langen Haaren?"
+          ]
+        },
+        {
+          "id": "pe5-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Der kleine Mann mit der Glatze ist mein Chef.",
+          "translation": "The short bald man is my boss."
+        },
+        {
+          "id": "pe5-e16",
+          "type": "SHADOW",
+          "text": "Wer ist der Mann da drüben? Der Mann mit dem Hut?",
+          "translation": "Who's the man over there? The man in the hat?",
+          "hint": "drüben: DRÜ-ben, with a long ü. Let your voice go up at the end of the second question."
+        }
+      ]
+    }
+  ]
+}

@@ -222,5 +222,85 @@
       { "text": "Am Sonntag bin ich zu Hause geblieben.", "translation": "On Sunday I stayed at home." },
       { "text": "Und was hast du gemacht?", "translation": "And what did you do?" }
     ]
+  },
+  {
+    "id": "rp-weather",
+    "unitId": "15-wetter",
+    "icon": "🌦️",
+    "title": "What's the weather like?",
+    "aiRole": "Max, a friend who lives in Hamburg. You use du. In Hamburg it is cold (eight degrees), windy and raining today; tomorrow the sun will shine. You love autumn and hate summer heat. Use wenn-sentences naturally.",
+    "setting": "The learner phones Max, who lives in another city, for a catch-up.",
+    "goals": ["Ask about the weather where Max is", "Describe the weather where you are", "Say what you do when it rains", "Say which season you like best"],
+    "opening": { "text": "Hallo! Schön, dass du anrufst! Wie ist das Wetter bei dir?", "translation": "Hi! Nice of you to call! What's the weather like where you are?" },
+    "usefulPhrases": [
+      { "text": "Hier scheint die Sonne.", "translation": "The sun is shining here." },
+      { "text": "Es sind zwanzig Grad.", "translation": "It's twenty degrees." },
+      { "text": "Wenn es regnet, bleibe ich zu Hause.", "translation": "When it rains, I stay at home." },
+      { "text": "Am liebsten mag ich den Herbst.", "translation": "I like autumn best." }
+    ]
+  },
+  {
+    "id": "rp-job",
+    "unitId": "16-arbeit",
+    "icon": "💼",
+    "title": "Talking about work",
+    "aiRole": "Sarah, a nurse you meet at a friend's barbecue. You use du. You work at a hospital, often at night, and finish at six in the morning. You like your job because you help people, but you're often tired. Use weil-clauses and dative pronouns naturally.",
+    "setting": "A barbecue in a friend's garden. Sarah and the learner start chatting about their jobs.",
+    "goals": ["Say what your job is", "Ask what Sarah does", "Say why you like or don't like your job", "Say when you finish work"],
+    "opening": { "text": "Hallo, ich bin Sarah. Und was machst du beruflich?", "translation": "Hi, I'm Sarah. And what do you do for a living?" },
+    "usefulPhrases": [
+      { "text": "Ich bin Lehrer von Beruf.", "translation": "I'm a teacher by profession." },
+      { "text": "Ich arbeite gern dort, weil die Kollegen nett sind.", "translation": "I like working there because my colleagues are nice." },
+      { "text": "Ich habe um fünf Uhr Feierabend.", "translation": "I finish work at five o'clock." },
+      { "text": "Das gefällt mir.", "translation": "I like that." }
+    ]
+  },
+  {
+    "id": "rp-holiday",
+    "unitId": "17-reisen",
+    "icon": "🧳",
+    "title": "Checking in to a holiday flat",
+    "aiRole": "Herr Rossi, the friendly owner of a holiday flat by the sea. You use Sie. In the flat: the keys are on the table, the towels are in the cupboard next to the bed, the coffee machine is in the kitchen between the fridge and the window. The beach is five minutes away. Use two-way prepositions (Wo? with dative, Wohin? with accusative).",
+    "setting": "The learner arrives at a holiday flat on the coast. Herr Rossi meets them at the door.",
+    "goals": ["Ask where things are in the flat", "Ask how to get to the beach", "Say where you put your suitcase", "Thank him and say goodbye"],
+    "opening": { "text": "Herzlich willkommen! Wie war die Reise? Kommen Sie, ich zeige Ihnen die Wohnung.", "translation": "Welcome! How was the journey? Come, I'll show you the flat." },
+    "usefulPhrases": [
+      { "text": "Wo sind die Handtücher?", "translation": "Where are the towels?" },
+      { "text": "Ist der Strand weit?", "translation": "Is the beach far?" },
+      { "text": "Ich stelle den Koffer neben das Bett.", "translation": "I'll put the suitcase next to the bed." },
+      { "text": "Wir gehen morgen ans Meer.", "translation": "We're going to the sea tomorrow." }
+    ]
+  },
+  {
+    "id": "rp-describe",
+    "unitId": "18-menschen",
+    "icon": "🧑‍🤝‍🧑",
+    "title": "Who's who at the party",
+    "aiRole": "Anna, the host of a party. You use du. Your guests: Paul is the tall man with the short dark hair and the glasses, he's funny; Lisa is the woman with the long blond hair in the red dress, she's a bit shy but very nice; Tom is the man with the beard, he's quiet. Use adjective endings after der/die/das.",
+    "setting": "A birthday party at Anna's flat. The learner doesn't know anyone yet and asks Anna about the guests.",
+    "goals": ["Ask who someone is", "Describe what someone looks like", "Ask what someone is like", "Say who you'd like to meet"],
+    "opening": { "text": "Schön, dass du da bist! Kennst du hier schon jemanden?", "translation": "Great that you're here! Do you know anyone here yet?" },
+    "usefulPhrases": [
+      { "text": "Wer ist der Mann mit der Brille?", "translation": "Who is the man with the glasses?" },
+      { "text": "Wie ist die Frau im roten Kleid?", "translation": "What is the woman in the red dress like?" },
+      { "text": "Er sieht nett aus.", "translation": "He looks nice." },
+      { "text": "Sie hat lange, blonde Haare.", "translation": "She has long blond hair." }
+    ]
+  },
+  {
+    "id": "rp-news",
+    "unitId": "19-medien",
+    "icon": "📺",
+    "title": "Did you see the news?",
+    "aiRole": "Jonas, a friend from your German course. You use du. You watched a new German crime series last night and loved it. You read online that a big concert in your city has been cancelled because of the weather. You couldn't come to class yesterday because you had to work. Use dass-clauses and konnte/musste/wollte naturally.",
+    "setting": "Jonas and the learner meet for a coffee before their German class.",
+    "goals": ["Say what you watch, read or listen to", "Say what you think about something with dass", "Say what you couldn't or had to do yesterday", "Ask Jonas about the news"],
+    "opening": { "text": "Hey! Hast du schon gehört, dass das Konzert am Samstag ausfällt?", "translation": "Hey! Have you heard that the concert on Saturday is cancelled?" },
+    "usefulPhrases": [
+      { "text": "Nein, das wusste ich nicht!", "translation": "No, I didn't know that!" },
+      { "text": "Ich glaube, dass die Serie sehr gut ist.", "translation": "I think the series is very good." },
+      { "text": "Gestern konnte ich nicht kommen, weil ich arbeiten musste.", "translation": "Yesterday I couldn't come because I had to work." },
+      { "text": "Ich lese die Nachrichten online.", "translation": "I read the news online." }
+    ]
   }
 ]

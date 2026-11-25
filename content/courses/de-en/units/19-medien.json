@@ -1,0 +1,887 @@
+{
+  "id": "19-medien",
+  "level": "A2",
+  "title": "Media",
+  "description": "Newspapers, TV, the internet and series: say what you think with dass, and talk about the past with konnte, musste, wollte and sollte.",
+  "icon": "📺",
+  "vocab": [
+    { "id": "zeitung", "text": "Zeitung", "translations": ["newspaper", "paper"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Zeitungen", "pronunciation": "TSY-toong", "example": { "text": "Ich lese morgens die Zeitung.", "translation": "I read the paper in the morning." } },
+    { "id": "nachrichten-news", "text": "die Nachrichten", "translations": ["the news", "news"], "partOfSpeech": "PHRASE", "pronunciation": "dee NAHKH-rikh-ten (first ch back-of-throat, second soft)", "example": { "text": "Die Nachrichten kommen um acht Uhr.", "translation": "The news is on at eight o'clock." } },
+    { "id": "fernseher", "text": "Fernseher", "translations": ["television (set)", "TV set", "TV", "television"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Fernseher", "pronunciation": "FERN-zay-er", "example": { "text": "Der Fernseher ist neu.", "translation": "The TV is new." } },
+    { "id": "radio", "text": "Radio", "translations": ["radio"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Radios", "pronunciation": "RAH-dee-oh", "example": { "text": "Ich höre morgens Radio.", "translation": "I listen to the radio in the morning." } },
+    { "id": "sendung", "text": "Sendung", "translations": ["programme (on TV or radio)", "programme", "program", "show", "broadcast"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Sendungen", "pronunciation": "ZEN-doong", "example": { "text": "Die Sendung ist sehr interessant.", "translation": "The programme is very interesting." } },
+    { "id": "im-fernsehen", "text": "im Fernsehen", "translations": ["on TV", "on television"], "partOfSpeech": "PHRASE", "pronunciation": "im FERN-zay-en", "example": { "text": "Was kommt heute im Fernsehen?", "translation": "What's on TV today?" } },
+    { "id": "artikel", "text": "Artikel", "translations": ["article (in a newspaper)", "article"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Artikel", "pronunciation": "ar-TIK-el (short i)", "example": { "text": "Ich habe einen Artikel in der Zeitung gelesen.", "translation": "I read an article in the newspaper." } },
+    { "id": "interessant", "text": "interessant", "translations": ["interesting"], "partOfSpeech": "ADJECTIVE", "pronunciation": "in-te-re-SANT", "example": { "text": "Der Artikel war sehr interessant.", "translation": "The article was very interesting." } },
+    { "id": "internet", "text": "Internet", "translations": ["internet", "the internet"], "partOfSpeech": "NOUN", "gender": "n", "pronunciation": "IN-ter-net", "example": { "text": "Ich lese die Nachrichten im Internet.", "translation": "I read the news on the internet." } },
+    { "id": "computer", "text": "Computer", "translations": ["computer"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Computer", "pronunciation": "kom-PYOO-ter", "example": { "text": "Mein Computer ist sehr alt.", "translation": "My computer is very old." } },
+    { "id": "app", "text": "App", "translations": ["app"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Apps", "pronunciation": "ep (rhymes with 'step')", "example": { "text": "Ich lerne Deutsch mit einer App.", "translation": "I'm learning German with an app." } },
+    { "id": "video", "text": "Video", "translations": ["video"], "partOfSpeech": "NOUN", "gender": "n", "plural": "Videos", "pronunciation": "VEE-day-oh", "example": { "text": "Ich sehe ein Video im Internet.", "translation": "I'm watching a video on the internet." } },
+    { "id": "serie", "text": "Serie", "translations": ["series (on TV or online)", "TV series", "series", "show"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Serien", "pronunciation": "ZAY-ree-e", "example": { "text": "Welche Serie siehst du gerade?", "translation": "Which series are you watching at the moment?" } },
+    { "id": "online", "text": "online", "translations": ["online"], "partOfSpeech": "ADVERB", "pronunciation": "ON-line (as in English)", "example": { "text": "Ich lese die Zeitung online.", "translation": "I read the newspaper online." } },
+    { "id": "gerade", "text": "gerade", "translations": ["at the moment (right now)", "right now", "at the moment", "currently"], "partOfSpeech": "ADVERB", "pronunciation": "ge-RAH-de", "example": { "text": "Ich sehe gerade eine Serie aus Spanien.", "translation": "At the moment I'm watching a series from Spain." } },
+    { "id": "wissen", "text": "wissen", "translations": ["to know (a fact)", "to know"], "partOfSpeech": "VERB", "pronunciation": "VIS-sen", "example": { "text": "Das weiß ich nicht.", "translation": "I don't know that." } },
+    { "id": "ich-weiss-nicht", "text": "Ich weiß nicht.", "translations": ["I don't know.", "I don't know"], "partOfSpeech": "PHRASE", "pronunciation": "ikh VICE nikht (soft ch)", "example": { "text": "Wann kommt die Sendung? Ich weiß nicht.", "translation": "When is the programme on? I don't know." } },
+    { "id": "dass", "text": "dass", "translations": ["that (joining two sentences)", "that"], "partOfSpeech": "CONJUNCTION", "pronunciation": "das (short a, sounds just like das)", "example": { "text": "Ich glaube, dass er krank ist.", "translation": "I think that he's ill." } },
+    { "id": "glauben", "text": "glauben", "translations": ["to believe", "to think (believe)"], "partOfSpeech": "VERB", "pronunciation": "GLOW-ben (ow as in cow)", "example": { "text": "Ich glaube, dass die Serie gut ist.", "translation": "I think the series is good." } },
+    { "id": "denken", "text": "denken", "translations": ["to think"], "partOfSpeech": "VERB", "pronunciation": "DENG-ken", "example": { "text": "Was denkst du?", "translation": "What do you think?" } },
+    { "id": "sagen", "text": "sagen", "translations": ["to say", "to tell"], "partOfSpeech": "VERB", "pronunciation": "ZAH-gen", "example": { "text": "Er sagt, dass er keine Zeit hat.", "translation": "He says that he doesn't have time." } },
+    { "id": "hoffen", "text": "hoffen", "translations": ["to hope"], "partOfSpeech": "VERB", "pronunciation": "HOF-fen", "example": { "text": "Ich hoffe, dass du kommen kannst.", "translation": "I hope that you can come." } },
+    { "id": "wichtig", "text": "wichtig", "translations": ["important"], "partOfSpeech": "ADJECTIVE", "pronunciation": "VIKH-tikh (both ch soft)", "example": { "text": "Das ist sehr wichtig.", "translation": "That's very important." } },
+    { "id": "ich-glaube-schon", "text": "Ich glaube schon.", "translations": ["I think so.", "I think so", "I believe so."], "partOfSpeech": "PHRASE", "pronunciation": "ikh GLOW-be SHOHN", "example": { "text": "Kommt Anna morgen? Ich glaube schon.", "translation": "Is Anna coming tomorrow? I think so." } },
+    { "id": "ich-glaube-nicht", "text": "Ich glaube nicht.", "translations": ["I don't think so.", "I don't think so", "I don't believe so."], "partOfSpeech": "PHRASE", "pronunciation": "ikh GLOW-be NIKHT (soft ch)", "example": { "text": "Ist der Film gut? Ich glaube nicht.", "translation": "Is the film good? I don't think so." } },
+    { "id": "konnte", "text": "konnte", "translations": ["could (past of können)", "could", "was able to"], "partOfSpeech": "VERB", "pronunciation": "KON-te", "example": { "text": "Ich konnte gestern nicht kommen.", "translation": "I couldn't come yesterday." } },
+    { "id": "musste", "text": "musste", "translations": ["had to (past of müssen)", "had to"], "partOfSpeech": "VERB", "pronunciation": "MUS-te (u as in 'put')", "example": { "text": "Ich musste gestern lange arbeiten.", "translation": "I had to work late yesterday." } },
+    { "id": "wollte", "text": "wollte", "translations": ["wanted to (past of wollen)", "wanted to", "wanted"], "partOfSpeech": "VERB", "pronunciation": "VOL-te", "example": { "text": "Wir wollten ins Kino gehen.", "translation": "We wanted to go to the cinema." } },
+    { "id": "sollte", "text": "sollte", "translations": ["was supposed to (past of sollen)", "was supposed to", "was meant to"], "partOfSpeech": "VERB", "pronunciation": "ZOL-te", "example": { "text": "Ich sollte den Artikel lesen, aber ich hatte keine Zeit.", "translation": "I was supposed to read the article, but I didn't have time." } },
+    { "id": "folge", "text": "Folge", "translations": ["episode"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Folgen", "pronunciation": "FOL-ge", "example": { "text": "Gestern habe ich drei Folgen gesehen.", "translation": "Yesterday I watched three episodes." } },
+    { "id": "spannend", "text": "spannend", "translations": ["exciting", "gripping", "thrilling"], "partOfSpeech": "ADJECTIVE", "pronunciation": "SHPAN-nent", "example": { "text": "Die Serie ist sehr spannend.", "translation": "The series is very exciting." } }
+  ],
+  "grammarNotes": [
+    {
+      "id": "medien-in-dative",
+      "title": "On TV, in the paper: in + dative",
+      "body": "Where English says *on TV* or *on the radio*, German says **in**, followed by the dative you know from Unit 12: *in dem* shortens to **im**.\n\nThree words look alike, so keep them apart:\n\n- **fernsehen** = to watch TV (a separable verb: *Ich sehe fern.*)\n- **der Fernseher** = the TV set, the machine\n- **das Fernsehen** = television as a medium: **im Fernsehen** = on TV\n\n**die Nachrichten** (the news) is plural in German, so the verb is plural too: *Die Nachrichten **kommen** um acht Uhr.* With *kommen*, German says what's *on*: **Was kommt heute im Fernsehen?** = What's on TV today?\n\n*Radio hören* needs no article: *Ich höre Radio.*",
+      "table": [
+        ["Medium", "Where", "Example"],
+        ["das Fernsehen", "im Fernsehen", "Was kommt heute im Fernsehen?"],
+        ["das Radio", "im Radio", "Ich höre die Nachrichten im Radio."],
+        ["das Internet", "im Internet", "Ich sehe ein Video im Internet."],
+        ["die Zeitung", "in der Zeitung", "Ich habe es in der Zeitung gelesen."],
+        ["(no article)", "online", "Ich lese die Zeitung online."]
+      ]
+    },
+    {
+      "id": "medien-wissen",
+      "title": "wissen: to know",
+      "body": "**wissen** means to know a fact. It's irregular in the singular: the vowel changes to **ei**, and like the modal verbs, **ich** and **er / sie / es** look the same and have no ending. The plural is regular.\n\n- **Ich weiß nicht.** = I don't know.\n- **Das weiß ich nicht.** = I don't know that.\n\nTo know a person or a place, German uses a different verb, which comes later.\n\nTwo short answers with **glauben**:\n\n- **Ich glaube schon.** = I think so.\n- **Ich glaube nicht.** = I don't think so.\n\nHere *schon* doesn't mean *already*: it just makes the answer a yes.",
+      "table": [
+        ["Person", "wissen"],
+        ["ich", "weiß"],
+        ["du", "weißt"],
+        ["er / sie / es", "weiß"],
+        ["wir", "wissen"],
+        ["ihr", "wisst"],
+        ["sie / Sie", "wissen"]
+      ]
+    },
+    {
+      "id": "medien-dass",
+      "title": "dass: that, with the verb at the end",
+      "body": "**dass** (that) joins two sentences, usually after a verb of thinking or saying: *glauben, denken, wissen, sagen, hoffen*.\n\nJust like **weil**, dass sends the verb to the **very end** of its part of the sentence. A **comma** always comes before *dass*.\n\n- *Er ist krank.* → *Ich glaube, dass er krank **ist**.*\n\nSeparable verbs join back into one word at the end: *Der Film fängt um acht an.* → *Ich glaube, dass der Film um acht Uhr **anfängt**.*\n\nTo say you *don't* think so, put **nicht** after *glaube*, like English *I don't think*: *Ich glaube **nicht**, dass er kommt.*\n\nIn speech you'll also hear *dass* left out, like English *I think he's ill*. Then the second part keeps its normal order: *Ich glaube, er **ist** krank.*\n\n**dass** and **das** sound exactly the same. *dass* with double s joins sentences; *das* means *the* or *that one*.",
+      "table": [
+        ["First part", "dass", "middle", "end"],
+        ["Ich glaube,", "dass", "er krank", "ist."],
+        ["Ich weiß,", "dass", "die Sendung um acht Uhr", "kommt."],
+        ["Er sagt,", "dass", "der Film", "langweilig ist."],
+        ["Ich hoffe,", "dass", "der Film um acht Uhr", "anfängt."]
+      ]
+    },
+    {
+      "id": "medien-modal-past",
+      "title": "konnte, musste, wollte, sollte",
+      "body": "Remember **war** and **hatte**? The modal verbs have short past forms too, and Germans use them instead of the Perfekt. This past form is called the **Präteritum**.\n\n- The **umlaut disappears**: *können → konnte, müssen → musste*.\n- The endings are exactly like **hatte**: *ich* and *er / sie / es* look the same and have no extra ending.\n- The other verb still waits at the end: *Ich **musste** gestern lange **arbeiten**.*\n\n**möchten** has no past of its own: use **wollte**. *Ich möchte ins Kino gehen* → *Gestern **wollte** ich ins Kino gehen.*\n\nYou'll also hear *du solltest* meaning *you should* as advice. Same form, but for now learn it as the past.",
+      "table": [
+        ["Person", "können", "müssen", "wollen", "sollen"],
+        ["ich", "konnte", "musste", "wollte", "sollte"],
+        ["du", "konntest", "musstest", "wolltest", "solltest"],
+        ["er / sie / es", "konnte", "musste", "wollte", "sollte"],
+        ["wir", "konnten", "mussten", "wollten", "sollten"],
+        ["ihr", "konntet", "musstet", "wolltet", "solltet"],
+        ["sie / Sie", "konnten", "mussten", "wollten", "sollten"]
+      ]
+    },
+    {
+      "id": "medien-dass-two-verbs",
+      "title": "dass with two verbs",
+      "body": "When the sentence has two verbs (a modal verb, or the Perfekt), the infinitive or participle goes near the end as usual, and the **conjugated verb goes after it, right at the end**. This works the same after *weil*.\n\n- *Er kann kommen.* → *Ich hoffe, dass er kommen **kann**.*\n- *Er hat angerufen.* → *Sie sagt, dass er gestern angerufen **hat**.*\n- *Ich musste arbeiten.* → *…, weil ich arbeiten **musste**.*\n\nA whole story about yesterday can mix all of this: *Gestern **konnte** ich nicht kommen, weil ich arbeiten **musste**.*",
+      "table": [
+        ["First part", "joining word", "middle", "end"],
+        ["Ich hoffe,", "dass", "du morgen", "kommen kannst."],
+        ["Sie sagt,", "dass", "er gestern", "angerufen hat."],
+        ["Ich glaube,", "dass", "sie nach Hause", "gegangen ist."],
+        ["Ich konnte nicht kommen,", "weil", "ich", "arbeiten musste."]
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "md1-news",
+      "title": "Papers, radio and TV",
+      "kind": "LEARN",
+      "introduces": ["zeitung", "fernseher", "radio", "nachrichten-news", "sendung", "interessant", "im-fernsehen", "artikel"],
+      "exercises": [
+        {
+          "id": "md1-e1",
+          "type": "TEACH",
+          "title": "Zeitung, Radio, Fernseher",
+          "body": "Welcome to A2! This unit is about the media.\n\n- **die Zeitung** = the newspaper\n- **das Radio** = the radio\n- **der Fernseher** = the TV set\n\nYou know **fernsehen** (to watch TV) and **lesen, hören, sehen** from Unit 9. *der Fernseher* is the machine itself.\n\n**Radio hören** needs no article: *Ich höre Radio.*",
+          "examples": [
+            { "text": "die Zeitung", "translation": "the newspaper", "hint": "TSY-toong" },
+            { "text": "Ich lese morgens die Zeitung.", "translation": "I read the paper in the morning." },
+            { "text": "Ich höre gern Radio.", "translation": "I like listening to the radio." },
+            { "text": "Der Fernseher ist neu.", "translation": "The TV is new." },
+            { "text": "Abends sehe ich fern.", "translation": "In the evening I watch TV." }
+          ]
+        },
+        {
+          "id": "md1-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Zeitung", "base": "the newspaper" },
+            { "target": "das Radio", "base": "the radio" },
+            { "target": "der Fernseher", "base": "the TV set" },
+            { "target": "fernsehen", "base": "to watch TV" },
+            { "target": "lesen", "base": "to read" }
+          ]
+        },
+        {
+          "id": "md1-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which article? ___ Fernseher",
+          "prompt": "the TV set",
+          "promptLanguage": "BASE",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "md1-e4",
+          "type": "TEACH",
+          "title": "die Nachrichten: the news",
+          "body": "**die Nachrichten** = the news. It's the plural of *die Nachricht* (message) from Unit 14: the news is lots of messages!\n\nIn English *news* is singular, but in German it's **plural**, so the verb is plural too: *Die Nachrichten **kommen** um acht Uhr.* With *kommen*, German says what's *on*.\n\n- **die Sendung** = the programme, the show (on TV or radio)\n- **interessant** = interesting. Stress at the end: *in-te-re-SANT*.",
+          "examples": [
+            { "text": "Die Nachrichten kommen um acht Uhr.", "translation": "The news is on at eight o'clock." },
+            { "text": "Ich sehe abends die Nachrichten.", "translation": "I watch the news in the evening." },
+            { "text": "Die Sendung ist sehr interessant.", "translation": "The programme is very interesting." },
+            { "text": "Die Sendung kommt um neun Uhr.", "translation": "The programme is on at nine o'clock." }
+          ]
+        },
+        {
+          "id": "md1-e5",
+          "type": "CLOZE",
+          "before": "Die Nachrichten",
+          "after": "um acht Uhr.",
+          "accepted": ["kommen"],
+          "translation": "The news is on at eight o'clock.",
+          "hint": "die Nachrichten is plural → kommen in the plural"
+        },
+        {
+          "id": "md1-e6",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Die Sendung ist sehr interessant.",
+          "promptLanguage": "TARGET",
+          "options": ["The programme is very interesting.", "The news is very interesting.", "The newspaper is very interesting."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "md1-e7",
+          "type": "TEACH",
+          "title": "im Fernsehen: on TV",
+          "body": "Where English says *on TV* or *on the radio*, German says **in**, with the dative from Unit 12:\n\n- **im Fernsehen** = on TV (*das Fernsehen* is television itself, not the TV set)\n- **im Radio** = on the radio\n- **in der Zeitung** = in the newspaper\n\nA question you'll use a lot: **Was kommt heute im Fernsehen?** = What's on TV today?",
+          "examples": [
+            { "text": "Was kommt heute im Fernsehen?", "translation": "What's on TV today?" },
+            { "text": "Heute kommt ein Film im Fernsehen.", "translation": "There's a film on TV today." },
+            { "text": "Ich höre die Nachrichten im Radio.", "translation": "I listen to the news on the radio." },
+            { "text": "Ich habe es in der Zeitung gelesen.", "translation": "I read it in the newspaper." }
+          ]
+        },
+        {
+          "id": "md1-e8",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "im Fernsehen", "base": "on TV" },
+            { "target": "im Radio", "base": "on the radio" },
+            { "target": "in der Zeitung", "base": "in the newspaper" },
+            { "target": "die Sendung", "base": "the programme" },
+            { "target": "die Nachrichten", "base": "the news" }
+          ]
+        },
+        {
+          "id": "md1-e9",
+          "type": "CLOZE",
+          "before": "Ich höre die Nachrichten",
+          "after": "Radio.",
+          "accepted": ["im"],
+          "translation": "I listen to the news on the radio.",
+          "hint": "in + das Radio, shortened"
+        },
+        {
+          "id": "md1-e10",
+          "type": "TEACH",
+          "title": "der Artikel",
+          "body": "**der Artikel** = the article, in a newspaper or online. The plural is the same: *die Artikel*.\n\nYou can already talk about what you read with the Perfekt: **lesen → gelesen**.",
+          "examples": [
+            { "text": "Ich habe einen Artikel in der Zeitung gelesen.", "translation": "I read an article in the newspaper." },
+            { "text": "Der Artikel war sehr interessant.", "translation": "The article was very interesting." },
+            { "text": "Hast du den Artikel gelesen?", "translation": "Have you read the article?" }
+          ]
+        },
+        {
+          "id": "md1-e11",
+          "type": "CLOZE",
+          "before": "Hast du den Artikel in der Zeitung",
+          "after": "?",
+          "accepted": ["gelesen"],
+          "translation": "Have you read the article in the newspaper?",
+          "hint": "lesen → participle"
+        },
+        {
+          "id": "md1-e12",
+          "type": "WORD_ORDER",
+          "translation": "What's on TV today?",
+          "answer": "Was kommt heute im Fernsehen?",
+          "distractors": ["Fernseher?", "kommen"]
+        },
+        {
+          "id": "md1-e13",
+          "type": "TRANSLATE",
+          "source": "Yesterday I read an article in the newspaper.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Gestern habe ich einen Artikel in der Zeitung gelesen.", "Ich habe gestern einen Artikel in der Zeitung gelesen.", "Ich habe gestern in der Zeitung einen Artikel gelesen.", "Gestern habe ich in der Zeitung einen Artikel gelesen."]
+        },
+        {
+          "id": "md1-e14",
+          "type": "TRANSLATE",
+          "source": "Ich höre morgens Radio.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["I listen to the radio in the morning.", "In the morning I listen to the radio.", "I listen to the radio in the mornings.", "In the mornings I listen to the radio.", "I listen to radio in the morning.", "I listen to the radio every morning."]
+        },
+        {
+          "id": "md1-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Der Artikel war sehr interessant.",
+          "translation": "The article was very interesting."
+        },
+        {
+          "id": "md1-e16",
+          "type": "SHADOW",
+          "text": "Was kommt heute im Fernsehen?",
+          "translation": "What's on TV today?",
+          "hint": "Fernsehen: FERN-zay-en. An s before a vowel sounds like English z."
+        }
+      ]
+    },
+    {
+      "id": "md2-online",
+      "title": "Online: apps, videos and series",
+      "kind": "LEARN",
+      "introduces": ["internet", "computer", "app", "video", "online", "serie", "gerade", "wissen", "ich-weiss-nicht"],
+      "exercises": [
+        {
+          "id": "md2-e1",
+          "type": "TEACH",
+          "title": "Internet, Computer, App, Video",
+          "body": "Lots of media words come from English. Only the sound is German:\n\n- **das Internet** = the internet. **im Internet** = on the internet (in + dem again).\n- **der Computer** = the computer: *kom-PYOO-ter*\n- **die App** = the app: it rhymes with *step*\n- **das Video** = the video: *VEE-day-oh*\n- **online** = online, just like English",
+          "examples": [
+            { "text": "Ich lese die Nachrichten im Internet.", "translation": "I read the news on the internet." },
+            { "text": "Mein Computer ist sehr alt.", "translation": "My computer is very old." },
+            { "text": "Ich lerne Deutsch mit einer App.", "translation": "I'm learning German with an app." },
+            { "text": "Ich sehe ein Video im Internet.", "translation": "I'm watching a video on the internet." },
+            { "text": "Ich lese die Zeitung online.", "translation": "I read the newspaper online." }
+          ]
+        },
+        {
+          "id": "md2-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "das Internet", "base": "the internet" },
+            { "target": "der Computer", "base": "the computer" },
+            { "target": "die App", "base": "the app" },
+            { "target": "das Video", "base": "the video" },
+            { "target": "im Internet", "base": "on the internet" }
+          ]
+        },
+        {
+          "id": "md2-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which article? ___ App",
+          "prompt": "the app",
+          "promptLanguage": "BASE",
+          "options": ["der", "die", "das"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "md2-e4",
+          "type": "CLOZE",
+          "before": "Ich sehe ein Video",
+          "after": "Internet.",
+          "accepted": ["im"],
+          "translation": "I'm watching a video on the internet.",
+          "hint": "in + das Internet, shortened"
+        },
+        {
+          "id": "md2-e5",
+          "type": "TEACH",
+          "title": "die Serie and gerade",
+          "body": "- **die Serie** = the series, on TV or online. Plural: *die Serien*.\n- **gerade** = at the moment, right now. It goes after the verb.\n\nTo ask a friend what they're watching: **Welche Serie siehst du gerade?** Remember *sehen → du siehst, er sieht*, and *welche* for a *die* word.",
+          "examples": [
+            { "text": "Welche Serie siehst du gerade?", "translation": "Which series are you watching at the moment?" },
+            { "text": "Ich sehe gerade eine Serie aus Spanien.", "translation": "At the moment I'm watching a series from Spain." },
+            { "text": "Die Serie ist sehr gut.", "translation": "The series is very good." },
+            { "text": "Ich sehe gern Serien online.", "translation": "I like watching series online." }
+          ]
+        },
+        {
+          "id": "md2-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Welche Serie ___ du gerade?",
+          "prompt": "Which series are you watching at the moment?",
+          "promptLanguage": "BASE",
+          "options": ["sehe", "siehst", "sieht"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "md2-e7",
+          "type": "WORD_ORDER",
+          "translation": "Which series are you watching at the moment?",
+          "answer": "Welche Serie siehst du gerade?",
+          "distractors": ["Welcher", "sehe"]
+        },
+        {
+          "id": "md2-e8",
+          "type": "TEACH",
+          "title": "wissen: to know",
+          "body": "**wissen** = to know (a fact). It's irregular in the singular, and like the modal verbs, *ich* and *er / sie* look the same:\n\n- ich **weiß**\n- du **weißt**\n- er / sie / es **weiß**\n- wir **wissen**, ihr **wisst**, sie / Sie **wissen**\n\nThe phrase you'll need most: **Ich weiß nicht.** = I don't know.\n\nFor knowing people, German uses a different verb, which comes later.",
+          "examples": [
+            { "text": "Ich weiß nicht.", "translation": "I don't know.", "hint": "weiß: VICE" },
+            { "text": "Das weiß ich nicht.", "translation": "I don't know that." },
+            { "text": "Weißt du das?", "translation": "Do you know that?" },
+            { "text": "Wir wissen das schon.", "translation": "We already know that." }
+          ]
+        },
+        {
+          "id": "md2-e9",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "ich weiß", "base": "I know" },
+            { "target": "du weißt", "base": "you know (informal)" },
+            { "target": "wir wissen", "base": "we know" },
+            { "target": "Ich weiß nicht.", "base": "I don't know." },
+            { "target": "gerade", "base": "at the moment" }
+          ]
+        },
+        {
+          "id": "md2-e10",
+          "type": "CLOZE",
+          "before": "Das",
+          "after": "ich nicht.",
+          "accepted": ["weiß"],
+          "translation": "I don't know that.",
+          "hint": "wissen → ich …"
+        },
+        {
+          "id": "md2-e11",
+          "type": "CLOZE",
+          "before": "Er",
+          "after": "das auch nicht.",
+          "accepted": ["weiß"],
+          "translation": "He doesn't know that either.",
+          "hint": "wissen → er … (the same as ich)"
+        },
+        {
+          "id": "md2-e12",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "A friend asks you this. You have no idea. What do you say?",
+          "prompt": "Wann kommt die Sendung?",
+          "promptLanguage": "TARGET",
+          "options": ["Ich weiß nicht.", "Ich habe keine Zeit.", "Ich höre Radio."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "md2-e13",
+          "type": "TRANSLATE",
+          "source": "I read the news online.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich lese die Nachrichten online.", "Ich lese Nachrichten online.", "Die Nachrichten lese ich online.", "Ich lese die Nachrichten im Internet.", "Ich habe die Nachrichten online gelesen."]
+        },
+        {
+          "id": "md2-e14",
+          "type": "TRANSLATE",
+          "source": "Welche Serie siehst du gerade?",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Which series are you watching at the moment?", "Which series are you watching right now?", "What series are you watching at the moment?", "What series are you watching right now?", "Which series are you watching now?", "What series are you watching now?", "Which series are you watching currently?", "What series are you currently watching?", "Which series are you currently watching?", "Which show are you watching at the moment?", "What show are you watching at the moment?", "What show are you watching right now?", "What show are you watching now?", "What are you watching at the moment?"]
+        },
+        {
+          "id": "md2-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Ich sehe ein Video im Internet.",
+          "translation": "I'm watching a video on the internet."
+        },
+        {
+          "id": "md2-e16",
+          "type": "SHADOW",
+          "text": "Ich weiß nicht. Ich habe keinen Fernseher.",
+          "translation": "I don't know. I don't have a TV.",
+          "hint": "weiß sounds like English vice: the w is a v, and ß is a sharp s."
+        }
+      ]
+    },
+    {
+      "id": "md3-dass",
+      "title": "I think that …: dass",
+      "kind": "LEARN",
+      "introduces": ["glauben", "denken", "sagen", "hoffen", "ich-glaube-schon", "ich-glaube-nicht", "dass", "wichtig"],
+      "exercises": [
+        {
+          "id": "md3-e1",
+          "type": "TEACH",
+          "title": "glauben, denken, sagen, hoffen",
+          "body": "Four verbs for opinions and news. They're all regular: *ich glaube, du glaubst, er glaubt*.\n\n- **glauben** = to believe, to think\n- **denken** = to think\n- **sagen** = to say, to tell\n- **hoffen** = to hope\n\n*glauben* and *denken* both work for *I think*. *Ich glaube* is a little less sure.",
+          "examples": [
+            { "text": "Was denkst du?", "translation": "What do you think?" },
+            { "text": "Das glaube ich nicht.", "translation": "I don't believe that." },
+            { "text": "Was sagt er?", "translation": "What is he saying?" },
+            { "text": "Was sagt der Arzt?", "translation": "What does the doctor say?" }
+          ]
+        },
+        {
+          "id": "md3-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "glauben", "base": "to believe" },
+            { "target": "denken", "base": "to think" },
+            { "target": "sagen", "base": "to say" },
+            { "target": "hoffen", "base": "to hope" },
+            { "target": "wissen", "base": "to know (a fact)" }
+          ]
+        },
+        {
+          "id": "md3-e3",
+          "type": "TEACH",
+          "title": "Ich glaube schon. Ich glaube nicht.",
+          "body": "Two short answers for when you're not 100% sure:\n\n- **Ich glaube schon.** = I think so.\n- **Ich glaube nicht.** = I don't think so.\n\nHere *schon* doesn't mean *already*: it just turns the answer into a yes. You'll also hear **Ich denke schon.**",
+          "examples": [
+            { "text": "Kommt Anna morgen? Ich glaube schon.", "translation": "Is Anna coming tomorrow? I think so." },
+            { "text": "Ist der Film gut? Ich glaube nicht.", "translation": "Is the film good? I don't think so." },
+            { "text": "Ist das wichtig? Ich denke schon.", "translation": "Is that important? I think so." }
+          ]
+        },
+        {
+          "id": "md3-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "A friend asks you this. You think the answer is yes, but you're not sure. What do you say?",
+          "prompt": "Kommt die Sendung heute?",
+          "promptLanguage": "TARGET",
+          "options": ["Ich glaube schon.", "Ich glaube nicht.", "Ich weiß nicht."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "md3-e5",
+          "type": "TEACH",
+          "title": "dass: that",
+          "body": "To say *what* you think, know, say or hope, join two sentences with **dass** (that).\n\nJust like **weil**, *dass* sends the verb to the **very end**. A **comma** always comes before *dass*:\n\n- *Er ist krank.* → *Ich glaube, dass er krank **ist**.*\n- *Die Sendung kommt um acht.* → *Ich weiß, dass die Sendung um acht Uhr **kommt**.*\n\nIn speech, people sometimes leave out *dass*. Then the verb stays second, as in a normal sentence: *Ich glaube, er **ist** krank.* Both are right.\n\n*dass* sounds exactly like *das*: a short *a*.",
+          "examples": [
+            { "text": "Ich glaube, dass er krank ist.", "translation": "I think that he's ill." },
+            { "text": "Ich weiß, dass die Sendung um acht Uhr kommt.", "translation": "I know that the programme is on at eight o'clock." },
+            { "text": "Er sagt, dass der Film langweilig ist.", "translation": "He says that the film is boring." },
+            { "text": "Ich hoffe, dass du Zeit hast.", "translation": "I hope that you have time." },
+            { "text": "Ich glaube nicht, dass er kommt.", "translation": "I don't think he's coming." }
+          ]
+        },
+        {
+          "id": "md3-e6",
+          "type": "CLOZE",
+          "before": "Ich glaube, dass der Artikel interessant",
+          "after": ".",
+          "accepted": ["ist"],
+          "translation": "I think that the article is interesting.",
+          "hint": "After dass, the verb goes to the end."
+        },
+        {
+          "id": "md3-e7",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which is right?",
+          "prompt": "He says that the film is boring.",
+          "promptLanguage": "BASE",
+          "options": ["Er sagt, dass der Film ist langweilig.", "Er sagt, dass der Film langweilig ist.", "Er sagt, dass ist der Film langweilig."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "md3-e8",
+          "type": "WORD_ORDER",
+          "translation": "I know that the news is on at eight o'clock.",
+          "answer": "Ich weiß, dass die Nachrichten um acht Uhr kommen.",
+          "distractors": ["kommt", "weil"]
+        },
+        {
+          "id": "md3-e9",
+          "type": "TEACH",
+          "title": "wichtig, and separable verbs after dass",
+          "body": "**wichtig** = important.\n\nSeparable verbs like *anfangen* and *anrufen* split up in a normal sentence. After *dass*, the verb is at the end, so the two parts **join back into one word**:\n\n- *Der Film fängt um acht Uhr an.* → *Ich glaube, dass der Film um acht Uhr **anfängt**.*\n- *Sie ruft heute an.* → *Ich hoffe, dass sie heute **anruft**.*",
+          "examples": [
+            { "text": "Die Nachrichten sind wichtig.", "translation": "The news is important." },
+            { "text": "Ich denke, dass das wichtig ist.", "translation": "I think that's important." },
+            { "text": "Ich glaube, dass der Film um acht Uhr anfängt.", "translation": "I think the film starts at eight o'clock." },
+            { "text": "Ich hoffe, dass sie heute anruft.", "translation": "I hope that she calls today." }
+          ]
+        },
+        {
+          "id": "md3-e10",
+          "type": "CLOZE",
+          "before": "Ich hoffe, dass sie heute",
+          "after": ".",
+          "accepted": ["anruft"],
+          "translation": "I hope that she calls today.",
+          "hint": "anrufen → sie …, at the end as one word"
+        },
+        {
+          "id": "md3-e11",
+          "type": "WORD_ORDER",
+          "translation": "I think that's important.",
+          "answer": "Ich denke, dass das wichtig ist.",
+          "distractors": ["sind", "weiß"]
+        },
+        {
+          "id": "md3-e12",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which do you hear?",
+          "options": ["Ich glaube schon.", "Ich glaube nicht."],
+          "answerIndex": 1
+        },
+        {
+          "id": "md3-e13",
+          "type": "TRANSLATE",
+          "source": "I hope that you have time. (informal)",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich hoffe, dass du Zeit hast.", "Ich hoffe dass du Zeit hast.", "Ich hoffe, du hast Zeit.", "Ich hoffe du hast Zeit."]
+        },
+        {
+          "id": "md3-e14",
+          "type": "TRANSLATE",
+          "source": "Ich glaube nicht, dass er heute kommt.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["I don't think he's coming today.", "I don't think that he's coming today.", "I don't think he is coming today.", "I don't think that he is coming today.", "I don't believe he's coming today.", "I don't believe that he's coming today.", "I do not think he is coming today.", "I do not think that he is coming today.", "I don't think he'll come today.", "I don't think he will come today.", "I don't think he comes today."]
+        },
+        {
+          "id": "md3-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Ich glaube, dass die Serie gut ist.",
+          "translation": "I think that the series is good."
+        },
+        {
+          "id": "md3-e16",
+          "type": "SHADOW",
+          "text": "Ich weiß, dass das wichtig ist.",
+          "translation": "I know that that's important.",
+          "hint": "dass and das sound exactly the same, with a short a. Only the spelling is different."
+        }
+      ]
+    },
+    {
+      "id": "md4-modal-past",
+      "title": "I couldn't come: konnte and musste",
+      "kind": "LEARN",
+      "introduces": ["konnte", "musste", "wollte", "sollte"],
+      "exercises": [
+        {
+          "id": "md4-e1",
+          "type": "TEACH",
+          "title": "konnte: could",
+          "body": "Remember **war** and **hatte** from Unit 14? The modal verbs have short past forms too, and Germans use them instead of the Perfekt.\n\n**können → konnte** = could, was able to. The **umlaut disappears**!\n\nThe endings are exactly like *hatte*:\n\n- ich **konnte**\n- du **konntest**\n- er / sie / es **konnte**\n- wir **konnten**, ihr **konntet**, sie / Sie **konnten**\n\nThe other verb still waits at the end: *Ich **konnte** gestern nicht **kommen**.*",
+          "examples": [
+            { "text": "Ich konnte gestern nicht kommen.", "translation": "I couldn't come yesterday." },
+            { "text": "Konntest du den Film sehen?", "translation": "Were you able to see the film?" },
+            { "text": "Wir konnten nicht schlafen.", "translation": "We couldn't sleep." },
+            { "text": "Er konnte keine Fotos machen.", "translation": "He couldn't take any photos." }
+          ]
+        },
+        {
+          "id": "md4-e2",
+          "type": "CLOZE",
+          "before": "Ich",
+          "after": "gestern nicht kommen.",
+          "accepted": ["konnte"],
+          "translation": "I couldn't come yesterday.",
+          "hint": "können → ich … (past, no umlaut)"
+        },
+        {
+          "id": "md4-e3",
+          "type": "TEACH",
+          "title": "musste, wollte, sollte",
+          "body": "The other modal verbs work the same way:\n\n- **müssen → musste** = had to (no umlaut here either)\n- **wollen → wollte** = wanted to\n- **sollen → sollte** = was supposed to\n\n**möchten** has no past of its own, so use **wollte**: *Ich möchte ins Kino gehen* → *Gestern **wollte** ich ins Kino gehen.*",
+          "examples": [
+            { "text": "Ich musste gestern lange arbeiten.", "translation": "I had to work late yesterday." },
+            { "text": "Musstest du am Samstag arbeiten?", "translation": "Did you have to work on Saturday?" },
+            { "text": "Wir wollten ins Kino gehen.", "translation": "We wanted to go to the cinema." },
+            { "text": "Ich sollte den Artikel lesen, aber ich hatte keine Zeit.", "translation": "I was supposed to read the article, but I didn't have time." }
+          ]
+        },
+        {
+          "id": "md4-e4",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "ich konnte", "base": "I could" },
+            { "target": "ich musste", "base": "I had to" },
+            { "target": "ich wollte", "base": "I wanted to" },
+            { "target": "ich sollte", "base": "I was supposed to" },
+            { "target": "ich hatte", "base": "I had" }
+          ]
+        },
+        {
+          "id": "md4-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which form fits? Wir ___ gestern lange arbeiten.",
+          "prompt": "We had to work late yesterday.",
+          "promptLanguage": "BASE",
+          "options": ["musste", "mussten", "müssen"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "md4-e6",
+          "type": "CLOZE",
+          "before": "Was",
+          "after": "du gestern machen?",
+          "accepted": ["musstest"],
+          "translation": "What did you have to do yesterday?",
+          "hint": "müssen → du … (past)"
+        },
+        {
+          "id": "md4-e7",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Ich sollte den Artikel lesen.",
+          "promptLanguage": "TARGET",
+          "options": ["I was supposed to read the article.", "I wanted to read the article.", "I had to read the article."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "md4-e8",
+          "type": "TEACH",
+          "title": "Telling a story about yesterday",
+          "body": "When you talk about the past, use:\n\n- the **Perfekt** for most verbs: *Ich habe ferngesehen.*\n- **war** and **hatte** for *sein* and *haben*\n- **konnte, musste, wollte, sollte** for the modal verbs\n\nAfter **weil**, the modal verb goes right to the end, after the other verb: *…, weil ich arbeiten **musste**.*",
+          "examples": [
+            { "text": "Gestern konnte ich nicht kommen, weil ich arbeiten musste.", "translation": "Yesterday I couldn't come because I had to work." },
+            { "text": "Ich wollte die Nachrichten sehen, aber ich hatte keine Zeit.", "translation": "I wanted to watch the news, but I didn't have time." },
+            { "text": "Ich bin zu Hause geblieben, weil ich krank war.", "translation": "I stayed at home because I was ill." }
+          ]
+        },
+        {
+          "id": "md4-e9",
+          "type": "WORD_ORDER",
+          "translation": "Yesterday I couldn't come because I had to work.",
+          "answer": "Gestern konnte ich nicht kommen, weil ich arbeiten musste.",
+          "distractors": ["kann", "muss"]
+        },
+        {
+          "id": "md4-e10",
+          "type": "TEACH",
+          "title": "dass with two verbs",
+          "body": "After **dass**, the same thing happens as after *weil*. With a modal verb or the Perfekt, the infinitive or participle comes first, and the **conjugated verb goes right at the end**:\n\n- *Er kann kommen.* → *Ich hoffe, dass er kommen **kann**.*\n- *Er hat angerufen.* → *Sie sagt, dass er gestern angerufen **hat**.*\n- *Sie ist nach Hause gegangen.* → *Ich glaube, dass sie nach Hause gegangen **ist**.*",
+          "examples": [
+            { "text": "Ich hoffe, dass du morgen kommen kannst.", "translation": "I hope that you can come tomorrow." },
+            { "text": "Sie sagt, dass er gestern angerufen hat.", "translation": "She says that he called yesterday." },
+            { "text": "Ich glaube, dass sie nach Hause gegangen ist.", "translation": "I think that she's gone home." },
+            { "text": "Er sagt, dass er arbeiten musste.", "translation": "He says that he had to work." }
+          ]
+        },
+        {
+          "id": "md4-e11",
+          "type": "CLOZE",
+          "before": "Ich hoffe, dass du morgen kommen",
+          "after": ".",
+          "accepted": ["kannst"],
+          "translation": "I hope that you can come tomorrow.",
+          "hint": "können → du …, right at the end"
+        },
+        {
+          "id": "md4-e12",
+          "type": "WORD_ORDER",
+          "translation": "She says that he called yesterday.",
+          "answer": "Sie sagt, dass er gestern angerufen hat.",
+          "distractors": ["hatte", "ruft"]
+        },
+        {
+          "id": "md4-e13",
+          "type": "TRANSLATE",
+          "source": "I wanted to watch the news, but I didn't have time.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich wollte die Nachrichten sehen, aber ich hatte keine Zeit.", "Ich wollte die Nachrichten sehen aber ich hatte keine Zeit.", "Ich wollte die Nachrichten sehen, aber ich hatte leider keine Zeit.", "Ich wollte Nachrichten sehen, aber ich hatte keine Zeit."]
+        },
+        {
+          "id": "md4-e14",
+          "type": "TRANSLATE",
+          "source": "Er sagt, dass er gestern nicht kommen konnte.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["He says that he couldn't come yesterday.", "He says he couldn't come yesterday.", "He says that he could not come yesterday.", "He says he could not come yesterday.", "He says that he wasn't able to come yesterday.", "He says he wasn't able to come yesterday.", "He says that he was not able to come yesterday.", "He says he was not able to come yesterday."]
+        },
+        {
+          "id": "md4-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Ich musste gestern lange arbeiten.",
+          "translation": "I had to work late yesterday."
+        },
+        {
+          "id": "md4-e16",
+          "type": "SHADOW",
+          "text": "Gestern konnte ich nicht kommen, weil ich arbeiten musste.",
+          "translation": "Yesterday I couldn't come because I had to work.",
+          "hint": "konnte: KON-te, with a short o. musste: MUS-te, with a short u as in 'put'."
+        }
+      ]
+    },
+    {
+      "id": "md5-series",
+      "title": "Did you see the news?",
+      "kind": "PRACTICE",
+      "introduces": ["folge", "spannend"],
+      "exercises": [
+        {
+          "id": "md5-e1",
+          "type": "TEACH",
+          "title": "Talking about a series",
+          "body": "Two more words for talking about what you watch:\n\n- **die Folge** = the episode. Plural: *die Folgen*.\n- **spannend** = exciting, gripping: *SHPAN-nent*",
+          "examples": [
+            { "text": "Die Serie hat zehn Folgen.", "translation": "The series has ten episodes." },
+            { "text": "Gestern habe ich drei Folgen gesehen.", "translation": "Yesterday I watched three episodes." },
+            { "text": "Die Serie ist sehr spannend.", "translation": "The series is very exciting." }
+          ]
+        },
+        {
+          "id": "md5-e2",
+          "type": "TEACH",
+          "title": "Hast du die Nachrichten gesehen?",
+          "body": "Mia and Jonas are friends. They meet after work. Read along, and tap each line to hear it.",
+          "examples": [
+            { "text": "Hallo Jonas! Hast du gestern die Nachrichten gesehen?", "translation": "Mia: Hi Jonas! Did you see the news yesterday?" },
+            { "text": "Nein, ich konnte nicht. Ich musste bis neun Uhr arbeiten. Was ist passiert?", "translation": "Jonas: No, I couldn't. I had to work until nine. What happened?" },
+            { "text": "Im Radio haben sie gesagt, dass die U-Bahn am Samstag nicht fährt. Ich habe auch einen Artikel online gelesen.", "translation": "Mia: On the radio they said that the underground isn't running on Saturday. I read an article online too." },
+            { "text": "Oh nein! Ich wollte am Samstag ins Kino gehen.", "translation": "Jonas: Oh no! I wanted to go to the cinema on Saturday." },
+            { "text": "Dann nimm das Fahrrad oder den Bus!", "translation": "Mia: Then take your bike or the bus!" },
+            { "text": "Gute Idee! Und was machst du heute Abend?", "translation": "Jonas: Good idea! And what are you doing this evening?" },
+            { "text": "Ich bleibe zu Hause und sehe meine Serie.", "translation": "Mia: I'm staying at home and watching my series." },
+            { "text": "Welche Serie siehst du gerade?", "translation": "Jonas: Which series are you watching at the moment?" },
+            { "text": "Eine Serie aus Deutschland. Sie ist sehr spannend! Gestern habe ich drei Folgen gesehen.", "translation": "Mia: A series from Germany. It's really exciting! Yesterday I watched three episodes." },
+            { "text": "Drei Folgen? Und heute musstest du um sechs Uhr aufstehen!", "translation": "Jonas: Three episodes? And today you had to get up at six!" },
+            { "text": "Ich weiß! Ich bin sehr müde. Aber die Serie ist so spannend!", "translation": "Mia: I know! I'm very tired. But the series is so exciting!" },
+            { "text": "Ich wollte die Serie auch sehen, aber ich hatte keine Zeit.", "translation": "Jonas: I wanted to watch the series too, but I didn't have time." },
+            { "text": "Du musst die Serie sehen! Ich weiß, dass du gern Serien siehst.", "translation": "Mia: You have to watch the series! I know that you like watching series." },
+            { "text": "Okay! Ich hoffe, dass ich am Wochenende Zeit habe. Dann sehe ich die Serie online.", "translation": "Jonas: Okay! I hope that I have time at the weekend. Then I'll watch the series online." }
+          ]
+        },
+        {
+          "id": "md5-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: why didn't Jonas see the news?",
+          "prompt": "Nein, ich konnte nicht.",
+          "promptLanguage": "TARGET",
+          "options": ["He had to work until nine.", "He was ill.", "He doesn't have a TV."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "md5-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: what did they say on the radio?",
+          "prompt": "Im Radio haben sie gesagt, dass …",
+          "promptLanguage": "TARGET",
+          "options": ["The cinema is closed on Saturday.", "The underground isn't running on Saturday.", "The bus isn't running on Saturday."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 1
+        },
+        {
+          "id": "md5-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: what does Jonas hope?",
+          "prompt": "Ich hoffe, dass …",
+          "promptLanguage": "TARGET",
+          "options": ["That the series isn't boring.", "That the underground runs on Saturday.", "That he has time at the weekend."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 2
+        },
+        {
+          "id": "md5-e6",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Folge", "base": "the episode" },
+            { "target": "spannend", "base": "exciting" },
+            { "target": "Ich glaube schon.", "base": "I think so." },
+            { "target": "Ich weiß!", "base": "I know!" },
+            { "target": "ich wollte", "base": "I wanted to" }
+          ]
+        },
+        {
+          "id": "md5-e7",
+          "type": "CLOZE",
+          "before": "Gestern habe ich drei",
+          "after": "gesehen.",
+          "accepted": ["Folgen"],
+          "translation": "Yesterday I watched three episodes.",
+          "hint": "die Folge → plural"
+        },
+        {
+          "id": "md5-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Your friend says this. What's the best answer?",
+          "prompt": "Ich konnte gestern nicht kommen. Ich war krank.",
+          "promptLanguage": "TARGET",
+          "options": ["Toll!", "Ich glaube schon.", "Oh, schade! Gute Besserung!"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "md5-e9",
+          "type": "WORD_ORDER",
+          "translation": "I wanted to go to the cinema on Saturday.",
+          "answer": "Ich wollte am Samstag ins Kino gehen.",
+          "distractors": ["will", "im"]
+        },
+        {
+          "id": "md5-e10",
+          "type": "WORD_ORDER",
+          "translation": "I know that you like watching series.",
+          "answer": "Ich weiß, dass du gern Serien siehst.",
+          "distractors": ["sieht", "das"]
+        },
+        {
+          "id": "md5-e11",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which do you hear?",
+          "options": ["Ich musste arbeiten.", "Ich muss arbeiten."],
+          "answerIndex": 0
+        },
+        {
+          "id": "md5-e12",
+          "type": "TRANSLATE",
+          "source": "I hope that I have time at the weekend.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Ich hoffe, dass ich am Wochenende Zeit habe.", "Ich hoffe dass ich am Wochenende Zeit habe.", "Ich hoffe, ich habe am Wochenende Zeit.", "Ich hoffe ich habe am Wochenende Zeit."]
+        },
+        {
+          "id": "md5-e13",
+          "type": "TRANSLATE",
+          "source": "Ich konnte die Nachrichten nicht sehen, weil ich arbeiten musste.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["I couldn't watch the news because I had to work.", "I couldn't see the news because I had to work.", "I could not watch the news because I had to work.", "I could not see the news because I had to work.", "I wasn't able to watch the news because I had to work.", "I wasn't able to see the news because I had to work.", "I couldn't watch the news, because I had to work.", "I couldn't see the news, because I had to work."]
+        },
+        {
+          "id": "md5-e14",
+          "type": "SHADOW",
+          "text": "Hast du gestern die Nachrichten gesehen? Nein, ich konnte nicht.",
+          "translation": "Did you see the news yesterday? No, I couldn't.",
+          "hint": "Nachrichten: NAHKH-rikh-ten. The first ch is from the back of the throat, the second is soft."
+        },
+        {
+          "id": "md5-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Welche Serie siehst du gerade?",
+          "translation": "Which series are you watching at the moment?"
+        },
+        {
+          "id": "md5-e16",
+          "type": "SHADOW",
+          "text": "Ich weiß, dass du gern Serien siehst.",
+          "translation": "I know that you like watching series.",
+          "hint": "Let your voice go down on siehst: the verb at the end closes the sentence."
+        }
+      ]
+    }
+  ]
+}

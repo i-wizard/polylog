@@ -1,0 +1,879 @@
+{
+  "id": "15-wetter",
+  "level": "A2",
+  "title": "Weather & seasons",
+  "description": "Talk about the weather and the seasons with es, describe yesterday's weather, and join two ideas with wenn: your first sentences with the verb at the end.",
+  "icon": "🌦️",
+  "vocab": [
+    { "id": "wetter", "text": "Wetter", "translations": ["weather"], "partOfSpeech": "NOUN", "gender": "n", "pronunciation": "VET-ter", "example": { "text": "Das Wetter ist heute schön.", "translation": "The weather is nice today." } },
+    { "id": "wie-ist-das-wetter", "text": "Wie ist das Wetter?", "translations": ["What's the weather like?", "What is the weather like?", "How is the weather?"], "partOfSpeech": "PHRASE", "pronunciation": "vee ist das VET-ter", "example": { "text": "Wie ist das Wetter in Berlin?", "translation": "What's the weather like in Berlin?" } },
+    { "id": "sonne", "text": "Sonne", "translations": ["sun"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Sonnen", "pronunciation": "ZON-ne", "example": { "text": "Die Sonne scheint.", "translation": "The sun is shining." } },
+    { "id": "scheinen", "text": "scheinen", "translations": ["to shine"], "partOfSpeech": "VERB", "pronunciation": "SHY-nen", "example": { "text": "Heute scheint die Sonne.", "translation": "The sun is shining today." } },
+    { "id": "regnen", "text": "regnen", "translations": ["to rain"], "partOfSpeech": "VERB", "pronunciation": "RAYG-nen", "example": { "text": "Heute regnet es.", "translation": "It's raining today." } },
+    { "id": "regen", "text": "Regen", "translations": ["rain"], "partOfSpeech": "NOUN", "gender": "m", "pronunciation": "RAY-gen", "example": { "text": "Der Regen ist kalt.", "translation": "The rain is cold." } },
+    { "id": "schneien", "text": "schneien", "translations": ["to snow"], "partOfSpeech": "VERB", "pronunciation": "SHNY-en", "example": { "text": "Im Winter schneit es oft.", "translation": "In winter it often snows." } },
+    { "id": "schnee", "text": "Schnee", "translations": ["snow"], "partOfSpeech": "NOUN", "gender": "m", "pronunciation": "shnay (long ay)", "example": { "text": "Der Schnee ist weiß.", "translation": "The snow is white." } },
+    { "id": "warm", "text": "warm", "translations": ["warm"], "partOfSpeech": "ADJECTIVE", "pronunciation": "varm", "example": { "text": "Heute ist es warm.", "translation": "It's warm today." } },
+    { "id": "kalt", "text": "kalt", "translations": ["cold"], "partOfSpeech": "ADJECTIVE", "pronunciation": "kalt", "example": { "text": "Im Januar ist es sehr kalt.", "translation": "In January it's very cold." } },
+    { "id": "heiss", "text": "heiß", "translations": ["hot"], "partOfSpeech": "ADJECTIVE", "pronunciation": "hice", "example": { "text": "Im Sommer ist es oft heiß.", "translation": "In summer it's often hot." } },
+    { "id": "kuehl", "text": "kühl", "translations": ["cool", "chilly"], "partOfSpeech": "ADJECTIVE", "pronunciation": "kühl (long ü: ee with rounded lips)", "example": { "text": "Abends ist es kühl.", "translation": "It's cool in the evening." } },
+    { "id": "grad", "text": "Grad", "translations": ["degree (temperature)", "degree", "degrees"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Grad", "pronunciation": "graht (long a)", "example": { "text": "Es sind zwanzig Grad.", "translation": "It's twenty degrees." } },
+    { "id": "wind", "text": "Wind", "translations": ["wind"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Winde", "pronunciation": "vint", "example": { "text": "Der Wind ist kalt.", "translation": "The wind is cold." } },
+    { "id": "windig", "text": "windig", "translations": ["windy"], "partOfSpeech": "ADJECTIVE", "pronunciation": "VIN-dikh (soft ch)", "example": { "text": "Heute ist es sehr windig.", "translation": "It's very windy today." } },
+    { "id": "sonnig", "text": "sonnig", "translations": ["sunny"], "partOfSpeech": "ADJECTIVE", "pronunciation": "ZON-nikh (soft ch)", "example": { "text": "Morgen ist es sonnig und warm.", "translation": "Tomorrow it'll be sunny and warm." } },
+    { "id": "fruehling", "text": "Frühling", "translations": ["spring (season)", "spring"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Frühlinge", "pronunciation": "FRÜ-ling (ü: ee with rounded lips)", "example": { "text": "Im Frühling ist der Park schön.", "translation": "In spring the park is beautiful." } },
+    { "id": "sommer", "text": "Sommer", "translations": ["summer"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Sommer", "pronunciation": "ZOM-mer", "example": { "text": "Im Sommer ist es heiß.", "translation": "In summer it's hot." } },
+    { "id": "herbst", "text": "Herbst", "translations": ["autumn", "fall"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Herbste", "pronunciation": "hairpst", "example": { "text": "Im Herbst regnet es oft.", "translation": "In autumn it often rains." } },
+    { "id": "winter", "text": "Winter", "translations": ["winter"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Winter", "pronunciation": "VIN-ter", "example": { "text": "Im Winter schneit es.", "translation": "In winter it snows." } },
+    { "id": "jahreszeit", "text": "Jahreszeit", "translations": ["season (of the year)", "season", "time of year"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Jahreszeiten", "pronunciation": "YAH-res-tsite", "example": { "text": "Ein Jahr hat vier Jahreszeiten.", "translation": "A year has four seasons." } },
+    { "id": "wolke", "text": "Wolke", "translations": ["cloud"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Wolken", "pronunciation": "VOL-ke", "example": { "text": "Heute gibt es viele Wolken.", "translation": "There are lots of clouds today." } },
+    { "id": "bewoelkt", "text": "bewölkt", "translations": ["cloudy", "overcast"], "partOfSpeech": "ADJECTIVE", "pronunciation": "be-VÖLKT (short ö)", "example": { "text": "Heute ist es bewölkt.", "translation": "It's cloudy today." } },
+    { "id": "himmel", "text": "Himmel", "translations": ["sky", "heaven"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Himmel", "pronunciation": "HIM-mel", "example": { "text": "Der Himmel ist blau.", "translation": "The sky is blue." } },
+    { "id": "wenn", "text": "wenn", "translations": ["when (if, whenever)", "if", "when", "whenever"], "partOfSpeech": "CONJUNCTION", "pronunciation": "ven", "example": { "text": "Wenn es regnet, bleibe ich zu Hause.", "translation": "When it rains, I stay at home." } },
+    { "id": "draussen", "text": "draußen", "translations": ["outside (outdoors)", "outside", "outdoors"], "partOfSpeech": "ADVERB", "pronunciation": "DROW-sen (ow as in cow)", "example": { "text": "Wir essen heute draußen.", "translation": "We're eating outside today." } },
+    { "id": "nass", "text": "nass", "translations": ["wet"], "partOfSpeech": "ADJECTIVE", "pronunciation": "nass", "example": { "text": "Die Straße ist nass.", "translation": "The street is wet." } },
+    { "id": "trocken", "text": "trocken", "translations": ["dry"], "partOfSpeech": "ADJECTIVE", "pronunciation": "TROK-ken", "example": { "text": "Heute bleibt es trocken.", "translation": "It's staying dry today." } },
+    { "id": "regenschirm", "text": "Regenschirm", "translations": ["umbrella"], "partOfSpeech": "NOUN", "gender": "m", "plural": "Regenschirme", "pronunciation": "RAY-gen-sheerm", "example": { "text": "Ich nehme einen Regenschirm mit.", "translation": "I'm taking an umbrella with me." } },
+    { "id": "wettervorhersage", "text": "Wettervorhersage", "translations": ["weather forecast", "forecast"], "partOfSpeech": "NOUN", "gender": "f", "plural": "Wettervorhersagen", "pronunciation": "VET-ter-for-hair-zah-ge", "example": { "text": "Hast du die Wettervorhersage gesehen?", "translation": "Have you seen the weather forecast?" } }
+  ],
+  "grammarNotes": [
+    {
+      "id": "wetter-es",
+      "title": "Weather with es: it's raining",
+      "body": "In English you say *it's raining*, but nobody asks what *it* is. German does exactly the same with **es**. Here *es* is a **dummy subject**: it fills the subject slot because every German sentence needs one.\n\n- Weather verbs only use the *es* form: **es regnet** (it's raining), **es schneit** (it's snowing). *regnen* adds an *e*, like *er arbeitet*.\n- With adjectives, use **es ist**: *Es ist kalt. Es ist windig.*\n- The sun is a real subject, so no *es*: **Die Sonne scheint.**\n\nThe verb is still second. Start with a time and *es* moves after the verb: *Heute **regnet es**.*\n\nTo say how *you* feel, don't say *Ich bin kalt*. Stick to *Es ist kalt* for now; you'll meet the right pattern soon.",
+      "table": [
+        ["German", "English"],
+        ["Wie ist das Wetter?", "What's the weather like?"],
+        ["Es regnet.", "It's raining."],
+        ["Es schneit.", "It's snowing."],
+        ["Die Sonne scheint.", "The sun is shining."],
+        ["Es ist kalt / warm / heiß / kühl.", "It's cold / warm / hot / cool."],
+        ["Es ist sonnig / windig / bewölkt.", "It's sunny / windy / cloudy."],
+        ["Heute regnet es.", "It's raining today."]
+      ]
+    },
+    {
+      "id": "wetter-grad",
+      "title": "How warm is it? Degrees",
+      "body": "Ask **Wie warm ist es?** (How warm is it?). Germany uses Celsius.\n\nThe answer uses **es sind**, because twenty degrees is plural: *Es **sind** zwanzig Grad.* **Grad** never changes after a number: *ein Grad, zwanzig Grad*.\n\nBelow zero, say **minus**. You'll hear both *Es ist minus fünf Grad* and *Es sind minus fünf Grad*. Both are fine.",
+      "table": [
+        ["Temperature", "German"],
+        ["30 °C", "Es sind dreißig Grad. Es ist heiß!"],
+        ["20 °C", "Es sind zwanzig Grad. Es ist warm."],
+        ["10 °C", "Es sind zehn Grad. Es ist kühl."],
+        ["0 °C", "Es ist null Grad. Es ist kalt."],
+        ["-5 °C", "Es ist minus fünf Grad. Es ist sehr kalt."]
+      ]
+    },
+    {
+      "id": "wetter-seasons-past",
+      "title": "Seasons with im, and yesterday's weather",
+      "body": "The four seasons are all **der** words. Use **im**, just like with months: *im Mai, im Sommer*. Put the season first and the verb stays second: *Im Winter **schneit** es.*\n\nFor the past, use what you learned in Unit 14:\n\n- weather verbs take the **Perfekt** with **haben**: *Es **hat** geregnet.* *scheinen* is irregular: *Die Sonne **hat geschienen**.*\n- with adjectives, use **war**: *Gestern **war** es kalt.*",
+      "table": [
+        ["Today", "Yesterday"],
+        ["Es regnet.", "Gestern hat es geregnet."],
+        ["Es schneit.", "Gestern hat es geschneit."],
+        ["Die Sonne scheint.", "Gestern hat die Sonne geschienen."],
+        ["Es ist kalt.", "Gestern war es kalt."],
+        ["Es sind zwanzig Grad.", "Gestern waren es zwanzig Grad."]
+      ]
+    },
+    {
+      "id": "wetter-wenn-end",
+      "title": "wenn, step one: the verb goes to the end",
+      "body": "**wenn** means *when*, *whenever* or *if*. It joins two ideas into one sentence. Each idea with its own verb is called a **clause**.\n\nSo far the verb has always come second. In a **wenn clause**, the verb goes to the **very end**:\n\n- *Es regnet.* → *…, wenn es **regnet**.*\n- *Es ist kalt.* → *…, wenn es kalt **ist**.*\n\nThe main clause stays normal, and a **comma** separates the two parts.\n\nDon't mix up **wann** and **wenn**. *Wann* asks a question: *Wann hast du Zeit?* *Wenn* joins two ideas and never asks.",
+      "table": [
+        ["Main clause (verb second)", "wenn clause (verb at the end)"],
+        ["Ich bleibe zu Hause,", "wenn es regnet."],
+        ["Wir essen draußen,", "wenn es warm ist."],
+        ["Ich brauche einen Mantel,", "wenn es kalt ist."],
+        ["Ich nehme einen Regenschirm mit,", "wenn es regnet."],
+        ["Wir spielen Fußball,", "wenn die Sonne scheint."]
+      ]
+    },
+    {
+      "id": "wetter-wenn-start",
+      "title": "wenn, step two: starting with wenn",
+      "body": "You can also put the *wenn* clause first. Then the **whole wenn clause counts as position one**, like *heute* in *Heute bleibe ich zu Hause*. So the main verb comes **straight after the comma**, and the subject follows it.\n\nThat gives you two verbs side by side: *Wenn es **regnet, bleibe** ich zu Hause.* Read it as *verb, comma, verb*.\n\nThe meaning doesn't change, so both orders are correct.",
+      "table": [
+        ["wenn clause (position 1)", "Verb (position 2)", "Rest"],
+        ["Wenn es regnet,", "bleibe", "ich zu Hause."],
+        ["Wenn es warm ist,", "essen", "wir draußen."],
+        ["Wenn es kalt ist,", "brauche", "ich einen Mantel."],
+        ["Wenn es regnet,", "nehme", "ich einen Regenschirm mit."],
+        ["Wenn es warm ist,", "können", "wir draußen essen."]
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "we1-es-regnet",
+      "title": "It's raining: weather with es",
+      "kind": "LEARN",
+      "introduces": ["wetter", "wie-ist-das-wetter", "regnen", "schneien", "sonne", "scheinen", "regen", "schnee"],
+      "exercises": [
+        {
+          "id": "we1-e1",
+          "type": "TEACH",
+          "title": "Wie ist das Wetter?",
+          "body": "Welcome to A2! First up: everyone's favourite small talk, **das Wetter** (the weather).\n\nTo ask about it, say **Wie ist das Wetter?** = What's the weather like? Word for word it's *How is the weather?*\n\nYou can answer with words you know: *Das Wetter ist schön.* or *Das Wetter ist nicht gut.*",
+          "examples": [
+            { "text": "Wie ist das Wetter?", "translation": "What's the weather like?", "hint": "Wetter: VET-ter, the W sounds like v" },
+            { "text": "Wie ist das Wetter heute?", "translation": "What's the weather like today?" },
+            { "text": "Das Wetter ist schön.", "translation": "The weather is nice." },
+            { "text": "Das Wetter ist heute nicht gut.", "translation": "The weather isn't good today." }
+          ]
+        },
+        {
+          "id": "we1-e2",
+          "type": "TEACH",
+          "title": "Es regnet. Es schneit.",
+          "body": "In English you say *it's raining*, but *it* doesn't point to anything. German does the same with **es** (it). Grammar books call this a **dummy subject**: it's only there because every sentence needs a subject.\n\n- **regnen** = to rain → **Es regnet.** = It's raining.\n- **schneien** = to snow → **Es schneit.** = It's snowing.\n\nThese verbs only ever use the *es* form. *regnen* adds an *e* before the *-t*, like *er arbeitet*.\n\nThe verb is still second. Start with *heute* and *es* moves after the verb: ***Heute** regnet es.*",
+          "examples": [
+            { "text": "Es regnet.", "translation": "It's raining." },
+            { "text": "Es schneit.", "translation": "It's snowing." },
+            { "text": "Heute regnet es.", "translation": "It's raining today." },
+            { "text": "Morgen schneit es.", "translation": "It's going to snow tomorrow." },
+            { "text": "Regnet es?", "translation": "Is it raining?" }
+          ]
+        },
+        {
+          "id": "we1-e3",
+          "type": "CLOZE",
+          "before": "Heute",
+          "after": "es.",
+          "accepted": ["regnet"],
+          "translation": "It's raining today.",
+          "hint": "regnen → es …"
+        },
+        {
+          "id": "we1-e4",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "It's snowing.",
+          "promptLanguage": "BASE",
+          "options": ["Es schneit.", "Es regnet.", "Er schneit."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 0
+        },
+        {
+          "id": "we1-e5",
+          "type": "TEACH",
+          "title": "Sonne, Regen, Schnee",
+          "body": "Each weather verb has a noun to go with it:\n\n- **der Regen** = the rain → *es regnet*\n- **der Schnee** = the snow → *es schneit*\n- **die Sonne** = the sun → **die Sonne scheint** = the sun is shining\n\n**scheinen** = to shine. The sun is a real thing doing the shining, so there's no *es* here: *Die Sonne scheint.* Start with *heute* and the verb still comes second: *Heute scheint die Sonne.*",
+          "examples": [
+            { "text": "der Regen", "translation": "the rain", "hint": "RAY-gen, long e" },
+            { "text": "der Schnee", "translation": "the snow", "hint": "shnay" },
+            { "text": "die Sonne", "translation": "the sun", "hint": "ZON-ne" },
+            { "text": "Die Sonne scheint.", "translation": "The sun is shining." },
+            { "text": "Heute scheint die Sonne.", "translation": "The sun is shining today." }
+          ]
+        },
+        {
+          "id": "we1-e6",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Sonne", "base": "the sun" },
+            { "target": "der Regen", "base": "the rain" },
+            { "target": "der Schnee", "base": "the snow" },
+            { "target": "das Wetter", "base": "the weather" },
+            { "target": "Die Sonne scheint.", "base": "The sun is shining." }
+          ]
+        },
+        {
+          "id": "we1-e7",
+          "type": "CLOZE",
+          "before": "Heute",
+          "after": "die Sonne.",
+          "accepted": ["scheint"],
+          "translation": "The sun is shining today.",
+          "hint": "scheinen → die Sonne …"
+        },
+        {
+          "id": "we1-e8",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which do you hear?",
+          "options": ["Heute regnet es.", "Heute schneit es."],
+          "answerIndex": 1
+        },
+        {
+          "id": "we1-e9",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "A friend asks you this. It's raining. What do you say?",
+          "prompt": "Wie ist das Wetter?",
+          "promptLanguage": "TARGET",
+          "options": ["Die Sonne scheint.", "Es regnet.", "Es schneit."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "we1-e10",
+          "type": "WORD_ORDER",
+          "translation": "What's the weather like today?",
+          "answer": "Wie ist das Wetter heute?",
+          "alternatives": ["Wie ist heute das Wetter?"],
+          "distractors": ["sind", "der"]
+        },
+        {
+          "id": "we1-e11",
+          "type": "WORD_ORDER",
+          "translation": "It's going to snow tomorrow. (start with tomorrow)",
+          "answer": "Morgen schneit es.",
+          "distractors": ["er", "schneien"]
+        },
+        {
+          "id": "we1-e12",
+          "type": "TRANSLATE",
+          "source": "It's raining today.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Heute regnet es.", "Es regnet heute."]
+        },
+        {
+          "id": "we1-e13",
+          "type": "TRANSLATE",
+          "source": "Die Sonne scheint.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["The sun is shining.", "The sun shines.", "The sun's shining."]
+        },
+        {
+          "id": "we1-e14",
+          "type": "LISTEN_TYPE",
+          "text": "Heute scheint die Sonne.",
+          "translation": "The sun is shining today."
+        },
+        {
+          "id": "we1-e15",
+          "type": "SHADOW",
+          "text": "Wie ist das Wetter? Es regnet.",
+          "translation": "What's the weather like? It's raining.",
+          "hint": "Wetter: VET-ter. regnet: RAYG-net, with a long e."
+        }
+      ]
+    },
+    {
+      "id": "we2-grad",
+      "title": "Hot, cold and twenty degrees",
+      "kind": "LEARN",
+      "introduces": ["kalt", "warm", "heiss", "kuehl", "grad", "wind", "windig", "sonnig"],
+      "exercises": [
+        {
+          "id": "we2-e1",
+          "type": "TEACH",
+          "title": "Es ist kalt.",
+          "body": "To describe the weather with an adjective, use **es ist** + the adjective, just like English *it's cold*:\n\n- **kalt** = cold\n- **kühl** = cool\n- **warm** = warm\n- **heiß** = hot\n\nOne warning: to say how *you* feel, don't say *Ich bin kalt*. That sounds odd in German. Stick to **Es ist kalt** for now; you'll learn the right way to say *I'm cold* soon.",
+          "examples": [
+            { "text": "Es ist kalt.", "translation": "It's cold." },
+            { "text": "Es ist warm.", "translation": "It's warm." },
+            { "text": "Heute ist es heiß.", "translation": "It's hot today.", "hint": "heiß rhymes with English 'nice'" },
+            { "text": "Abends ist es kühl.", "translation": "It's cool in the evening." }
+          ]
+        },
+        {
+          "id": "we2-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "kalt", "base": "cold" },
+            { "target": "kühl", "base": "cool" },
+            { "target": "warm", "base": "warm" },
+            { "target": "heiß", "base": "hot" },
+            { "target": "schön", "base": "nice" }
+          ]
+        },
+        {
+          "id": "we2-e3",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Heute ist es heiß.",
+          "promptLanguage": "TARGET",
+          "options": ["It's cold today.", "It's hot today.", "It's cool today."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 1
+        },
+        {
+          "id": "we2-e4",
+          "type": "CLOZE",
+          "before": "Im Januar ist es sehr",
+          "after": ".",
+          "accepted": ["kalt"],
+          "translation": "In January it's very cold.",
+          "hint": "the opposite of warm"
+        },
+        {
+          "id": "we2-e5",
+          "type": "TEACH",
+          "title": "Zwanzig Grad",
+          "body": "**der Grad** = the degree. Germany uses Celsius.\n\nAsk **Wie warm ist es?** = How warm is it?\n\nAnswer with **es sind**, because twenty degrees is more than one: *Es **sind** zwanzig Grad.* After a number, **Grad** never changes.\n\nBelow zero, say **minus**: *Es ist minus fünf Grad.* (You'll hear *es sind* here too. Both are fine.)",
+          "examples": [
+            { "text": "Wie warm ist es?", "translation": "How warm is it?" },
+            { "text": "Es sind zwanzig Grad.", "translation": "It's twenty degrees." },
+            { "text": "Es sind dreißig Grad. Es ist heiß!", "translation": "It's thirty degrees. It's hot!" },
+            { "text": "Es ist null Grad.", "translation": "It's zero degrees." },
+            { "text": "Es ist minus fünf Grad.", "translation": "It's minus five degrees." }
+          ]
+        },
+        {
+          "id": "we2-e6",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "How warm is it?",
+          "prompt": "Es sind zweiundzwanzig Grad.",
+          "promptLanguage": "TARGET",
+          "options": ["22 °C", "32 °C", "20 °C"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "we2-e7",
+          "type": "CLOZE",
+          "before": "Es",
+          "after": "fünfundzwanzig Grad.",
+          "accepted": ["sind"],
+          "translation": "It's twenty-five degrees.",
+          "hint": "twenty-five degrees is plural"
+        },
+        {
+          "id": "we2-e8",
+          "type": "TEACH",
+          "title": "sonnig and windig",
+          "body": "German turns some nouns into adjectives with **-ig**, a lot like English *-y*:\n\n- **die Sonne** (the sun) → **sonnig** = sunny\n- **der Wind** (the wind) → **windig** = windy\n\nThe *-ig* ending sounds like *ikh*, with the soft *ch* from *ich*. And remember: *Wind* ends in a *t* sound, *vint*.",
+          "examples": [
+            { "text": "der Wind", "translation": "the wind", "hint": "vint" },
+            { "text": "Es ist windig.", "translation": "It's windy.", "hint": "VIN-dikh" },
+            { "text": "Es ist sonnig.", "translation": "It's sunny.", "hint": "ZON-nikh" },
+            { "text": "Heute ist es sonnig und warm.", "translation": "It's sunny and warm today." },
+            { "text": "Der Wind ist kalt.", "translation": "The wind is cold." }
+          ]
+        },
+        {
+          "id": "we2-e9",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Wind", "base": "the wind" },
+            { "target": "windig", "base": "windy" },
+            { "target": "sonnig", "base": "sunny" },
+            { "target": "der Grad", "base": "the degree" },
+            { "target": "Wie warm ist es?", "base": "How warm is it?" }
+          ]
+        },
+        {
+          "id": "we2-e10",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which do you hear?",
+          "options": ["Es sind zwölf Grad.", "Es sind zwanzig Grad."],
+          "answerIndex": 1
+        },
+        {
+          "id": "we2-e11",
+          "type": "WORD_ORDER",
+          "translation": "Today it's sunny and warm. (start with today)",
+          "answer": "Heute ist es sonnig und warm.",
+          "alternatives": ["Heute ist es warm und sonnig."],
+          "distractors": ["sind", "er"]
+        },
+        {
+          "id": "we2-e12",
+          "type": "WORD_ORDER",
+          "translation": "How warm is it?",
+          "answer": "Wie warm ist es?",
+          "distractors": ["sind", "Wann"]
+        },
+        {
+          "id": "we2-e13",
+          "type": "TRANSLATE",
+          "source": "It's thirty degrees.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Es sind dreißig Grad.", "Es sind 30 Grad.", "Es sind dreißig Grad Celsius."]
+        },
+        {
+          "id": "we2-e14",
+          "type": "TRANSLATE",
+          "source": "Es ist kalt und windig.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["It's cold and windy.", "It is cold and windy."]
+        },
+        {
+          "id": "we2-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Es ist minus fünf Grad.",
+          "translation": "It's minus five degrees."
+        },
+        {
+          "id": "we2-e16",
+          "type": "SHADOW",
+          "text": "Wie warm ist es? Es sind zwanzig Grad.",
+          "translation": "How warm is it? It's twenty degrees.",
+          "hint": "zwanzig: TSVAN-tsikh. Grad: graht, with a long a."
+        }
+      ]
+    },
+    {
+      "id": "we3-jahreszeiten",
+      "title": "Seasons, clouds and yesterday's weather",
+      "kind": "LEARN",
+      "introduces": ["jahreszeit", "fruehling", "sommer", "herbst", "winter", "wolke", "bewoelkt", "himmel"],
+      "exercises": [
+        {
+          "id": "we3-e1",
+          "type": "TEACH",
+          "title": "Die Jahreszeiten",
+          "body": "**die Jahreszeit** = the season. It's *Jahr* (year) + *Zeit* (time): a *time of the year*.\n\nAll four seasons are **der** words. To say *in* a season, use **im**, just like with months: *im Mai* → **im Sommer**.",
+          "examples": [
+            { "text": "der Frühling", "translation": "spring", "hint": "FRÜ-ling" },
+            { "text": "der Sommer", "translation": "summer", "hint": "ZOM-mer" },
+            { "text": "der Herbst", "translation": "autumn", "hint": "hairpst" },
+            { "text": "der Winter", "translation": "winter", "hint": "VIN-ter" },
+            { "text": "im Sommer", "translation": "in summer" },
+            { "text": "Ein Jahr hat vier Jahreszeiten.", "translation": "A year has four seasons." }
+          ]
+        },
+        {
+          "id": "we3-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Frühling", "base": "spring" },
+            { "target": "der Sommer", "base": "summer" },
+            { "target": "der Herbst", "base": "autumn" },
+            { "target": "der Winter", "base": "winter" },
+            { "target": "die Jahreszeit", "base": "the season" }
+          ]
+        },
+        {
+          "id": "we3-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which word fits? ___ Sommer ist es heiß.",
+          "prompt": "In summer it's hot.",
+          "promptLanguage": "BASE",
+          "options": ["Am", "Im", "Um"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "we3-e4",
+          "type": "TEACH",
+          "title": "Im Winter schneit es.",
+          "body": "Start with the season and the verb still comes second, so *es* moves after it:\n\n- *Es schneit im Winter.* → ***Im Winter** schneit es.*\n- *Es ist heiß im Sommer.* → ***Im Sommer** ist es heiß.*\n\nTo give your opinion, use **finden** with *den*: *Ich finde den Herbst schön.*",
+          "examples": [
+            { "text": "Im Winter schneit es oft.", "translation": "In winter it often snows." },
+            { "text": "Im Sommer ist es heiß.", "translation": "In summer it's hot." },
+            { "text": "Im Herbst regnet es oft.", "translation": "In autumn it often rains." },
+            { "text": "Im Frühling ist es oft kühl.", "translation": "In spring it's often cool." },
+            { "text": "Ich finde den Herbst schön.", "translation": "I think autumn is beautiful." }
+          ]
+        },
+        {
+          "id": "we3-e5",
+          "type": "CLOZE",
+          "before": "Im Winter",
+          "after": "es oft.",
+          "accepted": ["schneit"],
+          "translation": "In winter it often snows.",
+          "hint": "schneien → es …"
+        },
+        {
+          "id": "we3-e6",
+          "type": "WORD_ORDER",
+          "translation": "In summer it's often hot. (start with in summer)",
+          "answer": "Im Sommer ist es oft heiß.",
+          "distractors": ["Am", "sind"]
+        },
+        {
+          "id": "we3-e7",
+          "type": "TEACH",
+          "title": "Wolken und Himmel",
+          "body": "Look up!\n\n- **der Himmel** = the sky\n- **die Wolke** = the cloud, plural **die Wolken**\n- **bewölkt** = cloudy. It's built from *Wolke*, with the *o* turned into an *ö*.\n\nYou can describe the sky with colours from Unit 11: *Der Himmel ist blau.*",
+          "examples": [
+            { "text": "Der Himmel ist blau.", "translation": "The sky is blue." },
+            { "text": "Der Himmel ist grau.", "translation": "The sky is grey." },
+            { "text": "Heute gibt es viele Wolken.", "translation": "There are lots of clouds today." },
+            { "text": "Heute ist es bewölkt.", "translation": "It's cloudy today.", "hint": "be-VÖLKT" }
+          ]
+        },
+        {
+          "id": "we3-e8",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "der Himmel", "base": "the sky" },
+            { "target": "die Wolke", "base": "the cloud" },
+            { "target": "bewölkt", "base": "cloudy" },
+            { "target": "sonnig", "base": "sunny" },
+            { "target": "Der Himmel ist blau.", "base": "The sky is blue." }
+          ]
+        },
+        {
+          "id": "we3-e9",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Heute ist es bewölkt.",
+          "promptLanguage": "TARGET",
+          "options": ["It's windy today.", "It's sunny today.", "It's cloudy today."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 2
+        },
+        {
+          "id": "we3-e10",
+          "type": "TEACH",
+          "title": "Gestern hat es geregnet.",
+          "body": "Talking about yesterday's weather uses what you learned in Unit 14.\n\n- Weather verbs take the **Perfekt** with **haben**: *regnen* → **Es hat geregnet.** *schneien* → **Es hat geschneit.**\n- *scheinen* is irregular: **Die Sonne hat geschienen.**\n- With adjectives, use **war**: **Gestern war es kalt.**",
+          "examples": [
+            { "text": "Gestern hat es geregnet.", "translation": "It rained yesterday." },
+            { "text": "Letzte Woche hat es geschneit.", "translation": "Last week it snowed." },
+            { "text": "Im Urlaub hat die Sonne geschienen.", "translation": "The sun shone on holiday.", "hint": "geschienen: ge-SHEE-nen" },
+            { "text": "Gestern war es sehr kalt.", "translation": "Yesterday it was very cold." },
+            { "text": "Wie war das Wetter im Urlaub?", "translation": "What was the weather like on holiday?" }
+          ]
+        },
+        {
+          "id": "we3-e11",
+          "type": "CLOZE",
+          "before": "Gestern hat es",
+          "after": ".",
+          "accepted": ["geregnet"],
+          "translation": "It rained yesterday.",
+          "hint": "regnen → participle"
+        },
+        {
+          "id": "we3-e12",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which word fits? Gestern ___ es sehr kalt.",
+          "prompt": "Yesterday it was very cold.",
+          "promptLanguage": "BASE",
+          "options": ["hat", "war", "ist"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "we3-e13",
+          "type": "TRANSLATE",
+          "source": "It snowed yesterday.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Gestern hat es geschneit.", "Es hat gestern geschneit."]
+        },
+        {
+          "id": "we3-e14",
+          "type": "TRANSLATE",
+          "source": "Im Herbst ist es oft bewölkt und windig.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["In autumn it's often cloudy and windy.", "In autumn it is often cloudy and windy.", "In the autumn it's often cloudy and windy.", "In the autumn it is often cloudy and windy.", "In fall it's often cloudy and windy.", "In the fall it's often cloudy and windy.", "It's often cloudy and windy in autumn.", "It is often cloudy and windy in autumn.", "It's often cloudy and windy in the autumn.", "It's often cloudy and windy in fall."]
+        },
+        {
+          "id": "we3-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Gestern war es kalt und windig.",
+          "translation": "Yesterday it was cold and windy."
+        },
+        {
+          "id": "we3-e16",
+          "type": "SHADOW",
+          "text": "Im Winter ist es kalt. Im Sommer ist es heiß.",
+          "translation": "In winter it's cold. In summer it's hot.",
+          "hint": "Sommer: ZOM-mer, the s buzzes like a z. heiß sounds like 'hice'."
+        }
+      ]
+    },
+    {
+      "id": "we4-wenn",
+      "title": "When it rains: wenn",
+      "kind": "LEARN",
+      "introduces": ["wenn", "draussen", "nass", "trocken", "regenschirm"],
+      "exercises": [
+        {
+          "id": "we4-e1",
+          "type": "TEACH",
+          "title": "Rain or shine",
+          "body": "A few words for any weather:\n\n- **draußen** = outside\n- **nass** = wet, **trocken** = dry\n- **der Regenschirm** = the umbrella: *Regen* (rain) + *Schirm* (shield)\n\n**mitnehmen** = to take along. It's *mit* + *nehmen*, and it splits like *einsteigen*: *Ich **nehme** einen Regenschirm **mit**.*",
+          "examples": [
+            { "text": "Wir essen heute draußen.", "translation": "We're eating outside today.", "hint": "DROW-sen" },
+            { "text": "Die Straße ist nass.", "translation": "The street is wet." },
+            { "text": "Heute bleibt es trocken.", "translation": "It's staying dry today." },
+            { "text": "Ich nehme einen Regenschirm mit.", "translation": "I'm taking an umbrella with me." }
+          ]
+        },
+        {
+          "id": "we4-e2",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "draußen", "base": "outside" },
+            { "target": "nass", "base": "wet" },
+            { "target": "trocken", "base": "dry" },
+            { "target": "der Regenschirm", "base": "the umbrella" },
+            { "target": "mitnehmen", "base": "to take along" }
+          ]
+        },
+        {
+          "id": "we4-e3",
+          "type": "TEACH",
+          "title": "wenn, step one: verb at the end",
+          "body": "**wenn** = when, whenever, if. It joins two ideas into one sentence. Each idea has its own verb and is called a **clause**.\n\nUntil now, the verb was always second. After **wenn**, the verb jumps to the **very end** of its clause:\n\n- *Es regnet.* → *…, wenn es **regnet**.*\n- *Es ist kalt.* → *…, wenn es kalt **ist**.*\n\nThe first part stays a normal sentence, and a comma goes before *wenn*. This is your first sentence with the verb at the end, and you'll see it again with other little words later.",
+          "examples": [
+            { "text": "Ich bleibe zu Hause, wenn es regnet.", "translation": "I stay at home when it rains." },
+            { "text": "Wir essen draußen, wenn es warm ist.", "translation": "We eat outside when it's warm." },
+            { "text": "Ich brauche einen Mantel, wenn es kalt ist.", "translation": "I need a coat when it's cold." },
+            { "text": "Wir spielen Fußball, wenn die Sonne scheint.", "translation": "We play football when the sun is shining." }
+          ]
+        },
+        {
+          "id": "we4-e4",
+          "type": "CLOZE",
+          "before": "Ich brauche einen Mantel, wenn es kalt",
+          "after": ".",
+          "accepted": ["ist"],
+          "translation": "I need a coat when it's cold.",
+          "hint": "after wenn, the verb goes to the end"
+        },
+        {
+          "id": "we4-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which is right?",
+          "prompt": "We eat outside when it's warm.",
+          "promptLanguage": "BASE",
+          "options": ["Wir essen draußen, wenn ist es warm.", "Wir essen draußen, wenn es warm ist.", "Wir essen draußen, wenn es ist warm."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "we4-e6",
+          "type": "WORD_ORDER",
+          "translation": "I stay at home when it rains.",
+          "answer": "Ich bleibe zu Hause, wenn es regnet.",
+          "distractors": ["wann", "regnen"]
+        },
+        {
+          "id": "we4-e7",
+          "type": "TEACH",
+          "title": "wenn, step two: wenn first",
+          "body": "You can also start with the *wenn* clause. Then the **whole wenn clause counts as position one**, just like *heute* in *Heute bleibe ich zu Hause*.\n\nSo the main verb comes **straight after the comma**, and then the subject:\n\n- *Ich bleibe zu Hause, wenn es regnet.*\n- ***Wenn es regnet, bleibe** ich zu Hause.*\n\nYou get two verbs side by side: *verb, comma, verb*. Both orders mean the same thing.",
+          "examples": [
+            { "text": "Wenn es regnet, bleibe ich zu Hause.", "translation": "When it rains, I stay at home." },
+            { "text": "Wenn es warm ist, essen wir draußen.", "translation": "When it's warm, we eat outside." },
+            { "text": "Wenn es kalt ist, nehme ich eine Jacke mit.", "translation": "When it's cold, I take a jacket with me." },
+            { "text": "Wenn das Wetter schön ist, wandern wir.", "translation": "When the weather is nice, we go hiking." }
+          ]
+        },
+        {
+          "id": "we4-e8",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Which is right?",
+          "prompt": "When it's cold, I need a coat.",
+          "promptLanguage": "BASE",
+          "options": ["Wenn es kalt ist, ich brauche einen Mantel.", "Wenn es ist kalt, brauche ich einen Mantel.", "Wenn es kalt ist, brauche ich einen Mantel."],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 2
+        },
+        {
+          "id": "we4-e9",
+          "type": "CLOZE",
+          "before": "Wenn es kalt ist,",
+          "after": "ich einen Mantel.",
+          "accepted": ["brauche"],
+          "translation": "When it's cold, I need a coat.",
+          "hint": "brauchen → ich …, straight after the comma"
+        },
+        {
+          "id": "we4-e10",
+          "type": "WORD_ORDER",
+          "translation": "When it rains, I stay at home. (start with when)",
+          "answer": "Wenn es regnet, bleibe ich zu Hause.",
+          "distractors": ["Wann", "bleiben"]
+        },
+        {
+          "id": "we4-e11",
+          "type": "TEACH",
+          "title": "wenn or wann?",
+          "body": "Both can mean *when*, but they do different jobs:\n\n- **wann** asks a question: *Wann hast du Zeit?* The verb comes second, as in any question.\n- **wenn** joins two ideas and never asks. Its verb goes to the end.\n\n**wenn** also means **if**: *Wenn es morgen regnet, …* = If it rains tomorrow, …",
+          "examples": [
+            { "text": "Wann hast du Zeit?", "translation": "When are you free?" },
+            { "text": "Wenn ich Zeit habe, lese ich gern.", "translation": "When I have time, I like to read." },
+            { "text": "Wenn es morgen regnet, gehen wir ins Kino.", "translation": "If it rains tomorrow, we'll go to the cinema." }
+          ]
+        },
+        {
+          "id": "we4-e12",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "wann or wenn? ___ es regnet, nehme ich einen Regenschirm mit.",
+          "prompt": "When it rains, I take an umbrella with me.",
+          "promptLanguage": "BASE",
+          "options": ["Wann", "Wenn"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "we4-e13",
+          "type": "TRANSLATE",
+          "source": "If it's warm, we'll eat outside.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Wenn es warm ist, essen wir draußen.", "Wir essen draußen, wenn es warm ist.", "Wenn es warm ist, essen wir heute draußen."]
+        },
+        {
+          "id": "we4-e14",
+          "type": "TRANSLATE",
+          "source": "Wenn es regnet, nehme ich einen Regenschirm mit.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["When it rains, I take an umbrella with me.", "When it rains, I take an umbrella.", "If it rains, I take an umbrella with me.", "If it rains, I take an umbrella.", "If it rains, I'll take an umbrella with me.", "If it rains, I'll take an umbrella.", "When it rains, I'll take an umbrella.", "Whenever it rains, I take an umbrella.", "Whenever it rains, I take an umbrella with me.", "I take an umbrella when it rains.", "I take an umbrella with me when it rains.", "I take an umbrella if it rains.", "I'll take an umbrella if it rains."]
+        },
+        {
+          "id": "we4-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Wenn es kalt ist, brauche ich einen Mantel.",
+          "translation": "When it's cold, I need a coat."
+        },
+        {
+          "id": "we4-e16",
+          "type": "SHADOW",
+          "text": "Wenn es regnet, bleibe ich zu Hause.",
+          "translation": "When it rains, I stay at home.",
+          "hint": "Pause briefly at the comma between the two verbs: regnet, bleibe."
+        }
+      ]
+    },
+    {
+      "id": "we5-ausflug",
+      "title": "Checking the forecast",
+      "kind": "PRACTICE",
+      "introduces": ["wettervorhersage"],
+      "exercises": [
+        {
+          "id": "we5-e1",
+          "type": "TEACH",
+          "title": "Die Wettervorhersage",
+          "body": "One long word before the conversation: **die Wettervorhersage** = the weather forecast.\n\nBreak it into pieces: *Wetter* (weather) + *vorher* (beforehand) + *Sage* (from *sagen*, to say). It's what someone says about the weather *before* it happens.\n\nGerman builds lots of words like this. The last piece decides *der, die* or *das*: *die Vorhersage*, so **die Wettervorhersage**.",
+          "examples": [
+            { "text": "die Wettervorhersage", "translation": "the weather forecast", "hint": "VET-ter-for-hair-zah-ge" },
+            { "text": "Hast du die Wettervorhersage gesehen?", "translation": "Have you seen the weather forecast?" },
+            { "text": "Morgen regnet es, und es sind nur zehn Grad.", "translation": "Tomorrow it's going to rain, and it's only ten degrees." }
+          ]
+        },
+        {
+          "id": "we5-e2",
+          "type": "TEACH",
+          "title": "Ein Ausflug am Wochenende",
+          "body": "Mia and Jonas want to go on a day trip this weekend. First they check the weather. Read along, and tap each line to hear it.",
+          "examples": [
+            { "text": "Hallo Jonas! Hast du am Wochenende Zeit? Wollen wir einen Ausflug machen?", "translation": "Mia: Hi Jonas! Are you free at the weekend? Shall we go on a day trip?" },
+            { "text": "Ja, gern! Wir können nach Potsdam fahren und wandern.", "translation": "Jonas: Yes, I'd love to! We can go to Potsdam and go hiking." },
+            { "text": "Gute Idee! Aber wie ist das Wetter? Hast du die Wettervorhersage gesehen?", "translation": "Mia: Good idea! But what's the weather like? Have you seen the forecast?" },
+            { "text": "Ja. Am Samstag regnet es, und es ist windig. Es sind nur zwölf Grad.", "translation": "Jonas: Yes. On Saturday it's going to rain, and it's windy. It's only twelve degrees." },
+            { "text": "Oh nein! Und am Sonntag?", "translation": "Mia: Oh no! And on Sunday?" },
+            { "text": "Am Sonntag scheint die Sonne. Es sind zweiundzwanzig Grad.", "translation": "Jonas: On Sunday the sun's going to shine. It's twenty-two degrees." },
+            { "text": "Toll! Dann fahren wir am Sonntag. Wenn es warm ist, können wir draußen essen.", "translation": "Mia: Great! Then let's go on Sunday. If it's warm, we can eat outside." },
+            { "text": "Und wenn es am Sonntag auch regnet?", "translation": "Jonas: And if it rains on Sunday too?" },
+            { "text": "Dann gehen wir ins Kino! Aber ich nehme einen Regenschirm mit.", "translation": "Mia: Then we'll go to the cinema! But I'll take an umbrella." },
+            { "text": "Gute Idee! Letztes Jahr waren wir in Potsdam, und es hat geregnet. Wir waren sehr nass!", "translation": "Jonas: Good idea! Last year we were in Potsdam and it rained. We were really wet!" }
+          ]
+        },
+        {
+          "id": "we5-e3",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: what's the weather like on Saturday?",
+          "prompt": "Am Samstag …",
+          "promptLanguage": "TARGET",
+          "options": ["Rainy and windy, twelve degrees", "Sunny, twenty-two degrees", "Snowy, minus five degrees"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 0
+        },
+        {
+          "id": "we5-e4",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: why do they go on Sunday?",
+          "prompt": "Dann fahren wir am Sonntag.",
+          "promptLanguage": "TARGET",
+          "options": ["Jonas has to work on Saturday.", "The sun is going to shine on Sunday.", "Mia doesn't like Potsdam on Saturdays."],
+          "optionsLanguage": "BASE",
+          "answerIndex": 1
+        },
+        {
+          "id": "we5-e5",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "From the conversation: what will they do if it rains on Sunday too?",
+          "prompt": "Und wenn es am Sonntag auch regnet?",
+          "promptLanguage": "TARGET",
+          "options": ["Stay at home", "Go hiking anyway", "Go to the cinema"],
+          "optionsLanguage": "BASE",
+          "answerIndex": 2
+        },
+        {
+          "id": "we5-e6",
+          "type": "MATCH_PAIRS",
+          "pairs": [
+            { "target": "die Wettervorhersage", "base": "the weather forecast" },
+            { "target": "der Ausflug", "base": "the day trip" },
+            { "target": "draußen", "base": "outside" },
+            { "target": "der Regenschirm", "base": "the umbrella" },
+            { "target": "nass", "base": "wet" }
+          ]
+        },
+        {
+          "id": "we5-e7",
+          "type": "CLOZE",
+          "before": "Am Sonntag",
+          "after": "die Sonne.",
+          "accepted": ["scheint"],
+          "translation": "On Sunday the sun is going to shine.",
+          "hint": "scheinen → die Sonne …"
+        },
+        {
+          "id": "we5-e8",
+          "type": "CLOZE",
+          "before": "Wenn es warm ist,",
+          "after": "wir draußen essen.",
+          "accepted": ["können"],
+          "translation": "If it's warm, we can eat outside.",
+          "hint": "können → wir …, straight after the comma"
+        },
+        {
+          "id": "we5-e9",
+          "type": "WORD_ORDER",
+          "translation": "If it rains on Sunday, we'll go to the cinema.",
+          "answer": "Wenn es am Sonntag regnet, gehen wir ins Kino.",
+          "distractors": ["Wann", "geht"]
+        },
+        {
+          "id": "we5-e10",
+          "type": "LISTEN_CHOOSE",
+          "instruction": "Which do you hear?",
+          "options": ["Es sind zwölf Grad.", "Es sind zweiundzwanzig Grad."],
+          "answerIndex": 1
+        },
+        {
+          "id": "we5-e11",
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Your friend says this. What's the best answer?",
+          "prompt": "Morgen scheint die Sonne, und es sind fünfundzwanzig Grad.",
+          "promptLanguage": "TARGET",
+          "options": ["Oh nein! Ich nehme einen Regenschirm mit.", "Toll! Wollen wir draußen essen?", "Gute Besserung!"],
+          "optionsLanguage": "TARGET",
+          "answerIndex": 1
+        },
+        {
+          "id": "we5-e12",
+          "type": "TRANSLATE",
+          "source": "What's the weather like on Saturday?",
+          "sourceLanguage": "BASE",
+          "accepted": ["Wie ist das Wetter am Samstag?", "Wie ist am Samstag das Wetter?"]
+        },
+        {
+          "id": "we5-e13",
+          "type": "TRANSLATE",
+          "source": "If the weather is nice, we'll go hiking.",
+          "sourceLanguage": "BASE",
+          "accepted": ["Wenn das Wetter schön ist, wandern wir.", "Wir wandern, wenn das Wetter schön ist.", "Wenn das Wetter gut ist, wandern wir.", "Wir wandern, wenn das Wetter gut ist.", "Wenn das Wetter schön ist, gehen wir wandern.", "Wir gehen wandern, wenn das Wetter schön ist.", "Wenn das Wetter gut ist, gehen wir wandern.", "Wir gehen wandern, wenn das Wetter gut ist."]
+        },
+        {
+          "id": "we5-e14",
+          "type": "TRANSLATE",
+          "source": "Letztes Jahr hat es in Potsdam geregnet, und wir waren sehr nass.",
+          "sourceLanguage": "TARGET",
+          "accepted": ["Last year it rained in Potsdam, and we were very wet.", "Last year it rained in Potsdam and we were very wet.", "Last year it rained in Potsdam, and we were really wet.", "Last year it rained in Potsdam and we were really wet.", "It rained in Potsdam last year, and we were very wet.", "It rained in Potsdam last year and we were very wet.", "It rained in Potsdam last year and we were really wet."]
+        },
+        {
+          "id": "we5-e15",
+          "type": "LISTEN_TYPE",
+          "text": "Hast du die Wettervorhersage gesehen?",
+          "translation": "Have you seen the weather forecast?"
+        },
+        {
+          "id": "we5-e16",
+          "type": "SHADOW",
+          "text": "Wenn es warm ist, können wir draußen essen.",
+          "translation": "If it's warm, we can eat outside.",
+          "hint": "draußen: DROW-sen, with au as in 'cow'. Pause at the comma: ist, können."
+        }
+      ]
+    }
+  ]
+}
